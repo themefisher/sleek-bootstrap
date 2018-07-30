@@ -1,0 +1,755 @@
+@@include('header.htm', { "title": "Sleek - Admin Dashboard Template", "className": "header-fixed sidebar-fixed sidebar-dark header-light" })
+<aside class="main-sidebar">
+	@@include('sidebar-with-footer.htm', { "parent": "ui-elements", "sub_parent": "components", "active": "buttons-default" })
+</aside>
+
+	<!-- ====================================
+		——— CONTENT WRAPPER
+		===================================== -->
+	<div class="content-wrapper">
+		@@include('breadcrumb-custom.htm', { "parent": "UI Elements", "active": "Buttons" })
+		<div class="content">
+			<ul class="nav nav-tabs nav-style-border mb-5 pl-0" id="myTab" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link active" id="home-tab" data-toggle="tab" href="#rounded" role="tab" aria-controls="rounded" aria-selected="true">Rounded Buttons</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="profile-tab" data-toggle="tab" href="#square" role="tab" aria-controls="square" aria-selected="false">Square Buttons</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="contact-tab" data-toggle="tab" href="#pill" role="tab" aria-controls="pill" aria-selected="false">Pill Buttons</a>
+				</li>
+			</ul>
+			<div class="tab-content" id="myTabContent">
+				<div class="tab-pane fade show active" id="rounded" role="tabpanel" aria-labelledby="home-tab">
+					<div class="row">
+						<div class="col-lg-6">
+							<!-- Default Button -->
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Default Buttons </h4>
+								</div>
+								<div class="card-body">
+									<button type="button" class="mb-1 btn btn-primary">Primary</button>
+									<button type="button" class="mb-1 btn btn-secondary">Secondary</button>
+									<button type="button" class="mb-1 btn btn-success">Success</button>
+									<button type="button" class="mb-1 btn btn-info">Info</button>
+									<button type="button" class="mb-1 btn btn-warning">Warning</button>
+									<button type="button" class="mb-1 btn btn-danger">Danger</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<!-- Default Outline Button -->
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Default Outline Buttons </h4>
+								</div>
+								<div class="card-body">
+									<button type="button" class="mb-1 btn btn-outline-primary">Primary</button>
+									<button type="button" class="mb-1 btn btn-outline-secondary">Secondary</button>
+									<button type="button" class="mb-1 btn btn-outline-success">Success</button>
+									<button type="button" class="mb-1 btn btn-outline-info">Info</button>
+									<button type="button" class="mb-1 btn btn-outline-warning">Warning</button>
+									<button type="button" class="mb-1 btn btn-outline-danger">Danger</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<!--Default Icon Buttons -->
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Default Icon Buttons </h4>
+								</div>
+								<div class="card-body">
+									<button type="button" class="mb-1 btn btn-primary">
+										<i class="mr-1 fa fa-star-o"></i> Primary</button>
+									<button type="button" class="mb-1 btn btn-secondary">
+										<i class="mr-1 fa fa-diamond"></i> Secondary</button>
+									<button type="button" class="mb-1 btn btn-success">
+										<i class="mr-1 fa fa-check-square-o"></i> Success</button>
+									<button type="button" class="mb-1 btn btn-info">
+										<i class="mr-1 fa fa-info-circle"></i> Info</button>
+									<button type="button" class="mb-1 btn btn-warning">
+										<i class="mr-1 fa fa-warning"></i> Warning</button>
+									<button type="button" class="mb-1 btn btn-danger">
+										<i class="mr-1 fa fa-ban"></i> Danger</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<!--Outline Icon Buttons -->
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Outline Icon Buttons </h4>
+								</div>
+								<div class="card-body">
+									<button type="button" class="mb-1 btn btn-outline-primary">
+										<i class="mr-1 fa fa-star-o"></i> Primary</button>
+									<button type="button" class="mb-1 btn btn-outline-secondary">
+										<i class="mr-1 fa fa-diamond"></i> Secondary</button>
+									<button type="button" class="mb-1 btn btn-outline-success">
+										<i class="mr-1 fa fa-check-square-o"></i> Success</button>
+									<button type="button" class="mb-1 btn btn-outline-info">
+										<i class="mr-1 fa fa-info-circle"></i> Info</button>
+									<button type="button" class="mb-1 btn btn-outline-warning">
+										<i class="mr-1 fa fa-warning"></i> Warning</button>
+									<button type="button" class="mb-1 btn btn-outline-danger">
+										<i class="mr-1 fa fa-ban"></i> Danger</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<!-- Large Buttons -->
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Large Buttons</h4>
+								</div>
+								<div class="card-body">
+									<button type="button" class="mb-1 btn btn-lg btn-primary">Primary</button>
+									<button type="button" class="mb-1 btn btn-lg btn-secondary">Secondary</button>
+									<button type="button" class="mb-1 btn btn-lg btn-success">Success</button>
+									<button type="button" class="mb-1 btn btn-lg btn-info">Info</button>
+									<button type="button" class="mb-1 btn btn-lg btn-warning">Warning</button>
+									<button type="button" class="mb-1 btn btn-lg btn-danger">Danger</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<!-- Large Outline Buttons -->
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Large Outline Buttons</h4>
+								</div>
+								<div class="card-body">
+									<button type="button" class="mb-1 btn btn-lg btn-outline-primary">Primary</button>
+									<button type="button" class="mb-1 btn btn-lg btn-outline-secondary">Secondary</button>
+									<button type="button" class="mb-1 btn btn-lg btn-outline-success">Success</button>
+									<button type="button" class="mb-1 btn btn-lg btn-outline-info">Info</button>
+									<button type="button" class="mb-1 btn btn-lg btn-outline-warning">Warning</button>
+									<button type="button" class="mb-1 btn btn-lg btn-outline-danger">Danger</button>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-lg-6">
+							<!-- Small Buttons -->
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Small Buttons</h4>
+								</div>
+								<div class="card-body">
+									<button type="button" class="mb-1 btn btn-sm btn-primary">Primary</button>
+									<button type="button" class="mb-1 btn btn-sm btn-secondary">Secondary</button>
+									<button type="button" class="mb-1 btn btn-sm btn-success">Success</button>
+									<button type="button" class="mb-1 btn btn-sm btn-info">Info</button>
+									<button type="button" class="mb-1 btn btn-sm btn-warning">Warning</button>
+									<button type="button" class="mb-1 btn btn-sm btn-danger">Danger</button>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-lg-6">
+							<!-- Small Outline Buttons -->
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Small Outline Buttons</h4>
+								</div>
+								<div class="card-body">
+									<button type="button" class="mb-1 btn btn-sm btn-outline-primary">Primary</button>
+									<button type="button" class="mb-1 btn btn-sm btn-outline-secondary">Secondary</button>
+									<button type="button" class="mb-1 btn btn-sm btn-outline-success">Success</button>
+									<button type="button" class="mb-1 btn btn-sm btn-outline-info">Info</button>
+									<button type="button" class="mb-1 btn btn-sm btn-outline-warning">Warning</button>
+									<button type="button" class="mb-1 btn btn-sm btn-outline-danger">Danger</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<!-- Disable buttons -->
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Disable Buttons</h4>
+								</div>
+								<div class="card-body">
+									<button type="button" class="mb-1 btn  disabled btn-primary">Primary</button>
+									<button type="button" class="mb-1 btn disabled  btn-secondary">Secondary</button>
+									<button type="button" class="mb-1 btn  disabled btn-success">Success</button>
+									<button type="button" class="mb-1 btn  disabled btn-info">Info</button>
+									<button type="button" class="mb-1 btn  disabled btn-warning">Warning</button>
+									<button type="button" class="mb-1 btn  disabled btn-danger">Danger</button>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-lg-6">
+							<!-- Disable Outline buttons -->
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Disable Outline Buttons</h4>
+								</div>
+								<div class="card-body">
+									<button type="button" class="mb-1 btn disabled  btn-outline-primary">Primary</button>
+									<button type="button" class="mb-1 btn disabled  btn-outline-secondary">Secondary</button>
+									<button type="button" class="mb-1 btn disabled  btn-outline-success">Success</button>
+									<button type="button" class="mb-1 btn disabled  btn-outline-info">Info</button>
+									<button type="button" class="mb-1 btn disabled  btn-outline-warning">Warning</button>
+									<button type="button" class="mb-1 btn disabled  btn-outline-danger">Danger</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<!-- Active buttons -->
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Active Buttons</h4>
+								</div>
+								<div class="card-body">
+									<button type="button" class="mb-1 btn  active btn-primary">Primary</button>
+									<button type="button" class="mb-1 btn active  btn-secondary">Secondary</button>
+									<button type="button" class="mb-1 btn  active btn-success">Success</button>
+									<button type="button" class="mb-1 btn  active btn-info">Info</button>
+									<button type="button" class="mb-1 btn  active btn-warning">Warning</button>
+									<button type="button" class="mb-1 btn  active btn-danger">Danger</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<!-- Active Outline buttons -->
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Active Outline Buttons</h4>
+								</div>
+								<div class="card-body">
+									<button type="button" class="mb-1 btn active  btn-outline-primary">Primary</button>
+									<button type="button" class="mb-1 btn active  btn-outline-secondary">Secondary</button>
+									<button type="button" class="mb-1 btn active  btn-outline-success">Success</button>
+									<button type="button" class="mb-1 btn active  btn-outline-info">Info</button>
+									<button type="button" class="mb-1 btn active  btn-outline-warning">Warning</button>
+									<button type="button" class="mb-1 btn active  btn-outline-danger">Danger</button>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-lg-6">
+							<!-- Block buttons -->
+
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Block Buttons</h4>
+								</div>
+								<div class="card-body">
+									<button type="button" class="mb-1 btn btn-block btn-primary">Primary</button>
+									<button type="button" class="mb-1 btn btn-block  btn-secondary">Secondary</button>
+									<button type="button" class="mb-1 btn btn-block btn-success">Success</button>
+									<button type="button" class="mb-1 btn btn-block btn-info">Info</button>
+									<button type="button" class="mb-1 btn btn-block btn-warning">Warning</button>
+									<button type="button" class="mb-1 btn btn-block btn-danger">Danger</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<!-- Block Outline buttons -->
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Block Outline Buttons</h4>
+								</div>
+								<div class="card-body">
+									<button type="button" class="mb-1 btn btn-block  btn-outline-primary">Primary</button>
+									<button type="button" class="mb-1 btn btn-block  btn-outline-secondary">Secondary</button>
+									<button type="button" class="mb-1 btn btn-block  btn-outline-success">Success</button>
+									<button type="button" class="mb-1 btn btn-block btn-outline-info">Info</button>
+									<button type="button" class="mb-1 btn btn-block  btn-outline-warning">Warning</button>
+									<button type="button" class="mb-1 btn btn-block  btn-outline-danger">Danger</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="square" role="tabpanel" aria-labelledby="profile-tab">
+					<div class="row">
+						<div class="col-lg-6">
+							<!-- Square Button -->
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Default Buttons</h4>
+								</div>
+								<div class="card-body">
+									<button type="button" class="mb-1 btn btn-square btn-primary">Primary</button>
+									<button type="button" class="mb-1 btn btn-square btn-secondary">Secondary</button>
+									<button type="button" class="mb-1 btn btn-square btn-success">Success</button>
+									<button type="button" class="mb-1 btn btn-square btn-info">Info</button>
+									<button type="button" class="mb-1 btn btn-square btn-warning">Warning</button>
+									<button type="button" class="mb-1 btn btn-square btn-danger">Danger</button>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-lg-6">
+							<!-- Default Outline Button -->
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Default Outline Buttons</h4>
+								</div>
+								<div class="card-body">
+									<button type="button" class="mb-1 btn btn-square btn-outline-primary">Primary</button>
+									<button type="button" class="mb-1 btn btn-square btn-outline-secondary">Secondary</button>
+									<button type="button" class="mb-1 btn btn-square btn-outline-success">Success</button>
+									<button type="button" class="mb-1 btn btn-square btn-outline-info">Info</button>
+									<button type="button" class="mb-1 btn btn-square btn-outline-warning">Warning</button>
+									<button type="button" class="mb-1 btn btn-square btn-outline-danger">Danger</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<!--Default Icon Buttons -->
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Default Icon Buttons</h4>
+								</div>
+								<div class="card-body">
+									<button type="button" class="mb-1 btn btn-square btn-primary">
+										<i class="mr-1 fa fa-star-o"></i> Primary</button>
+									<button type="button" class="mb-1 btn btn-square btn-secondary">
+										<i class="mr-1 fa fa-diamond"></i> Secondary</button>
+									<button type="button" class="mb-1 btn btn-square btn-success">
+										<i class="mr-1 fa fa-check-square-o"></i> Success</button>
+									<button type="button" class="mb-1 btn btn-square btn-info">
+										<i class="mr-1 fa fa-info-circle"></i> Info</button>
+									<button type="button" class="mb-1 btn btn-square btn-warning">
+										<i class="mr-1 fa fa-warning"></i> Warning</button>
+									<button type="button" class="mb-1 btn btn-square btn-danger">
+										<i class="mr-1 fa fa-ban"></i> Danger</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<!--Outline Icon Buttons -->
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Outline Icon Buttons</h4>
+								</div>
+								<div class="card-body">
+									<button type="button" class="mb-1 btn btn-square btn-outline-primary">
+										<i class="mr-1 fa fa-star-o"></i> Primary</button>
+									<button type="button" class="mb-1 btn btn-square btn-outline-secondary">
+										<i class="mr-1 fa fa-diamond"></i> Secondary</button>
+									<button type="button" class="mb-1 btn btn-square btn-outline-success">
+										<i class="mr-1 fa fa-check-square-o"></i> Success</button>
+									<button type="button" class="mb-1 btn btn-square btn-outline-info">
+										<i class="mr-1 fa fa-info-circle"></i> Info</button>
+									<button type="button" class="mb-1 btn btn-square btn-outline-warning">
+										<i class="mr-1 fa fa-warning"></i> Warning</button>
+									<button type="button" class="mb-1 btn btn-square btn-outline-danger">
+										<i class="mr-1 fa fa-ban"></i> Danger</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<!-- Large Buttons -->
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Large Buttons</h4>
+								</div>
+								<div class="card-body">
+									<button type="button" class="mb-1 btn btn-square btn-lg btn-primary">Primary</button>
+									<button type="button" class="mb-1 btn btn-square btn-lg btn-secondary">Secondary</button>
+									<button type="button" class="mb-1 btn btn-square btn-lg btn-success">Success</button>
+									<button type="button" class="mb-1 btn btn-square btn-lg btn-info">Info</button>
+									<button type="button" class="mb-1 btn btn-square btn-lg btn-warning">Warning</button>
+									<button type="button" class="mb-1 btn btn-square btn-lg btn-danger">Danger</button>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-lg-6">
+							<!-- Large Outline Buttons -->
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Large Outline Buttons</h4>
+								</div>
+								<div class="card-body">
+									<button type="button" class="mb-1 btn btn-square btn-lg btn-outline-primary">Primary</button>
+									<button type="button" class="mb-1 btn btn-square btn-lg btn-outline-secondary">Secondary</button>
+									<button type="button" class="mb-1 btn btn-square btn-lg btn-outline-success">Success</button>
+									<button type="button" class="mb-1 btn btn-square btn-lg btn-outline-info">Info</button>
+									<button type="button" class="mb-1 btn btn-square btn-lg btn-outline-warning">Warning</button>
+									<button type="button" class="mb-1 btn btn-square btn-lg btn-outline-danger">Danger</button>
+								</div>
+							</div>
+
+						</div>
+						<!-- Small Buttons -->
+						<div class="col-lg-6">
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Small Buttons</h4>
+								</div>
+								<div class="card-body">
+									<button type="button" class="mb-1 btn btn-square btn-sm btn-primary">Primary</button>
+									<button type="button" class="mb-1 btn btn-square btn-sm btn-secondary">Secondary</button>
+									<button type="button" class="mb-1 btn btn-square btn-sm btn-success">Success</button>
+									<button type="button" class="mb-1 btn btn-square btn-sm btn-info">Info</button>
+									<button type="button" class="mb-1 btn btn-square btn-sm btn-warning">Warning</button>
+									<button type="button" class="mb-1 btn btn-square btn-sm btn-danger">Danger</button>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-lg-6">
+							<!-- Small Outline Buttons -->
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Small Outline Buttons</h4>
+								</div>
+								<div class="card-body">
+									<button type="button" class="mb-1 btn btn-square btn-sm btn-outline-primary">Primary</button>
+									<button type="button" class="mb-1 btn btn-square btn-sm btn-outline-secondary">Secondary</button>
+									<button type="button" class="mb-1 btn btn-square btn-sm btn-outline-success">Success</button>
+									<button type="button" class="mb-1 btn btn-square btn-sm btn-outline-info">Info</button>
+									<button type="button" class="mb-1 btn btn-square btn-sm btn-outline-warning">Warning</button>
+									<button type="button" class="mb-1 btn btn-square btn-sm btn-outline-danger">Danger</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<!-- Disable Buttons -->
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Disable Buttons</h4>
+								</div>
+								<div class="card-body">
+									<button type="button" class="mb-1 btn btn-square disabled btn-primary">Primary</button>
+									<button type="button" class="mb-1 btn btn-square disabled btn-secondary">Secondary</button>
+									<button type="button" class="mb-1 btn btn-square disabled btn-success">Success</button>
+									<button type="button" class="mb-1 btn btn-square disabled btn-info">Info</button>
+									<button type="button" class="mb-1 btn btn-square disabled btn-warning">Warning</button>
+									<button type="button" class="mb-1 btn btn-square disabled btn-danger">Danger</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<!-- Disable Outline Buttons -->
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Disable Outline Buttons</h4>
+								</div>
+								<div class="card-body">
+									<button type="button" class="mb-1 btn btn-square disabled btn-outline-primary">Primary</button>
+									<button type="button" class="mb-1 btn btn-square disabled btn-outline-secondary">Secondary</button>
+									<button type="button" class="mb-1 btn btn-square disabled btn-outline-success">Success</button>
+									<button type="button" class="mb-1 btn btn-square disabled btn-outline-info">Info</button>
+									<button type="button" class="mb-1 btn btn-square disabled btn-outline-warning">Warning</button>
+									<button type="button" class="mb-1 btn btn-square disabled btn-outline-danger">Danger</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<!-- Active Buttons -->
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Active Buttons</h4>
+								</div>
+								<div class="card-body">
+									<button type="button" class="mb-1 btn btn-square active btn-primary">Primary</button>
+									<button type="button" class="mb-1 btn btn-square active btn-secondary">Secondary</button>
+									<button type="button" class="mb-1 btn btn-square active btn-success">Success</button>
+									<button type="button" class="mb-1 btn btn-square active btn-info">Info</button>
+									<button type="button" class="mb-1 btn btn-square active btn-warning">Warning</button>
+									<button type="button" class="mb-1 btn btn-square active btn-danger">Danger</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<!-- Active Outline Buttons -->
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Active Outline Buttons</h4>
+								</div>
+								<div class="card-body">
+									<button type="button" class="mb-1 btn btn-square active  btn-outline-primary">Primary</button>
+									<button type="button" class="mb-1 btn btn-square active  btn-outline-secondary">Secondary</button>
+									<button type="button" class="mb-1 btn btn-square active  btn-outline-success">Success</button>
+									<button type="button" class="mb-1 btn btn-square active  btn-outline-info">Info</button>
+									<button type="button" class="mb-1 btn btn-square active  btn-outline-warning">Warning</button>
+									<button type="button" class="mb-1 btn btn-square active  btn-outline-danger">Danger</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<!-- Block Buttons -->
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Block Buttons</h4>
+								</div>
+								<div class="card-body">
+									<button type="button" class="mb-1 btn btn-square btn-block btn-primary">Primary</button>
+									<button type="button" class="mb-1 btn btn-square btn-block  btn-secondary">Secondary</button>
+									<button type="button" class="mb-1 btn btn-square btn-block btn-success">Success</button>
+									<button type="button" class="mb-1 btn btn-square btn-block btn-info">Info</button>
+									<button type="button" class="mb-1 btn btn-square btn-block btn-warning">Warning</button>
+									<button type="button" class="mb-1 btn btn-square btn-block btn-danger">Danger</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Block Outline Buttons</h4>
+								</div>
+								<div class="card-body">
+									<button type="button" class="mb-1 btn btn-square btn-block  btn-outline-primary">Primary</button>
+									<button type="button" class="mb-1 btn btn-square btn-block  btn-outline-secondary">Secondary</button>
+									<button type="button" class="mb-1 btn btn-square btn-block  btn-outline-success">Success</button>
+									<button type="button" class="mb-1 btn btn-square btn-block btn-outline-info">Info</button>
+									<button type="button" class="mb-1 btn btn-square btn-block  btn-outline-warning">Warning</button>
+									<button type="button" class="mb-1 btn btn-square btn-block  btn-outline-danger">Danger</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="pill" role="tabpanel" aria-labelledby="contact-tab">
+					<div class="row">
+						<div class="col-lg-6">
+							<!-- Block buttons -->
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Default Buttons</h4>
+								</div>
+								<div class="card-body">
+									<button type="button" class="mb-1 btn btn-pill btn-primary">Primary</button>
+									<button type="button" class="mb-1 btn btn-pill btn-secondary">Secondary</button>
+									<button type="button" class="mb-1 btn btn-pill btn-success">Success</button>
+									<button type="button" class="mb-1 btn btn-pill btn-info">Info</button>
+									<button type="button" class="mb-1 btn btn-pill btn-warning">Warning</button>
+									<button type="button" class="mb-1 btn btn-pill btn-danger">Danger</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<!-- Default Outline buttons -->
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Default Outline Buttons</h4>
+								</div>
+								<div class="card-body">
+									<button type="button" class="mb-1 btn btn-pill btn-outline-primary">Primary</button>
+									<button type="button" class="mb-1 btn btn-pill btn-outline-secondary">Secondary</button>
+									<button type="button" class="mb-1 btn btn-pill btn-outline-success">Success</button>
+									<button type="button" class="mb-1 btn btn-pill btn-outline-info">Info</button>
+									<button type="button" class="mb-1 btn btn-pill btn-outline-warning">Warning</button>
+									<button type="button" class="mb-1 btn btn-pill btn-outline-danger">Danger</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<!--Default Icon Buttons -->
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Default Icon Buttons</h4>
+								</div>
+								<div class="card-body">
+									<button type="button" class="mb-1 btn btn-pill btn-primary">
+										<i class="mr-1 fa fa-star-o"></i> Primary</button>
+									<button type="button" class="mb-1 btn btn-pill btn-secondary">
+										<i class="mr-1 fa fa-diamond"></i> Secondary</button>
+									<button type="button" class="mb-1 btn btn-pill btn-success">
+										<i class="mr-1 fa fa-check-square-o"></i> Success</button>
+									<button type="button" class="mb-1 btn btn-pill btn-info">
+										<i class="mr-1 fa fa-info-circle"></i> Info</button>
+									<button type="button" class="mb-1 btn btn-pill btn-warning">
+										<i class="mr-1 fa fa-warning"></i> Warning</button>
+									<button type="button" class="mb-1 btn btn-pill btn-danger">
+										<i class="mr-1 fa fa-ban"></i> Danger</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<!--Outline Icon Buttons -->
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Outline Icon Buttons</h4>
+								</div>
+								<div class="card-body">
+									<button type="button" class="mb-1 btn btn-pill btn-outline-primary">
+										<i class="mr-1 fa fa-star-o"></i> Primary</button>
+									<button type="button" class="mb-1 btn btn-pill btn-outline-secondary">
+										<i class="mr-1 fa fa-diamond"></i> Secondary</button>
+									<button type="button" class="mb-1 btn btn-pill btn-outline-success">
+										<i class="mr-1 fa fa-check-square-o"></i> Success</button>
+									<button type="button" class="mb-1 btn btn-pill btn-outline-info">
+										<i class="mr-1 fa fa-info-circle"></i> Info</button>
+									<button type="button" class="mb-1 btn btn-pill btn-outline-warning">
+										<i class="mr-1 fa fa-warning"></i> Warning</button>
+									<button type="button" class="mb-1 btn btn-pill btn-outline-danger">
+										<i class="mr-1 fa fa-ban"></i> Danger</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<!-- Large Buttons -->
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Large Buttons</h4>
+								</div>
+								<div class="card-body">
+									<button type="button" class="mb-1 btn btn-pill btn-lg btn-primary">Primary</button>
+									<button type="button" class="mb-1 btn btn-pill btn-lg btn-secondary">Secondary</button>
+									<button type="button" class="mb-1 btn btn-pill btn-lg btn-success">Success</button>
+									<button type="button" class="mb-1 btn btn-pill btn-lg btn-info">Info</button>
+									<button type="button" class="mb-1 btn btn-pill btn-lg btn-warning">Warning</button>
+									<button type="button" class="mb-1 btn btn-pill btn-lg btn-danger">Danger</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<!-- Large Outline Buttons -->
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Large Outline Buttons</h4>
+								</div>
+								<div class="card-body">
+									<button type="button" class="mb-1 btn btn-pill btn-lg btn-outline-primary">Primary</button>
+									<button type="button" class="mb-1 btn btn-pill btn-lg btn-outline-secondary">Secondary</button>
+									<button type="button" class="mb-1 btn btn-pill btn-lg btn-outline-success">Success</button>
+									<button type="button" class="mb-1 btn btn-pill btn-lg btn-outline-info">Info</button>
+									<button type="button" class="mb-1 btn btn-pill btn-lg btn-outline-warning">Warning</button>
+									<button type="button" class="mb-1 btn btn-pill btn-lg btn-outline-danger">Danger</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<!-- Small Buttons -->
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Small Buttons</h4>
+								</div>
+								<div class="card-body">
+									<button type="button" class="mb-1 btn btn-pill btn-sm btn-primary">Primary</button>
+									<button type="button" class="mb-1 btn btn-pill btn-sm btn-secondary">Secondary</button>
+									<button type="button" class="mb-1 btn btn-pill btn-sm btn-success">Success</button>
+									<button type="button" class="mb-1 btn btn-pill btn-sm btn-info">Info</button>
+									<button type="button" class="mb-1 btn btn-pill btn-sm btn-warning">Warning</button>
+									<button type="button" class="mb-1 btn btn-pill btn-sm btn-danger">Danger</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<!-- Small Outline Buttons -->
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Small Outline Buttons</h4>
+								</div>
+								<div class="card-body">
+									<button type="button" class="mb-1 btn btn-pill btn-sm btn-outline-primary">Primary</button>
+									<button type="button" class="mb-1 btn btn-pill btn-sm btn-outline-secondary">Secondary</button>
+									<button type="button" class="mb-1 btn btn-pill btn-sm btn-outline-success">Success</button>
+									<button type="button" class="mb-1 btn btn-pill btn-sm btn-outline-info">Info</button>
+									<button type="button" class="mb-1 btn btn-pill btn-sm btn-outline-warning">Warning</button>
+									<button type="button" class="mb-1 btn btn-pill btn-sm btn-outline-danger">Danger</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<!-- Disable Buttons -->
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Disable Buttons</h4>
+								</div>
+								<div class="card-body">
+									<button type="button" class="mb-1 btn btn-pill disabled btn-primary">Primary</button>
+									<button type="button" class="mb-1 btn btn-pill disabled btn-secondary">Secondary</button>
+									<button type="button" class="mb-1 btn btn-pill disabled btn-success">Success</button>
+									<button type="button" class="mb-1 btn btn-pill disabled btn-info">Info</button>
+									<button type="button" class="mb-1 btn btn-pill disabled btn-warning">Warning</button>
+									<button type="button" class="mb-1 btn btn-pill disabled btn-danger">Danger</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<!-- Disable Outline Buttons -->
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Disable Outline Buttons</h4>
+								</div>
+								<div class="card-body">
+									<button type="button" class="mb-1 btn btn-pill disabled btn-outline-primary">Primary</button>
+									<button type="button" class="mb-1 btn btn-pill disabled btn-outline-secondary">Secondary</button>
+									<button type="button" class="mb-1 btn btn-pill disabled btn-outline-success">Success</button>
+									<button type="button" class="mb-1 btn btn-pill disabled btn-outline-info">Info</button>
+									<button type="button" class="mb-1 btn btn-pill disabled btn-outline-warning">Warning</button>
+									<button type="button" class="mb-1 btn btn-pill disabled btn-outline-danger">Danger</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<!-- Active Buttons -->
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Active Buttons</h4>
+								</div>
+								<div class="card-body">
+									<button type="button" class="mb-1 btn btn-pill active btn-primary">Primary</button>
+									<button type="button" class="mb-1 btn btn-pill active btn-secondary">Secondary</button>
+									<button type="button" class="mb-1 btn btn-pill active btn-success">Success</button>
+									<button type="button" class="mb-1 btn btn-pill active btn-info">Info</button>
+									<button type="button" class="mb-1 btn btn-pill active btn-warning">Warning</button>
+									<button type="button" class="mb-1 btn btn-pill active btn-danger">Danger</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<!-- Active Outline Buttons -->
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Active Outline Buttons</h4>
+								</div>
+								<div class="card-body">
+									<button type="button" class="mb-1 btn btn-pill active  btn-outline-primary">Primary</button>
+									<button type="button" class="mb-1 btn btn-pill active  btn-outline-secondary">Secondary</button>
+									<button type="button" class="mb-1 btn btn-pill active  btn-outline-success">Success</button>
+									<button type="button" class="mb-1 btn btn-pill active  btn-outline-info">Info</button>
+									<button type="button" class="mb-1 btn btn-pill active  btn-outline-warning">Warning</button>
+									<button type="button" class="mb-1 btn btn-pill active  btn-outline-danger">Danger</button>
+								</div>
+							</div>
+						</div>
+						<!-- Block buttons -->
+						<div class="col-lg-6">
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Block Buttons</h4>
+								</div>
+								<div class="card-body">
+									<button type="button" class="mb-1 btn btn-pill btn-block btn-primary">Primary</button>
+									<button type="button" class="mb-1 btn btn-pill btn-block  btn-secondary">Secondary</button>
+									<button type="button" class="mb-1 btn btn-pill btn-block btn-success">Success</button>
+									<button type="button" class="mb-1 btn btn-pill btn-block btn-info">Info</button>
+									<button type="button" class="mb-1 btn btn-pill btn-block btn-warning">Warning</button>
+									<button type="button" class="mb-1 btn btn-pill btn-block btn-danger">Danger</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<!-- Block Outline Buttons -->
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Block Outline Buttons</h4>
+								</div>
+								<div class="card-body">
+									<button type="button" class="mb-1 btn btn-pill btn-block  btn-outline-primary">Primary</button>
+									<button type="button" class="mb-1 btn btn-pill btn-block  btn-outline-secondary">Secondary</button>
+									<button type="button" class="mb-1 btn btn-pill btn-block  btn-outline-success">Success</button>
+									<button type="button" class="mb-1 btn btn-pill btn-block btn-outline-info">Info</button>
+									<button type="button" class="mb-1 btn btn-pill btn-block  btn-outline-warning">Warning</button>
+									<button type="button" class="mb-1 btn btn-pill btn-block  btn-outline-danger">Danger</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		@@include('footer.htm')

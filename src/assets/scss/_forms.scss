@@ -1,0 +1,303 @@
+/*===== 4.14 FORMS =====*/
+.form-control:focus{
+  box-shadow: none;
+}
+.form-group, .input-group {
+  margin-bottom: 20px;
+  label {
+    color: $title-color;
+    font-size: 15px;
+  }
+  .form-control {
+    font-size: 15px;
+    padding: 8px 17px;
+    border-color: $border-color;
+    @include placeholder {
+      color: $text-color;
+    }
+  }
+  .form-control.input-lg {
+    font-size: 17px;
+    padding: 15px 17px;
+  }
+  .form-control.input-sm {
+    font-size: 13px;
+    padding: 6px 17px;
+  }
+}
+.form-pill .form-group .form-control {
+  border-radius: 100px;
+}
+.horizontal-form .form-check {
+  padding-left: 0px;
+  label {
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
+
+//========== Form components - checkbox and radios ==========
+.control {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  color: $title-color;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.control-indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background: #e1e2e5;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+.control-radio .control-indicator {
+  border-radius: 50%;
+}
+.control input:disabled ~ .control-indicator {
+  background: #e1e2e5;
+  opacity: 0.6;
+  pointer-events: none;
+  border: 1px solid #ccc;
+}
+.control-indicator:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+.control input:checked ~ .control-indicator:after {
+  display: block;
+}
+.control-checkbox .control-indicator:after {
+  left: 4px;
+  top: 1px;
+  width: 5px;
+  height: 8px;
+  background: transparent!important;
+  border: solid $title-color;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.control-checkbox input:disabled ~ .control-indicator:after {
+  border-color: #7b7b7b;
+}
+.control-radio .control-indicator:after {
+  left: 4px;
+  top: 4px;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background: $title-color;
+}
+.control-radio input:disabled ~ .control-indicator:after {
+  background: #7b7b7b;
+}
+
+// Email Inbox ============
+.mark-mail {
+  .control-indicator {
+    top: -10px;
+    left: 5px;
+  }
+}
+
+// Contextual Style ============
+.checkbox-primary .control-indicator,
+.radio-primary .control-indicator {
+  background: $primary-color;
+  border-color: $primary-color;
+  &::after {
+    color: $white-color;
+    border-color: $white-color;
+    background: $white-color;
+  }
+}
+.checkbox-warning .control-indicator,
+.radio-warning .control-indicator {
+  background: $warning;
+  border-color: $warning;
+  &::after {
+    color: $white-color;
+    border-color: $white-color;
+    background: $white-color;
+  }
+}
+.checkbox-danger .control-indicator,
+.radio-danger .control-indicator {
+  background: $danger;
+  border-color: $danger;
+  &::after {
+    color: $white-color;
+    border-color: $white-color;
+    background: $white-color;
+  }
+}
+.checkbox-success .control-indicator,
+.radio-success .control-indicator {
+  background: $success;
+  border-color: $success;
+  &::after {
+    color: $white-color;
+    border-color: $white-color;
+    background: $white-color;
+  }
+}
+.checkbox-info .control-indicator,
+.radio-info .control-indicator {
+  background: $info;
+  border-color: $info;
+  &::after {
+    color: $white-color;
+    border-color: $white-color;
+    background: $white-color;
+  }
+}
+
+// All Outline Contextual Style ============
+.control.outlined {
+  .control-indicator {
+    background: transparent !important;
+  }
+  input:disabled ~ .control-indicator {
+    background: transparent !important;
+  }
+}
+.control.outlined.checkbox-primary .control-indicator,
+.control.outlined.radio-primary .control-indicator {
+  background: transparent;
+  border-color: $primary-color;
+  &::after {
+    background: $primary-color;
+    border-color: $primary-color;
+    color: $white-color;
+  }
+}
+.control.outlined.checkbox-warning .control-indicator,
+.control.outlined.radio-warning .control-indicator {
+  background: transparent;
+  border-color: $warning;
+  &::after {
+    background: $warning;
+    border-color: $warning;
+    color: $white-color;
+  }
+}
+.control.outlined.checkbox-danger .control-indicator,
+.control.outlined.radio-danger .control-indicator {
+  background: transparent;
+  border-color: $danger;
+  &::after {
+    background: $danger;
+    border-color: $danger;
+    color: $white-color;
+  }
+}
+.control.outlined.checkbox-success .control-indicator,
+.control.outlined.radio-success .control-indicator {
+  background: transparent;
+  border-color: $success;
+  &::after {
+    background: $success;
+    border-color: $success;
+    color: $white-color;
+  }
+}
+.control.outlined.checkbox-info .control-indicator,
+.control.outlined.radio-info .control-indicator {
+  background: transparent;
+  border-color: $info;
+  &::after {
+    background: $info;
+    border-color: $info;
+    color: $white-color;
+  }
+}
+
+.custom-select {
+  width: auto;
+  margin-left: 10px;
+}
+//========== Form components- input groups ==========
+.input-group > .input-group-prepend,
+.input-group > .input-group-append {
+  > .input-group-text {
+    background-color: $sand;
+    border-color: $border-color;
+
+    &.bg-primary {
+      border-color: $primary-color;
+      color: $white-color;
+    }
+    &.bg-warning {
+      border-color: $warning;
+      color: $white-color;
+    }
+    &.bg-danger {
+      border-color: $danger;
+      color: $white-color;
+    }
+    &.bg-success {
+      border-color: $success;
+      color: $white-color;
+    }
+
+    .control {
+      margin-bottom: 20px;
+    }
+  }
+  .form-check {
+    padding-left: 0px;
+    .form-check-label {
+      margin-bottom: 0px;
+    }
+    .radio-custom-label:before,
+    .checkbox-custom-label:before {
+      margin-right: 0px;
+      background: $white-color;
+    }
+    .radio-custom:checked + .radio-custom-label:before,
+    .checkbox-custom:checked + .checkbox-custom-label:before {
+      border: 1px solid #d4d5db;
+      line-height: 16px;
+
+    }
+    .radio-custom:checked + .radio-custom-label:before {
+      font-size: 8px;
+
+    }
+  }
+}
+//========== Form components- Validation ==========
+.invalid-feedback,
+.valid-feedback {
+  font-size: 90%;
+}
+//========== Form components- Advanced ==========
+.select2-container--default .select2-selection--multiple {
+  border-color: $border-color;
+}
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+  border-color: rgba($primary-color,0.5);
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  border-color: #4c84ff;
+  background-color: rgba(76, 132, 255, 0.051);
+  color: #4c84ff;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+  color: #4c84ff;
+  padding-right: 5px;
+  margin-right: 5px;
+  border-right: 1px solid #4c84ff;
+}

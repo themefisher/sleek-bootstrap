@@ -1,0 +1,38 @@
+/* Text Colors */
+.text-primary {
+	color: $primary-color!important;
+}
+.text-blue {
+	color: $primary-color!important;
+}
+.text-default {
+	color: $text-color!important;
+}
+.text-white {
+	color: $white-color!important;
+}
+.text-black {
+	color: $title-color!important;
+}
+.text-gray {
+	color: $text-color!important;
+}
+.text-danger {
+	color: $danger!important;
+}
+.text-success {
+	color: $success!important;
+}
+.text-purple {
+	color: $purple!important;
+}
+.text-title {
+	color: $title-color;
+}
+
+.text-unselectable {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

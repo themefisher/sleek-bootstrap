@@ -1,0 +1,119 @@
+/* ======================================
+--> 7. EMAIL
+========================================= */
+.email-options {
+  > .btn {
+    font-weight: 400;
+
+    &:hover {
+      background: $primary-color;
+      box-shadow: 0px 10px 18px rgba(55, 103, 208, 0.2);
+    }
+  }
+
+  ul li {
+    position: relative;
+    a {
+      color: $text-color;
+      font-weight: 500;
+      display: block;
+
+      &:hover {
+        color: $title-color;
+         > i {
+           color: $primary-color;
+         }
+      }
+    }
+
+    &.active a {
+      color: $title-color;
+       > i {
+         color: $primary-color;
+       }
+    }
+
+    span.badge {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 6px 12px;
+      font-size: 13px;
+      color: $primary-color;
+      border-color: transparent;
+      background: $sand;
+    }
+  }
+}
+.email-body {
+  @include desktops {
+    border-left: 1px solid $border-color;
+  }
+
+  .head-options .btn-group {
+    @include tablet {
+      float: right;
+    }
+    .btn {
+      font-size: 22px;
+      color: $title-color;
+
+      &:hover {
+        background: $primary-color;
+        color: $white-color;
+        border-color: $primary-color;
+        box-shadow: 0px 10px 18px rgba(55, 103, 208, 0.2);
+      }
+    }
+  }
+
+  .table {
+    tr td {
+      padding: 20px 10px;
+      white-space: nowrap;
+      vertical-align: middle;
+      @include desktops {
+        white-space: normal;
+      }
+
+      .badge {
+        margin-right: 10px;
+        text-transform: uppercase;
+      }
+    }
+
+    tr.unread {
+      background: $sand;
+    }
+  }
+}
+
+.email-content {
+  > .email-img img {
+    max-width: 120px;
+    @include large-desktops {
+      max-width: 150px;
+    }
+  }
+  p {
+    line-height: 1.6;
+  }
+}
+
+.email-compose {
+  .form-control {
+    padding: 12px 17px;
+  }
+  .file-upload>input {
+    display: none;
+  }
+
+  .file-upload i {
+    font-size: 16px;
+    cursor: pointer;
+  }
+}
+
+.dropzone {
+  border: 0;
+}

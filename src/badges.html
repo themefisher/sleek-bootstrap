@@ -1,0 +1,77 @@
+@@include('header.htm', { "title": "Sleek - Admin Dashboard Template", "className": "header-fixed sidebar-fixed sidebar-dark header-light" })
+<aside class="main-sidebar">
+	@@include('sidebar-with-footer.htm', { "parent": "ui-elements", "sub_parent": "components", "active": "badges" })
+</aside>
+
+	<!-- ====================================
+		——— CONTENT WRAPPER
+		===================================== -->
+	<div class="content-wrapper">
+		@@include('breadcrumb-custom.htm', { "parent": "UI Elements", "active": "Badges" })
+		<div class="content">
+			<!-- First Row  -->
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="card card-default rounded bg-white bdr">
+						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+							<h4>Badges </h4>
+						</div>
+						<div class="card-body">
+
+							<h1 class="mb-2">heading
+								<span class="badge badge-default ">New</span>
+							</h1>
+							<h2 class="mb-2">heading
+								<span class="badge badge-default ">New</span>
+							</h2>
+							<h3 class="mb-2">heading
+								<span class="badge badge-default ">New</span>
+							</h3>
+							<h4 class="mb-2">heading
+								<span class="badge badge-default ">New</span>
+							</h4>
+							<h5 class="mb-2">heading
+								<span class="badge badge-default ">New</span>
+							</h5>
+							<h6 class="mb-2">heading
+								<span class="badge badge-default ">New</span>
+							</h6>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="card card-default rounded bg-white bdr mb-4">
+						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+							<h4>Contextual Variations </h4>
+						</div>
+						<div class="card-body py-5">
+
+							<span class="badge badge-primary">Primary</span>
+							<span class="badge badge-secondary">Secondary</span>
+							<span class="badge badge-success">Success</span>
+							<span class="badge badge-danger">Danger</span>
+							<span class="badge badge-warning">Warning</span>
+							<span class="badge badge-info">Info</span>
+							<span class="badge badge-dark">Dark</span>
+						</div>
+					</div>
+					<div class="card card-default rounded mb-0 bg-white bdr">
+						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+							<h4>Pill Badges </h4>
+						</div>
+						<div class="card-body py-5">
+
+							<span class="badge badge-pill badge-primary">Primary</span>
+							<span class="badge badge-pill badge-secondary">Secondary</span>
+							<span class="badge badge-pill badge-success">Success</span>
+							<span class="badge badge-pill badge-danger">Danger</span>
+							<span class="badge badge-pill badge-warning">Warning</span>
+							<span class="badge badge-pill badge-info">Info</span>
+							<span class="badge badge-pill badge-dark">Dark</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		@@include('footer.htm')

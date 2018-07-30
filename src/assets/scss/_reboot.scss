@@ -1,0 +1,70 @@
+/* Font faces */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500|Poppins:400,500,600,700|Roboto:400,500');
+
+
+
+/* Reboot */
+* {
+	outline: 0;
+	margin: 0;
+	padding: 0;
+}
+html, * {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: $text-color;
+  font-weight: 400;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+ul{
+	margin:0;
+	padding:0;
+	li{
+		list-style-type:none;
+	}
+}
+
+p{
+  font-weight: 400;
+  margin-bottom: 0;
+  @include mobile-xs {
+    font-size: 15px;
+    line-height: 1.2;
+  }
+  @include tablet {
+	  font-size: 15px;
+  }
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  font-weight: 400;
+}
+
+::selection {
+  background-color: $primary-color;
+  color: $white-color;
+}
+button,
+a {
+  text-decoration: none;
+  @include transition(all 0.3s ease-in-out);
+  &:hover, &:focus, &:active{
+    box-shadow: none;
+    outline: none;
+    text-decoration: none;
+  }
+}
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}

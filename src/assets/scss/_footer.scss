@@ -1,0 +1,27 @@
+/* ======================================
+-->  10. FOOTER
+========================================= */
+.main-footer {
+  background: $white-color;
+  padding: 15px;
+  color: #444444;
+  border-top: 1px solid $border-color;
+}
+
+.copyright {
+  padding-left: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  @include desktops {
+    padding-left: 43px;
+  }
+  @include large-desktops {
+    padding-left: 55px;
+  }
+  @include extra-large {
+    padding-left: 100px;
+  }
+  p {
+    font-weight: 500;
+  }
+}

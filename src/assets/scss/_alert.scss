@@ -1,0 +1,134 @@
+/*===== 4.1 ALERT =====*/
+label {
+  text-transform: capitalize;
+}
+.alert {
+  position: relative;
+  padding: 20px 38px 20px 22px;
+  color: $title-color;
+  border-radius: 4px;
+  border-color: $border-color;
+  font-size: 15px;
+  font-weight: 500;
+  &.highlighted {
+    color: $white-color;
+  }
+  &.outlined {
+    background-color: transparent;
+  }
+}
+.alert-default {
+  background-color: $white-color;
+}
+.alert-primary {
+  background-color: #e4edff;
+  &.highlighted {
+    background-color: $primary-color;;
+  }
+  &.outlined {
+    border-color: $primary-color;;
+  }
+}
+.alert-secondary {
+  background-color: $secondary-color;
+  &.highlighted {
+    background-color: $secondary-color;
+  }
+  &.outlined {
+    border-color: $secondary-color;
+  }
+}
+.alert-success {
+  background-color: #dff7f0;
+  &.highlighted {
+    background-color: $success;
+  }
+  &.outlined {
+    border-color: $success;
+  }
+}
+.alert-danger {
+  background-color: #ffe6e7;
+  &.highlighted {
+    background-color: $danger;
+  }
+  &.outlined {
+    border-color: $danger;
+  }
+}
+.alert-warning {
+  background-color: #fff6d9;
+  &.highlighted {
+    background-color: $warning;
+  }
+  &.outlined {
+    border-color: $warning;
+  }
+}
+.alert-info {
+  background-color: #dcf7fb;
+  &.highlighted {
+    background-color: $info;
+  }
+  &.outlined {
+    border-color: $info;
+  }
+}
+.alert-light {
+  background-color: #f5f6fa;
+  &.highlighted {
+    background-color: #e9ebf1;
+    color: $title-color;
+  }
+  &.outlined {
+    border-color: #e9ebf1;
+    color: $title-color;
+  }
+}
+.alert-dark {
+  background-color: #e9ebf1;
+  &.highlighted {
+    background-color: #343a40;
+  }
+  &.outlined {
+    border-color: #343a40;
+  }
+}
+.alert-dismissible .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 16px 20px;
+  color: inherit;
+  span {
+    font-weight: 400;
+    color: #bfc5d3;
+  }
+}
+.alert-primary:not(.outlined),
+.alert-secondary:not(.outlined),
+.alert-success:not(.outlined),
+.alert-danger:not(.outlined),
+.alert-warning:not(.outlined),
+.alert-info:not(.outlined),
+.alert-dark:not(.outlined) {
+  .close span {
+    color: rgba($white-color, .7);
+  }
+}
+
+/* Toaster  */
+#toast-container{
+  margin-top: 65px;
+  z-index: 999;
+  .toast-success {
+    background-color: $primary-color;
+    opacity: 1;
+  }
+}
+#toast-container>div{
+  box-shadow: none;
+}
+#toast-container>div:hover{
+  box-shadow: none;
+}

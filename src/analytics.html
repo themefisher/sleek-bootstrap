@@ -1,0 +1,38 @@
+@@include('header.htm', { "title": "Sleek - Admin Dashboard Template", "className": "header-fixed sidebar-fixed sidebar-dark header-light" })
+@@include('sidebar-with-footer.htm', { "parent": "dashboard", "sub_parent": " ", "active": "analytics" })
+
+	<!-- ====================================
+		——— CONTENT WRAPPER
+		===================================== -->
+	<div class="content-wrapper">
+		<section class="content">
+			<div class="row">
+				<div class="col-md-12">
+					@@include('activity-graph.htm')
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xl-6 col-12">
+					@@include('user-acquisition.htm')
+				</div>
+				<div class="col-xl-6 col-12">
+					@@include('analytics-country.htm')
+				</div>
+			</div>
+
+			<div class="row">
+				<div class=" col-xl-4 ">
+					@@include('analytics-device.htm')
+				</div>
+				<div class=" col-xl-4 ">
+					@@include('page-view.htm')
+				</div>
+				<div class=" col-xl-4 ">
+					@@include('notification.htm')
+				</div>
+			</div>
+
+		</section>
+
+		@@include('footer.htm')

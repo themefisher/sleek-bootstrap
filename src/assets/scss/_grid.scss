@@ -1,0 +1,45 @@
+
+/* Custom Container */
+#page-container {
+  position: relative;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* Content Wrapper */
+.content-wrapper {
+  min-height: 100%;
+  background-color: #f5f6fa;
+  z-index: 800;
+  @include transition(margin-left 0.25s ease-in);
+
+  @include tablet {
+    margin-left: 250px;
+  }
+  .content {
+    min-height: 77vh;
+    padding: 30px 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    @include desktops {
+      padding: 30px 40px;
+    }
+    @include large-desktops {
+      padding: 40px 50px;
+    }
+    @include extra-large {
+      padding: 80px 100px;
+    }
+  }
+}
+
+.main-wrapper {
+  position: relative;
+  z-index: 1030;
+  overflow-x: hidden;
+  @include tablet {
+    overflow-x: auto;
+  }
+}

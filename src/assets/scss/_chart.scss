@@ -1,0 +1,68 @@
+/*===== 4.8 CHART =====*/
+.world-data-chart {
+  padding-left: 30px;
+  padding-right: 30px;
+  @include extra-large {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  &.bdr-bottom {
+    @include large-desktops {
+      border-bottom: 0;
+      border-right: 1px solid $border-color;
+    }
+  }
+}
+
+#linechart {
+  @include large-desktops {
+    min-height: 280px;
+  }
+}
+#doChart {
+  @include large-desktops {
+    min-height: 210px;
+  }
+}
+#polar,
+#radar {
+  min-height: 200px;
+  @include tablet {
+    min-height: 230px;
+  }
+  @include large-desktops {
+    min-height: 270px;
+    min-width: 100%;
+  }
+}
+#currentUser {
+  @include large-desktops {
+    min-height: 283px;
+  }
+}
+#activity {
+  @include large-desktops {
+    min-height: 280px;
+  }
+}
+
+#deviceChart {
+  min-height: 200px;
+  @include tablet {
+    min-height: 230px;
+  }
+}
+
+/* Coutom Lenged*/
+.customLegend li {
+  display: inline-block;
+  margin-right: 25px;
+  margin-top: 30px;
+  span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    border-radius: 25px;
+  }
+}

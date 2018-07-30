@@ -1,0 +1,481 @@
+@@include('header.htm', { "title": "Sleek - Admin Dashboard Template", "className": "header-fixed sidebar-fixed sidebar-dark header-light" })
+<aside class="main-sidebar">
+	@@include('sidebar-with-footer.htm', { "parent": "ui-elements", "sub_parent": "components", "active": "button-dropdown" })
+</aside>
+
+	<!-- ====================================
+	——— CONTENT WRAPPER
+	===================================== -->
+	<div class="content-wrapper">
+		@@include('breadcrumb-custom.htm', { "parent": "UI Elements", "active": "Dropdowns" })
+		<div class="content">
+			<!-- First Row  -->
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="card card-default rounded bg-white bdr mb-4">
+						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+							<h4>Buttons With Dropdown </h4>
+						</div>
+						<div class="card-body">
+							<div class="dropdown d-inline-block mb-1">
+								<button class="btn btn-primary btn-square dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+								 aria-expanded="false">
+									Primary
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</div>
+							<div class="dropdown d-inline-block mb-1">
+								<button class="btn btn-secondary btn-square dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+								 aria-haspopup="true" aria-expanded="false">
+									Secondary
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</div>
+							<div class="dropdown d-inline-block mb-1">
+								<button class="btn btn-success btn-square dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+								 aria-expanded="false">
+									Success
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</div>
+							<div class="dropdown d-inline-block mb-1">
+								<button class="btn btn-info btn-square dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+								 aria-expanded="false">
+									Info
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</div>
+							<div class="dropdown d-inline-block mb-1">
+								<button class="btn btn-warning btn-square dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+								 aria-expanded="false">
+									Warning
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</div>
+							<div class="dropdown d-inline-block mb-1">
+								<button class="btn btn-danger btn-square dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+								 aria-expanded="false">
+									Danger
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="card card-default rounded bg-white bdr mb-4">
+						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+							<h4>Buttons With Dropdown </h4>
+						</div>
+						<div class="card-body">
+							<div class="dropdown d-inline-block mb-1">
+								<button class="btn btn-outline-primary btn-square dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+								 aria-haspopup="true" aria-expanded="false">
+									Primary
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</div>
+							<div class="dropdown d-inline-block mb-1">
+								<button class="btn btn-outline-secondary btn-square dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+								 aria-haspopup="true" aria-expanded="false">
+									Secondary
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</div>
+							<div class="dropdown d-inline-block mb-1">
+								<button class="btn btn-outline-success btn-square dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+								 aria-haspopup="true" aria-expanded="false">
+									Success
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</div>
+							<div class="dropdown d-inline-block mb-1">
+								<button class="btn btn-outline-info btn-square dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+								 aria-haspopup="true" aria-expanded="false">
+									Info
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</div>
+							<div class="dropdown d-inline-block mb-1">
+								<button class="btn btn-outline-warning btn-square dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+								 aria-haspopup="true" aria-expanded="false">
+									Warning
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</div>
+							<div class="dropdown d-inline-block mb-1">
+								<button class="btn btn-outline-danger btn-square dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+								 aria-haspopup="true" aria-expanded="false">
+									Danger
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Split Buttons -->
+				<div class="col-lg-6">
+					<div class="card card-default rounded bg-white bdr mb-4">
+						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+							<h4>Split Buttons Dropdown</h4>
+						</div>
+						<div class="card-body">
+							<div class="btn-group mb-1">
+								<button type="button" class="btn btn-primary btn-square">Primary</button>
+								<button type="button" class="btn btn-primary btn-square dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true"
+								 aria-expanded="false">
+									<span class="sr-only">Toggle Dropdown</span>
+								</button>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</div>
+							<div class="btn-group mb-1">
+								<button type="button" class="btn btn-secondary btn-square">Secondary</button>
+								<button type="button" class="btn btn-secondary btn-square dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true"
+								 aria-expanded="false">
+									<span class="sr-only">Toggle Dropdown</span>
+								</button>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</div>
+							<div class="btn-group mb-1">
+								<button type="button" class="btn btn-success btn-square">Success</button>
+								<button type="button" class="btn btn-success btn-square dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true"
+								 aria-expanded="false">
+									<span class="sr-only">Toggle Dropdown</span>
+								</button>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</div>
+							<div class="btn-group mb-1">
+								<button type="button" class="btn btn-info btn-square">Info</button>
+								<button type="button" class="btn btn-info btn-square dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true"
+								 aria-expanded="false">
+									<span class="sr-only">Toggle Dropdown</span>
+								</button>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</div>
+							<div class="btn-group mb-1">
+								<button type="button" class="btn btn-warning btn-square">Warning</button>
+								<button type="button" class="btn btn-warning btn-square dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true"
+								 aria-expanded="false">
+									<span class="sr-only">Toggle Dropdown</span>
+								</button>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</div>
+							<div class="btn-group mb-1">
+								<button type="button" class="btn btn-danger btn-square">Danger</button>
+								<button type="button" class="btn btn-danger btn-square dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true"
+								 aria-expanded="false">
+									<span class="sr-only">Toggle Dropdown</span>
+								</button>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="card card-default rounded bg-white bdr mb-4">
+						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+							<h4>Split Buttons Dropdown</h4>
+						</div>
+						<div class="card-body">
+							<div class="btn-group mb-1">
+								<button type="button" class="btn btn-outline-primary btn-square">Primary</button>
+								<button type="button" class="btn btn-outline-primary btn-square dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
+								 aria-haspopup="true" aria-expanded="false">
+									<span class="sr-only">Toggle Dropdown</span>
+								</button>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</div>
+							<div class="btn-group mb-1">
+								<button type="button" class="btn btn-outline-secondary btn-square">Secondary</button>
+								<button type="button" class="btn btn-outline-secondary btn-square dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
+								 aria-haspopup="true" aria-expanded="false">
+									<span class="sr-only">Toggle Dropdown</span>
+								</button>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</div>
+							<div class="btn-group mb-1">
+								<button type="button" class="btn btn-outline-success btn-square">Success</button>
+								<button type="button" class="btn btn-outline-success btn-square dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
+								 aria-haspopup="true" aria-expanded="false">
+									<span class="sr-only">Toggle Dropdown</span>
+								</button>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</div>
+							<div class="btn-group mb-1">
+								<button type="button" class="btn btn-outline-info btn-square">Info</button>
+								<button type="button" class="btn btn-outline-info btn-square dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
+								 aria-haspopup="true" aria-expanded="false">
+									<span class="sr-only">Toggle Dropdown</span>
+								</button>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</div>
+							<div class="btn-group mb-1">
+								<button type="button" class="btn btn-outline-warning btn-square">Warning</button>
+								<button type="button" class="btn btn-outline-warning btn-square dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
+								 aria-haspopup="true" aria-expanded="false">
+									<span class="sr-only">Toggle Dropdown</span>
+								</button>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</div>
+							<div class="btn-group mb-1">
+								<button type="button" class="btn btn-outline-danger btn-square">Danger</button>
+								<button type="button" class="btn btn-outline-danger btn-square dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
+								 aria-haspopup="true" aria-expanded="false">
+									<span class="sr-only">Toggle Dropdown</span>
+								</button>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Button Sizes -->
+				<div class="col-lg-6">
+					<div class="card card-default rounded bg-white bdr mb-4">
+						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+							<h4>Large Buttons Dropdown</h4>
+						</div>
+						<div class="card-body">
+							<div class="dropdown d-inline-block mb-1">
+								<button class="btn btn-primary btn-square btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+								 aria-haspopup="true" aria-expanded="false">
+									Primary
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</div>
+							<div class="dropdown d-inline-block mb-1">
+								<button class="btn btn-secondary btn-square btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+								 aria-haspopup="true" aria-expanded="false">
+									Secondary
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</div>
+							<div class="dropdown d-inline-block mb-1">
+								<button class="btn btn-success btn-square btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+								 aria-haspopup="true" aria-expanded="false">
+									Success
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</div>
+							<div class="dropdown d-inline-block mb-1">
+								<button class="btn btn-info btn-square btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+								 aria-haspopup="true" aria-expanded="false">
+									Info
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</div>
+							<div class="dropdown d-inline-block mb-1">
+								<button class="btn btn-warning btn-square btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+								 aria-haspopup="true" aria-expanded="false">
+									Warning
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</div>
+							<div class="dropdown d-inline-block mb-1">
+								<button class="btn btn-danger btn-square btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+								 aria-haspopup="true" aria-expanded="false">
+									Danger
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="card card-default rounded bg-white bdr mb-4">
+						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+							<h4>Large Buttons Dropdown</h4>
+						</div>
+						<div class="card-body">
+							<div class="dropdown d-inline-block mb-1">
+								<button class="btn btn-outline-primary btn-square btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+								 aria-haspopup="true" aria-expanded="false">
+									Primary
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</div>
+							<div class="dropdown d-inline-block mb-1">
+								<button class="btn btn-outline-secondary btn-square btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+								 aria-haspopup="true" aria-expanded="false">
+									Secondary
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</div>
+							<div class="dropdown d-inline-block mb-1">
+								<button class="btn btn-outline-success btn-square btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+								 aria-haspopup="true" aria-expanded="false">
+									Success
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</div>
+							<div class="dropdown d-inline-block mb-1">
+								<button class="btn btn-outline-info btn-square btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+								 aria-haspopup="true" aria-expanded="false">
+									Info
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</div>
+							<div class="dropdown d-inline-block mb-1">
+								<button class="btn btn-outline-warning btn-square btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+								 aria-haspopup="true" aria-expanded="false">
+									Warning
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</div>
+							<div class="dropdown d-inline-block mb-1">
+								<button class="btn btn-outline-danger btn-square btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+								 aria-haspopup="true" aria-expanded="false">
+									Danger
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	@@include('footer.htm')

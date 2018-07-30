@@ -1,0 +1,114 @@
+@@include('header.htm', { "title": "Sleek - Admin Dashboard Template", "className": "header-fixed sidebar-fixed sidebar-dark header-light" })
+<aside class="main-sidebar">
+	@@include('sidebar-with-footer.htm', { "parent": "ui-elements", "sub_parent": "components", "active": "popover" })
+</aside>
+
+	<!-- ====================================
+	——— CONTENT WRAPPER
+	===================================== -->
+	<div class="content-wrapper">
+		@@include('breadcrumb-custom.htm', { "parent": "UI Elements", "active": "Popover & Tooltips" })
+		<div class="content">
+			<!-- First Row  -->
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="card card-default rounded bg-white bdr mb-4">
+						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+							<h4>Basic Popover</h4>
+						</div>
+						<div class="card-body">
+							<button type="button" class="btn mb-1 btn-primary btn-pill" data-toggle="popover" title="Popover Title" data-content="Lorem ipsum dolor sit amet consectetur elit sed do.">Launch popover</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="card card-default rounded bg-white bdr mb-4">
+						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+							<h4>Basic Tooltip</h4>
+						</div>
+						<div class="card-body">
+							<button type="button" class="btn mb-1 btn-primary btn-pill" data-toggle="tooltip" title="Tooltip Title">Launch Tooltip</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="card card-default rounded bg-white bdr mb-4">
+						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+							<h4>Four Directions Popover </h4>
+						</div>
+						<div class="card-body">
+
+							<button type="button" class="btn mb-1 btn-info btn-pill" data-container="body" data-toggle="popover" data-placement="top"
+							 data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+								Popover on top
+							</button>
+
+							<button type="button" class="btn mb-1 btn-warning btn-pill" data-container="body" data-toggle="popover" data-placement="right"
+							 data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+								Popover on right
+							</button>
+
+							<button type="button" class="btn mb-1 btn-danger btn-pill" data-container="body" data-toggle="popover" data-placement="bottom"
+							 data-content="Vivamus
+								sagittis lacus vel augue laoreet rutrum faucibus.">
+								Popover on bottom
+							</button>
+
+							<button type="button" class="btn mb-1 btn-dark btn-pill" data-container="body" data-toggle="popover" data-placement="left"
+							 data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+								Popover on left
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="card card-default rounded bg-white bdr mb-4">
+						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+							<h4> Four Directions Tooltip</h4>
+						</div>
+						<div class="card-body">
+
+							<button type="button" class="btn mb-1 btn-pill btn-info" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+								Tooltip on top
+							</button>
+							<button type="button" class="btn mb-1 btn-pill btn-danger" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+								Tooltip on bottom
+							</button>
+							<button type="button" class="btn mb-1 btn-pill btn-warning" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+								Tooltip on right
+							</button>
+							<button type="button" class="btn mb-1 btn-pill btn-dark" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+								Tooltip on left
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="card card-default rounded bg-white bdr mb-4">
+						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+							<h4>Dismiss on Next Click Popover</h4>
+						</div>
+						<div class="card-body">
+
+							<button type="button" class="btn mb-1 btn-lg btn-success btn-pill" data-toggle="popover" data-trigger="focus" title="Popover Title"
+							 data-content="Lorem ipsum dolor sit amet consectetur elit sed do.">Launch popover</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="card card-default rounded bg-white bdr mb-4">
+						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+							<h4>Disabled elements</h4>
+						</div>
+						<div class="card-body">
+
+							<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Disabled tooltip">
+								<button class="btn mb-1 btn-success btn-lg btn-pill" style="pointer-events: none;" type="button" disabled>Disabled button</button>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	@@include('footer.htm')

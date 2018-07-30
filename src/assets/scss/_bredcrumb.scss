@@ -1,0 +1,88 @@
+/*===== 4.2 BREDCRUMB =====*/
+.breadcrumb {
+  background-color: transparent;
+  border: 1px solid $border-color;
+  padding: 18px 20px;
+  border-radius: 0;
+  border-top: 0;
+  .breadcrumb-item {
+    font-size: 15px;
+    a {
+      color: $primary-color;
+    }
+  }
+  &.breadcrumb-inverse {
+    border-color: rgb(76, 132, 255);
+    background-color: rgba(228, 237, 255,0.6);
+    .breadcrumb-item {
+      color: $primary-color;
+      &:before {
+        color: inherit;
+      }
+    }
+  }
+  &.breadcrumb-primary {
+    border-color: $primary-color;
+    background-color: $primary-color;
+    .breadcrumb-item, .breadcrumb-item a {
+      color: $white-color;
+    }
+    .breadcrumb-item:before {
+      color: $white-color;
+    }
+  }
+  &.breadcrumb-pink {
+    border-color: $pink;
+    background-color: $pink;
+    .breadcrumb-item, .breadcrumb-item a {
+      color: $white-color;
+    }
+    .breadcrumb-item:before {
+      color: $white-color;
+    }
+  }
+  &.breadcrumb-success {
+    border-color: $success;
+    background-color: $success;
+    .breadcrumb-item, .breadcrumb-item a {
+      color: $white-color;
+    }
+    .breadcrumb-item:before {
+      color: $white-color;
+    }
+  }
+  &.breadcrumb-danger {
+    border-color: $danger;
+    background-color: $danger;
+    .breadcrumb-item, .breadcrumb-item a {
+      color: $white-color;
+    }
+    .breadcrumb-item:before {
+      color: $white-color;
+    }
+  }
+  &.breadcrumb-warning {
+    border-color: $warning;
+    background-color: $warning;
+    .breadcrumb-item, .breadcrumb-item a {
+      color: $white-color;
+    }
+    .breadcrumb-item:before {
+      color: $white-color;
+    }
+  }
+  &.breadcrumb-info {
+    border-color: $info;
+    background-color: $info;
+    .breadcrumb-item, .breadcrumb-item a {
+      color: $white-color;
+    }
+    .breadcrumb-item:before {
+      color: $white-color;
+    }
+  }
+}
+.breadcrumb-item+.breadcrumb-item::before {
+  content: '\f105';
+  font-family: 'FontAwesome';
+}

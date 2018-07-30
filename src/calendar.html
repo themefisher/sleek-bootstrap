@@ -1,0 +1,24 @@
+@@include('header.htm', { "title": "Sleek - Admin Dashboard Template", "className": "header-fixed sidebar-fixed sidebar-dark header-light"
+})
+<aside class="main-sidebar">
+	@@include('sidebar-with-footer.htm', { "parent": "apps", "sub_parent": "", "active": "calendar" })
+</aside>
+
+	<!-- ====================================
+		——— CONTENT WRAPPER
+		===================================== -->
+	<div class="content-wrapper">
+		<div class="content">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="p-4 p-md-5 rounded bg-white bdr">
+						<h4 class="pb-5 text-title d-inline-block">Calendar</h4>
+						<button class="btn btn-pill btn-primary float-right">
+							<i class="fa fa-plus"></i> Add Event</button>
+						<div id='calendar'></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		@@include('footer.htm')

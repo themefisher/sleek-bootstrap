@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- SITE TITTLE -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>@@title</title>
+
+  <!-- PLUGINS CSS STYLE -->
+  <link href="assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/libs/toaster/toastr.min.css" rel="stylesheet">
+  <link href="assets/libs/nprogress/nprogress.css" rel="stylesheet">
+  <link href="assets/libs/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/libs/thfont/css/fontello.css" rel="stylesheet">
+  <link href="assets/libs/flag-icons/css/flag-icon.min.css" rel="stylesheet">
+  <link href="assets/libs/jvectormap/jquery-jvectormap-2.0.3.css" rel="stylesheet">
+  <link href="assets/libs/slimscrollbar/prettify/prettify.css" rel="stylesheet">
+  <link href="assets/libs/ladda/ladda.min.css" rel="stylesheet">
+  <link href="assets/libs/fullcalendar/fullcalendar.min.css" rel="stylesheet">
+  <link href="assets/libs/dropzone/dropzone.css" rel="stylesheet">
+  <link href="assets/libs/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/libs/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/libs/codemirror/codemirror.css" rel="stylesheet">
+  <link href="assets/libs/codemirror/addon/hint/show-hint.css" rel="stylesheet">
+  <link href="assets/libs/dataTables/jquery.dataTables.min.css" rel="stylesheet">
+  <link href="assets/libs/select2/css/select2.min.css" rel="stylesheet">
+  <link href="assets/libs/bootstrap-markdown/css/bootstrap-markdown.min.css" rel="stylesheet">
+  <link href="assets/libs/animate/animate.css" rel="stylesheet">
+  <link href="assets/libs/prism/prism.css" rel="stylesheet" type="text/css">
+  <link href="assets/libs/daterangepicker/daterangepicker.css" rel="stylesheet">
+
+  <!-- SLEEK CSS -->
+  <link href="assets/css/sleek.css" rel="stylesheet">
+
+  <!-- FAVICON -->
+  <link href="assets/img/favicon.png" rel="shortcut icon">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <script src="assets/libs/nprogress/nprogress.js"></script>
+</head>
+<!-- page-header-fixed
+sidebar-fixed
+dark-theme -->
+
+<body class="" id="body">
+
+  <script>
+    NProgress.configure({ showSpinner: false });
+    NProgress.start();
+  </script>
+
+  <div id="page-container" class="@@className">
+    <!-- ====================================
+    ——— HEADER
+    ===================================== -->
+    <header class="main-header " id="header">
+      <nav class="navbar navbar-static-top">
+        <!-- Sidebar toggle button-->
+        <button id="sidebar-toggler" class="sidebar-toggle" role="button">
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+        <!-- search form -->
+        <form action="#" method="get" class="search-form hidden-xs">
+          <div class="input-group">
+            <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+              <i class="icon-search"></i>
+            </button>
+            <input type="text" name="query" class="form-control" placeholder="Search & Enter......" autofocus>
+          </div>
+        </form>
+
+        <div class="navbar-custom-menu">
+          <ul class="nav navbar-nav list-inline ">
+            <!-- Notifications -->
+            <li class="dropdown list-inline-item notifications-menu">
+              <button href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="icon-nitification-bell"></i>
+              </button>
+              <ul class="dropdown-menu">
+                <li class="header">You have 5 notifications</li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-user-plus"></i> New user registered
+                    <span class=" font-size-12 d-inline-block float-right"><i class="fa fa-clock-o"></i> 10 AM</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-user-secret"></i> User deleted
+                    <span class=" font-size-12 d-inline-block float-right"><i class="fa fa-clock-o"></i> 07 AM</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-line-chart"></i> Sales report is ready
+                    <span class=" font-size-12 d-inline-block float-right"><i class="fa fa-clock-o"></i> 12 PM</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-superpowers"></i> New client
+                    <span class=" font-size-12 d-inline-block float-right"><i class="fa fa-clock-o"></i> 10 AM</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-server"></i> Server overloaded
+                    <span class=" font-size-12 d-inline-block float-right"><i class="fa fa-clock-o"></i> 05 AM</span>
+                  </a>
+                </li>
+                <li class="dropdown-footer">
+                  <a class="text-center" href="#">
+                    View All
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <!-- User Account -->
+            <li class="dropdown list-inline-item user-menu">
+              <button href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                <img src="assets/img/user/user.png" class="user-image" alt="User Image">
+                <span class="d-none d-lg-inline-block">Abdus Salam</span>
+              </button>
+              <ul class="dropdown-menu">
+                <!-- User image -->
+                <li class="header">
+                  <img src="assets/img/user/user.png" class="img-circle" alt="User Image">
+                  <div class="d-inline-block">
+                    Abdus Salam
+                    <small class="pt-1">abdus@gmail.com</small>
+                  </div>
+                </li>
+
+                <li>
+                  <a href="profile.html">
+                    <i class="icon-user"></i> My Profile</a>
+                </li>
+                <li>
+                  <a href="email-inbox.html">
+                    <i class="icon-envelope"></i> Message </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="icon-diamond"></i> Projects </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="icon-gear"></i> Account Setting </a>
+                </li>
+
+                <li class="dropdown-footer">
+                  <a href="signin.html">
+                    <i class="fa fa-sign-out"></i> Log Out </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>

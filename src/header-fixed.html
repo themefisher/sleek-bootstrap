@@ -1,0 +1,38 @@
+@@include('header.htm', { "title": "Sleek - Admin Dashboard Template", "className": "header-fixed sidebar-fixed sidebar-dark header-light" })
+<aside class="main-sidebar">
+	@@include('sidebar-with-footer.htm', { "parent": "layouts", "sub_parent": "header", "active": "header-fixed" })
+</aside>
+
+	<!-- ====================================
+	——— CONTENT WRAPPER
+	===================================== -->
+	<div class="content-wrapper">
+		@@include('breadcrumb-custom.htm', { "parent": "Layouts", "active": "Header Fixed" })
+
+		<div class="content">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="card card-default mb-4 bdr mt-3 mt-md-0 bg-white">
+						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+							<h4>Header Fixed </h4>
+						</div>
+						<div class="card-body">
+							<blockquote class="blockquote">
+								<p class="mb-0">Add class
+									<code>header-fixed</code> to
+									<code>&lt;div id="page-container"&gt;</code> like below.</p>
+							</blockquote>
+							<pre class="mb-0">
+		<code class="language-markup">
+			&lt;div id="page-container" class="header-fixed"&gt;
+		</code>
+							</pre>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+	@@include('footer.htm')

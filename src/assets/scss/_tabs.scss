@@ -1,0 +1,169 @@
+/*===== 4.24 TABS =====*/
+.nav-tabs .nav-item {
+  .nav-link {
+    color: $title-color;
+    font-weight: 500;
+    padding: 12px 20px;
+  }
+  .nav-link.active {
+    color: $primary-color;
+  }
+  .nav-link.disabled {
+    color: $text-color;
+    &:hover {
+      cursor:not-allowed;
+    }
+  }
+}
+.nav-pills .nav-item {
+  .nav-link {
+    color: $title-color;
+    padding: 12px 20px;
+  }
+  .nav-link.active {
+    color: $white-color;
+    background: $primary-color;
+  }
+  .nav-link.disabled {
+    color: $text-color;
+    &:hover {
+      cursor:not-allowed;
+    }
+  }
+}
+.tab-pane {
+  line-height: 1.8;
+}
+// Custom Tab style - Fill
+.nav-style-fill.nav-pills {
+  border: 2px solid $border-color;
+  border-radius: 6px;
+  overflow: hidden;
+  .nav-link {
+    border-radius: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .nav-link.active,
+  .show>.nav-link {
+    color: $primary-color;
+    background-color: #f5f6fa;
+  }
+}
+
+.nav-tabs.nav-style-border {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  @include tablet {
+    padding-bottom: 0;
+  }
+  @include extra-large {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .nav-item {
+    margin-right: 15px;
+    @include tablet {
+      margin-right: 35px;
+    }
+    @include large-desktops {
+      margin-right: 50px;
+      margin-bottom: 0px;
+    }
+    @include extra-large {
+      margin-right: 80px;
+    }
+
+    .nav-link {
+      padding: 0 0 20px 0;
+      color: $text-color;
+      position: relative;
+      .type-name {
+        display: block;
+      }
+      &:after {
+        content: '';
+        position:  absolute;
+        bottom: 14px;
+        left: 0;
+        height:  2px;
+        background: #4c84ff;
+        width:  100%;
+        opacity: 0;
+        visibility: hidden;
+        @include transition(all 0.3s ease-in);
+        @include mobile {
+          bottom: -1px;
+        }
+      }
+      &.active {
+        &:after {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+      &:hover,
+      &.active {
+        border-color: transparent;
+        background-color: transparent;
+      }
+    }
+  }
+  .nav-item:first-child {
+    @include tablet {
+      margin-bottom: 15px;
+    }
+    @include desktops {
+      margin-bottom: 0;
+    }
+  }
+  .nav-item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+// ==================== Vertical Tabs =====================
+.nav-tabs.nav-stacked {
+  margin-right: 0;
+  border-bottom: 0;
+  border-right: none;
+  @include tablet {
+    border-right: 1px solid $border-color;
+    padding-right: 0;
+  }
+}
+.nav-tabs.nav-stacked {
+  .nav-item {
+    margin: 0 !important;
+    float: none !important;
+    display: block !important;
+    .nav-link {
+      padding: 12px 15px;
+      margin-right: 0px;
+      border-right: 0px;
+      border-color: $border-color;
+      i {
+        padding-right: 10px;
+      }
+      border: 0px;
+      margin-right: -1px;
+      &.active {
+        border: 1px solid $border-color;
+        @include tablet {
+          border-right: 0px;
+          border-radius: 0px;
+          border-top-left-radius: 6px;
+          border-bottom-left-radius: 6px;
+          &:before {
+            top: 0;
+            width: 2px;
+            height: 100%;
+            bottom: 0px;
+          }
+        }
+      }
+    }
+  }
+}

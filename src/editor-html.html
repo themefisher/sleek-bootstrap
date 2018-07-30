@@ -1,0 +1,22 @@
+@@include('header.htm', { "title": "Sleek - Admin Dashboard Template", "className": "header-fixed sidebar-fixed sidebar-dark header-light" })
+<aside class="main-sidebar">
+  @@include('sidebar-with-footer.htm', { "parent": "apps", "sub_parent": "editors", "active": "editor-html" })
+</aside>
+
+  <!-- ====================================
+	——— CONTENT WRAPPER
+	===================================== -->
+  <div class="content-wrapper">
+    <div class="content min-height-vh83">
+      <!-- First Row  -->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="p-4 p-md-5 rounded bg-white bdr">
+            <h4 class="pb-5 text-title d-inline-block">HTML Editor</h4>
+            <div id="code-editor"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  @@include('footer.htm')

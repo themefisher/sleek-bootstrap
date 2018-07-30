@@ -1,0 +1,20 @@
+
+.icon-burger:before { content: '\e800'; } /* '' */
+.icon-burger-mini:before { content: '\e801'; } /* '' */
+.icon-chart:before { content: '\e802'; } /* '' */
+.icon-folder:before { content: '\e803'; } /* '' */
+.icon-form:before { content: '\e804'; } /* '' */
+.icon-gallery-grid:before { content: '\e805'; } /* '' */
+.icon-nitification-bell:before { content: '\e806'; } /* '' */
+.icon-page:before { content: '\e807'; } /* '' */
+.icon-search:before { content: '\e808'; } /* '' */
+.icon-widget:before { content: '\e809'; } /* '' */
+.icon-diamond:before { content: '\e80a'; } /* '' */
+.icon-envelope:before { content: '\e80b'; } /* '' */
+.icon-gear:before { content: '\e80c'; } /* '' */
+.icon-user:before { content: '\e80d'; } /* '' */
+.icon-arrow-down:before { content: '\e80e'; } /* '' */
+.icon-arrow-up:before { content: '\e80f'; } /* '' */
+.icon-calender:before { content: '\e810'; } /* '' */
+.icon-cart:before { content: '\e811'; } /* '' */
+.icon-ticket:before { content: '\e812'; } /* '' */

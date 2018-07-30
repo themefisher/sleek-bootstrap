@@ -1,0 +1,196 @@
+
+/* CSS Document */
+
+/*............................................ Start Select Box ....................................*/
+
+.sbHolder { width:96px; height:33px; float:left; position:relative; font-family: 'MyriadProSemibold'; font-size:14px; color:#613c40 !important; font-weight:normal; background:#ffffff; border:1px solid #9c9c9c; margin-right:10px;/*  -webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;  */
+}
+.sbSelector { width:94px; height:34px; position:absolute; top:0; left:0; display:block; line-height:34px; outline:none; overflow:hidden; text-indent:20px;
+}
+/*.sbSelector:link, .sbSelector:visited, .sbSelector:hover { color:#00f; outline:none; text-decoration:none;
+}*/
+/*.sbToggle { width:14px; height:10px; position:absolute; top:14px; right:15px; display:block; outline:none; background:url(../images/arrow-down-1.png) no-repeat;
+}*/
+.sbToggle:hover {
+}
+.sbToggleOpen {
+}
+.sbToggleOpen:hover {
+}
+.sbHolderDisabled { background:none; border:none;
+}
+.sbHolderDisabled .sbHolder {
+}
+.sbHolderDisabled .sbToggle {
+}
+.sbOptions { width:96px !important; position:absolute; right:-1px !important; top:32px; padding:0; list-style:none; z-index:1; overflow-y:auto; background:#ffffff; border:1px solid #9c9c9c;/*  -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; */ max-height:inherit !important; margin-top: -1px;
+}
+.sbOptions li { padding:0px 0px 0px 0px;
+}
+.sbOptions a { display:block; font-size:14px; font-family: 'MyriadProSemibold'; color:#000000; line-height:16px; outline:none; padding:6px 0px 6px 20px; border-bottom:none;
+}
+.sbOptions a:link, .sbOptions a:visited { text-decoration:none;
+}
+.sbOptions li.last a { border-bottom:none;
+}
+.sbOptions .sbDisabled { display:block; color:#484848; padding:0px 0px 0px 0px; border-bottom:none;
+}
+.sbOptions .sbGroup { display:block; color:#484848; font-weight:normal; padding:0px 0px 0px 0px; border-bottom:none;
+}
+.sbOptions .sbSub { padding-left:0px;
+}
+
+/*............................................ End Select Box ....................................*/
+
+
+.requerd .sbHolder { border:1px solid #c83157;}
+.inc-color .sbHolder { border:1px solid #e6e6e6;}
+
+
+/*............................................ Start Select Box2 ....................................*/
+.stblk_1 .sbHolder { border:1px solid #e6e6e6;}
+.stblk_1 .sbOptions { width:96px !important; position:absolute; right:0px !important; top:32px; padding:0; list-style:none; z-index:1; overflow-y:auto; background:#ffffff; border:1px solid #f3f3f3; -webkit-border-radius: 5px 5px 5px 5px;-moz-border-radius: 5px 5px 5px 5px;border-radius: 5px 5px 5px 5px; max-height:inherit !important;}
+
+/*............................................ Start Select Box3 ....................................*/
+.set_order-rt .sbHolder { border:1px solid #e6e6e6;width:226px; margin-right:0px;}
+.set_order-rt .sbOptions { width:226px !important; position:absolute; right:0px !important; top:32px; padding:0; list-style:none; z-index:1; overflow-y:auto; background:#ffffff; border:1px solid #f3f3f3; -webkit-border-radius: 0 0 5px 5px;-moz-border-radius: 0 0 5px 5px;border-radius: 0 0 5px 5px; max-height:inherit !important;}
+.set_order-rt .sbOptions { width:226px !important; position:absolute; right:0px !important; top:32px; padding:0; list-style:none; z-index:1; overflow-y:auto; background:#ffffff; border:1px solid #f3f3f3; -webkit-border-radius: 5px 5px 5px 5px;-moz-border-radius: 5px 5px 5px 5px;border-radius: 5px 5px 5px 5px; max-height:inherit !important;}
+
+.set_order-rt .sbSelector { width:225px; height:34px; position:absolute; top:0; left:0; display:block; line-height:34px; outline:none; overflow:hidden; text-indent:20px;}
+
+
+.set_order-rt2 .sbHolder { border:1px solid #e6e6e6;width:226px;}
+.set_order-rt2 .sbOptions { width:226px !important; position:absolute; right:0px !important; top:32px; padding:0; list-style:none; z-index:1; overflow-y:auto; background:#ffffff; border:1px solid #f3f3f3; -webkit-border-radius: 0 0 5px 5px;-moz-border-radius: 0 0 5px 5px;border-radius: 0 0 5px 5px; max-height:inherit !important;}
+.set_order-rt2 .sbOptions { width:226px !important; position:absolute; right:0px !important; top:32px; padding:0; list-style:none; z-index:1; overflow-y:auto; background:#ffffff; border:1px solid #f3f3f3; -webkit-border-radius: 5px 5px 5px 5px;-moz-border-radius: 5px 5px 5px 5px;border-radius: 5px 5px 5px 5px; max-height:inherit !important;}
+.set_order-rt2 .sbSelector { width:225px; height:34px; position:absolute; top:0; left:0; display:block; line-height:34px; outline:none; overflow:hidden; text-indent:20px;}
+
+
+.set_order-rt3 .sbHolder { border:1px solid #e6e6e6;width:183px;}
+.set_order-rt3 .sbOptions { width:183px !important; position:absolute; right:0px !important; top:32px; padding:0; list-style:none; z-index:1; overflow-y:auto; background:#ffffff; border:1px solid #f3f3f3; -webkit-border-radius: 0 0 5px 5px;-moz-border-radius: 0 0 5px 5px;border-radius: 0 0 5px 5px; max-height:inherit !important;}
+.set_order-rt3 .sbOptions { width:183px !important; position:absolute; right:0px !important; top:32px; padding:0; list-style:none; z-index:1; overflow-y:auto; background:#ffffff; border:1px solid #f3f3f3; -webkit-border-radius: 5px 5px 5px 5px;-moz-border-radius: 5px 5px 5px 5px;border-radius: 5px 5px 5px 5px; max-height:inherit !important;}
+.set_order-rt3 .sbSelector { width:180px; height:34px; position:absolute; top:0; left:0; display:block; line-height:34px; outline:none; overflow:hidden; text-indent:20px;}
+
+
+.left_content_blk2.bbq{
+	height: auto;
+}
+
+/*custom style*/
+
+/* TIME SELECT BOX */
+.timeSelect{
+	margin-bottom: 20px;
+}
+.timeSelect .sbHolder, .timeSelect .sbSelector{
+	width: 100% !important;
+	height: 43px !important;
+}
+
+.timeSelect .sbHolder{
+	background-color: transparent;
+	border: none;
+	margin: 0;
+	border-radius: 0;
+	border: 1px solid #dedede;
+}
+.timeSelect .sbSelector:link, .timeSelect .sbSelector:visited, .timeSelect .sbSelector:hover{
+	color: #666666 !important;
+  text-transform: uppercase;
+}
+.timeSelect .sbSelector{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	line-height: 44px;
+	text-indent: 18px;
+}
+.timeSelect .sbToggle {
+	/*background: rgba(0, 0, 0, 0) url("images/light-drop.png") no-repeat scroll 0 0;*/
+	height: 6px;
+	right: 10px;
+	top: 18px;
+	width: 9px;
+}
+.timeSelect .sbOptions{
+	width: 100% !important;
+	background-color: #ffffff;
+	border: 1px solid #dedede;
+	right: 0 !important;
+	border-radius: 0;
+	z-index: 100;
+}
+.timeSelect .sbOptions li{
+	padding: 4px;
+	border-bottom: 1px solid #dedede;
+}
+.timeSelect .sbOptions li:last-child{
+	border-bottom: none;
+}
+.timeSelect .sbOptions a{
+	color: #969696 !important;
+	font-family: "Montserrat",sans-serif;
+	font-size: 12px;
+	padding: 11px 17px;
+	text-transform: uppercase;
+}
+.timeSelect .sbOptions a:hover{
+    color: #ec5598 !important;
+    background-color: #dedede;
+}
+
+/* COUNTRY SELECT BOX */
+.selectOptions{
+	margin-bottom: 20px;
+}
+.selectOptions .sbHolder, .selectOptions .sbSelector{
+	width: 100% !important;
+	height: 43px !important;
+}
+
+.selectOptions .sbHolder{
+	background-color: transparent;
+	border: none;
+	margin: 0;
+	border-radius: 0;
+	border: 1px solid #dedede;
+}
+/*.selectOptions .sbSelector:link, .selectOptions .sbSelector:visited, .selectOptions .sbSelector:hover{
+	color: #666666 !important;
+  text-transform: uppercase;
+}*/
+.selectOptions .sbSelector{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	line-height: 44px;
+	text-indent: 18px;
+}
+.selectOptions .sbToggle {
+	/*background: rgba(0, 0, 0, 0) url("images/light-drop.png") no-repeat scroll 0 0;*/
+	height: 6px;
+	right: 10px;
+	top: 18px;
+	width: 9px;
+}
+.selectOptions .sbOptions{
+	width: 100% !important;
+	background-color: #ffffff;
+	border: 1px solid #dedede;
+	right: 0 !important;
+	border-radius: 0;
+	z-index: 100;
+}
+.selectOptions .sbOptions li{
+	padding: 4px;
+	border-bottom: 1px solid #dedede;
+}
+.selectOptions .sbOptions li:last-child{
+	border-bottom: none;
+}
+.selectOptions .sbOptions a{
+	font-family: 'Lato', sans-serif;
+	font-size: 12px;
+	padding: 11px 17px;
+	text-transform: uppercase;
+}
+.selectOptions .sbOptions a:hover{
+
+}

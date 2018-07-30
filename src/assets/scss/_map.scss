@@ -1,0 +1,48 @@
+/* ======== 4.28 MAP ======== */
+.map-container {
+  height: 400px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.info-title {
+  color: $title-color;
+  padding: 5px;
+}
+
+/* ===== Vector Map Zoom In And Zoom Out Button ===== */
+.jvectormap-zoomin,
+.jvectormap-zoomout {
+  background-color: $primary-color;
+}
+
+/* ======== VECTOR MAP ======== */
+/* Vector Map World */
+.vector-map-world {
+  padding-bottom: 0 !important;
+  height: 300px;
+  @include tablet {
+    height: 360px;
+  }
+  @include large-desktops {
+    height: 360px;
+  }
+  @include extra-large {
+    height: 365px;
+  }
+}
+
+/* Vector Map World 2 */
+.vector-map-world-2 {
+  padding-bottom: 0 !important;
+  height: 300px;
+  @include tablet {
+    height: 360px;
+  }
+  @include large-desktops {
+    height: 360px;
+  }
+  @include extra-large {
+    height: 350px;
+  }
+}
