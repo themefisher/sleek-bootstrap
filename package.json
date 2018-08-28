@@ -26,6 +26,6 @@
     "gulp-inject-string": "^1.1.0"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0"
+    "bootstrap": "^4.1.3"
   }
 }
