@@ -79,7 +79,7 @@ tbody tr td:first-child {
     font-weight: 400;
     padding: 0 30px 20px 0;
     color: $text-color;
-    @include tablet {
+    @include media-breakpoint-up(md) {
       font-size: 17px;
     }
   }
@@ -88,7 +88,7 @@ tbody tr td:first-child {
     vertical-align: middle;
     margin: 10px 0 10px;
     font-size: 13px;
-    @include tablet {
+    @include media-breakpoint-up(md) {
       font-size: 15px;
     }
     a:hover {
@@ -188,10 +188,10 @@ tbody tr td:first-child {
   }
   .media {
     margin-top: 35px;
-    @include large-desktops {
+    @include media-breakpoint-up(xl) {
       margin-top: 45px;
     }
-    @include extra-large {
+    @include media-breakpoint-up(xxl) {
       margin-top: 35px;
     }
     .media-body {

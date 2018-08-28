@@ -2,12 +2,12 @@
 .world-data-chart {
   padding-left: 30px;
   padding-right: 30px;
-  @include extra-large {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
+  // @include media-breakpoint-up(xxl) {
+  //   padding-left: 50px;
+  //   padding-right: 50px;
+  // }
   &.bdr-bottom {
-    @include large-desktops {
+    @include media-breakpoint-up(xl) {
       border-bottom: 0;
       border-right: 1px solid $border-color;
     }
@@ -15,40 +15,40 @@
 }
 
 #linechart {
-  @include large-desktops {
+  @include media-breakpoint-up(xl) {
     min-height: 280px;
   }
 }
 #doChart {
-  @include large-desktops {
+  @include media-breakpoint-up(xl) {
     min-height: 210px;
   }
 }
 #polar,
 #radar {
   min-height: 200px;
-  @include tablet {
+  @include media-breakpoint-up(md) {
     min-height: 230px;
   }
-  @include large-desktops {
+  @include media-breakpoint-up(xl) {
     min-height: 270px;
     min-width: 100%;
   }
 }
 #currentUser {
-  @include large-desktops {
+  @include media-breakpoint-up(xl) {
     min-height: 283px;
   }
 }
 #activity {
-  @include large-desktops {
+  @include media-breakpoint-up(xl) {
     min-height: 280px;
   }
 }
 
 #deviceChart {
   min-height: 200px;
-  @include tablet {
+  @include media-breakpoint-up(md) {
     min-height: 230px;
   }
 }

@@ -35,11 +35,9 @@ ul{
 p{
   font-weight: 400;
   margin-bottom: 0;
-  @include mobile-xs {
-    font-size: 15px;
-    line-height: 1.2;
-  }
-  @include tablet {
+	font-size: 15px;
+	line-height: 1.2;
+  @include media-breakpoint-up(md) {
 	  font-size: 15px;
   }
 }

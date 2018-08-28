@@ -11,13 +11,13 @@
   left: 0;
   top: 0;
   bottom: 0;
-  @include tablet {
+  @include media-breakpoint-up(md) {
     width: 250px;
   }
 }
 .sidebar {
   z-index: -1;
-  @include tablet {
+  @include media-breakpoint-up(md) {
     z-index: 1050;
   }
   position: absolute;
@@ -32,7 +32,7 @@
     overflow: hidden;
     background-color: $primary-color;
     z-index: 1060;
-    @include tablet {
+    @include media-breakpoint-up(md) {
       padding-left: 25px;
     }
   }
@@ -195,13 +195,13 @@
   position: absolute;
   z-index: 1050;
 
-  @include tablet {
+  @include media-breakpoint-up(md) {
     width: 75px;
   }
   .logo {
     padding-left: 20px;
     .logo-title {
-      @include tablet {
+      @include media-breakpoint-up(md) {
         opacity: 0;
         position: absolute;
       }
@@ -213,7 +213,7 @@
     position: absolute;
     opacity: 1;
 
-    @include tablet {
+    @include media-breakpoint-up(md) {
       opacity: 0;
     }
   }
@@ -237,7 +237,7 @@
 }
 
 .sidebar-minified .sidebar:hover {
-  @include tablet {
+  @include media-breakpoint-up(md) {
     width: 250px;
     .sidebar-progress {
       transition: opacity 0.3s ease-in-out 0.3s;
@@ -270,7 +270,7 @@
   }
 }
 .sidebar-minified .content-wrapper {
-  @include tablet {
+  @include media-breakpoint-up(md) {
     margin-left: 75px;
   }
 }
@@ -307,7 +307,7 @@
   }
 
   .sidebar-progress {
-    @include tablet {
+    @include media-breakpoint-up(md) {
       position: fixed;
       left: 0;
       bottom: 0;
@@ -315,7 +315,7 @@
       padding-top: 30px;
       padding-bottom: 10px;
     }
-    @include extra-large {
+    @include media-breakpoint-up(xxl) {
       padding-top: 25px;
     }
   }
@@ -352,7 +352,7 @@
 
 /* sidebar Collapse */
 .sidebar-collapse {
-  @include tablet {
+  @include media-breakpoint-up(md) {
     .sidebar {
       margin-left: -250px;
       @include transition(margin-left 0.3s ease-in);
@@ -368,7 +368,7 @@
 
 /* sidebar Out Collapse */
 .sidebar-collapse-out {
-  @include tablet {
+  @include media-breakpoint-up(md) {
     .sidebar {
       margin-left: 0px;
       @include transition(margin-left .3s );
@@ -393,7 +393,7 @@
     border: 0px;
     cursor: pointer;
     border-right: 1px solid $border-color;
-    @include tablet {
+    @include media-breakpoint-up(md) {
     }
     &:before {
       content: "\e800";

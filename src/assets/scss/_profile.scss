@@ -2,7 +2,7 @@
 --> 9. PROFILE
 ========================================= */
 .profile-content-right {
-  @include desktops {
+  @include media-breakpoint-up(lg) {
     border-top: 0px;
     border-left: 1px solid $border-color;
   }

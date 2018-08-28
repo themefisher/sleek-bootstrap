@@ -93,13 +93,13 @@
   .dropdown-menu {
     padding-top: 10px;
     padding-bottom: 10px;
-    @include desktops {
+    @include media-breakpoint-up(lg) {
       padding-top: 20px;
       padding-bottom: 20px;
     }
     .dropdown-item {
       padding: 10px 15px;
-      @include desktops {
+      @include media-breakpoint-up(lg) {
         padding: 10px 30px;
       }
       a {

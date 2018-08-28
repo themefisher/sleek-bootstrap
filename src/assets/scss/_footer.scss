@@ -12,13 +12,13 @@
   padding-left: 20px;
   padding-top: 30px;
   padding-bottom: 30px;
-  @include desktops {
+  @include media-breakpoint-up(lg) {
     padding-left: 43px;
   }
-  @include large-desktops {
+  @include media-breakpoint-up(xl) {
     padding-left: 55px;
   }
-  @include extra-large {
+  @include media-breakpoint-up(xxl) {
     padding-left: 100px;
   }
   p {

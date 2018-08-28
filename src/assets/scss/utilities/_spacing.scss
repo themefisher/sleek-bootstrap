@@ -44,7 +44,7 @@
 }
 .pt-100 {
   padding-top: 70px;
-  @include desktops {
+  @include media-breakpoint-up(lg) {
     padding-top: 100px;
   }
 }

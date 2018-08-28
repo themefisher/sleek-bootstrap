@@ -17,7 +17,7 @@
     padding: 12px;
     margin: 0 5px;
     border-radius: 0px;
-    @include tablet {
+    @include media-breakpoint-up(md) {
       padding: 16px 20px;
     }
   }

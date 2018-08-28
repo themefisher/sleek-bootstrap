@@ -33,7 +33,7 @@
       margin-bottom: 20px;
       font-weight: 500;
       font-size: 26px;
-      @include desktops {
+      @include media-breakpoint-up(lg) {
         font-size: 36px;
       }
       text-transform: capitalize;
@@ -98,7 +98,7 @@
       border: 1px solid #e5e5e5;
       font-weight: 500;
 
-      @include large-desktops {
+      @include media-breakpoint-up(xl) {
         width: 130px;
         height: 130px;
         line-height: 128px;
@@ -126,7 +126,7 @@
 .error-wrapper {
   padding-top: 75px;
   padding-bottom: 75px;
-  @include desktops {
+  @include media-breakpoint-up(lg) {
     padding-top: 175px;
     padding-bottom: 175px;
   }

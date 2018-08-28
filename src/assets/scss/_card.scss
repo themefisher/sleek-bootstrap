@@ -15,7 +15,7 @@
   .card-header {
     padding-left: 30px;
     padding-right: 30px;
-    @include extra-large {
+    @include media-breakpoint-up(xxl) {
       padding-left: 50px;
       padding-right: 50px;
     }
@@ -26,7 +26,7 @@
   }
   .card-body {
     padding: 30px 30px;
-    @include extra-large {
+    @include media-breakpoint-up(xxl) {
       padding: 50px 50px;
     }
     p {
@@ -37,7 +37,7 @@
     border-top: 1px solid $border-color;
     padding-left: 30px;
     padding-right: 30px;
-    @include extra-large {
+    @include media-breakpoint-up(xxl) {
       padding-left: 50px;
       padding-right: 50px;
     }
@@ -63,7 +63,7 @@
 
 /*Card md*/
 .card-md {
-  @include desktops {
+  @include media-breakpoint-up(lg) {
     height: 560px;
     overflow: hidden;
   }
@@ -87,14 +87,14 @@
   .card-header {
     padding-left: 30px;
     padding-right: 30px;
-    @include extra-large {
+    @include media-breakpoint-up(xxl) {
       padding-left: 50px;
       padding-right: 50px;
     }
   }
   .card-body {
     padding: 30px 30px;
-    @include extra-large {
+    @include media-breakpoint-up(xxl) {
       padding: 50px 50px;
     }
   }
@@ -102,7 +102,7 @@
     border-top: 1px solid $border-color;
     padding-left: 30px;
     padding-right: 30px;
-    @include extra-large {
+    @include media-breakpoint-up(xxl) {
       padding-left: 50px;
       padding-right: 50px;
     }

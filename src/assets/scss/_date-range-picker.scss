@@ -2,7 +2,7 @@
 .daterangepicker {
   .ranges {
     ul {
-      @include desktops {
+      @include media-breakpoint-up(lg) {
         padding-top: 20px;
         padding-bottom: 20px;
         width: auto;

@@ -1,6 +1,6 @@
 /*===== 4.26 DATA TABLE =====*/
 .table-responsive-large {
-  @include large-desktops {
+  @include media-breakpoint-up(xl) {
     display: inline-table;
   }
 }
@@ -31,7 +31,7 @@
     font-size: 15px;
   }
 
-  @include desktops {
+  @include media-breakpoint-up(lg) {
     float: right;
     text-align: right;
   }
@@ -74,11 +74,11 @@ table.dataTable {
 .dataTables_wrapper .dataTables_info,
 .dataTables_wrapper .dataTables_paginate {
   margin-top: 25px;
-  @include tablet {
+  @include media-breakpoint-up(md) {
     float: none;
     text-align: center;
   }
-  @include desktops {
+  @include media-breakpoint-up(lg) {
     float: right;
     text-align: unset;
   }
@@ -101,7 +101,7 @@ table.dataTable {
   padding: 2px 7px;
   color: $text-color!important;
 
-  @include tablet {
+  @include media-breakpoint-up(md) {
     margin-left: 8px;
     margin-bottom: 5px;
     padding: 5px 12px;
@@ -132,7 +132,7 @@ table.dataTable {
     border: 1px solid $border-color;
     color: $text-color;
     font-weight: 400;
-    @include desktops {
+    @include media-breakpoint-up(lg) {
       margin-bottom: 10px;
       padding: 10px 15px;
     }
