@@ -35,11 +35,9 @@ ul{
 p{
   font-weight: 400;
   margin-bottom: 0;
-  @include mobile-xs {
-    font-size: 15px;
-    line-height: 1.2;
-  }
-  @include tablet {
+	font-size: 15px;
+	line-height: 1.2;
+  @include media-breakpoint-up(md) {
 	  font-size: 15px;
   }
 }
@@ -50,7 +48,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 ::selection {
-  background-color: $primary-color;
+  background-color: $primary;
   color: $white-color;
 }
 button,

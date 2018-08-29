@@ -29,8 +29,8 @@
   left: 0;
   @include transition(all 0.3s ease-in);
   &:hover {
-    border-color: rgba($primary-color, 0.5);
-    background-color: rgba($primary-color, 0.2);
+    border-color: rgba($primary, 0.5);
+    background-color: rgba($primary, 0.2);
     cursor: pointer;
   }
 }

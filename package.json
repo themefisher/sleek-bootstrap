@@ -1,26 +1,9 @@
 {
-  "name": "sleek-dashboard",
-  "version": "1.0.0",
-  "description": "Premium & Free Bootstrap 4 admin dashboard template by TAFcoder.com",
-  "author": "TAF Coder<hello@tafcoder.com> (https://tafcoder.com/)",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tafcoder/sleek-dashboard.git"
-  },
-  "homepage": "https://demo.tafcoder.com/sleek",
-  "license": "MIT",
-  "keywords": [
-    "css",
-    "sass",
-    "bootstrap",
-    "admin",
-    "dashboard",
-    "responsive",
-    "front-end"
-  ],
-  "scripts": {
-    "start": "gulp"
-  },
+  "name": "html-theme-dev",
+  "version": "1.1.0",
+  "description": "For HTML SCSS & bootstrap theme development",
+  "author": "Abdus Salam",
+  "license": "Copyright of iamAbdus.com",
   "devDependencies": {
     "browser-sync": "^2.10.0",
     "gulp": "^4.0.0",
@@ -35,5 +18,7 @@
     "gulp-sourcemaps": "^2.6.0",
     "gulp-uglify": "^3.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "bootstrap": "^4.1.3"
+  }
 }

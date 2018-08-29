@@ -6,7 +6,7 @@
     font-weight: 400;
 
     &:hover {
-      background: $primary-color;
+      background: $primary;
       box-shadow: 0px 10px 18px rgba(55, 103, 208, 0.2);
     }
   }
@@ -21,7 +21,7 @@
       &:hover {
         color: $title-color;
          > i {
-           color: $primary-color;
+           color: $primary;
          }
       }
     }
@@ -29,7 +29,7 @@
     &.active a {
       color: $title-color;
        > i {
-         color: $primary-color;
+         color: $primary;
        }
     }
 
@@ -39,19 +39,19 @@
       right: 0;
       padding: 6px 12px;
       font-size: 13px;
-      color: $primary-color;
+      color: $primary;
       border-color: transparent;
       background: $sand;
     }
   }
 }
 .email-body {
-  @include desktops {
+  @include media-breakpoint-up(lg) {
     border-left: 1px solid $border-color;
   }
 
   .head-options .btn-group {
-    @include tablet {
+    @include media-breakpoint-up(md) {
       float: right;
     }
     .btn {
@@ -59,9 +59,9 @@
       color: $title-color;
 
       &:hover {
-        background: $primary-color;
+        background: $primary;
         color: $white-color;
-        border-color: $primary-color;
+        border-color: $primary;
         box-shadow: 0px 10px 18px rgba(55, 103, 208, 0.2);
       }
     }
@@ -72,7 +72,7 @@
       padding: 20px 10px;
       white-space: nowrap;
       vertical-align: middle;
-      @include desktops {
+      @include media-breakpoint-up(lg) {
         white-space: normal;
       }
 
@@ -91,7 +91,7 @@
 .email-content {
   > .email-img img {
     max-width: 120px;
-    @include large-desktops {
+    @include media-breakpoint-up(xl) {
       max-width: 150px;
     }
   }

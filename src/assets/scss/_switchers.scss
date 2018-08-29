@@ -52,8 +52,8 @@ input[type=radio] {
 // ========> Switch context properties
 .switch-primary {
   > .switch-input:checked~.switch-label {
-    background-color: $primary-color!important;
-    border-color: $primary-color;
+    background-color: $primary!important;
+    border-color: $primary;
   }
   > .switch-input:checked~.switch-handle {
     border-color: transparent;
@@ -114,13 +114,13 @@ input[type=radio] {
 .switch-primary-outline {
   > .switch-input:checked~.switch-label {
     background-color: $white-color!important;
-    border-color: $primary-color;
+    border-color: $primary;
   }
   .switch-input:checked~.switch-label:after {
-    color: $primary-color;
+    color: $primary;
   }
   > .switch-input:checked~.switch-handle {
-    border-color: $primary-color;
+    border-color: $primary;
   }
 }
 .switch-secondary-outline {
@@ -188,14 +188,14 @@ input[type=radio] {
 .switch-primary-outline-alt {
   > .switch-input:checked~.switch-label {
     background-color: $white-color!important;
-    border-color: $primary-color;
+    border-color: $primary;
   }
   .switch-input:checked~.switch-label:after {
-    color: $primary-color;
+    color: $primary;
   }
   > .switch-input:checked~.switch-handle {
-    background-color: $primary-color;
-    border-color: $primary-color;
+    background-color: $primary;
+    border-color: $primary;
   }
 }
 .switch-secondary-outline-alt {

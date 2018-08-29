@@ -1,6 +1,6 @@
 /*===== 4.26 DATA TABLE =====*/
 .table-responsive-large {
-  @include large-desktops {
+  @include media-breakpoint-up(xl) {
     display: inline-table;
   }
 }
@@ -31,7 +31,7 @@
     font-size: 15px;
   }
 
-  @include desktops {
+  @include media-breakpoint-up(lg) {
     float: right;
     text-align: right;
   }
@@ -74,11 +74,11 @@ table.dataTable {
 .dataTables_wrapper .dataTables_info,
 .dataTables_wrapper .dataTables_paginate {
   margin-top: 25px;
-  @include tablet {
+  @include media-breakpoint-up(md) {
     float: none;
     text-align: center;
   }
-  @include desktops {
+  @include media-breakpoint-up(lg) {
     float: right;
     text-align: unset;
   }
@@ -101,23 +101,23 @@ table.dataTable {
   padding: 2px 7px;
   color: $text-color!important;
 
-  @include tablet {
+  @include media-breakpoint-up(md) {
     margin-left: 8px;
     margin-bottom: 5px;
     padding: 5px 12px;
   }
 
   &.current {
-    background: $primary-color;
-    border-color: $primary-color;
+    background: $primary;
+    border-color: $primary;
     color: $white-color!important;
     &:hover, &:focus, &:active {
       color: $white-color!important;
     }
   }
   &:hover, &:focus, &:active {
-    background: rgba($primary-color, 0.9)!important;
-    border-color: $primary-color!important;
+    background: rgba($primary, 0.9)!important;
+    border-color: $primary!important;
   }
 }
 
@@ -132,13 +132,13 @@ table.dataTable {
     border: 1px solid $border-color;
     color: $text-color;
     font-weight: 400;
-    @include desktops {
+    @include media-breakpoint-up(lg) {
       margin-bottom: 10px;
       padding: 10px 15px;
     }
     &:hover, &:focus, &:active {
-      background: $primary-color;
-      border-color: $primary-color;
+      background: $primary;
+      border-color: $primary;
       color: $white-color;
       cursor: pointer;
       @include box-shadow(0px, 10px, 18px,rgba(55, 103, 208, 0.2));

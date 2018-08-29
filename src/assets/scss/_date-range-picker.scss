@@ -2,7 +2,7 @@
 .daterangepicker {
   .ranges {
     ul {
-      @include desktops {
+      @include media-breakpoint-up(lg) {
         padding-top: 20px;
         padding-bottom: 20px;
         width: auto;
@@ -14,7 +14,7 @@
       font-size: 14px;
     }
     li.active {
-      background-color: $primary-color;
+      background-color: $primary;
     }
   }
   &:before,
@@ -25,15 +25,15 @@
     padding: 0 20px;
   }
   td.in-range {
-    background-color: rgba($primary-color, .1);
+    background-color: rgba($primary, .1);
   }
   td.active,
   td.active:hover{
-    background-color: $primary-color;
+    background-color: $primary;
   }
   td.available:hover,
    {
-    background-color: $primary-color;
+    background-color: $primary;
     color: $white-color;
   }
 

@@ -51,7 +51,7 @@
     height: 75px;
     cursor: pointer;
     border-right: 1px solid $border-color;
-    @include tablet {
+    @include media-breakpoint-up(md) {
     }
     &:before {
       content: "\e800";
@@ -68,7 +68,7 @@
     height: 75px;
     cursor: pointer;
     border-right: 1px solid $border-color;
-    @include tablet {
+    @include media-breakpoint-up(md) {
     }
     &:before {
       content: "\e800";
@@ -102,7 +102,7 @@
       border: none;
       background: transparent;
       padding: 8px 15px;
-      @include extra-large {
+      @include media-breakpoint-up(xxl) {
         min-width: 500px;
       }
     }
@@ -111,7 +111,7 @@
     flex-wrap: nowrap;
   }
   .navbar-custom-menu {
-    @include desktops {
+    @include media-breakpoint-up(lg) {
       padding-right: 30px;
     }
     .navbar-nav {
@@ -130,16 +130,16 @@
             color: #b7c0cd;
             display: inline-block;
             line-height: 75px;
-            @include tablet {
+            @include media-breakpoint-up(md) {
               padding-left: 16px;
               padding-right: 5px;
             }
-            @include desktops {
+            @include media-breakpoint-up(lg) {
               padding-left: 20px;
               padding-right: 10px;
             }
             &:after {
-              border: 3px solid $primary-color;
+              border: 3px solid $primary;
               content: '';
               margin: 0px;
               position: relative;
@@ -154,7 +154,7 @@
             width: 275px;
             right: 0px;
 
-            @include tablet {
+            @include media-breakpoint-up(md) {
               width: 300px;
             }
           }
@@ -200,7 +200,7 @@
     padding: 0 0 0 0;
     margin: 0;
     top: 100%;
-    @include tablet {
+    @include media-breakpoint-up(md) {
       width: 250px;
     }
 
@@ -345,7 +345,7 @@
     }
   }
   .navbar {
-    @include tablet {
+    @include media-breakpoint-up(md) {
       margin-left: 75px;
     }
   }

@@ -10,7 +10,7 @@ tbody tr td:first-child {
   color: $title-color;
 }
 .table-primary {
-  background-color: rgba($primary-color, 0.6);
+  background-color: rgba($primary, 0.6);
   color: $title-color;
 }
 .table-info {
@@ -54,7 +54,7 @@ tbody tr td:first-child {
 .table-borderless tbody tr a.link {
   color: $title-color;
   &:hover {
-    color: $primary-color;
+    color: $primary;
   }
 }
 
@@ -79,7 +79,7 @@ tbody tr td:first-child {
     font-weight: 400;
     padding: 0 30px 20px 0;
     color: $text-color;
-    @include tablet {
+    @include media-breakpoint-up(md) {
       font-size: 17px;
     }
   }
@@ -88,11 +88,11 @@ tbody tr td:first-child {
     vertical-align: middle;
     margin: 10px 0 10px;
     font-size: 13px;
-    @include tablet {
+    @include media-breakpoint-up(md) {
       font-size: 15px;
     }
     a:hover {
-      color: $primary-color!important;
+      color: $primary!important;
     }
   }
   tbody tr {
@@ -145,7 +145,7 @@ tbody tr td:first-child {
     color: $white-color;
     font-size: 16px;
     &.cat-1 {
-      background-color: $primary-color;
+      background-color: $primary;
     }
     &.cat-2 {
       background-color: $success;
@@ -163,7 +163,7 @@ tbody tr td:first-child {
       color: $title-color;
       display: inline-block;
       &:hover {
-        color: $primary-color;
+        color: $primary;
       }
     }
     p {
@@ -188,10 +188,10 @@ tbody tr td:first-child {
   }
   .media {
     margin-top: 35px;
-    @include large-desktops {
+    @include media-breakpoint-up(xl) {
       margin-top: 45px;
     }
-    @include extra-large {
+    @include media-breakpoint-up(xxl) {
       margin-top: 35px;
     }
     .media-body {
@@ -206,7 +206,7 @@ tbody tr td:first-child {
         }
       }
       a:hover {
-        color: $primary-color;
+        color: $primary;
       }
       > p {
         margin-bottom: 5px;

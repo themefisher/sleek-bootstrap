@@ -1,47 +1,6 @@
-/* ====== index ======
-1. UTILITIES
-2. NAVBAR
-3. SIDEBAR NAVIGATION
-4. COMPONENTS
-  4.1 ALERT
-  4.2 BREDCRUMB
-  4.3 BUTTONS
-  4.4 BUTTON SOCIAL
-  4.5 BUTTON LOADING
-  4.6 BADGE
-  4.7 CARD
-  4.8 CHART
-  4.9 CAROUSEL
-  4.10 CALENDAR
-  4.11 COLLAPSE
-  4.12 CARET
-  4.13 DATERANGEPICKER
-  4.14 FORMS
-  4.15 EDITORS
-  4.16 IOCNS
-  4.17 LIST GROUP
-  4.18 NAVS
-  4.19 PAGINATION
-  4.20 POPVER TOOLTIP
-  4.21 PROGRESSBAR
-  4.22 SPINNERS
-  4.23 SWITCHERS
-  4.24 TABS
-  4.25 TABLES
-  4.26 DATA TABLE
-  4.27 WIDGETS
-  4.28 MAP
-5. COMMINGSOON
-6. ERROR
-7. EMAIL
-8. INVOICE
-9. PROFILE
-10. FOOTER
-===================== */
+@import 'variables';
 
-@import 'partials/mixins';
-@import 'partials/variables';
-@import 'partials/media-query';
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
 
 @import 'reboot';
 @import 'utilities/display';

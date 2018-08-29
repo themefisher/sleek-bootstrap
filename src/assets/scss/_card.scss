@@ -15,7 +15,7 @@
   .card-header {
     padding-left: 30px;
     padding-right: 30px;
-    @include extra-large {
+    @include media-breakpoint-up(xxl) {
       padding-left: 50px;
       padding-right: 50px;
     }
@@ -26,7 +26,7 @@
   }
   .card-body {
     padding: 30px 30px;
-    @include extra-large {
+    @include media-breakpoint-up(xxl) {
       padding: 50px 50px;
     }
     p {
@@ -37,7 +37,7 @@
     border-top: 1px solid $border-color;
     padding-left: 30px;
     padding-right: 30px;
-    @include extra-large {
+    @include media-breakpoint-up(xxl) {
       padding-left: 50px;
       padding-right: 50px;
     }
@@ -63,7 +63,7 @@
 
 /*Card md*/
 .card-md {
-  @include desktops {
+  @include media-breakpoint-up(lg) {
     height: 560px;
     overflow: hidden;
   }
@@ -72,7 +72,7 @@
 /* Card Icon Info*/
 .card-icon-info {
   > i {
-    color: $primary-color;
+    color: $primary;
     font-size: 25px;
     display: inline-block;
   }
@@ -87,14 +87,14 @@
   .card-header {
     padding-left: 30px;
     padding-right: 30px;
-    @include extra-large {
+    @include media-breakpoint-up(xxl) {
       padding-left: 50px;
       padding-right: 50px;
     }
   }
   .card-body {
     padding: 30px 30px;
-    @include extra-large {
+    @include media-breakpoint-up(xxl) {
       padding: 50px 50px;
     }
   }
@@ -102,7 +102,7 @@
     border-top: 1px solid $border-color;
     padding-left: 30px;
     padding-right: 30px;
-    @include extra-large {
+    @include media-breakpoint-up(xxl) {
       padding-left: 50px;
       padding-right: 50px;
     }
@@ -147,7 +147,8 @@
         font-size: 15px;
         right: 25px;
         top: 50%;
-        @include transform(translateY(-50%));
+        transform: translateY(-50%);
+        // @include transform(translateY(-50%));
       }
     }
     .btn[aria-expanded="false"],
@@ -161,12 +162,12 @@
     .btn[aria-expanded="true"],
     a[aria-expanded="true"]{
       box-shadow: 0px 0px 19px rgba(229, 230, 235, 0.6)!important;
-      color: $primary-color;
+      color: $primary;
       border-bottom: 1px solid $border-color;
       &:after {
         content: "\f068";
         font-family: 'FontAwesome';
-        color: $primary-color;
+        color: $primary;
       }
     }
   }
@@ -192,7 +193,7 @@
       &:after {
         content: "\f068";
         font-family: 'FontAwesome';
-        color: $primary-color;
+        color: $primary;
       }
     }
   }
@@ -246,7 +247,7 @@
       &:after {
         content: "\f068";
         font-family: 'FontAwesome';
-        color: $primary-color;
+        color: $primary;
       }
     }
   }

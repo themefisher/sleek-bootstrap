@@ -1,5 +1,16 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1500px
+);
 
-$primary-color: #4c84ff;
+$primary: #4c84ff;
+
+
+$primary: #4c84ff;
 $title-color : #1b223c;
 $secondary-color: #b4bbcc;
 $white-color: #ffffff;
@@ -18,8 +29,8 @@ $danger: #fe5461;
 $inverse: #070707;
 $purple: #896def;
 
-@function tint($primary-color, $percentage) {
-  @return mix($primary-color, transparent, $percentage);
+@function tint($primary, $percentage) {
+  @return mix($primary, transparent, $percentage);
 }
 @function shade($color, $percentage) {
   @return mix(black, $color, $percentage);

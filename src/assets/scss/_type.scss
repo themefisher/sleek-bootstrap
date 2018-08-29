@@ -14,10 +14,10 @@ h3{
 h4{
   font-size: 17px;
   line-height: 1.1;
-  @include tablet {
+  @include media-breakpoint-up(md) {
     font-size: 20px;
   }
-  @include extra-large {
+  @include media-breakpoint-up(xxl) {
     font-size: 20px;
   }
 }
