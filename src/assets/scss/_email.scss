@@ -6,7 +6,7 @@
     font-weight: 400;
 
     &:hover {
-      background: $primary-color;
+      background: $primary;
       box-shadow: 0px 10px 18px rgba(55, 103, 208, 0.2);
     }
   }
@@ -21,7 +21,7 @@
       &:hover {
         color: $title-color;
          > i {
-           color: $primary-color;
+           color: $primary;
          }
       }
     }
@@ -29,7 +29,7 @@
     &.active a {
       color: $title-color;
        > i {
-         color: $primary-color;
+         color: $primary;
        }
     }
 
@@ -39,7 +39,7 @@
       right: 0;
       padding: 6px 12px;
       font-size: 13px;
-      color: $primary-color;
+      color: $primary;
       border-color: transparent;
       background: $sand;
     }
@@ -59,9 +59,9 @@
       color: $title-color;
 
       &:hover {
-        background: $primary-color;
+        background: $primary;
         color: $white-color;
-        border-color: $primary-color;
+        border-color: $primary;
         box-shadow: 0px 10px 18px rgba(55, 103, 208, 0.2);
       }
     }

@@ -13,7 +13,19 @@
       border-radius: 0px;
       padding: 15px 20px;
       font-size: 15px;
-      @include placeholder {
+      // @include placeholder {
+      //   color: $text-color;
+      // }
+      ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: $text-color;
+      }
+      ::-moz-placeholder { /* Firefox 19+ */
+        color: $text-color;
+      }
+      :-ms-input-placeholder { /* IE 10+ */
+        color: $text-color;
+      }
+      :-moz-placeholder { /* Firefox 18- */
         color: $text-color;
       }
     }

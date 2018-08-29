@@ -21,7 +21,8 @@
     z-index: 1050;
   }
   position: absolute;
-  @include transform(translateZ(0));
+  // @include transform(translateZ(0));
+  transform: translateZ(0);
   @include transition(width 0.3s ease-in-out);
   .logo {
     position: static;
@@ -30,7 +31,7 @@
     line-height: 75px;
     width: 100%;
     overflow: hidden;
-    background-color: $primary-color;
+    background-color: $primary;
     z-index: 1060;
     @include media-breakpoint-up(md) {
       padding-left: 25px;
@@ -72,7 +73,7 @@
   top: 0;
   width: 3px;
   height: 100%;
-  background: $primary-color;
+  background: $primary;
   opacity: 0;
 }
 .sidebar .nav > li.active > a:before {
@@ -92,7 +93,7 @@
   font-size: 20px;
 }
 .sidebar .nav > li.active > a i {
-  color: $primary-color;
+  color: $primary;
 }
 
 /* Caret styles */

@@ -23,10 +23,10 @@ label {
 .alert-primary {
   background-color: #e4edff;
   &.highlighted {
-    background-color: $primary-color;;
+    background-color: $primary;;
   }
   &.outlined {
-    border-color: $primary-color;;
+    border-color: $primary;;
   }
 }
 .alert-secondary {
@@ -122,7 +122,7 @@ label {
   margin-top: 65px;
   z-index: 999;
   .toast-success {
-    background-color: $primary-color;
+    background-color: $primary;
     opacity: 1;
   }
 }

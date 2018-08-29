@@ -12,7 +12,19 @@
     font-size: 15px;
     padding: 8px 17px;
     border-color: $border-color;
-    @include placeholder {
+    // @include placeholder {
+    //   color: $text-color;
+    // }
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: $text-color;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+      color: $text-color;
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+      color: $text-color;
+    }
+    :-moz-placeholder { /* Firefox 18- */
       color: $text-color;
     }
   }
@@ -115,8 +127,8 @@
 // Contextual Style ============
 .checkbox-primary .control-indicator,
 .radio-primary .control-indicator {
-  background: $primary-color;
-  border-color: $primary-color;
+  background: $primary;
+  border-color: $primary;
   &::after {
     color: $white-color;
     border-color: $white-color;
@@ -176,10 +188,10 @@
 .control.outlined.checkbox-primary .control-indicator,
 .control.outlined.radio-primary .control-indicator {
   background: transparent;
-  border-color: $primary-color;
+  border-color: $primary;
   &::after {
-    background: $primary-color;
-    border-color: $primary-color;
+    background: $primary;
+    border-color: $primary;
     color: $white-color;
   }
 }
@@ -236,7 +248,7 @@
     border-color: $border-color;
 
     &.bg-primary {
-      border-color: $primary-color;
+      border-color: $primary;
       color: $white-color;
     }
     &.bg-warning {
@@ -288,7 +300,7 @@
   border-color: $border-color;
 }
 .select2-container--default.select2-container--focus .select2-selection--multiple {
-  border-color: rgba($primary-color,0.5);
+  border-color: rgba($primary,0.5);
 }
 .select2-container--default .select2-selection--multiple .select2-selection__choice {
   border-color: #4c84ff;

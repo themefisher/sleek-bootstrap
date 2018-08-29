@@ -6,7 +6,7 @@
     padding: 12px 20px;
   }
   .nav-link.active {
-    color: $primary-color;
+    color: $primary;
   }
   .nav-link.disabled {
     color: $text-color;
@@ -22,7 +22,7 @@
   }
   .nav-link.active {
     color: $white-color;
-    background: $primary-color;
+    background: $primary;
   }
   .nav-link.disabled {
     color: $text-color;
@@ -46,7 +46,7 @@
   }
   .nav-link.active,
   .show>.nav-link {
-    color: $primary-color;
+    color: $primary;
     background-color: #f5f6fa;
   }
 }

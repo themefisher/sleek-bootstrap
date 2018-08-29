@@ -69,14 +69,14 @@
 }
 .btn-primary {
   color: $white-color;
-  background-color: $primary-color;
+  background-color: $primary;
   &:hover,
   &:active,
   &:not(:disabled):not(.disabled):active,
   &:not(:disabled):not(.disabled).active,
   &.active {
-    background-color: rgba($primary-color,0.9);
-    border-color: rgba($primary-color,0.9);
+    background-color: rgba($primary,0.9);
+    border-color: rgba($primary,0.9);
   }
 }
 .btn-secondary {
@@ -141,23 +141,23 @@
   }
 }
 .btn-link {
-  color: $primary-color;
+  color: $primary;
 }
 
 /* Outline Button */
 .btn-outline-primary {
-  color: $primary-color;
+  color: $primary;
   background-color: transparent;
   background-image: none;
-  border-color: $primary-color;
+  border-color: $primary;
   &:hover,
   &:active,
   &:not(:disabled):not(.disabled):active,
   &:not(:disabled):not(.disabled).active,
   &.active {
     color: $white-color;
-    background-color: $primary-color;
-    border-color: $primary-color;
+    background-color: $primary;
+    border-color: $primary;
   }
 }
 .btn-outline-secondary {
@@ -238,8 +238,8 @@
 /* Disable Button */
 .btn-primary.disabled,
 .btn-primary:disabled {
-  background-color: rgba($primary-color, 0.65);
-  border-color: rgba($primary-color, 0.35);
+  background-color: rgba($primary, 0.65);
+  border-color: rgba($primary, 0.35);
 }
 .btn-success.disabled,
 .btn-success:disabled {
@@ -496,9 +496,9 @@
   line-height: 28px;
   color: $text-color;
   &:hover {
-    border-color: $primary-color;
+    border-color: $primary;
     color: $white-color;
-    background: $primary-color;
+    background: $primary;
   }
 }
 /*===== 4.12 DROPDOWN =====*/
@@ -516,8 +516,8 @@
   vertical-align: middle;
 }
 .show>.btn-primary.dropdown-toggle {
-  background-color: rgba($primary-color,0.9);
-  border-color: rgba($primary-color,0.9);
+  background-color: rgba($primary,0.9);
+  border-color: rgba($primary,0.9);
   &:focus, &:active {
     box-shadow: none;
   }
@@ -560,8 +560,8 @@
 /* Button outline */
 .show>.btn-outline-primary.dropdown-toggle {
   color: $white-color;
-  background-color: $primary-color;
-  border-color: $primary-color;
+  background-color: $primary;
+  border-color: $primary;
 }
 .show>.btn-outline-secondary.dropdown-toggle {
   color: $title-color;
