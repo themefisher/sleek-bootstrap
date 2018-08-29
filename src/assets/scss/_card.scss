@@ -2,7 +2,7 @@
 .card {
   .card-header {
     h4{
-      color: $black-color;
+      color: $black;
       margin-bottom: 5px;
     }
   }
@@ -20,7 +20,7 @@
       padding-right: 50px;
     }
     h4{
-      color: $title-color;
+      color: $dark;
       margin-bottom: 5px;
     }
   }
@@ -50,7 +50,7 @@
   .card-body {
     padding: 26px;
     h3{
-      color: $title-color;
+      color: $dark;
     }
   }
   .chartjs-wrapper {
@@ -137,13 +137,13 @@
       padding: 25px;
       width: 100%;
       text-align: left;
-      color: $title-color;
+      color: $dark;
       border-radius:calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
       white-space: unset;
       @include transition(all 0.3s 0.2s ease-in);
       &:after {
         position: absolute;
-        color: $text-color;
+        color: $secondary;
         font-size: 15px;
         right: 25px;
         top: 50%;

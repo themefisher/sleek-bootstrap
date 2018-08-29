@@ -14,12 +14,12 @@
   ul li {
     position: relative;
     a {
-      color: $text-color;
+      color: $secondary;
       font-weight: 500;
       display: block;
 
       &:hover {
-        color: $title-color;
+        color: $dark;
          > i {
            color: $primary;
          }
@@ -27,7 +27,7 @@
     }
 
     &.active a {
-      color: $title-color;
+      color: $dark;
        > i {
          color: $primary;
        }
@@ -41,7 +41,7 @@
       font-size: 13px;
       color: $primary;
       border-color: transparent;
-      background: $sand;
+      background: $gray-100;
     }
   }
 }
@@ -56,11 +56,11 @@
     }
     .btn {
       font-size: 22px;
-      color: $title-color;
+      color: $dark;
 
       &:hover {
         background: $primary;
-        color: $white-color;
+        color: $white;
         border-color: $primary;
         box-shadow: 0px 10px 18px rgba(55, 103, 208, 0.2);
       }
@@ -83,7 +83,7 @@
     }
 
     tr.unread {
-      background: $sand;
+      background: $gray-100;
     }
   }
 }

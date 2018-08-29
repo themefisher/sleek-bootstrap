@@ -5,20 +5,20 @@ label {
 .alert {
   position: relative;
   padding: 20px 38px 20px 22px;
-  color: $title-color;
+  color: $dark;
   border-radius: 4px;
   border-color: $border-color;
   font-size: 15px;
   font-weight: 500;
   &.highlighted {
-    color: $white-color;
+    color: $white;
   }
   &.outlined {
     background-color: transparent;
   }
 }
 .alert-default {
-  background-color: $white-color;
+  background-color: $white;
 }
 .alert-primary {
   background-color: #e4edff;
@@ -30,12 +30,12 @@ label {
   }
 }
 .alert-secondary {
-  background-color: $secondary-color;
+  background-color: $secondary;
   &.highlighted {
-    background-color: $secondary-color;
+    background-color: $secondary;
   }
   &.outlined {
-    border-color: $secondary-color;
+    border-color: $secondary;
   }
 }
 .alert-success {
@@ -78,11 +78,11 @@ label {
   background-color: #f5f6fa;
   &.highlighted {
     background-color: #e9ebf1;
-    color: $title-color;
+    color: $dark;
   }
   &.outlined {
     border-color: #e9ebf1;
-    color: $title-color;
+    color: $dark;
   }
 }
 .alert-dark {
@@ -113,7 +113,7 @@ label {
 .alert-info:not(.outlined),
 .alert-dark:not(.outlined) {
   .close span {
-    color: rgba($white-color, .7);
+    color: rgba($white, .7);
   }
 }
 

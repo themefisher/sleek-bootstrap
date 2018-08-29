@@ -4,7 +4,7 @@
   font-size: 11px;
   line-height: 11px;
   text-transform: capitalize;
-  color: $white-color;
+  color: $white;
   font-weight: 500;
   &.badge-primary {
     background-color: $primary;
@@ -13,9 +13,9 @@
     background-color: $success;
   }
   &.badge-secondary {
-    background-color: $white-color;
-    border: 1px solid $secondary-color;
-    color: $text-color;
+    background-color: $white;
+    border: 1px solid $secondary;
+    color: $secondary;
   }
   &.badge-warning {
     background-color: $warning;
@@ -30,7 +30,7 @@
 .badge-default {
   display: inline-block;
   font-size: 75%;
-  color: $title-color;
+  color: $dark;
   background: #b4bbcc;
   line-height: 1;
   text-align: center;

@@ -68,7 +68,7 @@
   }
 }
 .btn-primary {
-  color: $white-color;
+  color: $white;
   background-color: $primary;
   &:hover,
   &:active,
@@ -80,20 +80,20 @@
   }
 }
 .btn-secondary {
-  color: $text-color;
-  background-color: $white-color;
+  color: $secondary;
+  background-color: $white;
   border-color: $border-color;
   &:hover,
   &:active,
   &:not(:disabled):not(.disabled):active,
   &:not(:disabled):not(.disabled).active,
   &.active {
-    background-color: rgba($white-color,0.9);
-    color: $text-color;
+    background-color: rgba($white,0.9);
+    color: $secondary;
   }
 }
 .btn-success {
-  color: $white-color;
+  color: $white;
   background-color: $success;
   &:hover,
   &:active,
@@ -105,7 +105,7 @@
   }
 }
 .btn-info {
-  color: $white-color;
+  color: $white;
   background-color: $info;
   &:hover,
   &:active,
@@ -117,7 +117,7 @@
   }
 }
 .btn-warning {
-  color: $white-color;
+  color: $white;
   background-color: $warning;
   &:hover,
   &:active,
@@ -129,7 +129,7 @@
   }
 }
 .btn-danger {
-  color: $white-color;
+  color: $white;
   background-color: $danger;
   &:hover,
   &:active,
@@ -155,13 +155,13 @@
   &:not(:disabled):not(.disabled):active,
   &:not(:disabled):not(.disabled).active,
   &.active {
-    color: $white-color;
+    color: $white;
     background-color: $primary;
     border-color: $primary;
   }
 }
 .btn-outline-secondary {
-  color:$text-color;
+  color:$secondary;
   background-color: transparent;
   background-image: none;
   border-color: $border-color;
@@ -170,7 +170,7 @@
   &:not(:disabled):not(.disabled):active,
   &:not(:disabled):not(.disabled).active,
   &.active {
-    color: $title-color;
+    color: $dark;
     background-color: $border-color;
     border-color: $border-color;
   }
@@ -185,7 +185,7 @@
   &:not(:disabled):not(.disabled):active,
   &:not(:disabled):not(.disabled).active,
   &.active {
-    color: $white-color;
+    color: $white;
     background-color: $success;
     border-color: $success;
   }
@@ -200,7 +200,7 @@
   &:not(:disabled):not(.disabled):active,
   &:not(:disabled):not(.disabled).active,
   &.active {
-    color: $white-color;
+    color: $white;
     background-color: $info;
     border-color: $info;
   }
@@ -215,7 +215,7 @@
   &:not(:disabled):not(.disabled):active,
   &:not(:disabled):not(.disabled).active,
   &.active {
-    color: $white-color;
+    color: $white;
     background-color: $warning;
     border-color: $warning;
   }
@@ -230,7 +230,7 @@
   &:not(:disabled):not(.disabled):active,
   &:not(:disabled):not(.disabled).active,
   &.active {
-    color: $white-color;
+    color: $white;
     background-color: $danger;
     border-color: $danger;
   }
@@ -282,7 +282,7 @@
 .btn-dropbox {
   position: relative;
   overflow: hidden;
-  color: $white-color;
+  color: $white;
   text-align: center;
   padding: 5px 10px;
   font-size: 15px;
@@ -317,7 +317,7 @@
 .btn-facebook:hover {
   background: #344e86;
   &.btn-outline {
-    color: $white-color;
+    color: $white;
     border-color: rgba(#3b5998, 1);
   }
 }
@@ -338,7 +338,7 @@
 .btn-twitter:hover {
   background: #0099d4;
   &.btn-outline {
-    color: $white-color;
+    color: $white;
     border-color: rgba(#00aced, 1);
   }
 }
@@ -355,7 +355,7 @@
 .btn-skype:hover {
   background: #00aff0;
   &.btn-outline {
-    color: $white-color;
+    color: $white;
     border-color: rgba(#00aff0, 1);
   }
 }
@@ -376,7 +376,7 @@
 .btn-linkedin:hover {
   background: #4169a2;
   &.btn-outline {
-    color: $white-color;
+    color: $white;
     border-color: rgba(#4875b4, 1);
   }
 }
@@ -397,7 +397,7 @@
 
 .btn-pinterest:hover {
   &.btn-outline {
-    color: $white-color;
+    color: $white;
     border-color: rgba(#cb2027, 1);
   }
   background: #b51d23;
@@ -419,7 +419,7 @@
 .btn-tumblr:hover {
   background: #2a435c;
   &.btn-outline {
-    color: $white-color;
+    color: $white;
     border-color: rgba(#32506d, 1);
   }
 }
@@ -440,7 +440,7 @@
 .btn-google-plus:hover {
   background: #c43d2b;
   &.btn-outline {
-    color: $white-color;
+    color: $white;
     border-color: rgba(#d34836, 1);
   }
 }
@@ -461,7 +461,7 @@
 .btn-dropbox:hover {
   background: #0070cc;
   &.btn-outline {
-    color: $white-color;
+    color: $white;
     border-color: rgba(#007ee5, 1);
   }
 }
@@ -482,7 +482,7 @@
 .btn-vimeo:hover {
   background: #a0cf3c;
   &.btn-outline {
-    color: $white-color;
+    color: $white;
     border-color: rgba(#aad450, 1);
   }
 }
@@ -494,10 +494,10 @@
 .social-button .btn {
   border-color: $border-color;
   line-height: 28px;
-  color: $text-color;
+  color: $secondary;
   &:hover {
     border-color: $primary;
-    color: $white-color;
+    color: $white;
     background: $primary;
   }
 }
@@ -523,8 +523,8 @@
   }
 }
 .show>.btn-secondary.dropdown-toggle {
-  background-color: rgba($white-color,0.9);
-  color: $title-color;
+  background-color: rgba($white,0.9);
+  color: $dark;
   &:focus, &:active {
     box-shadow: none;
   }
@@ -559,32 +559,32 @@
 }
 /* Button outline */
 .show>.btn-outline-primary.dropdown-toggle {
-  color: $white-color;
+  color: $white;
   background-color: $primary;
   border-color: $primary;
 }
 .show>.btn-outline-secondary.dropdown-toggle {
-  color: $title-color;
+  color: $dark;
   background-color: $border-color;
   border-color: $border-color;
 }
 .show>.btn-outline-success.dropdown-toggle {
-  color: $white-color;
+  color: $white;
   background-color: $success;
   border-color: $success;
 }
 .show>.btn-outline-info.dropdown-toggle {
-  color: $white-color;
+  color: $white;
   background-color: $info;
   border-color: $info;
 }
 .show>.btn-outline-warning.dropdown-toggle {
-  color: $white-color;
+  color: $white;
   background-color: $warning;
   border-color: $warning;
 }
 .show>.btn-outline-danger.dropdown-toggle {
-  color: $white-color;
+  color: $white;
   background-color: $danger;
   border-color: $danger;
 }

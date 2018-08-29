@@ -30,7 +30,7 @@
   padding: 10px 8px;
 }
 .ql-editor.ql-blank::before {
-  color: $text-color;
+  color: $secondary;
   content: attr(data-placeholder);
   font-style: normal;
   left: 20px;

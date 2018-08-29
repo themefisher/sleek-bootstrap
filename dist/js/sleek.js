@@ -1,1 +1,243 @@
-$(document).ready(function(){"use strict";function s(){document.querySelectorAll(".todo-single-item .fa").forEach(function(s){s.addEventListener("click",function(s){s.stopPropagation(),console.log(s),s.target.parentElement.classList.toggle("finished")})})}var e=function(s){if(!$(s).attr("data-init")){var e=$(s).attr("data-height"),a={height:e=e||$(s).height()};/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)?($(s).css("height",e),$(s).css("overflow-x","scroll")):$(s).slimScroll(a),$(s).attr("data-init",!0),$(".slimScrollBar").hide()}};if($("[data-scrollbar=true]").each(function(){e($(this))}),$(window).width()<768){var a=$(".mobile-sticky-body-overlay");$(".sidebar-toggle").on("click",function(s){s.preventDefault(),a.hasClass("active")?(a.removeClass("active"),$("body").css("overflow","auto")):(a.addClass("active"),$("body").css("overflow","hidden"))}),$(".mobile-sticky-body-overlay").on("click",function(s){$(this).removeClass("active"),$("#page-container").removeClass("sidebar-minified"),$("body").css("overflow","auto")})}!function(){var s=$(".sidebar").attr("data-disable-slide-animation")?0:250;$(".sidebar .nav > .has-sub > a").click(function(){var e=$(this).next(".sub-menu"),a=$(".sidebar .nav > li.has-sub > .sub-menu").not(e);$(a).closest("li").addClass("closing"),$(a).slideUp(s,function(){$(a).closest("li").addClass("closed").removeClass("expand closing")}),$(e).is(":visible")?$(e).closest("li").addClass("closing").removeClass("expand"):$(e).closest("li").addClass("expanding").removeClass("closed"),$(e).slideToggle(s,function(){var s=$(this).closest("li");$(e).is(":visible")?($(s).addClass("expand"),$(s).removeClass("closed")):($(s).addClass("closed"),$(s).removeClass("expand")),$(s).removeClass("expanding closing")})}),$(".sidebar .nav > .has-sub .sub-menu li.has-sub > a").click(function(){var e=$(this).next(".sub-menu");$(e).is(":visible")?$(e).closest("li").addClass("closing").removeClass("expand"):$(e).closest("li").addClass("expanding").removeClass("closed"),$(e).slideToggle(s,function(){var s=$(this).closest("li");$(e).is(":visible")?($(s).addClass("expand"),$(s).removeClass("closed")):($(s).addClass("closed"),$(s).removeClass("expand")),$(s).removeClass("expanding closing")})})}(),$(window).width()<768&&$(document).on("click",".sidebar-toggle",function(s){s.preventDefault();var e="sidebar-minified",a="sidebar-minified-out",i="#page-container";$(i).hasClass(e)?$(i).removeClass(e).addClass(a):($(i).addClass(e).removeClass(a),/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)&&($('#sidebar [data-scrollbar="true"]').css("margin-top","0"),$('#sidebar [data-scrollbar="true"]').css("overflow-x","scroll"))),$(window).trigger("resize")});var i=$("#page-container");if($(window).width()>=768){var l=!1,o=!1;$("#sidebar-toggler").on("click",function(){(i.hasClass("sidebar-fixed-offcanvas")||i.hasClass("sidebar-static-offcanvas"))&&($(this).addClass("sidebar-offcanvas-toggle").removeClass("sidebar-toggle"),!1===o?(i.addClass("sidebar-collapse"),o=!0,l=!1):(i.removeClass("sidebar-collapse"),i.addClass("sidebar-collapse-out"),setTimeout(function(){i.removeClass("sidebar-collapse-out")},1e3),o=!1)),(i.hasClass("sidebar-fixed")||i.hasClass("sidebar-static"))&&($(this).addClass("sidebar-toggle").removeClass("sidebar-offcanvas-toggle"),!1===l?(i.removeClass("sidebar-collapse sidebar-minified-out").addClass("sidebar-minified"),l=!0,o=!1):(i.removeClass("sidebar-minified"),i.addClass("sidebar-minified-out"),l=!1))})}if($(window).width()>=768&&$(window).width()<992&&(i.hasClass("sidebar-fixed")||i.hasClass("sidebar-static"))&&(i.removeClass("sidebar-collapse sidebar-minified-out").addClass("sidebar-minified"),l=!0),document.querySelector("#todo")){var d=document.querySelector("#todo-list"),t=document.querySelector("#todo-input"),n=t.querySelector("form"),r=n.querySelector("input");document.querySelector("#add-task").addEventListener("click",function(s){s.preventDefault(),t.classList.toggle("d-block"),r.focus()}),n.addEventListener("submit",function(e){e.preventDefault(),r.value.length<=0||(d.innerHTML='<div class="todo-single-item d-flex flex-row justify-content-between"><i class="fa"></i><span class="">'+r.value+'</span>"<span class="badge badge-primary">Today</span></div>'+d.innerHTML,r.value="",t.classList.toggle("d-block"),s())}),s()}});
+/* ====== Index ======
+
+1. SCROLLBAR SIDEBAR
+2. BACKDROP
+3. SIDEBAR MENU
+4. SIDEBAR TOGGLE FOR MOBILE
+5. SIDEBAR TOGGLE FOR VARIOUS SIDEBAR LAYOUT
+6. TODO LIST
+
+====== End ======*/
+
+$(document).ready(function() {
+  "use strict";
+
+  /*======== 1. SCROLLBAR SIDEBAR ========*/
+  var generateSlimScroll = function(e) {
+    if (!$(e).attr("data-init")) {
+      var a = $(e).attr("data-height"),
+        t = {
+          height: (a = a || $(e).height())
+        };
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      )
+        ? ($(e).css("height", a), $(e).css("overflow-x", "scroll"))
+        : $(e).slimScroll(t),
+        $(e).attr("data-init", !0),
+        $(".slimScrollBar").hide();
+    }
+  };
+  $("[data-scrollbar=true]").each(function() {
+    generateSlimScroll($(this));
+  });
+
+  /*======== 2. BACKDROP ========*/
+  if ($(window).width() < 768) {
+    var shadowClass = $(".mobile-sticky-body-overlay");
+    $(".sidebar-toggle").on("click", function(e) {
+      e.preventDefault();
+      if (!shadowClass.hasClass("active")) {
+        shadowClass.addClass("active");
+        $("body").css("overflow", "hidden");
+      } else {
+        shadowClass.removeClass("active");
+        $("body").css("overflow", "auto");
+      }
+    });
+
+    $(".mobile-sticky-body-overlay").on("click", function(e) {
+      $(this).removeClass("active");
+      $("#page-container").removeClass("sidebar-minified");
+      $("body").css("overflow", "auto");
+    });
+  }
+
+  /*======== 3. SIDEBAR MENU ========*/
+  (function() {
+    var e = $(".sidebar").attr("data-disable-slide-animation") ? 0 : 250;
+    $(".sidebar .nav > .has-sub > a").click(function() {
+      var firstMenu = $(this).next(".sub-menu"),
+        t = $(".sidebar .nav > li.has-sub > .sub-menu").not(firstMenu);
+      $(t)
+        .closest("li")
+        .addClass("closing"),
+        $(t).slideUp(e, function() {
+          $(t)
+            .closest("li")
+            .addClass("closed")
+            .removeClass("expand closing");
+        }),
+        $(firstMenu).is(":visible")
+          ? $(firstMenu)
+              .closest("li")
+              .addClass("closing")
+              .removeClass("expand")
+          : $(firstMenu)
+              .closest("li")
+              .addClass("expanding")
+              .removeClass("closed"),
+        $(firstMenu).slideToggle(e, function() {
+          var parentLi = $(this).closest("li");
+          $(firstMenu).is(":visible")
+            ? ($(parentLi).addClass("expand"),
+              $(parentLi).removeClass("closed"))
+            : ($(parentLi).addClass("closed"),
+              $(parentLi).removeClass("expand")),
+            $(parentLi).removeClass("expanding closing");
+        });
+    }),
+      $(".sidebar .nav > .has-sub .sub-menu li.has-sub > a").click(function() {
+        var secondMenu = $(this).next(".sub-menu");
+        $(secondMenu).is(":visible")
+          ? $(secondMenu)
+              .closest("li")
+              .addClass("closing")
+              .removeClass("expand")
+          : $(secondMenu)
+              .closest("li")
+              .addClass("expanding")
+              .removeClass("closed"),
+          $(secondMenu).slideToggle(e, function() {
+            var parentLi = $(this).closest("li");
+            $(secondMenu).is(":visible")
+              ? ($(parentLi).addClass("expand"),
+                $(parentLi).removeClass("closed"))
+              : ($(parentLi).addClass("closed"),
+                $(parentLi).removeClass("expand")),
+              $(parentLi).removeClass("expanding closing");
+          });
+      });
+  })();
+
+  /*======== 4. SIDEBAR TOGGLE FOR MOBILE ========*/
+  if ($(window).width() < 768) {
+    $(document).on("click", ".sidebar-toggle", function(e) {
+      e.preventDefault();
+      var a = "sidebar-minified",
+        mo = "sidebar-minified-out",
+        t = "#page-container";
+      $(t).hasClass(a)
+        ? $(t)
+            .removeClass(a)
+            .addClass(mo)
+        : ($(t)
+            .addClass(a)
+            .removeClass(mo),
+          /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+            navigator.userAgent
+          ) &&
+            ($('#sidebar [data-scrollbar="true"]').css("margin-top", "0"),
+            $('#sidebar [data-scrollbar="true"]').css("overflow-x", "scroll"))),
+        $(window).trigger("resize");
+    });
+  }
+
+  /*======== 5. SIDEBAR TOGGLE FOR VARIOUS SIDEBAR LAYOUT ========*/
+  var page_container = $("#page-container");
+  if ($(window).width() >= 768) {
+    var flag = false;
+    var flagOffCanvas = false;
+
+    $("#sidebar-toggler").on("click", function() {
+      if (
+        page_container.hasClass("sidebar-fixed-offcanvas") ||
+        page_container.hasClass("sidebar-static-offcanvas")
+      ) {
+        $(this)
+          .addClass("sidebar-offcanvas-toggle")
+          .removeClass("sidebar-toggle");
+        if (flagOffCanvas === false) {
+          page_container.addClass("sidebar-collapse");
+          flagOffCanvas = true;
+          flag = false;
+        } else {
+          page_container.removeClass("sidebar-collapse");
+          page_container.addClass("sidebar-collapse-out");
+          setTimeout(function() {
+            page_container.removeClass("sidebar-collapse-out");
+          }, 1000);
+          flagOffCanvas = false;
+        }
+      }
+
+      if (
+        page_container.hasClass("sidebar-fixed") ||
+        page_container.hasClass("sidebar-static")
+      ) {
+        $(this)
+          .addClass("sidebar-toggle")
+          .removeClass("sidebar-offcanvas-toggle");
+        if (flag === false) {
+          page_container
+            .removeClass("sidebar-collapse sidebar-minified-out")
+            .addClass("sidebar-minified");
+          flag = true;
+          flagOffCanvas = false;
+        } else {
+          page_container.removeClass("sidebar-minified");
+          page_container.addClass("sidebar-minified-out");
+          flag = false;
+        }
+      }
+    });
+  }
+
+  if ($(window).width() >= 768 && $(window).width() < 992) {
+    if (
+      page_container.hasClass("sidebar-fixed") ||
+      page_container.hasClass("sidebar-static")
+    ) {
+      page_container
+        .removeClass("sidebar-collapse sidebar-minified-out")
+        .addClass("sidebar-minified");
+      flag = true;
+    }
+  }
+
+  /*======== 6. TODO LIST ========*/
+  if (document.querySelector("#todo")) {
+    var list = document.querySelector("#todo-list"),
+      todoInput = document.querySelector("#todo-input"),
+      todoInputForm = todoInput.querySelector("form"),
+      item = todoInputForm.querySelector("input");
+
+    document.querySelector("#add-task").addEventListener("click", function(e) {
+      e.preventDefault();
+      todoInput.classList.toggle("d-block");
+      item.focus();
+    });
+
+    todoInputForm.addEventListener("submit", function(e) {
+      e.preventDefault();
+      if (item.value.length <= 0) {
+        return;
+      }
+      list.innerHTML =
+        '<div class="todo-single-item d-flex flex-row justify-content-between">' +
+        '<i class="fa"></i>' +
+        '<span class="">' +
+        item.value +
+        '</span>"' +
+        '<span class="badge badge-primary">Today</span>' +
+        "</div>" +
+        list.innerHTML;
+      item.value = "";
+      //Close input field
+      todoInput.classList.toggle("d-block");
+      todoCheckAll();
+    });
+
+    function todoCheckAll() {
+      var fas = document.querySelectorAll(".todo-single-item .fa");
+      fas.forEach(function(fa) {
+        fa.addEventListener("click", function(e) {
+          e.stopPropagation();
+          console.log(e);
+          e.target.parentElement.classList.toggle("finished");
+        });
+      });
+    }
+    todoCheckAll();
+  }
+});

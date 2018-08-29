@@ -19,7 +19,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 21px;
-  color: $text-color;
+  color: $secondary;
   font-weight: 400;
   overflow-x: hidden;
   overflow-y: auto;
@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6{
 
 ::selection {
   background-color: $primary;
-  color: $white-color;
+  color: $white;
 }
 button,
 a {

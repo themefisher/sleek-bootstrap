@@ -1,7 +1,7 @@
 /*===== 4.24 TABS =====*/
 .nav-tabs .nav-item {
   .nav-link {
-    color: $title-color;
+    color: $dark;
     font-weight: 500;
     padding: 12px 20px;
   }
@@ -9,7 +9,7 @@
     color: $primary;
   }
   .nav-link.disabled {
-    color: $text-color;
+    color: $secondary;
     &:hover {
       cursor:not-allowed;
     }
@@ -17,15 +17,15 @@
 }
 .nav-pills .nav-item {
   .nav-link {
-    color: $title-color;
+    color: $dark;
     padding: 12px 20px;
   }
   .nav-link.active {
-    color: $white-color;
+    color: $white;
     background: $primary;
   }
   .nav-link.disabled {
-    color: $text-color;
+    color: $secondary;
     &:hover {
       cursor:not-allowed;
     }
@@ -77,7 +77,7 @@
 
     .nav-link {
       padding: 0 0 20px 0;
-      color: $text-color;
+      color: $secondary;
       position: relative;
       .type-name {
         display: block;

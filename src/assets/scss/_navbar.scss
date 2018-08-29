@@ -39,12 +39,12 @@
     padding: 0px;
     border-bottom: 1px solid $border-color;
     @include transition(margin-left .3s ease-in-out);
-    background-color: $white-color;
+    background-color: $white;
   }
   .sidebar-toggle {
     background-color: transparent;
     background-image: none;
-    color: $secondary-color;
+    color: $secondary;
     font-size: 22px;
     padding: 0px 23px;
     border: 0px;
@@ -61,7 +61,7 @@
   .sidebar-offcanvas-toggle {
     background-color: transparent;
     background-image: none;
-    color: $secondary-color;
+    color: $secondary;
     font-size: 22px;
     padding: 0px 23px;
     border: 0px;
@@ -89,7 +89,7 @@
     .btn {
       background: transparent;
       border: none;
-      color: $text-color;
+      color: $secondary;
       font-size: 22px;
       padding: 5px;
       padding-top: 2px;
@@ -173,7 +173,7 @@
             display: inline-block;
             line-height: 75px;
             > span {
-              color: $title-color;
+              color: $dark;
               padding: 0 8px;
               font-size: 16px;
               font-weight: 500;
@@ -209,7 +209,7 @@
       border-top-right-radius: 4px;
       border-bottom-right-radius: 0;
       border-bottom-left-radius: 0;
-      background-color: $white-color;
+      background-color: $white;
       border-bottom: 1px solid $border-color;
       padding-bottom: 15px;
       padding: 20px 20px 10px;
@@ -225,12 +225,12 @@
       small {
         font-size: 13px;
         display: block;
-        color: $text-color;
+        color: $secondary;
       }
     }
     > li a {
       display: block;
-      color: $text-color;
+      color: $secondary;
       font-size: 14px;
       padding: 10px 20px;
 
@@ -251,7 +251,7 @@
       border-bottom-right-radius: 4px;
       border-top-right-radius: 0;
       border-top-left-radius: 0;
-      background-color: $white-color;
+      background-color: $white;
       border-top: 1px solid $border-color;
       margin-top: 10px;
       > a {
@@ -262,7 +262,7 @@
 
   .dropdown-item.active,
   .dropdown-item:active {
-    color: $text-color;
+    color: $secondary;
     background-color: transparent;
   }
 }
@@ -289,10 +289,10 @@
   background: $navy;
 
   .sidebar-toggle {
-    border-color: rgba($white-color,0.2);
+    border-color: rgba($white,0.2);
   }
   .sidebar-offcanvas-toggle {
-    border-color: rgba($white-color,0.2);
+    border-color: rgba($white,0.2);
   }
 
   .search-form .btn,
@@ -301,7 +301,7 @@
   }
 
   .navbar-custom-menu .navbar-nav > .notifications-menu > .dropdown-toggle {
-    border-color: rgba($white-color,0.2);
+    border-color: rgba($white,0.2);
   }
 
   .navbar-custom-menu .navbar-nav > .user-menu > .dropdown-toggle > span {
@@ -311,7 +311,7 @@
 
 /* light Header */
 .header-light .navbar {
-  background-color: $white-color;
+  background-color: $white;
   .sidebar-toggle {
     border-color: $border-color;
   }
@@ -321,7 +321,7 @@
 
   .search-form .btn,
   .search-form .input-group input.form-control {
-    color: $text-color;
+    color: $secondary;
   }
 
   .navbar-custom-menu .navbar-nav > .notifications-menu > .dropdown-toggle {
@@ -329,7 +329,7 @@
   }
 
   .navbar-custom-menu .navbar-nav > .user-menu > .dropdown-toggle > span {
-    color: $title-color;
+    color: $dark;
   }
 }
 

@@ -92,7 +92,7 @@ gulp.task('scss', function() {
 gulp.task('js', function() {
   return gulp.src( path.js )
     .pipe(customPlumber('Error Running JS'))
-    .pipe(uglify())
+    // .pipe(uglify())
     .pipe(gulp.dest(assets + 'js/'))
     .pipe(gulp.dest(dist + 'js/'))
     .pipe(browserSync.reload({

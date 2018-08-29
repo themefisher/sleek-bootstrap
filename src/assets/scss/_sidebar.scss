@@ -39,7 +39,7 @@
   }
   .logo .logo-title {
     position: absolute;
-    color: $white-color;
+    color: $white;
     font-size: 18px;
     margin-left: 15px;
   }
@@ -52,7 +52,7 @@
       >a {
         padding: 20px 25px;
         line-height: 20px;
-        color: $text-color;
+        color: $secondary;
         display: block;
         text-decoration: none;
         text-transform: uppercase;
@@ -64,7 +64,7 @@
 .sidebar .nav>li.active>a {
   position: relative;
   z-index: 10;
-  color: $white-color;
+  color: $white;
 }
 .sidebar .nav > li > a:before {
   position: absolute;
@@ -388,7 +388,7 @@
   .sidebar-toggle {
     background-color: transparent;
     background-image: none;
-    color: $white-color;
+    color: $white;
     font-size: 22px;
     padding: 0px 23px;
     border: 0px;
@@ -418,10 +418,10 @@
     .sub-menu>li.active>a:hover,
     .sub-menu>li>a:focus,
     .sub-menu>li>a:hover {
-      color: $white-color;
+      color: $white;
     }
     .nav > li.active > a {
-      color: $white-color;
+      color: $white;
     }
   }
   .sidebar-progress {
@@ -433,12 +433,12 @@
 /* Sidebar Light */
 .sidebar-light {
   .sidebar {
-    background-color: $white-color;
+    background-color: $white;
     border-right: 1px solid $border-color;
     .sub-menu {
-      background-color: $white-color;
+      background-color: $white;
       > li > a {
-        color: $text-color;
+        color: $secondary;
       }
     }
     .sub-menu>li.active>a,
@@ -446,18 +446,18 @@
     .sub-menu>li.active>a:hover,
     .sub-menu>li>a:focus,
     .sub-menu>li>a:hover {
-      color: darken($text-color, 25%);
+      color: darken($secondary, 25%);
     }
     .nav > li.active > a {
-      color: darken($text-color, 25%);
+      color: darken($secondary, 25%);
     }
   }
   .sidebar-progress {
     border-top: 1px solid $border-color;
-    background-color: $white-color;
+    background-color: $white;
   }
   .sidebar .sub-menu > li .sub-menu > li > a:after {
-    border: 1px solid $text-color;
+    border: 1px solid $secondary;
   }
 }
 

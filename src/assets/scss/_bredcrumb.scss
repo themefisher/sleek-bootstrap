@@ -25,60 +25,60 @@
     border-color: $primary;
     background-color: $primary;
     .breadcrumb-item, .breadcrumb-item a {
-      color: $white-color;
+      color: $white;
     }
     .breadcrumb-item:before {
-      color: $white-color;
+      color: $white;
     }
   }
   &.breadcrumb-pink {
     border-color: $pink;
     background-color: $pink;
     .breadcrumb-item, .breadcrumb-item a {
-      color: $white-color;
+      color: $white;
     }
     .breadcrumb-item:before {
-      color: $white-color;
+      color: $white;
     }
   }
   &.breadcrumb-success {
     border-color: $success;
     background-color: $success;
     .breadcrumb-item, .breadcrumb-item a {
-      color: $white-color;
+      color: $white;
     }
     .breadcrumb-item:before {
-      color: $white-color;
+      color: $white;
     }
   }
   &.breadcrumb-danger {
     border-color: $danger;
     background-color: $danger;
     .breadcrumb-item, .breadcrumb-item a {
-      color: $white-color;
+      color: $white;
     }
     .breadcrumb-item:before {
-      color: $white-color;
+      color: $white;
     }
   }
   &.breadcrumb-warning {
     border-color: $warning;
     background-color: $warning;
     .breadcrumb-item, .breadcrumb-item a {
-      color: $white-color;
+      color: $white;
     }
     .breadcrumb-item:before {
-      color: $white-color;
+      color: $white;
     }
   }
   &.breadcrumb-info {
     border-color: $info;
     background-color: $info;
     .breadcrumb-item, .breadcrumb-item a {
-      color: $white-color;
+      color: $white;
     }
     .breadcrumb-item:before {
-      color: $white-color;
+      color: $white;
     }
   }
 }
