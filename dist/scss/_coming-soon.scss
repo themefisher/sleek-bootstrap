@@ -1,0 +1,154 @@
+/* ======================================
+--> 5. COMMINGSOON
+========================================= */
+.comingsoon-wrapper {
+  padding: 65px 0;
+  .form_subscribe {
+    position: relative;
+
+    input {
+      background: $white-color;
+      border: 1px solid $border-color;
+      margin-bottom: 0px;
+      border-radius: 0px;
+      padding: 15px 20px;
+      font-size: 15px;
+      // @include placeholder {
+      //   color: $text-color;
+      // }
+      ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: $text-color;
+      }
+      ::-moz-placeholder { /* Firefox 19+ */
+        color: $text-color;
+      }
+      :-ms-input-placeholder { /* IE 10+ */
+        color: $text-color;
+      }
+      :-moz-placeholder { /* Firefox 18- */
+        color: $text-color;
+      }
+    }
+    .btn-search {
+      position: absolute;
+      color: $text-color;
+      right: 20px;
+      top: 15px;
+      font-size: 20px;
+      border: none;
+      background: transparent;
+    }
+  }
+  .comingsoon {
+    h1 {
+      margin-top: 44px;
+      margin-bottom: 20px;
+      font-weight: 500;
+      font-size: 26px;
+      @include media-breakpoint-up(lg) {
+        font-size: 36px;
+      }
+      text-transform: capitalize;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+  .count-down {
+    padding-top: 65px;
+    padding-bottom: 65px;
+
+    .table-cell {
+      position: relative;
+      height: 150px;
+    }
+    .tab-val {
+      width: 150px;
+      height: 150px;
+      font-size: 40px;
+      line-height: 112px;
+      font-weight: 500;
+
+      border-color: $title-color;
+      color: $title-color;
+    }
+    .tab-metr {
+      margin-top: -65px;
+      font-size: 16px;
+      display: none;
+      color: $white-color!important;
+    }
+  }
+  .form_subscribe {
+    margin: 0 0 65px;
+  }
+}
+.count-down {
+  position: relative;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  .table-cell {
+    position: relative;
+    height: 150px;
+  }
+  .simple_timer {
+    width: 100%;
+    margin: 0 auto;
+    color: #222222;
+  }
+  .table-cell {
+    margin: 15px 15px 0 0;
+    display: inline-block!important;
+    text-align: center;
+    .tab-val {
+      width: 110px;
+      height: 110px;
+      line-height: 108px;
+      background-color: transparent;
+      font-size: 40px;
+      display: inline-block!important;
+      border: 1px solid #e5e5e5;
+      font-weight: 500;
+
+      @include media-breakpoint-up(xl) {
+        width: 130px;
+        height: 130px;
+        line-height: 128px;
+      }
+    }
+    .tab-metr {
+      display: none;
+      margin-top: -50px;
+      line-height: 22px;
+      font-size: 16px;
+      text-transform: capitalize;
+      color: $title-color;
+    }
+  }
+  &.circled {
+    .tab-val {
+      border-radius: 50%;
+    }
+  }
+}
+
+/* ======================================
+--> 6. ERROR
+========================================= */
+.error-wrapper {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  @include media-breakpoint-up(lg) {
+    padding-top: 175px;
+    padding-bottom: 175px;
+  }
+  .error-title {
+    font-size: 140px;
+  }
+  .error-subtitle {
+    font-size: 26px;
+  }
+  .img-responsive {
+    max-width: 100%;
+  }
+}

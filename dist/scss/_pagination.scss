@@ -1,0 +1,48 @@
+/*===== 4.19 PAGINATION =====*/
+.page-link {
+  padding: 16px 21px;
+  font-size: 14px;
+  color: $text-color;
+}
+
+.pagination-flat .page-item .page-link {
+  border: 0px;
+
+}
+.pagination-flat-rounded .page-item .page-link {
+  border-radius: 100%;
+}
+.pagination-seperated .page-item {
+  .page-link {
+    padding: 12px;
+    margin: 0 5px;
+    border-radius: 0px;
+    @include media-breakpoint-up(md) {
+      padding: 16px 20px;
+    }
+  }
+  &:last-child .page-link {
+    margin-right: 0px;
+  }
+  &:first-child .page-link {
+    margin-left: 0px;
+  }
+}
+.pagination-seperated-rounded .page-item .page-link {
+  border-radius: 100px;
+}
+
+.border-rounded {
+  .page-item .page-link {
+    padding: 16px 20px;
+  }
+  .page-item:last-child .page-link {
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+  }
+  .page-item:first-child .page-link {
+    margin-left: 0;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+  }
+}
