@@ -2,11 +2,12 @@
 
 var gulp         = require('gulp');
 var sass         = require('gulp-sass');
-var clean        = require('gulp-clean');
-var csso         = require('gulp-csso');
+var del          = require('del');
+var cleanCSS     = require('gulp-clean-css');
 var sourcemaps   = require('gulp-sourcemaps');
 var uglify       = require('gulp-uglify');
 var plumber      = require('gulp-plumber');
+var rename       = require('gulp-rename');
 var notify       = require('gulp-notify');
 var imagemin     = require('gulp-imagemin');
 var fileinclude  = require('gulp-file-include');
@@ -39,8 +40,7 @@ var port         = 8080;
     ===================================================== */
 
 gulp.task('clean', function() {
-  return gulp.src(demo, {read: false})
-  .pipe(clean());
+  return del([demo, dist])
 });
 
 
@@ -64,19 +64,17 @@ gulp.task('html', function() {
     ===================================================== */
 
 gulp.task('scss', function() {
-  var ignoreNotification = false;
   return gulp.src( path.scss )
     .pipe(customPlumber('Error Running Sass'))
-    // sourcemaps for Development
+    .pipe(gulp.dest(dist + 'scss/'))
     .pipe(sourcemaps.init())
     .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
     .pipe(autoprefixer())
-    .pipe(csso({
-        restructure: false,
-        sourceMap: true,
-        debug: true
-    }))
     .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest(assets + 'css/'))
+    .pipe(gulp.dest(dist + 'css/'))
+    .pipe(cleanCSS())
+    .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest(assets + 'css/'))
     .pipe(gulp.dest(dist + 'css/'))
     .pipe(browserSync.reload({
@@ -92,7 +90,10 @@ gulp.task('scss', function() {
 gulp.task('js', function() {
   return gulp.src( path.js )
     .pipe(customPlumber('Error Running JS'))
+    .pipe(gulp.dest(assets + 'js/'))
+    .pipe(gulp.dest(dist + 'js/'))
     .pipe(uglify())
+    .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest(assets + 'js/'))
     .pipe(gulp.dest(dist + 'js/'))
     .pipe(browserSync.reload({
@@ -149,6 +150,11 @@ function customPlumber(errTitle) {
     ===================================================== */
 
 gulp.task('watch', gulp.series('html', 'scss', 'js', 'img', 'plugins', function() {
+  gulp.watch( path.html, gulp.series('html'));
+  gulp.watch( path.htminc, gulp.series('html'));
+  gulp.watch( path.scss, gulp.series('scss'));
+  gulp.watch( path.js, gulp.series('js'));
+  gulp.watch( path.img, gulp.series('img'));
   browserSync.init({
     server: {
       baseDir: demo
@@ -159,7 +165,7 @@ gulp.task('watch', gulp.series('html', 'scss', 'js', 'img', 'plugins', function(
 
 
 /* =====================================================
-    TASKS
+    DEFAULT
     ===================================================== */
 
 gulp.task('default', gulp.series('clean','watch'));
