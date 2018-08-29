@@ -31,7 +31,7 @@ var dist         = 'dist/'
 
 var assets       = demo + 'assets/';
 
-var port         = 8000;
+var port         = 8080;
 
 
 /* =====================================================
@@ -48,7 +48,7 @@ gulp.task('clean', function() {
     HTML
     ===================================================== */
 
-var html = function() {
+gulp.task('html', function() {
   return gulp.src( path.html )
     .pipe(customPlumber('Error Running html-include'))
     .pipe(fileinclude({ basepath: path.incdir }))
@@ -56,17 +56,14 @@ var html = function() {
     .pipe(browserSync.reload({
       stream: true
     }));
-};
-
-gulp.task('html', ['clean'], html);
-gulp.task('html-watch', html);
+});
 
 
 /* =====================================================
     SCSS
     ===================================================== */
 
-var scss = function() {
+gulp.task('scss', function() {
   var ignoreNotification = false;
   return gulp.src( path.scss )
     .pipe(customPlumber('Error Running Sass'))
@@ -85,17 +82,14 @@ var scss = function() {
     .pipe(browserSync.reload({
       stream: true
     }));
-};
-
-gulp.task('scss', ['clean'], scss);
-gulp.task('scss-watch', scss);
+});
 
 
 /* =====================================================
     JS
     ===================================================== */
 
-var js = function() {
+gulp.task('js', function() {
   return gulp.src( path.js )
     .pipe(customPlumber('Error Running JS'))
     .pipe(uglify())
@@ -104,43 +98,34 @@ var js = function() {
     .pipe(browserSync.reload({
       stream: true
     }));
-};
-
-gulp.task('js', ['clean'], js);
-gulp.task('js-watch', js);
+});
 
 
 /* =====================================================
     IMAGE
     ===================================================== */
 
-var image = function() {
+gulp.task('img', function() {
   return gulp.src( path.img )
     .pipe(imagemin({ progressive: true }))
     .pipe(gulp.dest(assets + 'img/'))
     .pipe(browserSync.reload({
       stream: true
     }));
-};
-
-gulp.task('img', ['clean'], image);
-gulp.task('img-watch', image);
+});
 
 
 /* =====================================================
     PLUGINS
     ===================================================== */
 
-var plugins = function() {
+gulp.task('plugins', function() {
   return gulp.src( path.plugins )
     .pipe(gulp.dest(assets + 'plugins/'))
     .pipe(browserSync.reload({
       stream: true
     }));
-};
-
-gulp.task('plugins', ['clean'], plugins);
-gulp.task('plugins-watch', plugins);
+});
 
 
 /* =====================================================
@@ -156,44 +141,25 @@ function customPlumber(errTitle) {
       sound: "Glass"
     })
   });
-}
-
-
-/* =====================================================
-    BUILD
-    ===================================================== */
-
-gulp.task('build', [
-  'html',
-  'scss',
-  'js',
-  'img',
-  'plugins'
-], function() {
-  browserSync.init({
-    server: {
-      baseDir: demo
-    },
-    port: port
-  });
-});
+};
 
 
 /* =====================================================
     WATCH
     ===================================================== */
 
-gulp.task('watch', ['build'], function() {
-  gulp.watch( path.html, ['html-watch'] );
-  gulp.watch( path.htminc, ['html-watch'] );
-  gulp.watch( path.scss, ['scss-watch'] );
-  gulp.watch( path.js, ['js-watch'] );
-  gulp.watch( path.img, ['img-watch'] );
-});
+gulp.task('watch', gulp.series('html', 'scss', 'js', 'img', 'plugins', function() {
+  browserSync.init({
+    server: {
+      baseDir: demo
+    },
+    port: port
+  });
+}));
 
 
 /* =====================================================
     TASKS
     ===================================================== */
 
-gulp.task('default', ['watch']);
+gulp.task('default', gulp.series('clean','watch'));
