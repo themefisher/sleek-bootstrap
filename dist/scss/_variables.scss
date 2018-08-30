@@ -1,0 +1,37 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1500px
+);
+
+$primary: #4c84ff;
+
+
+$primary: #4c84ff;
+$title-color : #1b223c;
+$secondary-color: #b4bbcc;
+$white-color: #ffffff;
+$black-color: #000000;
+$sand: #f5f6fa;
+$text-color: #8a909d;
+$title-color-extra: #222222;
+$border-color: #e5e9f2;
+$navy: #212a39;
+$pink: #ff548e;
+
+$success: #29cc97;
+$info: #13cae1;
+$warning: #fec400;
+$danger: #fe5461;
+$inverse: #070707;
+$purple: #896def;
+
+@function tint($primary, $percentage) {
+  @return mix($primary, transparent, $percentage);
+}
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
