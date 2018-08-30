@@ -8,6 +8,7 @@ var sourcemaps   = require('gulp-sourcemaps');
 var uglify       = require('gulp-uglify');
 var plumber      = require('gulp-plumber');
 var rename       = require('gulp-rename');
+var rtlcss       = require('gulp-rtlcss');
 var notify       = require('gulp-notify');
 var imagemin     = require('gulp-imagemin');
 var fileinclude  = require('gulp-file-include');
@@ -60,7 +61,7 @@ gulp.task('html', function() {
 
 
 /* =====================================================
-    SCSS
+    CSS
     ===================================================== */
 
 gulp.task('scss', function() {
@@ -73,6 +74,25 @@ gulp.task('scss', function() {
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(assets + 'css/'))
     .pipe(gulp.dest(dist + 'css/'))
+    .pipe(browserSync.reload({
+      stream: true
+    }));
+});
+
+gulp.task('rtl', function() {
+  return gulp.src('dist/css/*.css')
+    .pipe(customPlumber('Error Running RTL'))
+    .pipe(rtlcss())
+    .pipe(rename({suffix: '.rtl'}))
+    .pipe(gulp.dest(assets + 'css/'))
+    .pipe(gulp.dest(dist + 'css/'))
+    .pipe(browserSync.reload({
+      stream: true
+    }));
+});
+
+gulp.task('minifycss', function() {
+  return gulp.src('dist/css/*.css')
     .pipe(cleanCSS())
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest(assets + 'css/'))
@@ -149,10 +169,12 @@ function customPlumber(errTitle) {
     WATCH
     ===================================================== */
 
-gulp.task('watch', gulp.series('html', 'scss', 'js', 'img', 'plugins', function() {
+gulp.task('watch', gulp.series('html', 'scss', 'rtl', 'minifycss', 'js', 'img', 'plugins', function() {
   gulp.watch( path.html, gulp.series('html'));
   gulp.watch( path.htminc, gulp.series('html'));
   gulp.watch( path.scss, gulp.series('scss'));
+  gulp.watch( path.scss, gulp.series('rtl'));
+  gulp.watch( path.scss, gulp.series('minifycss'));
   gulp.watch( path.js, gulp.series('js'));
   gulp.watch( path.img, gulp.series('img'));
   browserSync.init({
