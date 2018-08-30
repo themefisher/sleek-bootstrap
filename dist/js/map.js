@@ -1,1 +1,202 @@
-$(function(){"use strict";function e(){var e=new google.maps.LatLng(39.5501,-105.7821);new google.maps.Map(document.getElementById("basicMap"),{zoom:8,center:e})}function o(){var e=new google.maps.LatLng(38.82505,-104.821752),o=new google.maps.Map(document.getElementById("mapMarker"),{zoom:8,center:e}),n=new google.maps.InfoWindow({content:'<div id="content"><h4 id="infoTitle" class="info-title">Colorado</h4></div>'}),a=new google.maps.Marker({position:e,map:o});n.open(o,a),a.addListener("click",function(){n.open(o,a)})}function n(){var e=new google.maps.LatLng(37.347442,-91.242551),o=new google.maps.Map(document.getElementById("polygonalMap"),{zoom:5,center:e,mapTypeId:"terrain"}),n=[{lat:39.086254,lng:-94.567509},{lat:35.293261,lng:-97.210534},{lat:36.058717,lng:-86.863566},{lat:38.498833,lng:-90.133947},{lat:39.086254,lng:-94.567509}];new google.maps.Polygon({paths:n,strokeColor:"#4c84ff",strokeOpacity:.8,strokeWeight:2,fillColor:"#4c84ff",fillOpacity:.35}).setMap(o)}function a(){var e=new google.maps.LatLng(39.399273,-86.151248),o=new google.maps.Map(document.getElementById("polylineMap"),{zoom:5,center:e,mapTypeId:"terrain"}),n=[{lat:39.08199,lng:-94.568882},{lat:38.538338,lng:-90.220769},{lat:39.399273,lng:-86.151248},{lat:38.830073,lng:-77.098642}];new google.maps.Polyline({path:n,geodesic:!0,strokeColor:"#4c84ff",strokeOpacity:1,strokeWeight:3}).setMap(o)}function t(){var e,o,n=new google.maps.LatLng(-33.92,151.25),a=new google.maps.Map(document.getElementById("multiMarkerMap"),{zoom:10,center:n,mapTypeId:google.maps.MapTypeId.ROADMAP}),t=new google.maps.InfoWindow;for(o=0;o<g.length;o++)e=new google.maps.Marker({position:new google.maps.LatLng(g[o][1],g[o][2]),map:a}),google.maps.event.addListener(e,"click",function(e,o){return function(){t.setContent(g[o][0]),t.open(a,e)}}(e,o))}function l(){var e=new google.maps.LatLng(44.3341,-100.305);new google.maps.Map(document.getElementById("styleMap"),{zoom:7,center:e,mapTypeId:"roadmap",styles:p})}if(document.getElementById("google-map")){google.maps.event.addDomListener(window,"load",e),google.maps.event.addDomListener(window,"load",o),google.maps.event.addDomListener(window,"load",n),google.maps.event.addDomListener(window,"load",a);var g=[["Bondi Beach",-33.890542,151.274856,4],["Coogee Beach",-33.923036,151.259052,5],["Cronulla Beach",-34.028249,151.157507,3],["Manly Beach",-33.80010128657071,151.28747820854187,2],["Maroubra Beach",-33.950198,151.259302,1]];google.maps.event.addDomListener(window,"load",t);var p=[{stylers:[{hue:"#2c3e50"},{saturation:250}]},{featureType:"road",elementType:"geometry",stylers:[{lightness:50},{visibility:"simplified"}]},{featureType:"road",elementType:"labels",stylers:[{visibility:"off"}]}];google.maps.event.addDomListener(window,"load",l)}});
+/* ====== Index ======
+
+1. BASIC MAP
+2. MAP WITH MARKER
+3. POLYGONAL MAP
+4. POLYLINE MAP
+5. MULTIPLE MARKER
+6. STYLED MAP
+
+====== End ======*/
+
+$(function() {
+  "use strict";
+
+  if (document.getElementById("google-map")) {
+    function initialize() {
+    /*======== 1. BASIC MAP ========*/
+      var denver = new google.maps.LatLng(39.5501, -105.7821);
+      var map = new google.maps.Map(document.getElementById("basicMap"), {
+        zoom: 8,
+        center: denver
+      });
+    }
+    google.maps.event.addDomListener(window, "load", initialize);
+
+    /*======== 2. MAP WITH MARKER ========*/
+    function markerMap() {
+      var colorado = new google.maps.LatLng(38.82505, -104.821752);
+      var map = new google.maps.Map(document.getElementById("mapMarker"), {
+        zoom: 8,
+        center: colorado
+      });
+
+      var contentString =
+        '<div id="content">' +
+        '<h4 id="infoTitle" class="info-title">Colorado</h4>' +
+        "</div>";
+
+      var infowindow = new google.maps.InfoWindow({
+        content: contentString
+      });
+      var marker = new google.maps.Marker({
+        position: colorado,
+        map: map
+      });
+      infowindow.open(map, marker);
+      marker.addListener("click", function() {
+        infowindow.open(map, marker);
+      });
+    }
+
+    google.maps.event.addDomListener(window, "load", markerMap);
+
+    /*======== 3. POLYGONAL MAP ========*/
+    function polyMap() {
+      var center = new google.maps.LatLng(37.347442, -91.242551);
+      var map = new google.maps.Map(document.getElementById("polygonalMap"), {
+        zoom: 5,
+        center: center,
+        mapTypeId: "terrain"
+      });
+
+      // Define the LatLng coordinates for the polygon's path.
+      var ractangleCoords = [
+        { lat: 39.086254, lng: -94.567509 },
+        { lat: 35.293261, lng: -97.210534 },
+        { lat: 36.058717, lng: -86.863566 },
+        { lat: 38.498833, lng: -90.133947 },
+        { lat: 39.086254, lng: -94.567509 }
+      ];
+
+      // Construct the polygon.
+      var kansasRact = new google.maps.Polygon({
+        paths: ractangleCoords,
+        strokeColor: "#4c84ff",
+        strokeOpacity: 0.8,
+        strokeWeight: 2,
+        fillColor: "#4c84ff",
+        fillOpacity: 0.35
+      });
+      kansasRact.setMap(map);
+    }
+
+    google.maps.event.addDomListener(window, "load", polyMap);
+
+    /*======== 4. POLYLINE MAP ========*/
+    function polylineMap() {
+      var center = new google.maps.LatLng(39.399273, -86.151248);
+      var map = new google.maps.Map(document.getElementById("polylineMap"), {
+        zoom: 5,
+        center: center,
+        mapTypeId: "terrain"
+      });
+
+      var flightPlanCoordinates = [
+        { lat: 39.08199, lng: -94.568882 },
+        { lat: 38.538338, lng: -90.220769 },
+        { lat: 39.399273, lng: -86.151248 },
+        { lat: 38.830073, lng: -77.098642 }
+      ];
+      var flightPath = new google.maps.Polyline({
+        path: flightPlanCoordinates,
+        geodesic: true,
+        strokeColor: "#4c84ff",
+        strokeOpacity: 1.0,
+        strokeWeight: 3
+      });
+
+      flightPath.setMap(map);
+    }
+
+    google.maps.event.addDomListener(window, "load", polylineMap);
+
+    /*======== 5. MULTIPLE MARKER ========*/
+    var locations = [
+      ["Bondi Beach", -33.890542, 151.274856, 4],
+      ["Coogee Beach", -33.923036, 151.259052, 5],
+      ["Cronulla Beach", -34.028249, 151.157507, 3],
+      ["Manly Beach", -33.80010128657071, 151.28747820854187, 2],
+      ["Maroubra Beach", -33.950198, 151.259302, 1]
+    ];
+
+    function multiMarkerMap() {
+      var center = new google.maps.LatLng(-33.92, 151.25);
+      var map = new google.maps.Map(document.getElementById("multiMarkerMap"), {
+        zoom: 10,
+        center: center,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      });
+
+      var infowindow = new google.maps.InfoWindow();
+
+      var marker, i;
+
+      for (i = 0; i < locations.length; i++) {
+        marker = new google.maps.Marker({
+          position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+          map: map
+        });
+
+        google.maps.event.addListener(
+          marker,
+          "click",
+          (function(marker, i) {
+            return function() {
+              infowindow.setContent(locations[i][0]);
+              infowindow.open(map, marker);
+            };
+          })(marker, i)
+        );
+      }
+    }
+
+    google.maps.event.addDomListener(window, "load", multiMarkerMap);
+
+    /*======== 6. STYLED MAP ========*/
+    var style = [
+      {
+        stylers: [
+          {
+            hue: "#2c3e50"
+          },
+          {
+            saturation: 250
+          }
+        ]
+      },
+      {
+        featureType: "road",
+        elementType: "geometry",
+        stylers: [
+          {
+            lightness: 50
+          },
+          {
+            visibility: "simplified"
+          }
+        ]
+      },
+      {
+        featureType: "road",
+        elementType: "labels",
+        stylers: [
+          {
+            visibility: "off"
+          }
+        ]
+      }
+    ];
+
+    function styleMap() {
+      var dakota = new google.maps.LatLng(44.3341, -100.305);
+      var map = new google.maps.Map(document.getElementById("styleMap"), {
+        zoom: 7,
+        center: dakota,
+        mapTypeId: "roadmap",
+        styles: style
+      });
+    }
+    google.maps.event.addDomListener(window, "load", styleMap);
+  }
+});
