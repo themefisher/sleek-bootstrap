@@ -12,7 +12,6 @@
 </div>
 
 
-
 <div align="center">
 
 ![Product Gif](src/assets/img/github/sleek.gif)
