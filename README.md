@@ -1,4 +1,7 @@
-# [Sleek Dashboard](http://themes.iamabdus.com/sleek/1.0/index.html)
+<p align="center"><a href="http://themes.iamabdus.com/sleek/1.0/index.html" target="_blank" rel="noopener noreferrer"><img width="50" src="src/assets/img/sleek-icon.png" alt="Vue logo"></a></p>
+
+<div align="center">
+
 [![GitHub stars](https://img.shields.io/github/stars/tafcoder/sleek-dashboard.svg)](https://github.com/tafcoder/sleek-dashboard/stargazers)
 [![GitHub issues](https://img.shields.io/github/issues/tafcoder/sleek-dashboard.svg)](https://github.com/tafcoder/sleek-dashboard/issues) 
 [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/tafcoder/sleek-dashboard.svg?maxAge=2592000)]() 
@@ -6,9 +9,16 @@
 ![license](https://img.shields.io/badge/license-MIT-blue.svg)
 [![Twitter](https://img.shields.io/twitter/url/https/github.com/tafcoder/sleek-dashboard.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Ftafcoder%2Fsleek-dashboard)
 
+</div>
 
 
-![Product Gif](src/assets/img/sleek-icon.png)
+
+<div align="center">
+
+![Product Gif](src/assets/img/github/sleek.gif)
+
+</div>
+
 
 Sleek Dashboard - Free Bootstrap 4 Admin Dashboard Template and UI Kit. Sleek is a powerful bootstrap admin dashboard, which allows you to build products like admin panels, content managements systems and CRMs.
 
@@ -20,30 +30,17 @@ We are very excited to share this dashboard with you and we look forward to hear
 
 ## Table of Contents
 
-* [Versions](#versions)
 * [Demo](#demo)
-* [Quick Start](#quick-start)
-* [Documentation](#documentation)
+* [Getting Started](#getting-started)
 * [File Structure](#file-structure)
 * [Browser Support](#browser-support)
-* [Resources](#resources)
 * [Reporting Issues](#reporting-issues)
 * [Technical Support or Questions](#technical-support-or-questions)
 * [Licensing](#licensing)
 * [Useful Links](#useful-links)
 
 
-## Versions
 
-[<img src="assets/github/html.png" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard)
-[<img src="assets/github/react.svg" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-react)
-[<img src="assets/github/vuejs.png" width="60" height="60" />](https://www.creative-tim.com/product/vue-material-dashboard)
-[<img src="assets/github/angular.png" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-angular2)
-
-
-| HTML | React | Vue | Angular |
-| --- | --- | --- | --- |
-| [![Material Dashboard HTML](assets/github/opt_md_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard) | [![Material Dashboard React](assets/github/opt_mdr_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard-react) | [![Vue Material Dashboard ](assets/github/opt_md_vue_thumbnail.jpg)](https://www.creative-tim.com/product/vue-material-dashboard) | [![Material Dashboard Angular](assets/github/opt_md_angular_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard-angular2)
 
 ## Demo
 
@@ -54,18 +51,13 @@ We are very excited to share this dashboard with you and we look forward to hear
 [View More](https://demos.creative-tim.com/material-dashboard/examples/dashboard.html).
 
 
-## Quick start
+## Getting Started
 
 Quick start options:
 
-- `npm i material-dashboard`
 - Clone the repo: `git clone https://github.com/creativetimofficial/material-dashboard.git`.
 - [Download from Github](https://github.com/creativetimofficial/material-dashboard/archive/master.zip).
 - [Download from Creative Tim](https://www.creative-tim.com/product/material-dashboard).
-
-
-## Documentation
-The documentation for the Material Dashboard is hosted at our [website](https://demos.creative-tim.com/material-dashboard/docs/2.0/getting-started/introduction.html).
 
 
 ## File Structure
@@ -73,81 +65,44 @@ The documentation for the Material Dashboard is hosted at our [website](https://
 Within the download you'll find the following directories and files:
 
 ```
-material-dashboard/
-├── assets/
-|   ├── css/
-|   |   ├── bootstrap.min.css
-|   |   ├── material-dashboard.css
-|   |   ├── material-dashboard-rtl.css
-|   |   └── demo.css
-|   ├── js/
-|   |   ├── bootstrap-notify.js
-|   |   ├── bootstrap.min.js
-|   |   ├── chartist.min.js
-|   |   ├── demo.js
-|   |   ├── jquery-3.1.0.min.js
-|   |   ├── material-dashboard.js
-|   |   └── material.min.js
-|   ├── sass/
-|   |    ├── md
-|   |    └── material-dashboard.scss
-|   └── img/
+sleek-dashboard/
 |
-├── documentation/
-├── examples/
+|--- dist/
+|   |--- css/ (CSS files)
+|   |--- js/ (JavaScript files)
+|   |--- scss/ (SCSS files)
+|
+|--- src/
+|    |--- _inc
+|    |--- assets/
+|         ├── data/
+|         ├── img/
+|         ├── js/
+|         ├── options/
+|         ├── plugins/
+|         |── sass/
 
 ```
 
 ## Browser Support
 
-At present, we officially aim to support the last two versions of the following browsers:
+At present, we officially aim to support the following browsers:
 
 <img src="assets/github/chrome.png" width="64" height="64"> <img src="assets/github/firefox.png" width="64" height="64"> <img src="assets/github/edge.png" width="64" height="64"> <img src="assets/github/safari.png" width="64" height="64"> <img src="assets/github/opera.png" width="64" height="64">
 
 
-## Resources
-- Demo: https://demos.creative-tim.com/material-dashboard/examples/dashboard.html
-- Download Page: https://www.creative-tim.com/product/material-dashboard
-- Documentation: https://demos.creative-tim.com/material-dashboard/docs/2.0/getting-started/introduction.html
-- License Agreement: https://www.creative-tim.com/license
-- Support: https://www.creative-tim.com/contact-us
-- Issues: [Github Issues Page](https://github.com/creativetimofficial/material-dashboard/issues)
-- [Material Kit - For Front End Development](https://www.creative-tim.com/product/material-kit?ref=github-md-free)
-
 ## Reporting Issues
-We use GitHub Issues as the official bug tracker for the Material Dashboard. Here are some advices for our users that want to report an issue:
 
-1. Make sure that you are using the latest version of the Material Dashboard. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/).
-2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
-3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
+We use GitHub Issues as the official bug tracker for the Sleek Dashboard. Please Search [existing issues](https://github.com/tafcoder/sleek-dashboard/issues). It’s possible someone has already reported the same problem.
+Then you have a bug or a feature request, [open a new issue](https://github.com/tafcoder/sleek-dashboard/issues)
+
 
 ## Technical Support or Questions
 
-If you have questions or need help integrating the product please [contact us](https://www.creative-tim.com/contact-us) instead of opening an issue.
+If you have questions or need help integrating the product please [contact us](http://www.iamabdus.com/contact/) instead of opening an issue.
+
 
 ## Licensing
 
-- Copyright 2018 Creative Tim (https://www.creative-tim.com)
-- Licensed under MIT (https://github.com/creativetimofficial/material-dashboard/blob/master/LICENSE.md)
-
-## Useful Links
-
-More products from Creative Tim: <https://www.creative-tim.com/products>
-
-Tutorials: <https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w>
-
-Freebies: <https://www.creative-tim.com/products>
-
-Affiliate Program (earn money): <https://www.creative-tim.com/affiliates/new>
-
-Social Media:
-
-Twitter: <https://twitter.com/CreativeTim>
-
-Facebook: <https://www.facebook.com/CreativeTim>
-
-Dribbble: <https://dribbble.com/creativetim>
-
-Google+: <https://plus.google.com/+CreativetimPage>
-
-Instagram: <https://instagram.com/creativetimofficial>
+- Copyright 2018 Creative Tim (http://www.iamabdus.com/)
+- Licensed under MIT (https://github.com/tafcoder/sleek-dashboard/blob/master/LICENSE.md)
