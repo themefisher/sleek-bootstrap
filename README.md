@@ -1,4 +1,11 @@
-<p align="center"><a href="http://themes.iamabdus.com/sleek/1.0/index.html" target="_blank" rel="noopener noreferrer"><img width="50" src="src/assets/img/sleek-icon.png" alt="Vue logo"></a></p>
+<p align="center">
+    <a href="http://themes.iamabdus.com/sleek/1.0/index.html" target="_blank" rel="noopener noreferrer"><img width="60" src="src/assets/img/sleek-icon.png" alt="Vue logo"></a>
+</p>
+<div align="center">
+
+[![Twitter](https://img.shields.io/twitter/url/https/github.com/tafcoder/sleek-dashboard.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Ftafcoder%2Fsleek-dashboard)
+
+</div>
 
 <div align="center">
 
@@ -7,7 +14,6 @@
 [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/tafcoder/sleek-dashboard.svg?maxAge=2592000)]() 
 [![GitHub forks](https://img.shields.io/github/forks/tafcoder/sleek-dashboard.svg)](https://github.com/tafcoder/sleek-dashboard/network)
 ![license](https://img.shields.io/badge/license-MIT-blue.svg)
-[![Twitter](https://img.shields.io/twitter/url/https/github.com/tafcoder/sleek-dashboard.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Ftafcoder%2Fsleek-dashboard)
 
 </div>
 
@@ -39,24 +45,18 @@ We are very excited to share this dashboard with you and we look forward to hear
 * [Useful Links](#useful-links)
 
 
-
-
 ## Demo
 
-| Dashboard | User Profile | Tables | Maps | Notification |
-| --- | --- | --- | --- | --- |
-| [![Start page](assets/github/dashboard.png)](https://demos.creative-tim.com/material-dashboard/examples/dashboard.html) | [![User profile page](assets/github/user_profile.png)](https://demos.creative-tim.com/material-dashboard/examples/user.html) | [![Tables page ](assets/github/tables.png)](https://demos.creative-tim.com/material-dashboard/examples/tables.html) | [![Maps Page](assets/github/maps.png)](https://demos.creative-tim.com/material-dashboard/examples/map.html) | [![Notification page](assets/github/notification.png)](https://demos.creative-tim.com/material-dashboard/examples/notifications.html)
+| Ecommerce  | Analytics  | Emails  | Chart Widgets  |
+|---|---|---|---|
+| [![Ecommerce page](src/assets/img/github/ecommerce.png)](http://themes.iamabdus.com/sleek/1.0/index.html)  | [![Analytics page](src/assets/img/github/analytics.png)](http://themes.iamabdus.com/sleek/1.0/analytics.html)  | [![Emails page](src/assets/img/github/email.png)](http://themes.iamabdus.com/sleek/1.0/email-inbox.html)  | [![Chart Widgets Page](src/assets/img/github/chart-widgets.png)](http://themes.iamabdus.com/sleek/1.0/chart-widgets.html)
 
-[View More](https://demos.creative-tim.com/material-dashboard/examples/dashboard.html).
+[View More](http://themes.iamabdus.com/sleek/1.0/index.html).
 
 
 ## Getting Started
 
-Quick start options:
-
-- Clone the repo: `git clone https://github.com/creativetimofficial/material-dashboard.git`.
-- [Download from Github](https://github.com/creativetimofficial/material-dashboard/archive/master.zip).
-- [Download from Creative Tim](https://www.creative-tim.com/product/material-dashboard).
+Quick start options
 
 
 ## File Structure
@@ -80,6 +80,8 @@ sleek-dashboard/
 |         ├── options/
 |         ├── plugins/
 |         |── sass/
+|    |--- .html files
+|
 
 ```
 
@@ -87,7 +89,7 @@ sleek-dashboard/
 
 At present, we officially aim to support the following browsers:
 
-<img src="assets/github/chrome.png" width="64" height="64"> <img src="assets/github/firefox.png" width="64" height="64"> <img src="assets/github/edge.png" width="64" height="64"> <img src="assets/github/safari.png" width="64" height="64"> <img src="assets/github/opera.png" width="64" height="64">
+<img src="src/assets/img/github/chrome.png" width="64" height="64"> <img src="src/assets/img/github/firefox.png" width="64" height="64"> <img src="src/assets/img/github/edge.png" width="64" height="64"> <img src="src/assets/img/github/safari.png" width="64" height="64"> <img src="src/assets/img/github/opera.png" width="64" height="64">
 
 
 ## Reporting Issues
@@ -103,5 +105,5 @@ If you have questions or need help integrating the product please [contact us](h
 
 ## Licensing
 
-- Copyright 2018 Creative Tim (http://www.iamabdus.com/)
+- Copyright 2018 Taf Coder (http://www.iamabdus.com/)
 - Licensed under MIT (https://github.com/tafcoder/sleek-dashboard/blob/master/LICENSE.md)
