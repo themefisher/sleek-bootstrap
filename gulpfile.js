@@ -80,7 +80,7 @@ gulp.task('scss', function() {
 });
 
 gulp.task('rtl', function() {
-  return gulp.src('dist/css/*.css')
+  return gulp.src('dist/css/sleek.css')
     .pipe(customPlumber('Error Running RTL'))
     .pipe(rtlcss())
     .pipe(rename({suffix: '.rtl'}))
@@ -92,7 +92,7 @@ gulp.task('rtl', function() {
 });
 
 gulp.task('minifycss', function() {
-  return gulp.src('dist/css/*.css')
+  return gulp.src(['dist/css/sleek.css', 'dist/css/sleek.rtl.css'])
     .pipe(cleanCSS())
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest(assets + 'css/'))
