@@ -1,8 +1,12 @@
-# [Sleek Dashboard](http://themes.iamabdus.com/sleek/1.0/index.html) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/home?status=Material%20Dashboard,%20a%20free%20Material%20Bootstrap%204%20Admin%20Template%20%E2%9D%A4%EF%B8%8F%20https%3A//bit.ly/2Lyat1Y%20%23bootstrap%20%23material%20%23design%20%23developers%20%23freebie%20%20via%20%40CreativeTim)
+# [Sleek Dashboard](http://themes.iamabdus.com/sleek/1.0/index.html)
+[![GitHub stars](https://img.shields.io/github/stars/tafcoder/sleek-dashboard.svg)](https://github.com/tafcoder/sleek-dashboard/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/tafcoder/sleek-dashboard.svg)](https://github.com/tafcoder/sleek-dashboard/issues) 
+[![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/tafcoder/sleek-dashboard.svg?maxAge=2592000)]() 
+[![GitHub forks](https://img.shields.io/github/forks/tafcoder/sleek-dashboard.svg)](https://github.com/tafcoder/sleek-dashboard/network)
+![license](https://img.shields.io/badge/license-MIT-blue.svg)
+[![Twitter](https://img.shields.io/twitter/url/https/github.com/tafcoder/sleek-dashboard.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Ftafcoder%2Fsleek-dashboard)
 
 
-
-![version](https://img.shields.io/badge/version-2.1.0-blue.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/material-dashboard.svg?maxAge=2592000)]() [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/material-dashboard.svg?maxAge=2592000)]() [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim/material-dashboard?utm_source=share-link&utm_medium=link&utm_campaign=share-link) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
 
 ![Product Gif](src/assets/img/sleek-icon.png)
 
