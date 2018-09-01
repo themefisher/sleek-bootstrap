@@ -21,3 +21,18 @@ $warning: #fec400;
 $danger: #fe5461;
 $inverse: #070707;
 $purple: #896def;
+
+
+// $body-color:  $secondary;
+
+// stylelint-disable value-keyword-case
+$font-family-sans-roboto:     'Roboto', sans-serif;
+// $font-family-base:           ;
+$font-family-montserrat:     'Montserrat', sans-serif;
+$font-family-poppins:        'Poppins', sans-serif;
+$font-family-font-awesome:   'FontAwesome';
+$font-family-font-fontello:   'fontello';
+
+$font-family-base: $font-family-sans-roboto;
+
+$font-size-base:              .875rem;

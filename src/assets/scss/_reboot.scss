@@ -13,13 +13,13 @@ html, * {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  color: $secondary;
-  font-weight: 400;
-  overflow-x: hidden;
-  overflow-y: auto;
+  // font-family: $font-family-sans-roboto;
+  // font-size: 14px;
+  // line-height: 21px;
+  // color: $secondary;
+  // font-weight: 400;
+  // overflow-x: hidden;
+  // overflow-y: auto;
 }
 ul{
 	margin:0;
@@ -39,7 +39,7 @@ p{
   }
 }
 h1, h2, h3, h4, h5, h6{
-  font-family: 'Roboto', sans-serif;
+  font-family: $font-family-sans-roboto;
   margin: 0;
   font-weight: 400;
 }

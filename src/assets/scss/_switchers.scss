@@ -316,7 +316,7 @@ input[type=radio] {
     line-height: 1;
     font-size: 12px;
     font-weight: 400;
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-family-sans-roboto;
     text-align: center;
     transition: inherit;
   }
@@ -353,7 +353,7 @@ input[type=radio] {
     line-height: 1;
     font-size: 12px;
     font-weight: 400;
-    font-family: 'FontAwesome';
+    font-family: $font-family-font-awesome;
     text-align: center;
     transition: inherit;
   }

@@ -30,13 +30,13 @@
   }
   .fc-prev-button .fc-icon-left-single-arrow:after {
     content: "\f104";
-    font-family: 'FontAwesome';
+    font-family: $font-family-font-awesome;
     font-size: 24px;
     font-weight: 400;
   }
   .fc-next-button .fc-icon-right-single-arrow:after {
     content: "\f105";
-    font-family: 'FontAwesome';
+    font-family: $font-family-font-awesome;
     font-size: 24px;
     font-weight: 400;
   }

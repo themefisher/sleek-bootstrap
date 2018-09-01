@@ -85,7 +85,7 @@
       }
       position: relative;
       &:before {
-        font-family: "fontello";
+        font-family: $font-family-font-fontello;
         content: '\e801';
       }
     }

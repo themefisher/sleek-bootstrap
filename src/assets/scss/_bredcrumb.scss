@@ -84,5 +84,5 @@
 }
 .breadcrumb-item+.breadcrumb-item::before {
   content: '\f105';
-  font-family: 'FontAwesome';
+  font-family: $font-family-font-awesome;
 }
