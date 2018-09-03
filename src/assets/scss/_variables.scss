@@ -35,14 +35,16 @@ $font-family-montserrat:     'Montserrat', sans-serif;
 $font-family-poppins:        'Poppins', sans-serif;
 $font-family-font-awesome:   'FontAwesome';
 $font-family-font-fontello:   'fontello';
-
 $font-family-base: $font-family-sans-roboto;
-
 $font-size-base:              .875rem;
+
+// Alerts
 
 $alert-padding-y:                   1.25rem;
 $alert-padding-x:                   1.25rem;
 $alert-border-level:                -6;
+
+// Badges
 
 $badge-padding-y:                   .5em;
 $badge-padding-x:                   1em;
@@ -53,6 +55,14 @@ $badge-font-weight:                 $font-weight-medium;
 
 $breadcrumb-padding-y:              1rem ;
 $breadcrumb-padding-x:              1.25rem;
-// $breadcrumb-item-padding:           .5rem !default;
 $breadcrumb-bg:                     $white;
-// $breadcrumb-border-radius:          0;
+
+
+$input-btn-padding-y:         .59rem;
+$input-btn-padding-x:          1rem;
+
+// Buttons
+
+$btn-font-weight:             $font-weight-medium;
+$btn-padding-y:               .59rem;
+$btn-padding-x:               1rem;
