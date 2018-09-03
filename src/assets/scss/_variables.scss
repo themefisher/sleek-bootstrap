@@ -21,7 +21,7 @@ $warning: #fec400;
 $danger: #fe5461;
 $inverse: #070707;
 $purple: #896def;
-
+$white: #fff;
 
 $body-color:  $secondary;
 
@@ -48,3 +48,11 @@ $badge-padding-y:                   .5em;
 $badge-padding-x:                   1em;
 $badge-border-radius:               $border-radius / 2;
 $badge-font-weight:                 $font-weight-medium;
+
+// Breadcrumbs
+
+$breadcrumb-padding-y:              1rem ;
+$breadcrumb-padding-x:              1.25rem;
+// $breadcrumb-item-padding:           .5rem !default;
+$breadcrumb-bg:                     $white;
+// $breadcrumb-border-radius:          0;

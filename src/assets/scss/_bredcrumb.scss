@@ -1,10 +1,6 @@
 /*===== 4.2 BREDCRUMB =====*/
 .breadcrumb {
-  background-color: transparent;
   border: 1px solid $border-color;
-  padding: 18px 20px;
-  border-radius: 0;
-  border-top: 0;
   .breadcrumb-item {
     font-size: 15px;
     a {
