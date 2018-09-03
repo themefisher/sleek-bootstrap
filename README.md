@@ -14,33 +14,28 @@
 
 </div>
 
-
 <div align="center">
 
 ![Product Gif](src/assets/img/github/sleek.gif)
 
 </div>
 
-
 Sleek Dashboard - Free Bootstrap 4 Admin Dashboard Template and UI Kit. Sleek is a powerful bootstrap admin dashboard, which allows you to build products like admin panels, content managements systems and CRMs.
 
 Bootstrap is world's most popular front-end component library for developing with HTML, CSS, and JS. It is open source, sleek, intuitive, and powerful front-end framework for faster and easier web development. [Bootstrap](https://getbootstrap.com/).
-
 
 We are very excited to share this dashboard with you and we look forward to hearing your feedback!
 
 
 ## Table of Contents
 
-* [Demo](#demo)
-* [Getting Started](#getting-started)
-* [File Structure](#file-structure)
-* [Browser Support](#browser-support)
-* [Reporting Issues](#reporting-issues)
-* [Technical Support or Questions](#technical-support-or-questions)
-* [Licensing](#licensing)
-* [Useful Links](#useful-links)
-
+- [Demo](#demo)
+- [Getting Started](#getting-started)
+- [File Structure](#file-structure)
+- [Browser Support](#browser-support)
+- [Reporting Issues](#reporting-issues)
+- [Technical Support or Questions](#technical-support-or-questions)
+- [Licensing](#licensing)
 
 ## Demo
 
@@ -50,17 +45,15 @@ We are very excited to share this dashboard with you and we look forward to hear
 
 [View More](http://themes.iamabdus.com/sleek/1.0/index.html).
 
-
 ## Getting Started
 
 Quick start options
-
 
 ## File Structure
 
 Within the download you'll find the following directories and files:
 
-```
+``` bash
 sleek-dashboard/
 |
 |--- dist/
@@ -71,12 +64,12 @@ sleek-dashboard/
 |--- src/
 |    |--- _inc
 |    |--- assets/
-|         ├── data/
-|         ├── img/
-|         ├── js/
-|         ├── options/
-|         ├── plugins/
-|         |── sass/
+|         |-- data/
+|         |-- img/
+|         |-- js/
+|         |-- options/
+|         |-- plugins/
+|         |-- sass/
 |    |--- .html files
 |
 
@@ -88,17 +81,14 @@ At present, we officially aim to support the following browsers:
 
 <img src="src/assets/img/github/chrome.png" width="64" height="64"> <img src="src/assets/img/github/firefox.png" width="64" height="64"> <img src="src/assets/img/github/edge.png" width="64" height="64"> <img src="src/assets/img/github/safari.png" width="64" height="64"> <img src="src/assets/img/github/opera.png" width="64" height="64">
 
-
 ## Reporting Issues
 
 We use GitHub Issues as the official bug tracker for the Sleek Dashboard. Please Search [existing issues](https://github.com/tafcoder/sleek-dashboard/issues). It’s possible someone has already reported the same problem.
-Then you have a bug or a feature request, [open a new issue](https://github.com/tafcoder/sleek-dashboard/issues)
-
+If your problem or idea is not addressed yet, [open a new issue](https://github.com/tafcoder/sleek-dashboard/issues)
 
 ## Technical Support or Questions
 
 If you have questions or need help integrating the product please [contact us](http://www.iamabdus.com/contact/) instead of opening an issue.
-
 
 ## Licensing
 
