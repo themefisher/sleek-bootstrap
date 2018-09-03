@@ -25,6 +25,9 @@ $purple: #896def;
 
 $body-color:  $secondary;
 
+$border-radius:               .25rem;
+$font-weight-medium:           500;
+
 // stylelint-disable value-keyword-case
 $font-family-sans-roboto:     'Roboto', sans-serif;
 // $font-family-base:           ;
@@ -40,3 +43,8 @@ $font-size-base:              .875rem;
 $alert-padding-y:                   1.25rem;
 $alert-padding-x:                   1.25rem;
 $alert-border-level:                -6;
+
+$badge-padding-y:                   .5em;
+$badge-padding-x:                   1em;
+$badge-border-radius:               $border-radius / 2;
+$badge-font-weight:                 $font-weight-medium;
