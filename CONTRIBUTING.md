@@ -1,37 +1,28 @@
-
 ## <a name="commits"></a> Git Commit Guidelines
 
 We have very precise rules over how our git commit messages can be formatted.  This leads to **more
 readable messages** that are easy to follow when looking through the **project history**.  But also,
-we use the git commit messages to **generate the AngularJS change log**.
+we use the git commit messages to **generate the change log**.
 
-The commit message formatting can be added using a typical git workflow or through the use of a CLI
-wizard ([Commitizen](https://github.com/commitizen/cz-cli)). To use the wizard, run `yarn run commit`
-in your terminal after staging your changes in git.
+### Full Message Format
 
-### Commit Message Format
-Each commit message consists of a **header**, a **body** and a **footer**.  The header has a special
-format that includes a **type**, a **scope** and a **subject**:
+A commit message consists of a **header**, **body** and **footer**.  The header has a **type** and **subject**:
 
 ```
-<type>(<scope>): <subject>
+<type>: <subject>
 <BLANK LINE>
 <body>
 <BLANK LINE>
 <footer>
 ```
 
-The **header** is mandatory and the **scope** of the header is optional.
+The **header** is mandatory.
 
-Any line of the commit message cannot be longer 100 characters! This allows the message to be easier
-to read on GitHub as well as in various git tools.
 
 ### Revert
-If the commit reverts a previous commit, it should begin with `revert: `, followed by the header
-of the reverted commit.
-In the body it should say: `This reverts commit <hash>.`, where the hash is the SHA of the commit
-being reverted.
-A commit with this format is automatically created by the [`git revert`][git-revert] command.
+
+If the commit reverts a previous commit, it should begin with `revert: `, followed by the header of the reverted commit. In the body it should say: `This reverts commit <hash>.`, where the hash is the SHA of the commit being reverted.
+
 
 ### Type
 Must be one of the following:
@@ -44,31 +35,66 @@ Must be one of the following:
 * **refactor**: A code change that neither fixes a bug nor adds a feature
 * **perf**: A code change that improves performance
 * **test**: Adding missing or correcting existing tests
-* **chore**: Changes to the build process or auxiliary tools and libraries such as documentation
-  generation
+* **chore**: Changes to the build process or auxiliary tools and libraries such as documentation generation
 
-### Scope
-The scope could be anything specifying place of the commit change. For example `$location`,
-`$browser`, `$compile`, `$rootScope`, `ngHref`, `ngClick`, `ngView`, etc...
 
-You can use `*` when the change affects more than a single scope.
+### Subject (Mandatory)
 
-### Subject
 The subject contains succinct description of the change:
 
 * use the imperative, present tense: "change" not "changed" nor "changes"
 * don't capitalize first letter
 * no dot (.) at the end
 
-### Body
+
+### Body (Not Mandatory)
+
 Just as in the **subject**, use the imperative, present tense: "change" not "changed" nor "changes".
 The body should include the motivation for the change and contrast this with previous behavior.
 
-### Footer
+
+### Footer (Not Mandatory)
+
 The footer should contain any information about **Breaking Changes** and is also the place to
-[reference GitHub issues that this commit closes][closing-issues].
+reference GitHub issues that this commit **Closes**.
 
-**Breaking Changes** should start with the word `BREAKING CHANGE:` with a space or two newlines.
-The rest of the commit message is then used for this.
+**Breaking Changes** should start with the word `BREAKING CHANGE:` with a space or two newlines. The rest of the commit message is then used for this.
 
-A detailed explanation can be found in this [document][commit-message-format].
+
+#### Examples
+
+Messages must be matched by the following regex:
+
+``` js
+/^(revert: )?(feat|fix|polish|docs|style|refactor|perf|test|workflow|ci|chore|types)(\(.+\))?: .{1,50}/
+```
+
+To add "Features" :
+
+```
+feat: add 'comments' option
+```
+
+To make "Bug Fixes" with a link to issue #28:
+
+```
+fix: handle events on blur
+
+close #28
+```
+
+To make "Performance Improvements" and under "Breaking Changes" with the breaking change explanation:
+
+```
+perf: improve time consuming by removing 'foo' option
+
+BREAKING CHANGE: The 'foo' option has been removed.
+```
+
+The following commit and commit `667ecc1` do not appear in the changelog if they are under the same release. If not, the revert commit appears under the "Reverts" header.
+
+```
+revert: feat: add 'comments' option
+
+This reverts commit 667ecc1654a317a13331b17617d973392f415f02.
+```
