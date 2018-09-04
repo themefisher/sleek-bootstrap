@@ -1,11 +1,7 @@
 /*===== 4.8 CHART =====*/
 .world-data-chart {
   padding-left: 30px;
-  padding-right: 30px;
-  // @include media-breakpoint-up(xxl) {
-  //   padding-left: 50px;
-  //   padding-right: 50px;
-  // }
+  padding-right: 30px;  
   &.bdr-bottom {
     @include media-breakpoint-up(xl) {
       border-bottom: 0;
