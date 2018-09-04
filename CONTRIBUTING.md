@@ -127,4 +127,4 @@ This reverts commit 667ecc1654a317a13331b17617d973392f415f02.
 
 In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.
 
-For more details please check: [CODE_OF_CONDUCT.md](sleek-dashboard/CODE_OF_CONDUCT.md)
+For more details please check: [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
