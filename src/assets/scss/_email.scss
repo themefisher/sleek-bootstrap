@@ -49,20 +49,23 @@
   @include media-breakpoint-up(lg) {
     border-left: 1px solid $border-color;
   }
-
-  .head-options .btn-group {
-    @include media-breakpoint-up(md) {
-      float: right;
+  .head-left-options {
+    .form-check {
+      display: inline-block;
+      font-weight: 500;
+      padding: 0.59rem 1rem;
+      font-size: 0.875rem;
+      line-height: 1.5;
     }
-    .btn {
-      font-size: 22px;
-      color: $dark;
-
+  }
+  .head-right-options {
+    .btn-outline-secondary {
+      border: 1px solid $border-color;
       &:hover {
-        background: $primary;
-        color: $white;
-        border-color: $primary;
-        box-shadow: 0px 10px 18px rgba(55, 103, 208, 0.2);
+        background-color: $primary;
+      }
+      &:focus {
+        box-shadow: 0 0 0 0.2rem rgba(76, 132, 255, 0.25) !important;
       }
     }
   }
@@ -116,4 +119,11 @@
 
 .dropzone {
   border: 0;
+}
+
+.mark-mail {
+  .control-indicator {
+    top: -10px;
+    left: 5px;
+  }
 }
