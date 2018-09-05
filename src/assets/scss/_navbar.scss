@@ -123,6 +123,8 @@
             position: relative;
             border-left: 1px solid $border-color;
             border-right: 1px solid $border-color;
+            border-top: 0;
+            border-bottom: 0;
             padding-left: 20px;
             padding-right: 10px;
             font-size: 26px;
@@ -130,6 +132,8 @@
             color: #b7c0cd;
             display: inline-block;
             line-height: 75px;
+            background-color: transparent;
+            cursor: pointer;
             @include media-breakpoint-up(md) {
               padding-left: 16px;
               padding-right: 5px;
@@ -161,6 +165,7 @@
         }
         &.user-menu {
           position: relative;
+          background-color: transparent;
           .user-image {
             width: 40px;
             border-radius: 4px;
@@ -172,6 +177,8 @@
             padding: 0px 0px;
             display: inline-block;
             line-height: 75px;
+            background-color: transparent;
+            border: none;
             > span {
               color: $dark;
               padding: 0 8px;
