@@ -1,8 +1,8 @@
 /*===== 4.19 PAGINATION =====*/
-.page-link {
-  padding: 16px 21px;
-  font-size: 14px;
-  color: $secondary;
+.pagination {
+  .page-link {
+    color: $secondary;
+  }
 }
 
 .pagination-flat .page-item .page-link {
@@ -33,9 +33,6 @@
 }
 
 .border-rounded {
-  .page-item .page-link {
-    padding: 16px 20px;
-  }
   .page-item:last-child .page-link {
     border-top-right-radius: 100px;
     border-bottom-right-radius: 100px;
