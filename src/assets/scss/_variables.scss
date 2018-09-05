@@ -28,6 +28,8 @@ $body-color:  $secondary;
 $border-radius:               .25rem;
 $font-weight-medium:           500;
 
+$headings-margin-bottom: 0;
+
 // stylelint-disable value-keyword-case
 $font-family-sans-roboto:     'Roboto', sans-serif;
 // $font-family-base:           ;
@@ -37,6 +39,8 @@ $font-family-font-awesome:   'FontAwesome';
 $font-family-font-fontello:   'fontello';
 $font-family-base: $font-family-sans-roboto;
 $font-size-base:              .875rem;
+
+
 
 // Alerts
 
