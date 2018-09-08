@@ -1,4 +1,4 @@
-
+// Breakpoints
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
@@ -8,6 +8,7 @@ $grid-breakpoints: (
   xxl: 1500px
 );
 
+// Colors
 $primary: #4c84ff;
 $dark: #1b223c;
 $secondary: #8a909d;
@@ -23,55 +24,65 @@ $inverse: #070707;
 $purple: #896def;
 $white: #fff;
 
+// Body colors
+
 $body-color:  $secondary;
 
-$border-radius:               .25rem;
-$font-weight-medium:           500;
+//Border radius
+
+$border-radius: .25rem;
+
+// Fonts:           ;
+
+$font-family-sans-roboto: 'Roboto', sans-serif;
+$font-family-montserrat: 'Montserrat', sans-serif;
+$font-family-poppins: 'Poppins', sans-serif;
+$font-family-font-awesome: 'FontAwesome';
+$font-family-font-fontello: 'fontello';
+$font-family-base: $font-family-sans-roboto;
+$font-size-base: .875rem;
+$font-weight-medium: 500;
+
+//Heading
 
 $headings-margin-bottom: 0;
-
-// stylelint-disable value-keyword-case
-$font-family-sans-roboto:     'Roboto', sans-serif;
-// $font-family-base:           ;
-$font-family-montserrat:     'Montserrat', sans-serif;
-$font-family-poppins:        'Poppins', sans-serif;
-$font-family-font-awesome:   'FontAwesome';
-$font-family-font-fontello:   'fontello';
-$font-family-base: $font-family-sans-roboto;
-$font-size-base:              .875rem;
-
-
+$h1-font-size: $font-size-base * 2.86;
+$h2-font-size: $font-size-base * 2.285;
+$h3-font-size: $font-size-base * 1.71;
+$h4-font-size: $font-size-base * 1.43;
+$h5-font-size: $font-size-base * 1.285;
+$h6-font-size: $font-size-base * 1.07;
 
 // Alerts
 
-$alert-padding-y:                   1.25rem;
-$alert-padding-x:                   1.25rem;
-$alert-border-level:                -6;
+$alert-padding-y: 1.25rem;
+$alert-padding-x: 1.25rem;
+$alert-border-level: -6;
 
 // Badges
 
-$badge-padding-y:                   .5em;
-$badge-padding-x:                   1em;
-$badge-border-radius:               $border-radius / 2;
-$badge-font-weight:                 $font-weight-medium;
+$badge-padding-y: .5em;
+$badge-padding-x: 1em;
+$badge-border-radius: $border-radius / 2;
+$badge-font-weight: $font-weight-medium;
 
 // Breadcrumbs
 
-$breadcrumb-padding-y:              1rem ;
-$breadcrumb-padding-x:              1.25rem;
-$breadcrumb-bg:                     $white;
+$breadcrumb-padding-y: 1rem ;
+$breadcrumb-padding-x: 1.25rem;
+$breadcrumb-bg: $white;
 
 // Inputs
-$input-btn-padding-y:         .59rem;
-$input-btn-padding-x:          1rem;
+$input-btn-padding-y: .59rem;
+$input-btn-padding-x: 1rem;
 
 // Buttons
 
-$btn-font-weight:             $font-weight-medium;
-$btn-padding-y:               $input-btn-padding-y;
-$btn-padding-x:               $input-btn-padding-x;
+$btn-font-weight: $font-weight-medium;
+$btn-padding-y: $input-btn-padding-y;
+$btn-padding-x: $input-btn-padding-x;
 
 // Pagination
 
-$pagination-padding-y:              1rem !default;
-$pagination-padding-x:              1.25rem !default;
+$pagination-padding-y: 1rem !default;
+$pagination-padding-x: 1.25rem !default;

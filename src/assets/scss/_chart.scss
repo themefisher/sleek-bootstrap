@@ -1,8 +1,8 @@
 /*===== 4.8 CHART =====*/
 .world-data-chart {
   padding-left: 30px;
-  padding-right: 30px;  
-  &.bdr-bottom {
+  padding-right: 30px;
+  &.border-bottom {
     @include media-breakpoint-up(xl) {
       border-bottom: 0;
       border-right: 1px solid $border-color;

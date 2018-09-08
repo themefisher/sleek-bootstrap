@@ -1,38 +1,4 @@
-/* Text Colors */
-.text-primary {
-	color: $primary!important;
-}
-.text-blue {
-	color: $primary!important;
-}
-.text-default {
-	color: $secondary!important;
-}
-.text-white {
-	color: $white!important;
-}
-.text-black {
-	color: $dark!important;
-}
-.text-gray {
-	color: $secondary!important;
-}
-.text-danger {
-	color: $danger!important;
-}
-.text-success {
-	color: $success!important;
-}
-.text-purple {
-	color: $purple!important;
-}
-.text-title {
-	color: $dark;
-}
-
-.text-unselectable {
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+// Weight
+.font-weight-medium {
+  font-weight: $font-weight-medium;
 }
