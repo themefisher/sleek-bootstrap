@@ -1,4 +1,4 @@
-/*===== 4.26 DATA TABLE =====*/
+/*===== DATA TABLE =====*/
 .table-responsive-large {
   @include media-breakpoint-up(xl) {
     display: inline-table;
@@ -121,7 +121,7 @@ table.dataTable {
   }
 }
 
-// Data export Buttons
+/* Data export Buttons */
 .dt-buttons {
   display: inline-block;
   .dt-button {

@@ -1,4 +1,4 @@
-/*=====   4.23 SWITCHERS =====*/
+/*===== SWITCHERS =====*/
 
 input[type=checkbox],
 input[type=radio] {
@@ -49,7 +49,7 @@ input[type=radio] {
 .switch.switch-default .switch-input:checked~.switch-handle {
   left: 37px;
 }
-// ========> Switch context properties
+/* Switch context properties */
 .switch-primary {
   > .switch-input:checked~.switch-label {
     background-color: $primary!important;
@@ -104,13 +104,13 @@ input[type=radio] {
     border-color: transparent;
   }
 }
-// ===========> Switch Pill
+/* Switch Pill */
 .switch-pill .switch-handle,
 .switch-pill .switch-label {
   border-radius: 50px!important;
 }
 
-// ===========> Switch Outline
+/* Switch Outline */
 .switch-primary-outline {
   > .switch-input:checked~.switch-label {
     background-color: $white!important;
@@ -184,7 +184,7 @@ input[type=radio] {
   }
 }
 
-// ===========> Switch Outline Alternative
+/* Switch Outline Alternative */
 .switch-primary-outline-alt {
   > .switch-input:checked~.switch-label {
     background-color: $white!important;
@@ -264,7 +264,7 @@ input[type=radio] {
   }
 }
 
-// ===========> Switch With Text
+/* Switch With Text */
 .switch.switch-text,
 .switch.switch-icon {
   position: relative;
@@ -342,7 +342,7 @@ input[type=radio] {
   left: 37px;
 }
 
-// ===========> Switch With Icon
+/* Switch With Icon */
 .switch.switch-icon {
   .switch-label:after,
   .switch-label:before {

@@ -1,4 +1,4 @@
-/*===== 4.7 CARD =====*/
+/*===== CARD =====*/
 .card {
   .card-header {
     h4{
@@ -148,7 +148,6 @@
         right: 25px;
         top: 50%;
         transform: translateY(-50%);
-        // @include transform(translateY(-50%));
       }
     }
     .btn[aria-expanded="false"],

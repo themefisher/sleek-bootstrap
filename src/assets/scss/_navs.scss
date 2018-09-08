@@ -1,4 +1,4 @@
-/*===== 4.18 NAVS =====*/
+/*===== NAVS =====*/
 .theme-menu {
   list-style: none;
   > li {
@@ -48,7 +48,6 @@
   .menu-open {
     > a > .fa-angle-right,
     > a > .pull-right-container > .fa-angle-right {
-      // @include transform(rotate(90deg));
       transform: rotate(90deg);
     }
   }

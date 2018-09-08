@@ -1,4 +1,4 @@
-/*===== 4.14 FORMS =====*/
+/*===== FORMS =====*/
 .form-control:focus{
   box-shadow: none;
 }
@@ -12,9 +12,6 @@
     font-size: 15px;
     padding: 8px 17px;
     border-color: $border-color;
-    // @include placeholder {
-    //   color: $secondary;
-    // }
     ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
       color: $secondary;
     }
@@ -48,7 +45,7 @@
   }
 }
 
-//========== Form components - checkbox and radios ==========
+/* Form components - checkbox and radios */
 .control {
   display: block;
   position: relative;
@@ -116,7 +113,7 @@
   background: #7b7b7b;
 }
 
-// Contextual Style ============
+/* Contextual Style */
 .checkbox-primary .control-indicator,
 .radio-primary .control-indicator {
   background: $primary;
@@ -168,7 +165,7 @@
   }
 }
 
-// All Outline Contextual Style ============
+/* All Outline Contextual Style */
 .control.outlined {
   .control-indicator {
     background: transparent !important;
@@ -232,7 +229,7 @@
   width: auto;
   margin-left: 10px;
 }
-//========== Form components- input groups ==========
+/* Form components- input groups */
 .input-group > .input-group-prepend,
 .input-group > .input-group-append {
   > .input-group-text {
@@ -282,12 +279,14 @@
     }
   }
 }
-//========== Form components- Validation ==========
+
+/* Form components- Validation */
 .invalid-feedback,
 .valid-feedback {
   font-size: 90%;
 }
-//========== Form components- Advanced ==========
+
+/* Form components- Advanced */
 .select2-container--default .select2-selection--multiple {
   border-color: $border-color;
 }

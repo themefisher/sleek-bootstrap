@@ -1,4 +1,4 @@
-/*===== 4.24 TABS =====*/
+/*===== TABS =====*/
 .nav-tabs .nav-item {
   .nav-link {
     color: $dark;
@@ -34,7 +34,8 @@
 .tab-pane {
   line-height: 1.8;
 }
-// Custom Tab style - Fill
+
+/* Custom Tab Style - Fill */
 .nav-style-fill.nav-pills {
   border: 2px solid $border-color;
   border-radius: 6px;
@@ -124,7 +125,7 @@
 }
 
 
-// ==================== Vertical Tabs =====================
+/* Vertical Tabs */
 .nav-tabs.nav-stacked {
   margin-right: 0;
   border-bottom: 0;

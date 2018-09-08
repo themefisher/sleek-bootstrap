@@ -1,8 +1,5 @@
-/* ======================================
---> 7. EMAIL
-========================================= */
+/*===== EMAIL =====*/
 .email-options {
-
   ul li {
     position: relative;
     a {
@@ -17,14 +14,12 @@
          }
       }
     }
-
     &.active a {
       color: $dark;
        > i {
          color: $primary;
        }
     }
-
     span.badge {
       position: absolute;
       top: 0;
