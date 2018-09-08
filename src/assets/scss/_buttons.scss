@@ -1,18 +1,10 @@
 /*===== BUTTONS =====*/
-/* Button Secondary */
-.btn-outline-secondary {
-  color:$secondary;
-  background-color: transparent;
-  background-image: none;
-  border-color: $border-color;
-  &:hover,
-  &:active,
-  &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled).active,
-  &.active {
-    color: $dark;
-    background-color: $border-color;
-    border-color: $border-color;
+.btn {
+  &.btn-square {
+    border-radius: 0px;
+  }
+  &.btn-pill {
+    border-radius: 100px;
   }
 }
 
@@ -261,79 +253,6 @@
   border-left: 5px solid transparent;
   vertical-align: middle;
 }
-.show>.btn-primary.dropdown-toggle {
-  background-color: rgba($primary,0.9);
-  border-color: rgba($primary,0.9);
-  &:focus, &:active {
-    box-shadow: none;
-  }
-}
-.show>.btn-secondary.dropdown-toggle {
-  background-color: rgba($white,0.9);
-  color: $dark;
-  &:focus, &:active {
-    box-shadow: none;
-  }
-}
-.show>.btn-success.dropdown-toggle {
-  background-color: rgba($success,0.9);
-  border-color: rgba($success,0.9);
-  &:focus, &:active {
-    box-shadow: none;
-  }
-}
-.show>.btn-info.dropdown-toggle {
-  background-color: rgba($info,0.9);
-  border-color: rgba($info,0.9);
-  &:focus, &:active {
-    box-shadow: none;
-  }
-}
-.show>.btn-warning.dropdown-toggle {
-  background-color: rgba($warning,0.9);
-  border-color: rgba($warning,0.9);
-  &:focus, &:active {
-    box-shadow: none;
-  }
-}
-.show>.btn-danger.dropdown-toggle {
-  background-color: rgba($danger,0.9);
-  border-color: rgba($danger,0.9);
-  &:focus, &:active {
-    box-shadow: none;
-  }
-}
-/* Button outline */
-.show>.btn-outline-primary.dropdown-toggle {
-  color: $white;
-  background-color: $primary;
-  border-color: $primary;
-}
-.show>.btn-outline-secondary.dropdown-toggle {
-  color: $dark;
-  background-color: $border-color;
-  border-color: $border-color;
-}
-.show>.btn-outline-success.dropdown-toggle {
-  color: $white;
-  background-color: $success;
-  border-color: $success;
-}
-.show>.btn-outline-info.dropdown-toggle {
-  color: $white;
-  background-color: $info;
-  border-color: $info;
-}
-.show>.btn-outline-warning.dropdown-toggle {
-  color: $white;
-  background-color: $warning;
-  border-color: $warning;
-}
-.show>.btn-outline-danger.dropdown-toggle {
-  color: $white;
-  background-color: $danger;
-  border-color: $danger;
-}
 
 /* Button Split */
 .dropdown-toggle-split {
@@ -351,10 +270,4 @@
   cursor: pointer;
   white-space: nowrap;
   @include button-size(auto,20px, 15px, auto, 0px);
-}
-.ladda-button[disabled],
-.ladda-button[disabled]:hover,
-.ladda-button[data-loading],
-.ladda-button[data-loading]:hover {
-
 }
