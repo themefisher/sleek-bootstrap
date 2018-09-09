@@ -465,14 +465,14 @@ $(document).ready(function() {
   var dataTable1 = document.getElementById("d-table1");
   if (dataTable1 !== null) {
     $(dataTable1).DataTable({
-      ajax: "assets/js/datatable.json",
+      ajax: "assets/data/datatable.json",
       dom: 'T<"clear">lfrtip'
     });
   }
   var dataTable2 = document.getElementById("d-table2");
   if (dataTable2 !== null) {
     $(dataTable2).DataTable({
-      ajax: "assets/js/datatable.json",
+      ajax: "assets/data/datatable.json",
       dom: 'T<"clear">lfrtip',
       buttons: ["copy", "csv", "excel", "pdf", "print"]
     });
