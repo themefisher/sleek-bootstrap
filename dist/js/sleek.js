@@ -196,6 +196,17 @@ $(document).ready(function() {
   }
 
   /*======== 6. TODO LIST ========*/
+
+  function todoCheckAll() {
+    var fas = document.querySelectorAll(".todo-single-item .fa");
+    fas.forEach(function(fa) {
+      fa.addEventListener("click", function(e) {
+        e.stopPropagation();
+        e.target.parentElement.classList.toggle("finished");
+      });
+    });
+  }
+
   if (document.querySelector("#todo")) {
     var list = document.querySelector("#todo-list"),
       todoInput = document.querySelector("#todo-input"),
@@ -228,16 +239,6 @@ $(document).ready(function() {
       todoCheckAll();
     });
 
-    function todoCheckAll() {
-      var fas = document.querySelectorAll(".todo-single-item .fa");
-      fas.forEach(function(fa) {
-        fa.addEventListener("click", function(e) {
-          e.stopPropagation();
-          console.log(e);
-          e.target.parentElement.classList.toggle("finished");
-        });
-      });
-    }
     todoCheckAll();
   }
 });
