@@ -137,6 +137,19 @@ gulp.task('img', function() {
 
 
 /* =====================================================
+    Data
+    ===================================================== */
+
+gulp.task('data', function() {
+  return gulp.src( path.data )
+    .pipe(gulp.dest(assets + 'data/'))
+    .pipe(browserSync.reload({
+      stream: true
+    }));
+});
+
+
+/* =====================================================
     PLUGINS
     ===================================================== */
 
@@ -169,7 +182,7 @@ function customPlumber(errTitle) {
     WATCH
     ===================================================== */
 
-gulp.task('watch', gulp.series('html', 'scss', 'rtl', 'minifycss', 'js', 'img', 'plugins', function() {
+gulp.task('watch', gulp.series('html', 'scss', 'rtl', 'minifycss', 'js', 'img', 'data', 'plugins', function() {
   gulp.watch( path.html, gulp.series('html'));
   gulp.watch( path.htminc, gulp.series('html'));
   gulp.watch( path.scss, gulp.series('scss'));
