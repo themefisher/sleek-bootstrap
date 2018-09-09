@@ -67,7 +67,7 @@ gulp.task('html', function() {
 gulp.task('scss', function() {
   return gulp.src( path.scss )
     .pipe(customPlumber('Error Running Sass'))
-    .pipe(gulp.dest(dist + 'scss/'))
+    // .pipe(gulp.dest(dist + 'scss/'))
     .pipe(sourcemaps.init())
     .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
     .pipe(autoprefixer())
