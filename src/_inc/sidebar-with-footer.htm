@@ -29,52 +29,6 @@
               </li>
             </ul>
           </li>
-          <li class="has-sub @@if (parent === 'apps'){active}">
-            <a href="javascript:void(0)">
-              <i class="icon-envelope"></i>
-              <span>Apps</span>
-              <b class="caret"></b>
-            </a>
-            <ul class="sub-menu">
-              <li class="has-sub @@if (sub_parent === 'email'){active}">
-                <a href="javascript:void(0)">
-                  <span>Email</span>
-                  <b class="caret"></b>
-                </a>
-                <ul class="sub-menu ">
-                  <li class="@@if (active === 'email-inbox'){active}">
-                    <a href="email-inbox.html">Inbox</a>
-                  </li>
-                  <li class="@@if (active === 'email-compose'){active}">
-                    <a href="email-compose.html">Compose Email</a>
-                  </li>
-                  <li class="@@if (active === 'email-details'){active}">
-                    <a href="email-details.html">Email Details</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="@@if (active === 'calendar'){active}">
-                <a href="calendar.html">Calendar</a>
-              </li>
-              <li class="has-sub @@if (sub_parent === 'editors'){active}">
-                <a href="javascript:void(0)">
-                  <span>Editors</span>
-                  <b class="caret"></b>
-                </a>
-                <ul class="sub-menu">
-                  <li class="@@if (active === 'editor-text'){active}">
-                    <a href="editor-text.html">Text Editor</a>
-                  </li>
-                  <li class="@@if (active === 'editor-markdown'){active} ">
-                    <a href="editor-markdown.html">Markdown Editor</a>
-                  </li>
-                  <li class="@@if (active === 'editor-html'){active} ">
-                    <a href="editor-html.html">HTML Editor</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
           <li class="has-sub @@if (parent === 'layouts'){active}">
             <a href="javascript:void(0)">
               <i class="icon-widget"></i>
@@ -248,10 +202,7 @@
                 </a>
                 <ul class="sub-menu ">
                   <li class="@@if (active === 'table-general'){active}">
-                    <a href="tables.html">General Tables</a>
-                  </li>
-                  <li class="@@if (active === 'dataTable'){active}">
-                    <a href="data-tables.html">Data Tables</a>
+                    <a href="tables.html">Bootstrap Tables</a>
                   </li>
                 </ul>
               </li>
@@ -331,9 +282,6 @@
                 <ul class="sub-menu ">
                   <li class="@@if (active === 'invoice'){active}">
                     <a href="invoice.html"> Invoice</a>
-                  </li>
-                  <li class="@@if (active === 'comingsoon'){active}">
-                    <a href="coming-soon.html"> Coming Soon</a>
                   </li>
                   <li class="@@if (active === 'error'){active}">
                     <a href="error.html"> Error</a>
