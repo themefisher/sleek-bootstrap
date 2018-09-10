@@ -41,7 +41,7 @@ var port         = 8080;
     ===================================================== */
 
 gulp.task('clean', function() {
-  return del([demo, dist])
+  return del( demo )
 });
 
 
@@ -51,12 +51,10 @@ gulp.task('clean', function() {
 
 gulp.task('html', function() {
   return gulp.src( path.html )
-    .pipe(customPlumber('Error Running html-include'))
+    .pipe(plumber())
     .pipe(fileinclude({ basepath: path.incdir }))
     .pipe(gulp.dest(demo))
-    .pipe(browserSync.reload({
-      stream: true
-    }));
+    .pipe(browserSync.stream())
 });
 
 
@@ -66,40 +64,31 @@ gulp.task('html', function() {
 
 gulp.task('scss', function() {
   return gulp.src( path.scss )
-    .pipe(customPlumber('Error Running Sass'))
-    // .pipe(gulp.dest(dist + 'scss/'))
+    .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
     .pipe(autoprefixer())
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(assets + 'css/'))
-    .pipe(gulp.dest(dist + 'css/'))
-    .pipe(browserSync.reload({
-      stream: true
-    }));
+    .pipe(browserSync.stream())
 });
 
 gulp.task('rtl', function() {
-  return gulp.src('dist/css/sleek.css')
-    .pipe(customPlumber('Error Running RTL'))
+  return gulp.src( 'demo/assets/css/sleek.css' )
+    .pipe(plumber())
     .pipe(rtlcss())
     .pipe(rename({suffix: '.rtl'}))
     .pipe(gulp.dest(assets + 'css/'))
-    .pipe(gulp.dest(dist + 'css/'))
-    .pipe(browserSync.reload({
-      stream: true
-    }));
+    .pipe(browserSync.stream())
 });
 
 gulp.task('minifycss', function() {
-  return gulp.src(['dist/css/sleek.css', 'dist/css/sleek.rtl.css'])
+  return gulp.src(['demo/assets/css/sleek.css', 'demo/assets/css/sleek.rtl.css'])
+    .pipe(plumber())
     .pipe(cleanCSS())
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest(assets + 'css/'))
-    .pipe(gulp.dest(dist + 'css/'))
-    .pipe(browserSync.reload({
-      stream: true
-    }));
+    .pipe(browserSync.stream())
 });
 
 
@@ -109,16 +98,12 @@ gulp.task('minifycss', function() {
 
 gulp.task('js', function() {
   return gulp.src( path.js )
-    .pipe(customPlumber('Error Running JS'))
+    .pipe(plumber())
     .pipe(gulp.dest(assets + 'js/'))
-    .pipe(gulp.dest(dist + 'js/'))
     .pipe(uglify())
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest(assets + 'js/'))
-    .pipe(gulp.dest(dist + 'js/'))
-    .pipe(browserSync.reload({
-      stream: true
-    }));
+    .pipe(browserSync.stream())
 });
 
 
@@ -128,24 +113,10 @@ gulp.task('js', function() {
 
 gulp.task('img', function() {
   return gulp.src( path.img )
+    .pipe(plumber())
     .pipe(imagemin({ progressive: true }))
     .pipe(gulp.dest(assets + 'img/'))
-    .pipe(browserSync.reload({
-      stream: true
-    }));
-});
-
-
-/* =====================================================
-    Data
-    ===================================================== */
-
-gulp.task('data', function() {
-  return gulp.src( path.data )
-    .pipe(gulp.dest(assets + 'data/'))
-    .pipe(browserSync.reload({
-      stream: true
-    }));
+    .pipe(browserSync.stream())
 });
 
 
@@ -155,47 +126,50 @@ gulp.task('data', function() {
 
 gulp.task('plugins', function() {
   return gulp.src( path.plugins )
+    .pipe(plumber())
     .pipe(gulp.dest(assets + 'plugins/'))
-    .pipe(browserSync.reload({
-      stream: true
-    }));
+    .pipe(browserSync.stream())
 });
 
 
 /* =====================================================
-    ERROR MESSAGE
+    DATA
     ===================================================== */
 
-function customPlumber(errTitle) {
-  return plumber({
-    errorHandler: notify.onError({
-      // Customizing error title
-      title: errTitle || "Error running Gulp",
-      message: "Error: <%= error.message %>",
-      sound: "Glass"
-    })
-  });
-};
+gulp.task('data', function() {
+  return gulp.src( path.data )
+    .pipe(plumber())
+    .pipe(gulp.dest(assets + 'data/'))
+    .pipe(browserSync.stream())
+});
 
 
 /* =====================================================
     WATCH
     ===================================================== */
 
-gulp.task('watch', gulp.series('html', 'scss', 'rtl', 'minifycss', 'js', 'img', 'data', 'plugins', function() {
-  gulp.watch( path.html, gulp.series('html'));
-  gulp.watch( path.htminc, gulp.series('html'));
-  gulp.watch( path.scss, gulp.series('scss'));
-  gulp.watch( path.scss, gulp.series('rtl'));
-  gulp.watch( path.scss, gulp.series('minifycss'));
-  gulp.watch( path.js, gulp.series('js'));
-  gulp.watch( path.img, gulp.series('img'));
+gulp.task('watch', gulp.series('html', 'scss', 'rtl', 'minifycss', 'js', 'img', 'plugins', 'data', function() {
+  gulp.watch( path.html, gulp.series('html')).on('change', browserSync.reload)
+  gulp.watch( path.htminc, gulp.series('html')).on('change', browserSync.reload)
+  gulp.watch( path.scss, gulp.series('scss', 'rtl', 'minifycss')).on('change', browserSync.reload)
+  gulp.watch( path.js, gulp.series('js')).on('change', browserSync.reload)
+  gulp.watch( path.img, gulp.series('img')).on('change', browserSync.reload)
   browserSync.init({
     server: {
       baseDir: demo
     },
     port: port
-  });
+  })
+}));
+
+
+/* =====================================================
+    DIST
+    ===================================================== */
+gulp.task('dist', gulp.series('clean', 'html', 'scss', 'rtl', 'minifycss', 'js', 'img', 'plugins', 'data', function() {
+  return gulp.src( [assets, path.scss] )
+    .pipe(plumber())
+    .pipe(gulp.dest( dist ))
 }));
 
 
