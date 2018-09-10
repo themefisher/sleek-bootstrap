@@ -1,0 +1,18 @@
+/*===== ERROR =====*/
+.error-wrapper {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  @include media-breakpoint-up(lg) {
+    padding-top: 175px;
+    padding-bottom: 175px;
+  }
+  .error-title {
+    font-size: 140px;
+  }
+  .error-subtitle {
+    font-size: 26px;
+  }
+  .img-responsive {
+    max-width: 100%;
+  }
+}

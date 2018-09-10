@@ -1,39 +1,34 @@
-/* ======================================
---> 5. COMMINGSOON
-========================================= */
+/*===== COMMINGSOON =====*/
 .comingsoon-wrapper {
   padding: 65px 0;
   .form_subscribe {
     position: relative;
 
     input {
-      background: $white-color;
+      background: $white;
       border: 1px solid $border-color;
       margin-bottom: 0px;
       border-radius: 0px;
       padding: 15px 20px;
       font-size: 15px;
-      // @include placeholder {
-      //   color: $text-color;
-      // }
-      ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-        color: $text-color;
+      ::-webkit-input-placeholder {
+        color: $secondary;
       }
-      ::-moz-placeholder { /* Firefox 19+ */
-        color: $text-color;
+      ::-moz-placeholder {
+        color: $secondary;
       }
-      :-ms-input-placeholder { /* IE 10+ */
-        color: $text-color;
+      :-ms-input-placeholder {
+        color: $secondary;
       }
-      :-moz-placeholder { /* Firefox 18- */
-        color: $text-color;
+      :-moz-placeholder {
+        color: $secondary;
       }
     }
     .btn-search {
       position: absolute;
-      color: $text-color;
+      color: $secondary;
       right: 20px;
-      top: 15px;
+      top: 5px;
       font-size: 20px;
       border: none;
       background: transparent;
@@ -69,14 +64,14 @@
       line-height: 112px;
       font-weight: 500;
 
-      border-color: $title-color;
-      color: $title-color;
+      border-color: $dark;
+      color: $dark;
     }
     .tab-metr {
       margin-top: -65px;
       font-size: 16px;
       display: none;
-      color: $white-color!important;
+      color: $white!important;
     }
   }
   .form_subscribe {
@@ -122,33 +117,12 @@
       line-height: 22px;
       font-size: 16px;
       text-transform: capitalize;
-      color: $title-color;
+      color: $dark;
     }
   }
   &.circled {
     .tab-val {
       border-radius: 50%;
     }
-  }
-}
-
-/* ======================================
---> 6. ERROR
-========================================= */
-.error-wrapper {
-  padding-top: 75px;
-  padding-bottom: 75px;
-  @include media-breakpoint-up(lg) {
-    padding-top: 175px;
-    padding-bottom: 175px;
-  }
-  .error-title {
-    font-size: 140px;
-  }
-  .error-subtitle {
-    font-size: 26px;
-  }
-  .img-responsive {
-    max-width: 100%;
   }
 }

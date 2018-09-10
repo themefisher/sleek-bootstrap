@@ -1,4 +1,4 @@
-/*===== 4.18 NAVS =====*/
+/*===== NAVS =====*/
 .theme-menu {
   list-style: none;
   > li {
@@ -6,14 +6,14 @@
     margin: 0;
     padding: 0;
     > a {
-      font-family: 'Poppins', sans-serif;
+      font-family: $font-family-poppins;
       padding: 15px 0px;
       display: block;
       position: relative;
-      color: $text-color;
+      color: $secondary;
       font-weight: 500;
       &:active, &:hover, &:focus {
-        color: $title-color;
+        color: $dark;
       }
       > .fa,
       > .glyphicon,
@@ -48,7 +48,6 @@
   .menu-open {
     > a > .fa-angle-right,
     > a > .pull-right-container > .fa-angle-right {
-      // @include transform(rotate(90deg));
       transform: rotate(90deg);
     }
   }
@@ -56,11 +55,11 @@
   .treeview-menu {
     li a {
       background-color: transparent;
-      color: $text-color;
+      color: $secondary;
       display: block;
       padding: 12px 30px;
       &:hover {
-        color: $title-color;
+        color: $dark;
       }
     }
   }
@@ -72,7 +71,7 @@
   > li {
     padding:  0 30px;
     &.menu-open {
-      background-color: $sand;
+      background-color: $gray-100;
     }
   }
 }

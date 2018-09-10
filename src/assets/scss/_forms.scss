@@ -1,31 +1,28 @@
-/*===== 4.14 FORMS =====*/
+/*===== FORMS =====*/
 .form-control:focus{
   box-shadow: none;
 }
 .form-group, .input-group {
   margin-bottom: 20px;
   label {
-    color: $title-color;
+    color: $dark;
     font-size: 15px;
   }
   .form-control {
     font-size: 15px;
     padding: 8px 17px;
     border-color: $border-color;
-    // @include placeholder {
-    //   color: $text-color;
-    // }
     ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-      color: $text-color;
+      color: $secondary;
     }
     ::-moz-placeholder { /* Firefox 19+ */
-      color: $text-color;
+      color: $secondary;
     }
     :-ms-input-placeholder { /* IE 10+ */
-      color: $text-color;
+      color: $secondary;
     }
     :-moz-placeholder { /* Firefox 18- */
-      color: $text-color;
+      color: $secondary;
     }
   }
   .form-control.input-lg {
@@ -48,12 +45,12 @@
   }
 }
 
-//========== Form components - checkbox and radios ==========
+/* Form components - checkbox and radios */
 .control {
   display: block;
   position: relative;
   padding-left: 25px;
-  color: $title-color;
+  color: $dark;
   margin-bottom: 15px;
   cursor: pointer;
   font-size: 14px;
@@ -97,7 +94,7 @@
   width: 5px;
   height: 8px;
   background: transparent!important;
-  border: solid $title-color;
+  border: solid $dark;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
@@ -110,29 +107,21 @@
   height: 5px;
   width: 5px;
   border-radius: 50%;
-  background: $title-color;
+  background: $dark;
 }
 .control-radio input:disabled ~ .control-indicator:after {
   background: #7b7b7b;
 }
 
-// Email Inbox ============
-.mark-mail {
-  .control-indicator {
-    top: -10px;
-    left: 5px;
-  }
-}
-
-// Contextual Style ============
+/* Contextual Style */
 .checkbox-primary .control-indicator,
 .radio-primary .control-indicator {
   background: $primary;
   border-color: $primary;
   &::after {
-    color: $white-color;
-    border-color: $white-color;
-    background: $white-color;
+    color: $white;
+    border-color: $white;
+    background: $white;
   }
 }
 .checkbox-warning .control-indicator,
@@ -140,9 +129,9 @@
   background: $warning;
   border-color: $warning;
   &::after {
-    color: $white-color;
-    border-color: $white-color;
-    background: $white-color;
+    color: $white;
+    border-color: $white;
+    background: $white;
   }
 }
 .checkbox-danger .control-indicator,
@@ -150,9 +139,9 @@
   background: $danger;
   border-color: $danger;
   &::after {
-    color: $white-color;
-    border-color: $white-color;
-    background: $white-color;
+    color: $white;
+    border-color: $white;
+    background: $white;
   }
 }
 .checkbox-success .control-indicator,
@@ -160,9 +149,9 @@
   background: $success;
   border-color: $success;
   &::after {
-    color: $white-color;
-    border-color: $white-color;
-    background: $white-color;
+    color: $white;
+    border-color: $white;
+    background: $white;
   }
 }
 .checkbox-info .control-indicator,
@@ -170,13 +159,13 @@
   background: $info;
   border-color: $info;
   &::after {
-    color: $white-color;
-    border-color: $white-color;
-    background: $white-color;
+    color: $white;
+    border-color: $white;
+    background: $white;
   }
 }
 
-// All Outline Contextual Style ============
+/* All Outline Contextual Style */
 .control.outlined {
   .control-indicator {
     background: transparent !important;
@@ -192,7 +181,7 @@
   &::after {
     background: $primary;
     border-color: $primary;
-    color: $white-color;
+    color: $white;
   }
 }
 .control.outlined.checkbox-warning .control-indicator,
@@ -202,7 +191,7 @@
   &::after {
     background: $warning;
     border-color: $warning;
-    color: $white-color;
+    color: $white;
   }
 }
 .control.outlined.checkbox-danger .control-indicator,
@@ -212,7 +201,7 @@
   &::after {
     background: $danger;
     border-color: $danger;
-    color: $white-color;
+    color: $white;
   }
 }
 .control.outlined.checkbox-success .control-indicator,
@@ -222,7 +211,7 @@
   &::after {
     background: $success;
     border-color: $success;
-    color: $white-color;
+    color: $white;
   }
 }
 .control.outlined.checkbox-info .control-indicator,
@@ -232,7 +221,7 @@
   &::after {
     background: $info;
     border-color: $info;
-    color: $white-color;
+    color: $white;
   }
 }
 
@@ -240,28 +229,28 @@
   width: auto;
   margin-left: 10px;
 }
-//========== Form components- input groups ==========
+/* Form components- input groups */
 .input-group > .input-group-prepend,
 .input-group > .input-group-append {
   > .input-group-text {
-    background-color: $sand;
+    background-color: $gray-100;
     border-color: $border-color;
 
     &.bg-primary {
       border-color: $primary;
-      color: $white-color;
+      color: $white;
     }
     &.bg-warning {
       border-color: $warning;
-      color: $white-color;
+      color: $white;
     }
     &.bg-danger {
       border-color: $danger;
-      color: $white-color;
+      color: $white;
     }
     &.bg-success {
       border-color: $success;
-      color: $white-color;
+      color: $white;
     }
 
     .control {
@@ -276,7 +265,7 @@
     .radio-custom-label:before,
     .checkbox-custom-label:before {
       margin-right: 0px;
-      background: $white-color;
+      background: $white;
     }
     .radio-custom:checked + .radio-custom-label:before,
     .checkbox-custom:checked + .checkbox-custom-label:before {
@@ -290,12 +279,14 @@
     }
   }
 }
-//========== Form components- Validation ==========
+
+/* Form components- Validation */
 .invalid-feedback,
 .valid-feedback {
   font-size: 90%;
 }
-//========== Form components- Advanced ==========
+
+/* Form components- Advanced */
 .select2-container--default .select2-selection--multiple {
   border-color: $border-color;
 }

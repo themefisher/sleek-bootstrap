@@ -1,4 +1,4 @@
-/*=====   4.23 SWITCHERS =====*/
+/*===== SWITCHERS =====*/
 
 input[type=checkbox],
 input[type=radio] {
@@ -49,7 +49,7 @@ input[type=radio] {
 .switch.switch-default .switch-input:checked~.switch-handle {
   left: 37px;
 }
-// ========> Switch context properties
+/* Switch context properties */
 .switch-primary {
   > .switch-input:checked~.switch-label {
     background-color: $primary!important;
@@ -61,8 +61,8 @@ input[type=radio] {
 }
 .switch-secondary {
   > .switch-input:checked~.switch-label {
-    background-color: $secondary-color!important;
-    border-color: $secondary-color;
+    background-color: $secondary!important;
+    border-color: $secondary;
   }
   > .switch-input:checked~.switch-handle {
     border-color: transparent;
@@ -104,16 +104,16 @@ input[type=radio] {
     border-color: transparent;
   }
 }
-// ===========> Switch Pill
+/* Switch Pill */
 .switch-pill .switch-handle,
 .switch-pill .switch-label {
   border-radius: 50px!important;
 }
 
-// ===========> Switch Outline
+/* Switch Outline */
 .switch-primary-outline {
   > .switch-input:checked~.switch-label {
-    background-color: $white-color!important;
+    background-color: $white!important;
     border-color: $primary;
   }
   .switch-input:checked~.switch-label:after {
@@ -125,19 +125,19 @@ input[type=radio] {
 }
 .switch-secondary-outline {
   > .switch-input:checked~.switch-label {
-    background-color: $white-color!important;
-    border-color: $secondary-color;
+    background-color: $white!important;
+    border-color: $secondary;
   }
   .switch-input:checked~.switch-label:after {
-    color: $secondary-color;
+    color: $secondary;
   }
   > .switch-input:checked~.switch-handle {
-    border-color: $secondary-color;
+    border-color: $secondary;
   }
 }
 .switch-success-outline {
   > .switch-input:checked~.switch-label {
-    background-color: $white-color!important;
+    background-color: $white!important;
     border-color: $success;
   }
   .switch-input:checked~.switch-label:after {
@@ -149,7 +149,7 @@ input[type=radio] {
 }
 .switch-info-outline {
   > .switch-input:checked~.switch-label {
-    background-color: $white-color!important;
+    background-color: $white!important;
     border-color: $info;
   }
   .switch-input:checked~.switch-label:after {
@@ -161,7 +161,7 @@ input[type=radio] {
 }
 .switch-warning-outline {
   > .switch-input:checked~.switch-label {
-    background-color: $white-color!important;
+    background-color: $white!important;
     border-color: $warning;
   }
   > .switch-input:checked~.switch-label:after {
@@ -173,7 +173,7 @@ input[type=radio] {
 }
 .switch-danger-outline {
   > .switch-input:checked~.switch-label {
-    background-color: $white-color!important;
+    background-color: $white!important;
     border-color: $danger;
   }
   > .switch-input:checked~.switch-label:after {
@@ -184,10 +184,10 @@ input[type=radio] {
   }
 }
 
-// ===========> Switch Outline Alternative
+/* Switch Outline Alternative */
 .switch-primary-outline-alt {
   > .switch-input:checked~.switch-label {
-    background-color: $white-color!important;
+    background-color: $white!important;
     border-color: $primary;
   }
   .switch-input:checked~.switch-label:after {
@@ -200,20 +200,20 @@ input[type=radio] {
 }
 .switch-secondary-outline-alt {
   > .switch-input:checked~.switch-label {
-    background-color: $white-color!important;
-    border-color: $secondary-color;
+    background-color: $white!important;
+    border-color: $secondary;
   }
   > .switch-input:checked~.switch-label:after {
-    color: $secondary-color;
+    color: $secondary;
   }
   > .switch-input:checked~.switch-handle {
-    background-color: $secondary-color;
-    border-color: $secondary-color;
+    background-color: $secondary;
+    border-color: $secondary;
   }
 }
 .switch-success-outline-alt {
   > .switch-input:checked~.switch-label {
-    background-color: $white-color!important;
+    background-color: $white!important;
     border-color: $success;
   }
   > .switch-input:checked~.switch-label:after {
@@ -226,7 +226,7 @@ input[type=radio] {
 }
 .switch-info-outline-alt {
   > .switch-input:checked~.switch-label {
-    background-color: $white-color!important;
+    background-color: $white!important;
     border-color: $info;
   }
   > .switch-input:checked~.switch-label:after {
@@ -239,7 +239,7 @@ input[type=radio] {
 }
 .switch-warning-outline-alt {
   > .switch-input:checked~.switch-label {
-    background-color: $white-color!important;
+    background-color: $white!important;
     border-color: $warning;
   }
   > .switch-input:checked~.switch-label:after {
@@ -252,7 +252,7 @@ input[type=radio] {
 }
 .switch-danger-outline-alt {
   > .switch-input:checked~.switch-label {
-    background-color: $white-color!important;
+    background-color: $white!important;
     border-color: $danger;
   }
   > .switch-input:checked~.switch-label:after {
@@ -264,7 +264,7 @@ input[type=radio] {
   }
 }
 
-// ===========> Switch With Text
+/* Switch With Text */
 .switch.switch-text,
 .switch.switch-icon {
   position: relative;
@@ -289,7 +289,7 @@ input[type=radio] {
     font-size: 10px;
     font-weight: 600;
     text-transform: uppercase;
-    background-color: $white-color;
+    background-color: $white;
     border: 1px solid #c2cfd6;
     border-radius: 2px;
     transition: opacity background .3s ease-out;
@@ -316,7 +316,7 @@ input[type=radio] {
     line-height: 1;
     font-size: 12px;
     font-weight: 400;
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-family-sans-roboto;
     text-align: center;
     transition: inherit;
   }
@@ -342,7 +342,7 @@ input[type=radio] {
   left: 37px;
 }
 
-// ===========> Switch With Icon
+/* Switch With Icon */
 .switch.switch-icon {
   .switch-label:after,
   .switch-label:before {
@@ -353,7 +353,7 @@ input[type=radio] {
     line-height: 1;
     font-size: 12px;
     font-weight: 400;
-    font-family: 'FontAwesome';
+    font-family: $font-family-font-awesome;
     text-align: center;
     transition: inherit;
   }

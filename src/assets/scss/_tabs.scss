@@ -1,7 +1,7 @@
-/*===== 4.24 TABS =====*/
+/*===== TABS =====*/
 .nav-tabs .nav-item {
   .nav-link {
-    color: $title-color;
+    color: $dark;
     font-weight: 500;
     padding: 12px 20px;
   }
@@ -9,7 +9,7 @@
     color: $primary;
   }
   .nav-link.disabled {
-    color: $text-color;
+    color: $secondary;
     &:hover {
       cursor:not-allowed;
     }
@@ -17,15 +17,15 @@
 }
 .nav-pills .nav-item {
   .nav-link {
-    color: $title-color;
+    color: $dark;
     padding: 12px 20px;
   }
   .nav-link.active {
-    color: $white-color;
+    color: $white;
     background: $primary;
   }
   .nav-link.disabled {
-    color: $text-color;
+    color: $secondary;
     &:hover {
       cursor:not-allowed;
     }
@@ -34,7 +34,8 @@
 .tab-pane {
   line-height: 1.8;
 }
-// Custom Tab style - Fill
+
+/* Custom Tab Style - Fill */
 .nav-style-fill.nav-pills {
   border: 2px solid $border-color;
   border-radius: 6px;
@@ -77,7 +78,7 @@
 
     .nav-link {
       padding: 0 0 20px 0;
-      color: $text-color;
+      color: $secondary;
       position: relative;
       .type-name {
         display: block;
@@ -124,7 +125,7 @@
 }
 
 
-// ==================== Vertical Tabs =====================
+/* Vertical Tabs */
 .nav-tabs.nav-stacked {
   margin-right: 0;
   border-bottom: 0;

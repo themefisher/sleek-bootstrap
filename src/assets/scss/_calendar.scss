@@ -1,4 +1,4 @@
-/*===== 4.10 CALENDAR =====*/
+/*===== CALENDAR =====*/
 .fc-header-toolbar{
   padding-bottom: 15px;
   .fc-button {
@@ -8,7 +8,7 @@
     height: 40px;
     font-size: 15px;
     font-weight: 500;
-    color: $text-color;
+    color: $secondary;
     text-transform: capitalize;
     box-shadow: none;
     background: transparent;
@@ -24,26 +24,26 @@
       outline: none;
       background: $primary;
       border-color: $primary;
-      color: $white-color;
+      color: $white;
       @include box-shadow(0px, 5px, 9px, rgba(55, 103, 208, 0.2));
     }
   }
   .fc-prev-button .fc-icon-left-single-arrow:after {
     content: "\f104";
-    font-family: 'FontAwesome';
+    font-family: $font-family-font-awesome;
     font-size: 24px;
     font-weight: 400;
   }
   .fc-next-button .fc-icon-right-single-arrow:after {
     content: "\f105";
-    font-family: 'FontAwesome';
+    font-family: $font-family-font-awesome;
     font-size: 24px;
     font-weight: 400;
   }
 }
 .fc-center {
   h2 {
-    color: $title-color;
+    color: $dark;
     font-size: 20px;
   }
 }
@@ -58,7 +58,7 @@
     height: 20px;
     background: $primary;
     border-radius: 100px;
-    color: $white-color;
+    color: $white;
     text-align: center;
   }
 }

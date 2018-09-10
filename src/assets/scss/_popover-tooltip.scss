@@ -1,26 +1,26 @@
-/*===== 4.20 POPVER TOOLTIP =====*/
+/*===== TOOLTIP =====*/
+/*Popver Tooltip*/
 .popover {
-  background-color: $white-color;
+  background-color: $white;
 }
 .popover-header {
   background-color: transparent;
   border-bottom: 0px;
   padding-bottom: 0px;
-  color: $title-color;
+  color: $dark;
   font-size: 18px;
 }
 .popover-body {
-  color: $text-color;
+  color: $secondary;
 }
 
-// ====== Tooltip ======
-
+/* Tooltip Inner */ 
 .tooltip-inner {
-  background-color: $white-color;
+  background-color: $white;
   border: 1px solid #ebebeb;
   padding: 9px 18px;
-  color: $title-color;
-  color: $title-color;
+  color: $dark;
+  color: $dark;
   font-size: 15px;
   font-weight: 500;
 }
@@ -74,8 +74,8 @@
 
 /* Vector Map Tooltip */
 .jvectormap-tip {
-  background-color: $white-color;
-  color: $text-color;
+  background-color: $white;
+  color: $secondary;
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 5px;

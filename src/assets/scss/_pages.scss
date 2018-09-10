@@ -1,8 +1,6 @@
-/* ======================================
---> 8. INVOICE
-========================================= */
+/*===== INVOICE =====*/
 .invoice-wrapper table tbody td:first-child {
-  color: $title-color;
+  color: $dark;
   font-weight: 500;
 }
 .invoice-wrapper table tbody td,
@@ -11,7 +9,7 @@
 }
 .invoice-wrapper {
   .table-striped tbody tr:nth-of-type(odd) {
-    background: $sand;
+    background: $gray-100;
   }
   .btn:hover {
     background: $primary;

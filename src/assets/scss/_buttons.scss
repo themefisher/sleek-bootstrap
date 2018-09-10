@@ -1,65 +1,5 @@
-/*===== 4.3 BUTTONS =====*/
-@mixin button-size($height, $padding-horizontal, $font-size, $line-height, $border-radius) {
-  height: $height;
-  padding: 0 $padding-horizontal;
-  font-size: $font-size;
-  line-height: $line-height;
-  border-radius: $border-radius;
-}
+/*===== BUTTONS =====*/
 .btn {
-  display: inline-block;
-  margin-bottom: 0;
-  font-weight: 500;
-  text-align: center;
-  vertical-align: middle;
-  touch-action: manipulation;
-  cursor: pointer;
-  background-image: none;
-  border: 1px solid transparent;
-  white-space: nowrap;
-  @include button-size(40px, 20px, 15px, 38px, 6px);
-
-  &:active,
-  &.active {
-    &:focus,
-    &.focus {
-      outline: 0px;
-      outline-offset: -2px;
-      box-shadow: none;
-    }
-  }
-
-  &:hover,
-  &:active,
-  &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled).active,
-  &.active,
-  &:focus,
-  &.focus {
-    box-shadow: none;
-    text-decoration: none;
-  }
-
-  &:active,
-  &.active {
-    outline: 0;
-    background-image: none;
-  }
-
-  &.disabled,
-  &[disabled],
-  fieldset[disabled] & {
-    cursor: disabled;
-    box-shadow: none;
-    pointer-events: none;
-  }
-
-  a {
-    &.disabled,
-    fieldset[disabled] & {
-      pointer-events: none;
-    }
-  }
   &.btn-square {
     border-radius: 0px;
   }
@@ -67,210 +7,8 @@
     border-radius: 100px;
   }
 }
-.btn-primary {
-  color: $white-color;
-  background-color: $primary;
-  &:hover,
-  &:active,
-  &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled).active,
-  &.active {
-    background-color: rgba($primary,0.9);
-    border-color: rgba($primary,0.9);
-  }
-}
-.btn-secondary {
-  color: $text-color;
-  background-color: $white-color;
-  border-color: $border-color;
-  &:hover,
-  &:active,
-  &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled).active,
-  &.active {
-    background-color: rgba($white-color,0.9);
-    color: $text-color;
-  }
-}
-.btn-success {
-  color: $white-color;
-  background-color: $success;
-  &:hover,
-  &:active,
-  &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled).active,
-  &.active {
-    background-color: rgba($success,0.9);
-    border-color: rgba($success,0.9);
-  }
-}
-.btn-info {
-  color: $white-color;
-  background-color: $info;
-  &:hover,
-  &:active,
-  &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled).active,
-  &.active {
-    background-color: rgba($info,0.9);
-    border-color: rgba($info,0.9);
-  }
-}
-.btn-warning {
-  color: $white-color;
-  background-color: $warning;
-  &:hover,
-  &:active,
-  &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled).active,
-  &.active {
-    background-color: rgba($warning,0.9);
-    border-color: rgba($warning,0.9);
-  }
-}
-.btn-danger {
-  color: $white-color;
-  background-color: $danger;
-  &:hover,
-  &:active,
-  &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled).active,
-  &.active {
-    background-color: rgba($danger,0.9);
-    border-color: rgba($danger,0.9);
-  }
-}
-.btn-link {
-  color: $primary;
-}
 
-/* Outline Button */
-.btn-outline-primary {
-  color: $primary;
-  background-color: transparent;
-  background-image: none;
-  border-color: $primary;
-  &:hover,
-  &:active,
-  &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled).active,
-  &.active {
-    color: $white-color;
-    background-color: $primary;
-    border-color: $primary;
-  }
-}
-.btn-outline-secondary {
-  color:$text-color;
-  background-color: transparent;
-  background-image: none;
-  border-color: $border-color;
-  &:hover,
-  &:active,
-  &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled).active,
-  &.active {
-    color: $title-color;
-    background-color: $border-color;
-    border-color: $border-color;
-  }
-}
-.btn-outline-success {
-  color: $success;
-  background-color: transparent;
-  background-image: none;
-  border-color: $success;
-  &:hover,
-  &:active,
-  &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled).active,
-  &.active {
-    color: $white-color;
-    background-color: $success;
-    border-color: $success;
-  }
-}
-.btn-outline-info {
-  color: $info;
-  background-color: transparent;
-  background-image: none;
-  border-color: $info;
-  &:hover,
-  &:active,
-  &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled).active,
-  &.active {
-    color: $white-color;
-    background-color: $info;
-    border-color: $info;
-  }
-}
-.btn-outline-warning {
-  color: $warning;
-  background-color: transparent;
-  background-image: none;
-  border-color: $warning;
-  &:hover,
-  &:active,
-  &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled).active,
-  &.active {
-    color: $white-color;
-    background-color: $warning;
-    border-color: $warning;
-  }
-}
-.btn-outline-danger {
-  color:$danger;
-  background-color: transparent;
-  background-image: none;
-  border-color: $danger;
-  &:hover,
-  &:active,
-  &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled).active,
-  &.active {
-    color: $white-color;
-    background-color: $danger;
-    border-color: $danger;
-  }
-}
-/* Disable Button */
-.btn-primary.disabled,
-.btn-primary:disabled {
-  background-color: rgba($primary, 0.65);
-  border-color: rgba($primary, 0.35);
-}
-.btn-success.disabled,
-.btn-success:disabled {
-  background-color: rgba($success,0.65);
-  border-color: rgba($success,0.35);
-}
-.btn-info.disabled,
-.btn-info:disabled {
-  background-color: rgba($info,0.65);
-  border-color: rgba($info,0.35);
-}
-.btn-warning.disabled,
-.btn-warning:disabled {
-  background-color: rgba($warning,0.65);
-  border-color: rgba($warning,0.35);
-}
-.btn-danger.disabled,
-.btn-danger:disabled {
-  background-color: rgba($danger,0.65);
-  border-color: rgba($danger,0.35);
-}
-/* Large Button */
-.btn-lg {
-  @include button-size(50px,30px, 17px, 48px, 6px);
-}
-/* Small Button */
-.btn-sm {
-  @include button-size(30px,20px, 13px, 28px, 4px);
-}
-
-/* 4.4 BUTTON SOCIAL */
+/* Button Social */
 .btn-facebook,
 .btn-twitter,
 .btn-google-plus,
@@ -282,7 +20,7 @@
 .btn-dropbox {
   position: relative;
   overflow: hidden;
-  color: $white-color;
+  color: $white;
   text-align: center;
   padding: 5px 10px;
   font-size: 15px;
@@ -317,7 +55,7 @@
 .btn-facebook:hover {
   background: #344e86;
   &.btn-outline {
-    color: $white-color;
+    color: $white;
     border-color: rgba(#3b5998, 1);
   }
 }
@@ -338,7 +76,7 @@
 .btn-twitter:hover {
   background: #0099d4;
   &.btn-outline {
-    color: $white-color;
+    color: $white;
     border-color: rgba(#00aced, 1);
   }
 }
@@ -355,7 +93,7 @@
 .btn-skype:hover {
   background: #00aff0;
   &.btn-outline {
-    color: $white-color;
+    color: $white;
     border-color: rgba(#00aff0, 1);
   }
 }
@@ -376,7 +114,7 @@
 .btn-linkedin:hover {
   background: #4169a2;
   &.btn-outline {
-    color: $white-color;
+    color: $white;
     border-color: rgba(#4875b4, 1);
   }
 }
@@ -397,7 +135,7 @@
 
 .btn-pinterest:hover {
   &.btn-outline {
-    color: $white-color;
+    color: $white;
     border-color: rgba(#cb2027, 1);
   }
   background: #b51d23;
@@ -419,7 +157,7 @@
 .btn-tumblr:hover {
   background: #2a435c;
   &.btn-outline {
-    color: $white-color;
+    color: $white;
     border-color: rgba(#32506d, 1);
   }
 }
@@ -440,7 +178,7 @@
 .btn-google-plus:hover {
   background: #c43d2b;
   &.btn-outline {
-    color: $white-color;
+    color: $white;
     border-color: rgba(#d34836, 1);
   }
 }
@@ -461,7 +199,7 @@
 .btn-dropbox:hover {
   background: #0070cc;
   &.btn-outline {
-    color: $white-color;
+    color: $white;
     border-color: rgba(#007ee5, 1);
   }
 }
@@ -482,7 +220,7 @@
 .btn-vimeo:hover {
   background: #a0cf3c;
   &.btn-outline {
-    color: $white-color;
+    color: $white;
     border-color: rgba(#aad450, 1);
   }
 }
@@ -494,10 +232,10 @@
 .social-button .btn {
   border-color: $border-color;
   line-height: 28px;
-  color: $text-color;
+  color: $secondary;
   &:hover {
     border-color: $primary;
-    color: $white-color;
+    color: $white;
     background: $primary;
   }
 }
@@ -515,86 +253,13 @@
   border-left: 5px solid transparent;
   vertical-align: middle;
 }
-.show>.btn-primary.dropdown-toggle {
-  background-color: rgba($primary,0.9);
-  border-color: rgba($primary,0.9);
-  &:focus, &:active {
-    box-shadow: none;
-  }
-}
-.show>.btn-secondary.dropdown-toggle {
-  background-color: rgba($white-color,0.9);
-  color: $title-color;
-  &:focus, &:active {
-    box-shadow: none;
-  }
-}
-.show>.btn-success.dropdown-toggle {
-  background-color: rgba($success,0.9);
-  border-color: rgba($success,0.9);
-  &:focus, &:active {
-    box-shadow: none;
-  }
-}
-.show>.btn-info.dropdown-toggle {
-  background-color: rgba($info,0.9);
-  border-color: rgba($info,0.9);
-  &:focus, &:active {
-    box-shadow: none;
-  }
-}
-.show>.btn-warning.dropdown-toggle {
-  background-color: rgba($warning,0.9);
-  border-color: rgba($warning,0.9);
-  &:focus, &:active {
-    box-shadow: none;
-  }
-}
-.show>.btn-danger.dropdown-toggle {
-  background-color: rgba($danger,0.9);
-  border-color: rgba($danger,0.9);
-  &:focus, &:active {
-    box-shadow: none;
-  }
-}
-/* Button outline */
-.show>.btn-outline-primary.dropdown-toggle {
-  color: $white-color;
-  background-color: $primary;
-  border-color: $primary;
-}
-.show>.btn-outline-secondary.dropdown-toggle {
-  color: $title-color;
-  background-color: $border-color;
-  border-color: $border-color;
-}
-.show>.btn-outline-success.dropdown-toggle {
-  color: $white-color;
-  background-color: $success;
-  border-color: $success;
-}
-.show>.btn-outline-info.dropdown-toggle {
-  color: $white-color;
-  background-color: $info;
-  border-color: $info;
-}
-.show>.btn-outline-warning.dropdown-toggle {
-  color: $white-color;
-  background-color: $warning;
-  border-color: $warning;
-}
-.show>.btn-outline-danger.dropdown-toggle {
-  color: $white-color;
-  background-color: $danger;
-  border-color: $danger;
-}
 
 /* Button Split */
 .dropdown-toggle-split {
   padding: 0 12px;
 }
 
-/*===== 4.5 BUTTON LOADING =====*/
+/*===== BUTTON LOADING =====*/
 .btn.btn-ladda {
   display: inline-block;
   margin-bottom: 0;

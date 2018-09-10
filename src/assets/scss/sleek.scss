@@ -6,7 +6,6 @@
 @import 'utilities/display';
 @import 'utilities/spacing';
 @import 'utilities/background';
-@import 'utilities/border';
 @import 'utilities/sizing';
 @import 'utilities/text';
 @import 'utilities/position';
@@ -37,12 +36,13 @@
 @import 'pagination';
 @import 'popover-tooltip';
 @import 'profile';
-@import 'progress';
 @import 'sidebar';
 @import 'spinkit';
 @import 'switchers';
 @import 'tabs';
+@import 'toaster';
 @import 'todo';
 @import 'type';
 @import 'tables';
 @import 'widgets';
+@import 'error';

@@ -1,46 +1,4 @@
-// Heading Sizing
-h1 {
-  font-size: 40px;
-  line-height: 1.1;
-}
-h2{
-  font-size: 32px;
-  line-height: 1.1;
-}
-h3{
-  font-size: 24px;
-  line-height: 1.1;
-}
-h4{
-  font-size: 17px;
-  line-height: 1.1;
-  @include media-breakpoint-up(md) {
-    font-size: 20px;
-  }
-  @include media-breakpoint-up(xxl) {
-    font-size: 20px;
-  }
-}
-h5{
-  font-size: 18px;
-  line-height: 1.1;
-}
-h6{
-  font-size: 15px;
-  line-height: 1.1;
-}
-/* Font Weights */
-.regular {
-  font-weight: 400;
-}
-.semi-bold {
-  font-weight: 500;
-}
-.bold {
-  font-weight: 700;
-}
-
-/* Font Size */
+/*===== FONTS SIZE =====*/
 .font-size-10 {
 	font-size: 10px;
 }
