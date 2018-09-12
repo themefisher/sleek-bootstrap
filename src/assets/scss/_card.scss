@@ -61,14 +61,6 @@
   }
 }
 
-/*Card md*/
-.card-md {
-  @include media-breakpoint-up(lg) {
-    height: 560px;
-    overflow: hidden;
-  }
-}
-
 /* Card Icon Info*/
 .card-icon-info {
   > i {
