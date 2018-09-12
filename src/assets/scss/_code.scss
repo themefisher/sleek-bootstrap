@@ -1,0 +1,24 @@
+pre {
+//   border: 1px solid $primary;
+  border-left: 4px solid $primary;
+  padding: 20px 15px;
+  background: rgba(0,0,0,.05);
+  border-radius: 3px;
+
+  code{
+      background: transparent;
+      font-size: 16px;
+      color: $dark;
+  }
+
+}
+
+
+code{
+    font-family: Menlo,Monaco,"Courier New",Courier,monospace;
+    font-size: 16px;
+    background: rgba(0,0,0,.05);
+    padding: 3px 10px;
+    margin: 0 2px;
+    color: $dark;
+}

@@ -109,6 +109,11 @@ tbody tr td:first-child {
   }
 }
 
+.table-responsive-large {
+  @include media-breakpoint-up(xl) {
+    display: inline-table;
+  }
+}
 
 /* Customer Table */
 .customer-table {
