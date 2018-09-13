@@ -32,7 +32,7 @@
   }
   .navbar {
     margin-bottom: 0;
-    margin-left: 250px;
+    // margin-left: 250px;
     border: none;
     min-height: 75px;
     border-radius: 0;
@@ -346,14 +346,14 @@
   }
   .navbar {
     @include media-breakpoint-up(md) {
-      margin-left: 75px;
+      // margin-left: 75px;
     }
   }
 }
 
 /* For Fixed Header */
 .header-fixed {
-  padding-top: 76px;
+  // padding-top: 76px;
 }
 
 /* Sidebar Minified Out */
