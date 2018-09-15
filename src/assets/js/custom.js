@@ -18,9 +18,17 @@ $(document).ready(function() {
   "use strict";
 
   /*======== 1. SCROLLBAR CONTENT ========*/
-  if ($(window).width() >= 768) {
-    //For some page content card
-    $(document).ready(function() {
+
+  function scrollWithBigMedia(media) {
+    var $elDataScrollHeight = $("[data-scroll-height]");
+    if (media.matches) {
+      /* The viewport is greater than, or equal to media screen size */
+      $elDataScrollHeight.each(function() {
+        var scrollHeight = $(this).attr("data-scroll-height");
+        $(this).css({ height: scrollHeight + "px", overflow: "hidden" });
+      });
+
+      //For content that needs scroll
       $(".slim-scroll")
         .slimScroll({
           opacity: 0,
@@ -34,8 +42,15 @@ $(document).ready(function() {
             .next(".slimScrollBar")
             .css("opacity", 0.4);
         });
-    });
+    } else {
+      /* The viewport is less than media screen size */
+      $elDataScrollHeight.css({ height: "auto", overflow: "auto" });
+    }
   }
+
+  var media = window.matchMedia("(min-width: 992px)");
+  scrollWithBigMedia(media); // Call listener function at run time
+  media.addListener(scrollWithBigMedia); // Attach listener function on state changes
 
   /*======== 2. TOOLTIPS AND POPOVER ========*/
   $('[data-toggle="tooltip"]').tooltip({
@@ -164,10 +179,8 @@ $(document).ready(function() {
     });
   }
 
-
   /*======== 6. MULTIPLE SELECT ========*/
   $(".js-example-basic-multiple").select2();
-
 
   /*======== 7. LOADING BUTTON ========*/
   /* 7.1. BIND NORMAL BUTTONS */
@@ -215,5 +228,4 @@ $(document).ready(function() {
 
   /*======== 14. PROGRESS BAR ========*/
   NProgress.done();
-
 });
