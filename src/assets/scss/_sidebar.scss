@@ -6,47 +6,27 @@
   clear: both;
   display: table;
 }
-.sidebar, .sidebar-bg {
-  // width: 0px;
-  // left: 0;
-  // top: 0;
-  // bottom: 0;
-  // @include media-breakpoint-up(md) {
-  //   width: 250px;
-  // }
-}
 
 .layout-sidenav {
-  width: 250px;
-  position: relative;
+  position: fixed;
   display: flex;
   flex-direction: column;
-  min-height: 1px;
-
-  // height: 100%;
+  z-index: -1;
+  @include media-breakpoint-up(md){
+    width: 250px;
+    position: relative;
+    z-index: 1;
+  }
 }
 
-.side-test {
-  width: 250px;
-  position: relative;
-  overflow: hidden;
-}
 
 .sidebar {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  // height: 100%;
-
-  // z-index: -1;
-  // min-height: 100vh;
-  // @include media-breakpoint-up(md) {
-  //   z-index: 1050;
-  // }
-  // position: absolute;
-  // @include transform(translateZ(0));
-  // transform: translateZ(0);
-  @include transition(width 0.3s ease-in-out);
+  height: 100%;
+  z-index: 1050;
+  min-height: 100vh;
   .logo {
     display: block;
     height: 75px;
@@ -87,10 +67,6 @@
   }
 }
 
-.bg-sidebar {
-  background-color: $navy;
-}
-
 .sidebar {
   .sidebar-inner {
     > li {
@@ -99,19 +75,19 @@
         z-index: 10;
         color: $white;
         &:before {
-          // opacity: 1;
+          opacity: 1;
         }
       }
       > a {
         &:before {
-          // position: absolute;
-          // content: '';
-          // right: 0;
-          // top: 0;
-          // width: 3px;
-          // height: 100%;
-          // background: $primary;
-          // opacity: 0;
+          position: absolute;
+          content: '';
+          right: 0;
+          top: 0;
+          width: 3px;
+          height: 100%;
+          background: $primary;
+          opacity: 0;
         }
       }
     }
@@ -135,7 +111,7 @@
 //   opacity: 0;
 // }
 .sidebar .nav > li.active > a:before {
-  // opacity: 1;
+  opacity: 1;
 }
 
 /*  Nav menus Icon Styles */
@@ -245,17 +221,14 @@
 }
 
 /* Sidebar Minified */
-.sidebar-minified.sidebar-fixed .sidebar {
-  // position: fixed;
-  // z-index: 1050;
-}
 .sidebar-minified .layout-sidenav {
-  // width: 250px;
+  width: 250px;
   // position: absolute;
   z-index: 1050;
 
   @include media-breakpoint-up(md) {
-    // width: 75px;
+    width: 75px;
+    transition: width .3s ease-in;
   }
   .logo {
     padding-left: 20px;
@@ -295,9 +268,10 @@
   }
 }
 
-.sidebar-minified .layout-sidenav :hover {
+.sidebar-minified .layout-sidenav:hover {
   @include media-breakpoint-up(md) {
-    // width: 250px;
+    width: 250px;
+    margin-right: -175px;
     .sidebar-progress {
       transition: opacity 0.3s ease-in-out 0.3s;
       visibility: visible;
@@ -328,12 +302,36 @@
     transition-delay: 0.3s;
   }
 }
-.sidebar-minified .layout-container {
-  @include media-breakpoint-up(md) {
-    // margin-left: 75px;
-    // margin-left: -100px;
+
+.sidebar-static {
+  &.sidebar-minified {
+    .layout-sidenav {
+      &:hover {
+        // transition-duration: .2s;
+        // transition-property: margin-right, width;
+        // transition-timing-function: ease-in-out;
+      }
+    }
+    .layout-container {
+      .main-header {
+        padding-left: 75px;
+        @include transition(padding-left 0.3s ease-in-out);
+      }
+    }
+
+  }
+  &.sidebar-minified-out {
+    .layout-sidenav {
+      @include transition(width 0.3s ease-in-out);
+    }
+    .layout-container {
+      .main-header {
+        @include transition(padding-left 0.3s ease-in-out);
+      }
+    }
   }
 }
+
 
 .sidebar-minified {
   .sidebar-progress {
@@ -352,59 +350,29 @@
   }
 }
 
-/* Sidebar Static */
-.sidebar-static {
-  .layout-sidenav {
-    .slimScrollDiv {
-      height: 100% !important;
-    }
-  }
-}
+/* Sidebar Fixed Minified Layout Container */
 .sidebar-fixed.sidebar-minified {
-  .layout-sidenav {
-    &:hover {
-      .app-brand {
-        .logo {
-          width: 250px;
-        }
-      }
-    }
-    .app-brand {
-      .logo {
-        width: 75px;
-      }
-    }
-
-  }
   .layout-container {
-    padding-left: 75px;
+    padding-left: 0px;
+    .main-header {
+      padding-left: 75px;
+      // @include transition(padding-left 0.3s ease-in-out);
+    }
   }
 }
+.sidebar-fixed.sidebar-minified-out {
+  .layout-container {
+    .main-header {
+      // @include transition(padding-left 0.3s ease-in-out);
+    }
+  }
+}
+
 
 /* Sidebar Fixed */
 .sidebar-fixed-offcanvas,
 .sidebar-fixed {
   .layout-sidenav {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    margin-right: 0 !important;
-    margin-left: 0 !important;
-    flex: 1 0 auto;
-    overflow: hidden;
-    .app-brand {
-      position: relative;
-      .logo {
-        position: fixed;
-        z-index: 100;
-        width: 250px;
-      }
-    }
-
-    .sidebar-inner {
-      margin-top: 135px;
-    }
     .sidebar-progress {
       @include media-breakpoint-up(md) {
         position: fixed;
@@ -418,53 +386,114 @@
         padding-top: 25px;
       }
     }
+
     .slimScrollDiv {
       height: 100vh !important;
     }
 
-
     .sidebar-with-footer {
-      .slider-scrollbar {
-        height: calc(100vh - 150px) !important;
+      .slimScrollDiv {
+        height: calc(100vh - 88px) !important;
+        @include media-breakpoint-up(md){
+          height: calc(100vh - 225px) !important;
+        }
       }
     }
   }
-  /* Layout Container Padding*/
+}
+
+/* Sidebar Collapse */
+.sidebar-collapse {
+  @include media-breakpoint-up(md) {
+    .layout-sidenav {
+      margin-left: -250px;
+      @include transition(margin-left 0.3s ease-in-out);
+    }
+    .layout-container {
+      @include transition(padding-left 0.3s ease-in-out);
+    }
+  }
+
+}
+
+/* Sidebar Out Collapse */
+.sidebar-collapse-out {
+  .layout-sidenav {
+    @include media-breakpoint-up(md){
+      margin-left: 0px;
+      @include transition(margin-left 0.3s ease-in-out);
+    }
+
+  }
   .layout-container {
-    padding-left: 250px;
-    @include transition(padding-left, width 0.3s ease-in-out);
+    @include media-breakpoint-up(md){
+      @include transition(padding-left 0.3s ease-in-out);
+    }
   }
 }
-.layout-container {
-  @include transition(padding-left, width 0.3s ease-in-out !important);
+
+.sidebar-fixed-offcanvas {
+  &.sidebar-collapse {
+    .layout-container {
+      padding-left: 0;
+    }
+    .sidebar-progress {
+      @include media-breakpoint-up(md){
+        left: -250px;
+      }
+    }
+  }
+  &.sidebar-collapse-out {
+    .sidebar-progress {
+      @include media-breakpoint-up(md){
+        left: 0px;
+        @include transition(left 0.3s ease-in-out);
+      }
+    }
+  }
 }
 
 
 /* Header Fix */
 .header-fixed {
   .layout-container {
-    padding-top: 76px;
+    @include media-breakpoint-up(md){
+      padding-top: 76px;
+    }
     .main-header {
-      position: fixed;
-      padding-left: 250px;
+      @include media-breakpoint-up(md){
+        position: fixed;
+        padding-left: 250px;
+      }
     }
   }
 }
-
-
-
-
+.sidebar-collapse.header-fixed {
+  .layout-container {
+    .main-header {
+      padding-left: 0px;
+      // @include transition(padding-left 0.3s ease-in-out);
+    }
+  }
+}
+.sidebar-collapse-out {
+  .layout-container {
+    .main-header {
+      // @include transition(padding-left 0.3s ease-in-out);
+    }
+  }
+}
 
 
 /* Sidebar Static With Footer */
-.sidebar-static,
-.sidebar-static-offcanvas {
-  .sidebar.sidebar-with-footer {
-    .slimScrollDiv {
-      height: auto !important;
-    }
-  }
-}
+// .sidebar-static,
+// .sidebar-static-offcanvas {
+//   .sidebar.sidebar-with-footer {
+//     .slimScrollDiv {
+//       height: auto !important;
+//     }
+//   }
+// }
 
 /* Mobile Sticky Body Overlay */
 .mobile-sticky-body-overlay {
@@ -485,22 +514,7 @@
   }
 }
 
-/* Sidebar Collapse */
-.sidebar-collapse {
-  @include media-breakpoint-up(md) {
-    .layout-sidenav {
-      padding-left: -250px;
-      @include transition(padding-left, 2s );
-    }
-  }
-}
 
-/* Sidebar Out Collapse */
-.sidebar-collapse-out {
-  .layout-sidenav {
-    @include transition(padding-left, 2s );
-  }
-}
 
 /* sidebar Toggle */
 .sidebar {
@@ -524,8 +538,10 @@
 
 /* Sidebar Bg Dark */
 .sidebar-dark {
-  .sidebar {
+  .layout-sidenav {
     background-color: $navy;
+  }
+  .sidebar {
     .sub-menu {
       background: #1d2531;
       > li > a {
@@ -551,8 +567,10 @@
 
 /* Sidebar Light */
 .sidebar-light {
+  .layout-sidenav {
+    background-color: $white;
+  }
   .sidebar {
-    background-color: $white-color;
     border-right: 1px solid $border-color;
     .sub-menu {
       background-color: $white-color;
