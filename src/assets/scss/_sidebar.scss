@@ -228,7 +228,7 @@
 
   @include media-breakpoint-up(md) {
     width: 75px;
-    transition: width .3s ease-in;
+    // transition: width .3s ease-in;
   }
   .logo {
     padding-left: 20px;
@@ -303,6 +303,14 @@
   }
 }
 
+
+.sidebar-minified .layout-sidenav:not(:hover){
+  transition: none;
+}
+
+p:not(.fancy)
+
+
 .sidebar-static {
   &.sidebar-minified {
     .layout-sidenav {
@@ -314,7 +322,7 @@
     }
     .layout-container {
       .main-header {
-        padding-left: 75px;
+        // padding-left: 75px;
         @include transition(padding-left 0.3s ease-in-out);
       }
     }
