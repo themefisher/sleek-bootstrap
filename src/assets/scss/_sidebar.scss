@@ -94,22 +94,6 @@
   }
 }
 
-// .sidebar .nav>li.active>a {
-//   position: relative;
-//   z-index: 10;
-//   color: red;
-// }
-
-// .sidebar .nav > li > a:before {
-//   position: absolute;
-//   content: '';
-//   right: 0;
-//   top: 0;
-//   width: 3px;
-//   height: 100%;
-//   background: $primary;
-//   opacity: 0;
-// }
 .sidebar .nav > li.active > a:before {
   opacity: 1;
 }
@@ -223,7 +207,6 @@
 /* Sidebar Minified */
 .sidebar-minified .layout-sidenav {
   width: 250px;
-  // position: absolute;
   z-index: 1050;
   height: 100%;
 
@@ -278,9 +261,6 @@
       visibility: visible;
       opacity: 1;
     }
-    .sub-menu > li > a {
-      // width: 210px;
-    }
   }
 
   .nav li.has-sub.expand>.sub-menu {
@@ -314,19 +294,16 @@
 
 .sidebar-static {
   &.sidebar-minified {
-
     .layout-container {
       .main-header {
         @include transition(padding-left 0.3s ease-in-out);
       }
     }
-
     &.header-fixed {
       .layout-container .main-header {
         padding-left: 75px;
       }
     }
-
   }
   &.sidebar-minified-out {
     .layout-sidenav {
@@ -390,7 +367,6 @@
 
 }
 
-
 /* Sidebar Fixed */
 .sidebar-fixed-offcanvas,
 .sidebar-fixed {
@@ -433,13 +409,11 @@
       }
     }
   }
-
   .layout-container {
     @include media-breakpoint-up(md){
       padding-left: 250px;
     }
   }
-
 }
 
 /* Sidebar Collapse */
@@ -492,7 +466,6 @@
     }
   }
 }
-
 
 /* Header Fix */
 .header-fixed {
@@ -555,8 +528,6 @@
     z-index: 1045;
   }
 }
-
-
 
 /* sidebar Toggle */
 .sidebar {
@@ -643,10 +614,13 @@
 /* Bottom progressBar */
 .sidebar-progress {
   padding: 0 30px;
-  margin-top: 45px;
   padding-top: 45px;
   padding-bottom: 32px;
   border-top: 1px solid rgba(255,255,255,0.2);
+  margin-top: -190px;
+  @include media-breakpoint-up(md){
+    margin-top: 45px;
+  }
   > h6 {
     color: #b7c0cd;
     font-size: 13px;

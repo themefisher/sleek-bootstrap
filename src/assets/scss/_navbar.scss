@@ -81,6 +81,12 @@
     margin-right: auto;
     padding-left: 20px;
     background: transparent;
+    @include media-breakpoint-up(md) {
+      padding-left: 0;
+    }
+    @include media-breakpoint-up(lg) {
+      padding-left: 20px;
+    }
 
     .input-group {
       margin-bottom: 0px;
