@@ -7,19 +7,22 @@
   <!-- ====================================
 	——— CONTENT WRAPPER
 	===================================== -->
-  <div class="content-wrapper">
-    <div class="content min-height-vh83">
-      <!-- First Row  -->
-      <div class="row">
-        <div class="col-md-12">
-          <div class="p-4 p-md-5 rounded bg-white bdr">
-            <h4 class="pb-5 text-title d-inline-block">Markdown Editor</h4>
-            <form id="markdown" class="markdownr">
-              <textarea name="content" id="markdown-editor" rows="10"></textarea>
-            </form>
+  <div class="layout-container">
+    @@include('top-bar.htm')
+    <div class="layout-content">
+      <div lass="flex-grow-1">
+        <div class="content">
+          <!-- First Row  -->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="p-4 p-md-5 rounded bg-white bdr">
+                <h4 class="pb-5 text-title d-inline-block">Markdown Editor</h4>
+                <form id="markdown" class="markdownr">
+                  <textarea name="content" id="markdown-editor" rows="10"></textarea>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
   @@include('footer.htm')

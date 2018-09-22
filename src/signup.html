@@ -6,46 +6,49 @@
 	<!-- ====================================
 	——— CONTENT WRAPPER
 	===================================== -->
-	<div class="content-wrapper">
-		@@include('breadcrumb-custom.htm', { "parent": "Pages", "active": "Sign Up" })
-		<div class="content">
-			<!-- First Row  -->
-			<div class="row justify-content-center mt-5">
-				<div class="col-xl-5 col-lg-6 col-md-10">
+	<div class="layout-container">
+		@@include('top-bar.htm')
+		<div class="layout-content">
+			<div lass="flex-grow-1">
+				@@include('breadcrumb-custom.htm', { "parent": "Pages", "active": "Sign Up" })
+				<div class="content">
+					<!-- First Row  -->
+					<div class="row justify-content-center mt-5">
+						<div class="col-xl-5 col-lg-6 col-md-10">
 
-					<form class="register bg-white p-5">
-						<h4 class="text-title mb-5">Sign Up</h4>
-						<div class="row">
-							<div class="form-group col-md-12 mb-4">
-								<input type="text" class="form-control input-lg" id="name" aria-describedby="nameHelp" placeholder="Name">
-							</div>
-							<div class="form-group col-md-12 mb-4">
-								<input type="email" class="form-control input-lg" id="email" aria-describedby="emailHelp" placeholder="Username">
-							</div>
-							<div class="form-group col-md-12 ">
-								<input type="password" class="form-control input-lg" id="password" placeholder="Password">
-							</div>
-							<div class="form-group col-md-12 ">
-								<input type="password" class="form-control input-lg" id="cpassword" placeholder="Confirm Password">
-							</div>
-							<div class="col-md-12">
-								<div class="d-inline-block mr-3">
-									<label class="control control-checkbox">
-										<input type="checkbox" />
-										<div class="control-indicator"></div>
-										I Agree the terms and conditions
-									</label>
+							<form class="register bg-white p-5">
+								<h4 class="text-title mb-5">Sign Up</h4>
+								<div class="row">
+									<div class="form-group col-md-12 mb-4">
+										<input type="text" class="form-control input-lg" id="name" aria-describedby="nameHelp" placeholder="Name">
+									</div>
+									<div class="form-group col-md-12 mb-4">
+										<input type="email" class="form-control input-lg" id="email" aria-describedby="emailHelp" placeholder="Username">
+									</div>
+									<div class="form-group col-md-12 ">
+										<input type="password" class="form-control input-lg" id="password" placeholder="Password">
+									</div>
+									<div class="form-group col-md-12 ">
+										<input type="password" class="form-control input-lg" id="cpassword" placeholder="Confirm Password">
+									</div>
+									<div class="col-md-12">
+										<div class="d-inline-block mr-3">
+											<label class="control control-checkbox">
+												<input type="checkbox" />
+												<div class="control-indicator"></div>
+												I Agree the terms and conditions
+											</label>
 
+										</div>
+										<button type="submit" class="btn btn-lg btn-primary btn-block mb-4">Sign up</button>
+										<p>Already have an account?
+											<a class="text-blue" href="signin.html">Sign in</a>
+										</p>
+									</div>
 								</div>
-								<button type="submit" class="btn btn-lg btn-primary btn-block mb-4">Sign up</button>
-								<p>Already have an account?
-									<a class="text-blue" href="signin.html">Sign in</a>
-								</p>
-							</div>
+							</form>
 						</div>
-					</form>
+					</div>
 				</div>
-			</div>
-		</div>
 
 	@@include('footer.htm')

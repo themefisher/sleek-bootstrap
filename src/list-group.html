@@ -6,153 +6,156 @@
 	<!-- ====================================
 	——— CONTENT WRAPPER
 	===================================== -->
-	<div class="content-wrapper">
-		@@include('breadcrumb-custom.htm', { "parent": "UI Elements", "active": "List Groups" })
-		<div class="content">
-			<!-- First Row  -->
-			<div class="row">
-				<div class="col-lg-6">
-					@@include('notification.htm')
-				</div>
-				<div class="col-lg-6">
-					@@include('to-do-list.htm')
+	<div class="layout-container">
+		@@include('top-bar.htm')
+		<div class="layout-content">
+			<div lass="flex-grow-1">
+				@@include('breadcrumb-custom.htm', { "parent": "UI Elements", "active": "List Groups" })
+				<div class="content">
+					<!-- First Row  -->
+					<div class="row">
+						<div class="col-lg-6">
+							@@include('notification.htm')
+						</div>
+						<div class="col-lg-6">
+							@@include('to-do-list.htm')
 
-				</div>
-				<div class="col-lg-6">
-					<div class="card card-default rounded bg-white bdr mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Basic List </h4>
 						</div>
-						<div class="card-body">
-							<ul class="list-group">
-								<li class="list-group-item text-title">Cras justo odio</li>
-								<li class="list-group-item text-title">Dapibus ac facilisis in</li>
-								<li class="list-group-item text-title">Morbi leo risus</li>
-								<li class="list-group-item text-title">Porta ac consectetur ac</li>
-								<li class="list-group-item text-title">Vestibulum at eros</li>
-							</ul>
+						<div class="col-lg-6">
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Basic List </h4>
+								</div>
+								<div class="card-body">
+									<ul class="list-group">
+										<li class="list-group-item text-title">Cras justo odio</li>
+										<li class="list-group-item text-title">Dapibus ac facilisis in</li>
+										<li class="list-group-item text-title">Morbi leo risus</li>
+										<li class="list-group-item text-title">Porta ac consectetur ac</li>
+										<li class="list-group-item text-title">Vestibulum at eros</li>
+									</ul>
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="card card-default rounded bg-white bdr mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Links and Buttons </h4>
+						<div class="col-lg-6">
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Links and Buttons </h4>
+								</div>
+								<div class="card-body">
+									<div class="list-group">
+										<a href="#" class="list-group-item list-group-item-action active">
+											Cras justo odio
+										</a>
+										<a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+										<a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+										<a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+										<a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="card-body">
-							<div class="list-group">
-								<a href="#" class="list-group-item list-group-item-action active">
-									Cras justo odio
-								</a>
-								<a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-								<a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
-								<a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-								<a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
+						<div class="col-lg-6">
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Contextual Classes List</h4>
+								</div>
+								<div class="card-body">
+									<ul class="list-group">
+										<li class="list-group-item list-group-item-secondary">This is a secondary list group item</li>
+										<li class="list-group-item list-group-item-success">This is a success list group item</li>
+										<li class="list-group-item list-group-item-danger">This is a danger list group item</li>
+										<li class="list-group-item list-group-item-warning">This is a warning list group item</li>
+										<li class="list-group-item list-group-item-info">This is a info list group item</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4> With Badges </h4>
+								</div>
+								<div class="card-body">
+
+									<ul class="list-group">
+										<li class="list-group-item d-flex justify-content-between align-items-center">
+											Cras justo odio
+											<span class="badge badge-primary badge-pill">14</span>
+										</li>
+										<li class="list-group-item d-flex justify-content-between align-items-center">
+											Dapibus ac facilisis in
+											<span class="badge badge-primary badge-pill">2</span>
+										</li>
+										<li class="list-group-item d-flex justify-content-between align-items-center">
+											Morbi leo risus
+											<span class="badge badge-primary badge-pill">24</span>
+										</li>
+										<li class="list-group-item d-flex justify-content-between align-items-center">
+											Porta ac consectetur ac
+											<span class="badge badge-primary badge-pill">6</span>
+										</li>
+										<li class="list-group-item d-flex justify-content-between align-items-center">
+											Vestibulum at eros
+											<span class="badge badge-primary badge-pill">6</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Desable List</h4>
+								</div>
+								<div class="card-body">
+									<ul class="list-group">
+										<li class="list-group-item disabled">Cras justo odio</li>
+										<li class="list-group-item text-title">Dapibus ac facilisis in</li>
+										<li class="list-group-item text-title">Morbi leo risus</li>
+										<li class="list-group-item text-title">Porta ac consectetur ac</li>
+										<li class="list-group-item text-title">Vestibulum at eros</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Custom Content </h4>
+								</div>
+								<div class="card-body">
+
+									<div class="list-group">
+										<a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+											<div class="d-flex w-100 justify-content-between">
+												<h5 class="mb-1">List group item heading</h5>
+												<small>3 days ago</small>
+											</div>
+											<p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+											<small>Donec id elit non mi porta.</small>
+										</a>
+										<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+											<div class="d-flex w-100 justify-content-between">
+												<h5 class="mb-1">List group item heading</h5>
+												<small class="text-muted">3 days ago</small>
+											</div>
+											<p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+											<small class="text-muted">Donec id elit non mi porta.</small>
+										</a>
+										<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+											<div class="d-flex w-100 justify-content-between">
+												<h5 class="mb-1">List group item heading</h5>
+												<small class="text-muted">3 days ago</small>
+											</div>
+											<p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+											<small class="text-muted">Donec id elit non mi porta.</small>
+										</a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-6">
-					<div class="card card-default rounded bg-white bdr mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Contextual Classes List</h4>
-						</div>
-						<div class="card-body">
-							<ul class="list-group">
-								<li class="list-group-item list-group-item-secondary">This is a secondary list group item</li>
-								<li class="list-group-item list-group-item-success">This is a success list group item</li>
-								<li class="list-group-item list-group-item-danger">This is a danger list group item</li>
-								<li class="list-group-item list-group-item-warning">This is a warning list group item</li>
-								<li class="list-group-item list-group-item-info">This is a info list group item</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="card card-default rounded bg-white bdr mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4> With Badges </h4>
-						</div>
-						<div class="card-body">
-
-							<ul class="list-group">
-								<li class="list-group-item d-flex justify-content-between align-items-center">
-									Cras justo odio
-									<span class="badge badge-primary badge-pill">14</span>
-								</li>
-								<li class="list-group-item d-flex justify-content-between align-items-center">
-									Dapibus ac facilisis in
-									<span class="badge badge-primary badge-pill">2</span>
-								</li>
-								<li class="list-group-item d-flex justify-content-between align-items-center">
-									Morbi leo risus
-									<span class="badge badge-primary badge-pill">24</span>
-								</li>
-								<li class="list-group-item d-flex justify-content-between align-items-center">
-									Porta ac consectetur ac
-									<span class="badge badge-primary badge-pill">6</span>
-								</li>
-								<li class="list-group-item d-flex justify-content-between align-items-center">
-									Vestibulum at eros
-									<span class="badge badge-primary badge-pill">6</span>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="card card-default rounded bg-white bdr mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Desable List</h4>
-						</div>
-						<div class="card-body">
-							<ul class="list-group">
-								<li class="list-group-item disabled">Cras justo odio</li>
-								<li class="list-group-item text-title">Dapibus ac facilisis in</li>
-								<li class="list-group-item text-title">Morbi leo risus</li>
-								<li class="list-group-item text-title">Porta ac consectetur ac</li>
-								<li class="list-group-item text-title">Vestibulum at eros</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="card card-default rounded bg-white bdr mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Custom Content </h4>
-						</div>
-						<div class="card-body">
-
-							<div class="list-group">
-								<a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
-									<div class="d-flex w-100 justify-content-between">
-										<h5 class="mb-1">List group item heading</h5>
-										<small>3 days ago</small>
-									</div>
-									<p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-									<small>Donec id elit non mi porta.</small>
-								</a>
-								<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-									<div class="d-flex w-100 justify-content-between">
-										<h5 class="mb-1">List group item heading</h5>
-										<small class="text-muted">3 days ago</small>
-									</div>
-									<p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-									<small class="text-muted">Donec id elit non mi porta.</small>
-								</a>
-								<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-									<div class="d-flex w-100 justify-content-between">
-										<h5 class="mb-1">List group item heading</h5>
-										<small class="text-muted">3 days ago</small>
-									</div>
-									<p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-									<small class="text-muted">Donec id elit non mi porta.</small>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 
 	@@include('footer.htm')

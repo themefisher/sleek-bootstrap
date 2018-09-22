@@ -7,7 +7,7 @@
 }
 
 /* Content Wrapper */
-.content-wrapper {
+.layout-wrapper {
   min-height: 100%;
   background-color: #f5f6fa;
   z-index: 800;
@@ -51,7 +51,7 @@
   min-height: 100vh;
 }
 
-.content-wrapper,
+.layout-wrapper,
 .layout-inner {
   display: -webkit-box;
     display: -ms-flexbox;

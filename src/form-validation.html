@@ -6,130 +6,133 @@
 	<!-- ====================================
 	——— CONTENT WRAPPER
 	===================================== -->
-	<div class="content-wrapper">
-		@@include('breadcrumb-custom.htm', { "parent": "UI Elements", "active": "Form Validation" })
-		<div class="content">
-			<!-- First Row  -->
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="card card-default rounded bg-white bdr mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Basic Validation</h4>
+	<div class="layout-container">
+		@@include('top-bar.htm')
+		<div class="layout-content">
+			<div lass="flex-grow-1">
+				@@include('breadcrumb-custom.htm', { "parent": "UI Elements", "active": "Form Validation" })
+				<div class="content">
+					<!-- First Row  -->
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Basic Validation</h4>
+								</div>
+								<div class="card-body">
+									<form class="">
+										<div class="form-row">
+											<div class="col-md-12 mb-3">
+												<label for="validationServer01">First name</label>
+												<input type="text" class="form-control" id="validationServer01" placeholder="First name" value="Md" required>
+												<div class="valid-feedback">
+													Looks good!
+												</div>
+											</div>
+											<div class="col-md-12 mb-3">
+												<label for="validationServer02">Last name</label>
+												<input type="text" class="form-control" id="validationServer02" placeholder="Last name" value="Rahad" required>
+												<div class="valid-feedback">
+													Looks good!
+												</div>
+											</div>
+											<div class="col-md-12 mb-3">
+												<label for="validationServerUsername">Username</label>
+												<input type="text" class="form-control" id="validationServerUsername" placeholder="Username" aria-describedby="inputGroupPrepend3"
+												 required>
+												<div class="invalid-feedback">
+													Please choose a username.
+												</div>
+											</div>
+										</div>
+										<div class="form-row">
+											<div class="col-md-6 mb-3">
+												<label for="validationServer03">City</label>
+												<input type="text" class="form-control" id="validationServer03" placeholder="City" required>
+												<div class="invalid-feedback">
+													Please provide a valid city.
+												</div>
+											</div>
+											<div class="col-md-3 mb-3">
+												<label for="validationServer04">State</label>
+												<input type="text" class="form-control" id="validationServer04" placeholder="State" required>
+												<div class="invalid-feedback">
+													Please provide a valid state.
+												</div>
+											</div>
+											<div class="col-md-3 mb-3">
+												<label for="validationServer05">Zip</label>
+												<input type="text" class="form-control" id="validationServer05" placeholder="Zip" required>
+												<div class="invalid-feedback">
+													Please provide a valid zip.
+												</div>
+											</div>
+										</div>
+										<button class="btn btn-primary" type="submit">Submit form</button>
+									</form>
+								</div>
+							</div>
 						</div>
-						<div class="card-body">
-							<form class="">
-								<div class="form-row">
-									<div class="col-md-12 mb-3">
-										<label for="validationServer01">First name</label>
-										<input type="text" class="form-control" id="validationServer01" placeholder="First name" value="Md" required>
-										<div class="valid-feedback">
-											Looks good!
-										</div>
-									</div>
-									<div class="col-md-12 mb-3">
-										<label for="validationServer02">Last name</label>
-										<input type="text" class="form-control" id="validationServer02" placeholder="Last name" value="Rahad" required>
-										<div class="valid-feedback">
-											Looks good!
-										</div>
-									</div>
-									<div class="col-md-12 mb-3">
-										<label for="validationServerUsername">Username</label>
-										<input type="text" class="form-control" id="validationServerUsername" placeholder="Username" aria-describedby="inputGroupPrepend3"
-										 required>
-										<div class="invalid-feedback">
-											Please choose a username.
-										</div>
-									</div>
+						<div class="col-lg-6">
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Highlighted Input Field</h4>
 								</div>
-								<div class="form-row">
-									<div class="col-md-6 mb-3">
-										<label for="validationServer03">City</label>
-										<input type="text" class="form-control" id="validationServer03" placeholder="City" required>
-										<div class="invalid-feedback">
-											Please provide a valid city.
+								<div class="card-body">
+									<form class="">
+										<div class="form-row">
+											<div class="col-md-12 mb-3">
+												<label for="validationServer01">First name</label>
+												<input type="text" class="form-control is-valid" id="validationServer01" placeholder="First name" value="Md" required>
+												<div class="valid-feedback">
+													Looks good!
+												</div>
+											</div>
+											<div class="col-md-12 mb-3">
+												<label for="validationServer02">Last name</label>
+												<input type="text" class="form-control is-valid" id="validationServer02" placeholder="Last name" value="Rahad" required>
+												<div class="valid-feedback">
+													Looks good!
+												</div>
+											</div>
+											<div class="col-md-12 mb-3">
+												<label for="validationServerUsername">Username</label>
+												<input type="text" class="form-control is-invalid" id="validationServerUsername" placeholder="Username" aria-describedby="inputGroupPrepend3"
+												 required>
+												<div class="invalid-feedback">
+													Please choose a username.
+												</div>
+											</div>
 										</div>
-									</div>
-									<div class="col-md-3 mb-3">
-										<label for="validationServer04">State</label>
-										<input type="text" class="form-control" id="validationServer04" placeholder="State" required>
-										<div class="invalid-feedback">
-											Please provide a valid state.
+										<div class="form-row">
+											<div class="col-md-6 mb-3">
+												<label for="validationServer03">City</label>
+												<input type="text" class="form-control is-invalid" id="validationServer03" placeholder="City" required>
+												<div class="invalid-feedback">
+													Please provide a valid city.
+												</div>
+											</div>
+											<div class="col-md-3 mb-3">
+												<label for="validationServer04">State</label>
+												<input type="text" class="form-control is-invalid" id="validationServer04" placeholder="State" required>
+												<div class="invalid-feedback">
+													Please provide a valid state.
+												</div>
+											</div>
+											<div class="col-md-3 mb-3">
+												<label for="validationServer05">Zip</label>
+												<input type="text" class="form-control is-invalid" id="validationServer05" placeholder="Zip" required>
+												<div class="invalid-feedback">
+													Please provide a valid zip.
+												</div>
+											</div>
 										</div>
-									</div>
-									<div class="col-md-3 mb-3">
-										<label for="validationServer05">Zip</label>
-										<input type="text" class="form-control" id="validationServer05" placeholder="Zip" required>
-										<div class="invalid-feedback">
-											Please provide a valid zip.
-										</div>
-									</div>
+										<button class="btn btn-primary" type="submit">Submit form</button>
+									</form>
 								</div>
-								<button class="btn btn-primary" type="submit">Submit form</button>
-							</form>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-6">
-					<div class="card card-default rounded bg-white bdr mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Highlighted Input Field</h4>
-						</div>
-						<div class="card-body">
-							<form class="">
-								<div class="form-row">
-									<div class="col-md-12 mb-3">
-										<label for="validationServer01">First name</label>
-										<input type="text" class="form-control is-valid" id="validationServer01" placeholder="First name" value="Md" required>
-										<div class="valid-feedback">
-											Looks good!
-										</div>
-									</div>
-									<div class="col-md-12 mb-3">
-										<label for="validationServer02">Last name</label>
-										<input type="text" class="form-control is-valid" id="validationServer02" placeholder="Last name" value="Rahad" required>
-										<div class="valid-feedback">
-											Looks good!
-										</div>
-									</div>
-									<div class="col-md-12 mb-3">
-										<label for="validationServerUsername">Username</label>
-										<input type="text" class="form-control is-invalid" id="validationServerUsername" placeholder="Username" aria-describedby="inputGroupPrepend3"
-										 required>
-										<div class="invalid-feedback">
-											Please choose a username.
-										</div>
-									</div>
-								</div>
-								<div class="form-row">
-									<div class="col-md-6 mb-3">
-										<label for="validationServer03">City</label>
-										<input type="text" class="form-control is-invalid" id="validationServer03" placeholder="City" required>
-										<div class="invalid-feedback">
-											Please provide a valid city.
-										</div>
-									</div>
-									<div class="col-md-3 mb-3">
-										<label for="validationServer04">State</label>
-										<input type="text" class="form-control is-invalid" id="validationServer04" placeholder="State" required>
-										<div class="invalid-feedback">
-											Please provide a valid state.
-										</div>
-									</div>
-									<div class="col-md-3 mb-3">
-										<label for="validationServer05">Zip</label>
-										<input type="text" class="form-control is-invalid" id="validationServer05" placeholder="Zip" required>
-										<div class="invalid-feedback">
-											Please provide a valid zip.
-										</div>
-									</div>
-								</div>
-								<button class="btn btn-primary" type="submit">Submit form</button>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 
 	@@include('footer.htm')

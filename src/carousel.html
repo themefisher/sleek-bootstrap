@@ -6,7 +6,10 @@
 <!-- ====================================
 	——— CONTENT WRAPPER
 	===================================== -->
-	<div class="content-wrapper">
+	<div class="layout-container">
+		@@include('top-bar.htm')
+		<div class="layout-content">
+			<div lass="flex-grow-1">
 			@@include('breadcrumb.htm', {
 				"active": "Carousels"
 			})

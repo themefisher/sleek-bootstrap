@@ -7,18 +7,21 @@
 	<!-- ====================================
 		——— CONTENT WRAPPER
 		===================================== -->
-	<div class="content-wrapper">
-		<div class="content">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="p-4 p-md-5 rounded bg-white bdr">
-						<h4 class="pb-5 text-title d-inline-block">Calendar</h4>
-						<button class="btn btn-pill btn-primary float-right">
-							<i class="fa fa-plus"></i> Add Event</button>
-						<div id='calendar'></div>
+		<div class="layout-container">
+			@@include('top-bar.htm')
+			<div class="layout-content">
+				<div lass="flex-grow-1">
+					<div class="content">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="p-4 p-md-5 rounded bg-white bdr">
+									<h4 class="pb-5 text-title d-inline-block">Calendar</h4>
+									<button class="btn btn-pill btn-primary float-right">
+										<i class="fa fa-plus"></i> Add Event</button>
+									<div id='calendar'></div>
+								</div>
+							</div>
+						</div>
 					</div>
-				</div>
-			</div>
-		</div>
 
 		@@include('footer.htm')
