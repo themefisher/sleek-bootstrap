@@ -1,38 +1,38 @@
-/*===== 4.25 TABLES =====*/
+/*===== TABLES =====*/
 thead th,
 tbody tr td:first-child {
-  color: $title-color;
+  color: $dark;
   font-weight: 500;
 }
 
 .table-secondary td {
-  background-color: $white-color;
-  color: $title-color;
+  background-color: $white;
+  color: $dark;
 }
 .table-primary {
   background-color: rgba($primary, 0.6);
-  color: $title-color;
+  color: $dark;
 }
 .table-info {
   background-color: rgba($info, 0.6);
-  color: $title-color;
+  color: $dark;
 }
 .table-success {
   background-color: rgba($success, 0.6);
-  color: $title-color;
+  color: $dark;
 }
 .table-danger {
   background-color: rgba($danger, 0.6);
-  color: $title-color;
+  color: $dark;
 }
 .table-warning {
   background-color: rgba($warning, 0.6);
-  color: $title-color;
+  color: $dark;
 }
 
 .table-dark thead th,
 .table-dark tbody tr td:first-child {
-  color: $white-color;
+  color: $white;
 }
 
 /* Table borderless */
@@ -44,7 +44,7 @@ tbody tr td:first-child {
 .table-borderless thead th {
   border-bottom: 1px solid $border-color;
   font-size: 13px;
-  color: $text-color;
+  color: $secondary;
   font-weight: 400;
   padding-top: 30px;
 }
@@ -52,7 +52,7 @@ tbody tr td:first-child {
   padding-top: 40px;
 }
 .table-borderless tbody tr a.link {
-  color: $title-color;
+  color: $dark;
   &:hover {
     color: $primary;
   }
@@ -78,7 +78,7 @@ tbody tr td:first-child {
     font-size: 14px;
     font-weight: 400;
     padding: 0 30px 20px 0;
-    color: $text-color;
+    color: $secondary;
     @include media-breakpoint-up(md) {
       font-size: 17px;
     }
@@ -98,11 +98,8 @@ tbody tr td:first-child {
   tbody tr {
     position: relative;
     @include transition(box-shadow 0.3s ease-in-out);
-    &:hover {
-      // @include box-shadow(0px, 13px, 30px, rgba(229, 230, 235, 0.6));
-    }
     td:first-child {
-      color: $text-color;
+      color: $secondary;
     }
   }
   .avater {
@@ -112,6 +109,15 @@ tbody tr td:first-child {
   }
 }
 
+.table-responsive-large {
+  @include media-breakpoint-up(xl) {
+    display: inline-table;
+  }
+}
+
+.table-responsive {
+  display: table;
+}
 
 /* Customer Table */
 .customer-table {
@@ -142,7 +148,7 @@ tbody tr td:first-child {
     padding-bottom: 16px;
   }
   .media-icon {
-    color: $white-color;
+    color: $white;
     font-size: 16px;
     &.cat-1 {
       background-color: $primary;
@@ -160,7 +166,7 @@ tbody tr td:first-child {
   .media-body {
     a {
       font-size: 15px;
-      color: $title-color;
+      color: $dark;
       display: inline-block;
       &:hover {
         color: $primary;
@@ -197,7 +203,7 @@ tbody tr td:first-child {
     .media-body {
       padding-right: 20px;
       a {
-        color: $title-color;
+        color: $dark;
         h6 {
           font-size: 15px;
           margin-bottom: 10px;

@@ -22,7 +22,6 @@ var path         = {
     incdir       : 'src/_inc/',
     plugins      : 'src/assets/plugins/**/*.*',
     js           : 'src/assets/js/*.js',
-    data         : 'src/assets/data/*.*',
     scss         : 'src/assets/scss/**/*.scss',
     img          : 'src/assets/img/**/*.+(png|jpg|gif)'
 };
@@ -132,23 +131,12 @@ gulp.task('plugins', function() {
 });
 
 
-/* =====================================================
-    DATA
-    ===================================================== */
-
-gulp.task('data', function() {
-  return gulp.src( path.data )
-    .pipe(plumber())
-    .pipe(gulp.dest(assets + 'data/'))
-    .pipe(browserSync.stream())
-});
-
 
 /* =====================================================
     WATCH
     ===================================================== */
 
-gulp.task('watch', gulp.series('html', 'scss', 'rtl', 'minifycss', 'js', 'img', 'plugins', 'data', function() {
+gulp.task('watch', gulp.series('html', 'scss', 'rtl', 'minifycss', 'js', 'img', 'plugins', function() {
   gulp.watch( path.html, gulp.series('html')).on('change', browserSync.reload)
   gulp.watch( path.htminc, gulp.series('html')).on('change', browserSync.reload)
   gulp.watch( path.scss, gulp.series('scss', 'rtl', 'minifycss')).on('change', browserSync.reload)
@@ -166,7 +154,7 @@ gulp.task('watch', gulp.series('html', 'scss', 'rtl', 'minifycss', 'js', 'img', 
 /* =====================================================
     DIST
     ===================================================== */
-gulp.task('dist', gulp.series('clean', 'html', 'scss', 'rtl', 'minifycss', 'js', 'img', 'plugins', 'data', function() {
+gulp.task('dist', gulp.series('clean', 'html', 'scss', 'rtl', 'minifycss', 'js', 'img', 'plugins', function() {
   return gulp.src( [assets, path.scss] )
     .pipe(plumber())
     .pipe(gulp.dest( dist ))

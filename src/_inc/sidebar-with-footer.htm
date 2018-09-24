@@ -12,12 +12,9 @@
             <img class="logo-mini" src="assets/img/sleek-icon.png" alt="Sleek">
             <span class="logo-title">Sleek Admin</span>
           </a>
-
         </div>
         <!-- <div class="side-test"> -->
           <div class="sidebar-scrollbar">
-
-            <!-- sidebar menu -->
             <ul class="nav sidebar-inner" id="menu">
               <li class="has-sub @@if (parent === 'dashboard'){active}">
                 <a href="javascript:void(0)">
@@ -31,52 +28,6 @@
                   </li>
                   <li class="@@if (active === 'analytics'){active}">
                     <a href="analytics.html">Analytics</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="has-sub @@if (parent === 'apps'){active}">
-                <a href="javascript:void(0)">
-                  <i class="icon-envelope"></i>
-                  <span>Apps</span>
-                  <b class="caret"></b>
-                </a>
-                <ul class="sub-menu">
-                  <li class="has-sub @@if (sub_parent === 'email'){active}">
-                    <a href="javascript:void(0)">
-                      <span>Email</span>
-                      <b class="caret"></b>
-                    </a>
-                    <ul class="sub-menu ">
-                      <li class="@@if (active === 'email-inbox'){active}">
-                        <a href="email-inbox.html">Inbox</a>
-                      </li>
-                      <li class="@@if (active === 'email-compose'){active}">
-                        <a href="email-compose.html">Compose Email</a>
-                      </li>
-                      <li class="@@if (active === 'email-details'){active}">
-                        <a href="email-details.html">Email Details</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="@@if (active === 'calendar'){active}">
-                    <a href="calendar.html">Calendar</a>
-                  </li>
-                  <li class="has-sub @@if (sub_parent === 'editors'){active}">
-                    <a href="javascript:void(0)">
-                      <span>Editors</span>
-                      <b class="caret"></b>
-                    </a>
-                    <ul class="sub-menu">
-                      <li class="@@if (active === 'editor-text'){active}">
-                        <a href="editor-text.html">Text Editor</a>
-                      </li>
-                      <li class="@@if (active === 'editor-markdown'){active} ">
-                        <a href="editor-markdown.html">Markdown Editor</a>
-                      </li>
-                      <li class="@@if (active === 'editor-html'){active} ">
-                        <a href="editor-html.html">HTML Editor</a>
-                      </li>
-                    </ul>
                   </li>
                 </ul>
               </li>
@@ -199,6 +150,9 @@
                       <li class="@@if (active === 'switcher'){active}">
                         <a href="switchers.html">Switchers</a>
                       </li>
+                      <li class="@@if (active === 'table-general'){active}">
+                        <a href="tables.html">Tables</a>
+                      </li>
                       <li class="@@if (active === 'tabs'){active}">
                         <a href="tabs.html">Tabs</a>
                       </li>
@@ -243,20 +197,6 @@
                       </li>
                       <li class="@@if (active === 'formAdvance'){active}">
                         <a href="form-advance.html">Form Advanced</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="has-sub @@if (sub_parent === 'tables'){active}">
-                    <a href="javascript:void(0)">
-                      <span>Tables</span>
-                      <b class="caret"></b>
-                    </a>
-                    <ul class="sub-menu ">
-                      <li class="@@if (active === 'table-general'){active}">
-                        <a href="tables.html">General Tables</a>
-                      </li>
-                      <li class="@@if (active === 'dataTable'){active}">
-                        <a href="data-tables.html">Data Tables</a>
                       </li>
                     </ul>
                   </li>
@@ -337,9 +277,6 @@
                       <li class="@@if (active === 'invoice'){active}">
                         <a href="invoice.html"> Invoice</a>
                       </li>
-                      <li class="@@if (active === 'comingsoon'){active}">
-                        <a href="coming-soon.html"> Coming Soon</a>
-                      </li>
                       <li class="@@if (active === 'error'){active}">
                         <a href="error.html"> Error</a>
                       </li>
@@ -347,7 +284,7 @@
                   </li>
                 </ul>
               </li>
-            </ul>
+            </ul>      
           </div>
         <!-- </div> -->
 
