@@ -6,100 +6,103 @@
 	<!-- ====================================
 	——— CONTENT WRAPPER
 	===================================== -->
-	<div class="content-wrapper">
-		@@include('breadcrumb.htm', { "parent": "UI Elements", "active": "Form Advance" })
-		<div class="content">
-			<!-- First Row  -->
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="card card-default rounded bg-white mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Masked Input</h4>
+	<div class="layout-container">
+		@@include('top-bar.htm')
+		<div class="layout-content">
+			<div lass="flex-grow-1">
+				@@include('breadcrumb-custom.htm', { "parent": "UI Elements", "active": "Form Advance" })
+				<div class="content">
+					<!-- First Row  -->
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Masked Input</h4>
+								</div>
+								<div class="card-body">
+									<label class="text-title semi-bold" for="">Date input</label>
+									<div class="input-group mb-2">
+										<div class="input-group-prepend">
+											<span class="input-group-text">
+												<i class="fa fa-calendar"></i>
+											</span>
+										</div>
+										<input type="text" class="form-control" data-mask="00/00/0000" placeholder="" aria-label="">
+									</div>
+									<p style="font-size: 90%">ex. 99/99/9999</p>
+									<label class="text-title mt-4 semi-bold" for="">Phone input</label>
+									<div class="input-group mb-2">
+										<div class="input-group-prepend">
+											<span class="input-group-text">
+												<i class="fa fa-phone"></i>
+											</span>
+										</div>
+										<input type="text" class="form-control" data-mask="(999) 999-9999" placeholder="" aria-label="">
+									</div>
+									<p style="font-size: 90%">ex. (999) 999-9999</p>
+									<label class="text-title mt-4 semi-bold" for="">Taxpayer Identification Numbers</label>
+									<div class="input-group mb-2">
+										<div class="input-group-prepend">
+											<span class="input-group-text">
+												<i class="fa fa-dollar"></i>
+											</span>
+										</div>
+										<input type="text" class="form-control" data-mask="99-9999999" placeholder="" aria-label="">
+									</div>
+									<p style="font-size: 90%">ex. 99-9999999</p>
+									<label class="text-title mt-4 semi-bold" for="">Social Security Number</label>
+									<div class="input-group mb-2">
+										<div class="input-group-prepend">
+											<span class="input-group-text">
+												<i class="fa fa-user-secret"></i>
+											</span>
+										</div>
+										<input type="text" class="form-control" data-mask="999-99-9999" placeholder="" aria-label="">
+									</div>
+									<p style="font-size: 90%">ex. 999-99-9999</p>
+									<label class="text-title mt-4 semi-bold" for="">Eye Script</label>
+									<div class="input-group mb-2">
+										<div class="input-group-prepend">
+											<span class="input-group-text">
+												<i class="fa fa-eye-slash"></i>
+											</span>
+										</div>
+										<input type="text" class="form-control" data-mask="~9.99 ~9.99 999" placeholder="" aria-label="">
+									</div>
+									<p style="font-size: 90%">ex. ~9.99 ~9.99 999</p>
+									<label class="text-title mt-4 semi-bold" for="">Credit Card Number</label>
+									<div class="input-group mb-2">
+										<div class="input-group-prepend">
+											<span class="input-group-text">
+												<i class="fa fa-credit-card"></i>
+											</span>
+										</div>
+										<input type="text" class="form-control" data-mask="9999 9999 9999 9999" placeholder="" aria-label="">
+									</div>
+									<p style="font-size: 90%">ex. 9999 9999 9999 9999</p>
+								</div>
+							</div>
 						</div>
-						<div class="card-body">
-							<label class="text-dark font-weight-medium" for="">Date input</label>
-							<div class="input-group mb-2">
-								<div class="input-group-prepend">
-									<span class="input-group-text">
-										<i class="fa fa-calendar"></i>
-									</span>
+						<div class="col-lg-6">
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Multiple Select </h4>
 								</div>
-								<input type="text" class="form-control" data-mask="00/00/0000" placeholder="" aria-label="">
-							</div>
-							<p style="font-size: 90%">ex. 99/99/9999</p>
-							<label class="text-dark mt-4 font-weight-medium" for="">Phone input</label>
-							<div class="input-group mb-2">
-								<div class="input-group-prepend">
-									<span class="input-group-text">
-										<i class="fa fa-phone"></i>
-									</span>
+								<div class="card-body">
+									<div class="form-group">
+										<select class="js-example-basic-multiple form-control" name="states[]" multiple="multiple">
+											<option value="AL">Alabama</option>
+											<option value="AL">New York</option>
+											<option value="AL">Virginia</option>
+											<option value="AL">Washington</option>
+											<option value="WY">California</option>
+											<option value="WY">Wyoming</option>
+										</select>
+									</div>
 								</div>
-								<input type="text" class="form-control" data-mask="(999) 999-9999" placeholder="" aria-label="">
 							</div>
-							<p style="font-size: 90%">ex. (999) 999-9999</p>
-							<label class="text-dark mt-4 font-weight-medium" for="">Taxpayer Identification Numbers</label>
-							<div class="input-group mb-2">
-								<div class="input-group-prepend">
-									<span class="input-group-text">
-										<i class="fa fa-dollar"></i>
-									</span>
-								</div>
-								<input type="text" class="form-control" data-mask="99-9999999" placeholder="" aria-label="">
-							</div>
-							<p style="font-size: 90%">ex. 99-9999999</p>
-							<label class="text-dark mt-4 font-weight-medium" for="">Social Security Number</label>
-							<div class="input-group mb-2">
-								<div class="input-group-prepend">
-									<span class="input-group-text">
-										<i class="fa fa-user-secret"></i>
-									</span>
-								</div>
-								<input type="text" class="form-control" data-mask="999-99-9999" placeholder="" aria-label="">
-							</div>
-							<p style="font-size: 90%">ex. 999-99-9999</p>
-							<label class="text-dark mt-4 font-weight-medium" for="">Eye Script</label>
-							<div class="input-group mb-2">
-								<div class="input-group-prepend">
-									<span class="input-group-text">
-										<i class="fa fa-eye-slash"></i>
-									</span>
-								</div>
-								<input type="text" class="form-control" data-mask="~9.99 ~9.99 999" placeholder="" aria-label="">
-							</div>
-							<p style="font-size: 90%">ex. ~9.99 ~9.99 999</p>
-							<label class="text-dark mt-4 font-weight-medium" for="">Credit Card Number</label>
-							<div class="input-group mb-2">
-								<div class="input-group-prepend">
-									<span class="input-group-text">
-										<i class="fa fa-credit-card"></i>
-									</span>
-								</div>
-								<input type="text" class="form-control" data-mask="9999 9999 9999 9999" placeholder="" aria-label="">
-							</div>
-							<p style="font-size: 90%">ex. 9999 9999 9999 9999</p>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-6">
-					<div class="card card-default rounded bg-white mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Multiple Select </h4>
-						</div>
-						<div class="card-body">
-							<div class="form-group">
-								<select class="js-example-basic-multiple form-control" name="states[]" multiple="multiple">
-									<option value="AL">Alabana</option>
-									<option value="NY">New York</option>
-									<option value="VR">Virginia</option>
-									<option value="WA">Washington</option>
-									<option value="CA">California</option>
-									<option value="WY">Wyoming</option>
-								</select>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 
 	@@include('footer.htm')

@@ -1,0 +1,40 @@
+@@include('header.htm', { "title": "Sleek - Admin Dashboard Template", "className": "header-fixed sidebar-fixed sidebar-dark header-light" })
+<aside class="main-sidebar">
+	@@include('sidebar-with-footer.htm', { "parent": "pages", "sub_parent": "others", "active": "comingsoon" })
+</aside>
+
+	<!-- ====================================
+	——— CONTENT WRAPPER
+	===================================== -->
+	<div class="layout-container">
+		@@include('top-bar.htm')
+		<div class="layout-content">
+			<div lass="flex-grow-1">
+				@@include('breadcrumb-custom.htm', { "parent": "Pages", "active": "Coming Soon" })
+				<div class="content">
+					<div class="comingsoon-wrapper rounded bdr bg-white">
+						<div class="row justify-content-center">
+							<div class="col-lg-9 col-md-9">
+								<div class="comingsoon text-center">
+									<h1 class="text-title">We Are Coming Soon</h1>
+									<p>We will be here soon.Please stay in touch</p>
+								</div>
+								<div class="count-down text-center">
+									<div class="simple_timer"></div>
+								</div>
+							</div>
+						</div>
+						<div class="row justify-content-center">
+							<div class="col-md-10 col-lg-6 col-xl-4 col-11 mx-auto">
+								<form class="form_subscribe text-center">
+									<input class="form-control mr-sm-2" type="text" placeholder="Enter email for information">
+									<button class="btn-search btn-search my-2 my-sm-0" type="submit">
+										<i class="fa fa-arrow-right"></i>
+									</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+
+		@@include('footer.htm')

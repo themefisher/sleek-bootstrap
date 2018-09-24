@@ -1,0 +1,164 @@
+@@include('header.htm', { "title": "Sleek - Admin Dashboard Template", "className": "header-fixed sidebar-fixed sidebar-dark header-light" })
+
+<aside class="main-sidebar">
+	@@include('sidebar-with-footer.htm', { "parent": "apps", "sub_parent": "email", "active": "email-details" })
+</aside>
+
+	<!-- ====================================
+	——— CONTENT WRAPPER
+	===================================== -->
+	<div class="layout-container">
+		@@include('top-bar.htm')
+		<div class="layout-content">
+			<div lass="flex-grow-1">
+				<div class="content">
+					<div class="email-wrapper rounded bdr bg-white">
+						<div class="row no-gutters justify-content-center">
+							<div class="col-lg-3">
+								<div class="email-left-column email-options p-4 p-xl-5">
+									<a href="email-compose.html" class="btn btn-block btn-primary mb-4 mb-xl-5">Compose</a>
+									<ul class="pb-2">
+										<li class="d-block active mb-4">
+											<a href="email-inbox.html">
+												<i class="fa fa-download mr-2"></i> Inbox</a>
+											<span class="badge badge-secondary">20</span>
+										</li>
+										<li class="d-block mb-4">
+											<a href="#">
+												<i class="fa fa-star-o mr-2"></i> Favorite</a>
+											<span class="badge badge-secondary">56</span>
+										</li>
+										<li class="d-block mb-4">
+											<a href="#">
+												<i class="fa fa-paperclip mr-2"></i> Drafts</a>
+										</li>
+										<li class="d-block mb-4">
+											<a href="#">
+												<i class="fa fa-share-square-o mr-2"></i> Sent Mail</a>
+										</li>
+										<li class="d-block mb-4">
+											<a href="#">
+												<i class="fa fa-trash mr-2"></i> Trash</a>
+										</li>
+									</ul>
+									<p class="text-title semi-bold">Labels</p>
+									<ul>
+										<li class="mt-4">
+											<a href="#">
+												<i class="fa fa-circle-o text-blue mr-3"></i>Work</a>
+										</li>
+										<li class="mt-4">
+											<a href="#">
+												<i class="fa fa-circle-o text-warning mr-3"></i>Work</a>
+										</li>
+										<li class="mt-4">
+											<a href="#">
+												<i class="fa fa-circle-o text-purple mr-3"></i>Family</a>
+										</li>
+										<li class="mt-4">
+											<a href="#">
+												<i class="fa fa-circle-o text-success mr-3"></i>Friends</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-9">
+								<div class="email-right-column  email-body p-4 p-xl-5">
+									<div class="email-body-head mb-5 ">
+										<div class="head-right-options float-right">
+											<div class="btn-group" role="group" aria-label="Basic example">
+												<button type="button" class="btn btn-outline-secondary">
+													<i class="fa fa-angle-left"></i>
+												</button>
+												<button type="button" class="btn btn-outline-secondary">
+													<i class="fa fa-angle-right"></i>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="bdr rounded email-details">
+										<div class="email-title pt-4 pt-lg-5 px-3 px-xl-5 pb-4 border-bottom">
+											<h4 class="text-title">A free Uber ride</h4>
+										</div>
+										<div class="email-content px-3 px-xl-5 pb-4 pb-lg-5">
+											<div class="d-md-flex justify-content-md-between">
+												<div class="media mt-4 mb-3 mb-md-5 profile-timeline-media">
+													<div class="align-self-start rounded iconbox-45 overflow-hidden mr-3">
+														<img class="" src="assets/img/user/u3.jpg" alt="Generic placeholder image">
+													</div>
+													<div class="media-body">
+														<h6 class="mt-0 text-title">Larissa Gebhardt</h6>
+														<span>From:
+															<i class="fa fa-angle-left"></i> @selena.oi
+															<i class="fa fa-angle-right"></i> to me</span>
+													</div>
+												</div>
+												<div class="pt-0 pt-md-4 pb-5 pb-md-4">
+													<a class="text-default p-1 p-xl-2" href="#">
+														<i class="fa fa-star-o"></i>
+													</a>
+													<a class="text-default  p-1 p-xl-2" href="#">
+														<i class="fa fa-paperclip"></i>
+													</a>
+													<span class=" p-1 p-xl-2 d-inline-block">Mar 18</span>
+
+													<div class="btn-group mb-1">
+														<button type="button" class="btn btn-outline-secondary btn-sm">
+															<i class="fa fa-reply"></i>
+														</button>
+														<button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
+														 aria-haspopup="true" aria-expanded="false">
+															<span class="sr-only">Toggle Dropdown</span>
+														</button>
+														<div class="dropdown-menu dropdown-menu-right">
+															<a class="dropdown-item" href="#">Action</a>
+															<a class="dropdown-item" href="#">Another action</a>
+															<a class="dropdown-item" href="#">Something else here</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<p class="pb-4">Hi Selena</p>
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+												ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+												aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+												occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+											</p>
+											<br>
+											<p>
+												Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+												quae ab illo inventore veritatis et quasi architecto.
+											</p>
+											<p class="pt-4">
+												<i class="fa fa-paperclip ml-2"></i>
+												<span class="text-title">4 Attachments</span>
+											</p>
+											<div class="email-img d-inline-block rounded overflow-hidden mt-3 mt-lg-4 mr-2 mr-md-3 mr-lg-4">
+												<img src="assets/img/products/pa1.jpg" alt="Product">
+											</div>
+											<div class="email-img d-inline-block rounded overflow-hidden mt-3 mt-lg-4 mr-2 mr-md-3 mr-lg-4">
+												<img src="assets/img/products/pa2.jpg" alt="Product">
+											</div>
+											<div class="email-img d-inline-block rounded overflow-hidden mt-3 mt-lg-4 mr-2 mr-md-3 mr-lg-4">
+												<img src="assets/img/products/pa3.jpg" alt="Product">
+											</div>
+											<div class="email-img d-inline-block rounded overflow-hidden mt-3 mt-lg-4 mr-2 mr-md-3 mr-lg-4">
+												<img src="assets/img/products/pa4.jpg" alt="Product">
+											</div>
+
+											<div class="email-content-footer mt-5 pb-5 px-4 pt-4 bdr rounded">
+												<p>Click here to
+													<a class="text-blue" href="#">Reply</a> or
+													<a class="text-blue" href="#">Forward</a>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+	@@include('footer.htm')

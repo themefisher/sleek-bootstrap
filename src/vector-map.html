@@ -6,19 +6,22 @@
 	<!-- ====================================
 	——— CONTENT WRAPPER
 	===================================== -->
-	<div class="content-wrapper">
-		@@include('breadcrumb.htm', { "parent": "UI Elements", "active": "Vector Maps" })
-		<div class="content">
-			<!-- First Row  -->
-			<div class="row">
-				<div class="col-12">
-					<div class="card card-default rounded bg-white mb-4">
-						<div class="card-body">
-							<div id="demoworld" style="height:400px; width: 100%;"></div>
+	<div class="layout-container">
+		@@include('top-bar.htm')
+		<div class="layout-content">
+			<div lass="flex-grow-1">
+				@@include('breadcrumb-custom.htm', { "parent": "UI Elements", "active": "Vector Maps" })
+				<div class="content">
+					<!-- First Row  -->
+					<div class="row">
+						<div class="col-12">
+							<div class="card card-default rounded bg-white bdr mb-4">
+								<div class="card-body">
+									<div id="demoworld" style="height:400px; width: 100%;"></div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
 
 	@@include('footer.htm')

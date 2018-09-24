@@ -6,152 +6,158 @@
 	<!-- ====================================
 	——— CONTENT WRAPPER
 	===================================== -->
-	<div class="content-wrapper">
-		@@include('breadcrumb.htm', { "parent": "UI Elements", "active": "Progress Bars" })
-		<div class="content">
-			<!-- First Row  -->
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="card card-default rounded bg-white mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Default Progress Bars </h4>
-						</div>
-						<div class="card-body">
-							<div class="progress mb-3">
-								<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+	<div class="layout-container">
+		@@include('top-bar.htm')
+		<div class="layout-content">
+			<div lass="flex-grow-1">
+				@@include('breadcrumb-custom.htm', { "parent": "UI Elements", "active": "Progress Bars" })
+				<div class="content">
+					<!-- First Row  -->
+					<div class="bg-white border rounded">
+						<div class="row no-gutters">
+							<div class="col-lg-4 col-xl-3">
+								<div class="profile-content-left pt-5 pb-3 px-3 px-xl-5">
+									<div class="card text-center widget-profile px-0 border-0">
+										<div class="card-img mx-auto rounded-circle">
+											<img src="assets/img/user/u6.jpg" alt="user image">
+										</div>
+										<div class="card-body">
+											<h4 class="py-2 text-dark">Albrecht Straub</h4>
+											<p>Albrecht.straub@gmail.com</p>
+											<a class="btn btn-primary btn-pill btn-lg my-4" href="#">Follow</a>
+										</div>
+									</div>
+									<div class="d-flex justify-content-between ">
+										<div class="text-center pb-4">
+											<h6 class="text-dark pb-2">1503</h6>
+											<p>Friends</p>
+										</div>
+										<div class="text-center pb-4">
+											<h6 class="text-dark pb-2">2905</h6>
+											<p>Followers</p>
+										</div>
+										<div class="text-center pb-4">
+											<h6 class="text-dark pb-2">1200</h6>
+											<p>Following</p>
+										</div>
+									</div>
+									<hr class="w-100">
+									<div class="contact-info pt-4">
+										<h5 class="text-dark mb-1">Contact Information</h5>
+										<p class="text-dark font-weight-medium pt-4 mb-2">Email address</p>
+										<p>Albrecht.straub@gmail.com</p>
+										<p class="text-dark font-weight-medium pt-4 mb-2">Phone Number</p>
+										<p>+99 9539 2641 31</p>
+										<p class="text-dark font-weight-medium pt-4 mb-2">Birthday</p>
+										<p>Nov 15, 1990</p>
+										<p class="text-dark font-weight-medium pt-4 mb-2">Social Profile</p>
+										<p class="pb-3 social-button">
+											<a href="#" class="mb-1 btn btn-outline btn-twitter rounded-circle">
+												<i class="fa fa-twitter"></i>
+											</a>
+											<a href="#" class="mb-1 btn btn-outline btn-linkedin rounded-circle">
+												<i class="fa fa-linkedin"></i>
+											</a>
+											<a href="#" class="mb-1 btn btn-outline btn-facebook rounded-circle">
+												<i class="fa fa-facebook-f"></i>
+											</a>
+											<a href="#" class="mb-1 btn btn-outline btn-skype rounded-circle">
+												<i class="fa fa-skype"></i>
+											</a>
+										</p>
+									</div>
+								</div>
 							</div>
-							<div class="progress mb-3">
-								<div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-							<div class="progress mb-3">
-								<div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-							<div class="progress mb-3">
-								<div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-							<div class="progress">
-								<div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-						</div>
-					</div>
+							<div class="col-lg-8 col-xl-9">
+								<div class="profile-content-right py-5">
+									<ul class="nav nav-tabs px-3 px-xl-5 nav-style-border" id="myTab" role="tablist">
+										<li class="nav-item">
+											<a class="nav-link active" id="timeline-tab" data-toggle="tab" href="#timeline" role="tab" aria-controls="timeline" aria-selected="true">Timeline</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Settings</a>
+										</li>
+									</ul>
+									<div class="tab-content px-3 px-xl-5" id="myTabContent">
+										<div class="tab-pane fade show active" id="timeline" role="tabpanel" aria-labelledby="timeline-tab">
+											<div class="media mt-5 profile-timeline-media">
+												<div class="align-self-start iconbox-45 overflow-hidden mr-3">
+													<img class="" src="assets/img/user/u3.jpg" alt="Generic placeholder image">
+												</div>
+												<div class="media-body">
+													<h6 class="mt-0 text-dark">Larissa Gebhardt</h6>
+													<span>Designer</span>
+													<span class="float-right">5 mins ago</span>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+														magna aliqua. ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+													<div class="d-inline-block rounded overflow-hidden mt-4 mr-0 mr-lg-4">
+														<img src="assets/img/products/pa1.jpg" alt="Product">
+													</div>
+													<div class="d-inline-block rounded overflow-hidden mt-4 mr-0 mr-lg-4">
+														<img src="assets/img/products/pa2.jpg" alt="Product">
+													</div>
+													<div class="d-inline-block rounded overflow-hidden mt-4 mr-0 mr-lg-4">
+														<img src="assets/img/products/pa3.jpg" alt="Product">
+													</div>
+												</div>
+											</div>
+											<div class="media mt-5 profile-timeline-media">
+												<div class="align-self-start iconbox-45 overflow-hidden mr-3">
+													<img class="" src="assets/img/user/u4.jpg" alt="Generic placeholder image">
+												</div>
+												<div class="media-body">
+													<h6 class="mt-0 text-dark">Walter Reuter</h6>
+													<span>Designer</span>
+													<span class="float-right">2 hrs ago</span>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+														magna aliqua. ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
 
-					<div class="card card-default rounded bg-white mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Default Buttons </h4>
-						</div>
-						<div class="card-body">
-							<div class="progress mb-3">
-								<div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-								<div class="progress-bar bg-warning" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-								<div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+												</div>
+											</div>
+											<div class="media mt-5 profile-timeline-media">
+												<div class="align-self-start iconbox-45 overflow-hidden mr-3">
+													<img class="" src="assets/img/user/u7.jpg" alt="Generic placeholder image">
+												</div>
+												<div class="media-body">
+													<h6 class="mt-0 text-dark">Albrecht Straub</h6>
+													<span>Designer</span>
+													<span class="float-right">5 days ago</span>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+														magna aliqua. ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+													<div class="d-inline-block rounded overflow-hidden mt-4 mr-0 mr-lg-4">
+														<img src="assets/img/products/pa4.jpg" alt="Product">
+													</div>
+												</div>
+											</div>
+											<div class="media mt-5 profile-timeline-media">
+												<div class="align-self-start iconbox-45 overflow-hidden mr-3">
+													<img class="" src="assets/img/user/u8.jpg" alt="Generic placeholder image">
+												</div>
+												<div class="media-body">
+													<h6 class="mt-0 text-dark">Selena Wagner</h6>
+													<span>Designer</span>
+													<span class="float-right">Mar 05, 2018</span>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+														magna aliqua. ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+													<div class="d-inline-block rounded overflow-hidden mt-4 mr-0 mr-lg-4">
+														<img src="assets/img/products/pa5.jpg" alt="Product">
+													</div>
+													<div class="d-inline-block rounded overflow-hidden mt-4 mr-0 mr-lg-4">
+														<img src="assets/img/products/pa6.jpg" alt="Product">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+										<div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">...</div>
+									</div>
+								</div>
 							</div>
-							<div class="progress mb-3">
-								<div class="progress-bar bg-success" role="progressbar" style="width: 27%" aria-valuenow="27" aria-valuemin="0" aria-valuemax="100"></div>
-								<div class="progress-bar bg-danger" role="progressbar" style="width: 30%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
-								<div class="progress-bar bg-info" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-							<div class="progress">
-								<div class="progress-bar bg-danger" role="progressbar" style="width: 35%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-								<div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-								<div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-						</div>
-					</div>
-					<div class="card card-default rounded bg-white mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Progress Bar Height</h4>
-						</div>
-						<div class="card-body">
-							<div class="progress mb-3" style="height: 2px;">
-								<div class="progress-bar bg-info" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-							<div class="progress mb-3" style="height: 5px;">
-								<div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-							<div class="progress mb-3" style="height: 8px;">
-								<div class="progress-bar bg-warning" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-							<div class="progress mb-3" style="height: 12px;">
-								<div class="progress-bar bg-danger" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-							<div class="progress" style="height: 16px;">
-								<div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-6">
-					<div class="card card-default rounded bg-white mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Progress Bar Labels</h4>
-						</div>
-						<div class="card-body">
-							<div class="progress mb-3">
-								<div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-							</div>
-							<div class="progress mb-3">
-								<div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
-							</div>
-							<div class="progress mb-3">
-								<div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-							</div>
-							<div class="progress">
-								<div class="progress-bar bg-info" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
-							</div>
-
-						</div>
-					</div>
-
-					<div class="card card-default rounded bg-white mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Striped Progress Bar</h4>
-						</div>
-						<div class="card-body">
-							<div class="progress mb-3">
-								<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
-								 aria-valuemax="100"></div>
-							</div>
-							<div class="progress mb-3">
-								<div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
-								 aria-valuemax="100"></div>
-							</div>
-							<div class="progress mb-3">
-								<div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
-								 aria-valuemax="100"></div>
-							</div>
-							<div class="progress">
-								<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0"
-								 aria-valuemax="100"></div>
-							</div>
-						</div>
-					</div>
-
-					<div class="card card-default rounded bg-white mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Animate Progress Bar</h4>
-						</div>
-						<div class="card-body">
-							<div class="progress mb-3">
-								<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 25%" aria-valuenow="25"
-								 aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-							<div class="progress mb-3">
-								<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 50%" aria-valuenow="50"
-								 aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-							<div class="progress mb-3">
-								<div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75"
-								 aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-							<div class="progress">
-								<div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: 100%" aria-valuenow="100"
-								 aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 
 	@@include('footer.htm')

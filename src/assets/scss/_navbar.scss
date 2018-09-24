@@ -30,7 +30,7 @@
   }
   .navbar {
     margin-bottom: 0;
-    margin-left: 250px;
+    // margin-left: 250px;
     border: none;
     min-height: 75px;
     border-radius: 0;
@@ -79,6 +79,12 @@
     margin-right: auto;
     padding-left: 20px;
     background: transparent;
+    @include media-breakpoint-up(md) {
+      padding-left: 0;
+    }
+    @include media-breakpoint-up(lg) {
+      padding-left: 20px;
+    }
 
     .input-group {
       margin-bottom: 0px;
@@ -351,14 +357,14 @@
   }
   .navbar {
     @include media-breakpoint-up(md) {
-      margin-left: 75px;
+      // margin-left: 75px;
     }
   }
 }
 
 /* For Fixed Header */
 .header-fixed {
-  padding-top: 76px;
+  // padding-top: 76px;
 }
 
 /* Sidebar Minified Out */

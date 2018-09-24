@@ -6,8 +6,13 @@
 <!-- ====================================
 	——— CONTENT WRAPPER
 	===================================== -->
-	<div class="content-wrapper">
-			@@include('breadcrumb.htm', { "parent": "UI Elements", "active": "Carousels" })
+	<div class="layout-container">
+		@@include('top-bar.htm')
+		<div class="layout-content">
+			<div lass="flex-grow-1">
+			@@include('breadcrumb.htm', {
+				"active": "Carousels"
+			})
 			<div class="content">
 				<div class="row">
 					<div class="col-lg-6">
@@ -88,7 +93,7 @@
 						</div>
 					</div>
 					<div class="col-lg-6">
-						<div class="card card-default rounded bg-white  mb-4">
+						<div class="card card-default rounded bg-white mb-4">
 							<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
 								<h4>With Captions</h4>
 							</div>

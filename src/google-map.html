@@ -6,72 +6,74 @@
 	<!-- ====================================
 	——— CONTENT WRAPPER
 	===================================== -->
-	<div class="content-wrapper">
-		@@include('breadcrumb.htm', { "parent": "UI Elements", "active": "Google Maps" })
-		<div class="content">
-
-			<div class="row" id="google-map">
-				<div class="col-lg-6">
-					<div class="card card-default rounded bg-white mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Basic Demo</h4>
+	<div class="layout-container">
+		@@include('top-bar.htm')
+		<div class="layout-content">
+			<div lass="flex-grow-1">
+				@@include('breadcrumb-custom.htm', { "parent": "UI Elements", "active": "Google Maps" })
+				<div class="content">
+					<div class="row" id="google-map">
+						<div class="col-lg-6">
+							<div class="card card-default rounded bg-white mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Basic Demo</h4>
+								</div>
+								<div class="card-body">
+									<div id="basicMap" class="map-container"></div>
+								</div>
+							</div>
 						</div>
-						<div class="card-body">
-							<div id="basicMap" class="map-container"></div>
+						<div class="col-lg-6">
+							<div class="card card-default rounded bg-white mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Map Marker</h4>
+								</div>
+								<div class="card-body">
+									<div id="mapMarker" class="map-container"></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="card card-default rounded bg-white mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Polygonal Map</h4>
+								</div>
+								<div class="card-body">
+									<div id="polygonalMap" class="map-container"></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="card card-default rounded bg-white mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Routes Map</h4>
+								</div>
+								<div class="card-body">
+									<div id="polylineMap" class="map-container"></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="card card-default rounded bg-white mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Multiple Marker Map</h4>
+								</div>
+								<div class="card-body">
+									<div id="multiMarkerMap" class="map-container"></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="card card-default rounded bg-white mb-4">
+								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+									<h4>Styled Map</h4>
+								</div>
+								<div class="card-body">
+									<div id="styleMap" class="map-container"></div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-6">
-					<div class="card card-default rounded bg-white mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Map Marker</h4>
-						</div>
-						<div class="card-body">
-							<div id="mapMarker" class="map-container"></div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="card card-default rounded bg-white mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Polygonal Map</h4>
-						</div>
-						<div class="card-body">
-							<div id="polygonalMap" class="map-container"></div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="card card-default rounded bg-white mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Routes Map</h4>
-						</div>
-						<div class="card-body">
-							<div id="polylineMap" class="map-container"></div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-12">
-					<div class="card card-default rounded bg-white mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Multiple Marker Map</h4>
-						</div>
-						<div class="card-body">
-							<div id="multiMarkerMap" class="map-container"></div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-12">
-					<div class="card card-default rounded bg-white mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Styled Map</h4>
-						</div>
-						<div class="card-body">
-							<div id="styleMap" class="map-container"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 
 	@@include('footer.htm')

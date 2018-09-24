@@ -5,76 +5,79 @@
 	<!-- ====================================
 		——— CONTENT WRAPPER
 		===================================== -->
-	<div class="content-wrapper">
-		@@include('breadcrumb.htm', { "parent": "UI Elements", "active": "Custom Icons" })
-		<div class="content">
-			<!-- First Row  -->
-			<div class="card card-default rounded bg-white mb-4">
-				<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-					<h4>Custom Icons</h4>
-				</div>
-				<div class="card-body">
-					<div class="row">
-						<div class="col-6 col-sm-4 col-md-3 col-lg-2 pt-4">
-							<i class="icon-gallery-grid mr-1 mt-4"></i>
-							gallery-grid</div>
-						<div class="col-6 col-sm-4 col-md-3 col-lg-2 pt-4">
-							<i class="icon-envelope mr-1 mt-4"></i>
-							envelope</div>
-						<div class="col-6 col-sm-4 col-md-3 col-lg-2 pt-4">
-							<i class="icon-widget mr-1 mt-4"></i>
-							widget</div>
-						<div class="col-6 col-sm-4 col-md-3 col-lg-2 pt-4">
-							<i class="icon-folder mr-1 mt-4"></i>
-							folder</div>
-						<div class="col-6 col-sm-4 col-md-3 col-lg-2 pt-4">
-							<i class="icon-chart mr-1 mt-4"></i>
-							chart</div>
-						<div class="col-6 col-sm-4 col-md-3 col-lg-2 pt-4">
-							<i class="icon-page mr-1 mt-4"></i>
-							page</div>
-						<div class="col-6 col-sm-4 col-md-3 col-lg-2 pt-4">
-							<i class="icon-search mr-1 mt-4"></i>
-							search</div>
-						<div class="col-6 col-sm-4 col-md-3 col-lg-2 pt-4">
-							<i class="icon-nitification-bell mr-1 mt-4"></i>
-							nitification-bell</div>
-						<div class="col-6 col-sm-4 col-md-3 col-lg-2 pt-4">
-							<i class="icon-user mr-1 mt-4"></i>
-							user</div>
-						<div class="col-6 col-sm-4 col-md-3 col-lg-2 pt-4">
-							<i class="icon-burger mr-1 mt-4"></i>
-							burger</div>
-						<div class="col-6 col-sm-4 col-md-3 col-lg-2 pt-4">
-							<i class="icon-burger-mini mr-1 mt-4"></i>
-							burger-mini</div>
-						<div class="col-6 col-sm-4 col-md-3 col-lg-2 pt-4">
-							<i class="icon-form mr-1 mt-4"></i>
-							form</div>
-						<div class="col-6 col-sm-4 col-md-3 col-lg-2 pt-4">
-							<i class="icon-diamond mr-1 mt-4"></i>
-							diamond</div>
-						<div class="col-6 col-sm-4 col-md-3 col-lg-2 pt-4">
-							<i class="icon-gear mr-1 mt-4"></i>
-							gear</div>
-						<div class="col-6 col-sm-4 col-md-3 col-lg-2 pt-4">
-							<i class="icon-arrow-up mr-1 mt-4"></i>
-							arrow-up</div>
-						<div class="col-6 col-sm-4 col-md-3 col-lg-2 pt-4">
-							<i class="icon-arrow-down mr-1 mt-4"></i>
-							arrow-down</div>
-						<div class="col-6 col-sm-4 col-md-3 col-lg-2 pt-4">
-							<i class="icon-calender mr-1 mt-4"></i>
-							calender</div>
-						<div class="col-6 col-sm-4 col-md-3 col-lg-2 pt-4">
-							<i class="icon-cart mr-1 mt-4"></i>
-							cart</div>
-						<div class="col-6 col-sm-4 col-md-3 col-lg-2 pt-4">
-							<i class="icon-ticket mr-1 mt-4"></i>
-							ticket</div>
+		<div class="layout-container">
+			@@include('top-bar.htm')
+			<div class="layout-content">
+				<div lass="flex-grow-1">
+					@@include('breadcrumb-custom.htm', { "parent": "UI Elements", "active": "Custom Icons" })
+					<div class="content">
+						<!-- First Row  -->
+						<div class="card card-default rounded bg-white bdr mb-4">
+							<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+								<h4>Custom Icons</h4>
+							</div>
+							<div class="card-body">
+								<div class="row">
+									<div class="col-6 col-sm-4 col-md-3 col-lg-2 pt-4">
+										<i class="icon-gallery-grid mr-1 mt-4"></i>
+										gallery-grid</div>
+									<div class="col-6 col-sm-4 col-md-3 col-lg-2 pt-4">
+										<i class="icon-envelope mr-1 mt-4"></i>
+										envelope</div>
+									<div class="col-6 col-sm-4 col-md-3 col-lg-2 pt-4">
+										<i class="icon-widget mr-1 mt-4"></i>
+										widget</div>
+									<div class="col-6 col-sm-4 col-md-3 col-lg-2 pt-4">
+										<i class="icon-folder mr-1 mt-4"></i>
+										folder</div>
+									<div class="col-6 col-sm-4 col-md-3 col-lg-2 pt-4">
+										<i class="icon-chart mr-1 mt-4"></i>
+										chart</div>
+									<div class="col-6 col-sm-4 col-md-3 col-lg-2 pt-4">
+										<i class="icon-page mr-1 mt-4"></i>
+										page</div>
+									<div class="col-6 col-sm-4 col-md-3 col-lg-2 pt-4">
+										<i class="icon-search mr-1 mt-4"></i>
+										search</div>
+									<div class="col-6 col-sm-4 col-md-3 col-lg-2 pt-4">
+										<i class="icon-nitification-bell mr-1 mt-4"></i>
+										nitification-bell</div>
+									<div class="col-6 col-sm-4 col-md-3 col-lg-2 pt-4">
+										<i class="icon-user mr-1 mt-4"></i>
+										user</div>
+									<div class="col-6 col-sm-4 col-md-3 col-lg-2 pt-4">
+										<i class="icon-burger mr-1 mt-4"></i>
+										burger</div>
+									<div class="col-6 col-sm-4 col-md-3 col-lg-2 pt-4">
+										<i class="icon-burger-mini mr-1 mt-4"></i>
+										burger-mini</div>
+									<div class="col-6 col-sm-4 col-md-3 col-lg-2 pt-4">
+										<i class="icon-form mr-1 mt-4"></i>
+										form</div>
+									<div class="col-6 col-sm-4 col-md-3 col-lg-2 pt-4">
+										<i class="icon-diamond mr-1 mt-4"></i>
+										diamond</div>
+									<div class="col-6 col-sm-4 col-md-3 col-lg-2 pt-4">
+										<i class="icon-gear mr-1 mt-4"></i>
+										gear</div>
+									<div class="col-6 col-sm-4 col-md-3 col-lg-2 pt-4">
+										<i class="icon-arrow-up mr-1 mt-4"></i>
+										arrow-up</div>
+									<div class="col-6 col-sm-4 col-md-3 col-lg-2 pt-4">
+										<i class="icon-arrow-down mr-1 mt-4"></i>
+										arrow-down</div>
+									<div class="col-6 col-sm-4 col-md-3 col-lg-2 pt-4">
+										<i class="icon-calender mr-1 mt-4"></i>
+										calender</div>
+									<div class="col-6 col-sm-4 col-md-3 col-lg-2 pt-4">
+										<i class="icon-cart mr-1 mt-4"></i>
+										cart</div>
+									<div class="col-6 col-sm-4 col-md-3 col-lg-2 pt-4">
+										<i class="icon-ticket mr-1 mt-4"></i>
+										ticket</div>
+								</div>
+							</div>
+						</div>
 					</div>
-				</div>
-			</div>
-		</div>
 
 		@@include('footer.htm')
