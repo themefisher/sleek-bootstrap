@@ -1,4 +1,6 @@
-/* ======== NAVBAR ======== */
+/* ======================================
+  --> 2. NAVBAR
+========================================= */
 .main-header {
   position: relative;
   top: 0;
@@ -30,7 +32,7 @@
   }
   .navbar {
     margin-bottom: 0;
-    margin-left: 250px;
+    // margin-left: 250px;
     border: none;
     min-height: 75px;
     border-radius: 0;
@@ -53,7 +55,7 @@
     }
     &:before {
       content: "\e800";
-      font-family: $font-family-font-fontello;
+      font-family: "fontello";
     }
   }
   .sidebar-offcanvas-toggle {
@@ -70,7 +72,7 @@
     }
     &:before {
       content: "\e800";
-      font-family: $font-family-font-fontello;
+      font-family: "fontello";
     }
   }
 
@@ -79,6 +81,12 @@
     margin-right: auto;
     padding-left: 20px;
     background: transparent;
+    @include media-breakpoint-up(md) {
+      padding-left: 0;
+    }
+    @include media-breakpoint-up(lg) {
+      padding-left: 20px;
+    }
 
     .input-group {
       margin-bottom: 0px;
@@ -121,8 +129,6 @@
             position: relative;
             border-left: 1px solid $border-color;
             border-right: 1px solid $border-color;
-            border-top: 0;
-            border-bottom: 0;
             padding-left: 20px;
             padding-right: 10px;
             font-size: 26px;
@@ -130,8 +136,6 @@
             color: #b7c0cd;
             display: inline-block;
             line-height: 75px;
-            background-color: transparent;
-            cursor: pointer;
             @include media-breakpoint-up(md) {
               padding-left: 16px;
               padding-right: 5px;
@@ -163,7 +167,6 @@
         }
         &.user-menu {
           position: relative;
-          background-color: transparent;
           .user-image {
             width: 40px;
             border-radius: 4px;
@@ -175,8 +178,6 @@
             padding: 0px 0px;
             display: inline-block;
             line-height: 75px;
-            background-color: transparent;
-            border: none;
             > span {
               color: $dark;
               padding: 0 8px;
@@ -351,14 +352,14 @@
   }
   .navbar {
     @include media-breakpoint-up(md) {
-      margin-left: 75px;
+      // margin-left: 75px;
     }
   }
 }
 
 /* For Fixed Header */
 .header-fixed {
-  padding-top: 76px;
+  // padding-top: 76px;
 }
 
 /* Sidebar Minified Out */
