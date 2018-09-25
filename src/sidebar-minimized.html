@@ -1,16 +1,16 @@
-@@include('header.htm', { "title": "Sleek - Admin Dashboard Template", "className": "header-fixed header-light sidebar-static sidebar-minified sidebar-dark"
-})
-<aside class="main-sidebar">
-	@@include('sidebar-with-footer.htm', { "parent": "layouts", "sub_parent": "sidebar-nav", "active": "sidebar-minimized" })
-</aside>
+@@include('header.htm', { "title": "Sleek - Admin Dashboard Template", "className": "header-fixed header-light sidebar-static sidebar-minified sidebar-dark" })
+@@include('sidebar-with-footer.htm', { "parent": "layouts", "sub_parent": "sidebar-nav", "active": "sidebar-minimized" })
 
-	<!-- ====================================
-	——— CONTENT WRAPPER
-	===================================== -->
-	<div class="content-wrapper">
-		@@include('breadcrumb.htm', { "parent": "Layouts", "active": "Sidebar Minimized" })
+		<!-- ====================================
+		——— LAYOUT CONTAINER
+		===================================== -->
+		<div class="layout-container">
+			@@include('top-bar.htm')
+				<div class="layout-content">
+					<div class="flex-grow-1">
+						@@include('breadcrumb.htm', { "parent": "Layouts", "active": "Sidebar Minimized" })
 
-		<div class="content">
+						<div class="content">
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="card card-default mb-4 mt-3 mt-md-0 bg-white">

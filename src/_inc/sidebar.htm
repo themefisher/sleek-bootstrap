@@ -1,19 +1,23 @@
+<!-- ====================================
+——— SIDEBAR
+===================================== -->
+<div class="layout-sidenav bg-sidebar ">
+  <div class="mobile-sticky-body-overlay"></div>
 
-    <!-- ====================================
-    ——— SIDEBAR
-    ===================================== -->
-    <div class="mobile-sticky-body-overlay"></div>
+  <div id="sidebar" class="sidebar sidebar-with-footer">
+    <!-- begin sidebar scrollbar -->
+    <div class="app-brand">
+      <a class="logo" href="index.html">
+        <img class="logo-mini" src="assets/img/sleek-icon.png" alt="Sleek">
+        <span class="logo-title">Sleek Admin</span>
+      </a>
 
-    <section id="sidebar" class="sidebar">
-      <!-- begin sidebar scrollbar -->
-      <div data-scrollbar="true" data-height="100%">
-        <a class="logo" href="index.html">
-          <img class="logo-mini" src="assets/img/sleek-icon.png" alt="Sleek">
-          <span class="logo-title">Sleek Admin</span>
-        </a>
+    </div>
+    <!-- <div class="side-test"> -->
+      <div class="sidebar-scrollbar">
 
         <!-- sidebar menu -->
-        <ul class="nav" id="menu">
+        <ul class="nav sidebar-inner" id="menu">
           <li class="has-sub @@if (parent === 'dashboard'){active}">
             <a href="javascript:void(0)">
               <i class="icon-gallery-grid"></i>
@@ -284,4 +288,5 @@
           </li>
         </ul>
       </div>
-    </section>
+  </div>
+</div>
