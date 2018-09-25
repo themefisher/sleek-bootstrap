@@ -1,367 +1,368 @@
 @@include('header.htm', { "title": "Sleek - Admin Dashboard Template", "className": "header-fixed sidebar-fixed sidebar-dark header-light" })
-<aside class="main-sidebar">
-	@@include('sidebar-with-footer.htm', { "parent": "ui-elements", "sub_parent": "tables", "active": "table-general" })
-</aside>
+@@include('sidebar-with-footer.htm', { "parent": "ui-elements", "sub_parent": "components", "active": "table-general" })
 
-	<!-- ====================================
-	——— CONTENT WRAPPER
-	===================================== -->
-	<div class="content-wrapper">
-		@@include('breadcrumb.htm', { "parent": "UI Elements", "active": "Tables" })
-		<div class="content">
-			<!-- First Row  -->
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="card card-default rounded bg-white mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Basic Table</h4>
-						</div>
-						<div class="card-body">
-							<table class="table">
-								<thead>
-									<tr>
-										<th scope="col">#</th>
-										<th scope="col">First</th>
-										<th scope="col">Last</th>
-										<th scope="col">Handle</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td scope="row">1</td>
-										<td>Lucia</td>
-										<td>Christ</td>
-										<td>@Lucia</td>
-									</tr>
-									<tr>
-										<td scope="row">2</td>
-										<td>Catrin</td>
-										<td>Seidl</td>
-										<td>@catrin</td>
-									</tr>
-									<tr>
-										<td scope="row">3</td>
-										<td>Lilli</td>
-										<td>Kirsh</td>
-										<td>@lilli</td>
-									</tr>
-									<tr>
-										<td scope="row">4</td>
-										<td>Else</td>
-										<td>Voigt</td>
-										<td>@voigt</td>
-									</tr>
-									<tr>
-										<td scope="row">5</td>
-										<td>Ursel</td>
-										<td>Harms</td>
-										<td>@ursel</td>
-									</tr>
-									<tr>
-										<td scope="row">6</td>
-										<td>Anke</td>
-										<td>Sauter</td>
-										<td>@Anke</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="card card-default rounded bg-white mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Striped Table</h4>
-						</div>
-						<div class="card-body">
-							<table class="table table-striped">
-								<thead>
-									<tr>
-										<th scope="col">#</th>
-										<th scope="col">First</th>
-										<th scope="col">Last</th>
-										<th scope="col">Handle</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td scope="row">1</td>
-										<td>Lucia</td>
-										<td>Christ</td>
-										<td>@Lucia</td>
-									</tr>
-									<tr>
-										<td scope="row">2</td>
-										<td>Catrin</td>
-										<td>Seidl</td>
-										<td>@catrin</td>
-									</tr>
-									<tr>
-										<td scope="row">3</td>
-										<td>Lilli</td>
-										<td>Kirsh</td>
-										<td>@lilli</td>
-									</tr>
-									<tr>
-										<td scope="row">4</td>
-										<td>Else</td>
-										<td>Voigt</td>
-										<td>@voigt</td>
-									</tr>
-									<tr>
-										<td scope="row">5</td>
-										<td>Ursel</td>
-										<td>Harms</td>
-										<td>@ursel</td>
-									</tr>
-									<tr>
-										<td scope="row">6</td>
-										<td>Anke</td>
-										<td>Sauter</td>
-										<td>@Anke</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
+		<!-- ====================================
+		——— LAYOUT CONTAINER
+		===================================== -->
+		<div class="layout-container">
+			@@include('top-bar.htm')
+				<div class="layout-content">
+					<div class="flex-grow-1">
+						@@include('breadcrumb.htm', { "parent": "UI Elements", "active": "Tables" })
+						<div class="content">
+							<!-- First Row  -->
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="card card-default rounded bg-white mb-4">
+										<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+											<h4>Basic Table</h4>
+										</div>
+										<div class="card-body">
+											<table class="table">
+												<thead>
+													<tr>
+														<th scope="col">#</th>
+														<th scope="col">First</th>
+														<th scope="col">Last</th>
+														<th scope="col">Handle</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td scope="row">1</td>
+														<td>Lucia</td>
+														<td>Christ</td>
+														<td>@Lucia</td>
+													</tr>
+													<tr>
+														<td scope="row">2</td>
+														<td>Catrin</td>
+														<td>Seidl</td>
+														<td>@catrin</td>
+													</tr>
+													<tr>
+														<td scope="row">3</td>
+														<td>Lilli</td>
+														<td>Kirsh</td>
+														<td>@lilli</td>
+													</tr>
+													<tr>
+														<td scope="row">4</td>
+														<td>Else</td>
+														<td>Voigt</td>
+														<td>@voigt</td>
+													</tr>
+													<tr>
+														<td scope="row">5</td>
+														<td>Ursel</td>
+														<td>Harms</td>
+														<td>@ursel</td>
+													</tr>
+													<tr>
+														<td scope="row">6</td>
+														<td>Anke</td>
+														<td>Sauter</td>
+														<td>@Anke</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="card card-default rounded bg-white mb-4">
+										<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+											<h4>Striped Table</h4>
+										</div>
+										<div class="card-body">
+											<table class="table table-striped">
+												<thead>
+													<tr>
+														<th scope="col">#</th>
+														<th scope="col">First</th>
+														<th scope="col">Last</th>
+														<th scope="col">Handle</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td scope="row">1</td>
+														<td>Lucia</td>
+														<td>Christ</td>
+														<td>@Lucia</td>
+													</tr>
+													<tr>
+														<td scope="row">2</td>
+														<td>Catrin</td>
+														<td>Seidl</td>
+														<td>@catrin</td>
+													</tr>
+													<tr>
+														<td scope="row">3</td>
+														<td>Lilli</td>
+														<td>Kirsh</td>
+														<td>@lilli</td>
+													</tr>
+													<tr>
+														<td scope="row">4</td>
+														<td>Else</td>
+														<td>Voigt</td>
+														<td>@voigt</td>
+													</tr>
+													<tr>
+														<td scope="row">5</td>
+														<td>Ursel</td>
+														<td>Harms</td>
+														<td>@ursel</td>
+													</tr>
+													<tr>
+														<td scope="row">6</td>
+														<td>Anke</td>
+														<td>Sauter</td>
+														<td>@Anke</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
 
-				</div>
-				<div class="col-lg-6">
-					<div class="card card-default rounded bg-white mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Bordered Table</h4>
-						</div>
-						<div class="card-body">
-							<table class="table table-bordered">
-								<thead>
-									<tr>
-										<th scope="col">#</th>
-										<th scope="col">First</th>
-										<th scope="col">Last</th>
-										<th scope="col">Handle</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td scope="row">1</td>
-										<td>Lucia</td>
-										<td>Christ</td>
-										<td>@Lucia</td>
-									</tr>
-									<tr>
-										<td scope="row">2</td>
-										<td>Catrin</td>
-										<td>Seidl</td>
-										<td>@catrin</td>
-									</tr>
-									<tr>
-										<td scope="row">3</td>
-										<td>Lilli</td>
-										<td>Kirsh</td>
-										<td>@lilli</td>
-									</tr>
-									<tr>
-										<td scope="row">4</td>
-										<td>Else</td>
-										<td>Voigt</td>
-										<td>@voigt</td>
-									</tr>
-									<tr>
-										<td scope="row">5</td>
-										<td>Ursel</td>
-										<td>Harms</td>
-										<td>@ursel</td>
-									</tr>
-									<tr>
-										<td scope="row">6</td>
-										<td>Anke</td>
-										<td>Sauter</td>
-										<td>@Anke</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="card card-default rounded bg-white mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Contextual Table</h4>
-						</div>
-						<div class="card-body">
-							<table class="table">
-								<thead>
-									<tr>
-										<th scope="col">#</th>
-										<th scope="col">First</th>
-										<th scope="col">Last</th>
-										<th scope="col">Handle</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr class="table-secondary">
-										<td scope="row">1</td>
-										<td>Lucia</td>
-										<td>Christ</td>
-										<td>@Lucia</td>
-									</tr>
-									<tr class="table-primary">
-										<td scope="row">2</td>
-										<td>Catrin</td>
-										<td>Seidl</td>
-										<td>@catrin</td>
-									</tr>
-									<tr class="table-info">
-										<td scope="row">3</td>
-										<td>Lilli</td>
-										<td>Kirsh</td>
-										<td>@lilli</td>
-									</tr>
-									<tr class="table-success">
-										<td scope="row">4</td>
-										<td>Else</td>
-										<td>Voigt</td>
-										<td>@voigt</td>
-									</tr>
-									<tr class="table-danger">
-										<td scope="row">5</td>
-										<td>Ursel</td>
-										<td>Harms</td>
-										<td>@ursel</td>
-									</tr>
-									<tr class="table-warning">
-										<td scope="row">6</td>
-										<td>Anke</td>
-										<td>Sauter</td>
-										<td>@Anke</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="card card-default rounded bg-white mb-4">
+										<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+											<h4>Bordered Table</h4>
+										</div>
+										<div class="card-body">
+											<table class="table table-bordered">
+												<thead>
+													<tr>
+														<th scope="col">#</th>
+														<th scope="col">First</th>
+														<th scope="col">Last</th>
+														<th scope="col">Handle</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td scope="row">1</td>
+														<td>Lucia</td>
+														<td>Christ</td>
+														<td>@Lucia</td>
+													</tr>
+													<tr>
+														<td scope="row">2</td>
+														<td>Catrin</td>
+														<td>Seidl</td>
+														<td>@catrin</td>
+													</tr>
+													<tr>
+														<td scope="row">3</td>
+														<td>Lilli</td>
+														<td>Kirsh</td>
+														<td>@lilli</td>
+													</tr>
+													<tr>
+														<td scope="row">4</td>
+														<td>Else</td>
+														<td>Voigt</td>
+														<td>@voigt</td>
+													</tr>
+													<tr>
+														<td scope="row">5</td>
+														<td>Ursel</td>
+														<td>Harms</td>
+														<td>@ursel</td>
+													</tr>
+													<tr>
+														<td scope="row">6</td>
+														<td>Anke</td>
+														<td>Sauter</td>
+														<td>@Anke</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="card card-default rounded bg-white mb-4">
+										<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+											<h4>Contextual Table</h4>
+										</div>
+										<div class="card-body">
+											<table class="table">
+												<thead>
+													<tr>
+														<th scope="col">#</th>
+														<th scope="col">First</th>
+														<th scope="col">Last</th>
+														<th scope="col">Handle</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr class="table-secondary">
+														<td scope="row">1</td>
+														<td>Lucia</td>
+														<td>Christ</td>
+														<td>@Lucia</td>
+													</tr>
+													<tr class="table-primary">
+														<td scope="row">2</td>
+														<td>Catrin</td>
+														<td>Seidl</td>
+														<td>@catrin</td>
+													</tr>
+													<tr class="table-info">
+														<td scope="row">3</td>
+														<td>Lilli</td>
+														<td>Kirsh</td>
+														<td>@lilli</td>
+													</tr>
+													<tr class="table-success">
+														<td scope="row">4</td>
+														<td>Else</td>
+														<td>Voigt</td>
+														<td>@voigt</td>
+													</tr>
+													<tr class="table-danger">
+														<td scope="row">5</td>
+														<td>Ursel</td>
+														<td>Harms</td>
+														<td>@ursel</td>
+													</tr>
+													<tr class="table-warning">
+														<td scope="row">6</td>
+														<td>Anke</td>
+														<td>Sauter</td>
+														<td>@Anke</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
 
-				</div>
-				<div class="col-lg-6">
-					<div class="card card-default rounded bg-white mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Dark Table</h4>
-						</div>
-						<div class="card-body">
-							<table class="table table-dark">
-								<thead>
-									<tr>
-										<th scope="col">#</th>
-										<th scope="col">First</th>
-										<th scope="col">Last</th>
-										<th scope="col">Handle</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td scope="row">1</td>
-										<td>Lucia</td>
-										<td>Christ</td>
-										<td>@Lucia</td>
-									</tr>
-									<tr>
-										<td scope="row">2</td>
-										<td>Catrin</td>
-										<td>Seidl</td>
-										<td>@catrin</td>
-									</tr>
-									<tr>
-										<td scope="row">3</td>
-										<td>Lilli</td>
-										<td>Kirsh</td>
-										<td>@lilli</td>
-									</tr>
-									<tr>
-										<td scope="row">4</td>
-										<td>Else</td>
-										<td>Voigt</td>
-										<td>@voigt</td>
-									</tr>
-									<tr>
-										<td scope="row">5</td>
-										<td>Ursel</td>
-										<td>Harms</td>
-										<td>@ursel</td>
-									</tr>
-									<tr>
-										<td scope="row">6</td>
-										<td>Anke</td>
-										<td>Sauter</td>
-										<td>@Anke</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="card card-default rounded bg-white mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Table Head States</h4>
-						</div>
-						<div class="card-body">
-							<table class="table table-hover ">
-								<thead>
-									<tr>
-										<th scope="col">#</th>
-										<th scope="col">First</th>
-										<th scope="col">Last</th>
-										<th scope="col">Handle</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td scope="row">1</td>
-										<td>Lucia</td>
-										<td>Christ</td>
-										<td>@Lucia</td>
-									</tr>
-									<tr>
-										<td scope="row">2</td>
-										<td>Catrin</td>
-										<td>Seidl</td>
-										<td>@catrin</td>
-									</tr>
-									<tr>
-										<td scope="row">3</td>
-										<td>Lilli</td>
-										<td>Kirsh</td>
-										<td>@lilli</td>
-									</tr>
-									<tr>
-										<td scope="row">4</td>
-										<td>Else</td>
-										<td>Voigt</td>
-										<td>@voigt</td>
-									</tr>
-									<tr>
-										<td scope="row">5</td>
-										<td>Ursel</td>
-										<td>Harms</td>
-										<td>@ursel</td>
-									</tr>
-									<tr>
-										<td scope="row">6</td>
-										<td>Anke</td>
-										<td>Sauter</td>
-										<td>@Anke</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</div>
-			</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="card card-default rounded bg-white mb-4">
+										<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+											<h4>Dark Table</h4>
+										</div>
+										<div class="card-body">
+											<table class="table table-dark">
+												<thead>
+													<tr>
+														<th scope="col">#</th>
+														<th scope="col">First</th>
+														<th scope="col">Last</th>
+														<th scope="col">Handle</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td scope="row">1</td>
+														<td>Lucia</td>
+														<td>Christ</td>
+														<td>@Lucia</td>
+													</tr>
+													<tr>
+														<td scope="row">2</td>
+														<td>Catrin</td>
+														<td>Seidl</td>
+														<td>@catrin</td>
+													</tr>
+													<tr>
+														<td scope="row">3</td>
+														<td>Lilli</td>
+														<td>Kirsh</td>
+														<td>@lilli</td>
+													</tr>
+													<tr>
+														<td scope="row">4</td>
+														<td>Else</td>
+														<td>Voigt</td>
+														<td>@voigt</td>
+													</tr>
+													<tr>
+														<td scope="row">5</td>
+														<td>Ursel</td>
+														<td>Harms</td>
+														<td>@ursel</td>
+													</tr>
+													<tr>
+														<td scope="row">6</td>
+														<td>Anke</td>
+														<td>Sauter</td>
+														<td>@Anke</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="card card-default rounded bg-white mb-4">
+										<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+											<h4>Table Head States</h4>
+										</div>
+										<div class="card-body">
+											<table class="table table-hover ">
+												<thead>
+													<tr>
+														<th scope="col">#</th>
+														<th scope="col">First</th>
+														<th scope="col">Last</th>
+														<th scope="col">Handle</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td scope="row">1</td>
+														<td>Lucia</td>
+														<td>Christ</td>
+														<td>@Lucia</td>
+													</tr>
+													<tr>
+														<td scope="row">2</td>
+														<td>Catrin</td>
+														<td>Seidl</td>
+														<td>@catrin</td>
+													</tr>
+													<tr>
+														<td scope="row">3</td>
+														<td>Lilli</td>
+														<td>Kirsh</td>
+														<td>@lilli</td>
+													</tr>
+													<tr>
+														<td scope="row">4</td>
+														<td>Else</td>
+														<td>Voigt</td>
+														<td>@voigt</td>
+													</tr>
+													<tr>
+														<td scope="row">5</td>
+														<td>Ursel</td>
+														<td>Harms</td>
+														<td>@ursel</td>
+													</tr>
+													<tr>
+														<td scope="row">6</td>
+														<td>Anke</td>
+														<td>Sauter</td>
+														<td>@Anke</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
 
-			<div class="row">
-				<div class="col-12">
-					@@include('recent-order-table.htm')
-				</div>
-			</div>
-		</div>
+							<div class="row">
+								<div class="col-12">
+									@@include('recent-order-table.htm')
+								</div>
+							</div>
+						</div>
 
 	@@include('footer.htm')

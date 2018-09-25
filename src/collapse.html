@@ -1,245 +1,246 @@
 @@include('header.htm', { "title": "Sleek - Admin Dashboard Template", "className": "header-fixed sidebar-fixed sidebar-dark header-light" })
-<aside class="main-sidebar">
-	@@include('sidebar-with-footer.htm', { "parent": "ui-elements", "sub_parent": "components", "active": "collapse" })
-</aside>
+@@include('sidebar-with-footer.htm', { "parent": "ui-elements", "sub_parent": "components", "active": "collapse" })
 
-	<!-- ====================================
-	——— CONTENT WRAPPER
-	===================================== -->
-	<div class="content-wrapper">
-		@@include('breadcrumb.htm', { "parent": "UI Elements", "active": "Collapses" })
-		<div class="content">
-			<!-- First Row  -->
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="card card-default rounded bg-white mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Collapse 1</h4>
-						</div>
-						<div class="card-body">
-							<div id="accordion" class="accordion">
-								<div class="card">
-									<div class="card-header" id="headingOne">
-										<h5 class="mb-0">
-											<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-												Hat Black Suits
-											</button>
-										</h5>
-									</div>
-
-									<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+		<!-- ====================================
+		——— LAYOUT CONTAINER
+		===================================== -->
+		<div class="layout-container">
+			@@include('top-bar.htm')
+				<div class="layout-content">
+					<div class="flex-grow-1">
+						@@include('breadcrumb.htm', { "parent": "UI Elements", "active": "Collapses" })
+						<div class="content">
+							<!-- First Row  -->
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="card card-default rounded bg-white mb-4">
+										<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+											<h4>Collapse 1</h4>
+										</div>
 										<div class="card-body">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.enim
-											ad minim veniam quis nostrud exer citation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute.
+											<div id="accordion" class="accordion">
+												<div class="card">
+													<div class="card-header" id="headingOne">
+														<h5 class="mb-0">
+															<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+																Hat Black Suits
+															</button>
+														</h5>
+													</div>
+
+													<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+														<div class="card-body">
+															Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.enim
+															ad minim veniam quis nostrud exer citation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute.
+														</div>
+													</div>
+												</div>
+												<div class="card">
+													<div class="card-header" id="headingTwo">
+														<h5 class="mb-0">
+															<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+																Toddler Shoes, Gucci Watch
+															</button>
+														</h5>
+													</div>
+													<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+														<div class="card-body">
+															Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.enim
+															ad minim veniam quis nostrud exer citation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute.
+														</div>
+													</div>
+												</div>
+												<div class="card">
+													<div class="card-header" id="headingThree">
+														<h5 class="mb-0">
+															<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+																Hat Black Suits
+															</button>
+														</h5>
+													</div>
+													<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+														<div class="card-body">
+															Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.enim
+															ad minim veniam quis nostrud exer citation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute.
+														</div>
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
-								<div class="card">
-									<div class="card-header" id="headingTwo">
-										<h5 class="mb-0">
-											<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-												Toddler Shoes, Gucci Watch
-											</button>
-										</h5>
-									</div>
-									<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+								<div class="col-lg-6">
+									<div class="card card-default rounded bg-white mb-4">
+										<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+											<h4>Collapse 2</h4>
+										</div>
 										<div class="card-body">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.enim
-											ad minim veniam quis nostrud exer citation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute.
+											<div id="accordion2" class="accordion accordion-style-two">
+												<div class="card">
+													<div class="card-header" id="headingFour">
+														<h5 class="mb-0">
+															<button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+																Hat Black Suits
+															</button>
+														</h5>
+													</div>
+
+													<div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#accordion2">
+														<div class="card-body">
+															Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.enim
+															ad minim veniam quis nostrud exer citation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute.
+														</div>
+													</div>
+												</div>
+												<div class="card">
+													<div class="card-header" id="headingFive">
+														<h5 class="mb-0">
+															<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+																Toddler Shoes, Gucci Watch
+															</button>
+														</h5>
+													</div>
+													<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion2">
+														<div class="card-body">
+															Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.enim
+															ad minim veniam quis nostrud exer citation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute.
+														</div>
+													</div>
+												</div>
+												<div class="card">
+													<div class="card-header" id="headingSix">
+														<h5 class="mb-0">
+															<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+																Hat Black Suits
+															</button>
+														</h5>
+													</div>
+													<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion2">
+														<div class="card-body">
+															Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.enim
+															ad minim veniam quis nostrud exer citation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute.
+														</div>
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
-								<div class="card">
-									<div class="card-header" id="headingThree">
-										<h5 class="mb-0">
-											<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-												Hat Black Suits
-											</button>
-										</h5>
-									</div>
-									<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+								<div class="col-lg-6">
+									<div class="card card-default rounded bg-white mb-4">
+										<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+											<h4>Collapse 3</h4>
+										</div>
 										<div class="card-body">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.enim
-											ad minim veniam quis nostrud exer citation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute.
+											<div id="accordion3" class="accordion accordion-bordered ">
+												<div class="card">
+													<div class="card-header" id="heading1">
+														<h5 class="mb-0">
+															<button class="btn btn-link" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+																Hat Black Suits
+															</button>
+														</h5>
+													</div>
+
+													<div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordion3">
+														<div class="card-body">
+															Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.enim
+															ad minim veniam quis nostrud exer citation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute.
+														</div>
+													</div>
+												</div>
+												<div class="card">
+													<div class="card-header" id="heading2">
+														<h5 class="mb-0">
+															<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+																Toddler Shoes, Gucci Watch
+															</button>
+														</h5>
+													</div>
+													<div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion3">
+														<div class="card-body">
+															Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.enim
+															ad minim veniam quis nostrud exer citation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute.
+														</div>
+													</div>
+												</div>
+												<div class="card">
+													<div class="card-header" id="heading3">
+														<h5 class="mb-0">
+															<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+																Hat Black Suits
+															</button>
+														</h5>
+													</div>
+													<div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordion3">
+														<div class="card-body">
+															Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.enim
+															ad minim veniam quis nostrud exer citation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute.
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="card card-default rounded bg-white mb-4">
+										<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+											<h4>Collapse 4</h4>
+										</div>
+										<div class="card-body">
+											<div id="accordion4" class="accordion accordion-style-four ">
+												<div class="card">
+													<div class="card-header" id="heading4">
+														<h5 class="mb-0">
+															<button class="btn btn-link" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+																Hat Black Suits
+															</button>
+														</h5>
+													</div>
+
+													<div id="collapse4" class="collapse show" aria-labelledby="heading4" data-parent="#accordion4">
+														<div class="card-body">
+															Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.enim
+															ad minim veniam quis nostrud exer citation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute.
+														</div>
+													</div>
+												</div>
+												<div class="card">
+													<div class="card-header" id="heading5">
+														<h5 class="mb-0">
+															<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+																Toddler Shoes, Gucci Watch
+															</button>
+														</h5>
+													</div>
+													<div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordion4">
+														<div class="card-body">
+															Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.enim
+															ad minim veniam quis nostrud exer citation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute.
+														</div>
+													</div>
+												</div>
+												<div class="card">
+													<div class="card-header" id="heading6">
+														<h5 class="mb-0">
+															<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+																Hat Black Suits
+															</button>
+														</h5>
+													</div>
+													<div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordion4">
+														<div class="card-body">
+															Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.enim
+															ad minim veniam quis nostrud exer citation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute.
+														</div>
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="card card-default rounded bg-white mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Collapse 2</h4>
-						</div>
-						<div class="card-body">
-							<div id="accordion2" class="accordion accordion-style-two">
-								<div class="card">
-									<div class="card-header" id="headingFour">
-										<h5 class="mb-0">
-											<button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-												Hat Black Suits
-											</button>
-										</h5>
-									</div>
-
-									<div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#accordion2">
-										<div class="card-body">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.enim
-											ad minim veniam quis nostrud exer citation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute.
-										</div>
-									</div>
-								</div>
-								<div class="card">
-									<div class="card-header" id="headingFive">
-										<h5 class="mb-0">
-											<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-												Toddler Shoes, Gucci Watch
-											</button>
-										</h5>
-									</div>
-									<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion2">
-										<div class="card-body">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.enim
-											ad minim veniam quis nostrud exer citation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute.
-										</div>
-									</div>
-								</div>
-								<div class="card">
-									<div class="card-header" id="headingSix">
-										<h5 class="mb-0">
-											<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-												Hat Black Suits
-											</button>
-										</h5>
-									</div>
-									<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion2">
-										<div class="card-body">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.enim
-											ad minim veniam quis nostrud exer citation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute.
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="card card-default rounded bg-white mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Collapse 3</h4>
-						</div>
-						<div class="card-body">
-							<div id="accordion3" class="accordion accordion-bordered ">
-								<div class="card">
-									<div class="card-header" id="heading1">
-										<h5 class="mb-0">
-											<button class="btn btn-link" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-												Hat Black Suits
-											</button>
-										</h5>
-									</div>
-
-									<div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordion3">
-										<div class="card-body">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.enim
-											ad minim veniam quis nostrud exer citation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute.
-										</div>
-									</div>
-								</div>
-								<div class="card">
-									<div class="card-header" id="heading2">
-										<h5 class="mb-0">
-											<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-												Toddler Shoes, Gucci Watch
-											</button>
-										</h5>
-									</div>
-									<div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion3">
-										<div class="card-body">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.enim
-											ad minim veniam quis nostrud exer citation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute.
-										</div>
-									</div>
-								</div>
-								<div class="card">
-									<div class="card-header" id="heading3">
-										<h5 class="mb-0">
-											<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-												Hat Black Suits
-											</button>
-										</h5>
-									</div>
-									<div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordion3">
-										<div class="card-body">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.enim
-											ad minim veniam quis nostrud exer citation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute.
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="card card-default rounded bg-white mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Collapse 4</h4>
-						</div>
-						<div class="card-body">
-							<div id="accordion4" class="accordion accordion-style-four ">
-								<div class="card">
-									<div class="card-header" id="heading4">
-										<h5 class="mb-0">
-											<button class="btn btn-link" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
-												Hat Black Suits
-											</button>
-										</h5>
-									</div>
-
-									<div id="collapse4" class="collapse show" aria-labelledby="heading4" data-parent="#accordion4">
-										<div class="card-body">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.enim
-											ad minim veniam quis nostrud exer citation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute.
-										</div>
-									</div>
-								</div>
-								<div class="card">
-									<div class="card-header" id="heading5">
-										<h5 class="mb-0">
-											<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-												Toddler Shoes, Gucci Watch
-											</button>
-										</h5>
-									</div>
-									<div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordion4">
-										<div class="card-body">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.enim
-											ad minim veniam quis nostrud exer citation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute.
-										</div>
-									</div>
-								</div>
-								<div class="card">
-									<div class="card-header" id="heading6">
-										<h5 class="mb-0">
-											<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
-												Hat Black Suits
-											</button>
-										</h5>
-									</div>
-									<div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordion4">
-										<div class="card-body">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.enim
-											ad minim veniam quis nostrud exer citation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute.
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 
 	@@include('footer.htm')

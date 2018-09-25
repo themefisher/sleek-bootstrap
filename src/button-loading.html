@@ -1,176 +1,177 @@
 @@include('header.htm', { "title": "Sleek - Admin Dashboard Template", "className": "header-fixed sidebar-fixed sidebar-dark header-light" })
-<aside class="main-sidebar">
-	@@include('sidebar-with-footer.htm', { "parent": "ui-elements", "sub_parent": "components", "active": "button-loading" })
-</aside>
+@@include('sidebar-with-footer.htm', { "parent": "ui-elements", "sub_parent": "components", "active": "button-loading" })
 
-	<!-- ====================================
-		——— CONTENT WRAPPER
+		<!-- ====================================
+		——— LAYOUT CONTAINER
 		===================================== -->
-	<div class="content-wrapper">
-		@@include('breadcrumb.htm', { "parent": "UI Elements", "active": "Button Loading" })
-		<div class="content">
-			<!-- First Row  -->
-			<div class="row">
-				<div class="col-md-6 col-lg-3">
-					<div class="card card-default rounded bg-white mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Expand-Left</h4>
-						</div>
-						<div class="card-body">
-							<button class="ladda-button btn btn-primary btn-square btn-ladda" data-style="expand-left">
-								<span class="ladda-label">Submit!</span>
-								<span class="ladda-spinner"></span>
-							</button>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3">
-					<div class="card card-default rounded bg-white mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Expand-Right</h4>
-						</div>
-						<div class="card-body">
-							<button class="ladda-button btn btn-primary btn-square btn-ladda" data-style="expand-right">
-								<span class="ladda-label">Submit!</span>
-								<span class="ladda-spinner"></span>
-							</button>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3">
-					<div class="card card-default rounded bg-white mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Expand-Up</h4>
-						</div>
-						<div class="card-body">
-							<button class="ladda-button btn btn-primary btn-square btn-ladda" data-style="expand-up">
-								<span class="ladda-label">Submit!</span>
-								<span class="ladda-spinner"></span>
-							</button>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3">
-					<div class="card card-default rounded bg-white mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Expand-Down</h4>
-						</div>
-						<div class="card-body">
-							<button class="ladda-button btn btn-primary btn-square btn-ladda" data-style="expand-down">
-								<span class="ladda-label">Submit!</span>
-								<span class="ladda-spinner"></span>
-							</button>
-						</div>
-					</div>
-				</div>
+		<div class="layout-container">
+			@@include('top-bar.htm')
+				<div class="layout-content">
+					<div class="flex-grow-1">
+						@@include('breadcrumb.htm', { "parent": "UI Elements", "active": "Button Loading" })
+						<div class="content">
+							<!-- First Row  -->
+							<div class="row">
+								<div class="col-md-6 col-lg-3">
+									<div class="card card-default rounded bg-white mb-4">
+										<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+											<h4>Expand-Left</h4>
+										</div>
+										<div class="card-body">
+											<button class="ladda-button btn btn-primary btn-square btn-ladda" data-style="expand-left">
+												<span class="ladda-label">Submit!</span>
+												<span class="ladda-spinner"></span>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-3">
+									<div class="card card-default rounded bg-white mb-4">
+										<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+											<h4>Expand-Right</h4>
+										</div>
+										<div class="card-body">
+											<button class="ladda-button btn btn-primary btn-square btn-ladda" data-style="expand-right">
+												<span class="ladda-label">Submit!</span>
+												<span class="ladda-spinner"></span>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-3">
+									<div class="card card-default rounded bg-white mb-4">
+										<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+											<h4>Expand-Up</h4>
+										</div>
+										<div class="card-body">
+											<button class="ladda-button btn btn-primary btn-square btn-ladda" data-style="expand-up">
+												<span class="ladda-label">Submit!</span>
+												<span class="ladda-spinner"></span>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-3">
+									<div class="card card-default rounded bg-white mb-4">
+										<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+											<h4>Expand-Down</h4>
+										</div>
+										<div class="card-body">
+											<button class="ladda-button btn btn-primary btn-square btn-ladda" data-style="expand-down">
+												<span class="ladda-label">Submit!</span>
+												<span class="ladda-spinner"></span>
+											</button>
+										</div>
+									</div>
+								</div>
 
-				<div class="col-md-6 col-lg-3">
-					<div class="card card-default rounded bg-white mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Contract</h4>
-						</div>
-						<div class="card-body">
-							<button class="ladda-button btn btn-success btn-square btn-ladda" data-style="contract">
-								<span class="ladda-label">Submit!</span>
-								<span class="ladda-spinner"></span>
-							</button>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3">
-					<div class="card card-default rounded bg-white mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Contract Overlay</h4>
-						</div>
-						<div class="card-body">
-							<button class="ladda-button btn btn-success btn-square btn-ladda" data-style="contract-overlay">
-								<span class="ladda-label">Submit!</span>
-								<span class="ladda-spinner"></span>
-							</button>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3">
-					<div class="card card-default rounded bg-white mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Zoom In</h4>
-						</div>
-						<div class="card-body">
-							<button class="ladda-button btn btn-success btn-square btn-ladda" data-style="zoom-in">
-								<span class="ladda-label">Submit!</span>
-								<span class="ladda-spinner"></span>
-							</button>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3">
-					<div class="card card-default rounded bg-white mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Zoom Out</h4>
-						</div>
-						<div class="card-body">
-							<button class="ladda-button btn btn-success btn-square btn-ladda" data-style="zoom-out">
-								<span class="ladda-label">Submit!</span>
-								<span class="ladda-spinner"></span>
-							</button>
-						</div>
-					</div>
-				</div>
+								<div class="col-md-6 col-lg-3">
+									<div class="card card-default rounded bg-white mb-4">
+										<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+											<h4>Contract</h4>
+										</div>
+										<div class="card-body">
+											<button class="ladda-button btn btn-success btn-square btn-ladda" data-style="contract">
+												<span class="ladda-label">Submit!</span>
+												<span class="ladda-spinner"></span>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-3">
+									<div class="card card-default rounded bg-white mb-4">
+										<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+											<h4>Contract Overlay</h4>
+										</div>
+										<div class="card-body">
+											<button class="ladda-button btn btn-success btn-square btn-ladda" data-style="contract-overlay">
+												<span class="ladda-label">Submit!</span>
+												<span class="ladda-spinner"></span>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-3">
+									<div class="card card-default rounded bg-white mb-4">
+										<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+											<h4>Zoom In</h4>
+										</div>
+										<div class="card-body">
+											<button class="ladda-button btn btn-success btn-square btn-ladda" data-style="zoom-in">
+												<span class="ladda-label">Submit!</span>
+												<span class="ladda-spinner"></span>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-3">
+									<div class="card card-default rounded bg-white mb-4">
+										<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+											<h4>Zoom Out</h4>
+										</div>
+										<div class="card-body">
+											<button class="ladda-button btn btn-success btn-square btn-ladda" data-style="zoom-out">
+												<span class="ladda-label">Submit!</span>
+												<span class="ladda-spinner"></span>
+											</button>
+										</div>
+									</div>
+								</div>
 
-				<div class="col-md-6 col-lg-3">
-					<div class="card card-default rounded bg-white mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Slide Left</h4>
-						</div>
-						<div class="card-body">
-							<button class="ladda-button btn btn-danger btn-square btn-ladda" data-style="slide-left">
-								<span class="ladda-label">Submit!</span>
-								<span class="ladda-spinner"></span>
-							</button>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3">
-					<div class="card card-default rounded bg-white mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Slide Right</h4>
-						</div>
-						<div class="card-body">
-							<button class="ladda-button btn btn-danger btn-square btn-ladda" data-style="slide-right">
-								<span class="ladda-label">Submit!</span>
-								<span class="ladda-spinner"></span>
-							</button>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3">
-					<div class="card card-default rounded bg-white mb-4">
-						<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Slide Up</h4>
-						</div>
-						<div class="card-body">
-							<button class="ladda-button btn btn-danger btn-square btn-ladda" data-style="slide-up">
-								<span class="ladda-label">Submit!</span>
-								<span class="ladda-spinner"></span>
-							</button>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3">
-					<div class="card card-default rounded bg-white mb-4">
-						<div class="card-header dss-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-							<h4>Slide Down</h4>
-						</div>
-						<div class="card-body">
-							<button class="ladda-button btn btn-danger btn-square btn-ladda" data-style="slide-down">
-								<span class="ladda-label">Submit!</span>
-								<span class="ladda-spinner"></span>
-							</button>
-						</div>
-					</div>
-				</div>
+								<div class="col-md-6 col-lg-3">
+									<div class="card card-default rounded bg-white mb-4">
+										<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+											<h4>Slide Left</h4>
+										</div>
+										<div class="card-body">
+											<button class="ladda-button btn btn-danger btn-square btn-ladda" data-style="slide-left">
+												<span class="ladda-label">Submit!</span>
+												<span class="ladda-spinner"></span>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-3">
+									<div class="card card-default rounded bg-white mb-4">
+										<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+											<h4>Slide Right</h4>
+										</div>
+										<div class="card-body">
+											<button class="ladda-button btn btn-danger btn-square btn-ladda" data-style="slide-right">
+												<span class="ladda-label">Submit!</span>
+												<span class="ladda-spinner"></span>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-3">
+									<div class="card card-default rounded bg-white mb-4">
+										<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+											<h4>Slide Up</h4>
+										</div>
+										<div class="card-body">
+											<button class="ladda-button btn btn-danger btn-square btn-ladda" data-style="slide-up">
+												<span class="ladda-label">Submit!</span>
+												<span class="ladda-spinner"></span>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-3">
+									<div class="card card-default rounded bg-white mb-4">
+										<div class="card-header dss-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+											<h4>Slide Down</h4>
+										</div>
+										<div class="card-body">
+											<button class="ladda-button btn btn-danger btn-square btn-ladda" data-style="slide-down">
+												<span class="ladda-label">Submit!</span>
+												<span class="ladda-spinner"></span>
+											</button>
+										</div>
+									</div>
+								</div>
 
-			</div>
-		</div>
+							</div>
+						</div>
 
 		@@include('footer.htm')
