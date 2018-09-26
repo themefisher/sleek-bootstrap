@@ -1,24 +1,25 @@
 @@include('header.htm', { "title": "Sleek - Admin Dashboard Template", "className": "header-fixed sidebar-fixed sidebar-dark header-light" })
-<aside class="main-sidebar">
-	@@include('sidebar-with-footer.htm', { "parent": "ui-elements", "sub_parent": "maps", "active": "vector-map" })
-</aside>
+@@include('sidebar-with-footer.htm', { "parent": "ui-elements", "sub_parent": "maps", "active": "vector-map" })
 
-	<!-- ====================================
-	——— CONTENT WRAPPER
-	===================================== -->
-	<div class="content-wrapper">
-		@@include('breadcrumb.htm', { "parent": "UI Elements", "active": "Vector Maps" })
-		<div class="content">
-			<!-- First Row  -->
-			<div class="row">
-				<div class="col-12">
-					<div class="card card-default rounded bg-white mb-4">
-						<div class="card-body">
-							<div id="demoworld" style="height:400px; width: 100%;"></div>
+		<!-- ====================================
+		——— LAYOUT CONTAINER
+		===================================== -->
+		<div class="layout-container">
+			@@include('top-bar.htm')
+				<div class="layout-content">
+					<div class="flex-grow-1">
+						@@include('breadcrumb.htm', { "parent": "UI Elements", "active": "Vector Maps" })
+						<div class="content">
+							<!-- First Row  -->
+							<div class="row">
+								<div class="col-12">
+									<div class="card card-default rounded bg-white mb-4">
+										<div class="card-body">
+											<div id="demoworld" style="height:400px; width: 100%;"></div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 
 	@@include('footer.htm')
