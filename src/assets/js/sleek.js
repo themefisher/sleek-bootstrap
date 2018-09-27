@@ -13,25 +13,6 @@ $(document).ready(function() {
   "use strict";
 
   /*======== 1. SCROLLBAR SIDEBAR ========*/
-  // var generateSlimScroll = function(e) {
-  //   if (!$(e).attr("data-init")) {
-  //     var a = $(e).attr("data-height"),
-  //       t = {
-  //         height: (a = a || $(e).height())
-  //       };
-  //     /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-  //       navigator.userAgent
-  //     )
-  //       ? ($(e).css("height", a), $(e).css("overflow-x", "scroll"))
-  //       : $(e).slimScroll(t),
-  //       $(e).attr("data-init", !0),
-  //       $(".slimScrollBar").hide();
-  //   }
-  // };
-  // $("[data-scrollbar=true]").each(function() {
-  //   generateSlimScroll($(this));
-  // });
-
   $('.sidebar-scrollbar').slimScroll({
   	height: '100%'
   });
