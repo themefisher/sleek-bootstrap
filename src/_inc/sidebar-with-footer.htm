@@ -1,5 +1,5 @@
     <!-- ====================================
-    ——— SIDEBAR
+    ——— SIDEBAR WITH FOOTER
     ===================================== -->
     <div class="layout-sidenav bg-sidebar ">
       <div class="mobile-sticky-body-overlay"></div>
@@ -11,284 +11,309 @@
             <img class="logo-mini" src="assets/img/sleek-icon.png" alt="Sleek">
             <span class="logo-title">Sleek Admin</span>
           </a>
-
         </div>
-        <!-- <div class="side-test"> -->
-          <div class="sidebar-scrollbar">
 
-            <!-- sidebar menu -->
-            <ul class="nav sidebar-inner" id="menu">
-              <li class="has-sub @@if (parent === 'dashboard'){active}">
-                <a href="javascript:void(0)">
-                  <i class="icon-gallery-grid"></i>
-                  <span>Dashboards</span>
-                  <b class="caret"></b>
-                </a>
-                <ul class="sub-menu">
+        <div class="sidebar-scrollbar">
+          <!-- sidebar menu -->
+          <ul class="nav sidebar-inner" id="sidebar-menu">
+            <li class="has-sub @@if (parent === 'dashboard'){active expand}">
+              <a href="javascript:void(0)" data-toggle="collapse" data-target="#dashboard" aria-expanded="false" aria-controls="dashboard">
+                <i class="icon-gallery-grid"></i>
+                <span>Dashboards</span>
+                <b class="caret"></b>
+              </a>
+              <ul class="collapse @@if (parent === 'dashboard'){show}" id="dashboard"  data-parent="#sidebar-menu">
+                <div class="sub-menu">
                   <li class="@@if (active === 'home'){active}">
                     <a href="index.html">Ecommerce</a>
                   </li>
                   <li class="@@if (active === 'analytics'){active}">
                     <a href="analytics.html">Analytics</a>
                   </li>
-                </ul>
-              </li>
-              <li class="has-sub @@if (parent === 'layouts'){active}">
-                <a href="javascript:void(0)">
-                  <i class="icon-widget"></i>
-                  <span>Layouts</span>
-                  <b class="caret"></b>
-                </a>
-                <ul class="sub-menu ">
-                  <li class="has-sub @@if (sub_parent === 'header'){active}">
-                    <a href="javascript:void(0)">
-                      <span>Header</span>
-                      <b class="caret"></b>
-                    </a>
-                    <ul class="sub-menu ">
-                      <li class=" @@if (active === 'header-fixed'){active}">
-                        <a href="header-fixed.html">Header Fixed</a>
+                </div>
+              </ul>
+            </li>
+            <li class="has-sub @@if (parent === 'layouts'){active expand}">
+              <a href="javascript:void(0)"  data-toggle="collapse" data-target="#layouts" aria-expanded="false" aria-controls="layouts">
+                <i class="icon-widget"></i>
+                <span>Layouts</span>
+                <b class="caret"></b>
+              </a>
+              <ul class="collapse @@if (parent === 'layouts'){show}" id="layouts" data-parent="#sidebar-menu">
+                <div class="sub-menu">
+                    <li class="has-sub @@if (sub_parent === 'header'){active expand}">
+                        <a href="javascript:void(0)" data-toggle="collapse" data-target="#headers" aria-expanded="false" aria-controls="headers">
+                          <span>Header</span>
+                          <b class="caret"></b>
+                        </a>
+                        <ul class="collapse @@if (sub_parent === 'header'){show}" id="headers">
+                          <div class="sub-menu">
+                              <li class=" @@if (active === 'header-fixed'){active}">
+                                  <a href="header-fixed.html">Header Fixed</a>
+                                </li>
+                                <li class="@@if (active === 'header-sticky'){active} ">
+                                  <a href="header-static.html">Header Static</a>
+                                </li>
+                                <li class="@@if (active === 'header-white'){active} ">
+                                  <a href="header-light.html">Header Light</a>
+                                </li>
+                                <li class="@@if (active === 'header-dark'){active} ">
+                                  <a href="header-dark.html">Header Dark</a>
+                                </li>
+                          </div>
+                        </ul>
                       </li>
-                      <li class="@@if (active === 'header-sticky'){active} ">
-                        <a href="header-static.html">Header Static</a>
-                      </li>
-                      <li class="@@if (active === 'header-white'){active} ">
-                        <a href="header-light.html">Header Light</a>
-                      </li>
-                      <li class="@@if (active === 'header-dark'){active} ">
-                        <a href="header-dark.html">Header Dark</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="has-sub @@if (sub_parent === 'sidebar-nav'){active}">
-                    <a href="javascript:void(0)">
-                      <span>Sidebar Nav</span>
-                      <b class="caret"></b>
-                    </a>
-                    <ul class="sub-menu ">
-                      <li class="@@if (active === 'sidebar-open'){active} ">
-                        <a href="sidebar-open.html">Open</a>
-                      </li>
-                      <li class="@@if (active === 'sidebar-minimized'){active}  ">
-                        <a href="sidebar-minimized.html">Sidebar Minimized</a>
-                      </li>
-                      <li class=" @@if (active === 'sidebar-offcanvas'){active}  ">
-                        <a href="sidebar-offcanvas.html">Sidebar Offcanvas</a>
-                      </li>
-                      <li class=" @@if (active === 'sidebar-with-footer'){active}  ">
-                        <a href="sidebar-with-footer.html">Sidebar With Footer</a>
-                      </li>
-                      <li class=" @@if (active === 'sidebar-without-footer'){active}  ">
-                        <a href="sidebar-without-footer.html">Sidebar Without Footer</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="has-sub @@if (parent === 'ui-elements'){active}">
-                <a href="javascript:void(0)">
-                  <i class="icon-folder"></i>
-                  <span>UI Elements</span>
-                  <b class="caret"></b>
-                </a>
-                <ul class="sub-menu">
-                  <li class="has-sub @@if (sub_parent === 'components'){active}">
-                    <a href="javascript:void(0)">
+                    <li class="has-sub @@if (sub_parent === 'sidebar-nav'){active expand}">
+                      <a href="javascript:void(0)" data-toggle="collapse" data-target="#sidebar-nav" aria-expanded="false" aria-controls="sidebar-nav">
+                        <span>Sidebar Nav</span>
+                        <b class="caret"></b>
+                      </a>
+                      <ul class="collapse @@if (sub_parent === 'sidebar-nav'){show}" id="sidebar-nav">
+                        <div class="sub-menu">
+                          <li class="@@if (active === 'sidebar-open'){active} ">
+                            <a href="sidebar-open.html">Open</a>
+                          </li>
+                          <li class="@@if (active === 'sidebar-minimized'){active}  ">
+                            <a href="sidebar-minimized.html">Sidebar Minimized</a>
+                          </li>
+                          <li class=" @@if (active === 'sidebar-offcanvas'){active}  ">
+                            <a href="sidebar-offcanvas.html">Sidebar Offcanvas</a>
+                          </li>
+                          <li class=" @@if (active === 'sidebar-with-footer'){active}  ">
+                            <a href="sidebar-with-footer.html">Sidebar With Footer</a>
+                          </li>
+                          <li class=" @@if (active === 'sidebar-without-footer'){active}  ">
+                            <a href="sidebar-without-footer.html">Sidebar Without Footer</a>
+                          </li>
+                        </div>
+                      </ul>
+                    </li>
+                </div>
+              </ul>
+            </li>
+
+            <li class="has-sub @@if (parent === 'ui-elements'){active expand}">
+              <a href="javascript:void(0)" data-toggle="collapse" data-target="#ui-elements" aria-expanded="false" aria-controls="ui-elements">
+                <i class="icon-folder"></i>
+                <span>UI Elements</span>
+                <b class="caret"></b>
+              </a>
+              <ul class="collapse @@if (parent === 'ui-elements'){show}"  id="ui-elements" data-parent="#sidebar-menu">
+                <div class="sub-menu">
+                  <li class="has-sub @@if (sub_parent === 'components'){active expand}">
+                    <a href="javascript:void(0)" data-toggle="collapse" data-target="#components" aria-expanded="false" aria-controls="components">
                       <span>Components</span>
                       <b class="caret"></b>
                     </a>
-                    <ul class="sub-menu ">
-                      <li class="@@if (active === 'alert'){active}">
-                        <a href="alert.html">Alert</a>
-                      </li>
-                      <li class="@@if (active === 'badges'){active}">
-                        <a href="badges.html">Badges</a>
-                      </li>
-                      <li class="@@if (active === 'buttons-default'){active}">
-                        <a href="buttons.html">Button Default</a>
-                      </li>
-                      <li class="@@if (active === 'button-dropdown'){active}">
-                        <a href="dropdowns.html">Button Dropdowns</a>
-                      </li>
-                      <li class="@@if (active === 'button-group'){active}">
-                        <a href="button-group.html">Button Group</a>
-                      </li>
-                      <li class="@@if (active === 'button-social'){active}">
-                        <a href="button-social.html">Button Social</a>
-                      </li>
-                      <li class="@@if (active === 'button-loading'){active}">
-                        <a href="button-loading.html">Button Loading</a>
-                      </li>
-                      <li class="@@if (active === 'breadcrumb'){active}">
-                        <a href="bredcrumb.html">Breadcrumb</a>
-                      </li>
-                      <li class="@@if (active === 'card'){active}">
-                        <a href="card.html">Cards</a>
-                      </li>
-                      <li class="@@if (active === 'carousel'){active}">
-                        <a href="carousel.html">Carousel</a>
-                      </li>
-                      <li class="@@if (active === 'collapse'){active}">
-                        <a href="collapse.html">Collapse</a>
-                      </li>
-                      <li class="@@if (active === 'listgroup'){active}">
-                        <a href="list-group.html">List Group</a>
-                      </li>
-                      <li class="@@if (active === 'modal'){active}">
-                        <a href="modal.html">Modals</a>
-                      </li>
-                      <li class="@@if (active === 'pagination'){active}">
-                        <a href="pagination.html">Pagination</a>
-                      </li>
-                      <li class="@@if (active === 'popover'){active}">
-                        <a href="popover-tooltip.html">Popover and Tooltip</a>
-                      </li>
-                      <li class="@@if (active === 'progressbar'){active}">
-                        <a href="progressbar.html">Progress Bar</a>
-                      </li>
-                      <li class="@@if (active === 'spinners'){active}">
-                        <a href="spinners.html">Spinners</a>
-                      </li>
-                      <li class="@@if (active === 'switcher'){active}">
-                        <a href="switchers.html">Switchers</a>
-                      </li>
-                      <li class="@@if (active === 'table-general'){active}">
-                        <a href="tables.html">Tables</a>
-                      </li>
-                      <li class="@@if (active === 'tabs'){active}">
-                        <a href="tabs.html">Tabs</a>
-                      </li>
+                    <ul class="collapse @@if (sub_parent === 'components'){show}" id="components">
+                      <div class="sub-menu">
+                          <li class="@@if (active === 'alert'){active}">
+                            <a href="alert.html">Alert</a>
+                          </li>
+                          <li class="@@if (active === 'badges'){active}">
+                            <a href="badges.html">Badges</a>
+                          </li>
+                          <li class="@@if (active === 'buttons-default'){active}">
+                            <a href="buttons.html">Button Default</a>
+                          </li>
+                          <li class="@@if (active === 'button-dropdown'){active}">
+                            <a href="dropdowns.html">Button Dropdowns</a>
+                          </li>
+                          <li class="@@if (active === 'button-group'){active}">
+                            <a href="button-group.html">Button Group</a>
+                          </li>
+                          <li class="@@if (active === 'button-social'){active}">
+                            <a href="button-social.html">Button Social</a>
+                          </li>
+                          <li class="@@if (active === 'button-loading'){active}">
+                            <a href="button-loading.html">Button Loading</a>
+                          </li>
+                          <li class="@@if (active === 'breadcrumb'){active}">
+                            <a href="bredcrumb.html">Breadcrumb</a>
+                          </li>
+                          <li class="@@if (active === 'card'){active}">
+                            <a href="card.html">Cards</a>
+                          </li>
+                          <li class="@@if (active === 'carousel'){active}">
+                            <a href="carousel.html">Carousel</a>
+                          </li>
+                          <li class="@@if (active === 'collapse'){active}">
+                            <a href="collapse.html">Collapse</a>
+                          </li>
+                          <li class="@@if (active === 'listgroup'){active}">
+                            <a href="list-group.html">List Group</a>
+                          </li>
+                          <li class="@@if (active === 'modal'){active}">
+                            <a href="modal.html">Modals</a>
+                          </li>
+                          <li class="@@if (active === 'pagination'){active}">
+                            <a href="pagination.html">Pagination</a>
+                          </li>
+                          <li class="@@if (active === 'popover'){active}">
+                            <a href="popover-tooltip.html">Popover and Tooltip</a>
+                          </li>
+                          <li class="@@if (active === 'progressbar'){active}">
+                            <a href="progressbar.html">Progress Bar</a>
+                          </li>
+                          <li class="@@if (active === 'spinners'){active}">
+                            <a href="spinners.html">Spinners</a>
+                          </li>
+                          <li class="@@if (active === 'switcher'){active}">
+                            <a href="switchers.html">Switchers</a>
+                          </li>
+                          <li class="@@if (active === 'table-general'){active}">
+                            <a href="tables.html">Tables</a>
+                          </li>
+                          <li class="@@if (active === 'tabs'){active}">
+                            <a href="tabs.html">Tabs</a>
+                          </li>
+                      </div>
                     </ul>
                   </li>
 
-                  <li class="has-sub @@if (sub_parent === 'icon-fonts'){active}">
-                    <a href="javascript:void(0)">
+                  <li class="has-sub @@if (sub_parent === 'icon-fonts'){active expand}">
+                    <a href="javascript:void(0)" data-toggle="collapse" data-target="#icon-fonts" aria-expanded="false" aria-controls="icon-fonts">
                       <span>Icons</span>
                       <b class="caret"></b>
                     </a>
-                    <ul class="sub-menu">
-                      <li class="@@if (active === 'fontawesome-icons'){active}">
-                        <a href="fontawesome-icons.html">Font Awesome</a>
-                      </li>
-                      <li class="@@if (active === 'custom-icons'){active}">
-                        <a href="custom-icons.html">Custom </a>
-                      </li>
-                      <li class="@@if (active === 'flag-icons'){active}">
-                        <a href="flag-icons.html">Flags</a>
-                      </li>
+                    <ul class="collapse @@if (sub_parent === 'icon-fonts'){show}" id="icon-fonts">
+                        <div class="sub-menu">
+                          <li class="@@if (active === 'fontawesome-icons'){active}">
+                            <a href="fontawesome-icons.html">Font Awesome</a>
+                          </li>
+                          <li class="@@if (active === 'custom-icons'){active}">
+                            <a href="custom-icons.html">Custom </a>
+                          </li>
+                          <li class="@@if (active === 'flag-icons'){active}">
+                            <a href="flag-icons.html">Flags</a>
+                          </li>
+                        </div>
                     </ul>
                   </li>
 
-                  <li class="has-sub @@if (sub_parent === 'forms'){active}">
-                    <a href="javascript:void(0)">
+                  <li class="has-sub @@if (sub_parent === 'forms'){active expand}">
+                    <a href="javascript:void(0)" data-toggle="collapse" data-target="#forms" aria-expanded="false" aria-controls="forms">
                       <span>Forms</span>
                       <b class="caret"></b>
                     </a>
-                    <ul class="sub-menu ">
-                      <li class="@@if (active === 'basicInput'){active}">
-                        <a href="form-basic-input.html">Basic Input</a>
-                      </li>
-                      <li class="@@if (active === 'inputgroup'){active}">
-                        <a href="form-input-group.html">Input Group</a>
-                      </li>
-                      <li class="@@if (active === 'checkboxRadio'){active}">
-                        <a href="form-checkbox-radio.html">Checkbox & Radio</a>
-                      </li>
-                      <li class="@@if (active === 'validation'){active}">
-                        <a href="form-validation.html">Form Validation</a>
-                      </li>
-                      <li class="@@if (active === 'formAdvance'){active}">
-                        <a href="form-advance.html">Form Advanced</a>
-                      </li>
+                    <ul class="collapse @@if (sub_parent === 'forms'){show}" id="forms">
+                      <div class="sub-menu">
+                        <li class="@@if (active === 'basicInput'){active}">
+                          <a href="form-basic-input.html">Basic Input</a>
+                        </li>
+                        <li class="@@if (active === 'inputgroup'){active}">
+                          <a href="form-input-group.html">Input Group</a>
+                        </li>
+                        <li class="@@if (active === 'checkboxRadio'){active}">
+                          <a href="form-checkbox-radio.html">Checkbox & Radio</a>
+                        </li>
+                        <li class="@@if (active === 'validation'){active}">
+                          <a href="form-validation.html">Form Validation</a>
+                        </li>
+                        <li class="@@if (active === 'formAdvance'){active}">
+                          <a href="form-advance.html">Form Advanced</a>
+                        </li>
+                      </div>
                     </ul>
                   </li>
-                  <li class="has-sub @@if (sub_parent === 'maps'){active}">
-                    <a href="javascript:void(0)">
+                  <li class="has-sub @@if (sub_parent === 'maps'){active expand}">
+                    <a href="javascript:void(0)" data-toggle="collapse" data-target="#maps" aria-expanded="false" aria-controls="maps">
                       <span>Maps</span>
                       <b class="caret"></b>
                     </a>
-                    <ul class="sub-menu ">
-                      <li class="@@if (active === 'google-map'){active}">
-                        <a href="google-map.html">Google Map</a>
-                      </li>
-                      <li class="@@if (active === 'vector-map'){active}">
-                        <a href="vector-map.html">Vector Map</a>
-                      </li>
+                    <ul class="collapse @@if (sub_parent === 'maps'){show}" id="maps">
+                      <div class="sub-menu">
+                        <li class="@@if (active === 'google-map'){active}">
+                          <a href="google-map.html">Google Map</a>
+                        </li>
+                        <li class="@@if (active === 'vector-map'){active}">
+                          <a href="vector-map.html">Vector Map</a>
+                        </li>
+                      </div>
                     </ul>
                   </li>
-                  <li class="has-sub @@if (sub_parent === 'widgets'){active}">
-                    <a href="javascript:void(0)">
+                  <li class="has-sub @@if (sub_parent === 'widgets'){active expand}">
+                    <a href="javascript:void(0)" data-toggle="collapse" data-target="#widgets" aria-expanded="false" aria-controls="widgets">
                       <span>Widgets</span>
                       <b class="caret"></b>
                     </a>
-                    <ul class="sub-menu ">
-                      <li class="@@if (active === 'general-widget'){active}">
-                        <a href="general-widgets.html">General Widgets</a>
-                      </li>
-                      <li class="@@if (active === 'chart-widget'){active}">
-                        <a href="chart-widgets.html">Chart Widgets</a>
-                      </li>
+                    <ul class="collapse @@if (sub_parent === 'widgets'){show}" id="widgets">
+                      <div class="sub-menu ">
+                        <li class="@@if (active === 'general-widget'){active}">
+                          <a href="general-widgets.html">General Widgets</a>
+                        </li>
+                        <li class="@@if (active === 'chart-widget'){active}">
+                          <a href="chart-widgets.html">Chart Widgets</a>
+                        </li>
+                      </div>
                     </ul>
                   </li>
+                </div>
+              </ul>
+            </li>
 
-                </ul>
-              </li>
-
-              <li class="has-sub @@if (parent === 'charts'){active}">
-                <a href="javascript:void(0)">
-                  <i class="icon-chart"></i>
-                  <span>Charts</span>
-                  <b class="caret"></b>
-                </a>
-                <ul class="sub-menu ">
+            <li class="has-sub @@if (parent === 'charts'){active expand}">
+              <a href="javascript:void(0)" data-toggle="collapse" data-target="#charts" aria-expanded="false" aria-controls="charts">
+                <i class="icon-chart"></i>
+                <span>Charts</span>
+                <b class="caret"></b>
+              </a>
+              <ul class="collapse @@if (parent === 'charts'){show}"  id="charts" data-parent="#sidebar-menu">
+                <div class="sub-menu">
                   <li class="@@if (active === 'chartjs'){active}">
                     <a href="charts-chartjs.html">Chartjs</a>
                   </li>
-                </ul>
-              </li>
-              <li class="has-sub @@if (parent === 'pages'){active}">
-                <a href="javascript:void(0)">
-                  <i class="icon-page"></i>
-                  <span>Pages</span>
-                  <b class="caret"></b>
-                </a>
-                <ul class="sub-menu">
+                </div>
+              </ul>
+            </li>
+            <li class="has-sub @@if (parent === 'pages'){active expand}">
+              <a href="javascript:void(0)" data-toggle="collapse" data-target="#pages" aria-expanded="false" aria-controls="pages">
+                <i class="icon-page"></i>
+                <span>Pages</span>
+                <b class="caret"></b>
+              </a>
+              <ul class="collapse @@if (parent === 'pages'){show}" id="pages" data-parent="#sidebar-menu">
+                <div class="sub-menu">
                   <li class="@@if (active === 'profile'){active}">
                     <a href="profile.html">User Profile</a>
                   </li>
-                  <li class="has-sub @@if (sub_parent === 'authentication'){active}">
-                    <a href="javascript:void(0)">
+                  <li class="has-sub @@if (sub_parent === 'authentication'){active expand}">
+                    <a href="javascript:void(0)" data-toggle="collapse" data-target="#authentication" aria-expanded="false" aria-controls="authentication">
                       <span>Authentication</span>
                       <b class="caret"></b>
                     </a>
-                    <ul class="sub-menu ">
-                      <li class="@@if (active === 'signin'){active}">
-                        <a href="signin.html">Sign In</a>
-                      </li>
-                      <li class="@@if (active === 'signup'){active}">
-                        <a href="signup.html">Sign Up</a>
-                      </li>
+                    <ul class="collapse @@if (sub_parent === 'authentication'){show}" id="authentication">
+                      <div class="sub-menu ">
+                        <li class="@@if (active === 'signin'){active}">
+                          <a href="signin.html">Sign In</a>
+                        </li>
+                        <li class="@@if (active === 'signup'){active}">
+                          <a href="signup.html">Sign Up</a>
+                        </li>
+                      </div>
                     </ul>
                   </li>
-                  <li class="has-sub @@if (sub_parent === 'others'){active}">
-                    <a href="javascript:void(0)">
+                  <li class="has-sub @@if (sub_parent === 'others'){active expand}">
+                      <a href="javascript:void(0)" data-toggle="collapse" data-target="#others" aria-expanded="false" aria-controls="others">
                       <span>Others</span>
                       <b class="caret"></b>
                     </a>
-                    <ul class="sub-menu ">
-                      <li class="@@if (active === 'invoice'){active}">
-                        <a href="invoice.html"> Invoice</a>
-                      </li>
-                      <li class="@@if (active === 'error'){active}">
-                        <a href="error.html"> Error</a>
-                      </li>
+                    <ul class="collapse @@if (sub_parent === 'others'){show}" id="others">
+                      <div class="sub-menu ">
+                        <li class="@@if (active === 'invoice'){active}">
+                          <a href="invoice.html"> Invoice</a>
+                        </li>
+                        <li class="@@if (active === 'error'){active}">
+                          <a href="error.html"> Error</a>
+                        </li>
+                      </div>
                     </ul>
                   </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        <!-- </div> -->
+                </div>
+              </ul>
+            </li>
+          </ul>
+        </div>
 
         <div class="sidebar-progress">
           <h6 class="text-uppercase">
@@ -306,5 +331,6 @@
             <div class="progress-bar progress-bar-warning" style="width: 65%;" role="progressbar"></div>
           </div>
         </div>
+
       </div>
   	</div>
