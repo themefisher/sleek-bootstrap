@@ -245,6 +245,14 @@
     opacity: 0;
     @include transition(opacity 0.3s ease-in-out);
   }
+  @include media-breakpoint-down(sm){
+    .nav li.has-sub.expand .collapse>.sub-menu {
+      @include transition(opacity 0.3s ease-in-out);
+      display: block!important;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
 }
 
 .sidebar-minified .layout-sidenav:hover {
