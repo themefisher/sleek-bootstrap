@@ -157,8 +157,11 @@
 .sidebar li.active.expand>a .caret:before,
 .sidebar li.expand>a .caret:before,
 .sidebar li.expanding>a .caret:before {
-  opacity: 1;
   transform: rotate(90deg);
+}
+
+.sidebar li.active>a .caret:before{
+  opacity: 1;
 }
 
 .sidebar li.closed>a .caret:before,
@@ -172,7 +175,6 @@
   padding: 0px 0 10px 45px;
   margin: 0;
   position: relative;
-  display: none;
 
   >li>a {
     padding: 10px 20px 10px 15px;
@@ -230,19 +232,26 @@
   .nav>li>a>.caret {
     right: 15px;
   }
-  .nav li.has-sub>.sub-menu {
+  .nav li.has-sub .collapse>.sub-menu {
     left: 0;
     top: 0;
     width: 100%;
-    display: none;
     margin: 0;
 
   }
-  .nav li.has-sub.expand>.sub-menu {
+  .nav li.has-sub.expand .collapse>.sub-menu {
     display: none!important;
     visibility: hidden;
     opacity: 0;
     @include transition(opacity 0.3s ease-in-out);
+  }
+  @include media-breakpoint-down(sm){
+    .nav li.has-sub.expand .collapse>.sub-menu {
+      @include transition(opacity 0.3s ease-in-out);
+      display: block!important;
+      opacity: 1;
+      visibility: visible;
+    }
   }
 }
 
@@ -257,7 +266,7 @@
     }
   }
 
-  .nav li.has-sub.expand>.sub-menu {
+  .nav li.has-sub.expand .collapse>.sub-menu {
     @include transition(opacity 0.3s ease-in-out);
     display: block!important;
     opacity: 1;
@@ -395,7 +404,7 @@
 
     .slimScrollDiv {
       @include media-breakpoint-up(md) {
-        height: 100vh !important;
+        height: 92vh !important;
       }
     }
 

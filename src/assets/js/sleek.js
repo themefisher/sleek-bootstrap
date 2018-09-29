@@ -13,25 +13,6 @@ $(document).ready(function() {
   "use strict";
 
   /*======== 1. SCROLLBAR SIDEBAR ========*/
-  // var generateSlimScroll = function(e) {
-  //   if (!$(e).attr("data-init")) {
-  //     var a = $(e).attr("data-height"),
-  //       t = {
-  //         height: (a = a || $(e).height())
-  //       };
-  //     /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-  //       navigator.userAgent
-  //     )
-  //       ? ($(e).css("height", a), $(e).css("overflow-x", "scroll"))
-  //       : $(e).slimScroll(t),
-  //       $(e).attr("data-init", !0),
-  //       $(".slimScrollBar").hide();
-  //   }
-  // };
-  // $("[data-scrollbar=true]").each(function() {
-  //   generateSlimScroll($(this));
-  // });
-
   $('.sidebar-scrollbar').slimScroll({
   	height: '100%'
   });
@@ -58,61 +39,15 @@ $(document).ready(function() {
   }
 
   /*======== 3. SIDEBAR MENU ========*/
-  (function() {
-    var e = $(".sidebar").attr("data-disable-slide-animation") ? 0 : 250;
-    $(".sidebar .nav > .has-sub > a").click(function() {
-      var firstMenu = $(this).next(".sub-menu"),
-        t = $(".sidebar .nav > li.has-sub > .sub-menu").not(firstMenu);
-      $(t)
-        .closest("li")
-        .addClass("closing"),
-        $(t).slideUp(e, function() {
-          $(t)
-            .closest("li")
-            .addClass("closed")
-            .removeClass("expand closing");
-        }),
-        $(firstMenu).is(":visible")
-          ? $(firstMenu)
-              .closest("li")
-              .addClass("closing")
-              .removeClass("expand")
-          : $(firstMenu)
-              .closest("li")
-              .addClass("expanding")
-              .removeClass("closed"),
-        $(firstMenu).slideToggle(e, function() {
-          var parentLi = $(this).closest("li");
-          $(firstMenu).is(":visible")
-            ? ($(parentLi).addClass("expand"),
-              $(parentLi).removeClass("closed"))
-            : ($(parentLi).addClass("closed"),
-              $(parentLi).removeClass("expand")),
-            $(parentLi).removeClass("expanding closing");
-        });
-    }),
-      $(".sidebar .nav > .has-sub .sub-menu li.has-sub > a").click(function() {
-        var secondMenu = $(this).next(".sub-menu");
-        $(secondMenu).is(":visible")
-          ? $(secondMenu)
-              .closest("li")
-              .addClass("closing")
-              .removeClass("expand")
-          : $(secondMenu)
-              .closest("li")
-              .addClass("expanding")
-              .removeClass("closed"),
-          $(secondMenu).slideToggle(e, function() {
-            var parentLi = $(this).closest("li");
-            $(secondMenu).is(":visible")
-              ? ($(parentLi).addClass("expand"),
-                $(parentLi).removeClass("closed"))
-              : ($(parentLi).addClass("closed"),
-                $(parentLi).removeClass("expand")),
-              $(parentLi).removeClass("expanding closing");
-          });
-      });
-  })();
+  $(".sidebar .nav > .has-sub > a").click(function(){
+    $(this).parent().siblings().removeClass('expand')
+    $(this).parent().toggleClass('expand')
+  })
+
+  $(".sidebar .nav > .has-sub .has-sub > a").click(function(){
+    $(this).parent().toggleClass('expand')
+  })
+
 
   /*======== 4. SIDEBAR TOGGLE FOR MOBILE ========*/
   if ($(window).width() < 768) {
