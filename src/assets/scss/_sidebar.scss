@@ -11,8 +11,10 @@
   position: fixed;
   display: flex;
   flex-direction: column;
-  z-index: -1;
+  transform: translateX(-250px);
+  height: 100%;
   @include media-breakpoint-up(md){
+    transform: translateX(0);
     width: 250px;
     position: relative;
     z-index: 1;
@@ -82,7 +84,7 @@
 /* App brand */
 .app-brand {
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
   display: block;
 
   .logo {
@@ -90,11 +92,14 @@
     height: 75px;
     line-height: 75px;
     width: 250px;
-    overflow: hidden;
+    
     background-color: $primary;
     vertical-align: middle;
     @include transition(width 0.3s ease-in-out);
     padding-left: 25px;
+    @include media-breakpoint-up(md){
+      overflow: hidden;
+    }
   }
   .logo .logo-title {
     color: $white;
@@ -217,6 +222,8 @@
   width: 250px;
   z-index: 1050;
   height: 100%;
+  transform: translateX(0);
+  transition: transform .3s ease-in-out;
 
   @include media-breakpoint-up(md) {
     width: 75px;
@@ -291,11 +298,13 @@
 
 
 .sidebar-minified:not(.layout-sidenav) .layout-sidenav {
-  -webkit-transition-duration: .3s;
+  @include media-breakpoint-up(md){
+    -webkit-transition-duration: .3s;
     transition-duration: .3s;
     transition-timing-function: ease-in-out;
     -webkit-transition-property: margin-left, margin-right, width;
     transition-property: margin-left, margin-right, width;
+  }
 }
 
 .sidebar-static {
@@ -307,7 +316,9 @@
     }
     &.header-fixed {
       .layout-container .main-header {
-        padding-left: 75px;
+        @include media-breakpoint-up(md){
+          padding-left: 75px;
+        }
       }
     }
   }
@@ -349,6 +360,17 @@
 }
 
 /* Sidebar Minified Out */
+.sidebar-minified-out {
+  .layout-sidenav {
+    z-index: 10000;
+    transform: translateX(-250px);
+    transition: transform .3s ease-in-out !important;
+    @include media-breakpoint-up(md){
+      transform: translateX(0px);
+      transition: width 0.3s ease-in-out !important;
+    }
+  }
+}
 .sidebar-minified-out .sidebar .nav > li > a span {
   transition: opacity 0.3s ease-in-out 0.3s;
   visibility: visible;
@@ -513,10 +535,12 @@
 .sidebar-static-offcanvas {
   .sidebar.sidebar-with-footer {
     .slimScrollDiv {
+      height: 100%;
       @include media-breakpoint-up(md){
         height: auto !important;
       }
     }
+
   }
 }
 
@@ -529,7 +553,7 @@
   height: 100%;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  transition: opacity 0.3s ease-in-out 0s;
   background-color: rgba(0,0,0,.5);
 
   &.active {
@@ -636,6 +660,7 @@
     font-size: 13px;
     margin-top: 11px;
     margin-bottom: 11px;
+    white-space: nowrap;
   }
   .progress {
     height: 15px;

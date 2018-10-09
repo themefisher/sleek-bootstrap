@@ -20,20 +20,22 @@ $(document).ready(function() {
   /*======== 2. BACKDROP ========*/
   if ($(window).width() < 768) {
     var shadowClass = $(".mobile-sticky-body-overlay");
-    $(".sidebar-toggle").on("click", function(e) {
-      e.preventDefault();
-      if (!shadowClass.hasClass("active")) {
-        shadowClass.addClass("active");
-        $("body").css("overflow", "hidden");
-      } else {
-        shadowClass.removeClass("active");
-        $("body").css("overflow", "auto");
-      }
+    $(".sidebar-toggle").on("click", function() {
+      // e.preventDefault();
+      // if (!shadowClass.hasClass("active")) {
+      //   shadowClass.addClass("active");
+      //   $("body").css("overflow", "hidden");
+      // } else {
+      //   shadowClass.removeClass("active");
+      //   $("body").css("overflow", "auto");
+      // }
+      shadowClass.addClass("active");
+      $("body").css("overflow", "hidden");
     });
 
     $(".mobile-sticky-body-overlay").on("click", function(e) {
       $(this).removeClass("active");
-      $("#page-container").removeClass("sidebar-minified");
+      $("#page-container").removeClass("sidebar-minified").addClass("sidebar-minified-out");
       $("body").css("overflow", "auto");
     });
   }
