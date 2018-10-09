@@ -42,6 +42,7 @@
         text-decoration: none;
         text-transform: uppercase;
         font-weight: 500;
+        white-space: nowrap;
       }
     }
   }
@@ -182,6 +183,7 @@
     text-decoration: none;
     position: relative;
     font-size: 14px;
+    white-space: nowrap;
   }
 
   > li .sub-menu {
