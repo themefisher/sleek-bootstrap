@@ -117,6 +117,11 @@
   }
 }
 
+.sidebar-fixed.sidebar-minified,
+.sidebar-static.sidebar-minified {
+  
+}
+
 /*  Nav menus Icon Styles */
 .sidebar .nav>li>a span {
   position: absolute;
@@ -300,8 +305,18 @@
 
   .logo-title {
     opacity: 1;
+    visibility: visible;
     @include transition(opacity 0.3s ease);
     transition-delay: 0.3s;
+  }
+  .app-brand {
+    .logo .logo-title {      
+      @include media-breakpoint-up(md){
+        opacity: 1;
+        visibility: visible;
+        transition-delay: 0.3s;
+      }
+    }
   }
 }
 
@@ -350,8 +365,15 @@
       visibility: hidden;
       opacity: 0;
     }
-    
-
+  }
+  .app-brand {
+    .logo .logo-title {      
+      @include media-breakpoint-up(md){
+        visibility: hidden;
+        opacity: 0;
+        @include transition(opacity 0.3s ease-in-out);
+      }
+    }
   }
 }
 
@@ -699,8 +721,8 @@
 
 /* logo */ 
 .logo-mini {
-  height: 40px;
-  width: 40px;
+  // height: 40px;
+  // width: 40px;
 }
 .logo-fill-blue {
   fill: $logo-fill-blue;
