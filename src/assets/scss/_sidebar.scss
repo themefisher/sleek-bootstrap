@@ -97,10 +97,8 @@
     display: block;
     height: 75px;
     line-height: 75px;
-    width: 250px;
-    
+    width: 250px;    
     background-color: $primary;
-    vertical-align: middle;
     @include transition(width 0.3s ease-in-out);
     padding-left: 25px;
     @include media-breakpoint-up(md){

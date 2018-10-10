@@ -21,14 +21,6 @@ $(document).ready(function() {
   if ($(window).width() < 768) {
     var shadowClass = $(".mobile-sticky-body-overlay");
     $(".sidebar-toggle").on("click", function() {
-      // e.preventDefault();
-      // if (!shadowClass.hasClass("active")) {
-      //   shadowClass.addClass("active");
-      //   $("body").css("overflow", "hidden");
-      // } else {
-      //   shadowClass.removeClass("active");
-      //   $("body").css("overflow", "auto");
-      // }
       shadowClass.addClass("active");
       $("body").css("overflow", "hidden");
     });
