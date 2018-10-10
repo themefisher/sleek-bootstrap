@@ -137,10 +137,11 @@
           }
           >.dropdown-menu {
             width: 275px;
-            right: 0px;
+            right: -75px;
 
             @include media-breakpoint-up(md) {
               width: 300px;
+              right: 0px;
             }
           }
         }
