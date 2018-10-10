@@ -90,11 +90,12 @@
 /* App brand */
 .app-brand {
   position: relative;
-  // overflow: hidden;
   display: block;
 
   .logo {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     height: 75px;
     line-height: 75px;
     width: 250px;    
@@ -103,6 +104,10 @@
     padding-left: 25px;
     @include media-breakpoint-up(md){
       overflow: hidden;
+    }
+    img {
+      max-width: 80px;
+      vertical-align: middle;
     }
   }
   .logo .logo-title {
@@ -567,6 +572,9 @@
     opacity: 1;
     visibility: visible;
     z-index: 1045;
+  }
+  @include media-breakpoint-up(md){
+    display: none;
   }
 }
 
