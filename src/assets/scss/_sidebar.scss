@@ -336,9 +336,12 @@
 
 .sidebar-minified {
   .sidebar-progress {
-    transition: opacity 0.3s ease-in-out 0.3s;
-    visibility: hidden;
-    opacity: 0;
+    @include media-breakpoint-up(md){
+      transition: opacity 0.3s ease-in-out 0.3s;
+      visibility: hidden;
+      opacity: 0;
+    }
+    
 
   }
 }
@@ -651,7 +654,7 @@
   padding-top: 45px;
   padding-bottom: 32px;
   border-top: 1px solid rgba(255,255,255,0.2);
-  margin-top: -190px;
+  // margin-top: -190px;
   @include media-breakpoint-up(md){
     margin-top: 45px;
   }
