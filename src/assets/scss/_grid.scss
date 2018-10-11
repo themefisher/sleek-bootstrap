@@ -9,15 +9,10 @@
 /* Content Wrapper */
 .layout-wrapper {
   min-height: 100%;
-  background-color: #f5f6fa;
+  background-color: $gray-100;
   z-index: 800;
   @include transition(margin-left 0.25s ease-in);
-
-  @include media-breakpoint-up(md) {
-    // margin-left: 250px;
-  }
   .content {
-    // min-height: 77vh;
     padding: 30px 15px;
     margin-right: auto;
     margin-left: auto;
@@ -67,10 +62,7 @@
 .layout-container {
   display: flex;
   flex-direction: column;
-  // width: 0;
-  // min-width: 0;
   width: 100%;
-
 }
 .layout-content {
     display: -webkit-box;
@@ -90,3 +82,4 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
+

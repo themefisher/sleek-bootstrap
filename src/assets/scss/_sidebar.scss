@@ -11,8 +11,10 @@
   position: fixed;
   display: flex;
   flex-direction: column;
-  z-index: -1;
+  transform: translateX(-250px);
+  height: 100%;
   @include media-breakpoint-up(md){
+    transform: translateX(0);
     width: 250px;
     position: relative;
     z-index: 1;
@@ -31,7 +33,13 @@
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
-    margin-top: 80px;
+    margin-top: 30px;
+    @include media-breakpoint-up(xl){
+      margin-top: 40px;
+    }
+    @include media-breakpoint-up(xxl){
+      margin-top: 80px;
+    }
     >li {
       position: relative;
       >a {
@@ -42,6 +50,7 @@
         text-decoration: none;
         text-transform: uppercase;
         font-weight: 500;
+        white-space: nowrap;
       }
     }
   }
@@ -81,19 +90,25 @@
 /* App brand */
 .app-brand {
   position: relative;
-  overflow: hidden;
   display: block;
 
   .logo {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     height: 75px;
     line-height: 75px;
     width: 250px;
-    overflow: hidden;
     background-color: $primary;
-    vertical-align: middle;
     @include transition(width 0.3s ease-in-out);
     padding-left: 25px;
+    @include media-breakpoint-up(md){
+      overflow: hidden;
+    }
+    img {
+      max-width: 80px;
+      vertical-align: middle;
+    }
   }
   .logo .logo-title {
     color: $white;
@@ -182,6 +197,7 @@
     text-decoration: none;
     position: relative;
     font-size: 14px;
+    white-space: nowrap;
   }
 
   > li .sub-menu {
@@ -215,10 +231,21 @@
   width: 250px;
   z-index: 1050;
   height: 100%;
+  transform: translateX(0);
+  transition: transform .3s ease-in-out;
 
   @include media-breakpoint-up(md) {
     width: 75px;
     transition: width .3s ease-in;
+  }
+  .app-brand {
+    .logo .logo-title {
+      @include media-breakpoint-up(md){
+        visibility: hidden;
+        opacity: 0;
+        @include transition(opacity 0.3s ease-in-out);
+      }
+    }
   }
   .nav>li>a>.caret,
   .nav>li>a>span {
@@ -253,17 +280,25 @@
       visibility: visible;
     }
   }
+  .sidebar-footer {
+    @include media-breakpoint-up(md){
+      height: 0;
+    }
+  }
+  .sidebar-footer-content {
+    @include media-breakpoint-up(md){
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
 }
 
+
+/* Sidebar Minified Hover */
 .sidebar-minified .layout-sidenav:hover {
   @include media-breakpoint-up(md) {
     width: 250px;
     margin-right: -175px;
-    .sidebar-progress {
-      transition: opacity 0.3s ease-in-out 0.3s;
-      visibility: visible;
-      opacity: 1;
-    }
   }
 
   .nav li.has-sub.expand .collapse>.sub-menu {
@@ -282,20 +317,43 @@
 
   .logo-title {
     opacity: 1;
+    visibility: visible;
     @include transition(opacity 0.3s ease);
     transition-delay: 0.3s;
   }
+  .app-brand {
+    .logo .logo-title {
+      @include media-breakpoint-up(md){
+        opacity: 1;
+        visibility: visible;
+        transition-delay: 0.3s;
+      }
+    }
+  }
+  .sidebar-footer {
+    @include media-breakpoint-up(md){
+      height: min-content;
+    }
+  }
+  .sidebar-footer-content {
+    visibility: visible;
+    opacity: 1;
+    @include transition(opacity .3s ease-in-out .15s);
+  }
 }
 
-
+/* Sidebar Minified Not transition */
 .sidebar-minified:not(.layout-sidenav) .layout-sidenav {
-  -webkit-transition-duration: .3s;
+  @include media-breakpoint-up(md){
+    -webkit-transition-duration: .3s;
     transition-duration: .3s;
     transition-timing-function: ease-in-out;
     -webkit-transition-property: margin-left, margin-right, width;
     transition-property: margin-left, margin-right, width;
+  }
 }
 
+/* Sidebar Static With Minified */
 .sidebar-static {
   &.sidebar-minified {
     .layout-container {
@@ -305,7 +363,9 @@
     }
     &.header-fixed {
       .layout-container .main-header {
-        padding-left: 75px;
+        @include media-breakpoint-up(md){
+          padding-left: 75px;
+        }
       }
     }
   }
@@ -321,16 +381,7 @@
   }
 }
 
-.sidebar-minified {
-  .sidebar-progress {
-    transition: opacity 0.3s ease-in-out 0.3s;
-    visibility: hidden;
-    opacity: 0;
-
-  }
-}
-
-/* Sidebar Fixed Minified Layout Container */
+/* Sidebar Fixed With Minified Layout Container */
 .sidebar-fixed.sidebar-minified {
   @include media-breakpoint-up(md){
     .layout-container {
@@ -347,6 +398,24 @@
 }
 
 /* Sidebar Minified Out */
+.sidebar-minified-out {
+  .layout-sidenav {
+    z-index: 10000;
+    transform: translateX(-250px);
+    transition: transform .3s ease-in-out !important;
+    @include media-breakpoint-up(md){
+      transform: translateX(0px);
+      transition: width 0.3s ease-in-out !important;
+    }
+  }
+
+  .sidebar-footer-content {
+    visibility: visible;
+    opacity: 1;
+    @include transition(opacity .3s ease-in-out .15s);
+  }
+
+}
 .sidebar-minified-out .sidebar .nav > li > a span {
   transition: opacity 0.3s ease-in-out 0.3s;
   visibility: visible;
@@ -369,12 +438,10 @@
       @include transition(padding-left 0.3s ease-in-out);
     }
   }
-  .sidebar-progress {
-    @include transition(opacity 1.5s ease-in-out);
-  }
+
 }
 
-/* Sidebar Fixed */
+/* Sidebar Fixed And Offcanvas */
 .sidebar-fixed-offcanvas,
 .sidebar-fixed {
   .layout-sidenav {
@@ -387,39 +454,30 @@
       z-index: 1060;
     }
   }
-  .sidebar {
-    .sidebar-progress {
-      @include media-breakpoint-up(md) {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 250px;
-        padding-top: 30px;
-        padding-bottom: 10px;
-      }
-      @include media-breakpoint-up(xxl) {
-        padding-top: 25px;
-      }
-    }
-
-    .slimScrollDiv {
-      @include media-breakpoint-up(md) {
-        height: 92vh !important;
-      }
-    }
-
-    &.sidebar-with-footer {
-      .slimScrollDiv {
-        height: calc(100vh - 88px) !important;
-        @include media-breakpoint-up(md){
-          height: calc(100vh - 225px) !important;
-        }
-      }
-    }
-  }
   .layout-container {
     @include media-breakpoint-up(md){
       padding-left: 250px;
+    }
+  }
+}
+
+.sidebar-fixed-offcanvas {
+  &.sidebar-collapse {
+    .layout-container {
+      padding-left: 0;
+    }
+    .sidebar-footer {
+      @include media-breakpoint-up(md){
+        left: -250px;
+      }
+    }
+  }
+  &.sidebar-collapse-out {
+    .sidebar-footer {
+      @include media-breakpoint-up(md){
+        left: 0px;
+        @include transition(left 0.3s ease-in-out);
+      }
     }
   }
 }
@@ -450,27 +508,6 @@
   .layout-container {
     @include media-breakpoint-up(md){
       @include transition(padding-left 0.3s ease-in-out);
-    }
-  }
-}
-
-.sidebar-fixed-offcanvas {
-  &.sidebar-collapse {
-    .layout-container {
-      padding-left: 0;
-    }
-    .sidebar-progress {
-      @include media-breakpoint-up(md){
-        left: -250px;
-      }
-    }
-  }
-  &.sidebar-collapse-out {
-    .sidebar-progress {
-      @include media-breakpoint-up(md){
-        left: 0px;
-        @include transition(left 0.3s ease-in-out);
-      }
     }
   }
 }
@@ -511,10 +548,12 @@
 .sidebar-static-offcanvas {
   .sidebar.sidebar-with-footer {
     .slimScrollDiv {
+      height: 100%;
       @include media-breakpoint-up(md){
         height: auto !important;
       }
     }
+
   }
 }
 
@@ -527,13 +566,16 @@
   height: 100%;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  transition: opacity 0.3s ease-in-out 0s;
   background-color: rgba(0,0,0,.5);
 
   &.active {
     opacity: 1;
     visibility: visible;
     z-index: 1045;
+  }
+  @include media-breakpoint-up(md){
+    display: none;
   }
 }
 
@@ -580,7 +622,7 @@
       color: $white;
     }
   }
-  .sidebar-progress {
+  .sidebar-footer {
     background-color: #212a39;
   }
 
@@ -610,7 +652,7 @@
       color: darken($secondary, 25%);
     }
   }
-  .sidebar-progress {
+  .sidebar-footer {
     border-top: 1px solid $border-color;
     background-color: $white;
   }
@@ -619,21 +661,25 @@
   }
 }
 
-/* Bottom progressBar */
-.sidebar-progress {
-  padding: 0 30px;
-  padding-top: 45px;
-  padding-bottom: 32px;
+/* Sidebar Footer Content*/
+.sidebar-footer-content {
   border-top: 1px solid rgba(255,255,255,0.2);
-  margin-top: -190px;
-  @include media-breakpoint-up(md){
-    margin-top: 45px;
+  padding: 0 30px;
+  padding-top: 25px;
+  padding-bottom: 12px;
+  width: 250px;
+  @include media-breakpoint-up(xl){
+    padding-top: 45px;
+    padding-bottom: 32px;
+
   }
+
   > h6 {
     color: #b7c0cd;
     font-size: 13px;
     margin-top: 11px;
     margin-bottom: 11px;
+    white-space: nowrap;
   }
   .progress {
     height: 15px;
@@ -652,4 +698,14 @@
       }
     }
   }
+
+}
+
+
+/* App Logo Fill Color */
+.logo-fill-blue {
+  fill: $logo-fill-blue;
+}
+.logo-fill-white {
+  fill: $white;
 }
