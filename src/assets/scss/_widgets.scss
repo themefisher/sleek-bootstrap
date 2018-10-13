@@ -1,8 +1,8 @@
 /*===== WIDGETS =====*/
 .widget-block {
   position: relative;
-  padding: 30px;
-  margin-bottom: 30px;
+  padding: 1.9rem;
+  margin-bottom: 1.9rem;
   &.bg-primary {
     border-color: $primary;
     p {
@@ -41,7 +41,7 @@
   }
 
   i {
-    font-size: 22px;
+    font-size: 1.38rem;
   }
 }
 .widget-chart {
@@ -53,8 +53,8 @@
 }
 .widget-media {
   position: relative;
-  padding: 30px;
-  margin-bottom: 30px;
+  padding: 1.9rem;
+  margin-bottom: 1.9rem;
   .icon {
     width: 70px;
     height: 70px;
@@ -62,7 +62,7 @@
     line-height: 70px;
   }
   i {
-    font-size: 22px;
+    font-size: 1.38rem;
   }
 }
 .widget-profile {
@@ -73,7 +73,7 @@
   }
 }
 
-/* Widgets Dropdown */ 
+/* Widgets Dropdown */
 .widget-dropdown {
   .dropdown-toggle {
     color: $secondary;
@@ -91,19 +91,19 @@
     }
   }
   .dropdown-menu {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
     @include media-breakpoint-up(lg) {
-      padding-top: 20px;
-      padding-bottom: 20px;
+      padding-top: 1.25rem;
+      padding-bottom: 1.25rem;
     }
     .dropdown-item {
-      padding: 10px 15px;
+      padding: 0.625rem 0.94rem;
       @include media-breakpoint-up(lg) {
-        padding: 10px 30px;
+        padding: 0.625rem 1.9rem;
       }
       a {
-        font-size: 14px;
+        font-size: 0.81rem;
         color: $secondary;
         text-transform: capitalize;
       }

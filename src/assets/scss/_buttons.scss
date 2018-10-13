@@ -22,24 +22,24 @@
   overflow: hidden;
   color: $white;
   text-align: center;
-  padding: 5px 10px;
-  font-size: 15px;
+  padding:  0.312rem 0.625rem;
+  font-size: 0.98rem;
   border: 1px solid transparent;
   line-height: 1.5;
   width: 40px;
   height: 40px;
   &.text {
     width: auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
     i {
-      margin-right: 8px;
+      margin-right: .5rem;
     }
   }
   &.btn-lg {
     height: 50px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 1.88rem;
+    padding-right: 1.88rem;
   }
 }
 
@@ -256,7 +256,7 @@
 
 /* Button Split */
 .dropdown-toggle-split {
-  padding: 0 12px;
+  padding: 0 .75rem;
 }
 
 /*===== BUTTON LOADING =====*/

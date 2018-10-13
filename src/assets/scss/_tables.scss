@@ -43,13 +43,13 @@ tbody tr td:first-child {
 
 .table-borderless thead th {
   border-bottom: 1px solid $border-color;
-  font-size: 13px;
+  font-size: 0.81rem;
   color: $secondary;
   font-weight: 400;
-  padding-top: 30px;
+  padding-top: 1.9rem;
 }
 .table-borderless tbody tr:first-child td {
-  padding-top: 40px;
+  padding-top: 2.5rem;
 }
 .table-borderless tbody tr a.link {
   color: $dark;
@@ -59,7 +59,7 @@ tbody tr td:first-child {
 }
 
 .table-borderless tbody tr:last-child td {
-  padding-bottom: 30px;
+  padding-bottom: 1.90rem;
 }
 .table-borderless tbody td:first-child {
   width: 55%;
@@ -68,28 +68,28 @@ tbody tr td:first-child {
 
 .table-borderless thead th:first-child,
 .table-borderless tbody td:first-child {
-  padding-left: 0px;
+  padding-left: 0;
 }
 
 /* Card Table */
 .card-table {
-  margin-top: 50px;
+  margin-top: 3.12rem;
   thead th {
-    font-size: 14px;
+    font-size: .88rem;
     font-weight: 400;
-    padding: 0 30px 20px 0;
+    padding: 0 1.90rem 1.25rem 0;
     color: $secondary;
     @include media-breakpoint-up(md) {
-      font-size: 17px;
+      font-size: 1.06rem;
     }
   }
   tbody td {
-    padding: 18px 30px 18px 0;
+    padding: 1.3rem 1.9rem 1.3rem 0;
     vertical-align: middle;
-    margin: 10px 0 10px;
-    font-size: 13px;
+    margin: 0.625rem 0 0.625rem;
+    font-size: 0.81rem;
     @include media-breakpoint-up(md) {
-      font-size: 15px;
+      font-size: 0.98rem;
     }
     a:hover {
       color: $primary!important;
@@ -131,7 +131,7 @@ tbody tr td:first-child {
   }
   .media-body {
     h6 {
-      font-size: 15px;
+      font-size: 0.98rem;
       font-weight: 500;
     }
   }
@@ -140,16 +140,16 @@ tbody tr td:first-child {
 /* Notification Block */
 .notification-table {
   .table-header {
-    margin-bottom: 30px;
+    margin-bottom: 1.9rem;
   }
   .media {
     max-width: 70%;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
   .media-icon {
     color: $white;
-    font-size: 16px;
+    font-size: 1rem;
     &.cat-1 {
       background-color: $primary;
     }
@@ -165,7 +165,7 @@ tbody tr td:first-child {
   }
   .media-body {
     a {
-      font-size: 15px;
+      font-size: 0.98rem;
       color: $dark;
       display: inline-block;
       &:hover {
@@ -173,7 +173,7 @@ tbody tr td:first-child {
       }
     }
     p {
-      font-size: 13px;
+      font-size: .81rem;
     }
   }
 }
@@ -181,11 +181,11 @@ tbody tr td:first-child {
 /* Products Table */
 .products-table {
   .table-header {
-    padding-bottom: 15px;
+    padding-bottom: 0.94rem;
   }
   table tr td {
     vertical-align: middle;
-    padding-top: 30px;
+    padding-top: 1.9rem;
   }
   a.dropdown-toggle {
     &:after {
@@ -193,20 +193,20 @@ tbody tr td:first-child {
     }
   }
   .media {
-    margin-top: 35px;
+    margin-top: 2.19rem;
     @include media-breakpoint-up(xl) {
-      margin-top: 45px;
+      margin-top: 2.81rem;
     }
     @include media-breakpoint-up(xxl) {
-      margin-top: 35px;
+      margin-top: 2.19rem;
     }
     .media-body {
-      padding-right: 20px;
+      padding-right: 1.25rem;
       a {
         color: $dark;
         h6 {
-          font-size: 15px;
-          margin-bottom: 10px;
+          font-size: 0.98rem;
+          margin-bottom: .625rem;
           font-weight: 500;
           color: inherit;
         }
@@ -215,7 +215,7 @@ tbody tr td:first-child {
         color: $primary;
       }
       > p {
-        margin-bottom: 5px;
+        margin-bottom: .31rem;
         line-height: 1.5;
       }
     }

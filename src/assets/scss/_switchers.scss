@@ -26,7 +26,7 @@ input[type=radio] {
     position: relative;
     display: block;
     height: inherit;
-    font-size: 10px;
+    font-size: 0.625rem;
     font-weight: 600;
     text-transform: uppercase;
     background-color: #fff;
@@ -286,7 +286,7 @@ input[type=radio] {
     position: relative;
     display: block;
     height: inherit;
-    font-size: 10px;
+    font-size: 0.625rem;
     font-weight: 600;
     text-transform: uppercase;
     background-color: $white;
@@ -302,7 +302,7 @@ input[type=radio] {
     height: 24px;
     background: #fff;
     border: 1px solid #c2cfd6;
-    border-radius: 1px;
+    border-radius: .06rem;
     transition: left .3s ease-out;
   }
 }
@@ -312,7 +312,7 @@ input[type=radio] {
     position: absolute;
     top: 50%;
     width: 50%;
-    margin-top: -5px;
+    margin-top: -0.31rem;
     line-height: 1;
     font-size: 12px;
     font-weight: 400;
@@ -351,7 +351,7 @@ input[type=radio] {
     width: 50%;
     margin-top: -5px;
     line-height: 1;
-    font-size: 12px;
+    font-size: .75rem;
     font-weight: 400;
     font-family: $font-family-font-awesome;
     text-align: center;

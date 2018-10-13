@@ -1,7 +1,7 @@
 /*===== CHART =====*/
 .world-data-chart {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 1.88rem;
+  padding-right: 1.88rem;
   &.border-bottom {
     @include media-breakpoint-up(xl) {
       border-bottom: 0;
@@ -52,13 +52,13 @@
 /* Coutom Lenged*/
 .customLegend li {
   display: inline-block;
-  margin-right: 25px;
-  margin-top: 30px;
+  margin-right: 1.56rem;
+  margin-top: 1.88rem;
   span {
     display: inline-block;
     width: 12px;
     height: 12px;
-    margin-right: 5px;
-    border-radius: 25px;
+    margin-right: 0.312rem;
+    border-radius: 1.56rem;
   }
 }

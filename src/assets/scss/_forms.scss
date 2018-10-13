@@ -3,14 +3,14 @@
   box-shadow: none;
 }
 .form-group, .input-group {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   label {
     color: $dark;
-    font-size: 15px;
+    font-size: 0.98rem;
   }
   .form-control {
-    font-size: 15px;
-    padding: 8px 17px;
+    font-size: 0.98rem;
+    padding: .5rem 1.06rem;
     border-color: $border-color;
     ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
       color: $secondary;
@@ -26,22 +26,22 @@
     }
   }
   .form-control.input-lg {
-    font-size: 17px;
-    padding: 15px 17px;
+    font-size: 1.06rem;
+    padding: 0.9375rem 1.06rem;
   }
   .form-control.input-sm {
-    font-size: 13px;
-    padding: 6px 17px;
+    font-size: 0.8125rem;
+    padding: .38rem 1.06rem;
   }
 }
 .form-pill .form-group .form-control {
   border-radius: 100px;
 }
 .horizontal-form .form-check {
-  padding-left: 0px;
+  padding-left: 0;
   label {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 }
 
@@ -49,11 +49,11 @@
 .control {
   display: block;
   position: relative;
-  padding-left: 25px;
+  padding-left: 1.56rem;
   color: $dark;
-  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
 }
 .control input {
@@ -69,7 +69,7 @@
   width: 15px;
   background: #e1e2e5;
   border: 1px solid #ccc;
-  border-radius: 2px;
+  border-radius: 0.125rem;
 }
 .control-radio .control-indicator {
   border-radius: 50%;
@@ -227,7 +227,7 @@
 
 .custom-select {
   width: auto;
-  margin-left: 10px;
+  margin-left: .625rem;
 }
 /* Form components- input groups */
 .input-group > .input-group-prepend,
@@ -254,27 +254,27 @@
     }
 
     .control {
-      margin-bottom: 20px;
+      margin-bottom: 1.25rem;
     }
   }
   .form-check {
-    padding-left: 0px;
+    padding-left: 0;
     .form-check-label {
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
     .radio-custom-label:before,
     .checkbox-custom-label:before {
-      margin-right: 0px;
+      margin-right: 0;
       background: $white;
     }
     .radio-custom:checked + .radio-custom-label:before,
     .checkbox-custom:checked + .checkbox-custom-label:before {
       border: 1px solid #d4d5db;
-      line-height: 16px;
+      line-height: 1rem;
 
     }
     .radio-custom:checked + .radio-custom-label:before {
-      font-size: 8px;
+      font-size: 0.5rem;
 
     }
   }
@@ -300,7 +300,7 @@
 }
 .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
   color: #4c84ff;
-  padding-right: 5px;
-  margin-right: 5px;
+  padding-right: 0.31rem;
+  margin-right: 0.31rem;
   border-right: 1px solid #4c84ff;
 }

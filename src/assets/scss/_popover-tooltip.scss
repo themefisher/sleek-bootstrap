@@ -8,20 +8,20 @@
   border-bottom: 0px;
   padding-bottom: 0px;
   color: $dark;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 .popover-body {
   color: $secondary;
 }
 
-/* Tooltip Inner */ 
+/* Tooltip Inner */
 .tooltip-inner {
   background-color: $white;
   border: 1px solid #ebebeb;
-  padding: 9px 18px;
+  padding: 0.56rem 1.125rem;
   color: $dark;
   color: $dark;
-  font-size: 15px;
+  font-size: 0.98rem;
   font-weight: 500;
 }
 .bs-tooltip-auto[x-placement^=top] .arrow::before, .bs-tooltip-top .arrow::before {
@@ -76,7 +76,7 @@
 .jvectormap-tip {
   background-color: $white;
   color: $secondary;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 5px;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  border-radius: 0.31rem;
 }
