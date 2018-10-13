@@ -270,12 +270,10 @@
 
   }
   .nav li.has-sub.expand .collapse>.sub-menu {
-    // display: none!important;
     height: 0;
     li {
       visibility: hidden;
       opacity: 0;
-      // @include transition(opacity 0.3s ease-in-out);
     }
   }
   @include media-breakpoint-down(sm){
@@ -309,7 +307,6 @@
 
   .nav li.has-sub.expand .collapse>.sub-menu {
     @include transition(opacity 0.3s ease-in-out);
-    // display: block!important;
     height: min-content;
 
     li {
@@ -465,19 +462,6 @@
   }
 }
 
-
-// .sidebar-fixed.sidebar-minified-out {
-//   .layout-sidenav {
-//     @include transition(width 0.3s ease-in-out);
-//   }
-//   .layout-container {
-//     @include transition(padding-left 0.3s ease-in-out);
-//     .main-header {
-//       @include transition(padding-left 0.3s ease-in-out);
-//     }
-//   }
-
-// }
 
 /* Sidebar Fixed And Offcanvas */
 .sidebar-fixed-offcanvas,
