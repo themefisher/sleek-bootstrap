@@ -247,6 +247,9 @@
       }
     }
   }
+  .sidebar .sub-menu {
+    padding-bottom: 0;
+  }
   .nav>li>a>.caret,
   .nav>li>a>span {
     position: absolute;
@@ -267,10 +270,13 @@
 
   }
   .nav li.has-sub.expand .collapse>.sub-menu {
-    display: none!important;
-    visibility: hidden;
-    opacity: 0;
-    @include transition(opacity 0.3s ease-in-out);
+    // display: none!important;
+    height: 0;
+    li {
+      visibility: hidden;
+      opacity: 0;
+      // @include transition(opacity 0.3s ease-in-out);
+    }
   }
   @include media-breakpoint-down(sm){
     .nav li.has-sub.expand .collapse>.sub-menu {
@@ -303,9 +309,14 @@
 
   .nav li.has-sub.expand .collapse>.sub-menu {
     @include transition(opacity 0.3s ease-in-out);
-    display: block!important;
-    opacity: 1;
-    visibility: visible;
+    // display: block!important;
+    height: min-content;
+
+    li {
+      opacity: 1;
+      visibility: visible;
+      @include transition(opacity .3s ease-out .25s);
+    }
   }
 
   .nav>li>a>.caret,
@@ -329,6 +340,9 @@
         transition-delay: 0.3s;
       }
     }
+  }
+  .sidebar .sub-menu {
+    padding-bottom: 10px;
   }
   .sidebar-footer {
     @include media-breakpoint-up(md){
@@ -408,6 +422,30 @@
       transition: width 0.3s ease-in-out !important;
     }
   }
+  .sidebar {
+    .sub-menu {
+      padding-bottom: 10px;
+    }
+    .nav > li > a span {
+      transition: opacity 0.3s ease-in-out 0.3s;
+      visibility: visible;
+      opacity: 1;
+    }
+    li > a .caret {
+      transition: opacity 0.3s ease-in-out 0.3s;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  .nav li.has-sub.expand .collapse>.sub-menu {
+    height: min-content;
+
+    li {
+      opacity: 1;
+      visibility: visible;
+      @include transition(opacity .3s ease-out .25s);
+    }
+  }
 
   .sidebar-footer-content {
     visibility: visible;
@@ -415,20 +453,7 @@
     @include transition(opacity .3s ease-in-out .15s);
   }
 
-}
-.sidebar-minified-out .sidebar .nav > li > a span {
-  transition: opacity 0.3s ease-in-out 0.3s;
-  visibility: visible;
-  opacity: 1;
-}
-
-.sidebar-minified-out .sidebar li > a .caret {
-  transition: opacity 0.3s ease-in-out 0.3s;
-  visibility: visible;
-  opacity: 1;
-}
-
-.sidebar-fixed.sidebar-minified-out {
+  /* Sidebar Fixed With Sidebar Minified Out */
   .layout-sidenav {
     @include transition(width 0.3s ease-in-out);
   }
@@ -438,8 +463,21 @@
       @include transition(padding-left 0.3s ease-in-out);
     }
   }
-
 }
+
+
+// .sidebar-fixed.sidebar-minified-out {
+//   .layout-sidenav {
+//     @include transition(width 0.3s ease-in-out);
+//   }
+//   .layout-container {
+//     @include transition(padding-left 0.3s ease-in-out);
+//     .main-header {
+//       @include transition(padding-left 0.3s ease-in-out);
+//     }
+//   }
+
+// }
 
 /* Sidebar Fixed And Offcanvas */
 .sidebar-fixed-offcanvas,
