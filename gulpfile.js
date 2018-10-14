@@ -157,7 +157,7 @@ gulp.task('watch', gulp.series('html', 'scss', 'rtl', 'minifycss', 'js', 'img', 
 gulp.task('dist', gulp.series('clean', 'html', 'scss', 'rtl', 'minifycss', 'js', 'img', 'plugins', function() {
   return gulp.src( [assets, path.scss] )
     .pipe(plumber())
-    .pipe(gulp.dest( dist ))
+    .pipe(gulp.dest( dist + 'scss/' ))
 }));
 
 

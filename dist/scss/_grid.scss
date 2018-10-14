@@ -1,0 +1,85 @@
+
+/* Custom Container */
+#page-container {
+  position: relative;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* Content Wrapper */
+.layout-wrapper {
+  min-height: 100%;
+  background-color: $gray-100;
+  z-index: 800;
+  @include transition(margin-left 0.25s ease-in);
+  .content {
+    padding: 1.9rem 0.94rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0.94rem;
+    padding-right: 0.94rem;
+    @include media-breakpoint-up(lg) {
+      padding: 1.9rem 2.5rem;
+    }
+    @include media-breakpoint-up(xl) {
+      padding: 2.5rem 3.13rem;
+    }
+    @include media-breakpoint-up(xxl) {
+      padding: 5rem 6.25rem;
+    }
+  }
+}
+
+.main-wrapper {
+  position: relative;
+  z-index: 1030;
+  overflow-x: hidden;
+  @include media-breakpoint-up(md) {
+    overflow-x: auto;
+  }
+}
+
+.layout-wrapper {
+  overflow: hidden;
+}
+.layout-inner {
+  min-height: 100vh;
+}
+
+.layout-wrapper,
+.layout-inner {
+  display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    width: 100%;
+}
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.layout-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+

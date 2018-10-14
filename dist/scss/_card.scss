@@ -1,0 +1,250 @@
+/*===== CARD =====*/
+.card {
+  .card-header {
+    h4{
+      color: $black;
+      margin-bottom: 0.312rem;
+    }
+  }
+  .card-img-overlay {
+    z-index: 1;
+  }
+}
+.card-default {
+  border: 1px solid $border-color;
+  .card-header {
+    padding-left: 1.88rem;
+    padding-right: 1.88rem;
+    @include media-breakpoint-up(xxl) {
+      padding-left: 3.125rem;
+      padding-right: 3.125rem;
+    }
+    h4{
+      color: $dark;
+      margin-bottom: 0.312rem;
+    }
+  }
+  .card-body {
+    padding: 1.88rem 1.88rem;
+    @include media-breakpoint-up(xxl) {
+      padding: 3.125rem;
+    }
+    p {
+      line-height: 1.5;
+    }
+  }
+  .card-footer {
+    border-top: 1px solid $border-color;
+    padding-left: 1.88rem;
+    padding-right: 1.88rem;
+    @include media-breakpoint-up(xxl) {
+      padding-left: 3.125rem;
+      padding-right: 3.125rem;
+    }
+  }
+}
+
+/*Card mini*/
+.card-mini {
+  border: 1px solid $border-color;
+  .card-body {
+    padding: 1.63rem;
+    h3{
+      color: $dark;
+    }
+  }
+  .chartjs-wrapper {
+    height: 100px;
+  }
+  .card-footer {
+    border-top: 1px solid $border-color;
+  }
+}
+
+/* Card Icon Info*/
+.card-icon-info {
+  > i {
+    color: $primary;
+    font-size: 1.56rem;
+    display: inline-block;
+  }
+  > span {
+    font-size: 0.88rem;
+    display: inline-block;
+  }
+}
+
+/* Card table border none */
+.card-table-border-none {
+  .card-header {
+    padding-left: 1.88rem;
+    padding-right: 1.88rem;
+    @include media-breakpoint-up(xxl) {
+      padding-left: 3.125rem;
+      padding-right: 3.125rem;
+    }
+  }
+  .card-body {
+    padding: 1.9rem 1.88rem;
+    @include media-breakpoint-up(xxl) {
+      padding: 3.125rem 3.125rem;
+    }
+  }
+  .card-footer {
+    border-top: 1px solid $border-color;
+    padding-left: 1.88rem;
+    padding-right: 1.88rem;
+    @include media-breakpoint-up(xxl) {
+      padding-left: 3.125rem;
+      padding-right: 3.125rem;
+    }
+  }
+  tbody td,
+  thead th {
+    border: none;
+  }
+  tbody td {
+    padding: 0;
+    font-size: 0.98rem;
+    padding-top: 2.25rem;
+  }
+}
+
+/*===== ACCORDION CARD =====*/
+.accordion {
+  .card {
+    border: 0px;
+    margin-bottom: 0.94rem;
+  }
+  .card-header {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    .btn,
+    a {
+      display: block;
+      height: auto;
+      position: relative;
+      line-height: 1.5;
+      padding: 1.56rem;
+      width: 100%;
+      text-align: left;
+      color: $dark;
+      border-radius:calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+      white-space: unset;
+      @include transition(all 0.3s 0.2s ease-in);
+      &:after {
+        position: absolute;
+        color: $secondary;
+        font-size: 0.98rem;
+        right: 25px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    .btn[aria-expanded="false"],
+    a[aria-expanded="false"]{
+      &:after {
+        content: "\f067";
+        font-family: $font-family-font-awesome;
+        opacity: 0;
+      }
+    }
+    .btn[aria-expanded="true"],
+    a[aria-expanded="true"]{
+      box-shadow: 0px 0px 19px rgba(229, 230, 235, 0.6)!important;
+      color: $primary;
+      border-bottom: 1px solid $border-color;
+      &:after {
+        content: "\f068";
+        font-family: $font-family-font-awesome;
+        color: $primary;
+      }
+    }
+  }
+  .card-body {
+    box-shadow: 0px 7px 19px rgba(229, 230, 235, 0.6);
+  }
+}
+
+.accordion-style-two {
+  .card {
+    box-shadow: 0px 7px 19px rgba(229, 230, 235, 0.6);
+  }
+  .card-header {
+    .btn[aria-expanded="false"],
+    a[aria-expanded="false"]{
+      &:after {
+        opacity: 1;
+      }
+    }
+    .btn[aria-expanded="true"],
+    a[aria-expanded="true"]{
+      box-shadow: none!important;
+      &:after {
+        content: "\f068";
+        font-family: $font-family-font-awesome;
+        color: $primary;
+      }
+    }
+  }
+  .card-body {
+    box-shadow: none!important;
+  }
+}
+
+.accordion-bordered {
+  .card {
+    border: 1px solid $border-color !important;
+    border-radius: 0;
+  }
+  .card-header {
+    .btn[aria-expanded="false"],
+    a[aria-expanded="false"]{
+      &:after {
+        opacity: 1;
+      }
+    }
+    .btn[aria-expanded="true"],
+    a[aria-expanded="true"]{
+      box-shadow: none!important;
+    }
+  }
+  .card-body {
+    box-shadow: none!important;
+  }
+}
+.accordion-style-four {
+  .card-header {
+    border-bottom: 1px solid $border-color;
+    .btn,
+    a {
+      padding: 1.56rem 0;
+      border-bottom: none;
+      &:after {
+        right: 0;
+      }
+    }
+    .btn[aria-expanded="false"],
+    a[aria-expanded="false"]{
+      &:after {
+        opacity: 1;
+      }
+    }
+    .btn[aria-expanded="true"],
+    a[aria-expanded="true"]{
+      border-bottom: none;
+      box-shadow: none!important;
+      &:after {
+        content: "\f068";
+        font-family: $font-family-font-awesome;
+        color: $primary;
+      }
+    }
+  }
+  .card-body {
+    padding-left: 0;
+    padding-right: 0;
+    box-shadow: none!important;
+  }
+}

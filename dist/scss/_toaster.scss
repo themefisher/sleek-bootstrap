@@ -1,0 +1,15 @@
+/*===== Toaster  =====*/
+#toast-container{
+  margin-top: 65px;
+  z-index: 999;
+  .toast-success {
+    background-color: $primary;
+    opacity: 1;
+  }
+}
+#toast-container>div{
+  box-shadow: none;
+}
+#toast-container>div:hover{
+  box-shadow: none;
+}

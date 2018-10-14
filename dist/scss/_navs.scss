@@ -1,0 +1,77 @@
+/*===== NAVS =====*/
+.theme-menu {
+  list-style: none;
+  > li {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    > a {
+      font-family: $font-family-poppins;
+      padding: 0.94rem 0;
+      display: block;
+      position: relative;
+      color: $secondary;
+      font-weight: 500;
+      &:active, &:hover, &:focus {
+        color: $dark;
+      }
+      > .fa,
+      > .glyphicon,
+      > i {
+        width: 20px;
+        font-size: 1.25rem;
+      }
+    }
+    .badge {
+      border-radius: 3.12rem;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+  li.header {
+    padding: 0.625rem 1.56rem 0.625rem 0.94rem;
+    font-size: .75rem;
+  }
+  li > a > .fa-angle-right,
+  li > a > .pull-right-container > .fa-angle-right {
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin-top: 0.19rem;
+    @include transition(transform .5s ease);
+  }
+  li > a > .fa-angle-right {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+  }
+  .menu-open {
+    > a > .fa-angle-right,
+    > a > .pull-right-container > .fa-angle-right {
+      transform: rotate(90deg);
+    }
+  }
+
+  .treeview-menu {
+    li a {
+      background-color: transparent;
+      color: $secondary;
+      display: block;
+      padding: .75rem 1.9rem;
+      &:hover {
+        color: $dark;
+      }
+    }
+  }
+  .active > .treeview-menu {
+    display: block;
+  }
+}
+.theme-menu.inline-navs {
+  > li {
+    padding:  0 1.9rem;
+    &.menu-open {
+      background-color: $gray-100;
+    }
+  }
+}
