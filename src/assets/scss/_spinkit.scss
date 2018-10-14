@@ -5,7 +5,7 @@
   height: 40px;
   background-color: #333;
 
-  margin: 0px auto 50px;
+  margin: 0 auto 3.12rem;
   -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
   animation: sk-rotateplane 1.2s infinite ease-in-out;
 }
@@ -34,7 +34,7 @@
   width: 40px;
   height: 40px;
   position: relative;
-  margin: 0px auto 50px;
+  margin: 0 auto 3.12rem;
 }
 .double-bounce1, .double-bounce2 {
   width: 100%;
@@ -71,11 +71,11 @@
 }
 /* Wave */
 .sk-wave {
-  margin: 0px auto 50px;
+  margin: 0 auto 3.12rem;
   width: 50px;
   height: 40px;
   text-align: center;
-  font-size: 10px;
+  font-size:  0.625rem;
 }
 
 .sk-wave > div {
@@ -124,7 +124,7 @@
 }
 /* Wonderting Cube */
 .sk-wonder-cube {
-  margin: 0px auto 50px;
+  margin: 0 auto 3.12rem;
   width: 40px;
   height: 40px;
   position: relative;
@@ -176,7 +176,7 @@
 .sk-pulse {
   width: 60px;
   height: 60px;
-  margin: 0px auto 50px;
+  margin: 0 auto 3.12rem;
   background-color: #333;
 
   border-radius: 100%;
@@ -204,7 +204,7 @@
 }
 /* Chasing dots */
 .sk-chasing-dots {
-  margin: 0px auto 50px;
+  margin: 0 auto 3.12rem;
   width: 40px;
   height: 40px;
   position: relative;
@@ -254,7 +254,7 @@
 
 /* Three bounce */
 .sk-three-bounce {
-  margin: 0px auto 50px;
+  margin: 0 auto 3.12rem;
   width: 70px;
   height: 40px;
   text-align: center;
@@ -298,7 +298,7 @@
 
 /* Circle */
 .sk-circle {
-  margin: 0px auto 50px;
+  margin: 0 auto 3.12rem;
   width: 40px;
   height: 40px;
   position: relative;
@@ -423,7 +423,7 @@
 .sk-cube-grid {
   width: 40px;
   height: 40px;
-  margin: 0px auto 50px;
+  margin: 0 auto 3.12rem;
 }
 
 .sk-cube-grid .sk-cube {
@@ -484,7 +484,7 @@
 
 /* Fading Circle */
 .sk-fading-circle {
-  margin: 0px auto 50px;
+  margin: 0 auto 3.12rem;
   width: 40px;
   height: 40px;
   position: relative;
@@ -619,9 +619,9 @@
   40% { opacity: 1; }
 }
 
-/* Folding Cube */ 
+/* Folding Cube */
 .sk-folding-cube {
-  margin: 0px auto 50px;
+  margin: 0 auto 3.12rem;
   width: 40px;
   height: 40px;
   position: relative;

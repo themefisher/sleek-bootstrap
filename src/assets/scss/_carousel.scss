@@ -1,6 +1,6 @@
 /*===== CAROUSEL =====*/
 .carousel-indicators {
-  bottom: 0px;
+  bottom: 0;
   @include media-breakpoint-up(md) {
     bottom: -5px
   }

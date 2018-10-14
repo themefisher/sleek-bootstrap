@@ -15,7 +15,7 @@
     border: none;
     min-height: 75px;
     border-radius: 0;
-    padding: 0px;
+    padding: 0;
     border-bottom: 1px solid $border-color;
     @include transition(margin-left .3s ease-in-out);
     background-color: $white;
@@ -24,8 +24,8 @@
     background-color: transparent;
     background-image: none;
     color: $secondary;
-    font-size: 22px;
-    padding: 0px 23px;
+    font-size: 1.375rem;
+    padding: 0 1.44rem;
     border: 0px;
     height: 75px;
     cursor: pointer;
@@ -41,8 +41,8 @@
     background-color: transparent;
     background-image: none;
     color: $secondary;
-    font-size: 22px;
-    padding: 0px 23px;
+    font-size: 1.375rem;
+    padding: 0 1.44rem;
     border: 0px;
     height: 75px;
     cursor: pointer;
@@ -58,26 +58,26 @@
   /* Search Form */
   .search-form {
     margin-right: auto;
-    padding-left: 20px;
+    padding-left: 1.25rem;
     background: transparent;
     @include media-breakpoint-up(md) {
       padding-left: 0;
     }
     @include media-breakpoint-up(lg) {
-      padding-left: 20px;
+      padding-left: 1.25rem;
     }
 
     .input-group {
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
 
     .btn {
       background: transparent;
       border: none;
       color: $secondary;
-      font-size: 22px;
-      padding: 5px;
-      padding-top: 2px;
+      font-size: 1.375rem;
+      padding: 0.31rem;
+      padding-top: 0.125rem;
       &:active, &:focus {
         outline: none;
         box-shadow: none;
@@ -86,7 +86,7 @@
     input.form-control {
       border: none;
       background: transparent;
-      padding: 8px 15px;
+      padding: .5rem 0.94rem;
       @include media-breakpoint-up(xxl) {
         min-width: 500px;
       }
@@ -97,7 +97,7 @@
   }
   .navbar-custom-menu {
     @include media-breakpoint-up(lg) {
-      padding-right: 30px;
+      padding-right: 1.89rem;
     }
     .navbar-nav {
       flex-direction: row;
@@ -108,25 +108,25 @@
             position: relative;
             border-left: 1px solid $border-color;
             border-right: 1px solid $border-color;
-            padding-left: 20px;
-            padding-right: 10px;
-            font-size: 26px;
+            padding-left: 1.25rem;
+            padding-right: 0.625rem;
+            font-size: 1.625rem;
             height: 75px;
             color: #b7c0cd;
             display: inline-block;
             line-height: 75px;
             @include media-breakpoint-up(md) {
-              padding-left: 16px;
-              padding-right: 5px;
+              padding-left: 1rem;
+              padding-right: 0.94rem;
             }
             @include media-breakpoint-up(lg) {
-              padding-left: 20px;
-              padding-right: 10px;
+              padding-left: 1.25rem;
+              padding-right: 0.625rem;
             }
             &:after {
               border: 3px solid $primary;
               content: '';
-              margin: 0px;
+              margin: 0;
               position: relative;
               width: 11px;
               height: 11px;
@@ -149,19 +149,19 @@
           position: relative;
           .user-image {
             width: 40px;
-            border-radius: 4px;
+            border-radius: .25rem;
           }
           > .dropdown-toggle {
-            margin: 0 15px;
-            font-size: 15px;
+            margin: 0 0.94rem;
+            font-size: 0.98rem;
             height: 75px;
-            padding: 0px 0px;
+            padding: 0 0;
             display: inline-block;
             line-height: 75px;
             > span {
               color: $dark;
-              padding: 0 8px;
-              font-size: 16px;
+              padding: 0 .5rem;
+              font-size: 1rem;
               font-weight: 500;
             }
           }
@@ -191,25 +191,25 @@
     }
 
     > li:first-child {
-      border-top-left-radius: 4px;
-      border-top-right-radius: 4px;
+      border-top-left-radius: .25rem;
+      border-top-right-radius: .25rem;
       border-bottom-right-radius: 0;
       border-bottom-left-radius: 0;
       background-color: $white;
       border-bottom: 1px solid $border-color;
-      padding-bottom: 15px;
-      padding: 20px 20px 10px;
+      padding-bottom: 0.94rem;
+      padding: 1.25rem 1.25rem 0.63rem;
       color: #1b223c;
-      font-size: 16px;
-      margin-bottom: 10px;
+      font-size: 1rem;
+      margin-bottom: 0.63rem;
       img {
         width: 50px;
         vertical-align: top;
-        border-radius: 4px;
-        margin-right: 10px;
+        border-radius: .25rem;
+        margin-right: 0.63rem;
       }
       small {
-        font-size: 13px;
+        font-size: 0.81rem;
         display: block;
         color: $secondary;
       }
@@ -217,8 +217,8 @@
     > li a {
       display: block;
       color: $secondary;
-      font-size: 14px;
-      padding: 10px 20px;
+      font-size: 0.88rem;
+      padding: 0.625rem 1.25rem;
 
       &:hover {
         background-color: #f5f6fa;
@@ -228,20 +228,20 @@
         width: 18px;
         display: inline-block;
         text-align: center;
-        margin-right: 10px;
+        margin-right: 0.625rem;
       }
     }
 
     li.dropdown-footer {
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px;
+      border-bottom-left-radius: .25rem;
+      border-bottom-right-radius: .25rem;
       border-top-right-radius: 0;
       border-top-left-radius: 0;
       background-color: $white;
       border-top: 1px solid $border-color;
-      margin-top: 10px;
+      margin-top: 0.625rem;
       > a {
-        padding: 15px 20px;
+        padding: 0.94rem 1.25rem;
       }
     }
   }

@@ -3,15 +3,15 @@
   .ranges {
     ul {
       @include media-breakpoint-up(lg) {
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
         width: auto;
         min-width: 10rem;
       }
     }
     li {
-      padding: 10px 30px;
-      font-size: 14px;
+      padding: 0.625rem 1.9rem;
+      font-size: 0.875rem;
     }
     li.active {
       background-color: $primary;
@@ -22,7 +22,7 @@
     display: none;
   }
   .drp-buttons .btn {
-    padding: 0 20px;
+    padding: 0 1.25rem;
   }
   td.in-range {
     background-color: rgba($primary, .1);

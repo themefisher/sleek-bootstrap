@@ -13,19 +13,19 @@
   z-index: 800;
   @include transition(margin-left 0.25s ease-in);
   .content {
-    padding: 30px 15px;
+    padding: 1.9rem 0.94rem;
     margin-right: auto;
     margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 0.94rem;
+    padding-right: 0.94rem;
     @include media-breakpoint-up(lg) {
-      padding: 30px 40px;
+      padding: 1.9rem 2.5rem;
     }
     @include media-breakpoint-up(xl) {
-      padding: 40px 50px;
+      padding: 2.5rem 3.13rem;
     }
     @include media-breakpoint-up(xxl) {
-      padding: 80px 100px;
+      padding: 5rem 6.25rem;
     }
   }
 }

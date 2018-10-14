@@ -1,18 +1,18 @@
 /*===== ERROR =====*/
 .error-wrapper {
-  padding-top: 75px;
-  padding-bottom: 75px;
+  padding-top: 4.69rem;
+  padding-bottom: 4.69rem;
   @include media-breakpoint-up(lg) {
-    padding-top: 175px;
-    padding-bottom: 175px;
+    padding-top: 10.94rem;
+    padding-bottom: 10.94rem;
   }
   .error-title {
-    font-size: 140px;
-  }
-  .error-subtitle {
-    font-size: 26px;
-  }
-  .img-responsive {
-    max-width: 100%;
+    font-size: 8.75rem;
+    .error-subtitle {
+      font-size: 1.625rem;
+    }
+    .img-responsive {
+      max-width: 100%;
+    }
   }
 }

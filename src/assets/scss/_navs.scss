@@ -7,7 +7,7 @@
     padding: 0;
     > a {
       font-family: $font-family-poppins;
-      padding: 15px 0px;
+      padding: 0.94rem 0;
       display: block;
       position: relative;
       color: $secondary;
@@ -19,25 +19,25 @@
       > .glyphicon,
       > i {
         width: 20px;
-        font-size: 20px;
+        font-size: 1.25rem;
       }
     }
     .badge {
-      border-radius: 50px;
+      border-radius: 3.12rem;
       text-align: center;
       text-transform: uppercase;
     }
   }
   li.header {
-    padding: 10px 25px 10px 15px;
-    font-size: 12px;
+    padding: 0.625rem 1.56rem 0.625rem 0.94rem;
+    font-size: .75rem;
   }
   li > a > .fa-angle-right,
   li > a > .pull-right-container > .fa-angle-right {
     width: auto;
     height: auto;
     padding: 0;
-    margin-top: 3px;
+    margin-top: 0.19rem;
     @include transition(transform .5s ease);
   }
   li > a > .fa-angle-right {
@@ -57,7 +57,7 @@
       background-color: transparent;
       color: $secondary;
       display: block;
-      padding: 12px 30px;
+      padding: .75rem 1.9rem;
       &:hover {
         color: $dark;
       }
@@ -69,7 +69,7 @@
 }
 .theme-menu.inline-navs {
   > li {
-    padding:  0 30px;
+    padding:  0 1.9rem;
     &.menu-open {
       background-color: $gray-100;
     }

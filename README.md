@@ -1,6 +1,6 @@
 <div align="center">
 
-# <a href="http://themes.iamabdus.com/sleek/1.0/index.html" target="_blank" rel="noopener noreferrer">Sleek Admin</a> [![Twitter](https://img.shields.io/twitter/url/https/github.com/tafcoder/sleek-dashboard.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Ftafcoder%2Fsleek-dashboard)
+# <a href="http://themes.iamabdus.com/sleek/1.0/index.html" target="_blank" rel="noopener noreferrer">Sleek Dashboard</a> [![Twitter](https://img.shields.io/twitter/url/https/github.com/tafcoder/sleek-dashboard.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Ftafcoder%2Fsleek-dashboard)
 
 </div>
 

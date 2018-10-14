@@ -9,81 +9,81 @@ $grid-breakpoints: (
 );
 
 // Colors
-$primary: #4c84ff;
-$dark: #1b223c;
-$secondary: #8a909d;
-$gray-100: #f5f6fa;
-$border-color: #e5e9f2;
-$navy: #212a39;
-$pink: #ff548e;
-$success: #29cc97;
-$info: #13cae1;
-$warning: #fec400;
-$danger: #fe5461;
-$inverse: #070707;
-$purple: #896def;
-$white: #fff;
-$logo-fill-blue: #7DBCFF;
+$primary:       #4c84ff !default;
+$dark:          #1b223c !default;
+$secondary:     #8a909d !default;
+$gray-100:      #f5f6fa !default;
+$border-color:  #e5e9f2 !default;
+$navy:          #212a39 !default;
+$pink:          #ff548e !default;
+$success:       #29cc97 !default;
+$info:          #13cae1 !default;
+$warning:       #fec400 !default;
+$danger:        #fe5461 !default;
+$inverse:       #070707 !default;
+$purple:        #896def !default;
+$white:         #ffffff !default;
+$logo-fill-blue:#7DBCFF !default;
 
 // Body colors
 
-$body-color:  $secondary;
+$body-color:    $secondary !default;
 
 //Border radius
 
-$border-radius: .25rem;
+$border-radius: .25rem !default;
 
 // Fonts:           ;
 
-$font-family-sans-roboto: 'Roboto', sans-serif;
-$font-family-montserrat: 'Montserrat', sans-serif;
-$font-family-poppins: 'Poppins', sans-serif;
-$font-family-font-awesome: 'FontAwesome';
-$font-family-font-fontello: 'fontello';
-$font-family-base: $font-family-sans-roboto;
-$font-size-base: .875rem;
-$font-weight-medium: 500;
+$font-family-sans-roboto:       'Roboto', sans-serif !default;
+$font-family-montserrat:        'Montserrat', sans-serif !default;
+$font-family-poppins:           'Poppins', sans-serif !default;
+$font-family-font-awesome:      'FontAwesome' !default;
+$font-family-font-fontello:     'fontello' !default;
+$font-family-base:              $font-family-sans-roboto !default;
+$font-size-base:                .875rem !default;
+$font-weight-medium:            500 !default;
 
 //Heading
 
-$headings-margin-bottom: 0;
-$h1-font-size: $font-size-base * 2.86;
-$h2-font-size: $font-size-base * 2.285;
-$h3-font-size: $font-size-base * 1.71;
-$h4-font-size: $font-size-base * 1.43;
-$h5-font-size: $font-size-base * 1.285;
-$h6-font-size: $font-size-base * 1.07;
+$headings-margin-bottom:        0 !default;
+$h1-font-size:                  $font-size-base * 2.86 !default;
+$h2-font-size:                  $font-size-base * 2.285 !default;
+$h3-font-size:                  $font-size-base * 1.71 !default;
+$h4-font-size:                  $font-size-base * 1.43 !default;
+$h5-font-size:                  $font-size-base * 1.285 !default;
+$h6-font-size:                  $font-size-base * 1.07 !default;
 
 // Alerts
 
-$alert-padding-y: 1.25rem;
-$alert-padding-x: 1.25rem;
-$alert-border-level: -6;
+$alert-padding-y:               1.25rem !default;
+$alert-padding-x:               1.25rem !default;
+$alert-border-level:            -6 !default;
 
 // Badges
 
-$badge-padding-y: .5em;
-$badge-padding-x: 1em;
-$badge-border-radius: $border-radius / 2;
-$badge-font-weight: $font-weight-medium;
+$badge-padding-y:               .5em !default;
+$badge-padding-x:               1em !default;
+$badge-border-radius:           $border-radius / 2 !default;
+$badge-font-weight:             $font-weight-medium !default;
 
 // Breadcrumbs
 
-$breadcrumb-padding-y: 1rem ;
-$breadcrumb-padding-x: 1.25rem;
-$breadcrumb-bg: $white;
+$breadcrumb-padding-y:          1rem  !default;
+$breadcrumb-padding-x:          1.25rem !default;
+$breadcrumb-bg:                 $white !default;
 
 // Inputs
-$input-btn-padding-y: .59rem;
-$input-btn-padding-x: 1rem;
+$input-btn-padding-y:         .59rem !default;
+$input-btn-padding-x:         1rem !default;
 
 // Buttons
 
-$btn-font-weight: $font-weight-medium;
-$btn-padding-y: $input-btn-padding-y;
-$btn-padding-x: $input-btn-padding-x;
+$btn-font-weight:             $font-weight-medium !default;
+$btn-padding-y:               $input-btn-padding-y !default;
+$btn-padding-x:               $input-btn-padding-x !default;
 
 // Pagination
 
-$pagination-padding-y: 1rem !default;
-$pagination-padding-x: 1.25rem !default;
+$pagination-padding-y:        1rem !default;
+$pagination-padding-x:        1.25rem !default;

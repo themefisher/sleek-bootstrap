@@ -1,13 +1,12 @@
 pre {
-//   border: 1px solid $primary;
   border-left: 4px solid $primary;
-  padding: 20px 15px;
+  padding: 1.25rem 0.94rem;
   background: rgba(0,0,0,.05);
-  border-radius: 3px;
+  border-radius: 0.19rem;
 
   code{
       background: transparent;
-      font-size: 16px;
+      font-size: 1rem;
       color: $dark;
   }
 
@@ -16,9 +15,9 @@ pre {
 
 code{
     font-family: Menlo,Monaco,"Courier New",Courier,monospace;
-    font-size: 16px;
+    font-size: 1rem;
     background: rgba(0,0,0,.05);
-    padding: 3px 10px;
-    margin: 0 2px;
+    padding: 0.19rem 0.625rem;
+    margin: 0 0.125rem;
     color: $dark;
 }

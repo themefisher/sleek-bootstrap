@@ -3,7 +3,7 @@
   .nav-link {
     color: $dark;
     font-weight: 500;
-    padding: 12px 20px;
+    padding: .75rem 1.25rem;
   }
   .nav-link.active {
     color: $primary;
@@ -18,7 +18,7 @@
 .nav-pills .nav-item {
   .nav-link {
     color: $dark;
-    padding: 12px 20px;
+    padding: .75rem 1.25rem;
   }
   .nav-link.active {
     color: $white;
@@ -38,12 +38,12 @@
 /* Custom Tab Style - Fill */
 .nav-style-fill.nav-pills {
   border: 2px solid $border-color;
-  border-radius: 6px;
+  border-radius: .38rem;
   overflow: hidden;
   .nav-link {
-    border-radius: 0px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    border-radius: 0;
+    padding-top: .94rem;
+    padding-bottom: .94rem;
   }
   .nav-link.active,
   .show>.nav-link {
@@ -53,31 +53,31 @@
 }
 
 .nav-tabs.nav-style-border {
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 10px;
+  padding-left: 1.9rem;
+  padding-right: 1.9rem;
+  padding-bottom: .625rem;
   @include media-breakpoint-up(md) {
     padding-bottom: 0;
   }
   @include media-breakpoint-up(xxl) {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 3.12rem;
+    padding-right: 3.12rem;
   }
   .nav-item {
-    margin-right: 15px;
+    margin-right: .94rem;
     @include media-breakpoint-up(md) {
-      margin-right: 35px;
+      margin-right: 2.19rem;
     }
     @include media-breakpoint-up(xl) {
-      margin-right: 50px;
-      margin-bottom: 0px;
+      margin-right: 3.12rem;
+      margin-bottom: 0;
     }
     @include media-breakpoint-up(xxl) {
-      margin-right: 80px;
+      margin-right: 5rem;
     }
 
     .nav-link {
-      padding: 0 0 20px 0;
+      padding: 0 0 1.25rem 0;
       color: $secondary;
       position: relative;
       .type-name {
@@ -113,7 +113,7 @@
   }
   .nav-item:first-child {
     @include media-breakpoint-up(md) {
-      margin-bottom: 15px;
+      margin-bottom: 0.94rem;
     }
     @include media-breakpoint-up(lg) {
       margin-bottom: 0;
@@ -141,12 +141,12 @@
     float: none !important;
     display: block !important;
     .nav-link {
-      padding: 12px 15px;
+      padding: 0.75rem .94rem;
       margin-right: 0px;
       border-right: 0px;
       border-color: $border-color;
       i {
-        padding-right: 10px;
+        padding-right: 0.625rem;
       }
       border: 0px;
       margin-right: -1px;
@@ -154,9 +154,9 @@
         border: 1px solid $border-color;
         @include media-breakpoint-up(md) {
           border-right: 0px;
-          border-radius: 0px;
-          border-top-left-radius: 6px;
-          border-bottom-left-radius: 6px;
+          border-radius: 0;
+          border-top-left-radius: 0.38rem;
+          border-bottom-left-radius: 0.38rem;
           &:before {
             top: 0;
             width: 2px;
