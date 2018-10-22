@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: column;
   transform: translateX(-250px);
-  height: 100%;
+  // height: 100%;
   @include media-breakpoint-up(md){
     transform: translateX(0);
     width: 250px;
@@ -729,4 +729,183 @@
 }
 .logo-fill-white {
   fill: $white;
+}
+
+/* Right Sidebar Toogler Add */
+.right-sidebar-toggoler-add {
+  .right-sidebar {
+    right: 0;
+    transition: right .3s ease-in-out;
+    .btn-right-sidebar-toggler {
+      right: 60px;
+      transition: right .3s ease-in-out;
+    }
+  }
+}
+
+.right-sidebar-toggoler-close {
+  .right-sidebar {
+    transition: right .3s ease-in-out;
+    .btn-right-sidebar-toggler {
+      transition: right .3s ease-in-out;
+    }
+  }
+}
+
+/* Right Sidebar */
+.right-sidebar {
+  width: 60px;
+  min-height: 100vh;
+  position: fixed;
+  right: -60px;
+  top: 0;
+  transition: right .3s ease-in-out;
+  @include media-breakpoint-up(xl) {
+    right: 0;
+    transition: right .3s ease-in-out;
+  }
+  .btn-right-sidebar-toggler {
+    position: fixed;
+    top: 135px;
+    right: 0;
+    background-color: $white;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    width: 35px;
+    height: 30px;
+    border: 1px solid rgba($border-color, 1);
+    i {
+      line-height: 30px;
+      margin-left: 5px;
+    }
+    @include media-breakpoint-up(xl) {
+      display: none;
+    }
+  }
+
+  /* From Group Label */
+  .form-group label {
+    line-height: 1.3;
+  }
+
+}
+
+
+/* Nav Right Sidebar */
+.nav-right-sidebar {
+  flex-direction: column;
+  position: relative;
+
+  .nav-item {
+    margin: auto;
+    margin-bottom: 0.75rem;
+  }
+  .nav-link {
+    &:focus {
+      background-color: rgba($secondary, .1);
+    }
+  }
+}
+
+/* Nav Container */
+.nav-right-container {
+  position: relative;
+  z-index: 100;
+  background-color: $white;
+  min-height: 100vh;
+  border-left: 1px solid rgba($border-color, 1);
+  .nav-right-sidebar {
+    padding-top: 120px;
+  }
+}
+
+/* Right Sidebar Tab Content */ 
+.right-sidebar-tab-content {
+  position: fixed;
+  top: 76px;
+  right: 60px;
+  width: 315px;
+  min-height: 100%;
+  background-color: $white;
+  border-left: 1px solid $border-color;
+  .tab-content {
+    position: relative;
+    z-index: 10;
+  }
+
+}
+
+/* Right Sidebar Content Close */ 
+.right-sidebar-content-close {
+  .content {
+    @include media-breakpoint-up(xl) {
+      margin-right: 60px;
+      transition: margin-right .3s ease-in-out;
+    }    
+  }
+  .right-sidebar-tab-content {
+    right: -315px;
+    transition: right .3s ease-in-out;
+  }
+}
+
+
+.right-sidebar-content-add {
+  .content {
+    @include media-breakpoint-up(xl) {
+      margin-right: 375px;
+      transition: margin-right .3s ease-in-out;
+    }
+    
+  }
+  .right-sidebar-tab-content {
+    right: 60px;
+    transition: right .3s ease-in-out;
+  }
+
+}
+
+
+/* Nav Icon Small */
+.icon-sm {
+  width: 45px;
+  height: 45px;
+  line-height: 60px;
+  border-radius: 50%;
+  padding: 0;
+  text-align: center;
+}
+
+
+/* Card Right Sidebar */ 
+.card-right-sidebar {
+  border: none;
+  .card-header {
+    background-color: transparent;
+    padding: 1rem;
+    color: $dark;
+    .close {
+      width: 30px;
+      height: 30px;
+      line-height: 1;
+      border-radius: 50%;
+      margin-top: -5px;
+      &:hover {
+        background-color: rgba($secondary, .1);
+      }
+    }
+    .card-title {
+      margin-bottom: 0;
+      font-size: 0.94rem;
+    }
+  }  
+}
+
+
+/* Dark Version  */ 
+.right-sidebar-dark {
+  .nav-right-container {
+    background-color: $navy;
+    border-left: 1px solid rgba($white, 0.2);
+  }      
 }

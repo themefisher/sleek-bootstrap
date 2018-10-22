@@ -5,43 +5,44 @@
   height: 100%;
   overflow-x: hidden;
 }
+#body {
+  position: relative;
+  height: 100%;
+  overflow-x: hidden;
+}
 
 /* Content Wrapper */
 .layout-wrapper {
   min-height: 100%;
   background-color: $gray-100;
   z-index: 800;
-  @include transition(margin-left 0.25s ease-in);
-  .content {
-    padding: 1.9rem 0.94rem;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 0.94rem;
-    padding-right: 0.94rem;
-    @include media-breakpoint-up(lg) {
-      padding: 1.9rem 2.5rem;
-    }
-    @include media-breakpoint-up(xl) {
-      padding: 2.5rem 3.13rem;
-    }
-    @include media-breakpoint-up(xxl) {
-      padding: 5rem 6.25rem;
-    }
-  }
-}
-
-.main-wrapper {
-  position: relative;
-  z-index: 1030;
-  overflow-x: hidden;
-  @include media-breakpoint-up(md) {
-    overflow-x: auto;
-  }
-}
-
-.layout-wrapper {
   overflow: hidden;
+  @include transition(margin-left 0.25s ease-in);
+  
 }
+
+.content {
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 1.9rem;
+  padding-bottom: 1.9rem;
+  padding-left: 0.94rem;
+  padding-right: 0.94rem;
+  width: 100%;
+  
+  @include media-breakpoint-up(lg) {
+    padding: 1.9rem 2.5rem;
+  }
+  @include media-breakpoint-up(xl) {
+    margin-right: 60px;
+    padding: 2.5rem 3.13rem;
+  }
+  @include media-breakpoint-up(xxl) {
+    padding: 5rem 6.25rem;
+  }
+}
+
+
 .layout-inner {
   min-height: 100vh;
 }
