@@ -2,40 +2,43 @@
 @@include('sidebar-with-footer.htm', { "parent": "dashboard", "sub_parent": " ", "active": "analytics" })
 
 		<!-- ====================================
-		——— LAYOUT CONTAINER
-		===================================== -->
-		<div class="page-wrapper">
+		——— PAGE WRAPPER 
+		===================================== -->	
+			<div class="page-wrapper">
 			@@include('top-bar.htm')
-				<div class="content-wrapper">
-						<div class="content">
-							<div class="row">
-								<div class="col-md-12">
-									@@include('activity-graph.htm')
-								</div>
-							</div>
-
-							<div class="row">
-								<div class="col-xl-6 col-12">
-									@@include('user-acquisition.htm')
-								</div>
-								<div class="col-xl-6 col-12">
-									@@include('analytics-country.htm')
-								</div>
-							</div>
-
-							<div class="row">
-								<div class=" col-xl-4 ">
-									@@include('analytics-device.htm')
-								</div>
-								<div class=" col-xl-4 ">
-									@@include('page-view.htm')
-								</div>
-								<div class=" col-xl-4 ">
-									@@include('notification.htm')
-								</div>
-							</div>
-
+			<!-- ====================================
+			——— CONTENT WRAPPER 
+			===================================== -->
+			<div class="content-wrapper">
+				<div class="content">
+					<div class="row">
+						<div class="col-md-12">
+							@@include('activity-graph.htm')
 						</div>
-						@@include('right-sidebar.htm')
+					</div>
 
-		@@include('footer.htm')
+					<div class="row">
+						<div class="col-xl-6 col-12">
+							@@include('user-acquisition.htm')
+						</div>
+						<div class="col-xl-6 col-12">
+							@@include('analytics-country.htm')
+						</div>
+					</div>
+
+					<div class="row">
+						<div class=" col-xl-4 ">
+							@@include('analytics-device.htm')
+						</div>
+						<div class=" col-xl-4 ">
+							@@include('page-view.htm')
+						</div>
+						<div class=" col-xl-4 ">
+							@@include('notification.htm')
+						</div>
+					</div>
+
+				</div>
+				@@include('right-sidebar.htm')
+
+@@include('footer.htm')

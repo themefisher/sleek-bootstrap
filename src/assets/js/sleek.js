@@ -193,16 +193,18 @@ $(document).ready(function() {
   var navRightSidebarLink = $('.nav-right-sidebar .nav-link');
 
   navRightSidebarLink.on('click', function () {
-    if (body.hasClass('right-sidebar-content-close')) {
-      body.addClass('right-sidebar-content-add').removeClass('right-sidebar-content-close');
-    } else if ($(this).hasClass('show')) {
-      body.removeClass('right-sidebar-content-add').addClass('right-sidebar-content-close');
+    
+    if(!body.hasClass('right-sidebar-in')){
+      body.addClass('right-sidebar-in').removeClass('right-sidebar-out');
+      
+    } else if ($(this).hasClass('show')){
+      body.addClass('right-sidebar-out').removeClass('right-sidebar-in');      
     }
   });
 
   /* Remove Right Sidebar With Card */
   var cardClosebutton = $('.card-right-sidebar .close');
   cardClosebutton.on('click', function () {
-    body.removeClass('right-sidebar-content-add').addClass('right-sidebar-content-close');
+    body.removeClass('right-sidebar-in').addClass('right-sidebar-out');
   })
 });

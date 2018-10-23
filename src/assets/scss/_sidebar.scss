@@ -808,7 +808,7 @@
 }
 
 /* Nav Container */
-.nav-right-container {
+.right-nav-container {
   position: relative;
   z-index: 100;
   background-color: $white;
@@ -820,10 +820,10 @@
 }
 
 /* Right Sidebar Tab Content */ 
-.right-sidebar-tab-content {
+.right-sidebar-tab {
   position: fixed;
   top: 76px;
-  right: 60px;
+  right: -375px;
   width: 315px;
   min-height: 100%;
   background-color: $white;
@@ -836,21 +836,21 @@
 }
 
 /* Right Sidebar Content Close */ 
-.right-sidebar-content-close {
+.right-sidebar-out {
   .content-wrapper {
     @include media-breakpoint-up(xl) {
       margin-right: 60px;
       transition: margin-right .3s ease-in-out;
     }    
   }
-  .right-sidebar-tab-content {
+  .right-sidebar-tab {
     right: -315px;
     transition: right .3s ease-in-out;
   }
 }
 
 
-.right-sidebar-content-add {
+.right-sidebar-in {
   .content-wrapper {
     @include media-breakpoint-up(xl) {
       margin-right: 375px;
@@ -858,7 +858,7 @@
     }
     
   }
-  .right-sidebar-tab-content {
+  .right-sidebar-tab {
     right: 60px;
     transition: right .3s ease-in-out;
   }
@@ -904,7 +904,7 @@
 
 /* Dark Version  */ 
 .right-sidebar-dark {
-  .nav-right-container {
+  .right-nav-container {
     background-color: $navy;
     border-left: 1px solid rgba($white, 0.2);
   }      
