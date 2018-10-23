@@ -43,12 +43,12 @@
 }
 
 
-.layout-inner {
+.wrapper {
   min-height: 100vh;
 }
 
 .layout-wrapper,
-.layout-inner {
+.wrapper {
   display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -60,7 +60,7 @@
     flex: 1 1 auto;
     width: 100%;
 }
-.layout-container {
+.page-wrapper {
   display: flex;
   flex-direction: column;
   width: 100%;
