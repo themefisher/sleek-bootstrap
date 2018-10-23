@@ -2,13 +2,12 @@
 @@include('sidebar-with-footer.htm', { "parent": "ui-elements", "sub_parent": "components", "active": "alert" })
 
 		<!-- ====================================
-		——— LAYOUT CONTAINER
-		===================================== -->
-		<div class="layout-container">
+		——— PAGE WRAPPER 
+		===================================== -->	
+		<div class="page-wrapper">
 			@@include('top-bar.htm')
-				<div class="layout-content">
-					<div class="flex-grow-1">
-						@@include('breadcrumb.htm', { "parent": "UI Elements", "active": "Alerts" })
+			<div class="content-wrapper">
+					@@include('breadcrumb.htm', { "parent": "UI Elements", "active": "Alerts" })
 						<div class="content">
 							<div class="card card-default mb-4 mt-3 mt-md-0 bg-white pt-5">
 								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0">
@@ -297,9 +296,7 @@
 									</div>
 								</div>
 							</div>
-
-
-
 						</div>
+						@@include('right-sidebar.htm')
 
 @@include('footer.htm')

@@ -1,60 +1,64 @@
 @@include('header.htm', {	"title": "Sleek - Admin Dashboard Template",	"className": "header-fixed sidebar-fixed sidebar-dark header-light" })
 @@include('sidebar-with-footer.htm', {"parent": "dashboard",	"sub_parent": " ",	"active": "home" })
 		<!-- ====================================
-		——— LAYOUT CONTAINER
+		——— PAGE WRAPPER 
 		===================================== -->
-		<div class="layout-container">
+		<div class="page-wrapper">
 			@@include('top-bar.htm')
-				<div class="layout-content">
-					<div class="flex-grow-1">
-						<div class="content">
+
+			<!-- ====================================
+			——— CONTENT WRAPPER 
+			===================================== -->
+			<div class="content-wrapper">
+				<div class="content">
 					@@include('top-stats.htm')
-
-					<div class="row">
-						<div class="col-xl-8 col-md-12">
-							@@include('sales-graph.htm')
-						</div>
-						<div class="col-xl-4 col-md-12">
-							@@include('revenue-donut-chart.htm')
-						</div>
+				
+				<div class="row">
+					<div class="col-xl-8 col-md-12">
+						@@include('sales-graph.htm')
 					</div>
-
-					<div class="row">
-						<div class="col-xl-4 col-lg-6 col-12">
-							@@include('sales-overview-graph.htm')
-						</div>
-						<div class="col-xl-4 col-lg-6 col-12">
-							@@include('top-sold-table.htm')
-						</div>
-						<div class="col-xl-4 col-12">
-							@@include('notification.htm')
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="col-12">
-							@@include('recent-order-table.htm')
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="col-xl-6">
-							@@include('to-do-list.htm')
-						</div>
-						<div class="col-xl-6">
-							@@include('area-chart.htm')
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="col-xl-5">
-							@@include('new-customers.htm')
-						</div>
-						<div class="col-xl-7">
-							@@include('top-products.htm')
-						</div>
+					<div class="col-xl-4 col-md-12">
+						@@include('revenue-donut-chart.htm')
 					</div>
 				</div>
+				
+				<div class="row">
+					<div class="col-xl-4 col-lg-6 col-12">
+						@@include('sales-overview-graph.htm')
+					</div>
+					<div class="col-xl-4 col-lg-6 col-12">
+						@@include('top-sold-table.htm')
+					</div>
+					<div class="col-xl-4 col-12">
+						@@include('notification.htm')
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-12">
+						@@include('recent-order-table.htm')
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-xl-6">
+						@@include('to-do-list.htm')
+					</div>
+					<div class="col-xl-6">
+						@@include('area-chart.htm')
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-xl-5">
+						@@include('new-customers.htm')
+					</div>
+					<div class="col-xl-7">
+						@@include('top-products.htm')
+					</div>
+				</div>
+			</div>
 
+		@@include('right-sidebar.htm')
 
-			@@include('footer.htm')
+		@@include('footer.htm')

@@ -1,13 +1,12 @@
 @@include('header.htm', { "title": "Sleek - Admin Dashboard Template", "className": "header-fixed sidebar-fixed sidebar-dark header-light" })
 @@include('sidebar-with-footer.htm', { "parent": "ui-elements", "sub_parent": "components", "active": "breadcrumb" })
 
-	<!-- ====================================
-	——— LAYOUT CONTAINER
-	===================================== -->
-	<div class="layout-container">
+		<!-- ====================================
+		——— PAGE WRAPPER 
+		===================================== -->	
+	<div class="page-wrapper">
 		@@include('top-bar.htm')
-			<div class="layout-content">
-				<div class="flex-grow-1">
+			<div class="content-wrapper">
 					@@include('breadcrumb.htm', { "parent": "UI Elements", "active": "Breadcrumbs" })
 
 					<div class="content">
@@ -165,5 +164,6 @@
 							</div>
 						</div>
 					</div>
+					@@include('right-sidebar.htm')
 
 		@@include('footer.htm')

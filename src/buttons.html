@@ -2,12 +2,11 @@
 @@include('sidebar-with-footer.htm', { "parent": "ui-elements", "sub_parent": "components", "active": "buttons-default" })
 
 		<!-- ====================================
-		——— LAYOUT CONTAINER
+		——— PAGE WRAPPER
 		===================================== -->
-		<div class="layout-container">
+		<div class="page-wrapper">
 			@@include('top-bar.htm')
-				<div class="layout-content">
-					<div class="flex-grow-1">
+				<div class="content-wrapper">
 						@@include('breadcrumb.htm', { "parent": "UI Elements", "active": "Buttons" })
 						<div class="content">
 							<ul class="nav nav-tabs nav-style-border mb-5 pl-0" id="myTab" role="tablist">
@@ -752,5 +751,6 @@
 								</div>
 							</div>
 						</div>
+						@@include('right-sidebar.htm')
 
 				@@include('footer.htm')

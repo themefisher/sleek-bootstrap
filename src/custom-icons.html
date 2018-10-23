@@ -2,12 +2,11 @@
 @@include('sidebar-with-footer.htm', { "parent": "ui-elements", "sub_parent": "icon-fonts", "active": "custom-icons" })
 
 		<!-- ====================================
-		——— LAYOUT CONTAINER
+		——— PAGE WRAPPER
 		===================================== -->
-		<div class="layout-container">
+		<div class="page-wrapper">
 			@@include('top-bar.htm')
-				<div class="layout-content">
-					<div class="flex-grow-1">
+				<div class="content-wrapper">
 						@@include('breadcrumb.htm', { "parent": "UI Elements", "active": "Custom Icons" })
 						<div class="content">
 							<!-- First Row  -->
@@ -78,5 +77,6 @@
 								</div>
 							</div>
 						</div>
+						@@include('right-sidebar.htm')
 
 		@@include('footer.htm')

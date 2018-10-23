@@ -27,7 +27,7 @@ $(document).ready(function() {
 
     $(".mobile-sticky-body-overlay").on("click", function(e) {
       $(this).removeClass("active");
-      $("#page-container").removeClass("sidebar-minified").addClass("sidebar-minified-out");
+      $("#body").removeClass("sidebar-minified").addClass("sidebar-minified-out");
       $("body").css("overflow", "auto");
     });
   }
@@ -49,7 +49,7 @@ $(document).ready(function() {
       e.preventDefault();
       var a = "sidebar-minified",
         mo = "sidebar-minified-out",
-        t = "#page-container";
+        t = "#body";
       $(t).hasClass(a)
         ? $(t)
             .removeClass(a)
@@ -67,49 +67,49 @@ $(document).ready(function() {
   }
 
   /*======== 5. SIDEBAR TOGGLE FOR VARIOUS SIDEBAR LAYOUT ========*/
-  var page_container = $("#page-container");
+  var body = $("#body");
   if ($(window).width() >= 768) {
     var flag = false;
     var flagOffCanvas = false;
 
-    $("#sidebar-toggler").on("click", function() {
+    $("#sidebar-toggler").on("click", function () {
       if (
-        page_container.hasClass("sidebar-fixed-offcanvas") ||
-        page_container.hasClass("sidebar-static-offcanvas")
+        body.hasClass("sidebar-fixed-offcanvas") ||
+        body.hasClass("sidebar-static-offcanvas")
       ) {
         $(this)
           .addClass("sidebar-offcanvas-toggle")
           .removeClass("sidebar-toggle");
         if (flagOffCanvas === false) {
-          page_container.addClass("sidebar-collapse");
+          body.addClass("sidebar-collapse");
           flagOffCanvas = true;
           flag = false;
         } else {
-          page_container.removeClass("sidebar-collapse");
-          page_container.addClass("sidebar-collapse-out");
-          setTimeout(function() {
-            page_container.removeClass("sidebar-collapse-out");
-          }, 1000);
+          body.removeClass("sidebar-collapse");
+          body.addClass("sidebar-collapse-out");
+          setTimeout(function () {
+            body.removeClass("sidebar-collapse-out");
+          }, 300);
           flagOffCanvas = false;
         }
       }
 
       if (
-        page_container.hasClass("sidebar-fixed") ||
-        page_container.hasClass("sidebar-static")
+        body.hasClass("sidebar-fixed") ||
+        body.hasClass("sidebar-static")
       ) {
         $(this)
           .addClass("sidebar-toggle")
           .removeClass("sidebar-offcanvas-toggle");
         if (flag === false) {
-          page_container
+          body
             .removeClass("sidebar-collapse sidebar-minified-out")
             .addClass("sidebar-minified");
           flag = true;
           flagOffCanvas = false;
         } else {
-          page_container.removeClass("sidebar-minified");
-          page_container.addClass("sidebar-minified-out");
+          body.removeClass("sidebar-minified");
+          body.addClass("sidebar-minified-out");
           flag = false;
         }
       }
@@ -118,10 +118,10 @@ $(document).ready(function() {
 
   if ($(window).width() >= 768 && $(window).width() < 992) {
     if (
-      page_container.hasClass("sidebar-fixed") ||
-      page_container.hasClass("sidebar-static")
+      body.hasClass("sidebar-fixed") ||
+      body.hasClass("sidebar-static")
     ) {
-      page_container
+      body
         .removeClass("sidebar-collapse sidebar-minified-out")
         .addClass("sidebar-minified");
       flag = true;
@@ -174,4 +174,43 @@ $(document).ready(function() {
 
     todoCheckAll();
   }
+
+
+  // Right Sidebar 
+  if ($(window).width() < 1025) {
+    body.addClass('right-sidebar-toggoler-out');
+
+    var btnRightSidebarToggler = $('.btn-right-sidebar-toggler');
+    var materialIcons = btnRightSidebarToggler.find('.material-icons');
+
+    btnRightSidebarToggler.on('click', function () {
+
+      if (!body.hasClass('right-sidebar-toggoler-out')) {
+        body.addClass('right-sidebar-toggoler-out').removeClass('right-sidebar-toggoler-in');
+      } else {
+        body.addClass('right-sidebar-toggoler-in').removeClass('right-sidebar-toggoler-out')
+      }      
+      
+    });
+
+  }
+
+  /* Right Sidebar  */
+  var navRightSidebarLink = $('.nav-right-sidebar .nav-link');
+
+  navRightSidebarLink.on('click', function () {
+    
+    if(!body.hasClass('right-sidebar-in')){
+      body.addClass('right-sidebar-in').removeClass('right-sidebar-out');
+      
+    } else if ($(this).hasClass('show')){
+      body.addClass('right-sidebar-out').removeClass('right-sidebar-in');      
+    }
+  });
+
+  /* Remove Right Sidebar With Card */
+  var cardClosebutton = $('.card-right-sidebar .close');
+  cardClosebutton.on('click', function () {
+    body.removeClass('right-sidebar-in').addClass('right-sidebar-out');
+  })
 });

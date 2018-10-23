@@ -2,12 +2,11 @@
 @@include('sidebar-with-footer.htm', { "parent": "ui-elements", "sub_parent": "components", "active": "button-social" })
 
 		<!-- ====================================
-		——— LAYOUT CONTAINER
+		——— PAGE WRAPPER
 		===================================== -->
-		<div class="layout-container">
+		<div class="page-wrapper">
 			@@include('top-bar.htm')
-				<div class="layout-content">
-					<div class="flex-grow-1">
+				<div class="content-wrapper">
 						@@include('breadcrumb.htm', { "parent": "UI Elements", "active": "Button Social" })
 						<div class="content">
 							<ul class="nav nav-tabs nav-style-border mb-5" id="myTab" role="tablist">
@@ -588,10 +587,13 @@
 														<button type="button" class="mb-1 btn btn-dropbox btn-outline btn-pill btn-lg text"> Dropbox </button>
 													</div>
 												</div>
+											</div>
 										</div>
 									</div>
 									<!-- /.Pill Button -->
 								</div>
 							</div>
+						</div>
+						@@include('right-sidebar.htm')
 
 		@@include('footer.htm')
