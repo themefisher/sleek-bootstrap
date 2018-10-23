@@ -1,4 +1,4 @@
-@@include('header.htm', { "title": "Sleek - Admin Dashboard Template", "className": "header-fixed sidebar-fixed sidebar-dark header-light" })
+@@include('header.htm', { "title": "Sleek - Admin Dashboard Template", "className": "header-fixed sidebar-fixed sidebar-dark header-light right-sidebar-content-close" })
 @@include('sidebar-with-footer.htm', { "parent": "ui-elements", "sub_parent": "components", "active": "alert" })
 
 		<!-- ====================================
@@ -6,9 +6,8 @@
 		===================================== -->
 		<div class="page-wrapper">
 			@@include('top-bar.htm')
-				<div class="content-wrapper">
-					<div class="flex-grow-1">
-						@@include('breadcrumb.htm', { "parent": "UI Elements", "active": "Alerts" })
+			<div class="content-wrapper">
+					@@include('breadcrumb.htm', { "parent": "UI Elements", "active": "Alerts" })
 						<div class="content">
 							<div class="card card-default mb-4 mt-3 mt-md-0 bg-white pt-5">
 								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0">
@@ -301,5 +300,6 @@
 
 
 						</div>
+						@@include('right-sidebar.htm')
 
 @@include('footer.htm')

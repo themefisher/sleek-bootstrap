@@ -1,4 +1,4 @@
-@@include('header.htm', { "title": "Sleek - Admin Dashboard Template", "className": "header-fixed sidebar-fixed sidebar-dark header-light" })
+@@include('header.htm', {	"title": "Sleek - Admin Dashboard Template",	"className": "header-fixed sidebar-fixed sidebar-dark header-light right-sidebar-content-close" })
 @@include('sidebar-with-footer.htm', { "parent": "ui-elements", "sub_parent": "icon-fonts", "active": "flag-icons" })
 
 		<!-- ====================================
@@ -7,7 +7,6 @@
 		<div class="page-wrapper">
 			@@include('top-bar.htm')
 				<div class="content-wrapper">
-					<div class="flex-grow-1">
 						@@include('breadcrumb.htm', { "parent": "UI Elements", "active": "Flag Icons" })
 						<div class="content">
 							<div class="card card-default rounded bg-white mb-4">
@@ -1020,5 +1019,6 @@
 								</div>
 							</div>
 						</div>
+						@@include('right-sidebar.htm')
 
 	@@include('footer.htm')

@@ -1,4 +1,4 @@
-@@include('header.htm', { "title": "Sleek - Admin Dashboard Template", "className": "header-fixed sidebar-fixed sidebar-dark header-light" })
+@@include('header.htm', {	"title": "Sleek - Admin Dashboard Template",	"className": "header-fixed sidebar-fixed sidebar-dark header-light right-sidebar-content-close right-sidebar-content-close" })
 @@include('sidebar-with-footer.htm', { "parent": "layouts", "sub_parent": "sidebar-nav", "active": "sidebar-with-footer" })
 
 		<!-- ====================================
@@ -7,7 +7,6 @@
 		<div class="page-wrapper">
 			@@include('top-bar.htm')
 				<div class="content-wrapper">
-					<div class="flex-grow-1">
 						@@include('breadcrumb.htm', { "parent": "Layouts", "active": "Sidebar With Footer" })
 
 						<div class="content">
@@ -30,6 +29,7 @@
 							</div>
 
 						</div>
+						@@include('right-sidebar.htm')
 
 
 	@@include('footer.htm')

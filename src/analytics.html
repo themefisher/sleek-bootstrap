@@ -1,4 +1,4 @@
-@@include('header.htm', { "title": "Sleek - Admin Dashboard Template", "className": "header-fixed sidebar-fixed sidebar-dark header-light" })
+@@include('header.htm', {	"title": "Sleek - Admin Dashboard Template",	"className": "header-fixed sidebar-fixed sidebar-dark header-light right-sidebar-content-close" })
 @@include('sidebar-with-footer.htm', { "parent": "dashboard", "sub_parent": " ", "active": "analytics" })
 
 		<!-- ====================================
@@ -7,8 +7,7 @@
 		<div class="page-wrapper">
 			@@include('top-bar.htm')
 				<div class="content-wrapper">
-					<div class="flex-grow-1">
-						<section class="content">
+						<div class="content">
 							<div class="row">
 								<div class="col-md-12">
 									@@include('activity-graph.htm')
@@ -36,6 +35,7 @@
 								</div>
 							</div>
 
-						</section>
+						</div>
+						@@include('right-sidebar.htm')
 
 		@@include('footer.htm')
