@@ -7,7 +7,7 @@
   display: table;
 }
 
-.layout-sidenav {
+.left-sidebar {
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -227,7 +227,7 @@
 }
 
 /* Sidebar Minified */
-.sidebar-minified .layout-sidenav {
+.sidebar-minified .left-sidebar {
   width: 250px;
   z-index: 1050;
   height: 100%;
@@ -298,7 +298,7 @@
 
 
 /* Sidebar Minified Hover */
-.sidebar-minified .layout-sidenav:hover {
+.sidebar-minified .left-sidebar:hover {
   @include media-breakpoint-up(md) {
     width: 250px;
     margin-right: -10.94rem;
@@ -353,7 +353,7 @@
 }
 
 /* Sidebar Minified Not transition */
-.sidebar-minified:not(.layout-sidenav) .layout-sidenav {
+.sidebar-minified:not(.left-sidebar) .left-sidebar {
   @include media-breakpoint-up(md){
     -webkit-transition-duration: .3s;
     transition-duration: .3s;
@@ -380,7 +380,7 @@
     }
   }
   &.sidebar-minified-out {
-    .layout-sidenav {
+    .left-sidebar {
       @include transition(width 0.3s ease-in-out);
     }
     .page-wrapper {
@@ -409,7 +409,7 @@
 
 /* Sidebar Minified Out */
 .sidebar-minified-out {
-  .layout-sidenav {
+  .left-sidebar {
     z-index: 10000;
     transform: translateX(-250px);
     transition: transform .3s ease-in-out !important;
@@ -450,7 +450,7 @@
   }
 
   /* Sidebar Fixed With Sidebar Minified Out */
-  .layout-sidenav {
+  .left-sidebar {
     @include transition(width 0.3s ease-in-out);
   }
   .page-wrapper {
@@ -465,7 +465,7 @@
 /* Sidebar Fixed And Offcanvas */
 .sidebar-fixed-offcanvas,
 .sidebar-fixed {
-  .layout-sidenav {
+  .left-sidebar {
     @include media-breakpoint-up(md){
       position: fixed;
       top: 0;
@@ -506,7 +506,7 @@
 /* Sidebar Collapse */
 .sidebar-collapse {
   @include media-breakpoint-up(md) {
-    .layout-sidenav {
+    .left-sidebar {
       margin-left: -15.6rem;
       @include transition(margin-left 0.3s ease-in-out);
     }
@@ -519,7 +519,7 @@
 
 /* Sidebar Out Collapse */
 .sidebar-collapse-out {
-  .layout-sidenav {
+  .left-sidebar {
     @include media-breakpoint-up(md){
       margin-left: 0px;
       @include transition(margin-left 0.3s ease-in-out);
@@ -622,7 +622,7 @@
 
 /* Sidebar Bg Dark */
 .sidebar-dark {
-  .layout-sidenav {
+  .left-sidebar {
     background-color: $navy;
   }
   .sidebar {
@@ -651,7 +651,7 @@
 
 /* Sidebar Light */
 .sidebar-light {
-  .layout-sidenav {
+  .left-sidebar {
     background-color: $white;
   }
   .sidebar {
@@ -837,7 +837,7 @@
 
 /* Right Sidebar Content Close */ 
 .right-sidebar-content-close {
-  .content {
+  .content-wrapper {
     @include media-breakpoint-up(xl) {
       margin-right: 60px;
       transition: margin-right .3s ease-in-out;
@@ -851,7 +851,7 @@
 
 
 .right-sidebar-content-add {
-  .content {
+  .content-wrapper {
     @include media-breakpoint-up(xl) {
       margin-right: 375px;
       transition: margin-right .3s ease-in-out;
