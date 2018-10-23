@@ -732,18 +732,22 @@
 }
 
 /* Right Sidebar Toogler Add */
-.right-sidebar-toggoler-add {
+.right-sidebar-toggoler-in {
   .right-sidebar {
     right: 0;
     transition: right .3s ease-in-out;
     .btn-right-sidebar-toggler {
       right: 60px;
       transition: right .3s ease-in-out;
+      i {
+        transform: rotate(180deg);
+        transition: transform .3s ease-in-out;
+      }
     }
   }
 }
 
-.right-sidebar-toggoler-close {
+.right-sidebar-toggoler-out {
   .right-sidebar {
     transition: right .3s ease-in-out;
     .btn-right-sidebar-toggler {

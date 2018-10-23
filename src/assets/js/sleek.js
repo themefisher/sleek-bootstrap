@@ -178,15 +178,21 @@ $(document).ready(function() {
 
   // Right Sidebar 
   if ($(window).width() < 1025) {
-    body.addClass('right-sidebar-toggoler-close');
+    body.addClass('right-sidebar-toggoler-out');
+
     var btnRightSidebarToggler = $('.btn-right-sidebar-toggler');
+    var materialIcons = btnRightSidebarToggler.find('.material-icons');
+
     btnRightSidebarToggler.on('click', function () {
-      if (!body.hasClass('right-sidebar-toggoler-close')) {
-        body.addClass('right-sidebar-toggoler-close').removeClass('right-sidebar-toggoler-add');
+
+      if (!body.hasClass('right-sidebar-toggoler-out')) {
+        body.addClass('right-sidebar-toggoler-out').removeClass('right-sidebar-toggoler-in');
       } else {
-        body.addClass('right-sidebar-toggoler-add').removeClass('right-sidebar-toggoler-close')
-      }
-    })
+        body.addClass('right-sidebar-toggoler-in').removeClass('right-sidebar-toggoler-out')
+      }      
+      
+    });
+
   }
 
   /* Right Sidebar  */
