@@ -753,6 +753,10 @@
     .btn-right-sidebar-toggler {
       transition: right .3s ease-in-out;
     }
+    i {
+        transform: rotate(0deg);
+        transition: transform .3s ease-in-out;
+      }
   }
 }
 
