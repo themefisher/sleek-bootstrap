@@ -843,7 +843,7 @@
 
 }
 
-/* Right Sidebar Content Close */ 
+/* Right Sidebar Content Out */ 
 .right-sidebar-out {
   .content-wrapper {
     @include media-breakpoint-up(xl) {
@@ -857,7 +857,7 @@
   }
 }
 
-
+/* Right Sidebar Content IN */ 
 .right-sidebar-in {
   .content-wrapper {
     @include media-breakpoint-up(xl) {
