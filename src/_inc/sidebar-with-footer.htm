@@ -22,9 +22,7 @@
                   <li class="has-sub @@if (parent === 'dashboard'){active expand}">
                     <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#dashboard" aria-expanded="false" aria-controls="dashboard">
                       <i class="icon-gallery-grid"></i>
-                      <span class="badge badge-success mini-badge">10</span>
                       <span class="nav-text">Dashboards</span>
-                      <span class="badge badge-success">10</span>
                       <b class="caret"></b>
                     </a>
                     <ul class="collapse @@if (parent === 'dashboard'){show}" id="dashboard"  data-parent="#sidebar-menu">
@@ -33,7 +31,11 @@
                           <a href="index.html">Ecommerce</a>
                         </li>
                         <li class="@@if (active === 'analytics'){active}">
-                          <a href="analytics.html">Analytics</a>
+                          <a class="sidenav-item-link" href="analytics.html">
+                            <span class="badge badge-success mini-badge">new</span>
+                            <span class="nav-text">Analytics</span>
+                            <span class="badge badge-success">new</span>
+                          </a>
                         </li>
                       </div>
                     </ul>
@@ -260,9 +262,7 @@
                   <li class="has-sub @@if (parent === 'charts'){active expand}">
                     <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#charts" aria-expanded="false" aria-controls="charts">
                       <i class="icon-chart"></i>
-                      <span class="badge badge-success mini-badge">10</span>
                       <span class="nav-text">Charts</span>
-                      <span class="badge badge-danger">10</span>
                       <b class="caret"></b>
                     </a>
                     <ul class="collapse @@if (parent === 'charts'){show}"  id="charts" data-parent="#sidebar-menu">

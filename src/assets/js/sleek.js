@@ -13,9 +13,19 @@ $(document).ready(function() {
   "use strict";
 
   /*======== 1. SCROLLBAR SIDEBAR ========*/
-  $('.sidebar-scrollbar').slimScroll({
-  	height: '100%'
-  });
+  $(".sidebar-scrollbar")
+    .slimScroll({
+      opacity: 0,
+      height: "100%",
+      color: "#808080",
+      size: "5px",
+      wheelStep: 10
+    })
+    .mouseover(function () {
+      $(this)
+        .next(".slimScrollBar")
+        .css("opacity", 0.5);
+    });
 
   /*======== 2. BACKDROP ========*/
   if ($(window).width() < 768) {

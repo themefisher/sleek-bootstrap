@@ -225,11 +225,7 @@
     align-items: center;
     .nav-text {
       margin-right: auto;
-    }
-    .badge {
-      // padding-left: 0.75rem !important;
-      // padding-right: 0.75rem !important;
-    }
+    }    
   }
 }
 
@@ -281,10 +277,7 @@
   }
   .sidebar {
     .nav {
-      .sidenav-item-link {
-        i {
-          margin-right: 0.30rem;
-        }
+      .sidenav-item-link {        
         .mini-badge {
           @include media-breakpoint-up(md) {
            display: block;
@@ -960,11 +953,6 @@
 .right-sidebar-dark {
   .right-nav-container {
     background-color: $navy;
-    border-left: 1px solid rgba($white, 0.2);
+    border-left: 1px solid rgba($white, 0.2);    
   }      
-}
-
-// SlimScrollbar
-.slimScrollBar {
-  background-color: transparent !important;
 }
