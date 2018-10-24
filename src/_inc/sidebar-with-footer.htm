@@ -20,9 +20,11 @@
                 <!-- sidebar menu -->
                 <ul class="nav sidebar-inner" id="sidebar-menu">
                   <li class="has-sub @@if (parent === 'dashboard'){active expand}">
-                    <a href="javascript:void(0)" data-toggle="collapse" data-target="#dashboard" aria-expanded="false" aria-controls="dashboard">
+                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#dashboard" aria-expanded="false" aria-controls="dashboard">
                       <i class="icon-gallery-grid"></i>
-                      <span>Dashboards</span>
+                      <span class="badge badge-success mini-badge">10</span>
+                      <span class="nav-text">Dashboards</span>
+                      <span class="badge badge-success">10</span>
                       <b class="caret"></b>
                     </a>
                     <ul class="collapse @@if (parent === 'dashboard'){show}" id="dashboard"  data-parent="#sidebar-menu">
@@ -37,16 +39,16 @@
                     </ul>
                   </li>
                   <li class="has-sub @@if (parent === 'layouts'){active expand}">
-                    <a href="javascript:void(0)"  data-toggle="collapse" data-target="#layouts" aria-expanded="false" aria-controls="layouts">
+                    <a class="sidenav-item-link" href="javascript:void(0)"  data-toggle="collapse" data-target="#layouts" aria-expanded="false" aria-controls="layouts">
                       <i class="icon-widget"></i>
-                      <span>Layouts</span>
+                      <span class="nav-text">Layouts</span>
                       <b class="caret"></b>
                     </a>
                     <ul class="collapse @@if (parent === 'layouts'){show}" id="layouts" data-parent="#sidebar-menu">
                       <div class="sub-menu">
                           <li class="has-sub @@if (sub_parent === 'header'){active expand}">
-                              <a href="javascript:void(0)" data-toggle="collapse" data-target="#headers" aria-expanded="false" aria-controls="headers">
-                                <span>Header</span>
+                              <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#headers" aria-expanded="false" aria-controls="headers">
+                                <span class="nav-text">Header</span>
                                 <b class="caret"></b>
                               </a>
                               <ul class="collapse @@if (sub_parent === 'header'){show}" id="headers">
@@ -67,8 +69,8 @@
                               </ul>
                             </li>
                           <li class="has-sub @@if (sub_parent === 'sidebar-nav'){active expand}">
-                            <a href="javascript:void(0)" data-toggle="collapse" data-target="#sidebar-nav" aria-expanded="false" aria-controls="sidebar-nav">
-                              <span>Sidebar Nav</span>
+                            <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#sidebar-nav" aria-expanded="false" aria-controls="sidebar-nav">
+                              <span class="nav-text">Sidebar Nav</span>
                               <b class="caret"></b>
                             </a>
                             <ul class="collapse @@if (sub_parent === 'sidebar-nav'){show}" id="sidebar-nav">
@@ -96,16 +98,16 @@
                   </li>
 
                   <li class="has-sub @@if (parent === 'ui-elements'){active expand}">
-                    <a href="javascript:void(0)" data-toggle="collapse" data-target="#ui-elements" aria-expanded="false" aria-controls="ui-elements">
+                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#ui-elements" aria-expanded="false" aria-controls="ui-elements">
                       <i class="icon-folder"></i>
-                      <span>UI Elements</span>
+                      <span class="nav-text">UI Elements</span>
                       <b class="caret"></b>
                     </a>
                     <ul class="collapse @@if (parent === 'ui-elements'){show}"  id="ui-elements" data-parent="#sidebar-menu">
                       <div class="sub-menu">
                         <li class="has-sub @@if (sub_parent === 'components'){active expand}">
-                          <a href="javascript:void(0)" data-toggle="collapse" data-target="#components" aria-expanded="false" aria-controls="components">
-                            <span>Components</span>
+                          <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#components" aria-expanded="false" aria-controls="components">
+                            <span class="nav-text" >Components</span>
                             <b class="caret"></b>
                           </a>
                           <ul class="collapse @@if (sub_parent === 'components'){show}" id="components">
@@ -175,8 +177,8 @@
                         </li>
 
                         <li class="has-sub @@if (sub_parent === 'icon-fonts'){active expand}">
-                          <a href="javascript:void(0)" data-toggle="collapse" data-target="#icon-fonts" aria-expanded="false" aria-controls="icon-fonts">
-                            <span>Icons</span>
+                          <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#icon-fonts" aria-expanded="false" aria-controls="icon-fonts">
+                            <span class="nav-text">Icons</span>
                             <b class="caret"></b>
                           </a>
                           <ul class="collapse @@if (sub_parent === 'icon-fonts'){show}" id="icon-fonts">
@@ -195,8 +197,8 @@
                         </li>
 
                         <li class="has-sub @@if (sub_parent === 'forms'){active expand}">
-                          <a href="javascript:void(0)" data-toggle="collapse" data-target="#forms" aria-expanded="false" aria-controls="forms">
-                            <span>Forms</span>
+                          <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#forms" aria-expanded="false" aria-controls="forms">
+                            <span class="nav-text">Forms</span>
                             <b class="caret"></b>
                           </a>
                           <ul class="collapse @@if (sub_parent === 'forms'){show}" id="forms">
@@ -220,8 +222,8 @@
                           </ul>
                         </li>
                         <li class="has-sub @@if (sub_parent === 'maps'){active expand}">
-                          <a href="javascript:void(0)" data-toggle="collapse" data-target="#maps" aria-expanded="false" aria-controls="maps">
-                            <span>Maps</span>
+                          <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#maps" aria-expanded="false" aria-controls="maps">
+                            <span class="nav-text">Maps</span>
                             <b class="caret"></b>
                           </a>
                           <ul class="collapse @@if (sub_parent === 'maps'){show}" id="maps">
@@ -236,8 +238,8 @@
                           </ul>
                         </li>
                         <li class="has-sub @@if (sub_parent === 'widgets'){active expand}">
-                          <a href="javascript:void(0)" data-toggle="collapse" data-target="#widgets" aria-expanded="false" aria-controls="widgets">
-                            <span>Widgets</span>
+                          <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#widgets" aria-expanded="false" aria-controls="widgets">
+                            <span class="nav-text">Widgets</span>
                             <b class="caret"></b>
                           </a>
                           <ul class="collapse @@if (sub_parent === 'widgets'){show}" id="widgets">
@@ -256,9 +258,11 @@
                   </li>
 
                   <li class="has-sub @@if (parent === 'charts'){active expand}">
-                    <a href="javascript:void(0)" data-toggle="collapse" data-target="#charts" aria-expanded="false" aria-controls="charts">
+                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#charts" aria-expanded="false" aria-controls="charts">
                       <i class="icon-chart"></i>
-                      <span>Charts</span>
+                      <span class="badge badge-success mini-badge">10</span>
+                      <span class="nav-text">Charts</span>
+                      <span class="badge badge-danger">10</span>
                       <b class="caret"></b>
                     </a>
                     <ul class="collapse @@if (parent === 'charts'){show}"  id="charts" data-parent="#sidebar-menu">
@@ -270,9 +274,9 @@
                     </ul>
                   </li>
                   <li class="has-sub @@if (parent === 'pages'){active expand}">
-                    <a href="javascript:void(0)" data-toggle="collapse" data-target="#pages" aria-expanded="false" aria-controls="pages">
+                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#pages" aria-expanded="false" aria-controls="pages">
                       <i class="icon-page"></i>
-                      <span>Pages</span>
+                      <span class="nav-text">Pages</span>
                       <b class="caret"></b>
                     </a>
                     <ul class="collapse @@if (parent === 'pages'){show}" id="pages" data-parent="#sidebar-menu">
@@ -281,8 +285,8 @@
                           <a href="profile.html">User Profile</a>
                         </li>
                         <li class="has-sub @@if (sub_parent === 'authentication'){active expand}">
-                          <a href="javascript:void(0)" data-toggle="collapse" data-target="#authentication" aria-expanded="false" aria-controls="authentication">
-                            <span>Authentication</span>
+                          <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#authentication" aria-expanded="false" aria-controls="authentication">
+                            <span class="nav-text">Authentication</span>
                             <b class="caret"></b>
                           </a>
                           <ul class="collapse @@if (sub_parent === 'authentication'){show}" id="authentication">
@@ -297,8 +301,8 @@
                           </ul>
                         </li>
                         <li class="has-sub @@if (sub_parent === 'others'){active expand}">
-                            <a href="javascript:void(0)" data-toggle="collapse" data-target="#others" aria-expanded="false" aria-controls="others">
-                            <span>Others</span>
+                            <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#others" aria-expanded="false" aria-controls="others">
+                            <span class="nav-text">Others</span>
                             <b class="caret"></b>
                           </a>
                           <ul class="collapse @@if (sub_parent === 'others'){show}" id="others">
