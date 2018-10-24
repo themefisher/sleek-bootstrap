@@ -229,16 +229,6 @@
   }
 }
 
-/* Mini Badge Default None */ 
-.sidebar {
-  .nav {
-    .sidenav-item-link {
-      .mini-badge {
-        display: none;
-      }
-    }
-  }
-}
 
 /* Sidebar Minified */
 .sidebar-minified .left-sidebar {
@@ -275,20 +265,7 @@
   .nav>li>a>.caret {
     right: 15px;
   }
-  .sidebar {
-    .nav {
-      .sidenav-item-link {        
-        .mini-badge {
-          @include media-breakpoint-up(md) {
-           display: block;
-            opacity: 1;
-            z-index: 1000;
-            padding: .19rem;          
-          }          
-        }        
-      }
-    }
-  }
+  
   .nav li.has-sub .collapse>.sub-menu {
     left: 0;
     top: 0;
@@ -349,18 +326,7 @@
     transition-delay: 0.15s;
   }
 
-  .sidebar {
-    .nav {
-      .sidenav-item-link {
-        i {
-          margin-right: 0.94rem;
-        }
-        .mini-badge {
-          display: none;
-        }
-      }
-    }
-  }
+  
 
   .logo-title {
     opacity: 1;
