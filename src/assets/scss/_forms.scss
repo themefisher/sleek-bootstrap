@@ -11,19 +11,7 @@
   .form-control {
     font-size: 0.98rem;
     padding: .5rem 1.06rem;
-    border-color: $border-color;
-    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-      color: $secondary;
-    }
-    ::-moz-placeholder { /* Firefox 19+ */
-      color: $secondary;
-    }
-    :-ms-input-placeholder { /* IE 10+ */
-      color: $secondary;
-    }
-    :-moz-placeholder { /* Firefox 18- */
-      color: $secondary;
-    }
+    border-color: $border-color;    
   }
   .form-control.input-lg {
     font-size: 1.06rem;
