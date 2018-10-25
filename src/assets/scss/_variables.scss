@@ -79,6 +79,7 @@ $breadcrumb-bg:                 $white !default;
 // Inputs
 $input-btn-padding-y:         .59rem !default;
 $input-btn-padding-x:         1rem !default;
+$input-placeholder-color:     rgba($secondary, .7) !default;
 
 // Buttons
 
@@ -90,3 +91,6 @@ $btn-padding-x:               $input-btn-padding-x !default;
 
 $pagination-padding-y:        1rem !default;
 $pagination-padding-x:        1.25rem !default;
+
+// Card
+$card-border-color:           $border-color !default;

@@ -73,7 +73,7 @@ var setColor = function (color) {
 
 
 	//VARIABLE
-	var page_container = jQuery('#page-container');
+	var page_container = jQuery('#body');
 	var header_static = jQuery('.header-static-to');
 	var header_fixed = jQuery('.header-fixed-to');
 
