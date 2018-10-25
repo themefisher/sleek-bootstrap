@@ -2,5 +2,12 @@
 .badge {
   text-transform: uppercase;
   color: $white;
-  padding-top: .75em;
+  padding-top: .75rem;
+}
+
+.badge-sm {
+  padding-top: .25rem;
+  padding-left: .3rem;
+  padding-right: .3rem;
+  font-size: 65%;
 }
