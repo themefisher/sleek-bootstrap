@@ -1,26 +1,37 @@
 
-/* Custom Container */
-#page-container {
-  position: relative;
-  height: 100%;
-  overflow-x: hidden;
-}
+/* Body */
 #body {
   position: relative;
   height: 100%;
   overflow-x: hidden;
 }
 
-/* Content Wrapper */
-.layout-wrapper {
-  min-height: 100%;
-  background-color: $gray-100;
-  z-index: 800;
-  overflow: hidden;
-  @include transition(margin-left 0.25s ease-in);
-  
+/* Wrapper */
+.wrapper {
+  display: flex;
+  align-items: stretch;    
+  flex: 1 1 auto;
+  width: 100%;
+  min-height: 100vh;
 }
 
+/* Page Wrapper */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.content-wrapper {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  @include media-breakpoint-up(xl) {
+    margin-right: 60px;
+  }
+}
+
+/* Content */
 .content {
   margin-right: auto;
   margin-left: auto;
@@ -40,36 +51,3 @@
     padding: 5rem 6.25rem;
   }
 }
-
-
-.wrapper {
-  min-height: 100vh;
-}
-
-.layout-wrapper,
-.wrapper {
-  display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    width: 100%;
-}
-.page-wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-.content-wrapper {
-  display: flex;
-  flex: 1 1 auto;
-  flex-direction: column;
-  @include media-breakpoint-up(xl) {
-    margin-right: 60px;
-  }
-}
-
