@@ -90,15 +90,16 @@
 .app-brand {
   position: relative;
   display: block;
+  background-color: $primary;
 
-  .logo {
+  a {
     display: flex;
     flex-direction: row;
     align-items: center;
     height: 75px;
     line-height: 75px;
     width: 250px;
-    background-color: $primary;
+    
     @include transition(width 0.3s ease-in-out);
     padding-left: 1.56rem;
     @include media-breakpoint-up(md){
@@ -109,7 +110,7 @@
       vertical-align: middle;
     }
   }
-  .logo .logo-title {
+  .brand-name {
     color: $white;
     font-size: 1.12rem;
     margin-left: 0.94rem;
@@ -243,7 +244,7 @@
     transition: width .3s ease-in;
   }
   .app-brand {
-    .logo .logo-title {
+    .brand-name {
       @include media-breakpoint-up(md){
         visibility: hidden;
         opacity: 0;
@@ -328,14 +329,14 @@
 
   
 
-  .logo-title {
+  .brand-name {
     opacity: 1;
     visibility: visible;
     @include transition(opacity 0.3s ease);
     transition-delay: 0.3s;
   }
   .app-brand {
-    .logo .logo-title {
+    .brand-name {
       @include media-breakpoint-up(md){
         opacity: 1;
         visibility: visible;
