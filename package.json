@@ -7,7 +7,7 @@
     "type": "git",
     "url": "git+https://github.com/tafcoder/sleek-dashboard.git"
   },
-  "homepage": "https://demo.tafcoder.com/sleek",
+  "homepage": "https://sleek-dashboard.netlify.com/",
   "license": "MIT",
   "keywords": [
     "css",
