@@ -7,14 +7,18 @@
 	<div class="page-wrapper">
 		@@include('top-bar.htm')
 			<div class="content-wrapper">
-					@@include('breadcrumb.htm', { "parent": "UI Elements", "active": "Badges" })
+					<!-- @@include('breadcrumb.htm', { "parent": "UI Elements", "active": "Badges" }) -->
 					<div class="content">
-				<!-- First Row  -->
+							<div class="d-lg-flex align-items-center mb-4">
+								<h1 class="text-dark mr-3">Badges</h1>
+								@@include('breadcrumb.htm', { "parent": "UI Elements", "active": "Badges" })								
+							</div>
+							<p class="bg-white p-4 border mb-4">Indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS.</p>
 							<div class="row">
 								<div class="col-lg-6">
 									<div class="card card-default rounded bg-white">
-										<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-											<h4>Badges </h4>
+										<div class="card-header d-flex flex-wrap justify-content-between bg-white py-4">
+											<h2 class="mb-0">Badges </h2>
 										</div>
 										<div class="card-body">
 
@@ -42,7 +46,7 @@
 								<div class="col-lg-6">
 									<div class="card card-default rounded bg-white mb-4">
 										<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-											<h4>Contextual Variations </h4>
+											<h2>Contextual Variations </h2>
 										</div>
 										<div class="card-body py-5">
 
@@ -57,7 +61,7 @@
 									</div>
 									<div class="card card-default rounded mb-0 bg-white">
 										<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-											<h4>Pill Badges </h4>
+											<h2>Pill Badges </h2>
 										</div>
 										<div class="card-body py-5">
 
