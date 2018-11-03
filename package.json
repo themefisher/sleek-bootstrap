@@ -1,13 +1,13 @@
 {
   "name": "sleek-dashboard",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0-alpha.3",
   "description": "Premium & Free Bootstrap 4 admin dashboard template by TAFcoder.com",
   "author": "TAF Coder<hello@tafcoder.com> (https://tafcoder.com/)",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tafcoder/sleek-dashboard.git"
   },
-  "homepage": "https://demo.tafcoder.com/sleek",
+  "homepage": "https://sleek-dashboard.netlify.com/",
   "license": "MIT",
   "keywords": [
     "css",

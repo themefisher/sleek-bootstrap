@@ -39,3 +39,18 @@ label {
     color: $dark;
   }
 }
+
+/* Notification List */
+.notifications-list {
+  li {
+    a {
+      display: block;
+      color: $secondary;
+      font-size: 0.88rem;
+      padding: 0.625rem 1.25rem;
+    }
+    &:hover {
+      background-color: $gray-100;
+    }
+  }
+}
