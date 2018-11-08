@@ -136,11 +136,11 @@
   height: 20px;
   line-height: 20px;
   text-align: center;
-  font-size: .69rem;
+  font-size: 1.25rem;
   border: none;
 
   &:before {
-    content: '\f054';
+    content: '\f142';
     display: block;
     text-align: center;
     transition: all .2s linear;
@@ -149,11 +149,11 @@
 }
 
 .sidebar li>a .caret:before {
-  font-family: 'FontAwesome'!important;
+  font-family: "Material Design Icons" !important;
   font-weight: 400;
   font-style: normal;
   font-variant: normal;
-  text-rendering: auto;
+  text-rendering: auto;  
 }
 
 .sidebar li.active>a .caret:before,
@@ -815,6 +815,7 @@
     margin-bottom: 0.75rem;
   }
   .nav-link {
+    font-size: 1.5rem;
     &:focus {
       background-color: rgba($secondary, .1);
     }
@@ -884,7 +885,7 @@
 .icon-sm {
   width: 45px;
   height: 45px;
-  line-height: 60px;
+  line-height: 45px;
   border-radius: 50%;
   padding: 0;
   text-align: center;

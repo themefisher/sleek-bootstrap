@@ -156,7 +156,7 @@
     a[aria-expanded="false"]{
       &:after {
         content: "\f067";
-        font-family: $font-family-font-awesome;
+        font-family: $font-family-matetial-icon;
         opacity: 0;
       }
     }
@@ -167,7 +167,7 @@
       border-bottom: 1px solid $border-color;
       &:after {
         content: "\f068";
-        font-family: $font-family-font-awesome;
+        font-family: $font-family-matetial-icon;
         color: $primary;
       }
     }
@@ -193,7 +193,7 @@
       box-shadow: none!important;
       &:after {
         content: "\f068";
-        font-family: $font-family-font-awesome;
+        font-family: $font-family-matetial-icon;
         color: $primary;
       }
     }
@@ -247,7 +247,7 @@
       box-shadow: none!important;
       &:after {
         content: "\f068";
-        font-family: $font-family-font-awesome;
+        font-family: $font-family-matetial-icon;
         color: $primary;
       }
     }

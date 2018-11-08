@@ -169,7 +169,7 @@ $(document).ready(function() {
       }
       list.innerHTML =
         '<div class="todo-single-item d-flex flex-row justify-content-between">' +
-        '<i class="fa"></i>' +
+        '<i class="mdi"></i>' +
         '<span class="">' +
         item.value +
         '</span>"' +

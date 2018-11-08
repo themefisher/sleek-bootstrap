@@ -28,12 +28,12 @@
   @include media-breakpoint-up(xl){
     padding-right: 1.89rem;
   }
-
+  .sidebar-offcanvas-toggle,
   .sidebar-toggle {
     background-color: transparent;
     background-image: none;
     color: $secondary;
-    font-size: 1.375rem;
+    font-size: 2rem;
     padding: 0 1.44rem;
     border: 0px;
     height: 75px;
@@ -42,27 +42,27 @@
     @include media-breakpoint-up(md) {
     }
     &:before {
-      content: "\e800";
-      font-family: "fontello";
+      content: "\F969";
+      font-family: "Material Design Icons";
     }
   }
-  .sidebar-offcanvas-toggle {
-    background-color: transparent;
-    background-image: none;
-    color: $secondary;
-    font-size: 1.375rem;
-    padding: 0 1.44rem;
-    border: 0px;
-    height: 75px;
-    cursor: pointer;
-    border-right: 1px solid $border-color;
-    @include media-breakpoint-up(md) {
-    }
-    &:before {
-      content: "\e800";
-      font-family: "fontello";
-    }
-  }
+  // .sidebar-offcanvas-toggle {
+  //   background-color: transparent;
+  //   background-image: none;
+  //   color: $secondary;
+  //   font-size: 1.375rem;
+  //   padding: 0 1.44rem;
+  //   border: 0px;
+  //   height: 75px;
+  //   cursor: pointer;
+  //   border-right: 1px solid $border-color;
+  //   @include media-breakpoint-up(md) {
+  //   }
+  //   &:before {
+  //     content: "\e800";
+  //     font-family: "fontello";
+  //   }
+  // }
   .navbar-toggler {
     i {
       color: $secondary;
@@ -89,7 +89,7 @@
       background: transparent;
       border: none;
       color: $secondary;
-      font-size: 1.375rem;
+      font-size: 1.625rem;
       padding: 0.31rem;
       padding-top: 0.125rem;
       &:active, &:focus {

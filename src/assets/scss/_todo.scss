@@ -15,7 +15,7 @@
     display: inline-table;
   }
 }
-.todo-single-item i.fa {
+.todo-single-item i.mdi {
   width: 18px;
   height: 18px;
   border: 1px solid #d4d5db;
@@ -57,13 +57,14 @@
     background-color: #cfd0d8;
     color: #8a909d;
   }
-  i.fa {
+  i.mdi {
     background-color: #d4d5db;
     border-color: #d4d5db;
     &:after {
-      content: "\f00c";
+      content: "\f12c";
       font-size: .75rem;
       color: $secondary;
+      font-family: $font-family-matetial-icon;
     }
   }
 }

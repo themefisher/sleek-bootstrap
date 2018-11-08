@@ -80,13 +80,14 @@
     text-transform: uppercase;
 
     &.icon-burger-mini {
+      font-size: 1.5rem;
       &:after {
         display: none;
       }
       position: relative;
       &:before {
-        font-family: $font-family-font-fontello;
-        content: '\e801';
+        font-family: $font-family-matetial-icon;
+        content: "\F1D9";
       }
     }
   }
