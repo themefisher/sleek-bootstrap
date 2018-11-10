@@ -3,10 +3,10 @@
   code {
     display: inline-block;
     vertical-align: middle;
-    background: #F1F1F1;
+    background: rgba($secondary, .1);
     padding: 3px 5px;
     border-radius: 3px;
-    border: 1px solid #DDD;
+    border: 1px solid $border-color;
   }
   i.mdi {
     vertical-align: middle;
@@ -50,15 +50,15 @@
 .icons div code:hover,
 .icons div span:hover,
 .icons div i:hover {
-  color: #3c90be;
+  color: $primary;
 }
 
 .icons div code:hover {
-  border-color: #3c90be;
+  border-color: $primary;
 }
 
 .icons div code {
-  border: 1px solid #DDD;
+  border: 1px solid $border-color;
   width: 65px;
   margin-left: 2px;
   margin-right: 4px;
@@ -84,25 +84,15 @@
   font-size: 24px;
 }
 
-pre {
-  margin: 0 20px;
-  font-family: Consolas, monospace;
-  padding: 10px;
-  border: 1px solid #DDD;
-  background: #F1F1F1;
-}
-
 div.copied {
   position: fixed;
   top: 100px;
   left: 50%;
   width: 200px;
   text-align: center;
-  color: #3c763d;
-  background-color: #dff0d8;
-  border: 1px solid #d6e9c6;
+  color: $white;
+  background-color: $success;
   padding: 10px 15px;
   border-radius: 4px;
   margin-left: -100px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
