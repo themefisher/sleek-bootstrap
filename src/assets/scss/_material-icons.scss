@@ -1,0 +1,108 @@
+// Meterial Desing Codes
+.mdi-show-code {
+  code {
+    display: inline-block;
+    vertical-align: middle;
+    background: #F1F1F1;
+    padding: 3px 5px;
+    border-radius: 3px;
+    border: 1px solid #DDD;
+  }
+  i.mdi {
+    vertical-align: middle;
+    border-radius: 4px;
+    display: inline-block;
+  }
+  i.mdi.dark-demo {
+    background: #333;
+  } 
+  .note {
+    color: #999;
+    font-size: 14px;
+    padding: 0 20px 5px 20px;
+  }
+}
+
+.icons {
+  column-count: 1;
+  column-gap: 20px;
+  @include media-breakpoint-up(lg){
+    column-count: 2;
+  }
+  @include media-breakpoint-up(xl){
+    column-count: 3;
+  }
+  div {
+    line-height: 3em;
+    span {
+      cursor: pointer;
+      font-size: 14px;
+      text-overflow: ellipsis;
+      display: inline-block;
+      max-width: calc(100% - 90px);
+      overflow: hidden;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+  }
+}
+
+.icons div code:hover,
+.icons div span:hover,
+.icons div i:hover {
+  color: #3c90be;
+}
+
+.icons div code:hover {
+  border-color: #3c90be;
+}
+
+.icons div code {
+  border: 1px solid #DDD;
+  width: 65px;
+  margin-left: 2px;
+  margin-right: 4px;
+  border-radius: 4px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.icons div i {
+  display: inline-block;
+  width: 32px;
+  height: 24px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  line-height: 24px;
+}
+
+.icons .mdi:before {
+  font-size: 24px;
+}
+
+pre {
+  margin: 0 20px;
+  font-family: Consolas, monospace;
+  padding: 10px;
+  border: 1px solid #DDD;
+  background: #F1F1F1;
+}
+
+div.copied {
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  width: 200px;
+  text-align: center;
+  color: #3c763d;
+  background-color: #dff0d8;
+  border: 1px solid #d6e9c6;
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin-left: -100px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
