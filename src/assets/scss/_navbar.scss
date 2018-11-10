@@ -221,6 +221,9 @@
           @include media-breakpoint-up(xl) {
             padding-left: 1.25rem;      
           }
+          i {
+            font-size: 1.75rem;
+          }
           &:after {
             border: 3px solid $primary;
             content: '';

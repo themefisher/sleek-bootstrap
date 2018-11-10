@@ -141,8 +141,8 @@ $(document).ready(function() {
   /*======== 6. TODO LIST ========*/
 
   function todoCheckAll() {
-    var fas = document.querySelectorAll(".todo-single-item .fa");
-    fas.forEach(function(fa) {
+    var mdis = document.querySelectorAll(".todo-single-item .mdi");
+    mdis.forEach(function(fa) {
       fa.addEventListener("click", function(e) {
         e.stopPropagation();
         e.target.parentElement.classList.toggle("finished");
