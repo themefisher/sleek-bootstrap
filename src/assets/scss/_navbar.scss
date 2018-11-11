@@ -43,7 +43,7 @@
     border-right: 1px solid $border-color;
     @include media-breakpoint-up(md) {}
     &:before {
-      content: "\F969";
+      content: "\f9a7";
       font-family: $font-family-icon;
     }
   }
@@ -345,6 +345,7 @@
 }
 
 /* light Header */
+
 .header-light .navbar {
   background-color: $white;
   .sidebar-toggle {
@@ -366,6 +367,7 @@
 }
 
 /* Dropdown Menu */
+
 .dropdown-menu {
   border: 1px solid $border-color;
 }

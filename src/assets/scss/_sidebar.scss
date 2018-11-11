@@ -180,7 +180,7 @@
 /*  sub-menu dropdowns */
 .sidebar .sub-menu {
   list-style-type: none;
-  padding: 0 0 .625rem 2.81rem;
+  padding: .625rem 0 .625rem 2.81rem;
   margin: 0;
   position: relative;
 
@@ -346,6 +346,7 @@
     }
   }
   .sidebar .sub-menu {
+    padding-top: .625rem;
     padding-bottom: .625rem;
   }
   .separator {
@@ -894,6 +895,11 @@
   .card-header {
     background-color: transparent;
     padding: 1rem;
+    padding-top: 1.5rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+
     color: $dark;
     .close {
       width: 30px;
