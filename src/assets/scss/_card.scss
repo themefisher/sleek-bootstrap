@@ -1,9 +1,11 @@
 /*===== CARD =====*/
 .card {
   .card-header {
-    h4{
-      color: $black;
+    h2{
+      color: $dark;
       margin-bottom: 0.312rem;
+      font-size: 1.25125rem;
+      line-height: 1;
     }
   }
   .card-img-overlay {
@@ -18,9 +20,11 @@
       padding-left: 3.125rem;
       padding-right: 3.125rem;
     }
-    h4{
+    h2{
       color: $dark;
       margin-bottom: 0.312rem;
+      font-size: 1.25125rem;
+      line-height: 1;
     }
   }
   .card-body {
@@ -48,8 +52,9 @@
   border: 1px solid $border-color;
   .card-body {
     padding: 1.63rem;
-    h3{
+    h2{
       color: $dark;
+      font-size: 1.49625rem;
     }
   }
   .chartjs-wrapper {
@@ -81,6 +86,12 @@
     @include media-breakpoint-up(xxl) {
       padding-left: 3.125rem;
       padding-right: 3.125rem;
+    }
+    h2{
+      color: $dark;
+      margin-bottom: 0.312rem;
+      font-size: 1.25125rem;
+      line-height: 1;
     }
   }
   .card-body {
@@ -145,7 +156,7 @@
     a[aria-expanded="false"]{
       &:after {
         content: "\f067";
-        font-family: $font-family-font-awesome;
+        font-family: $font-family-icon;
         opacity: 0;
       }
     }
@@ -156,7 +167,7 @@
       border-bottom: 1px solid $border-color;
       &:after {
         content: "\f068";
-        font-family: $font-family-font-awesome;
+        font-family: $font-family-icon;
         color: $primary;
       }
     }
@@ -182,7 +193,7 @@
       box-shadow: none!important;
       &:after {
         content: "\f068";
-        font-family: $font-family-font-awesome;
+        font-family: $font-family-icon;
         color: $primary;
       }
     }
@@ -236,7 +247,7 @@
       box-shadow: none!important;
       &:after {
         content: "\f068";
-        font-family: $font-family-font-awesome;
+        font-family: $font-family-icon;
         color: $primary;
       }
     }

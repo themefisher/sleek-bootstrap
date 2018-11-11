@@ -141,8 +141,8 @@ $(document).ready(function() {
   /*======== 6. TODO LIST ========*/
 
   function todoCheckAll() {
-    var fas = document.querySelectorAll(".todo-single-item .fa");
-    fas.forEach(function(fa) {
+    var mdis = document.querySelectorAll(".todo-single-item .mdi");
+    mdis.forEach(function(fa) {
       fa.addEventListener("click", function(e) {
         e.stopPropagation();
         e.target.parentElement.classList.toggle("finished");
@@ -169,7 +169,7 @@ $(document).ready(function() {
       }
       list.innerHTML =
         '<div class="todo-single-item d-flex flex-row justify-content-between">' +
-        '<i class="fa"></i>' +
+        '<i class="mdi"></i>' +
         '<span class="">' +
         item.value +
         '</span>"' +
