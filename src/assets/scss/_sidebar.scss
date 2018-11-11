@@ -253,6 +253,7 @@
     }
   }
   .sidebar .sub-menu {
+    padding-top: 0;
     padding-bottom: 0;
   }
   .nav>li>a>.caret,
@@ -433,6 +434,7 @@
   .sidebar {
     .sub-menu {
       padding-bottom: .625rem;
+      padding-top: .625rem;
     }
     .nav > li > a span {
       transition: opacity 0.3s ease-in-out 0.3s;
