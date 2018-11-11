@@ -288,6 +288,9 @@
       visibility: visible;
     }
   }
+  .separator {
+    border-top-width: 0;
+  }
   .sidebar-footer {
     @include media-breakpoint-up(md){
       height: 0;
@@ -346,6 +349,9 @@
   }
   .sidebar .sub-menu {
     padding-bottom: .625rem;
+  }
+  .separator {
+    border-top-width: 1px;
   }
   .sidebar-footer {
     @include media-breakpoint-up(md){
@@ -650,6 +656,9 @@
       color: $white;
     }
   }
+  .separator {
+    border-color: rgba($border-color, .2);
+  }
   .sidebar-footer {
     background-color: #212a39;
   }
@@ -679,9 +688,11 @@
     .nav > li.active > a {
       color: darken($secondary, 25%);
     }
+    .separator {
+      border-color: $border-color;
+    }
   }
   .sidebar-footer {
-    border-top: 1px solid $border-color;
     background-color: $white;
   }
   .sidebar .sub-menu > li .sub-menu > li > a:after {
