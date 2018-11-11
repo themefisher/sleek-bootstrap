@@ -149,7 +149,7 @@
 }
 
 .sidebar li>a .caret:before {
-  font-family: "Material Design Icons" !important;
+  font-family: $font-family-icon !important;
   font-weight: 400;
   font-style: normal;
   font-variant: normal;
@@ -330,8 +330,6 @@
     transition-delay: 0.15s;
   }
 
-  
-
   .brand-name {
     opacity: 1;
     visibility: visible;
@@ -493,6 +491,18 @@
       padding-left: 15.6rem;
     }
   }
+  .main-header {
+    @include media-breakpoint-up(md){
+      padding-left: 15.6rem;
+    }
+  }
+  &.header-static {
+    .main-header {
+      @include media-breakpoint-up(md){
+        padding-left: 0;
+      }
+    }
+  }
 }
 
 .sidebar-fixed-offcanvas {
@@ -546,20 +556,7 @@
   }
 }
 
-/* Header Fix */
-.header-fixed {
-  .page-wrapper {
-    @include media-breakpoint-up(md){
-      padding-top: 4.75rem;
-    }
-    .main-header {
-      @include media-breakpoint-up(md){
-        position: fixed;
-        padding-left: 15.6rem;
-      }
-    }
-  }
-}
+
 .sidebar-collapse.header-fixed {
   .page-wrapper {
     .main-header {
@@ -587,7 +584,13 @@
         height: auto !important;
       }
     }
-
+  }
+  &.header-fixed {
+    .main-header {
+      @include media-breakpoint-up(md){
+        padding-left: 15.6rem;
+      }
+    }
   }
 }
 
@@ -610,26 +613,6 @@
   }
   @include media-breakpoint-up(md){
     display: none;
-  }
-}
-
-/* sidebar Toggle */
-.sidebar {
-  .sidebar-toggle {
-    background-color: transparent;
-    background-image: none;
-    color: $white;
-    font-size: 1.4rem;
-    padding: 0 1.44rem;
-    border: 0px;
-    cursor: pointer;
-    border-right: 1px solid $border-color;
-    @include media-breakpoint-up(md) {
-    }
-    &:before {
-      content: "\e800";
-      font-family: "fontello";
-    }
   }
 }
 

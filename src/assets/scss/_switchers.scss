@@ -14,8 +14,6 @@ input[type=radio] {
   height: 30px;
   background-color: transparent;
   cursor: pointer;
-
-
   .switch-input {
     position: absolute;
     top: 0;
@@ -46,225 +44,248 @@ input[type=radio] {
     transition: left .3s ease-out;
   }
 }
+
 .switch.switch-default .switch-input:checked~.switch-handle {
   left: 37px;
 }
+
 /* Switch context properties */
+
 .switch-primary {
-  > .switch-input:checked~.switch-label {
-    background-color: $primary!important;
+  >.switch-input:checked~.switch-label {
+    background-color: $primary !important;
     border-color: $primary;
   }
-  > .switch-input:checked~.switch-handle {
+  >.switch-input:checked~.switch-handle {
     border-color: transparent;
   }
 }
+
 .switch-secondary {
-  > .switch-input:checked~.switch-label {
-    background-color: $secondary!important;
+  >.switch-input:checked~.switch-label {
+    background-color: $secondary !important;
     border-color: $secondary;
   }
-  > .switch-input:checked~.switch-handle {
+  >.switch-input:checked~.switch-handle {
     border-color: transparent;
   }
 }
+
 .switch-success {
-  > .switch-input:checked~.switch-label {
-    background-color: $success!important;
+  >.switch-input:checked~.switch-label {
+    background-color: $success !important;
     border-color: $success;
   }
-  > .switch-input:checked~.switch-handle {
+  >.switch-input:checked~.switch-handle {
     border-color: transparent;
   }
 }
+
 .switch-info {
-  > .switch-input:checked~.switch-label {
-    background-color: $info!important;
+  >.switch-input:checked~.switch-label {
+    background-color: $info !important;
     border-color: $info;
   }
-  > .switch-input:checked~.switch-handle {
+  >.switch-input:checked~.switch-handle {
     border-color: transparent;
   }
 }
+
 .switch-warning {
-  > .switch-input:checked~.switch-label {
-    background-color: $warning!important;
+  >.switch-input:checked~.switch-label {
+    background-color: $warning !important;
     border-color: $warning;
   }
-  > .switch-input:checked~.switch-handle {
+  >.switch-input:checked~.switch-handle {
     border-color: transparent;
   }
 }
+
 .switch-danger {
-  > .switch-input:checked~.switch-label {
-    background-color: $danger!important;
+  >.switch-input:checked~.switch-label {
+    background-color: $danger !important;
     border-color: $danger;
   }
-  > .switch-input:checked~.switch-handle {
+  >.switch-input:checked~.switch-handle {
     border-color: transparent;
   }
 }
+
 /* Switch Pill */
+
 .switch-pill .switch-handle,
 .switch-pill .switch-label {
-  border-radius: 50px!important;
+  border-radius: 50px !important;
 }
 
 /* Switch Outline */
+
 .switch-primary-outline {
-  > .switch-input:checked~.switch-label {
-    background-color: $white!important;
+  >.switch-input:checked~.switch-label {
+    background-color: $white !important;
     border-color: $primary;
   }
   .switch-input:checked~.switch-label:after {
     color: $primary;
   }
-  > .switch-input:checked~.switch-handle {
+  >.switch-input:checked~.switch-handle {
     border-color: $primary;
   }
 }
+
 .switch-secondary-outline {
-  > .switch-input:checked~.switch-label {
-    background-color: $white!important;
+  >.switch-input:checked~.switch-label {
+    background-color: $white !important;
     border-color: $secondary;
   }
   .switch-input:checked~.switch-label:after {
     color: $secondary;
   }
-  > .switch-input:checked~.switch-handle {
+  >.switch-input:checked~.switch-handle {
     border-color: $secondary;
   }
 }
+
 .switch-success-outline {
-  > .switch-input:checked~.switch-label {
-    background-color: $white!important;
+  >.switch-input:checked~.switch-label {
+    background-color: $white !important;
     border-color: $success;
   }
   .switch-input:checked~.switch-label:after {
     color: $success;
   }
-  > .switch-input:checked~.switch-handle {
+  >.switch-input:checked~.switch-handle {
     border-color: $success;
   }
 }
+
 .switch-info-outline {
-  > .switch-input:checked~.switch-label {
-    background-color: $white!important;
+  >.switch-input:checked~.switch-label {
+    background-color: $white !important;
     border-color: $info;
   }
   .switch-input:checked~.switch-label:after {
     color: $info;
   }
-  > .switch-input:checked~.switch-handle {
+  >.switch-input:checked~.switch-handle {
     border-color: $info;
   }
 }
+
 .switch-warning-outline {
-  > .switch-input:checked~.switch-label {
-    background-color: $white!important;
+  >.switch-input:checked~.switch-label {
+    background-color: $white !important;
     border-color: $warning;
   }
-  > .switch-input:checked~.switch-label:after {
+  >.switch-input:checked~.switch-label:after {
     color: $warning;
   }
-  > .switch-input:checked~.switch-handle {
+  >.switch-input:checked~.switch-handle {
     border-color: $warning;
   }
 }
+
 .switch-danger-outline {
-  > .switch-input:checked~.switch-label {
-    background-color: $white!important;
+  >.switch-input:checked~.switch-label {
+    background-color: $white !important;
     border-color: $danger;
   }
-  > .switch-input:checked~.switch-label:after {
+  >.switch-input:checked~.switch-label:after {
     color: $danger;
   }
-  > .switch-input:checked~.switch-handle {
+  >.switch-input:checked~.switch-handle {
     border-color: $danger;
   }
 }
 
 /* Switch Outline Alternative */
+
 .switch-primary-outline-alt {
-  > .switch-input:checked~.switch-label {
-    background-color: $white!important;
+  >.switch-input:checked~.switch-label {
+    background-color: $white !important;
     border-color: $primary;
   }
   .switch-input:checked~.switch-label:after {
     color: $primary;
   }
-  > .switch-input:checked~.switch-handle {
+  >.switch-input:checked~.switch-handle {
     background-color: $primary;
     border-color: $primary;
   }
 }
+
 .switch-secondary-outline-alt {
-  > .switch-input:checked~.switch-label {
-    background-color: $white!important;
+  >.switch-input:checked~.switch-label {
+    background-color: $white !important;
     border-color: $secondary;
   }
-  > .switch-input:checked~.switch-label:after {
+  >.switch-input:checked~.switch-label:after {
     color: $secondary;
   }
-  > .switch-input:checked~.switch-handle {
+  >.switch-input:checked~.switch-handle {
     background-color: $secondary;
     border-color: $secondary;
   }
 }
+
 .switch-success-outline-alt {
-  > .switch-input:checked~.switch-label {
-    background-color: $white!important;
+  >.switch-input:checked~.switch-label {
+    background-color: $white !important;
     border-color: $success;
   }
-  > .switch-input:checked~.switch-label:after {
+  >.switch-input:checked~.switch-label:after {
     color: $success;
   }
-  > .switch-input:checked~.switch-handle {
+  >.switch-input:checked~.switch-handle {
     background-color: $success;
     border-color: $success;
   }
 }
+
 .switch-info-outline-alt {
-  > .switch-input:checked~.switch-label {
-    background-color: $white!important;
+  >.switch-input:checked~.switch-label {
+    background-color: $white !important;
     border-color: $info;
   }
-  > .switch-input:checked~.switch-label:after {
+  >.switch-input:checked~.switch-label:after {
     color: $info;
   }
-  > .switch-input:checked~.switch-handle {
+  >.switch-input:checked~.switch-handle {
     background-color: $info;
     border-color: $info;
   }
 }
+
 .switch-warning-outline-alt {
-  > .switch-input:checked~.switch-label {
-    background-color: $white!important;
+  >.switch-input:checked~.switch-label {
+    background-color: $white !important;
     border-color: $warning;
   }
-  > .switch-input:checked~.switch-label:after {
+  >.switch-input:checked~.switch-label:after {
     color: $warning;
   }
-  > .switch-input:checked~.switch-handle {
+  >.switch-input:checked~.switch-handle {
     background-color: $warning;
     border-color: $warning;
   }
 }
+
 .switch-danger-outline-alt {
-  > .switch-input:checked~.switch-label {
-    background-color: $white!important;
+  >.switch-input:checked~.switch-label {
+    background-color: $white !important;
     border-color: $danger;
   }
-  > .switch-input:checked~.switch-label:after {
+  >.switch-input:checked~.switch-label:after {
     color: $danger;
   }
-  > .switch-input:checked~.switch-handle {
+  >.switch-input:checked~.switch-handle {
     background-color: $danger;
     border-color: $danger;
   }
 }
 
 /* Switch With Text */
+
 .switch.switch-text,
 .switch.switch-icon {
   position: relative;
@@ -274,14 +295,12 @@ input[type=radio] {
   height: 30px;
   background-color: transparent;
   cursor: pointer;
-
   .switch-input {
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
   }
-
   .switch-label {
     position: relative;
     display: block;
@@ -306,7 +325,8 @@ input[type=radio] {
     transition: left .3s ease-out;
   }
 }
-.switch.switch-text{
+
+.switch.switch-text {
   .switch-label:after,
   .switch-label:before {
     position: absolute;
@@ -316,7 +336,7 @@ input[type=radio] {
     line-height: 1;
     font-size: 12px;
     font-weight: 400;
-    font-family: $font-family-sans-roboto;
+    font-family: $font-family-base;
     text-align: center;
     transition: inherit;
   }
@@ -332,17 +352,21 @@ input[type=radio] {
     opacity: 0;
   }
 }
+
 .switch.switch-text .switch-input:checked~.switch-label:before {
   opacity: 0;
 }
+
 .switch.switch-text .switch-input:checked~.switch-label:after {
   opacity: 1;
 }
+
 .switch.switch-text .switch-input:checked~.switch-handle {
   left: 37px;
 }
 
 /* Switch With Icon */
+
 .switch.switch-icon {
   .switch-label:after,
   .switch-label:before {
@@ -353,7 +377,7 @@ input[type=radio] {
     line-height: 1;
     font-size: .75rem;
     font-weight: 400;
-    font-family: $font-family-matetial-icon;
+    font-family: $font-family-icon;
     text-align: center;
     transition: inherit;
   }
@@ -369,12 +393,15 @@ input[type=radio] {
     opacity: 0;
   }
 }
+
 .switch.switch-icon .switch-input:checked~.switch-label:before {
   opacity: 0;
 }
+
 .switch.switch-icon .switch-input:checked~.switch-label:after {
   opacity: 1;
 }
+
 .switch.switch-icon .switch-input:checked~.switch-handle {
   left: 37px;
 }

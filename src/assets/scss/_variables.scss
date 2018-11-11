@@ -39,10 +39,10 @@ $body-bg:                      $gray-100;
 // Fonts:           ;
 
 $font-family-sans-roboto:       'Roboto', sans-serif !default;
-$font-family-montserrat:        'Montserrat', sans-serif !default;
-$font-family-poppins:           'Poppins', sans-serif !default;
 $font-family-matetial-icon:     'Material Design Icons' !default;
 $font-family-base:              $font-family-sans-roboto !default;
+$font-family-icon:              $font-family-matetial-icon !default;
+
 $font-size-base:                .875rem !default;
 $font-weight-medium:            500 !default;
 
