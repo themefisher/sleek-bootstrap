@@ -1,6 +1,6 @@
 <div align="center">
 
-# <a href="http://themes.iamabdus.com/sleek/1.0/index.html" target="_blank" rel="noopener noreferrer">Sleek Dashboard</a> [![Twitter](https://img.shields.io/twitter/url/https/github.com/tafcoder/sleek-dashboard.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Ftafcoder%2Fsleek-dashboard)
+# <a href="https://sleek.tafcoder.com/" target="_blank" rel="noopener noreferrer">Sleek Dashboard</a> [![Twitter](https://img.shields.io/twitter/url/https/github.com/tafcoder/sleek-dashboard.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Ftafcoder%2Fsleek-dashboard)
 
 </div>
 
@@ -41,9 +41,9 @@ We are very excited to share this dashboard with you and we look forward to hear
 
 | Ecommerce  | Analytics  | Emails  | Chart Widgets  |
 |---|---|---|---|
-| [![Ecommerce page](src/assets/img/github/ecommerce.png)](http://themes.iamabdus.com/sleek/1.0/index.html)  | [![Analytics page](src/assets/img/github/analytics.png)](http://themes.iamabdus.com/sleek/1.0/analytics.html)  | [![Emails page](src/assets/img/github/email.png)](http://themes.iamabdus.com/sleek/1.0/email-inbox.html)  | [![Chart Widgets Page](src/assets/img/github/chart-widgets.png)](http://themes.iamabdus.com/sleek/1.0/chart-widgets.html)
+| [![Ecommerce page](src/assets/img/github/ecommerce.png)](https://sleek.tafcoder.com/)  | [![Analytics page](src/assets/img/github/analytics.png)](https://sleek.tafcoder.com/analytics.html)  | [![Emails page](src/assets/img/github/email.png)](https://sleek.tafcoder.com/email-inbox.html)  | [![Chart Widgets Page](src/assets/img/github/chart-widgets.png)](https://sleek.tafcoder.com/chart-widgets.html)
 
-[View More](http://themes.iamabdus.com/sleek/1.0/index.html).
+[View More](https://sleek.tafcoder.com/).
 
 ## Getting Started
 
@@ -88,9 +88,9 @@ If your problem or idea is not addressed yet, [open a new issue](https://github.
 
 ## Technical Support or Questions
 
-If you have questions or need help integrating the product please [contact us](http://www.iamabdus.com/contact/) instead of opening an issue.
+If you have questions or need help integrating the product please [contact us](mailto:hello@tafcoder.com) instead of opening an issue.
 
 ## Licensing
 
-- Copyright 2018 Taf Coder (http://www.iamabdus.com/)
+- Copyright 2018 TAF Coder (https://sleek.tafcoder.com/)
 - Licensed under MIT (https://github.com/tafcoder/sleek-dashboard/blob/master/LICENSE.md)
