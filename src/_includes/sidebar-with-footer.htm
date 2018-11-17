@@ -1,0 +1,343 @@
+          <!-- ====================================
+          ——— LEFT SIDEBAR WITH FOOTER
+          ===================================== -->
+          <aside class="left-sidebar bg-sidebar ">
+            <div id="sidebar" class="sidebar sidebar-with-footer">
+              <!-- Aplication Brand -->
+              <div class="app-brand">
+                <a href="index.html">
+                  <svg class="brand-icon" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" width="30" height="33" viewBox="0 0 30 33">
+                    <g fill="none" fill-rule="evenodd">
+                      <path class="logo-fill-blue" fill="#7DBCFF" d="M0 4v25l8 4V0zM22 4v25l8 4V0z"/>
+                      <path class="logo-fill-white" fill="#FFF" d="M11 4v25l8 4V0z"/>
+                    </g>
+                  </svg>
+                  <span class="brand-name">Sleek Dashboard</span>
+                </a>
+              </div>
+              <!-- begin sidebar scrollbar -->
+              <div class="sidebar-scrollbar">
+                <!-- sidebar menu -->
+                <ul class="nav sidebar-inner" id="sidebar-menu">
+                  <li class="has-sub @@if (parent === 'dashboard'){active expand}">
+                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#dashboard" aria-expanded="false" aria-controls="dashboard">
+                      <i class="mdi mdi-view-dashboard-outline"></i>
+                      <span class="nav-text">Dashboards</span>                      
+                      <b class="caret"></b>
+                    </a>
+                    <ul class="collapse @@if (parent === 'dashboard'){show}" id="dashboard"  data-parent="#sidebar-menu">
+                      <div class="sub-menu">
+                        <li class="@@if (active === 'home'){active}">
+                          <a href="index.html">Ecommerce</a>
+                        </li>
+                        <li class="@@if (active === 'analytics'){active}">
+                          <a class="sidenav-item-link" href="analytics.html">                            
+                            <span class="nav-text">Analytics</span>
+                            <span class="badge badge-success badge-sm">new</span>
+                          </a>
+                        </li>
+                      </div>
+                    </ul>
+                  </li>
+                  <li class="has-sub @@if (parent === 'layouts'){active expand}">
+                    <a class="sidenav-item-link" href="javascript:void(0)"  data-toggle="collapse" data-target="#layouts" aria-expanded="false" aria-controls="layouts">
+                      <i class="mdi mdi-widgets"></i>
+                      <span class="nav-text">Layouts</span>
+                      <b class="caret"></b>
+                    </a>
+                    <ul class="collapse @@if (parent === 'layouts'){show}" id="layouts" data-parent="#sidebar-menu">
+                      <div class="sub-menu">
+                          <li class="has-sub @@if (sub_parent === 'header'){active expand}">
+                              <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#headers" aria-expanded="false" aria-controls="headers">
+                                <span class="nav-text">Header</span>
+                                <b class="caret"></b>
+                              </a>
+                              <ul class="collapse @@if (sub_parent === 'header'){show}" id="headers">
+                                <div class="sub-menu">
+                                    <li class=" @@if (active === 'header-fixed'){active}">
+                                        <a href="header-fixed.html">Header Fixed</a>
+                                      </li>
+                                      <li class="@@if (active === 'header-sticky'){active} ">
+                                        <a href="header-static.html">Header Static</a>
+                                      </li>
+                                      <li class="@@if (active === 'header-white'){active} ">
+                                        <a href="header-light.html">Header Light</a>
+                                      </li>
+                                      <li class="@@if (active === 'header-dark'){active} ">
+                                        <a href="header-dark.html">Header Dark</a>
+                                      </li>
+                                </div>
+                              </ul>
+                            </li>
+                          <li class="has-sub @@if (sub_parent === 'sidebar-nav'){active expand}">
+                            <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#sidebar-nav" aria-expanded="false" aria-controls="sidebar-nav">
+                              <span class="nav-text">Sidebar Nav</span>
+                              <b class="caret"></b>
+                            </a>
+                            <ul class="collapse @@if (sub_parent === 'sidebar-nav'){show}" id="sidebar-nav">
+                              <div class="sub-menu">
+                                <li class="@@if (active === 'sidebar-open'){active} ">
+                                  <a href="sidebar-open.html">Open</a>
+                                </li>
+                                <li class="@@if (active === 'sidebar-minimized'){active}  ">
+                                  <a href="sidebar-minimized.html">Sidebar Minimized</a>
+                                </li>
+                                <li class=" @@if (active === 'sidebar-offcanvas'){active}  ">
+                                  <a href="sidebar-offcanvas.html">Sidebar Offcanvas</a>
+                                </li>
+                                <li class=" @@if (active === 'sidebar-with-footer'){active}  ">
+                                  <a href="sidebar-with-footer.html">Sidebar With Footer</a>
+                                </li>
+                                <li class=" @@if (active === 'sidebar-without-footer'){active}  ">
+                                  <a href="sidebar-without-footer.html">Sidebar Without Footer</a>
+                                </li>
+                              </div>
+                            </ul>
+                          </li>
+                      </div>
+                    </ul>
+                  </li>
+
+                  <li class="has-sub @@if (parent === 'ui-elements'){active expand}">
+                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#ui-elements" aria-expanded="false" aria-controls="ui-elements">
+                      <i class="mdi mdi-folder-multiple-outline"></i>
+                      <span class="nav-text">UI Elements</span>
+                      <b class="caret"></b>
+                    </a>
+                    <ul class="collapse @@if (parent === 'ui-elements'){show}"  id="ui-elements" data-parent="#sidebar-menu">
+                      <div class="sub-menu">
+                        <li class="has-sub @@if (sub_parent === 'components'){active expand}">
+                          <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#components" aria-expanded="false" aria-controls="components">
+                            <span class="nav-text" >Components</span>
+                            <b class="caret"></b>
+                          </a>
+                          <ul class="collapse @@if (sub_parent === 'components'){show}" id="components">
+                            <div class="sub-menu">
+                                <li class="@@if (active === 'alert'){active}">
+                                  <a href="alert.html">Alert</a>
+                                </li>
+                                <li class="@@if (active === 'badges'){active}">
+                                  <a href="badges.html">Badges</a>
+                                </li>
+                                <li class="@@if (active === 'buttons-default'){active}">
+                                  <a href="buttons.html">Button Default</a>
+                                </li>
+                                <li class="@@if (active === 'button-dropdown'){active}">
+                                  <a href="dropdowns.html">Button Dropdowns</a>
+                                </li>
+                                <li class="@@if (active === 'button-group'){active}">
+                                  <a href="button-group.html">Button Group</a>
+                                </li>
+                                <li class="@@if (active === 'button-social'){active}">
+                                  <a href="button-social.html">Button Social</a>
+                                </li>
+                                <li class="@@if (active === 'button-loading'){active}">
+                                  <a href="button-loading.html">Button Loading</a>
+                                </li>
+                                <li class="@@if (active === 'breadcrumb'){active}">
+                                  <a href="bredcrumb.html">Breadcrumb</a>
+                                </li>
+                                <li class="@@if (active === 'card'){active}">
+                                  <a href="card.html">Cards</a>
+                                </li>
+                                <li class="@@if (active === 'carousel'){active}">
+                                  <a href="carousel.html">Carousel</a>
+                                </li>
+                                <li class="@@if (active === 'collapse'){active}">
+                                  <a href="collapse.html">Collapse</a>
+                                </li>
+                                <li class="@@if (active === 'listgroup'){active}">
+                                  <a href="list-group.html">List Group</a>
+                                </li>
+                                <li class="@@if (active === 'modal'){active}">
+                                  <a href="modal.html">Modals</a>
+                                </li>
+                                <li class="@@if (active === 'pagination'){active}">
+                                  <a href="pagination.html">Pagination</a>
+                                </li>
+                                <li class="@@if (active === 'popover'){active}">
+                                  <a href="popover-tooltip.html">Popover and Tooltip</a>
+                                </li>
+                                <li class="@@if (active === 'progressbar'){active}">
+                                  <a href="progressbar.html">Progress Bar</a>
+                                </li>
+                                <li class="@@if (active === 'spinners'){active}">
+                                  <a href="spinners.html">Spinners</a>
+                                </li>
+                                <li class="@@if (active === 'switcher'){active}">
+                                  <a href="switchers.html">Switchers</a>
+                                </li>
+                                <li class="@@if (active === 'table-general'){active}">
+                                  <a href="tables.html">Tables</a>
+                                </li>
+                                <li class="@@if (active === 'tabs'){active}">
+                                  <a href="tabs.html">Tabs</a>
+                                </li>
+                            </div>
+                          </ul>
+                        </li>
+
+                        <li class="has-sub @@if (sub_parent === 'icon-fonts'){active expand}">
+                          <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#icon-fonts" aria-expanded="false" aria-controls="icon-fonts">
+                            <span class="nav-text">Icons</span>
+                            <b class="caret"></b>
+                          </a>
+                          <ul class="collapse @@if (sub_parent === 'icon-fonts'){show}" id="icon-fonts">
+                              <div class="sub-menu">
+                                <li class="@@if (active === 'fontawesome-icons'){active}">
+                                  <a href="meterial-design-icons.html">Material Design</a>
+                                </li>                                
+                                <li class="@@if (active === 'flag-icons'){active}">
+                                  <a href="flag-icons.html">Flags</a>
+                                </li>
+                              </div>
+                          </ul>
+                        </li>
+
+                        <li class="has-sub @@if (sub_parent === 'forms'){active expand}">
+                          <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#forms" aria-expanded="false" aria-controls="forms">
+                            <span class="nav-text">Forms</span>
+                            <b class="caret"></b>
+                          </a>
+                          <ul class="collapse @@if (sub_parent === 'forms'){show}" id="forms">
+                            <div class="sub-menu">
+                              <li class="@@if (active === 'basicInput'){active}">
+                                <a href="form-basic-input.html">Basic Input</a>
+                              </li>
+                              <li class="@@if (active === 'inputgroup'){active}">
+                                <a href="form-input-group.html">Input Group</a>
+                              </li>
+                              <li class="@@if (active === 'checkboxRadio'){active}">
+                                <a href="form-checkbox-radio.html">Checkbox & Radio</a>
+                              </li>
+                              <li class="@@if (active === 'validation'){active}">
+                                <a href="form-validation.html">Form Validation</a>
+                              </li>
+                              <li class="@@if (active === 'formAdvance'){active}">
+                                <a href="form-advance.html">Form Advanced</a>
+                              </li>
+                            </div>
+                          </ul>
+                        </li>
+                        <li class="has-sub @@if (sub_parent === 'maps'){active expand}">
+                          <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#maps" aria-expanded="false" aria-controls="maps">
+                            <span class="nav-text">Maps</span>
+                            <b class="caret"></b>
+                          </a>
+                          <ul class="collapse @@if (sub_parent === 'maps'){show}" id="maps">
+                            <div class="sub-menu">
+                              <li class="@@if (active === 'google-map'){active}">
+                                <a href="google-map.html">Google Map</a>
+                              </li>
+                              <li class="@@if (active === 'vector-map'){active}">
+                                <a href="vector-map.html">Vector Map</a>
+                              </li>
+                            </div>
+                          </ul>
+                        </li>
+                        <li class="has-sub @@if (sub_parent === 'widgets'){active expand}">
+                          <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#widgets" aria-expanded="false" aria-controls="widgets">
+                            <span class="nav-text">Widgets</span>
+                            <b class="caret"></b>
+                          </a>
+                          <ul class="collapse @@if (sub_parent === 'widgets'){show}" id="widgets">
+                            <div class="sub-menu ">
+                              <li class="@@if (active === 'general-widget'){active}">
+                                <a href="general-widgets.html">General Widgets</a>
+                              </li>
+                              <li class="@@if (active === 'chart-widget'){active}">
+                                <a href="chart-widgets.html">Chart Widgets</a>
+                              </li>
+                            </div>
+                          </ul>
+                        </li>
+                      </div>
+                    </ul>
+                  </li>
+
+                  <li class="has-sub @@if (parent === 'charts'){active expand}">
+                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#charts" aria-expanded="false" aria-controls="charts">
+                      <i class="mdi mdi-chart-pie"></i>
+                      <span class="nav-text">Charts</span>
+                      <b class="caret"></b>
+                    </a>
+                    <ul class="collapse @@if (parent === 'charts'){show}"  id="charts" data-parent="#sidebar-menu">
+                      <div class="sub-menu">
+                        <li class="@@if (active === 'chartjs'){active}">
+                          <a href="charts-chartjs.html">Chartjs</a>
+                        </li>
+                      </div>
+                    </ul>
+                  </li>
+                  <li class="has-sub @@if (parent === 'pages'){active expand}">
+                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#pages" aria-expanded="false" aria-controls="pages">
+                      <i class="mdi mdi-image-filter-none"></i>
+                      <span class="nav-text">Pages</span>
+                      <b class="caret"></b>
+                    </a>
+                    <ul class="collapse @@if (parent === 'pages'){show}" id="pages" data-parent="#sidebar-menu">
+                      <div class="sub-menu">
+                        <li class="@@if (active === 'profile'){active}">
+                          <a href="profile.html">User Profile</a>
+                        </li>
+                        <li class="has-sub @@if (sub_parent === 'authentication'){active expand}">
+                          <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#authentication" aria-expanded="false" aria-controls="authentication">
+                            <span class="nav-text">Authentication</span>
+                            <b class="caret"></b>
+                          </a>
+                          <ul class="collapse @@if (sub_parent === 'authentication'){show}" id="authentication">
+                            <div class="sub-menu ">
+                              <li class="@@if (active === 'signin'){active}">
+                                <a href="signin.html">Sign In</a>
+                              </li>
+                              <li class="@@if (active === 'signup'){active}">
+                                <a href="signup.html">Sign Up</a>
+                              </li>
+                            </div>
+                          </ul>
+                        </li>
+                        <li class="has-sub @@if (sub_parent === 'others'){active expand}">
+                            <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#others" aria-expanded="false" aria-controls="others">
+                            <span class="nav-text">Others</span>
+                            <b class="caret"></b>
+                          </a>
+                          <ul class="collapse @@if (sub_parent === 'others'){show}" id="others">
+                            <div class="sub-menu ">
+                              <li class="@@if (active === 'invoice'){active}">
+                                <a href="invoice.html"> Invoice</a>
+                              </li>
+                              <li class="@@if (active === 'error'){active}">
+                                <a href="error.html"> Error</a>
+                              </li>
+                            </div>
+                          </ul>
+                        </li>
+                      </div>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <hr class="separator">
+
+              <div class="sidebar-footer">
+                <div class="sidebar-footer-content">
+                  <h6 class="text-uppercase">
+                    Cpu Uses
+                    <span class="float-right">40%</span>
+                  </h6>
+                  <div class="progress progress-xs">
+                    <div class="progress-bar active" style="width: 40%;" role="progressbar"></div>
+                  </div>
+                  <h6 class="text-uppercase">
+                    Memory Uses
+                    <span class="float-right">65%</span>
+                  </h6>
+                  <div class="progress progress-xs">
+                    <div class="progress-bar progress-bar-warning" style="width: 65%;" role="progressbar"></div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </aside>

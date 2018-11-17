@@ -1,0 +1,25 @@
+# Server
+source: src
+host: "localhost"
+baseurl: ""
+exclude:
+  - .editorconfig
+  - package.json
+  - package-lock.json
+  - Gemfile
+  - Gemfile.lock
+  - .git
+  - .idea
+  - .gitignore
+  - node_modules/
+  - .DS_Store
+  - .sass-cache/
+  - .asset-cache/
+  - push-to-repo.sh
+  - commits.sh
+  - assets/scss/*
+  - assets/plugins/**/*.scss
+
+# Assets
+sass:
+  sass_dir: assets/scss
