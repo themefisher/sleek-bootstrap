@@ -5,5 +5,7 @@ Thumbs.db
 debug.log
 npm-debug.log
 node_modules
+vendor
 package-lock.json
 demo
+_site
