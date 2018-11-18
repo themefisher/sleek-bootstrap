@@ -106,12 +106,7 @@
             "name": "badge",
             "label": "Badge",
             "link": "/ui-elements/components/badge/"
-          },
-          {
-            "name": "button-default",
-            "label": "Button Default",
-            "link": "/ui-elements/components/button-default/"
-          },
+          },          
           {
             "name": "button-default",
             "label": "Button Default",
@@ -181,12 +176,7 @@
             "name": "progress-bar",
             "label": "Progress Bar",
             "link": "/ui-elements/components/progress-bar/"
-          },
-          {
-            "name": "spinner",
-            "label": "Spinner",
-            "link": "/ui-elements/components/spinner/"
-          },
+          },          
           {
             "name": "spinner",
             "label": "Spinner",
