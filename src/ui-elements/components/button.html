@@ -1,14 +1,14 @@
-@@include('header.htm', { "title": "Sleek - Admin Dashboard Template", "className": "header-fixed sidebar-fixed sidebar-dark header-light" })
-@@include('sidebar-with-footer.htm', { "parent": "ui-elements", "sub_parent": "components", "active": "buttons-default" })
+---
+layout: default
+title: "Buttons - Sleek Admin Dashboard Template"
+bodyClass: "header-fixed sidebar-fixed sidebar-dark header-light"
 
-		<!-- ====================================
-		——— PAGE WRAPPER
-		===================================== -->
-		<div class="page-wrapper">
-			@@include('top-bar.htm')
-				<div class="content-wrapper">
-						<!-- @@include('breadcrumb.htm', { "parent": "UI Elements", "active": "Buttons" }) -->
-						<div class="content">
+parent: "ui-elements"
+sub_parent: "components"
+activePage: "buttons-default"
+---
+
+
 							<div class="d-lg-flex align-items-center mb-4">
 								<h1 class="text-dark mr-3">Badges</h1>
 								@@include('breadcrumb.htm', { "parent": "UI Elements", "active": "Badges" })
@@ -756,8 +756,4 @@
 										</div>
 									</div>
 								</div>
-							</div>
-						</div>
-						@@include('right-sidebar.htm')
-
-				@@include('footer.htm')
+							</div>						

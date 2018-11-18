@@ -1,21 +1,19 @@
-@@include('header.htm', { "title": "Sleek - Admin Dashboard Template", "className": "header-fixed sidebar-fixed sidebar-dark header-light" })
-@@include('sidebar-with-footer.htm', { "parent": "ui-elements", "sub_parent": "components", "active": "listgroup" })
+---
+layout: default
+title: "Listgroup - Sleek Admin Dashboard Template"
+bodyClass: "header-fixed sidebar-fixed sidebar-dark header-light"
 
-		<!-- ====================================
-		——— PAGE WRAPPER
-		===================================== -->
-		<div class="page-wrapper">
-			@@include('top-bar.htm')
-				<div class="content-wrapper">
-						@@include('breadcrumb.htm', { "parent": "UI Elements", "active": "List Groups" })
-						<div class="content">
-							<!-- First Row  -->
+parent: "ui-elements"
+sub_parent: "components"
+activePage: "listgroup"
+---
+
 							<div class="row">
-								<div class="col-lg-6">
-									@@include('notification.htm')
+								<div class="col-lg-6">									
+									{%- include notification.htm -%}
 								</div>
-								<div class="col-lg-6">
-									@@include('to-do-list.htm')
+								<div class="col-lg-6">									
+									{%- include to-do-list.htm -%}
 
 								</div>
 								<div class="col-lg-6">
@@ -153,7 +151,3 @@
 									</div>
 								</div>
 							</div>
-						</div>
-						@@include('right-sidebar.htm')
-
-	@@include('footer.htm')

@@ -1,14 +1,13 @@
-@@include('header.htm', { "title": "Sleek - Admin Dashboard Template", "className": "header-fixed sidebar-fixed sidebar-dark header-light" })
-@@include('sidebar-with-footer.htm', { "parent": "ui-elements", "sub_parent": "components", "active": "carousel" })
+---
+layout: default
+title: "Carousel - Sleek Admin Dashboard Template"
+bodyClass: "header-fixed sidebar-fixed sidebar-dark header-light"
 
-		<!-- ====================================
-		——— PAGE WRAPPER
-		===================================== -->
-		<div class="page-wrapper">
-			@@include('top-bar.htm')
-				<div class="content-wrapper">
-						@@include('breadcrumb.htm', { "parent": "UI Elements", "active": "Carousels" })
-						<div class="content">
+parent: "ui-elements"
+sub_parent: "components"
+activePage: "carousel"
+---
+
 							<div class="row">
 								<div class="col-lg-6">
 									<div class="card card-default rounded bg-white  mb-4">
@@ -179,6 +178,3 @@
 									</div>
 								</div>
 							</div>
-						</div>
-						@@include('right-sidebar.htm')
-	@@include('footer.htm')

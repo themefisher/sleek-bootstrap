@@ -1,15 +1,13 @@
-@@include('header.htm', { "title": "Sleek - Admin Dashboard Template", "className": "header-fixed sidebar-fixed sidebar-dark header-light" })
-@@include('sidebar-with-footer.htm', { "parent": "ui-elements", "sub_parent": "components", "active": "card" })
+---
+layout: default
+title: "Card - Sleek Admin Dashboard Template"
+bodyClass: "header-fixed sidebar-fixed sidebar-dark header-light"
 
-		<!-- ====================================
-		——— PAGE WRAPPER
-		===================================== -->
-		<div class="page-wrapper">
-			@@include('top-bar.htm')
-				<div class="content-wrapper">
-						@@include('breadcrumb.htm', { "parent": "UI Elements", "active": "Cards" })
-						<div class="content">
-							<!-- First Row  -->
+parent: "ui-elements"
+sub_parent: "components"
+activePage: "card"
+---
+							
 							<div class="card card-default rounded bg-white mb-4">
 								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
 									<h2>Card with Image</h2>
@@ -332,8 +330,4 @@
 										</div>
 									</div>
 								</div>
-							</div>
-						</div>
-						@@include('right-sidebar.htm')
-
-		@@include('footer.htm')
+							</div>						

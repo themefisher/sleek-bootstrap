@@ -1,95 +1,91 @@
-@@include('header.htm', { "title": "Sleek - Admin Dashboard Template", "className": "header-fixed sidebar-fixed sidebar-dark header-light" })
-@@include('sidebar-with-footer.htm', { "parent": "ui-elements", "sub_parent": "components", "active": "modal" })
+---
+layout: default
+title: "Modal - Sleek Admin Dashboard Template"
+bodyClass: "header-fixed sidebar-fixed sidebar-dark header-light"
 
-		<!-- ====================================
-		——— PAGE WRAPPER
-		===================================== -->
-		<div class="page-wrapper">
-			@@include('top-bar.htm')
-				<div class="content-wrapper">
-						@@include('breadcrumb.htm', { "parent": "UI Elements", "active": "Modals" })
-						<div class="content">
-							<!-- First Row  -->
-							<div class="row">
-								<div class="col-lg-6 col-xl-4">
-									<div class="card card-default rounded bg-white mb-4">
-										<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-											<h2>Default Modal </h2>
-										</div>
-										<div class="card-body">
-
-											<button type="button" class="btn btn-primary btn-pill" data-toggle="modal" data-target="#exampleModal">
-												Launch Demo Modal
-											</button>
-										</div>
+parent: "ui-elements"
+sub_parent: "components"
+activePage: "modal"
+---
+						
+						<div class="row">
+							<div class="col-lg-6 col-xl-4">
+								<div class="card card-default rounded bg-white mb-4">
+									<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+										<h2>Default Modal </h2>
 									</div>
-								</div>
-								<div class="col-lg-6 col-xl-4">
-									<div class="card card-default rounded bg-white mb-4">
-										<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-											<h2>Scrolling Long Content</h2>
-										</div>
-										<div class="card-body">
-											<button type="button" class="btn btn-success btn-pill" data-toggle="modal" data-target="#exampleModalLong">
-												Launch Demo Modal
-											</button>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-6 col-xl-4">
-									<div class="card card-default rounded bg-white mb-4">
-										<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-											<h2>Tooltips and Popovers</h2>
-										</div>
-										<div class="card-body">
-											<button type="button" class="btn btn-warning btn-pill" data-toggle="modal" data-target="#exampleModalTooltip">
-												Launch Demo Modal
-											</button>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-6 col-xl-4">
-									<div class="card card-default rounded bg-white mb-4">
-										<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-											<h2>Using the Grid</h2>
-										</div>
-										<div class="card-body">
-											<button type="button" class="btn btn-danger btn-pill" data-toggle="modal" data-target="#exampleModalGrid">
-												Launch Demo Modal
-											</button>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-6 col-xl-4">
-									<div class="card card-default rounded bg-white mb-4">
-										<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-											<h2>Form Modal Content</h2>
-										</div>
-										<div class="card-body">
-											<button type="button" class="btn btn-info btn-pill" data-toggle="modal" data-target="#exampleModalForm">
-												Launch Demo Modal
-											</button>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-6 col-xl-4">
-									<div class="card card-default rounded bg-white mb-4">
-										<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-											<h2>Optional Sizes</h2>
-										</div>
-										<div class="card-body">
-											<button type="button" class="btn bg-primary text-white btn-pill mb-3 mb-md-0" data-toggle="modal" data-target="#exampleModallarge">
-												Large Modal
-											</button>
-											<button type="button" class="btn bg-primary text-white btn-pill mb-3 mb-md-0" data-toggle="modal" data-target="#exampleModalsmall">
-												Small Modal
-											</button>
-										</div>
+									<div class="card-body">
+					
+										<button type="button" class="btn btn-primary btn-pill" data-toggle="modal" data-target="#exampleModal">
+											Launch Demo Modal
+										</button>
 									</div>
 								</div>
 							</div>
-						</div>
-						@@include('right-sidebar.htm')
+							<div class="col-lg-6 col-xl-4">
+								<div class="card card-default rounded bg-white mb-4">
+									<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+										<h2>Scrolling Long Content</h2>
+									</div>
+									<div class="card-body">
+										<button type="button" class="btn btn-success btn-pill" data-toggle="modal" data-target="#exampleModalLong">
+											Launch Demo Modal
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-xl-4">
+								<div class="card card-default rounded bg-white mb-4">
+									<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+										<h2>Tooltips and Popovers</h2>
+									</div>
+									<div class="card-body">
+										<button type="button" class="btn btn-warning btn-pill" data-toggle="modal" data-target="#exampleModalTooltip">
+											Launch Demo Modal
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-xl-4">
+								<div class="card card-default rounded bg-white mb-4">
+									<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+										<h2>Using the Grid</h2>
+									</div>
+									<div class="card-body">
+										<button type="button" class="btn btn-danger btn-pill" data-toggle="modal" data-target="#exampleModalGrid">
+											Launch Demo Modal
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-xl-4">
+								<div class="card card-default rounded bg-white mb-4">
+									<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+										<h2>Form Modal Content</h2>
+									</div>
+									<div class="card-body">
+										<button type="button" class="btn btn-info btn-pill" data-toggle="modal" data-target="#exampleModalForm">
+											Launch Demo Modal
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-xl-4">
+								<div class="card card-default rounded bg-white mb-4">
+									<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+										<h2>Optional Sizes</h2>
+									</div>
+									<div class="card-body">
+										<button type="button" class="btn bg-primary text-white btn-pill mb-3 mb-md-0" data-toggle="modal" data-target="#exampleModallarge">
+											Large Modal
+										</button>
+										<button type="button" class="btn bg-primary text-white btn-pill mb-3 mb-md-0" data-toggle="modal" data-target="#exampleModalsmall">
+											Small Modal
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>					
 
 
 						<!-- Modal -->
@@ -314,5 +310,3 @@
 								</div>
 							</div>
 						</div>
-
-	@@include('footer.htm')
