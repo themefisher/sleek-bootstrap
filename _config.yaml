@@ -1,3 +1,6 @@
+# Permalinks
+permalink: pretty
+
 # Server
 source: src
 destination: _site
