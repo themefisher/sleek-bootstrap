@@ -1,15 +1,13 @@
-@@include('header.htm', { "title": "Sleek - Admin Dashboard Template", "className": "header-fixed sidebar-fixed sidebar-dark header-light" })
-@@include('sidebar-with-footer.htm', { "parent": "ui-elements", "sub_parent": "components", "active": "breadcrumb" })
+---
+layout: default
+title: "Breadcrumb - Sleek Admin Dashboard Template"
+bodyClass: "header-fixed sidebar-fixed sidebar-dark header-light"
 
-		<!-- ====================================
-		——— PAGE WRAPPER 
-		===================================== -->	
-	<div class="page-wrapper">
-		@@include('top-bar.htm')
-			<div class="content-wrapper">
-					@@include('breadcrumb.htm', { "parent": "UI Elements", "active": "Breadcrumbs" })
-
-					<div class="content">
+parent: "ui-elements"
+sub_parent: "components"
+activePage: "breadcrumb"
+---
+		
 						<div class="row">
 							<div class="col-12 col-xl-6">
 								<div class="card card-default rounded bg-white mb-4">
@@ -22,7 +20,7 @@
 												<li class="breadcrumb-item active" aria-current="page">Home</li>
 											</ol>
 										</nav>
-
+					
 										<nav aria-label="breadcrumb">
 											<ol class="breadcrumb">
 												<li class="breadcrumb-item">
@@ -31,7 +29,7 @@
 												<li class="breadcrumb-item active" aria-current="page">Components</li>
 											</ol>
 										</nav>
-
+					
 										<nav aria-label="breadcrumb">
 											<ol class="breadcrumb">
 												<li class="breadcrumb-item">
@@ -43,12 +41,12 @@
 												<li class="breadcrumb-item active" aria-current="page">Bredcrumbs</li>
 											</ol>
 										</nav>
-
+					
 									</div>
 								</div>
 							</div>
 							<div class="col-12 col-xl-6">
-
+					
 								<div class="card card-default rounded bg-white mb-4">
 									<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
 										<h2>Inverse Breadcrumbs</h2>
@@ -59,7 +57,7 @@
 												<li class="breadcrumb-item active" aria-current="page">Home</li>
 											</ol>
 										</nav>
-
+					
 										<nav aria-label="breadcrumb">
 											<ol class="breadcrumb breadcrumb-inverse">
 												<li class="breadcrumb-item">
@@ -68,7 +66,7 @@
 												<li class="breadcrumb-item active" aria-current="page">Components</li>
 											</ol>
 										</nav>
-
+					
 										<nav aria-label="breadcrumb">
 											<ol class="breadcrumb breadcrumb-inverse">
 												<li class="breadcrumb-item">
@@ -80,7 +78,7 @@
 												<li class="breadcrumb-item active" aria-current="page">Bredcrumbs</li>
 											</ol>
 										</nav>
-
+					
 									</div>
 								</div>
 							</div>
@@ -98,7 +96,7 @@
 												<li class="breadcrumb-item active" aria-current="page">Components</li>
 											</ol>
 										</nav>
-
+					
 										<nav aria-label="breadcrumb">
 											<ol class="breadcrumb breadcrumb-pink">
 												<li class="breadcrumb-item">
@@ -110,7 +108,7 @@
 												<li class="breadcrumb-item active" aria-current="page">Bredcrumbs</li>
 											</ol>
 										</nav>
-
+					
 										<nav aria-label="breadcrumb">
 											<ol class="breadcrumb breadcrumb-success">
 												<li class="breadcrumb-item">
@@ -122,7 +120,7 @@
 												<li class="breadcrumb-item active" aria-current="page">Bredcrumbs</li>
 											</ol>
 										</nav>
-
+					
 										<nav aria-label="breadcrumb">
 											<ol class="breadcrumb breadcrumb-danger">
 												<li class="breadcrumb-item">
@@ -134,7 +132,7 @@
 												<li class="breadcrumb-item active" aria-current="page">Bredcrumbs</li>
 											</ol>
 										</nav>
-
+					
 										<nav aria-label="breadcrumb">
 											<ol class="breadcrumb breadcrumb-warning">
 												<li class="breadcrumb-item">
@@ -146,7 +144,7 @@
 												<li class="breadcrumb-item active" aria-current="page">Bredcrumbs</li>
 											</ol>
 										</nav>
-
+					
 										<nav aria-label="breadcrumb">
 											<ol class="breadcrumb breadcrumb-info">
 												<li class="breadcrumb-item">
@@ -158,12 +156,9 @@
 												<li class="breadcrumb-item active" aria-current="page">Bredcrumbs</li>
 											</ol>
 										</nav>
-
+					
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					@@include('right-sidebar.htm')
 
-		@@include('footer.htm')
