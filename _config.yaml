@@ -1,8 +1,11 @@
 # Server
 source: src
+destination: _site
 host: "localhost"
 baseurl: ""
 exclude:
+  - "*.sh"
+  - "prettify_html.js"
   - .editorconfig
   - package.json
   - package-lock.json
