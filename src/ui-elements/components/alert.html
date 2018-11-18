@@ -1,17 +1,16 @@
-@@include('header.htm', { "title": "Sleek - Admin Dashboard Template", "className": "header-fixed sidebar-fixed sidebar-dark header-light" })
-@@include('sidebar-with-footer.htm', { "parent": "ui-elements", "sub_parent": "components", "active": "alert" })
+---
+layout: default
+title: "Sleek - Admin Dashboard Template"
+bodyClass: "header-fixed sidebar-fixed sidebar-dark header-light"
 
-		<!-- ====================================
-		——— PAGE WRAPPER 
-		===================================== -->	
-		<div class="page-wrapper">
-			@@include('top-bar.htm')
-			<div class="content-wrapper">
+parent: "ui-elements"
+sub_parent: "components"
+activePage: "alert"
+---
 					
-						<div class="content">
 							<div class="d-lg-flex align-items-center mb-4">
 								<h1 class="text-dark mr-3">Alert</h1>
-								@@include('breadcrumb.htm', { "parent": "UI Elements", "active": "alert" })
+									{% include breadcrumb.htm %}
 							</div>
 							<p class="bg-white p-4 border mb-4">Indicate the current page’s location within a navigational hierarchy that
 								automatically adds separators via CSS.</p>							
@@ -312,7 +311,5 @@
 									</div>
 								</div>
 							</div>
-						</div>
-						@@include('right-sidebar.htm')
+						
 
-@@include('footer.htm')
