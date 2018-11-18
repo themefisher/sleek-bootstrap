@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include base/head.html %}
+
+  <body class="{{ page.bodyClass }}" id="body">
+    <script>
+      NProgress.configure({ showSpinner: false });
+      NProgress.start();
+    </script>
+
+    <div class="mobile-sticky-body-overlay"></div>
+
+    <div class="wrapper">
+      {% include base/left-sidebar.html %}
+
+      <div class="page-wrapper">
+        {% include base/header.html %}
+
+        <div class="content-wrapper">
+          <div class="content">{{ content }}</div>
+
+          {% include base/right-sidebar.htm %}
+        </div>
+
+        {% include base/footer.html %}
+      </div>
+    </div>
+
+    {% include base/scripts.html %}
+  </body>
+</html>

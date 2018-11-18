@@ -1,0 +1,288 @@
+            <!--
+              ====================================
+              ——— RIGHT SIDEBAR
+              =====================================
+            -->
+
+            <div class="right-sidebar">
+              <div class="btn-right-sidebar-toggler">
+                <i class="mdi mdi-chevron-left"></i>
+              </div>
+              <!-- Nav Right -->
+              <div class="right-nav-container">
+                <ul class="nav nav-right-sidebar">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link text-danger icon-sm"
+                      data-toggle="tab"
+                      href="#find-replace"
+                      role="tab"
+                      aria-controls="nav-home"
+                      aria-selected="true"
+                    >
+                      <i class="mdi mdi-note-plus-outline"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link text-primary icon-sm"
+                      data-toggle="tab"
+                      href="#launch"
+                      role="tab"
+                      aria-controls="nav-profile"
+                      aria-selected="false"
+                    >
+                      <i class="mdi mdi-launch"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link text-purple icon-sm"
+                      data-toggle="tab"
+                      href="#question-answer"
+                      role="tab"
+                      aria-controls="nav-contact"
+                      aria-selected="false"
+                    >
+                      <i class="mdi mdi-qrcode-edit"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Nav Right Sidebar Tab Content -->
+              <div class="right-sidebar-tab">
+                <div class="tab-content" id="nav-tabContent">
+                  <div
+                    class="tab-pane"
+                    id="find-replace"
+                    role="tabpanel"
+                    aria-labelledby="nav-profile-tab"
+                  >
+                    <div class="card card-right-sidebar">
+                      <div class="card-header">
+                        <button type="button" class="close" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h5 class="card-title">New Report</h5>
+                      </div>
+                      <div class="card-body">
+                        <form action="">
+                          <div class="form-group">
+                            <label for="exampleInputEmail13">Email address</label>
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="exampleInputEmail13"
+                              aria-describedby="emailHelp"
+                              placeholder="Enter email"
+                            />
+                            <small id="emailHelp" class="form-text text-muted"
+                              >We'll never share your email with anyone else.</small
+                            >
+                          </div>
+                          <div class="form-group">
+                            <label for="categorySelect">Category</label>
+                            <select class="form-control" id="categorySelect">
+                              <option>Finance</option>
+                              <option>Sales</option>
+                              <option>System</option>
+                              <option>Customers</option>
+                              <option>Orders</option>
+                            </select>
+                          </div>
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">@</div>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Units" />
+                          </div>
+
+                          <div class="form-group">
+                            <label>filter:</label>
+                            <div class="custom-control custom-checkbox mb-2">
+                              <input
+                                type="checkbox"
+                                class="custom-control-input"
+                                id="pending"
+                              />
+                              <label class="custom-control-label" for="pending"
+                                >Pending transations</label
+                              >
+                            </div>
+                            <div class="custom-control custom-checkbox mb-2">
+                              <input
+                                type="checkbox"
+                                class="custom-control-input"
+                                id="marginss2"
+                              />
+                              <label class="custom-control-label" for="marginss2"
+                                >Include margins</label
+                              >
+                            </div>
+                            <div class="custom-control custom-checkbox mb-2">
+                              <input
+                                type="checkbox"
+                                class="custom-control-input"
+                                id="balance"
+                              />
+                              <label class="custom-control-label" for="balance"
+                                >Include balance</label
+                              >
+                            </div>
+                          </div>
+                          <button class="btn btn-primary">Submit</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="tab-pane"
+                    id="launch"
+                    role="tabpanel"
+                    aria-labelledby="nav-contact-tab"
+                  >
+                    <div class="card card-right-sidebar">
+                      <div class="card-header">
+                        <button type="button" class="close" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h5 class="card-title">Notification</h5>
+                      </div>
+                      <div class="card-body px-0">
+                        <ul class="notifications-list">
+                          <li>
+                            <a href="#">
+                              <i class="mdi mdi-account-plus"></i> New user registered
+                              <span class=" font-size-12 d-inline-block float-right"
+                                ><i class="mdi mdi-clock-outline"></i> 10 AM</span
+                              >
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i class="mdi mdi-account-remove"></i> User deleted
+                              <span class=" font-size-12 d-inline-block float-right"
+                                ><i class="mdi mdi-clock-outline"></i> 07 AM</span
+                              >
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i class="mdi mdi-chart-areaspline"></i> Sales report is ready
+                              <span class=" font-size-12 d-inline-block float-right"
+                                ><i class="mdi mdi-clock-outline"></i> 12 PM</span
+                              >
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i class="mdi mdi-account-supervisor"></i> New client
+                              <span class=" font-size-12 d-inline-block float-right"
+                                ><i class="mdi mdi-clock-outline"></i> 10 AM</span
+                              >
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i class="mdi mdi-server-network-off"></i> Server overloaded
+                              <span class=" font-size-12 d-inline-block float-right"
+                                ><i class="mdi mdi-clock-outline"></i> 05 AM</span
+                              >
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="tab-pane"
+                    id="question-answer"
+                    role="tabpanel2"
+                    aria-labelledby="nav-contact-tab"
+                  >
+                    <div class="card card-right-sidebar">
+                      <div class="card-header">
+                        <button type="button" class="close" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h5 class="card-title">Event Create</h5>
+                      </div>
+
+                      <div class="card-body">
+                        <form action="">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="exampleInputEmail1"
+                              aria-describedby="emailHelp"
+                              placeholder="Enter email"
+                            />
+                            <small id="emailHelp" class="form-text text-muted"
+                              >Please enter your email address.</small
+                            >
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputEmail15">Location:</label>
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="exampleInputEmail15"
+                              aria-describedby="emailHelp"
+                              placeholder="Enter Location"
+                            />
+                            <small id="emailHelp" class="form-text text-muted"
+                              >please enter your location.</small
+                            >
+                          </div>
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">@</div>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Units" />
+                          </div>
+
+                          <div class="form-group">
+                            <label>filter:</label>
+                            <div class="custom-control custom-checkbox mb-2">
+                              <input
+                                type="checkbox"
+                                class="custom-control-input"
+                                id="pending1"
+                              />
+                              <label class="custom-control-label" for="pending1"
+                                >Pending transations</label
+                              >
+                            </div>
+                            <div class="custom-control custom-checkbox mb-2">
+                              <input
+                                type="checkbox"
+                                class="custom-control-input"
+                                id="marginss"
+                              />
+                              <label class="custom-control-label" for="marginss"
+                                >Include margins</label
+                              >
+                            </div>
+                            <div class="custom-control custom-checkbox mb-2">
+                              <input
+                                type="checkbox"
+                                class="custom-control-input"
+                                id="balance2"
+                              />
+                              <label class="custom-control-label" for="balance2"
+                                >Include balance</label
+                              >
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>

@@ -19,7 +19,10 @@
     "front-end"
   ],
   "scripts": {
-    "start": "gulp"
+    "start": "npm-run-all build serve",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "bundle exec jekyll build --watch",
+    "serve": "bundle exec jekyll serve"
   },
   "devDependencies": {
     "browser-sync": "^2.10.0",
@@ -35,7 +38,8 @@
     "gulp-rtlcss": "^1.2.0",
     "gulp-sass": "^4.0.0",
     "gulp-sourcemaps": "^2.6.0",
-    "gulp-uglify": "^3.0.0"
+    "gulp-uglify": "^3.0.0",
+    "npm-run-all": "^4.1.3"
   },
   "dependencies": {
     "bootstrap": "^4.1.3"
