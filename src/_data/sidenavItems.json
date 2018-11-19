@@ -224,27 +224,27 @@
           {
             "name": "basic-input",
             "label": "Basic Input",
-            "link": "/ui-elements/icons/basic-input/"
+            "link": "/ui-elements/forms/basic-input/"
           },
           {
             "name": "input-group",
             "label": "Input Group",
-            "link": "/ui-elements/icons/input-group/"
+            "link": "/ui-elements/forms/input-group/"
           },
           {
             "name": "checkbox-radio",
             "label": "Checkbox & Radio",
-            "link": "/ui-elements/icons/checkbox-radio/"
+            "link": "/ui-elements/forms/checkbox-radio/"
           },
           {
             "name": "form-validation",
             "label": "Form Validation",
-            "link": "/ui-elements/icons/form-validation/"
+            "link": "/ui-elements/forms/form-validation/"
           },
           {
             "name": "form-advance",
             "label": "Form Advance",
-            "link": "/ui-elements/icons/form-advance/"
+            "link": "/ui-elements/forms/form-advance/"
           }
         ]
       },
