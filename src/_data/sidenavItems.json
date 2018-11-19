@@ -106,12 +106,7 @@
             "name": "badge",
             "label": "Badge",
             "link": "/ui-elements/components/badge/"
-          },
-          {
-            "name": "button-default",
-            "label": "Button Default",
-            "link": "/ui-elements/components/button-default/"
-          },
+          },          
           {
             "name": "button-default",
             "label": "Button Default",
@@ -181,12 +176,7 @@
             "name": "progress-bar",
             "label": "Progress Bar",
             "link": "/ui-elements/components/progress-bar/"
-          },
-          {
-            "name": "spinner",
-            "label": "Spinner",
-            "link": "/ui-elements/components/spinner/"
-          },
+          },          
           {
             "name": "spinner",
             "label": "Spinner",
@@ -234,27 +224,27 @@
           {
             "name": "basic-input",
             "label": "Basic Input",
-            "link": "/ui-elements/icons/basic-input/"
+            "link": "/ui-elements/forms/basic-input/"
           },
           {
             "name": "input-group",
             "label": "Input Group",
-            "link": "/ui-elements/icons/input-group/"
+            "link": "/ui-elements/forms/input-group/"
           },
           {
             "name": "checkbox-radio",
             "label": "Checkbox & Radio",
-            "link": "/ui-elements/icons/checkbox-radio/"
+            "link": "/ui-elements/forms/checkbox-radio/"
           },
           {
             "name": "form-validation",
             "label": "Form Validation",
-            "link": "/ui-elements/icons/form-validation/"
+            "link": "/ui-elements/forms/form-validation/"
           },
           {
             "name": "form-advance",
             "label": "Form Advance",
-            "link": "/ui-elements/icons/form-advance/"
+            "link": "/ui-elements/forms/form-advance/"
           }
         ]
       },
@@ -266,12 +256,12 @@
           {
             "name": "google-map",
             "label": "Google Map",
-            "link": "/ui-elements/icons/google-map/"
+            "link": "/ui-elements/maps/google-map/"
           },
           {
             "name": "vector-map",
             "label": "Vector Map",
-            "link": "/ui-elements/icons/vector-map/"
+            "link": "/ui-elements/maps/vector-map/"
           }
         ]
       },
@@ -283,12 +273,12 @@
           {
             "name": "general-widget",
             "label": "General Widget",
-            "link": "/ui-elements/icons/general-widget/"
+            "link": "/ui-elements/widgets/general-widget/"
           },
           {
             "name": "chart-widget",
             "label": "Chart Widget",
-            "link": "/ui-elements/icons/chart-widget/"
+            "link": "/ui-elements/widgets/chart-widget/"
           }
         ]
       }

@@ -1,14 +1,14 @@
-@@include('header.htm', { "title": "Sleek - Admin Dashboard Template", "className": "header-fixed sidebar-fixed sidebar-dark header-light" })
-@@include('sidebar-with-footer.htm', { "parent": "ui-elements", "sub_parent": "components", "active": "button-social" })
+---
+layout: default
+title: "Button Social - Sleek Admin Dashboard Template"
+bodyClass: "header-fixed sidebar-fixed sidebar-dark header-light"
 
-		<!-- ====================================
-		——— PAGE WRAPPER
-		===================================== -->
-		<div class="page-wrapper">
-			@@include('top-bar.htm')
-				<div class="content-wrapper">
-						@@include('breadcrumb.htm', { "parent": "UI Elements", "active": "Button Social" })
-						<div class="content">
+parent: "ui-elements"
+sub_parent: "components"
+activePage: "button-social"
+---
+
+						
 							<ul class="nav nav-tabs nav-style-border mb-5" id="myTab" role="tablist">
 								<li class="nav-item">
 									<a class="nav-link" id="home-tab" data-toggle="tab" href="#rounded" role="tab" aria-controls="rounded" aria-selected="true">Rounded Buttons</a>
@@ -592,8 +592,4 @@
 									</div>
 									<!-- /.Pill Button -->
 								</div>
-							</div>
-						</div>
-						@@include('right-sidebar.htm')
-
-		@@include('footer.htm')
+							</div>						
