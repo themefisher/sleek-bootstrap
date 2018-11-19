@@ -256,12 +256,12 @@
           {
             "name": "google-map",
             "label": "Google Map",
-            "link": "/ui-elements/icons/google-map/"
+            "link": "/ui-elements/maps/google-map/"
           },
           {
             "name": "vector-map",
             "label": "Vector Map",
-            "link": "/ui-elements/icons/vector-map/"
+            "link": "/ui-elements/maps/vector-map/"
           }
         ]
       },
@@ -273,12 +273,12 @@
           {
             "name": "general-widget",
             "label": "General Widget",
-            "link": "/ui-elements/icons/general-widget/"
+            "link": "/ui-elements/widgets/general-widget/"
           },
           {
             "name": "chart-widget",
             "label": "Chart Widget",
-            "link": "/ui-elements/icons/chart-widget/"
+            "link": "/ui-elements/widgets/chart-widget/"
           }
         ]
       }
