@@ -1,15 +1,14 @@
-@@include('header.htm', { "title": "Sleek - Admin Dashboard Template", "className": "header-fixed sidebar-fixed sidebar-dark header-light" })
-@@include('sidebar-with-footer.htm', { "parent": "pages", "sub_parent": "users", "active": "profile" })
+---
+layout: default
+title: "Sleek - Admin Dashboard Template"
+bodyClass: "sidebar-fixed sidebar-dark header-light header-fixed"
 
-		<!-- ====================================
-		——— PAGE WRAPPER
-		===================================== -->
-		<div class="page-wrapper">
-			@@include('top-bar.htm')
-				<div class="content-wrapper">
-						@@include('breadcrumb.htm', { "parent": "Pages", "active": "Profile" })
-						<div class="content">
-							<!-- First Row  -->
+parent: "pages"
+sub_parent: "users"
+activePage: "user-profile"
+---
+
+
 							<div class="bg-white border rounded">
 								<div class="row no-gutters">
 									<div class="col-lg-4 col-xl-3">
@@ -155,7 +154,3 @@
 									</div>
 								</div>
 							</div>
-						</div>
-						@@include('right-sidebar.htm')
-
-	@@include('footer.htm')
