@@ -1,83 +1,80 @@
-@@include('header.htm', { "title": "Sleek - Admin Dashboard Template", "className": "header-fixed sidebar-fixed sidebar-dark header-light" })
-@@include('sidebar-with-footer.htm', { "parent": "ui-elements", "sub_parent": "icon-fonts", "active": "flag-icons" })
+---
+layout: default
+title: "Material icons - Sleek Admin Dashboard Template"
+bodyClass: "header-fixed sidebar-fixed sidebar-dark header-light"
 
-		<!-- ====================================
-		——— PAGE WRAPPER
-		===================================== -->
-		<div class="page-wrapper">
-			@@include('top-bar.htm')
-				<div class="content-wrapper">
-						@@include('breadcrumb.htm', { "parent": "UI Elements", "active": "Material Design Icons" })
-						<div class="content">
-							<div class="card card-default rounded bg-white mb-4">
-								<div class="card-header d-flex flex-wrap flex-column bg-white border-bottom-0 pt-5 pb-0">
-									<h2 class="mb-4">Usage</h2>
-									<pre class="mx-0"><code>&lt;span class=&quot;mdi mdi-<span id="name">name</span>&quot;&gt;&lt;/span&gt;</code></pre>
+parent: "ui-elements"
+sub_parent: "icon-fonts"
+activePage: "material-icons"
+---
+
+						<div class="card card-default rounded bg-white mb-4">
+							<div class="card-header d-flex flex-wrap flex-column bg-white border-bottom-0 pt-5 pb-0">
+								<h2 class="mb-4">Usage</h2>
+								<pre class="mx-0"><code>&lt;span class=&quot;mdi mdi-<span id="name">name</span>&quot;&gt;&lt;/span&gt;</code></pre>
+							</div>
+							<div class="card-body">
+						
+						
+								<h4 class="mb-4">Icons <small>(click to copy to clipboard)</small></h4>
+								<div class="icons" id="icons"></div>
+						
+								<h4 class="mt-4"> Extras</h4>
+						
+								<p class="py-3">The helper CSS classes are listed below.</p>
+						
+								<h4>Size</h4>
+						
+								<div class="mdi-show-code">
+									<code>mdi-18px</code> <i class="mdi mdi-18px mdi-account"></i>
+									<code>mdi-24px</code> <i class="mdi mdi-24px mdi-account"></i>
+									<code>mdi-36px</code> <i class="mdi mdi-36px mdi-account"></i>
+									<code>mdi-48px</code> <i class="mdi mdi-48px mdi-account"></i>
 								</div>
-								<div class="card-body">
-											
-								
-									<h4 class="mb-4">Icons <small>(click to copy to clipboard)</small></h4>
-									<div class="icons" id="icons"></div>
-								
-									<h4 class="mt-4"> Extras</h4>
-								
-									<p class="py-3">The helper CSS classes are listed below.</p>
-								
-									<h4>Size</h4>
-								
-									<div class="mdi-show-code">
-										<code>mdi-18px</code> <i class="mdi mdi-18px mdi-account"></i>
-										<code>mdi-24px</code> <i class="mdi mdi-24px mdi-account"></i>
-										<code>mdi-36px</code> <i class="mdi mdi-36px mdi-account"></i>
-										<code>mdi-48px</code> <i class="mdi mdi-48px mdi-account"></i>
-									</div>
-								
-									<h4>Rotate</h4>
-								
-									<div class="mdi-show-code">
-										<i class="mdi mdi-48px mdi-account"></i>
-										<code>mdi-rotate-45</code> <i class="mdi mdi-48px mdi-rotate-45 mdi-account"></i>
-										<code>mdi-rotate-90</code> <i class="mdi mdi-48px mdi-rotate-90 mdi-account"></i>
-										<code>mdi-rotate-135</code> <i class="mdi mdi-48px mdi-rotate-135 mdi-account"></i>
-										<code>mdi-rotate-180</code> <i class="mdi mdi-48px mdi-rotate-180 mdi-account"></i>
-										<code>mdi-rotate-225</code> <i class="mdi mdi-48px mdi-rotate-225 mdi-account"></i>
-										<code>mdi-rotate-270</code> <i class="mdi mdi-48px mdi-rotate-270 mdi-account"></i>
-										<code>mdi-rotate-315</code> <i class="mdi mdi-48px mdi-rotate-315 mdi-account"></i>
-									</div>
-								
-									<h4>Flip</h4>
-								
-									<p>
-										<i class="mdi mdi-48px mdi-account-alert"></i>
-										<code>mdi-flip-h</code> <i class="mdi mdi-48px mdi-flip-h mdi-account-alert"></i>
-										<code>mdi-flip-v</code> <i class="mdi mdi-48px mdi-flip-v mdi-account-alert"></i>
-									</p>
-								
-									<p class="note py-3"><strong>Note:</strong> We do not include the ability to use <code>mdi-flip-*</code> and <code>mdi-rotate-*</code>
-										at the same time.</p>
-								
-									<h4>Spin</h4>
-								
-									<p>
-										<code>mdi-spin</code> <i class="mdi mdi-48px mdi-spin mdi-loading"></i>
-										<code>mdi-spin</code> <i class="mdi mdi-48px mdi-spin mdi-star"></i>
-									</p>
-								
-									<h4 class="my-3">Color</h4>
-								
-									<p class="mb-4">
-										<code>mdi-light</code> <i class="mdi mdi-48px mdi-light mdi-account dark-demo"></i>
-										<code>mdi-light mdi-inactive</code> <i class="mdi mdi-48px mdi-light mdi-inactive mdi-account dark-demo"></i>
-										<code>mdi-dark</code> <i class="mdi mdi-48px mdi-dark mdi-account"></i>
-										<code>mdi-dark mdi-inactive</code> <i class="mdi mdi-48px mdi-dark mdi-inactive mdi-account"></i>
-									</p>
-									
-								
+						
+								<h4>Rotate</h4>
+						
+								<div class="mdi-show-code">
+									<i class="mdi mdi-48px mdi-account"></i>
+									<code>mdi-rotate-45</code> <i class="mdi mdi-48px mdi-rotate-45 mdi-account"></i>
+									<code>mdi-rotate-90</code> <i class="mdi mdi-48px mdi-rotate-90 mdi-account"></i>
+									<code>mdi-rotate-135</code> <i class="mdi mdi-48px mdi-rotate-135 mdi-account"></i>
+									<code>mdi-rotate-180</code> <i class="mdi mdi-48px mdi-rotate-180 mdi-account"></i>
+									<code>mdi-rotate-225</code> <i class="mdi mdi-48px mdi-rotate-225 mdi-account"></i>
+									<code>mdi-rotate-270</code> <i class="mdi mdi-48px mdi-rotate-270 mdi-account"></i>
+									<code>mdi-rotate-315</code> <i class="mdi mdi-48px mdi-rotate-315 mdi-account"></i>
 								</div>
+						
+								<h4>Flip</h4>
+						
+								<p>
+									<i class="mdi mdi-48px mdi-account-alert"></i>
+									<code>mdi-flip-h</code> <i class="mdi mdi-48px mdi-flip-h mdi-account-alert"></i>
+									<code>mdi-flip-v</code> <i class="mdi mdi-48px mdi-flip-v mdi-account-alert"></i>
+								</p>
+						
+								<p class="note py-3"><strong>Note:</strong> We do not include the ability to use <code>mdi-flip-*</code> and <code>mdi-rotate-*</code>
+									at the same time.</p>
+						
+								<h4>Spin</h4>
+						
+								<p>
+									<code>mdi-spin</code> <i class="mdi mdi-48px mdi-spin mdi-loading"></i>
+									<code>mdi-spin</code> <i class="mdi mdi-48px mdi-spin mdi-star"></i>
+								</p>
+						
+								<h4 class="my-3">Color</h4>
+						
+								<p class="mb-4">
+									<code>mdi-light</code> <i class="mdi mdi-48px mdi-light mdi-account dark-demo"></i>
+									<code>mdi-light mdi-inactive</code> <i class="mdi mdi-48px mdi-light mdi-inactive mdi-account dark-demo"></i>
+									<code>mdi-dark</code> <i class="mdi mdi-48px mdi-dark mdi-account"></i>
+									<code>mdi-dark mdi-inactive</code> <i class="mdi mdi-48px mdi-dark mdi-inactive mdi-account"></i>
+								</p>
+						
+						
 							</div>
 						</div>
-						@@include('right-sidebar.htm')
 
 						<script type="text/javascript">
 							(function () {
@@ -131,9 +128,7 @@
 										};
 									})(icons[j]);
 									document.getElementById('icons').appendChild(div);
-								}	
+								}
 
 							})();
 						</script>
-
-	@@include('footer.htm')
