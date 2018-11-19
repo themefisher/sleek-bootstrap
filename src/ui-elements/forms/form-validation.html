@@ -1,15 +1,13 @@
-@@include('header.htm', { "title": "Sleek - Admin Dashboard Template", "className": "header-fixed sidebar-fixed sidebar-dark header-light" })
-@@include('sidebar-with-footer.htm', { "parent": "ui-elements", "sub_parent": "forms", "active": "validation" })
+---
+layout: default
+title: "Form Validation - Sleek Admin Dashboard Template"
+bodyClass: "header-fixed sidebar-fixed sidebar-dark header-light"
 
-		<!-- ====================================
-		——— PAGE WRAPPER
-		===================================== -->
-		<div class="page-wrapper">
-			@@include('top-bar.htm')
-				<div class="content-wrapper">
-						@@include('breadcrumb.htm', { "parent": "UI Elements", "active": "Form Validation" })
-						<div class="content">
-							<!-- First Row  -->
+parent: "ui-elements"
+sub_parent: "forms"
+activePage: "form-validation"
+---
+
 							<div class="row">
 								<div class="col-lg-6">
 									<div class="card card-default rounded bg-white mb-4">
@@ -80,22 +78,24 @@
 												<div class="form-row">
 													<div class="col-md-12 mb-3">
 														<label for="validationServer01">First name</label>
-														<input type="text" class="form-control is-valid" id="validationServer01" placeholder="First name" value="Md" required>
+														<input type="text" class="form-control is-valid" id="validationServer01" placeholder="First name" value="Md"
+														 required>
 														<div class="valid-feedback">
 															Looks good!
 														</div>
 													</div>
 													<div class="col-md-12 mb-3">
 														<label for="validationServer02">Last name</label>
-														<input type="text" class="form-control is-valid" id="validationServer02" placeholder="Last name" value="Rahad" required>
+														<input type="text" class="form-control is-valid" id="validationServer02" placeholder="Last name" value="Rahad"
+														 required>
 														<div class="valid-feedback">
 															Looks good!
 														</div>
 													</div>
 													<div class="col-md-12 mb-3">
 														<label for="validationServerUsername">Username</label>
-														<input type="text" class="form-control is-invalid" id="validationServerUsername" placeholder="Username" aria-describedby="inputGroupPrepend3"
-														 required>
+														<input type="text" class="form-control is-invalid" id="validationServerUsername" placeholder="Username"
+														 aria-describedby="inputGroupPrepend3" required>
 														<div class="invalid-feedback">
 															Please choose a username.
 														</div>
@@ -130,7 +130,3 @@
 									</div>
 								</div>
 							</div>
-						</div>
-						@@include('right-sidebar.htm')
-
-	@@include('footer.htm')
