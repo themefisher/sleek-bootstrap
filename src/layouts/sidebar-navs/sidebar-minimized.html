@@ -1,15 +1,13 @@
-@@include('header.htm', { "title": "Sleek - Admin Dashboard Template", "className": "header-fixed header-light sidebar-static sidebar-minified sidebar-dark" })
-@@include('sidebar-with-footer.htm', { "parent": "layouts", "sub_parent": "sidebar-nav", "active": "sidebar-minimized" })
+---
+layout: default
+title: "Sidebar Minimized - Sleek Admin Dashboard Template"
+bodyClass: "sidebar-fixed sidebar-dark sidebar-minified header-fixed header-light"
 
-		<!-- ====================================
-		——— PAGE WRAPPER
-		===================================== -->
-		<div class="page-wrapper">
-			@@include('top-bar.htm')
-				<div class="content-wrapper">
-						@@include('breadcrumb.htm', { "parent": "Layouts", "active": "Sidebar Minimized" })
+parent: "layouts"
+sub_parent: "sidebar-nav"
+activePage: "sidebar-minimized"
+---
 
-						<div class="content">
 							<div class="row">
 								<div class="col-lg-12">
 									<div class="card card-default mb-4 mt-3 mt-md-0 bg-white">
@@ -32,8 +30,3 @@
 									</div>
 								</div>
 							</div>
-						</div>
-						@@include('right-sidebar.htm')
-
-
-	@@include('footer.htm')
