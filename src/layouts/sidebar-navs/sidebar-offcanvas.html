@@ -1,15 +1,13 @@
-@@include('header.htm', { "title": "Sleek - Admin Dashboard Template", "className": "header-fixed header-light sidebar-static-offcanvas sidebar-collapse sidebar-dark" })
-@@include('sidebar-with-footer.htm', { "parent": "layouts", "sub_parent": "sidebar-nav", "active": "sidebar-offcanvas" })
+---
+layout: default
+title: "Sidebar Minimized - Sleek Admin Dashboard Template"
+bodyClass: "sidebar-static-offcanvas sidebar-collapse sidebar-dark sidebar-minified header-fixed header-light"
 
-		<!-- ====================================
-		——— PAGE WRAPPER
-		===================================== -->
-		<div class="page-wrapper">
-			@@include('top-bar.htm')
-				<div class="content-wrapper">
-						@@include('breadcrumb.htm', { "parent": "Layouts", "active": "Sidebar Minimized" })
+parent: "layouts"
+sub_parent: "sidebar-nav"
+activePage: "sidebar-offcanvas"
+---
 
-						<div class="content">
 							<div class="row">
 								<div class="col-lg-12">
 									<div class="card card-default mb-4 mt-3 mt-md-0 bg-white">
@@ -23,21 +21,15 @@
 													<code>sidebar-fixed-offcanvas sidebar-collapse</code> to
 													<code>&lt;body id="body"&gt;</code> like below.</p>
 											</blockquote>
-
+							
 											<pre class="mt-4"><code>&lt;body id="body" class="sidebar-static-offcanvas sidebar-collapse"&gt;</code></pre>
-
+							
 											<blockquote class="blockquote">
 												<p class="mb-0">or</p>
 											</blockquote>
-
+							
 											<pre class="mt-4"><code>&lt;body id="body" class="sidebar-fixed-offcanvas sidebar-collapse"&gt;</code></pre>
 										</div>
 									</div>
 								</div>
 							</div>
-
-						</div>
-						@@include('right-sidebar.htm')
-
-
-	@@include('footer.htm')
