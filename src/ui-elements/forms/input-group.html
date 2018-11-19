@@ -1,15 +1,13 @@
-@@include('header.htm', { "title": "Sleek - Admin Dashboard Template", "className": "header-fixed sidebar-fixed sidebar-dark header-light" })
-@@include('sidebar-with-footer.htm', { "parent": "ui-elements", "sub_parent": "forms", "active": "inputgroup" })
+---
+layout: default
+title: "Input Group - Sleek Admin Dashboard Template"
+bodyClass: "header-fixed sidebar-fixed sidebar-dark header-light"
 
-		<!-- ====================================
-		——— PAGE WRAPPER
-		===================================== -->
-		<div class="page-wrapper">
-			@@include('top-bar.htm')
-				<div class="content-wrapper">
-						@@include('breadcrumb.htm', { "parent": "UI Elements", "active": "Input Group" })
-						<div class="content">
-							<!-- First Row  -->
+parent: "ui-elements"
+sub_parent: "forms"
+activePage: "input-group"
+---
+
 							<div class="row">
 								<div class="col-lg-6">
 									<div class="card card-default rounded bg-white mb-4">
@@ -25,14 +23,14 @@
 															<span class="input-group-text" id="inputGroupPrepend2">@</span>
 														</div>
 														<input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username" aria-describedby="inputGroupPrepend2"
-														 required>
+														required>
 													</div>
 												</div>
 												<div class="form-group">
 													<label for="validationDefaultUsername2">Left addon</label>
 													<div class="input-group">
 														<input type="text" class="form-control" id="validationDefaultUsername2" placeholder="Username" aria-describedby="inputGroupPrepend2"
-														 required>
+														required>
 														<div class="input-group-append">
 															<span class="input-group-text" id="inputGroupAppend">@ example.com</span>
 														</div>
@@ -63,7 +61,7 @@
 											</form>
 										</div>
 									</div>
-
+							
 									<div class="card card-default rounded bg-white mb-4">
 										<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
 											<h2>Checkboxes and Radio Addons</h2>
@@ -175,7 +173,7 @@
 											</form>
 										</div>
 									</div>
-
+							
 									<div class="card card-default rounded bg-white mb-4">
 										<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
 											<h2>Buttons with Dropdowns</h2>
@@ -185,7 +183,8 @@
 												<label class="text-dark font-weight-medium" for="">Left addon</label>
 												<div class="input-group">
 													<div class="input-group-prepend">
-														<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action</button>
+														<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
+														aria-expanded="false">Action</button>
 														<div class="dropdown-menu">
 															<a class="dropdown-item" href="#">Action</a>
 															<a class="dropdown-item" href="#">Another action</a>
@@ -196,11 +195,12 @@
 													</div>
 													<input type="text" class="form-control" aria-label="Text input with dropdown button">
 												</div>
-
+							
 												<label class="text-dark font-weight-medium" for="">Left addon</label>
 												<div class="input-group">
 													<div class="input-group-prepend">
-														<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action</button>
+														<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
+														aria-expanded="false">Action</button>
 														<div class="dropdown-menu">
 															<a class="dropdown-item" href="#">Action</a>
 															<a class="dropdown-item" href="#">Another action</a>
@@ -215,7 +215,8 @@
 												<div class="input-group">
 													<input type="text" class="form-control" aria-label="Text input with dropdown button">
 													<div class="input-group-append">
-														<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action</button>
+														<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
+														aria-expanded="false">Action</button>
 														<div class="dropdown-menu">
 															<a class="dropdown-item" href="#">Action</a>
 															<a class="dropdown-item" href="#">Another action</a>
@@ -228,7 +229,8 @@
 												<label class="text-dark font-weight-medium" for="">Left and Right addon</label>
 												<div class="input-group">
 													<div class="input-group-prepend">
-														<button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action</button>
+														<button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
+														aria-expanded="false">Action</button>
 														<div class="dropdown-menu">
 															<a class="dropdown-item" href="#">Action</a>
 															<a class="dropdown-item" href="#">Another action</a>
@@ -239,7 +241,8 @@
 													</div>
 													<input type="text" class="form-control" aria-label="Text input with dropdown button">
 													<div class="input-group-append">
-														<button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action</button>
+														<button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
+														aria-expanded="false">Action</button>
 														<div class="dropdown-menu">
 															<a class="dropdown-item" href="#">Action</a>
 															<a class="dropdown-item" href="#">Another action</a>
@@ -252,10 +255,10 @@
 											</form>
 										</div>
 									</div>
-
+							
 								</div>
 								<div class="col-lg-6">
-
+							
 									<div class="card card-default rounded bg-white mb-4">
 										<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
 											<h2>Iconic Input Groups </h2>
@@ -315,7 +318,7 @@
 											</form>
 										</div>
 									</div>
-
+							
 									<div class="card card-default rounded bg-white mb-4">
 										<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
 											<h2>Button Addon</h2>
@@ -368,7 +371,7 @@
 												</div>
 												<input type="text" class="form-control" aria-label="Small" placeholder="Small Size" aria-describedby="inputGroup-sizing-sm">
 											</div>
-
+							
 											<label class="text-dark font-weight-medium" for="">Default Size</label>
 											<div class="input-group">
 												<div class="input-group-prepend">
@@ -378,7 +381,7 @@
 												</div>
 												<input type="text" class="form-control" aria-label="Default" placeholder="Default size" aria-describedby="inputGroup-sizing-default">
 											</div>
-
+							
 											<label class="text-dark font-weight-medium" for="">Large Size</label>
 											<div class="input-group input-group-lg">
 												<div class="input-group-prepend">
@@ -392,7 +395,3 @@
 									</div>
 								</div>
 							</div>
-						</div>
-						@@include('right-sidebar.htm')
-
-	@@include('footer.htm')
