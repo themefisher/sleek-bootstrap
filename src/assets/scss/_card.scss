@@ -1,7 +1,8 @@
 /*===== CARD =====*/
+
 .card {
   .card-header {
-    h2{
+    h2 {
       color: $dark;
       margin-bottom: 0.312rem;
       font-size: 1.25125rem;
@@ -12,7 +13,8 @@
     z-index: 1;
   }
 }
-.card-default {  
+
+.card-default {
   .card-header {
     padding-left: 1.88rem;
     padding-right: 1.88rem;
@@ -20,7 +22,7 @@
       padding-left: 3.125rem;
       padding-right: 3.125rem;
     }
-    h2{
+    h2 {
       color: $dark;
       margin-bottom: 0.312rem;
       font-size: 1.25125rem;
@@ -48,11 +50,12 @@
 }
 
 /*Card mini*/
+
 .card-mini {
   border: 1px solid $border-color;
   .card-body {
     padding: 1.63rem;
-    h2{
+    h2 {
       color: $dark;
       font-size: 1.49625rem;
     }
@@ -66,19 +69,21 @@
 }
 
 /* Card Icon Info*/
+
 .card-icon-info {
-  > i {
+  >i {
     color: $primary;
     font-size: 1.56rem;
     display: inline-block;
   }
-  > span {
+  >span {
     font-size: 0.88rem;
     display: inline-block;
   }
 }
 
 /* Card table border none */
+
 .card-table-border-none {
   .card-header {
     padding-left: 1.88rem;
@@ -87,7 +92,7 @@
       padding-left: 3.125rem;
       padding-right: 3.125rem;
     }
-    h2{
+    h2 {
       color: $dark;
       margin-bottom: 0.312rem;
       font-size: 1.25125rem;
@@ -121,6 +126,7 @@
 }
 
 /*===== ACCORDION CARD =====*/
+
 .accordion {
   .card {
     border: 0px;
@@ -140,7 +146,7 @@
       width: 100%;
       text-align: left;
       color: $dark;
-      border-radius:calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+      border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
       white-space: unset;
       @include transition(all 0.3s 0.2s ease-in);
       &:after {
@@ -153,20 +159,20 @@
       }
     }
     .btn[aria-expanded="false"],
-    a[aria-expanded="false"]{
+    a[aria-expanded="false"] {
       &:after {
-        content: "\f067";
+        content: "\f143";
         font-family: $font-family-icon;
         opacity: 0;
       }
     }
     .btn[aria-expanded="true"],
-    a[aria-expanded="true"]{
-      box-shadow: 0px 0px 19px rgba(229, 230, 235, 0.6)!important;
+    a[aria-expanded="true"] {
+      box-shadow: 0px 0px 19px rgba(229, 230, 235, 0.6) !important;
       color: $primary;
       border-bottom: 1px solid $border-color;
       &:after {
-        content: "\f068";
+        content: "\f140";
         font-family: $font-family-icon;
         color: $primary;
       }
@@ -183,23 +189,23 @@
   }
   .card-header {
     .btn[aria-expanded="false"],
-    a[aria-expanded="false"]{
+    a[aria-expanded="false"] {
       &:after {
         opacity: 1;
       }
     }
     .btn[aria-expanded="true"],
-    a[aria-expanded="true"]{
-      box-shadow: none!important;
+    a[aria-expanded="true"] {
+      box-shadow: none !important;
       &:after {
-        content: "\f068";
+        content: "\f140";
         font-family: $font-family-icon;
         color: $primary;
       }
     }
   }
   .card-body {
-    box-shadow: none!important;
+    box-shadow: none !important;
   }
 }
 
@@ -210,20 +216,21 @@
   }
   .card-header {
     .btn[aria-expanded="false"],
-    a[aria-expanded="false"]{
+    a[aria-expanded="false"] {
       &:after {
         opacity: 1;
       }
     }
     .btn[aria-expanded="true"],
-    a[aria-expanded="true"]{
-      box-shadow: none!important;
+    a[aria-expanded="true"] {
+      box-shadow: none !important;
     }
   }
   .card-body {
-    box-shadow: none!important;
+    box-shadow: none !important;
   }
 }
+
 .accordion-style-four {
   .card-header {
     border-bottom: 1px solid $border-color;
@@ -236,17 +243,17 @@
       }
     }
     .btn[aria-expanded="false"],
-    a[aria-expanded="false"]{
+    a[aria-expanded="false"] {
       &:after {
         opacity: 1;
       }
     }
     .btn[aria-expanded="true"],
-    a[aria-expanded="true"]{
+    a[aria-expanded="true"] {
       border-bottom: none;
-      box-shadow: none!important;
+      box-shadow: none !important;
       &:after {
-        content: "\f068";
+        content: "\f140";
         font-family: $font-family-icon;
         color: $primary;
       }
@@ -255,6 +262,6 @@
   .card-body {
     padding-left: 0;
     padding-right: 0;
-    box-shadow: none!important;
+    box-shadow: none !important;
   }
 }

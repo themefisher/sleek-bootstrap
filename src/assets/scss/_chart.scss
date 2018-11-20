@@ -1,10 +1,11 @@
 /*===== CHART =====*/
+
 .world-data-chart {
   padding-left: 1.88rem;
   padding-right: 1.88rem;
   &.border-bottom {
     @include media-breakpoint-up(xl) {
-      border-bottom: 0;
+      border-bottom: 0 !important;
       border-right: 1px solid $border-color;
     }
   }
@@ -15,11 +16,13 @@
     min-height: 280px;
   }
 }
+
 #doChart {
   @include media-breakpoint-up(xl) {
     min-height: 210px;
   }
 }
+
 #polar,
 #radar {
   min-height: 200px;
@@ -31,11 +34,14 @@
     min-width: 100%;
   }
 }
+
 #currentUser {
   @include media-breakpoint-up(xl) {
     min-height: 283px;
+    height: 283px !important;
   }
 }
+
 #activity {
   @include media-breakpoint-up(xl) {
     min-height: 280px;
@@ -50,6 +56,7 @@
 }
 
 /* Coutom Lenged*/
+
 .customLegend li {
   display: inline-block;
   margin-right: 1.56rem;

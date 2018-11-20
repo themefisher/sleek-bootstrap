@@ -1,5 +1,5 @@
 # Permalinks
-permalink: pretty
+# permalink: pretty
 
 # Server
 source: src
@@ -29,3 +29,5 @@ exclude:
 # Assets
 sass:
   sass_dir: assets/scss
+  sourcemap: true
+  style: compressed
