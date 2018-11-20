@@ -5,7 +5,7 @@
   padding-right: 1.88rem;
   &.border-bottom {
     @include media-breakpoint-up(xl) {
-      border-bottom: 0;
+      border-bottom: 0 !important;
       border-right: 1px solid $border-color;
     }
   }
