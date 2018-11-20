@@ -1,5 +1,12 @@
 /*===== PAGINATION =====*/
+
 .pagination {
+  .page-item {
+    &:first-child .page-link,
+    &:last-child .page-link {
+      height: 51px;
+    }
+  }
   .page-link {
     color: $secondary;
   }
@@ -7,11 +14,12 @@
 
 .pagination-flat .page-item .page-link {
   border: 0px;
-
 }
+
 .pagination-flat-rounded .page-item .page-link {
   border-radius: 100%;
 }
+
 .pagination-seperated .page-item {
   .page-link {
     padding: .75rem;
@@ -28,6 +36,7 @@
     margin-left: 0;
   }
 }
+
 .pagination-seperated-rounded .page-item .page-link {
   border-radius: 6.25rem;
 }
