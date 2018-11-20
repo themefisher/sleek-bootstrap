@@ -336,11 +336,11 @@
   .search-form .input-group input.form-control {
     color: #b7c0cd;
   }
-  .navbar-custom-menu .navbar-nav>.notifications-menu>.dropdown-toggle {
+  .navbar-right .navbar-nav .notifications-menu .dropdown-toggle {
     border-color: rgba($white, 0.2);
   }
-  .navbar-custom-menu .navbar-nav>.user-menu>.dropdown-toggle>span {
-    color: #b7c0cd;
+  .navbar-right .navbar-nav .user-menu .dropdown-toggle>span {
+    color: $secondary;
   }
 }
 
@@ -358,10 +358,10 @@
   .search-form .input-group input.form-control {
     color: $secondary;
   }
-  .navbar-custom-menu .navbar-nav>.notifications-menu>.dropdown-toggle {
+  .navbar-right .navbar-nav .notifications-menu .dropdown-toggle {
     border-color: $border-color;
   }
-  .navbar-custom-menu .navbar-nav>.user-menu>.dropdown-toggle>span {
+  .navbar-right .navbar-nav .user-menu .dropdown-toggle>span {
     color: $dark;
   }
 }
