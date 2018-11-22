@@ -2,19 +2,19 @@
   {
     "name": "dashboard",
     "label": "Dashboard",
-    "link": "/",
+    "link": "/index.html",
     "iconClass": "mdi mdi-view-dashboard-outline",
     "child": [
       {
-        "name": "index",
+        "name": "index.html",
         "label": "Ecommerce",
-        "link": "/",
+        "link": "index.html",
         "child": null
       },
       {
         "name": "analytics",
         "label": "Analytics",
-        "link": "/analytics/",
+        "link": "/analytics.html",
         "child": null
       }
     ]
@@ -33,22 +33,22 @@
           {
             "name": "header-fixed",
             "label": "Header Fixed",
-            "link": "/layouts/headers/header-fixed/"
+            "link": "/layouts/headers/header-fixed.html"
           },
           {
             "name": "header-static",
             "label": "Header Static",
-            "link": "/layouts/headers/header-static/"
+            "link": "/layouts/headers/header-static.html"
           },
           {
             "name": "header-light",
             "label": "Header Light",
-            "link": "/layouts/headers/header-light/"
+            "link": "/layouts/headers/header-light.html"
           },
           {
             "name": "header-dark",
             "label": "Header Dark",
-            "link": "/layouts/headers/header-dark/"
+            "link": "/layouts/headers/header-dark.html"
           }
         ]
       },
@@ -60,27 +60,27 @@
           {
             "name": "sidebar-open",
             "label": "Sidebar Open",
-            "link": "/layouts/sidebar-navs/sidebar-open/"
+            "link": "/layouts/sidebar-navs/sidebar-open.html"
           },
           {
             "name": "sidebar-minimized",
             "label": "Sidebar Minimized",
-            "link": "/layouts/sidebar-navs/sidebar-minimized/"
+            "link": "/layouts/sidebar-navs/sidebar-minimized.html"
           },
           {
             "name": "sidebar-offcanvas",
             "label": "Sidebar Offcanvas",
-            "link": "/layouts/sidebar-navs/sidebar-offcanvas/"
+            "link": "/layouts/sidebar-navs/sidebar-offcanvas.html"
           },
           {
             "name": "sidebar-with-footer",
             "label": "Sidebar With Footer",
-            "link": "/layouts/sidebar-navs/sidebar-with-footer/"
+            "link": "/layouts/sidebar-navs/sidebar-with-footer.html"
           },
           {
             "name": "sidebar-without-footer",
             "label": "Sidebar Without Footer",
-            "link": "/layouts/sidebar-navs/sidebar-without-footer/"
+            "link": "/layouts/sidebar-navs/sidebar-without-footer.html"
           }
         ]
       }
@@ -100,102 +100,102 @@
           {
             "name": "alert",
             "label": "Alert",
-            "link": "/ui-elements/components/alert/"
+            "link": "/ui-elements/components/alert.html"
           },
           {
             "name": "badge",
             "label": "Badge",
-            "link": "/ui-elements/components/badge/"
+            "link": "/ui-elements/components/badge.html"
           },          
           {
             "name": "button-default",
             "label": "Button Default",
-            "link": "/ui-elements/components/button-default/"
+            "link": "/ui-elements/components/button-default.html"
           },
           {
             "name": "button-dropdown",
             "label": "Button Dropdown",
-            "link": "/ui-elements/components/button-dropdown/"
+            "link": "/ui-elements/components/button-dropdown.html"
           },
           {
             "name": "button-group",
             "label": "Button Group",
-            "link": "/ui-elements/components/button-group/"
+            "link": "/ui-elements/components/button-group.html"
           },
           {
             "name": "button-social",
             "label": "Button Social",
-            "link": "/ui-elements/components/button-social/"
+            "link": "/ui-elements/components/button-social.html"
           },
           {
             "name": "button-loading",
             "label": "Button Loading",
-            "link": "/ui-elements/components/button-loading/"
+            "link": "/ui-elements/components/button-loading.html"
           },
           {
             "name": "breadcrumb",
             "label": "Breadcrumb",
-            "link": "/ui-elements/components/breadcrumb/"
+            "link": "/ui-elements/components/breadcrumb.html"
           },
           {
             "name": "card",
             "label": "Card",
-            "link": "/ui-elements/components/card/"
+            "link": "/ui-elements/components/card.html"
           },
           {
             "name": "carousel",
             "label": "Carousel",
-            "link": "/ui-elements/components/carousel/"
+            "link": "/ui-elements/components/carousel.html"
           },
           {
             "name": "collapse",
             "label": "Collapse",
-            "link": "/ui-elements/components/collapse/"
+            "link": "/ui-elements/components/collapse.html"
           },
           {
             "name": "list-group",
             "label": "List Group",
-            "link": "/ui-elements/components/list-group/"
+            "link": "/ui-elements/components/list-group.html"
           },
           {
             "name": "modal",
             "label": "Modal",
-            "link": "/ui-elements/components/modal/"
+            "link": "/ui-elements/components/modal.html"
           },
           {
             "name": "pagination",
             "label": "Pagination",
-            "link": "/ui-elements/components/pagination/"
+            "link": "/ui-elements/components/pagination.html"
           },
           {
             "name": "popover-tooltip",
             "label": "Popover & Tooltip",
-            "link": "/ui-elements/components/popover-tooltip/"
+            "link": "/ui-elements/components/popover-tooltip.html"
           },
           {
             "name": "progress-bar",
             "label": "Progress Bar",
-            "link": "/ui-elements/components/progress-bar/"
+            "link": "/ui-elements/components/progress-bar.html"
           },          
           {
             "name": "spinner",
             "label": "Spinner",
-            "link": "/ui-elements/components/spinner/"
+            "link": "/ui-elements/components/spinner.html"
           },
           {
             "name": "switcher",
             "label": "Switcher",
-            "link": "/ui-elements/components/switcher/"
+            "link": "/ui-elements/components/switcher.html"
           },
           {
             "name": "table",
             "label": "Table",
-            "link": "/ui-elements/components/table/"
+            "link": "/ui-elements/components/table.html"
           },
           {
             "name": "tab",
             "label": "Tab",
-            "link": "/ui-elements/components/tab/"
+            "link": "/ui-elements/components/tab.html"
           }
         ]
       },
@@ -207,12 +207,12 @@
           {
             "name": "material-icon",
             "label": "Material Icon",
-            "link": "/ui-elements/icons/material-icon/"
+            "link": "/ui-elements/icons/material-icon.html"
           },
           {
             "name": "flag-icon",
             "label": "Flag Icon",
-            "link": "/ui-elements/icons/flag-icon/"
+            "link": "/ui-elements/icons/flag-icon.html"
           }
         ]
       },
@@ -224,27 +224,27 @@
           {
             "name": "basic-input",
             "label": "Basic Input",
-            "link": "/ui-elements/forms/basic-input/"
+            "link": "/ui-elements/forms/basic-input.html"
           },
           {
             "name": "input-group",
             "label": "Input Group",
-            "link": "/ui-elements/forms/input-group/"
+            "link": "/ui-elements/forms/input-group.html"
           },
           {
             "name": "checkbox-radio",
             "label": "Checkbox & Radio",
-            "link": "/ui-elements/forms/checkbox-radio/"
+            "link": "/ui-elements/forms/checkbox-radio.html"
           },
           {
             "name": "form-validation",
             "label": "Form Validation",
-            "link": "/ui-elements/forms/form-validation/"
+            "link": "/ui-elements/forms/form-validation.html"
           },
           {
             "name": "form-advance",
             "label": "Form Advance",
-            "link": "/ui-elements/forms/form-advance/"
+            "link": "/ui-elements/forms/form-advance.html"
           }
         ]
       },
@@ -256,12 +256,12 @@
           {
             "name": "google-map",
             "label": "Google Map",
-            "link": "/ui-elements/maps/google-map/"
+            "link": "/ui-elements/maps/google-map.html"
           },
           {
             "name": "vector-map",
             "label": "Vector Map",
-            "link": "/ui-elements/maps/vector-map/"
+            "link": "/ui-elements/maps/vector-map.html"
           }
         ]
       },
@@ -273,12 +273,12 @@
           {
             "name": "general-widget",
             "label": "General Widget",
-            "link": "/ui-elements/widgets/general-widget/"
+            "link": "/ui-elements/widgets/general-widget.html"
           },
           {
             "name": "chart-widget",
             "label": "Chart Widget",
-            "link": "/ui-elements/widgets/chart-widget/"
+            "link": "/ui-elements/widgets/chart-widget.html"
           }
         ]
       }
@@ -293,7 +293,7 @@
       {
         "name": "chartjs",
         "label": "ChartJS",
-        "link": "/charts/chartjs/",
+        "link": "/charts/chartjs.html",
         "child": null
       }
     ]
@@ -307,23 +307,23 @@
       {
         "name": "user-profile",
         "label": "User Profile",
-        "link": "/pages/user-profile/",
+        "link": "/pages/user-profile.html",
         "child": null
       },
       {
         "name": "authentication",
         "label": "Authentication",
-        "link": "/pages/authentication/",
+        "link": "/pages/authentication.html",
         "child": [
           {
             "name": "sign-in",
             "label": "Sign In",
-            "link": "/pages/authentication/sign-in/"
+            "link": "/pages/authentication/sign-in.html"
           },
           {
             "name": "sign-up",
             "label": "Sign Up",
-            "link": "/pages/authentication/sign-up/"
+            "link": "/pages/authentication/sign-up.html"
           }
         ]
       },
@@ -335,12 +335,12 @@
           {
             "name": "invoice",
             "label": "invoice",
-            "link": "/pages/others/invoice/"
+            "link": "/pages/others/invoice.html"
           },
           {
             "name": "error",
             "label": "Error",
-            "link": "/pages/others/error/"
+            "link": "/pages/others/error.html"
           }
         ]
       }
