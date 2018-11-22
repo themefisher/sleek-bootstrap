@@ -6,9 +6,9 @@
     "iconClass": "mdi mdi-view-dashboard-outline",
     "child": [
       {
-        "name": "index.html",
+        "name": "index",
         "label": "Ecommerce",
-        "link": "index.html",
+        "link": "/index.html",
         "child": null
       },
       {
