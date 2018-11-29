@@ -17,7 +17,7 @@ activePage: "material-icons"
 						
 						
 								<h4 class="mb-4">Icons <small>(click to copy to clipboard)</small></h4>
-								<div class="icons" id="material-icons"></div>
+								<div class="icons" id="material-icons-custom"></div>
 						
 								<h4 class="mt-4"> Extras</h4>
 						
@@ -128,7 +128,7 @@ activePage: "material-icons"
 											copyText('mdi-' + icon.name);
 										};
 									})(icons[j]);
-									document.getElementById('material-icons').appendChild(div);
+									document.getElementById('material-icons-custom').appendChild(div);
 								}
 
 							})();

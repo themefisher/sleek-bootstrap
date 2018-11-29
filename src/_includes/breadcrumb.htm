@@ -1,12 +1,14 @@
 
         <nav aria-label="breadcrumb" class="">
-          <ol class="breadcrumb mb-0 border-top-0">
+          <ol class="breadcrumb p-0">
             <li class="breadcrumb-item">
-              <a href="index.html">Home</a>
+              <a href="index.html">
+                <span class="mdi mdi-home"></span>                
+              </a>
             </li>
             <li class="breadcrumb-item">
-              <a href="">@@parent</a>
+              <a href="">{{page.sub_parent}}</a>
             </li>
-            <li class="breadcrumb-item active" aria-current="page">@@active</li>
+            <li class="breadcrumb-item" aria-current="page">{{page.activePage}}</li>
           </ol>
         </nav>
