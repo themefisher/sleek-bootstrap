@@ -1,4 +1,10 @@
 /*===== BREDCRUMB =====*/
+.breadcrumb-wrapper {
+  margin-bottom: 30px;
+  h1 {
+    color: $dark;
+  }
+}
 .breadcrumb {
   // border: 1px solid $border-color;
   .breadcrumb-item {

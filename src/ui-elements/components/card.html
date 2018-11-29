@@ -7,9 +7,13 @@ parent: "ui-elements"
 sub_parent: "components"
 activePage: "card"
 ---
-							
-							<div class="card card-default rounded bg-white mb-4">
-								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+							<div class="breadcrumb-wrapper">
+								<h1>Card</h1>
+								{% include breadcrumb.htm %}
+							</div>
+
+							<div class="card card-secondary">
+								<div class="card-header">
 									<h2>Card with Image</h2>
 								</div>
 								<div class="card-body">
@@ -59,8 +63,8 @@ activePage: "card"
 								</div>
 							</div>
 							<!-- Second Row -->
-							<div class="card card-default rounded bg-white mb-4">
-								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+							<div class="card card-secondary">
+								<div class="card-header">
 									<h2>Text Alignment </h2>
 								</div>
 								<div class="card-body">
@@ -96,8 +100,8 @@ activePage: "card"
 								</div>
 							</div>
 							<!-- Third Row -->
-							<div class="card card-default rounded bg-white mb-4">
-								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+							<div class="card card-secondary">
+								<div class="card-header">
 									<h2>Default Buttons </h2>
 								</div>
 								<div class="card-body">
@@ -136,8 +140,8 @@ activePage: "card"
 								</div>
 							</div>
 
-							<div class="card card-default rounded bg-white mb-4">
-								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+							<div class="card card-secondary">
+								<div class="card-header">
 									<h2>Card with Deck </h2>
 								</div>
 								<div class="card-body">
@@ -178,8 +182,8 @@ activePage: "card"
 								</div>
 							</div>
 
-							<div class="card card-default rounded bg-white mb-4">
-								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+							<div class="card card-secondary">
+								<div class="card-header">
 									<h2>Using utilities </h2>
 								</div>
 								<div class="card-body">
@@ -208,8 +212,8 @@ activePage: "card"
 								</div>
 							</div>
 
-							<div class="card card-default rounded bg-white mb-4">
-								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
+							<div class="card card-secondary">
+								<div class="card-header">
 									<h2>Cards Groups </h2>
 								</div>
 								<div class="card-body">
@@ -250,15 +254,15 @@ activePage: "card"
 								</div>
 							</div>
 
-							<div class="card card-default rounded bg-white mb-4">
-								<div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 pb-xl-0 pt-5">
-									<h2>Solid Cards </h2>
+							<div class="card card-secondary">
+								<div class="card-header">
+									<h2>Background and color </h2>
 								</div>
 								<div class="card-body">
 									<div class="row">
 										<div class="col-lg-6 col-xl-4">
 											<div class="card text-white bg-primary mb-3">
-												<div class="card-header">Header</div>
+												<div class="card-header bg-primary">Header</div>
 												<div class="card-body">
 													<h5 class="card-title">Primary card Title</h5>
 													<p class="card-text">Some quick example text to build on the card Title and make up the bulk of the card's content.</p>
@@ -267,7 +271,7 @@ activePage: "card"
 										</div>
 										<div class="col-lg-6 col-xl-4">
 											<div class="card text-white bg-secondary mb-3">
-												<div class="card-header">Header</div>
+												<div class="card-header bg-secondary">Header</div>
 												<div class="card-body">
 													<h5 class="card-title">Secondary card Title</h5>
 													<p class="card-text">Some quick example text to build on the card Title and make up the bulk of the card's content.</p>
@@ -276,7 +280,7 @@ activePage: "card"
 										</div>
 										<div class="col-lg-6 col-xl-4">
 											<div class="card text-white bg-success mb-3">
-												<div class="card-header">Header</div>
+												<div class="card-header bg-success">Header</div>
 												<div class="card-body">
 													<h5 class="card-title">Success card Title</h5>
 													<p class="card-text">Some quick example text to build on the card Title and make up the bulk of the card's content.</p>
@@ -285,7 +289,7 @@ activePage: "card"
 										</div>
 										<div class="col-lg-6 col-xl-4">
 											<div class="card text-white bg-danger mb-3">
-												<div class="card-header">Header</div>
+												<div class="card-header bg-danger">Header</div>
 												<div class="card-body">
 													<h5 class="card-title">Danger card Title</h5>
 													<p class="card-text">Some quick example text to build on the card Title and make up the bulk of the card's content.</p>
@@ -294,7 +298,7 @@ activePage: "card"
 										</div>
 										<div class="col-lg-6 col-xl-4">
 											<div class="card text-white bg-warning mb-3">
-												<div class="card-header">Header</div>
+												<div class="card-header bg-warning">Header</div>
 												<div class="card-body">
 													<h5 class="card-title">Warning card Title</h5>
 													<p class="card-text">Some quick example text to build on the card Title and make up the bulk of the card's content.</p>
@@ -303,7 +307,7 @@ activePage: "card"
 										</div>
 										<div class="col-lg-6 col-xl-4">
 											<div class="card text-white bg-info mb-3">
-												<div class="card-header">Header</div>
+												<div class="card-header bg-info">Header</div>
 												<div class="card-body">
 													<h5 class="card-title">Info card Title</h5>
 													<p class="card-text">Some quick example text to build on the card Title and make up the bulk of the card's content.</p>
@@ -312,7 +316,7 @@ activePage: "card"
 										</div>
 										<div class="col-lg-6 col-xl-4">
 											<div class="card bg-light mb-3">
-												<div class="card-header">Header</div>
+												<div class="card-header bg-light">Header</div>
 												<div class="card-body">
 													<h5 class="card-title text-primary">Light card Title</h5>
 													<p class="card-text">Some quick example text to build on the card Title and make up the bulk of the card's content.</p>
@@ -321,7 +325,7 @@ activePage: "card"
 										</div>
 										<div class="col-lg-6 col-xl-4">
 											<div class="card text-white bg-dark mb-3">
-												<div class="card-header">Header</div>
+												<div class="card-header bg-dark">Header</div>
 												<div class="card-body">
 													<h5 class="card-title">Dark card Title</h5>
 													<p class="card-text">Some quick example text to build on the card Title and make up the bulk of the card's content.</p>
