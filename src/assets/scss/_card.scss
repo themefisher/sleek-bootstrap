@@ -15,9 +15,12 @@
 }
 
 .card-default {
+  margin-bottom: 1.5rem;  
   .card-header {
     padding-left: 1.88rem;
-    padding-right: 1.88rem;        
+    padding-right: 1.88rem;
+    display: flex;
+    flex-wrap: wrap;        
     @include media-breakpoint-up(xxl) {
       padding-left: 3.125rem;
       padding-right: 3.125rem;
@@ -27,6 +30,14 @@
       margin-bottom: 0.312rem;
       font-size: 1.25125rem;
       line-height: 1;
+    }
+  }
+  .card-header-border-bottom {
+    background-color: $white;    
+    padding-top: 28px;
+    padding-bottom: 20px;    
+    h2 {
+      margin-bottom: 0;
     }
   }
   .card-body {
@@ -50,36 +61,23 @@
 }
 
 // Card Secondary
-.card.card-secondary {
-  margin-bottom: 1.5rem;
-  margin-top: 1rem;
-  @include media-breakpoint-up(mb){
-    margin-top: 0;
-  }
-  .card-header {
-    background-color: $white;
-    padding-left: 1.88rem;
-    padding-right: 1.88rem;
-    padding-top: 28px;
-    padding-bottom: 20px;    
-    @include media-breakpoint-up(xxl) {
-      padding-left: 3.125rem;
-      padding-right: 3.125rem;
-    }
-    h2 {
-      margin-bottom: 0;
-    }
-  }
-  .card-body {
-    padding: 1.88rem 1.88rem;
-    @include media-breakpoint-up(xxl) {
-      padding: 3.125rem;
-    }    
-  }
-  p {
-    line-height: 1.5;
-  }
-}
+// .card.card-secondary {
+//   margin-bottom: 1.5rem;
+//   margin-top: 1rem;
+//   @include media-breakpoint-up(mb){
+//     margin-top: 0;
+//   }
+//   // .card-header 
+//   .card-body {
+//     padding: 1.88rem 1.88rem;
+//     @include media-breakpoint-up(xxl) {
+//       padding: 3.125rem;
+//     }    
+//   }
+//   p {
+//     line-height: 1.5;
+//   }
+// }
 
 
 /*Card mini*/
@@ -132,6 +130,16 @@
       line-height: 1;
     }
   }
+
+  .card-header-border-bottom {
+    background-color: $white;    
+    padding-top: 28px;
+    padding-bottom: 20px;    
+    h2 {
+      margin-bottom: 0;
+    }
+  }
+
   .card-body {
     padding: 1.9rem 1.88rem;
     @include media-breakpoint-up(xxl) {
