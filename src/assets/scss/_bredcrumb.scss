@@ -7,10 +7,10 @@
     font-weight: 500;
   }
 }
-.breadcrumb {
-  // border: 1px solid $border-color;
+.breadcrumb {  
   .breadcrumb-item {
     font-size: 0.98rem;
+    text-transform: capitalize;
     a {
       color: $secondary;
       text-transform: capitalize;
