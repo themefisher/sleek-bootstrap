@@ -37,7 +37,7 @@
     }
   }
   .card-header-border-bottom {
-        
+    border-bottom: 1px solid $border-color;
     padding-top: 28px;
     padding-bottom: 20px;    
     h2 {
@@ -145,7 +145,8 @@
   .card-header-border-bottom {
     background-color: $white;    
     padding-top: 28px;
-    padding-bottom: 20px;    
+    padding-bottom: 20px;
+    border-bottom: 1px solid $border-color;    
     h2 {
       margin-bottom: 0;
     }
