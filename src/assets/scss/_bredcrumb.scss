@@ -1,10 +1,19 @@
 /*===== BREDCRUMB =====*/
-.breadcrumb {
-  // border: 1px solid $border-color;
+.breadcrumb-wrapper {
+  margin-bottom: 30px;
+  h1 {
+    color: $dark;
+    font-size: 1.63rem;
+    font-weight: 500;
+  }
+}
+.breadcrumb {  
   .breadcrumb-item {
     font-size: 0.98rem;
+    text-transform: capitalize;
     a {
-      color: $primary;
+      color: $secondary;
+      text-transform: capitalize;
     }
   }
   &.breadcrumb-inverse {
@@ -79,6 +88,10 @@
   }
 }
 .breadcrumb-item+.breadcrumb-item::before {
-  content: '\f142';
+  content: '\f763';
   font-family: $font-family-icon;
+  transform: rotate(45deg);
+  font-size: 7px;
+  color: $secondary;
+
 }
