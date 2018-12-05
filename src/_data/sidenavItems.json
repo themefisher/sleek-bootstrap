@@ -2,19 +2,19 @@
   {
     "name": "dashboard",
     "label": "Dashboard",
-    "link": "/index.html",
+    "link": "index.html",
     "iconClass": "mdi mdi-view-dashboard-outline",
     "child": [
       {
         "name": "index",
         "label": "Ecommerce",
-        "link": "/index.html",
+        "link": "index.html",
         "child": null
       },
       {
         "name": "analytics",
         "label": "Analytics",
-        "link": "/analytics.html",
+        "link": "analytics.html",
         "child": null
       }
     ]
@@ -28,59 +28,59 @@
       {
         "name": "headers",
         "label": "Headers",
-        "link": "/layouts/headers/",
+        "link": "",
         "child": [
           {
             "name": "header-fixed",
             "label": "Header Fixed",
-            "link": "/layouts/headers/header-fixed.html"
+            "link": "header-fixed.html"
           },
           {
             "name": "header-static",
             "label": "Header Static",
-            "link": "/layouts/headers/header-static.html"
+            "link": "header-static.html"
           },
           {
             "name": "header-light",
             "label": "Header Light",
-            "link": "/layouts/headers/header-light.html"
+            "link": "header-light.html"
           },
           {
             "name": "header-dark",
             "label": "Header Dark",
-            "link": "/layouts/headers/header-dark.html"
+            "link": "header-dark.html"
           }
         ]
       },
       {
         "name": "sidebar-navs",
         "label": "Sidebar Navs",
-        "link": "/layouts/sidebar-navs/",
+        "link": "",
         "child": [
           {
             "name": "sidebar-open",
             "label": "Sidebar Open",
-            "link": "/layouts/sidebar-navs/sidebar-open.html"
+            "link": "sidebar-open.html"
           },
           {
             "name": "sidebar-minimized",
             "label": "Sidebar Minimized",
-            "link": "/layouts/sidebar-navs/sidebar-minimized.html"
+            "link": "sidebar-minimized.html"
           },
           {
             "name": "sidebar-offcanvas",
             "label": "Sidebar Offcanvas",
-            "link": "/layouts/sidebar-navs/sidebar-offcanvas.html"
+            "link": "sidebar-offcanvas.html"
           },
           {
             "name": "sidebar-with-footer",
             "label": "Sidebar With Footer",
-            "link": "/layouts/sidebar-navs/sidebar-with-footer.html"
+            "link": "sidebar-with-footer.html"
           },
           {
             "name": "sidebar-without-footer",
             "label": "Sidebar Without Footer",
-            "link": "/layouts/sidebar-navs/sidebar-without-footer.html"
+            "link": "sidebar-without-footer.html"
           }
         ]
       }
@@ -89,196 +89,196 @@
   {
     "name": "ui-elements",
     "label": "UI Elements",
-    "link": "/ui-elements/",
+    "link": "",
     "iconClass": "mdi mdi-folder-multiple-outline",
     "child": [
       {
         "name": "components",
         "label": "Components",
-        "link": "/ui-elements/components/",
+        "link": "",
         "child": [
           {
             "name": "alert",
             "label": "Alert",
-            "link": "/ui-elements/components/alert.html"
+            "link": "alert.html"
           },
           {
             "name": "badge",
             "label": "Badge",
-            "link": "/ui-elements/components/badge.html"
+            "link": "badge.html"
           },          
           {
             "name": "button-default",
             "label": "Button Default",
-            "link": "/ui-elements/components/button-default.html"
+            "link": "button-default.html"
           },
           {
             "name": "button-dropdown",
             "label": "Button Dropdown",
-            "link": "/ui-elements/components/button-dropdown.html"
+            "link": "button-dropdown.html"
           },
           {
             "name": "button-group",
             "label": "Button Group",
-            "link": "/ui-elements/components/button-group.html"
+            "link": "button-group.html"
           },
           {
             "name": "button-social",
             "label": "Button Social",
-            "link": "/ui-elements/components/button-social.html"
+            "link": "button-social.html"
           },
           {
             "name": "button-loading",
             "label": "Button Loading",
-            "link": "/ui-elements/components/button-loading.html"
+            "link": "button-loading.html"
           },
           {
             "name": "breadcrumb",
             "label": "Breadcrumb",
-            "link": "/ui-elements/components/breadcrumb.html"
+            "link": "breadcrumb.html"
           },
           {
             "name": "card",
             "label": "Card",
-            "link": "/ui-elements/components/card.html"
+            "link": "card.html"
           },
           {
             "name": "carousel",
             "label": "Carousel",
-            "link": "/ui-elements/components/carousel.html"
+            "link": "carousel.html"
           },
           {
             "name": "collapse",
             "label": "Collapse",
-            "link": "/ui-elements/components/collapse.html"
+            "link": "collapse.html"
           },
           {
             "name": "list-group",
             "label": "List Group",
-            "link": "/ui-elements/components/list-group.html"
+            "link": "list-group.html"
           },
           {
             "name": "modal",
             "label": "Modal",
-            "link": "/ui-elements/components/modal.html"
+            "link": "modal.html"
           },
           {
             "name": "pagination",
             "label": "Pagination",
-            "link": "/ui-elements/components/pagination.html"
+            "link": "pagination.html"
           },
           {
             "name": "popover-tooltip",
             "label": "Popover & Tooltip",
-            "link": "/ui-elements/components/popover-tooltip.html"
+            "link": "popover-tooltip.html"
           },
           {
             "name": "progress-bar",
             "label": "Progress Bar",
-            "link": "/ui-elements/components/progress-bar.html"
+            "link": "progress-bar.html"
           },          
           {
             "name": "spinner",
             "label": "Spinner",
-            "link": "/ui-elements/components/spinner.html"
+            "link": "spinner.html"
           },
           {
             "name": "switcher",
             "label": "Switcher",
-            "link": "/ui-elements/components/switcher.html"
+            "link": "switcher.html"
           },
           {
             "name": "table",
             "label": "Table",
-            "link": "/ui-elements/components/table.html"
+            "link": "table.html"
           },
           {
             "name": "tab",
             "label": "Tab",
-            "link": "/ui-elements/components/tab.html"
+            "link": "tab.html"
           }
         ]
       },
       {
         "name": "icons",
         "label": "Icons",
-        "link": "/ui-elements/icons/",
+        "link": "",
         "child": [
           {
             "name": "material-icon",
             "label": "Material Icon",
-            "link": "/ui-elements/icons/material-icon.html"
+            "link": "material-icon.html"
           },
           {
             "name": "flag-icon",
             "label": "Flag Icon",
-            "link": "/ui-elements/icons/flag-icon.html"
+            "link": "flag-icon.html"
           }
         ]
       },
       {
         "name": "forms",
         "label": "Forms",
-        "link": "/ui-elements/forms/",
+        "link": "",
         "child": [
           {
             "name": "basic-input",
             "label": "Basic Input",
-            "link": "/ui-elements/forms/basic-input.html"
+            "link": "basic-input.html"
           },
           {
             "name": "input-group",
             "label": "Input Group",
-            "link": "/ui-elements/forms/input-group.html"
+            "link": "input-group.html"
           },
           {
             "name": "checkbox-radio",
             "label": "Checkbox & Radio",
-            "link": "/ui-elements/forms/checkbox-radio.html"
+            "link": "checkbox-radio.html"
           },
           {
             "name": "form-validation",
             "label": "Form Validation",
-            "link": "/ui-elements/forms/form-validation.html"
+            "link": "form-validation.html"
           },
           {
             "name": "form-advance",
             "label": "Form Advance",
-            "link": "/ui-elements/forms/form-advance.html"
+            "link": "form-advance.html"
           }
         ]
       },
       {
         "name": "maps",
         "label": "Maps",
-        "link": "/ui-elements/maps/",
+        "link": "",
         "child": [
           {
             "name": "google-map",
             "label": "Google Map",
-            "link": "/ui-elements/maps/google-map.html"
+            "link": "google-map.html"
           },
           {
             "name": "vector-map",
             "label": "Vector Map",
-            "link": "/ui-elements/maps/vector-map.html"
+            "link": "vector-map.html"
           }
         ]
       },
       {
         "name": "widgets",
         "label": "Widgets",
-        "link": "/ui-elements/widgets/",
+        "link": "",
         "child": [
           {
             "name": "general-widget",
             "label": "General Widget",
-            "link": "/ui-elements/widgets/general-widget.html"
+            "link": "general-widget.html"
           },
           {
             "name": "chart-widget",
             "label": "Chart Widget",
-            "link": "/ui-elements/widgets/chart-widget.html"
+            "link": "chart-widget.html"
           }
         ]
       }
@@ -287,13 +287,13 @@
   {
     "name": "charts",
     "label": "Charts",
-    "link": "/charts/",
+    "link": "",
     "iconClass": "mdi mdi-chart-pie",
     "child": [
       {
         "name": "chartjs",
         "label": "ChartJS",
-        "link": "/charts/chartjs.html",
+        "link": "chartjs.html",
         "child": null
       }
     ]
@@ -301,46 +301,46 @@
   {
     "name": "pages",
     "label": "Pages",
-    "link": "/pages/",
+    "link": "",
     "iconClass": "mdi mdi-image-filter-none",
     "child": [
       {
         "name": "user-profile",
         "label": "User Profile",
-        "link": "/pages/user-profile.html",
+        "link": "",
         "child": null
       },
       {
         "name": "authentication",
         "label": "Authentication",
-        "link": "/pages/authentication.html",
+        "link": "",
         "child": [
           {
             "name": "sign-in",
             "label": "Sign In",
-            "link": "/pages/authentication/sign-in.html"
+            "link": "sign-in.html"
           },
           {
             "name": "sign-up",
             "label": "Sign Up",
-            "link": "/pages/authentication/sign-up.html"
+            "link": "sign-up.html"
           }
         ]
       },
       {
         "name": "others",
         "label": "Others",
-        "link": "/pages/others/",
+        "link": "",
         "child": [
           {
             "name": "invoice",
             "label": "invoice",
-            "link": "/pages/others/invoice.html"
+            "link": "invoice.html"
           },
           {
             "name": "error",
             "label": "Error",
-            "link": "/pages/others/error.html"
+            "link": "error.html"
           }
         ]
       }
