@@ -26,9 +26,9 @@
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
-  @include media-breakpoint-up(xl) {
-    margin-right: 60px;
-  }
+  // @include media-breakpoint-up(xl) {
+  //   margin-right: 60px;
+  // }
 }
 
 /* Content */

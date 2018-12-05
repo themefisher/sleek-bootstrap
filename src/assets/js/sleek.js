@@ -185,14 +185,12 @@ $(document).ready(function() {
     todoCheckAll();
   }
 
-
-  // Right Sidebar 
+  
   if ($(window).width() < 1025) {
     body.addClass('right-sidebar-toggoler-out');
 
     var btnRightSidebarToggler = $('.btn-right-sidebar-toggler');
-    var materialIcons = btnRightSidebarToggler.find('.material-icons');
-
+    
     btnRightSidebarToggler.on('click', function () {
 
       if (!body.hasClass('right-sidebar-toggoler-out')) {
