@@ -8,14 +8,12 @@
       {
         "name": "index",
         "label": "Ecommerce",
-        "link": "index.html",
-        "child": null
+        "link": "index.html"
       },
       {
         "name": "analytics",
         "label": "Analytics",
-        "link": "analytics.html",
-        "child": null
+        "link": "analytics.html"
       }
     ]
   },
@@ -27,8 +25,7 @@
     "child": [
       {
         "name": "headers",
-        "label": "Headers",
-        "link": "",
+        "label": "Headers",        
         "child": [
           {
             "name": "header-fixed",
@@ -54,8 +51,7 @@
       },
       {
         "name": "sidebar-navs",
-        "label": "Sidebar Navs",
-        "link": "",
+        "label": "Sidebar Navs",        
         "child": [
           {
             "name": "sidebar-open",
@@ -88,14 +84,13 @@
   },
   {
     "name": "ui-elements",
-    "label": "UI Elements",
-    "link": "",
+    "label": "UI Elements",    
     "iconClass": "mdi mdi-folder-multiple-outline",
     "child": [
       {
         "name": "components",
         "label": "Components",
-        "link": "",
+        
         "child": [
           {
             "name": "alert",
@@ -108,7 +103,7 @@
             "link": "badge.html"
           },          
           {
-            "name": "button-default",
+            "name": "buttons-default",
             "label": "Button Default",
             "link": "button-default.html"
           },
@@ -201,16 +196,15 @@
       },
       {
         "name": "icons",
-        "label": "Icons",
-        "link": "",
+        "label": "Icons",        
         "child": [
           {
-            "name": "material-icon",
+            "name": "material-icons",
             "label": "Material Icon",
             "link": "material-icon.html"
           },
           {
-            "name": "flag-icon",
+            "name": "flag-icons",
             "label": "Flag Icon",
             "link": "flag-icon.html"
           }
@@ -218,8 +212,7 @@
       },
       {
         "name": "forms",
-        "label": "Forms",
-        "link": "",
+        "label": "Forms",        
         "child": [
           {
             "name": "basic-input",
@@ -250,8 +243,7 @@
       },
       {
         "name": "maps",
-        "label": "Maps",
-        "link": "",
+        "label": "Maps",        
         "child": [
           {
             "name": "google-map",
@@ -268,7 +260,6 @@
       {
         "name": "widgets",
         "label": "Widgets",
-        "link": "",
         "child": [
           {
             "name": "general-widget",
@@ -287,33 +278,29 @@
   {
     "name": "charts",
     "label": "Charts",
-    "link": "",
+    
     "iconClass": "mdi mdi-chart-pie",
     "child": [
       {
         "name": "chartjs",
         "label": "ChartJS",
-        "link": "chartjs.html",
-        "child": null
+        "link": "chartjs.html"
       }
     ]
   },
   {
     "name": "pages",
     "label": "Pages",
-    "link": "",
+    
     "iconClass": "mdi mdi-image-filter-none",
     "child": [
       {
         "name": "user-profile",
-        "label": "User Profile",
-        "link": "",
-        "child": null
+        "label": "User Profile"
       },
       {
         "name": "authentication",
         "label": "Authentication",
-        "link": "",
         "child": [
           {
             "name": "sign-in",
@@ -329,8 +316,7 @@
       },
       {
         "name": "others",
-        "label": "Others",
-        "link": "",
+        "label": "Others",        
         "child": [
           {
             "name": "invoice",
