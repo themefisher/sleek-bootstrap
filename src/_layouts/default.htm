@@ -11,7 +11,11 @@
     <div class="mobile-sticky-body-overlay"></div>
 
     <div class="wrapper">
+      {% if page.activePage == 'sidebar-without-footer' %}
+      {% include base/left-sidebar-without-footer.html %}
+      {% else %}
       {% include base/left-sidebar.html %}
+      {% endif %}
 
       <div class="page-wrapper">
         {% include base/header.html %}
