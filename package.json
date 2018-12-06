@@ -21,9 +21,14 @@
   "scripts": {
     "start": "npm run serve",
     "serve": "bundle exec jekyll serve",
-    "build": "bundle exec jekyll build"
+    "build": "bundle exec jekyll build",
+    "rtl": "rtlcss _site/assets/css/styles.css _site/assets/css/styles.rtl.css",
+    "dist": "npm run build && npm run rtl && cp -rf _site/ dist/"
   },
   "dependencies": {
     "bootstrap": "^4.1.3"
+  },
+  "devDependencies": {
+    "rtlcss": "^2.4.0"
   }
 }
