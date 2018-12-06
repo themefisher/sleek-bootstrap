@@ -39,16 +39,23 @@ We are very excited to share this dashboard with you and we look forward to hear
 
 ## Demo
 
-| Ecommerce  | Analytics  | Emails  | Chart Widgets  |
+| Ecommerce  | Analytics  | Chart Widgets  | General Widgets  |
 |---|---|---|---|
-| [![Ecommerce page](src/assets/img/github/ecommerce.png)](https://sleek.tafcoder.com/)  | [![Analytics page](src/assets/img/github/analytics.png)](https://sleek.tafcoder.com/analytics.html)  | [![Emails page](src/assets/img/github/email.png)](https://sleek.tafcoder.com/email-inbox.html)  | [![Chart Widgets Page](src/assets/img/github/chart-widgets.png)](https://sleek.tafcoder.com/chart-widgets.html)
+| [![Ecommerce page](src/assets/img/github/ecommerce.png)](https://sleek.tafcoder.com/)  | [![Analytics page](src/assets/img/github/analytics.png)](https://sleek.tafcoder.com/analytics.html) | [![Chart Widgets](src/assets/img/github/chart-widgets.png)](https://sleek.tafcoder.com/chart-widget.html) | [![General Widgets](src/assets/img/github/general-widgets.png)](https://sleek.tafcoder.com/general-widget.html)
 
 [View More](https://sleek.tafcoder.com/).
 
 
 ## Getting Started
 
-### Git Clone from Github
+### From NPM
+
+```
+npm i sleek-dashboard --save
+```
+
+
+### From Github
 
 ```
 git clone https://github.com/tafcoder/sleek-dashboard.git
