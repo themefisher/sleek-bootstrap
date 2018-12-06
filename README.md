@@ -45,15 +45,42 @@ We are very excited to share this dashboard with you and we look forward to hear
 
 [View More](https://sleek.tafcoder.com/).
 
+
 ## Getting Started
 
-Quick start options
+### Git Clone from Github
+
+```
+git clone https://github.com/tafcoder/sleek-dashboard.git
+cd sleek-dashboard
+```
+
+### Setup environment
+
+To use our build system and run documentation locally, you will need a copy of Sleek's source files and Node. Follow these steps:
+
+1. [Download and install Node.js](https://nodejs.org/download/), which is used to manage our dependencies.
+2. Navigate to the root `/` directory and run `npm install` to install local dependencies listed in `package.json`.
+3. [Install Ruby](https://www.ruby-lang.org/en/documentation/installation/), install [Bundler](https://bundler.io/) with `gem install bundler`, and finally run `bundle install`. This will install all Ruby dependencies, such as Jekyll and plugins.
+
+   **Windows users:** Read [this guide](https://jekyllrb.com/docs/windows/) to get Jekyll up and running without problems.
+
+When completed, you will be able to run the various commands provided in the command line.
+
+### Build Sleek
+
+1. From the root `/` directory, run `npm start` in the command line.
+2. Open [http://localhost:4000](http://localhost:4000) in your browser, and voilà.
+3. Any change in the `/src` directory will build the application and refresh the page.
+
+**Warning!** all changes made in the `_site/` folder will be overwritten on application build.
+
 
 ## File Structure
 
 Within the download you'll find the following directories and files:
 
-``` bash
+```
 sleek-dashboard/
 |
 |--- dist/
