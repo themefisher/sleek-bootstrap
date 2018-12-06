@@ -84,21 +84,34 @@ Within the download you'll find the following directories and files:
 sleek-dashboard/
 |
 |--- dist/
-|   |--- css/ (CSS files)
-|   |--- js/ (JavaScript files)
-|   |--- scss/ (SCSS files)
+|   |--- assets/
+|       |--- css/ (CSS files)
+|       |--- img/ (All images)
+|       |--- js/ (All images)
+|       |--- options/ (for theme option files)
+|       |--- plugins/ (for all necessary plugins)
+|   |--- All html files (index.html, card.html etc.)
 |
 |--- src/
-|    |--- _inc
-|    |--- assets/
-|         |-- data/
-|         |-- img/
-|         |-- js/
-|         |-- options/
-|         |-- plugins/
-|         |-- sass/
-|    |--- .html files
+|   |--- _data/ (for data to use with Jekyll)
+|   |--- _includes/ (for Jekyll include files)
+|   |--- _layouts/ (for layout files)
+|   |--- _plugins/ (contains some Ruby files)
+|   |--- assets/
+|       |--- css/ (CSS files)
+|       |--- img/ (All images)
+|       |--- js/ (All images)
+|       |--- options/ (for theme option files)
+|       |--- plugins/ (for all necessary plugins)
+|       |--- scss/ (SCSS files)
+|   |--- All html files (index.html, card.html etc.)
 |
+|--- _config.yaml
+|--- Gemfile
+|--- Gemfile.lock
+|--- package.json
+|--- ......
+|--- ....
 
 ```
 
