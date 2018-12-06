@@ -19,10 +19,9 @@
     "front-end"
   ],
   "scripts": {
-    "start": "npm-run-all build serve",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "bundle exec jekyll build --watch",
-    "serve": "bundle exec jekyll serve"
+    "start": "npm run serve",
+    "serve": "bundle exec jekyll serve",
+    "build": "bundle exec jekyll build"
   },
   "devDependencies": {
     "browser-sync": "^2.10.0",
