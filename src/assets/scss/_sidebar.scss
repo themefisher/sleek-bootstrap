@@ -33,12 +33,12 @@
     flex-direction: column;
     flex: 1 1 auto;
     margin-top: 1.9rem;
+    @include media-breakpoint-up(md){
+      margin-top: 1rem;
+    }
     @include media-breakpoint-up(xl){
       margin-top: 2.5rem;
-    }
-    @include media-breakpoint-up(xxl){
-      margin-top: 5rem;
-    }
+    }    
     >li {
       position: relative;
       >a {
