@@ -97,6 +97,7 @@ sleek-dashboard/
 |       |--- js/ (All images)
 |       |--- options/ (for theme option files)
 |       |--- plugins/ (for all necessary plugins)
+|       |--- scss/ (SCSS files)
 |   |--- All html files (index.html, card.html etc.)
 |
 |--- src/
