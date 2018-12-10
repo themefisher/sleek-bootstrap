@@ -373,9 +373,9 @@ input[type=radio] {
     position: absolute;
     top: 50%;
     width: 50%;
-    margin-top: -5px;
+    margin-top: -8px;
     line-height: 1;
-    font-size: .75rem;
+    font-size: 1rem;
     font-weight: 400;
     font-family: $font-family-icon;
     text-align: center;
@@ -384,12 +384,12 @@ input[type=radio] {
   .switch-label:before {
     right: 1px;
     color: #c2cfd6;
-    content: attr(data-off);
+    content: '\f156';
   }
   .switch-label:after {
     left: 1px;
     color: #fff;
-    content: attr(data-on);
+    content: '\f12c';
     opacity: 0;
   }
 }
