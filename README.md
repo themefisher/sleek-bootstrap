@@ -39,39 +39,87 @@ We are very excited to share this dashboard with you and we look forward to hear
 
 ## Demo
 
-| Ecommerce  | Analytics  | Emails  | Chart Widgets  |
+| Ecommerce  | Analytics  | Chart Widgets  | General Widgets  |
 |---|---|---|---|
-| [![Ecommerce page](src/assets/img/github/ecommerce.png)](https://sleek.tafcoder.com/)  | [![Analytics page](src/assets/img/github/analytics.png)](https://sleek.tafcoder.com/analytics.html)  | [![Emails page](src/assets/img/github/email.png)](https://sleek.tafcoder.com/email-inbox.html)  | [![Chart Widgets Page](src/assets/img/github/chart-widgets.png)](https://sleek.tafcoder.com/chart-widgets.html)
+| [![Ecommerce page](src/assets/img/github/ecommerce.png)](https://sleek.tafcoder.com/)  | [![Analytics page](src/assets/img/github/analytics.png)](https://sleek.tafcoder.com/analytics.html) | [![Chart Widgets](src/assets/img/github/chart-widgets.png)](https://sleek.tafcoder.com/chart-widget.html) | [![General Widgets](src/assets/img/github/general-widgets.png)](https://sleek.tafcoder.com/general-widget.html)
 
 [View More](https://sleek.tafcoder.com/).
 
+
 ## Getting Started
 
-Quick start options
+### From NPM
+
+```
+npm i sleek-dashboard --save
+```
+
+
+### From Github
+
+```
+git clone https://github.com/tafcoder/sleek-dashboard.git
+cd sleek-dashboard
+```
+
+### Setup environment
+
+To use our build system and run documentation locally, you will need a copy of Sleek's source files and Node. Follow these steps:
+
+1. [Download and install Node.js](https://nodejs.org/download/), which is used to manage our dependencies.
+2. Navigate to the root `/` directory and run `npm install` to install local dependencies listed in `package.json`.
+3. [Install Ruby](https://www.ruby-lang.org/en/documentation/installation/), install [Bundler](https://bundler.io/) with `gem install bundler`, and finally run `bundle install`. This will install all Ruby dependencies, such as Jekyll and plugins.
+
+   **Windows users:** Read [this guide](https://jekyllrb.com/docs/windows/) to get Jekyll up and running without problems.
+
+When completed, you will be able to run the various commands provided in the command line.
+
+### Build Sleek
+
+1. From the root `/` directory, run `npm start` in the command line.
+2. Open [http://localhost:4000](http://localhost:4000) in your browser, and voilà.
+3. Any change in the `/src` directory will build the application and refresh the page.
+
+**Warning!** all changes made in the `_site/` folder will be overwritten on application build.
+
 
 ## File Structure
 
 Within the download you'll find the following directories and files:
 
-``` bash
+```
 sleek-dashboard/
 |
 |--- dist/
-|   |--- css/ (CSS files)
-|   |--- js/ (JavaScript files)
-|   |--- scss/ (SCSS files)
+|   |--- assets/
+|       |--- css/ (CSS files)
+|       |--- img/ (All images)
+|       |--- js/ (All images)
+|       |--- options/ (for theme option files)
+|       |--- plugins/ (for all necessary plugins)
+|       |--- scss/ (SCSS files)
+|   |--- All html files (index.html, card.html etc.)
 |
 |--- src/
-|    |--- _inc
-|    |--- assets/
-|         |-- data/
-|         |-- img/
-|         |-- js/
-|         |-- options/
-|         |-- plugins/
-|         |-- sass/
-|    |--- .html files
+|   |--- _data/ (for data to use with Jekyll)
+|   |--- _includes/ (for Jekyll include files)
+|   |--- _layouts/ (for layout files)
+|   |--- _plugins/ (contains some Ruby files)
+|   |--- assets/
+|       |--- css/ (CSS files)
+|       |--- img/ (All images)
+|       |--- js/ (All images)
+|       |--- options/ (for theme option files)
+|       |--- plugins/ (for all necessary plugins)
+|       |--- scss/ (SCSS files)
+|   |--- All html files (index.html, card.html etc.)
 |
+|--- _config.yaml
+|--- Gemfile
+|--- Gemfile.lock
+|--- package.json
+|--- ......
+|--- ....
 
 ```
 
