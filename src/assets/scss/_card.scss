@@ -190,6 +190,10 @@
         top: 50%;
         transform: translateY(-50%);
       }
+      &:hover,
+      &:focus {
+        text-decoration: none !important;
+      }
     }
     .btn[aria-expanded="false"],
     a[aria-expanded="false"] {
@@ -225,7 +229,7 @@
     a[aria-expanded="false"] {
       &:after {
         opacity: 1;
-      }
+      }      
     }
     .btn[aria-expanded="true"],
     a[aria-expanded="true"] {
