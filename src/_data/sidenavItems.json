@@ -301,7 +301,8 @@
     "child": [
       {
         "name": "user-profile",
-        "label": "User Profile"
+        "label": "User Profile",
+        "link": "user-profile.html"
       },
       {
         "name": "authentication",
