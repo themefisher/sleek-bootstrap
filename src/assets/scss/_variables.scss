@@ -76,15 +76,16 @@ $breadcrumb-padding-x:          1.25rem !default;
 $breadcrumb-bg:                 transparent !default;
 
 // Inputs
+
 $input-btn-padding-y:         .59rem !default;
 $input-btn-padding-x:         1rem !default;
 $input-placeholder-color:     rgba($secondary, .7) !default;
 
+$input-btn-padding-y-lg:      .75rem !default;
+
 // Buttons
 
 $btn-font-weight:             $font-weight-medium !default;
-$btn-padding-y:               $input-btn-padding-y !default;
-$btn-padding-x:               $input-btn-padding-x !default;
 
 // Pagination
 
@@ -93,3 +94,6 @@ $pagination-padding-x:        1.25rem !default;
 
 // Card
 $card-border-color:           $border-color !default;
+
+//Table
+$table-dark-bg:               $navy;

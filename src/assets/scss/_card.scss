@@ -218,6 +218,10 @@
         top: 50%;
         transform: translateY(-50%);
       }
+      &:hover,
+      &:focus {
+        text-decoration: none !important;
+      }
     }
 
     .btn[aria-expanded="false"],
@@ -225,7 +229,6 @@
       &:after {
         content: "\f143";
         font-family: $font-family-icon;
-        opacity: 0;
       }
     }
 
@@ -248,7 +251,7 @@
   }
 }
 
-.accordion-style-two {
+.accordion-shadow {
   .card {
     box-shadow: 0px 7px 19px rgba(229, 230, 235, 0.6);
   }
@@ -259,7 +262,7 @@
     a[aria-expanded="false"] {
       &:after {
         opacity: 1;
-      }
+      }      
     }
 
     .btn[aria-expanded="true"],
@@ -305,7 +308,7 @@
   }
 }
 
-.accordion-style-four {
+.accordion-header-border-bottom {
   .card-header {
     border-bottom: 1px solid $border-color;
 

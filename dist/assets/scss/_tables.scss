@@ -1,0 +1,223 @@
+/*===== TABLES =====*/
+thead th,
+tbody tr td:first-child {
+  color: $dark;
+  font-weight: 500;
+}
+
+.table-secondary td {
+  background-color: $white;
+  color: $dark;
+}
+.table-primary {
+  background-color: rgba($primary, 0.6);
+  color: $dark;
+}
+.table-info {
+  background-color: rgba($info, 0.6);
+  color: $dark;
+}
+.table-success {
+  background-color: rgba($success, 0.6);
+  color: $dark;
+}
+.table-danger {
+  background-color: rgba($danger, 0.6);
+  color: $dark;
+}
+.table-warning {
+  background-color: rgba($warning, 0.6);
+  color: $dark;
+}
+
+.table-dark thead th,
+.table-dark tbody tr td:first-child {
+  color: $white;
+}
+
+/* Table borderless */
+.table-borderless th,
+.table-borderless td {
+  border: 0px solid #dee2e6;
+}
+
+.table-borderless thead th {
+  border-bottom: 1px solid $border-color;
+  font-size: 0.81rem;
+  color: $secondary;
+  font-weight: 400;
+  padding-top: 40px;
+}
+.table-borderless tbody tr:first-child td {
+  padding-top: 2.5rem;
+}
+.table-borderless tbody tr a.link {
+  color: $dark;
+  &:hover {
+    color: $primary;
+  }
+}
+
+.table-borderless tbody tr:last-child td {
+  padding-bottom: 1.90rem;
+}
+.table-borderless tbody td:first-child {
+  width: 55%;
+  padding-left: 0;
+}
+
+.table-borderless thead th:first-child,
+.table-borderless tbody td:first-child {
+  padding-left: 0;
+}
+
+/* Card Table */
+.card-table {
+  margin-top: 3.12rem;
+  thead th {
+    font-size: .88rem;
+    font-weight: 400;
+    padding: 0 1.90rem 1.25rem 0;
+    color: $secondary;
+    @include media-breakpoint-up(md) {
+      font-size: 1.06rem;
+    }
+  }
+  tbody td {
+    padding: 1.3rem 1.9rem 1.3rem 0;
+    vertical-align: middle;
+    margin: 0.625rem 0 0.625rem;
+    font-size: 0.81rem;
+    @include media-breakpoint-up(md) {
+      font-size: 0.98rem;
+    }
+    a:hover {
+      color: $primary!important;
+    }
+  }
+  tbody tr {
+    position: relative;
+    @include transition(box-shadow 0.3s ease-in-out);
+    td:first-child {
+      color: $secondary;
+    }
+  }
+  .avater {
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+  }
+}
+
+.table-responsive-large {
+  @include media-breakpoint-up(xl) {
+    display: inline-table;
+  }
+}
+
+.table-responsive {
+  display: table;
+}
+
+/* Customer Table */
+.customer-table {
+  .media-image{
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+    img {
+      max-width: 100%;
+    }
+  }
+  .media-body {
+    h6 {
+      font-size: 0.98rem;
+      font-weight: 500;
+    }
+  }
+}
+
+/* Notification Block */
+.notification-table {
+  .table-header {
+    margin-bottom: 1.9rem;
+  }
+  .media {
+    max-width: 70%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .media-icon {
+    color: $white;
+    font-size: 1rem;
+    &.cat-1 {
+      background-color: $primary;
+    }
+    &.cat-2 {
+      background-color: $success;
+    }
+    &.cat-3 {
+      background-color: $warning;
+    }
+    &.cat-4 {
+      background-color: $info;
+    }
+  }
+  .media-body {
+    a {
+      font-size: 0.98rem;
+      color: $dark;
+      display: inline-block;
+      &:hover {
+        color: $primary;
+      }
+    }
+    p {
+      font-size: .81rem;
+    }
+  }
+}
+
+/* Products Table */
+.products-table {
+  .table-header {
+    padding-bottom: 0.94rem;
+  }
+  table tr td {
+    vertical-align: middle;
+    padding-top: 1.9rem;
+  }
+  a.dropdown-toggle {
+    &:after {
+      display: none;
+    }
+  }
+  .media {
+    margin-top: 2.19rem;
+    @include media-breakpoint-up(xl) {
+      margin-top: 2.81rem;
+    }
+    @include media-breakpoint-up(xxl) {
+      margin-top: 2.19rem;
+    }
+    .media-body {
+      padding-right: 1.25rem;
+      a {
+        color: $dark;
+        h6 {
+          font-size: 0.98rem;
+          margin-bottom: .625rem;
+          font-weight: 500;
+          color: inherit;
+        }
+      }
+      a:hover {
+        color: $primary;
+      }
+      > p {
+        margin-bottom: .31rem;
+        line-height: 1.5;
+      }
+    }
+  }
+}

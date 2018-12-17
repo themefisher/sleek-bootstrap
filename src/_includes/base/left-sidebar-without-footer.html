@@ -20,7 +20,6 @@
               </div>
               <!-- begin sidebar scrollbar -->
               <div class="sidebar-scrollbar">
-
                 <!-- sidebar menu -->
                 <ul class="nav sidebar-inner" id="sidebar-menu">
                   {% for item in site.data.sidenavItems %}
@@ -33,12 +32,15 @@
                     <ul {% if page.parent==item.name %} class="collapse show" {% else %} class="collapse" {% endif %} id="{{item.name}}"
                       data-parent="#sidebar-menu">
                       <div class="sub-menu">
-
                         {% for itemInner in item.child %}
-
                         {% if itemInner.child == null %}
                         <li {% if page.activePage==itemInner.name %} class="active" {% endif %}>
-                          <a href="{{itemInner.link}}">{{itemInner.label}}</a>
+                          <a class="sidenav-item-link" href="{{itemInner.link}}">
+                            <span class="nav-text">{{itemInner.label}}</span> 
+                            {% if itemInner.name == 'analytics' %}
+                            <span class="badge badge-danger">3</span>
+                            {% endif %}
+                          </a>
                         </li>
                         {% else %}
                         <li {% if page.sub_parent==itemInner.name %} class="has-sub active expand" {% else %} class="has-sub" {%

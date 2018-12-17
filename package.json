@@ -1,23 +1,15 @@
 {
   "name": "sleek-dashboard",
-  "version": "1.0.0-alpha.3",
+  "version": "1.0.0-alpha.4",
   "description": "Premium & Free Bootstrap 4 admin dashboard template by TAFcoder.com",
   "author": "TAF Coder<hello@tafcoder.com> (https://tafcoder.com/)",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tafcoder/sleek-dashboard.git"
   },
-  "homepage": "https://sleek-dashboard.netlify.com/",
+  "homepage": "https://sleek.tafcoder.com/",
   "license": "MIT",
-  "keywords": [
-    "css",
-    "sass",
-    "bootstrap",
-    "admin",
-    "dashboard",
-    "responsive",
-    "front-end"
-  ],
+  "keywords": [ "css", "sass", "bootstrap", "admin", "dashboard", "responsive", "front-end", "admin-dashboard", "bootstrap4", "html", "theme", "dashboard-templates", "admin-panel", "admin-template", "uikit", "bootstrap-theme", "bootstrap-template", "admin", "bootstrap-admin-dashboard", "jekyll" ],
   "scripts": {
     "start": "npm run serve",
     "serve": "bundle exec jekyll serve",

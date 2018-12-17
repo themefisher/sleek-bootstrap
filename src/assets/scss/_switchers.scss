@@ -6,7 +6,7 @@ input[type=radio] {
   padding: 0;
 }
 
-.switch.switch-default {
+.switch {
   position: relative;
   display: inline-block;
   vertical-align: top;
@@ -48,7 +48,7 @@ input[type=radio] {
   }
 }
 
-.switch.switch-default .switch-input:checked~.switch-handle {
+.switch .switch-input:checked~.switch-handle {
   left: 37px;
 }
 
@@ -129,7 +129,7 @@ input[type=radio] {
 
 /* Switch Outline */
 
-.switch-primary-outline {
+.switch-outline-primary {
   >.switch-input:checked~.switch-label {
     background-color: $white !important;
     border-color: $primary;
@@ -144,7 +144,7 @@ input[type=radio] {
   }
 }
 
-.switch-secondary-outline {
+.switch-outline-secondary {
   >.switch-input:checked~.switch-label {
     background-color: $white !important;
     border-color: $secondary;
@@ -159,7 +159,7 @@ input[type=radio] {
   }
 }
 
-.switch-success-outline {
+.switch-outline-success {
   >.switch-input:checked~.switch-label {
     background-color: $white !important;
     border-color: $success;
@@ -174,7 +174,7 @@ input[type=radio] {
   }
 }
 
-.switch-info-outline {
+.switch-outline-info {
   >.switch-input:checked~.switch-label {
     background-color: $white !important;
     border-color: $info;
@@ -189,7 +189,7 @@ input[type=radio] {
   }
 }
 
-.switch-warning-outline {
+.switch-outline-warning {
   >.switch-input:checked~.switch-label {
     background-color: $white !important;
     border-color: $warning;
@@ -204,7 +204,7 @@ input[type=radio] {
   }
 }
 
-.switch-danger-outline {
+.switch-outline-danger {
   >.switch-input:checked~.switch-label {
     background-color: $white !important;
     border-color: $danger;
@@ -221,7 +221,7 @@ input[type=radio] {
 
 /* Switch Outline Alternative */
 
-.switch-primary-outline-alt {
+.switch-outline-alt-primary {
   >.switch-input:checked~.switch-label {
     background-color: $white !important;
     border-color: $primary;
@@ -237,7 +237,7 @@ input[type=radio] {
   }
 }
 
-.switch-secondary-outline-alt {
+.switch-outline-alt-secondary {
   >.switch-input:checked~.switch-label {
     background-color: $white !important;
     border-color: $secondary;
@@ -253,7 +253,7 @@ input[type=radio] {
   }
 }
 
-.switch-success-outline-alt {
+.switch-outline-alt-success {
   >.switch-input:checked~.switch-label {
     background-color: $white !important;
     border-color: $success;
@@ -269,7 +269,7 @@ input[type=radio] {
   }
 }
 
-.switch-info-outline-alt {
+.switch-outline-alt-info {
   >.switch-input:checked~.switch-label {
     background-color: $white !important;
     border-color: $info;
@@ -285,7 +285,7 @@ input[type=radio] {
   }
 }
 
-.switch-warning-outline-alt {
+.switch-outline-alt-warning {
   >.switch-input:checked~.switch-label {
     background-color: $white !important;
     border-color: $warning;
@@ -301,7 +301,7 @@ input[type=radio] {
   }
 }
 
-.switch-danger-outline-alt {
+.switch-outline-alt-danger {
   >.switch-input:checked~.switch-label {
     background-color: $white !important;
     border-color: $danger;
@@ -413,9 +413,9 @@ input[type=radio] {
     position: absolute;
     top: 50%;
     width: 50%;
-    margin-top: -5px;
+    margin-top: -8px;
     line-height: 1;
-    font-size: .75rem;
+    font-size: 1rem;
     font-weight: 400;
     font-family: $font-family-icon;
     text-align: center;
@@ -425,13 +425,13 @@ input[type=radio] {
   .switch-label:before {
     right: 1px;
     color: #c2cfd6;
-    content: attr(data-off);
+    content: '\f156';
   }
 
   .switch-label:after {
     left: 1px;
     color: #fff;
-    content: attr(data-on);
+    content: '\f12c';
     opacity: 0;
   }
 }

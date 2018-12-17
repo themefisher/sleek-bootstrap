@@ -6,6 +6,7 @@
 4. SIDEBAR TOGGLE FOR MOBILE
 5. SIDEBAR TOGGLE FOR VARIOUS SIDEBAR LAYOUT
 6. TODO LIST
+7. RIGHT SIDEBAR
 
 ====== End ======*/
 
@@ -172,9 +173,9 @@ $(document).ready(function() {
         '<i class="mdi"></i>' +
         '<span class="">' +
         item.value +
-        '</span>"' +
+        '</span>' +
         '<span class="badge badge-primary">Today</span>' +
-        "</div>" +
+        '</div>' +
         list.innerHTML;
       item.value = "";
       //Close input field
@@ -185,14 +186,12 @@ $(document).ready(function() {
     todoCheckAll();
   }
 
-
-  // Right Sidebar 
+  /*======== 1. RIGHT SIDEBAR ========*/
   if ($(window).width() < 1025) {
     body.addClass('right-sidebar-toggoler-out');
 
     var btnRightSidebarToggler = $('.btn-right-sidebar-toggler');
-    var materialIcons = btnRightSidebarToggler.find('.material-icons');
-
+    
     btnRightSidebarToggler.on('click', function () {
 
       if (!body.hasClass('right-sidebar-toggoler-out')) {

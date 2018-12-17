@@ -106,7 +106,12 @@
             "name": "badge",
             "label": "Badge",
             "link": "badge.html"
-          },          
+          },
+          {
+            "name": "breadcrumb",
+            "label": "Breadcrumb",
+            "link": "breadcrumb.html"
+          },        
           {
             "name": "buttons-default",
             "label": "Button Default",
@@ -131,12 +136,7 @@
             "name": "button-loading",
             "label": "Button Loading",
             "link": "button-loading.html"
-          },
-          {
-            "name": "breadcrumb",
-            "label": "Breadcrumb",
-            "link": "breadcrumb.html"
-          },
+          },          
           {
             "name": "card",
             "label": "Card",
@@ -301,7 +301,8 @@
     "child": [
       {
         "name": "user-profile",
-        "label": "User Profile"
+        "label": "User Profile",
+        "link": "user-profile.html"
       },
       {
         "name": "authentication",
