@@ -171,7 +171,7 @@ $(document).ready(function() {
       list.innerHTML =
         '<div class="todo-single-item d-flex flex-row justify-content-between">' +
         '<i class="mdi"></i>' +
-        '<span class="">' +
+        '<span >' +
         item.value +
         '</span>' +
         '<span class="badge badge-primary">Today</span>' +
@@ -191,15 +191,15 @@ $(document).ready(function() {
     body.addClass('right-sidebar-toggoler-out');
 
     var btnRightSidebarToggler = $('.btn-right-sidebar-toggler');
-    
+
     btnRightSidebarToggler.on('click', function () {
 
       if (!body.hasClass('right-sidebar-toggoler-out')) {
         body.addClass('right-sidebar-toggoler-out').removeClass('right-sidebar-toggoler-in');
       } else {
         body.addClass('right-sidebar-toggoler-in').removeClass('right-sidebar-toggoler-out')
-      }      
-      
+      }
+
     });
 
   }
@@ -208,12 +208,12 @@ $(document).ready(function() {
   var navRightSidebarLink = $('.nav-right-sidebar .nav-link');
 
   navRightSidebarLink.on('click', function () {
-    
+
     if(!body.hasClass('right-sidebar-in')){
       body.addClass('right-sidebar-in').removeClass('right-sidebar-out');
-      
+
     } else if ($(this).hasClass('show')){
-      body.addClass('right-sidebar-out').removeClass('right-sidebar-in');      
+      body.addClass('right-sidebar-out').removeClass('right-sidebar-in');
     }
   });
 
