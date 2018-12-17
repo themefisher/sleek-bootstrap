@@ -23,7 +23,7 @@
     "serve": "bundle exec jekyll serve",
     "build": "bundle exec jekyll build",
     "rtl": "rtlcss _site/assets/css/styles.css _site/assets/css/styles.rtl.css",
-    "dist": "npm run build && npm run rtl && cp -rf _site/ dist/ && cp -r src/assets/scss/ dist/assets/scss/"
+    "dist": "npm run build && npm run rtl && rm -rf dist && cp -rf _site/ dist/ && cp -r src/assets/scss/ dist/assets/scss/"
   },
   "dependencies": {
     "bootstrap": "^4.1.3"
