@@ -7,17 +7,9 @@
     "type": "git",
     "url": "git+https://github.com/tafcoder/sleek-dashboard.git"
   },
-  "homepage": "https://sleek-dashboard.netlify.com/",
+  "homepage": "https://sleek.tafcoder.com/",
   "license": "MIT",
-  "keywords": [
-    "css",
-    "sass",
-    "bootstrap",
-    "admin",
-    "dashboard",
-    "responsive",
-    "front-end"
-  ],
+  "keywords": [ "css", "sass", "bootstrap", "admin", "dashboard", "responsive", "front-end", "admin-dashboard", "bootstrap4", "html", "theme", "dashboard-templates", "admin-panel", "admin-template", "uikit", "bootstrap-theme", "bootstrap-template", "admin", "bootstrap-admin-dashboard", "jekyll" ],
   "scripts": {
     "start": "npm run serve",
     "serve": "bundle exec jekyll serve",
