@@ -14,12 +14,14 @@ input[type=radio] {
   height: 30px;
   background-color: transparent;
   cursor: pointer;
+
   .switch-input {
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
   }
+
   .switch-label {
     position: relative;
     display: block;
@@ -32,6 +34,7 @@ input[type=radio] {
     border-radius: 4px;
     transition: opacity background-color .3s 0.3s ease-out;
   }
+
   .switch-handle {
     position: absolute;
     top: 3px;
@@ -56,6 +59,7 @@ input[type=radio] {
     background-color: $primary !important;
     border-color: $primary;
   }
+
   >.switch-input:checked~.switch-handle {
     border-color: transparent;
   }
@@ -66,6 +70,7 @@ input[type=radio] {
     background-color: $secondary !important;
     border-color: $secondary;
   }
+
   >.switch-input:checked~.switch-handle {
     border-color: transparent;
   }
@@ -76,6 +81,7 @@ input[type=radio] {
     background-color: $success !important;
     border-color: $success;
   }
+
   >.switch-input:checked~.switch-handle {
     border-color: transparent;
   }
@@ -86,6 +92,7 @@ input[type=radio] {
     background-color: $info !important;
     border-color: $info;
   }
+
   >.switch-input:checked~.switch-handle {
     border-color: transparent;
   }
@@ -96,6 +103,7 @@ input[type=radio] {
     background-color: $warning !important;
     border-color: $warning;
   }
+
   >.switch-input:checked~.switch-handle {
     border-color: transparent;
   }
@@ -106,6 +114,7 @@ input[type=radio] {
     background-color: $danger !important;
     border-color: $danger;
   }
+
   >.switch-input:checked~.switch-handle {
     border-color: transparent;
   }
@@ -125,9 +134,11 @@ input[type=radio] {
     background-color: $white !important;
     border-color: $primary;
   }
+
   .switch-input:checked~.switch-label:after {
     color: $primary;
   }
+
   >.switch-input:checked~.switch-handle {
     border-color: $primary;
   }
@@ -138,9 +149,11 @@ input[type=radio] {
     background-color: $white !important;
     border-color: $secondary;
   }
+
   .switch-input:checked~.switch-label:after {
     color: $secondary;
   }
+
   >.switch-input:checked~.switch-handle {
     border-color: $secondary;
   }
@@ -151,9 +164,11 @@ input[type=radio] {
     background-color: $white !important;
     border-color: $success;
   }
+
   .switch-input:checked~.switch-label:after {
     color: $success;
   }
+
   >.switch-input:checked~.switch-handle {
     border-color: $success;
   }
@@ -164,9 +179,11 @@ input[type=radio] {
     background-color: $white !important;
     border-color: $info;
   }
+
   .switch-input:checked~.switch-label:after {
     color: $info;
   }
+
   >.switch-input:checked~.switch-handle {
     border-color: $info;
   }
@@ -177,9 +194,11 @@ input[type=radio] {
     background-color: $white !important;
     border-color: $warning;
   }
+
   >.switch-input:checked~.switch-label:after {
     color: $warning;
   }
+
   >.switch-input:checked~.switch-handle {
     border-color: $warning;
   }
@@ -190,9 +209,11 @@ input[type=radio] {
     background-color: $white !important;
     border-color: $danger;
   }
+
   >.switch-input:checked~.switch-label:after {
     color: $danger;
   }
+
   >.switch-input:checked~.switch-handle {
     border-color: $danger;
   }
@@ -205,9 +226,11 @@ input[type=radio] {
     background-color: $white !important;
     border-color: $primary;
   }
+
   .switch-input:checked~.switch-label:after {
     color: $primary;
   }
+
   >.switch-input:checked~.switch-handle {
     background-color: $primary;
     border-color: $primary;
@@ -219,9 +242,11 @@ input[type=radio] {
     background-color: $white !important;
     border-color: $secondary;
   }
+
   >.switch-input:checked~.switch-label:after {
     color: $secondary;
   }
+
   >.switch-input:checked~.switch-handle {
     background-color: $secondary;
     border-color: $secondary;
@@ -233,9 +258,11 @@ input[type=radio] {
     background-color: $white !important;
     border-color: $success;
   }
+
   >.switch-input:checked~.switch-label:after {
     color: $success;
   }
+
   >.switch-input:checked~.switch-handle {
     background-color: $success;
     border-color: $success;
@@ -247,9 +274,11 @@ input[type=radio] {
     background-color: $white !important;
     border-color: $info;
   }
+
   >.switch-input:checked~.switch-label:after {
     color: $info;
   }
+
   >.switch-input:checked~.switch-handle {
     background-color: $info;
     border-color: $info;
@@ -261,9 +290,11 @@ input[type=radio] {
     background-color: $white !important;
     border-color: $warning;
   }
+
   >.switch-input:checked~.switch-label:after {
     color: $warning;
   }
+
   >.switch-input:checked~.switch-handle {
     background-color: $warning;
     border-color: $warning;
@@ -275,9 +306,11 @@ input[type=radio] {
     background-color: $white !important;
     border-color: $danger;
   }
+
   >.switch-input:checked~.switch-label:after {
     color: $danger;
   }
+
   >.switch-input:checked~.switch-handle {
     background-color: $danger;
     border-color: $danger;
@@ -295,12 +328,14 @@ input[type=radio] {
   height: 30px;
   background-color: transparent;
   cursor: pointer;
+
   .switch-input {
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
   }
+
   .switch-label {
     position: relative;
     display: block;
@@ -313,6 +348,7 @@ input[type=radio] {
     border-radius: 2px;
     transition: opacity background .3s ease-out;
   }
+
   .switch-handle {
     position: absolute;
     top: 3px;
@@ -327,6 +363,7 @@ input[type=radio] {
 }
 
 .switch.switch-text {
+
   .switch-label:after,
   .switch-label:before {
     position: absolute;
@@ -340,11 +377,13 @@ input[type=radio] {
     text-align: center;
     transition: inherit;
   }
+
   .switch-label:before {
     right: 1px;
     color: #c2cfd6;
     content: attr(data-off);
   }
+
   .switch-label:after {
     left: 1px;
     color: #fff;
@@ -368,6 +407,7 @@ input[type=radio] {
 /* Switch With Icon */
 
 .switch.switch-icon {
+
   .switch-label:after,
   .switch-label:before {
     position: absolute;
@@ -381,11 +421,13 @@ input[type=radio] {
     text-align: center;
     transition: inherit;
   }
+
   .switch-label:before {
     right: 1px;
     color: #c2cfd6;
     content: attr(data-off);
   }
+
   .switch-label:after {
     left: 1px;
     color: #fff;

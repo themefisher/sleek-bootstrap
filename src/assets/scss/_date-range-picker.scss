@@ -9,30 +9,37 @@
         min-width: 10rem;
       }
     }
+
     li {
       padding: 0.625rem 1.9rem;
       font-size: 0.875rem;
     }
+
     li.active {
       background-color: $primary;
     }
   }
+
   &:before,
   &:after {
     display: none;
   }
+
   .drp-buttons .btn {
     padding: 0 1.25rem;
   }
+
   td.in-range {
     background-color: rgba($primary, .1);
   }
+
   td.active,
-  td.active:hover{
+  td.active:hover {
     background-color: $primary;
   }
+
   td.available:hover,
-   {
+    {
     background-color: $primary;
     color: $white;
   }
@@ -43,6 +50,7 @@
 .date-range-report {
   span {
     cursor: pointer;
+
     &:after {
       display: inline-block;
       width: 0;
@@ -57,4 +65,3 @@
     }
   }
 }
- 

@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
 }
+
 .info-title {
   color: $dark;
   padding: 0.31rem;
@@ -21,12 +22,15 @@
 .vector-map-world {
   padding-bottom: 0 !important;
   height: 300px;
+
   @include media-breakpoint-up(md) {
     height: 360px;
   }
+
   @include media-breakpoint-up(xl) {
     height: 360px;
   }
+
   @include media-breakpoint-up(xxl) {
     height: 365px;
   }
@@ -36,12 +40,15 @@
 .vector-map-world-2 {
   padding-bottom: 0 !important;
   height: 300px;
+
   @include media-breakpoint-up(md) {
     height: 360px;
   }
+
   @include media-breakpoint-up(xl) {
     height: 360px;
   }
+
   @include media-breakpoint-up(xxl) {
     height: 350px;
   }
