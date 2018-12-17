@@ -3,6 +3,7 @@
   &.btn-square {
     border-radius: 0px;
   }
+
   &.btn-pill {
     border-radius: 100px;
   }
@@ -22,20 +23,23 @@
   overflow: hidden;
   color: $white;
   text-align: center;
-  padding:  0.312rem 0.625rem;
+  padding: 0.312rem 0.625rem;
   font-size: 0.98rem;
   border: 1px solid transparent;
   line-height: 1.5;
   width: 40px;
   height: 40px;
+
   &.text {
     width: auto;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+
     i {
       margin-right: .5rem;
     }
   }
+
   &.btn-lg {
     height: 50px;
     padding-left: 1.88rem;
@@ -45,6 +49,7 @@
 
 .btn-facebook {
   background: #3b5998;
+
   &.btn-outline {
     color: #3b5998;
     border-color: rgba(#3b5998, 0.6);
@@ -54,6 +59,7 @@
 
 .btn-facebook:hover {
   background: #344e86;
+
   &.btn-outline {
     color: $white;
     border-color: rgba(#3b5998, 1);
@@ -66,6 +72,7 @@
 
 .btn-twitter {
   background: #00aced;
+
   &.btn-outline {
     color: #00aced;
     border-color: rgba(#00aced, 0.6);
@@ -75,6 +82,7 @@
 
 .btn-twitter:hover {
   background: #0099d4;
+
   &.btn-outline {
     color: $white;
     border-color: rgba(#00aced, 1);
@@ -83,6 +91,7 @@
 
 .btn-skype {
   background: #00aff0;
+
   &.btn-outline {
     color: #00aff0;
     border-color: rgba(#00aff0, 0.6);
@@ -92,6 +101,7 @@
 
 .btn-skype:hover {
   background: #00aff0;
+
   &.btn-outline {
     color: $white;
     border-color: rgba(#00aff0, 1);
@@ -104,6 +114,7 @@
 
 .btn-linkedin {
   background: #4875b4;
+
   &.btn-outline {
     color: #4875b4;
     border-color: rgba(#4875b4, 0.6);
@@ -113,6 +124,7 @@
 
 .btn-linkedin:hover {
   background: #4169a2;
+
   &.btn-outline {
     color: $white;
     border-color: rgba(#4875b4, 1);
@@ -125,6 +137,7 @@
 
 .btn-pinterest {
   background: #cb2027;
+
   &.btn-outline {
     color: #cb2027;
     border-color: rgba(#cb2027, 0.6);
@@ -138,6 +151,7 @@
     color: $white;
     border-color: rgba(#cb2027, 1);
   }
+
   background: #b51d23;
 }
 
@@ -147,6 +161,7 @@
 
 .btn-tumblr {
   background: #32506d;
+
   &.btn-outline {
     color: #32506d;
     border-color: rgba(#32506d, 0.6);
@@ -156,6 +171,7 @@
 
 .btn-tumblr:hover {
   background: #2a435c;
+
   &.btn-outline {
     color: $white;
     border-color: rgba(#32506d, 1);
@@ -168,6 +184,7 @@
 
 .btn-google-plus {
   background: #d34836;
+
   &.btn-outline {
     color: #d34836;
     border-color: rgba(#d34836, 0.6);
@@ -177,6 +194,7 @@
 
 .btn-google-plus:hover {
   background: #c43d2b;
+
   &.btn-outline {
     color: $white;
     border-color: rgba(#d34836, 1);
@@ -189,6 +207,7 @@
 
 .btn-dropbox {
   background: #007ee5;
+
   &.btn-outline {
     color: #007ee5;
     border-color: rgba(#007ee5, 0.6);
@@ -198,6 +217,7 @@
 
 .btn-dropbox:hover {
   background: #0070cc;
+
   &.btn-outline {
     color: $white;
     border-color: rgba(#007ee5, 1);
@@ -210,6 +230,7 @@
 
 .btn-vimeo {
   background: #aad450;
+
   &.btn-outline {
     color: #aad450;
     border-color: rgba(#aad450, 0.6);
@@ -219,6 +240,7 @@
 
 .btn-vimeo:hover {
   background: #a0cf3c;
+
   &.btn-outline {
     color: $white;
     border-color: rgba(#aad450, 1);
@@ -233,19 +255,25 @@
   border-color: $border-color;
   line-height: 28px;
   color: $secondary;
+
   &:hover {
     border-color: $primary;
     color: $white;
     background: $primary;
   }
 }
+
 /*===== 4.12 DROPDOWN =====*/
 .btn,
 .dropdown-toggle {
-  &:focus, &:active, &.active {
-    box-shadow: none!important;
+
+  &:focus,
+  &:active,
+  &.active {
+    box-shadow: none !important;
   }
 }
+
 .dropdown-toggle::after {
   border-right: 5px solid transparent;
   border-bottom: 0px;
@@ -269,5 +297,5 @@
   touch-action: manipulation;
   cursor: pointer;
   white-space: nowrap;
-  @include button-size(auto,20px, 15px, auto, 0px);
+  @include button-size(auto, 20px, 15px, auto, 0px);
 }

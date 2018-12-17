@@ -8,14 +8,17 @@
     border-radius: 3px;
     border: 1px solid $border-color;
   }
+
   i.mdi {
     vertical-align: middle;
     border-radius: 4px;
     display: inline-block;
   }
+
   i.mdi.dark-demo {
     background: #333;
   }
+
   .note {
     color: #999;
     font-size: 14px;
@@ -26,14 +29,18 @@
 .icons {
   column-count: 1;
   column-gap: 20px;
+
   @include media-breakpoint-up(lg) {
     column-count: 2;
   }
+
   @include media-breakpoint-up(xl) {
     column-count: 3;
   }
+
   div {
     line-height: 3em;
+
     span {
       cursor: pointer;
       font-size: 14px;
