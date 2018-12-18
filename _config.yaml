@@ -1,32 +1,11 @@
-# Permalinks
-# permalink: pretty
+# https://jekyllrb.com/docs/configuration/options/
 
 # Server
 source: src
 destination: _site
+keep_files:
+  - assets/css
 host: "localhost"
 baseurl: ""
 exclude:
-  - "*.sh"
-  - "prettify_html.js"
-  - .editorconfig
-  - package.json
-  - package-lock.json
-  - Gemfile
-  - Gemfile.lock
-  - .git
-  - .idea
-  - .gitignore
-  - node_modules/
-  - .DS_Store
-  - .sass-cache/
-  - .asset-cache/
-  - push-to-repo.sh
-  - commits.sh
-  - assets/scss/*
-  - assets/plugins/**/*.scss
-
-# Assets
-sass:
-  sass_dir: assets/scss
-  sourcemap: true
+  - assets/scss
