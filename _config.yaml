@@ -30,4 +30,3 @@ exclude:
 sass:
   sass_dir: assets/scss
   sourcemap: true
-  style: compressed
