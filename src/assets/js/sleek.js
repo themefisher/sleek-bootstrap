@@ -230,7 +230,7 @@ SimpleJekyllSearch.init({
   searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('search-results'),
   dataSource: '/assets/data/search.json',
-  searchResultTemplate: '<li><a href="{link}"><h1>{name}</h1></a><\/li>',
+  searchResultTemplate: '<li><div><a href="{link}">{label}</a></div><div>{location}</div><\/li>',
   noResultsText: 'No results found',
   limit: 10,
   fuzzy: true,

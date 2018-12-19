@@ -15,6 +15,22 @@
 
 /* Navbar */
 
+.navbar-container{
+  position: relative;
+  #search-results-container{
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    top: 100%;
+    left: 77px;
+    padding: 30px 75px;
+
+    li{
+      padding: 10px 0;
+    }
+  }
+}
+
 .navbar {
   margin-bottom: 0;
   border: none;

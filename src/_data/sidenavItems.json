@@ -2,7 +2,6 @@
   {
     "name": "dashboard",
     "label": "Dashboard",
-    "link": "index.html",
     "iconClass": "mdi mdi-view-dashboard-outline",
     "child": [
       {
@@ -20,12 +19,11 @@
   {
     "name": "layouts",
     "label": "Layouts",
-    "link": "/layouts/",
     "iconClass": "mdi mdi-widgets",
     "child": [
       {
         "name": "headers",
-        "label": "Headers",        
+        "label": "Headers",
         "child": [
           {
             "name": "header-fixed",
@@ -51,7 +49,7 @@
       },
       {
         "name": "sidebar-navs",
-        "label": "Sidebar Navs",        
+        "label": "Sidebar Navs",
         "child": [
           {
             "name": "sidebar-open",
@@ -89,13 +87,13 @@
   },
   {
     "name": "ui-elements",
-    "label": "UI Elements",    
+    "label": "UI Elements",
     "iconClass": "mdi mdi-folder-multiple-outline",
     "child": [
       {
         "name": "components",
         "label": "Components",
-        
+
         "child": [
           {
             "name": "alert",
@@ -111,7 +109,7 @@
             "name": "breadcrumb",
             "label": "Breadcrumb",
             "link": "breadcrumb.html"
-          },        
+          },
           {
             "name": "buttons-default",
             "label": "Button Default",
@@ -136,7 +134,7 @@
             "name": "button-loading",
             "label": "Button Loading",
             "link": "button-loading.html"
-          },          
+          },
           {
             "name": "card",
             "label": "Card",
@@ -176,7 +174,7 @@
             "name": "progress-bar",
             "label": "Progress Bar",
             "link": "progress-bar.html"
-          },          
+          },
           {
             "name": "spinner",
             "label": "Spinner",
@@ -201,7 +199,7 @@
       },
       {
         "name": "icons",
-        "label": "Icons",        
+        "label": "Icons",
         "child": [
           {
             "name": "material-icons",
@@ -217,7 +215,7 @@
       },
       {
         "name": "forms",
-        "label": "Forms",        
+        "label": "Forms",
         "child": [
           {
             "name": "basic-input",
@@ -248,7 +246,7 @@
       },
       {
         "name": "maps",
-        "label": "Maps",        
+        "label": "Maps",
         "child": [
           {
             "name": "google-map",
@@ -283,7 +281,7 @@
   {
     "name": "charts",
     "label": "Charts",
-    
+
     "iconClass": "mdi mdi-chart-pie",
     "child": [
       {
@@ -296,7 +294,7 @@
   {
     "name": "pages",
     "label": "Pages",
-    
+
     "iconClass": "mdi mdi-image-filter-none",
     "child": [
       {
@@ -322,7 +320,7 @@
       },
       {
         "name": "others",
-        "label": "Others",        
+        "label": "Others",
         "child": [
           {
             "name": "invoice",
@@ -332,7 +330,8 @@
           {
             "name": "error",
             "label": "Error",
-            "link": "error.html"
+            "link": "error.html",
+            "isLast": true
           }
         ]
       }
