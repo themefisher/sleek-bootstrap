@@ -171,7 +171,7 @@ $(document).ready(function() {
       list.innerHTML =
         '<div class="todo-single-item d-flex flex-row justify-content-between">' +
         '<i class="mdi"></i>' +
-        '<span >' +
+        '<span>' +
         item.value +
         '</span>' +
         '<span class="badge badge-primary">Today</span>' +

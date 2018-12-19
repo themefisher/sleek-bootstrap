@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="{% if page.rtl %}rtl{% else %}ltr{% endif %}">
   {% include base/head.html %}
 
   <body class="{{ page.bodyClass }}" id="body">
@@ -21,13 +21,13 @@
         {% include base/header.html %}
 
         <div class="content-wrapper">
-          <div class="content">{{ content }}</div>  
+          <div class="content">{{ content }}</div>
 
           {% if page.activePage == 'right-sidebar' %}
           {% include base/right-sidebar.html %}
           {% endif %}
 
-          
+
         </div>
 
         {% include base/footer.html %}
