@@ -30,7 +30,8 @@ We are very excited to share this dashboard with you and we look forward to hear
 ## Table of Contents
 
 - [Demo](#demo)
-- [Getting Started](#getting-started)
+- [Npm Install](#npm-install)
+- [Development](#development)
 - [File Structure](#file-structure)
 - [Browser Support](#browser-support)
 - [Reporting Issues](#reporting-issues)
