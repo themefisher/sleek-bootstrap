@@ -44,7 +44,7 @@
       >a {
         padding: 1.25rem 1.56rem;
         line-height: 20px;
-        color: $secondary;
+        color: lighten($secondary, 10);
         display: block;
         text-decoration: none;
         text-transform: uppercase;
@@ -77,6 +77,19 @@
           background: $primary;
           opacity: 0;
         }
+      }
+    }
+    .section-title {
+      padding: 1.25rem 1.56rem 0;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      color: rgba($secondary, .7);
+      letter-spacing: 1.2px;
+    }
+    .sub-menu {
+      .section-title {
+        padding: 1.25rem .94rem 0.625rem;
       }
     }
   }
