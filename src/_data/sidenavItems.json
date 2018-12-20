@@ -19,80 +19,6 @@
     ]
   },
   {
-    "name": "layouts",
-    "label": "Layouts",
-    "iconClass": "mdi mdi-widgets",
-    "child": [
-      {
-        "name": "headers",
-        "label": "Headers",
-        "child": [
-          {
-            "name": "header-fixed",
-            "label": "Header Fixed",
-            "link": "header-fixed.html"
-          },
-          {
-            "name": "header-static",
-            "label": "Header Static",
-            "link": "header-static.html"
-          },
-          {
-            "name": "header-light",
-            "label": "Header Light",
-            "link": "header-light.html"
-          },
-          {
-            "name": "header-dark",
-            "label": "Header Dark",
-            "link": "header-dark.html"
-          }
-        ]
-      },
-      {
-        "name": "sidebar-navs",
-        "label": "Sidebar Navs",
-        "child": [
-          {
-            "name": "sidebar-open",
-            "label": "Sidebar Open",
-            "link": "sidebar-open.html"
-          },
-          {
-            "name": "sidebar-minimized",
-            "label": "Sidebar Minimized",
-            "link": "sidebar-minimized.html"
-          },
-          {
-            "name": "sidebar-offcanvas",
-            "label": "Sidebar Offcanvas",
-            "link": "sidebar-offcanvas.html"
-          },
-          {
-            "name": "sidebar-with-footer",
-            "label": "Sidebar With Footer",
-            "link": "sidebar-with-footer.html"
-          },
-          {
-            "name": "sidebar-without-footer",
-            "label": "Sidebar Without Footer",
-            "link": "sidebar-without-footer.html"
-          },
-          {
-            "name": "right-sidebar",
-            "label": "Right Sidebar",
-            "link": "right-sidebar.html"
-          }
-        ]
-      },
-      {
-        "name": "rtl",
-        "label": "RTL mode",
-        "link": "rtl.html"
-      }
-    ]
-  },
-  {
     "name": "ui-elements",
     "label": "UI Elements",
     "iconClass": "mdi mdi-folder-multiple-outline",
@@ -345,10 +271,6 @@
     ]
   },
   {
-    "type": "section-title",
-    "label": "Section Title"
-  },
-  {
     "name": "documentation",
     "label": "Documentation",
 
@@ -375,48 +297,75 @@
       },
       {
         "type": "section-title",
-        "label": "Header Layout"
+        "label": "Layouts"
       },
       {
-        "name": "header1",
-        "label": "Header 1",
-        "link": "header1.html"
-      },
-      {
-        "name": "header2",
-        "label": "Header 2",
-        "link": "header2.html"
-      },
-      {
-        "type": "section-title",
-        "label": "Sidebar Layout"
-      },
-      {
-        "name": "sidebar1",
-        "label": "Sidear 1",
-        "link": "sidebar1.html"
-      },
-      {
-        "name": "sidebar2",
-        "label": "Sidebar 2",
-        "link": "sidebar2.html"
-      },
-      {
-        "name": "otherss",
-        "label": "Otherss",
+        "name": "headers",
+        "label": "Layout Headers",
         "child": [
           {
-            "name": "invoice",
-            "label": "invoice",
-            "link": "invoice.html"
+            "name": "header-fixed",
+            "label": "Header Fixed",
+            "link": "header-fixed.html"
           },
           {
-            "name": "error",
-            "label": "Error",
-            "link": "error.html",
-            "isLast": true
+            "name": "header-static",
+            "label": "Header Static",
+            "link": "header-static.html"
+          },
+          {
+            "name": "header-light",
+            "label": "Header Light",
+            "link": "header-light.html"
+          },
+          {
+            "name": "header-dark",
+            "label": "Header Dark",
+            "link": "header-dark.html"
           }
         ]
+      },
+      {
+        "name": "sidebar-navs",
+        "label": "layout Sidebars",
+        "child": [
+          {
+            "name": "sidebar-open",
+            "label": "Sidebar Open",
+            "link": "sidebar-open.html"
+          },
+          {
+            "name": "sidebar-minimized",
+            "label": "Sidebar Minimized",
+            "link": "sidebar-minimized.html"
+          },
+          {
+            "name": "sidebar-offcanvas",
+            "label": "Sidebar Offcanvas",
+            "link": "sidebar-offcanvas.html"
+          },
+          {
+            "name": "sidebar-with-footer",
+            "label": "Sidebar With Footer",
+            "link": "sidebar-with-footer.html"
+          },
+          {
+            "name": "sidebar-without-footer",
+            "label": "Sidebar Without Footer",
+            "link": "sidebar-without-footer.html"
+          },
+          {
+            "name": "right-sidebar",
+            "label": "Right Sidebar",
+            "link": "right-sidebar.html"
+          }
+        ]
+      },
+      {
+        "name": "rtl",
+        "label": "RTL mode",
+        "link": "rtl.html",
+        "isLast": true
       }
     ]
   }
