@@ -363,7 +363,7 @@
       },
       {
         "name": "rtl",
-        "label": "RTL mode",
+        "label": "RTL Direction",
         "link": "rtl.html",
         "isLast": true
       }
