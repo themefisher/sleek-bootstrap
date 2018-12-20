@@ -38,7 +38,7 @@
     }
     @include media-breakpoint-up(xl){
       margin-top: 2.5rem;
-    }    
+    }
     >li {
       position: relative;
       >a {
@@ -99,7 +99,7 @@
     height: 75px;
     line-height: 75px;
     width: 250px;
-    
+
     @include transition(width 0.3s ease-in-out);
     padding-left: 1.56rem;
     @include media-breakpoint-up(md){
@@ -153,7 +153,7 @@
   font-weight: 400;
   font-style: normal;
   font-variant: normal;
-  text-rendering: auto;  
+  text-rendering: auto;
 }
 
 .sidebar li.active>a .caret:before,
@@ -260,17 +260,17 @@
     padding-bottom: 0;
   }
   .nav>li>a>.caret,
-  .nav>li>a>span {    
+  .nav>li>a>span {
     opacity: 1;
 
     @include media-breakpoint-up(md) {
       opacity: 0;
     }
-  }  
+  }
   .nav>li>a>.caret {
     right: 15px;
   }
-  
+
   .nav li.has-sub .collapse>.sub-menu {
     left: 0;
     top: 0;
@@ -836,7 +836,7 @@
   }
 }
 
-/* Right Sidebar Tab Content */ 
+/* Right Sidebar Tab Content */
 .right-sidebar-tab {
   position: fixed;
   top: 76px;
@@ -852,13 +852,13 @@
 
 }
 
-/* Right Sidebar Content Out */ 
+/* Right Sidebar Content Out */
 .right-sidebar-out {
   .content-wrapper {
     @include media-breakpoint-up(xl) {
       margin-right: 60px;
       transition: margin-right .3s ease-in-out;
-    }    
+    }
   }
   .right-sidebar-tab {
     right: -315px;
@@ -866,14 +866,14 @@
   }
 }
 
-/* Right Sidebar Content IN */ 
+/* Right Sidebar Content IN */
 .right-sidebar-in {
   .content-wrapper {
     @include media-breakpoint-up(xl) {
       margin-right: 375px;
       transition: margin-right .3s ease-in-out;
     }
-    
+
   }
   .right-sidebar-tab {
     right: 60px;
@@ -894,7 +894,7 @@
 }
 
 
-/* Card Right Sidebar */ 
+/* Card Right Sidebar */
 .card-right-sidebar {
   border: none;
   .card-header {
@@ -920,14 +920,14 @@
       margin-bottom: 0;
       font-size: 0.94rem;
     }
-  }  
+  }
 }
 
 
-/* Dark Version  */ 
+/* Dark Version  */
 .right-sidebar-dark {
   .right-nav-container {
     background-color: $navy;
-    border-left: 1px solid rgba($white, 0.2);    
-  }      
+    border-left: 1px solid rgba($white, 0.2);
+  }
 }

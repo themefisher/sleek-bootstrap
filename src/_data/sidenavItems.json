@@ -82,6 +82,11 @@
             "link": "right-sidebar.html"
           }
         ]
+      },
+      {
+        "name": "rtl",
+        "label": "RTL mode",
+        "link": "rtl.html"
       }
     ]
   },

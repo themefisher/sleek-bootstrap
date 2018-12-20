@@ -1,0 +1,6 @@
+/*===== REBOOT =====*/
+html[dir="rtl"] {
+  .sidebar li > a .caret:before {
+    content: '\f141';
+  }
+}
