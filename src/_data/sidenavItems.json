@@ -274,7 +274,7 @@
     "name": "documentation",
     "label": "Documentation",
 
-    "iconClass": "mdi mdi-image",
+    "iconClass": "mdi mdi-book-open-page-variant",
     "child": [
       {
         "type": "section-title",

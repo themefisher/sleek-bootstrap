@@ -4,7 +4,7 @@
                     =====================================
                   -->
           <aside class="left-sidebar bg-sidebar">
-            <div id="sidebar" class="sidebar">
+            <div id="sidebar" class="sidebar sidebar-with-footer">
               <!-- Aplication Brand -->
               <div class="app-brand">
                 <a href="/index.html">
@@ -20,9 +20,16 @@
               </div>
               <!-- begin sidebar scrollbar -->
               <div class="sidebar-scrollbar">
+
                 <!-- sidebar menu -->
                 <ul class="nav sidebar-inner" id="sidebar-menu">
                   {% for item in site.data.sidenavItems %}
+
+                  {% if item.type == "section-title" %}
+                  <li class="{{item.type}}">
+                    {{item.label}}
+                  </li>
+                  {% else %}
                   <li {% if page.parent==item.name %} class="has-sub active expand" {% else %} class="has-sub" {% endif %}>
                     <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#{{item.name}}"
                       aria-expanded="false" aria-controls="{{item.name}}">
@@ -34,14 +41,20 @@
                       <div class="sub-menu">
                         {% for itemInner in item.child %}
                         {% if itemInner.child == null %}
+                        {% if itemInner.type == "section-title" %}
+                        <li class="{{itemInner.type}}">
+                          {{itemInner.label}}
+                        </li>
+                        {% else %}
                         <li {% if page.activePage==itemInner.name %} class="active" {% endif %}>
                           <a class="sidenav-item-link" href="{{itemInner.link}}">
-                            <span class="nav-text">{{itemInner.label}}</span> 
+                            <span class="nav-text">{{itemInner.label}}</span>
                             {% if itemInner.name == 'analytics' %}
-                            <span class="badge badge-danger">3</span>
+                            <span class="badge badge-danger">new</span>
                             {% endif %}
                           </a>
                         </li>
+                        {% endif %}
                         {% else %}
                         <li {% if page.sub_parent==itemInner.name %} class="has-sub active expand" {% else %} class="has-sub" {%
                           endif %}>
@@ -66,10 +79,11 @@
                       </div>
                     </ul>
                   </li>
+                  {% endif %}
+
                   {% endfor %}
                 </ul>
 
               </div>
-
             </div>
           </aside>
