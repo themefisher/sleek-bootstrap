@@ -191,15 +191,15 @@ $(document).ready(function() {
     body.addClass('right-sidebar-toggoler-out');
 
     var btnRightSidebarToggler = $('.btn-right-sidebar-toggler');
-    
+
     btnRightSidebarToggler.on('click', function () {
 
       if (!body.hasClass('right-sidebar-toggoler-out')) {
         body.addClass('right-sidebar-toggoler-out').removeClass('right-sidebar-toggoler-in');
       } else {
         body.addClass('right-sidebar-toggoler-in').removeClass('right-sidebar-toggoler-out')
-      }      
-      
+      }
+
     });
 
   }
@@ -208,12 +208,12 @@ $(document).ready(function() {
   var navRightSidebarLink = $('.nav-right-sidebar .nav-link');
 
   navRightSidebarLink.on('click', function () {
-    
+
     if(!body.hasClass('right-sidebar-in')){
       body.addClass('right-sidebar-in').removeClass('right-sidebar-out');
-      
+
     } else if ($(this).hasClass('show')){
-      body.addClass('right-sidebar-out').removeClass('right-sidebar-in');      
+      body.addClass('right-sidebar-out').removeClass('right-sidebar-in');
     }
   });
 
@@ -222,4 +222,16 @@ $(document).ready(function() {
   cardClosebutton.on('click', function () {
     body.removeClass('right-sidebar-in').addClass('right-sidebar-out');
   })
+});
+
+
+// Jekyll instant search
+SimpleJekyllSearch.init({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('search-results'),
+  dataSource: '/assets/data/search.json',
+  searchResultTemplate: '<li><div class="link"><a href="{link}">{label}</a></div><div class="location">{location}</div><\/li>',
+  noResultsText: '<li>No results found</li>',
+  limit: 10,
+  fuzzy: true,
 });

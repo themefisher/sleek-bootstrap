@@ -1,0 +1,24 @@
+---
+---
+  [
+  {% for item in site.data.sidenavItems %}
+    {% for itemInner in item.child %}
+      {% if itemInner.child == null %}
+      {
+        "label": "{{ itemInner.label | escape }}",
+        "link": "{{ itemInner.link | escape }}",
+        "location": "{{ item.label | escape }}"
+      },
+      {% else %}
+      {% for itemInnerMost in itemInner.child %}
+      {
+        "label": "{{ itemInnerMost.label | escape }}",
+        "link": "{{ itemInnerMost.link | escape }}",
+        "location": "{{ itemInner.label | escape }}"
+      } {% if itemInnerMost.isLast != true %},{% endif %}
+      {% endfor %}
+      {% endif %}
+    {% endfor %}
+
+  {% endfor %}
+  ]

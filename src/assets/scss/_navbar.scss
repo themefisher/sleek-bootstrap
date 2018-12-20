@@ -54,6 +54,7 @@
   }
   /* Search Form */
   .search-form {
+    position: relative;
     margin-right: auto;
     padding-left: 1.25rem;
     background: transparent;
@@ -87,6 +88,23 @@
         min-width: 500px;
       }
     }
+
+    #search-results-container{
+      width: 100%;
+      background: #fff;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      box-shadow: 1px 2px 5px #e5e9f2;
+      li{
+        padding: 20px 30px;
+        .link{
+          font-size: 1rem;
+        }
+      }
+    }
+
   }
   /* Navbar Nav */
   .navbar-nav {
