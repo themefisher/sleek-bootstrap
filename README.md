@@ -46,31 +46,11 @@ We are very excited to share this dashboard with you and we look forward to hear
 [View More](https://sleek.tafcoder.com/).
 
 
-## Usage
-If you want to use `Sleek` with your existing project -
-
-- Install [Node.js and NPM](https://nodejs.org)
-
-- Install `Sleek` from npm
+## Npm Install
+  Install `Sleek Dashboard` from npm
   ```
   npm i sleek-dashboard --save
   ```
-
-- Include `CSS`
-  ``` 
-  <link rel="stylesheet" href="node_modules/sleek-dashboard/dist/css/sleek.min.css" />
-  ```
-  Or (for RTL direction)
-  ``` 
-  <link rel="stylesheet" href="node_modules/sleek-dashboard/dist/css/sleek.min.rtl.css" />
-  ```
-
-- Include `JS`
-  ```
-  <script src="node_modules/sleek-dashboard/dist/js/sleek.js"></script>
-  ```
-**Note:** If you want to customize `Sleek` please follow `Development` instruction below -
-
 
 ## Development
 To use our build system and run project locally follow these instructions -
