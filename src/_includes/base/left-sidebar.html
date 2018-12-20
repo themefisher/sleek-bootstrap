@@ -52,7 +52,7 @@
                         {% for itemInner in item.child %}
                         {% if itemInner.child == null %}
                           {% if itemInner.type == "section-title" %}
-                            <li class="{{item.type}}">
+                            <li class="{{itemInner.type}}">
                               {{itemInner.label}}
                             </li>
                           {% else %}
@@ -60,7 +60,7 @@
                               <a class="sidenav-item-link" href="{{itemInner.link}}">
                                 <span class="nav-text">{{itemInner.label}}</span>
                                 {% if itemInner.name == 'analytics' %}
-                                <span class="badge badge-danger">3</span>
+                                <span class="badge badge-danger">new</span>
                                 {% endif %}
                               </a>
                             </li>
