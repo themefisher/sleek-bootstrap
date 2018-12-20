@@ -399,8 +399,24 @@
       {
         "name": "sidebar2",
         "label": "Sidebar 2",
-        "link": "sidebar2.html",
-        "isLast": true
+        "link": "sidebar2.html"
+      },
+      {
+        "name": "otherss",
+        "label": "Otherss",
+        "child": [
+          {
+            "name": "invoice",
+            "label": "invoice",
+            "link": "invoice.html"
+          },
+          {
+            "name": "error",
+            "label": "Error",
+            "link": "error.html",
+            "isLast": true
+          }
+        ]
       }
     ]
   }
