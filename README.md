@@ -20,7 +20,7 @@
 
 </div>
 
-Sleek Dashboard - Free Bootstrap 4 Admin Dashboard Template and UI Kit. Sleek is a powerful bootstrap admin dashboard, which allows you to build products like admin panels, content managements systems and CRMs.
+`Sleek Dashboard` - Free Bootstrap 4 Admin Dashboard Template and UI Kit. It is very powerful bootstrap admin dashboard, which allows you to build products like admin panels, content managements systems and CRMs.
 
 Bootstrap is world's most popular front-end component library for developing with HTML, CSS, and JS. It is open source, sleek, intuitive, and powerful front-end framework for faster and easier web development. [Bootstrap](https://getbootstrap.com/).
 
@@ -46,41 +46,33 @@ We are very excited to share this dashboard with you and we look forward to hear
 [View More](https://sleek.tafcoder.com/).
 
 
-## Getting Started
+## Npm Install
+  Install `Sleek Dashboard` from npm
+  ```
+  npm i sleek-dashboard --save
+  ```
 
-### From NPM
+## Development
+To use our build system and run project locally follow these instructions -
 
-```
-npm i sleek-dashboard --save
-```
+- Install [Node.js and NPM](https://nodejs.org)
+- Install [Ruby](https://www.ruby-lang.org/en/documentation/installation/) then install [Bundler](https://bundler.io/) with `gem install bundler`
+
+- Clone github repository with
+  ```
+  git clone https://github.com/tafcoder/sleek-dashboard.git
+  ```
 
 
-### From Github
+- Navigate to the root `/sleek-dashboard` directory and Install dependency with
+  ```
+  npm install
+  bundle install
+  ```
 
-```
-git clone https://github.com/tafcoder/sleek-dashboard.git
-cd sleek-dashboard
-```
+- Finally run `npm start` and open [http://localhost:4000](http://localhost:4000) in your browser. Now you are ready to hack! 
 
-### Setup environment
-
-To use our build system and run documentation locally, you will need a copy of Sleek's source files and Node. Follow these steps:
-
-1. [Download and install Node.js](https://nodejs.org/download/), which is used to manage our dependencies.
-2. Navigate to the root `/` directory and run `npm install` to install local dependencies listed in `package.json`.
-3. [Install Ruby](https://www.ruby-lang.org/en/documentation/installation/), install [Bundler](https://bundler.io/) with `gem install bundler`, and finally run `bundle install`. This will install all Ruby dependencies, such as Jekyll and plugins.
-
-   **Windows users:** Read [this guide](https://jekyllrb.com/docs/windows/) to get Jekyll up and running without problems.
-
-When completed, you will be able to run the various commands provided in the command line.
-
-### Build Sleek
-
-1. From the root `/` directory, run `npm start` in the command line.
-2. Open [http://localhost:4000](http://localhost:4000) in your browser, and voilà.
-3. Any change in the `/src` directory will build the application and refresh the page.
-
-**Warning!** all changes made in the `_site/` folder will be overwritten on application build.
+ **Note:** For Windows Read [this guide](https://jekyllrb.com/docs/windows/) to get Jekyll up and running without problems.
 
 
 ## File Structure
@@ -90,7 +82,7 @@ Within the download you'll find the following directories and files:
 ```
 sleek-dashboard/
 |
-|--- dist/
+|--- dist/ (Distrubution only)
 |   |--- assets/
 |       |--- css/ (CSS files)
 |       |--- img/ (All images)
