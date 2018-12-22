@@ -84,14 +84,16 @@ var setColor = function (color) {
 		'use strict';
 		jQuery(this).addClass('active-switcher-btn');
 		header_fixed.removeClass('active-switcher-btn');
-		page_container.removeClass('header-fixed')
+    page_container.removeClass('header-fixed')
+    page_container.addClass('header-static')
 	});
 
 	header_fixed.click(function(){
 		'use strict';
 		jQuery(this).addClass('active-switcher-btn');
 		header_static.removeClass('active-switcher-btn');
-		page_container.addClass('header-fixed')
+    page_container.removeClass('header-static')
+    page_container.addClass('header-fixed')
 	});
 
 
@@ -103,24 +105,24 @@ var setColor = function (color) {
 if ($(window).width() > 750) {
 	$('#sidebar-option-select').change(function () {
 		'use strict';
-	     var optionSelected = $(this).find("option:selected");
-	     var valueSelected  = optionSelected.val();
+      var optionSelected = $(this).find("option:selected");
+      var valueSelected  = optionSelected.val();
 
-			 if(valueSelected === "sidebar-static"){
-					 page_container.removeClass('sidebar-fixed sidebar-static-offcanvas sidebar-collapse sidebar-fixed-offcanvas').addClass('sidebar-static');
-			 }
+      if(valueSelected === "sidebar-fixed"){
+        page_container.removeClass().addClass('header-fixed header-light sidebar-dark sidebar-fixed sidebar-minified-out')
+      }
 
-			 if(valueSelected === "sidebar-static-offcanvas"){
-			 		page_container.removeClass('sidebar-fixed sidebar-static sidebar-fixed-offcanvas sidebar-minified').addClass('sidebar-static-offcanvas ');
-			 }
+      if(valueSelected === "sidebar-fixed-offcanvas"){
+        page_container.removeClass().addClass('header-fixed header-light sidebar-dark sidebar-fixed-offcanvas sidebar-collapse')
+      }
 
-			 if(valueSelected === "sidebar-fixed"){
-			 		page_container.removeClass('sidebar-static-offcanvas sidebar-static sidebar-fixed-offcanvas sidebar-collapse').addClass('sidebar-fixed')
-			 }
+      if (valueSelected === "sidebar-static") {
+        page_container.removeClass().addClass('header-fixed header-light sidebar-dark header-fixed header-light sidebar-static sidebar-minified')
+      }
 
-			 if(valueSelected === "sidebar-fixed-offcanvas"){
-			 		page_container.removeClass('sidebar-static-offcanvas sidebar-static sidebar-fixed sidebar-minified').addClass('sidebar-fixed-offcanvas')
-			 }
+      if (valueSelected === "sidebar-static-offcanvas") {
+        page_container.removeClass().addClass('header-fixed header-light sidebar-dark sidebar-static-offcanvas sidebar-collapse');
+      }
 	 });
  }
 

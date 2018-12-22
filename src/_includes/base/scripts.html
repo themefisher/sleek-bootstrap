@@ -20,3 +20,8 @@
 <script src="assets/js/map.js"></script>
 <script src="assets/js/custom.js"></script>
 
+{% if site.environment == "demo" %}
+<!-- JS for Demo -->
+<script src="assets/options/optionswitcher.js"></script>
+{% endif %}
+
