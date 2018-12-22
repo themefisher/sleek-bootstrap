@@ -92,19 +92,12 @@
     }
   }
   .dropdown-menu {
-    padding-top: 0.625rem;
-    padding-bottom: 0.625rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
     box-shadow: 0px 5px 18px 0px rgba(229, 233, 242, 0.5);
-    @include media-breakpoint-up(lg) {
-      padding-top: 8px;
-      padding-bottom: 8px;
-      min-width: auto;
-    }
+    min-width: auto;
     .dropdown-item {
-      padding: 0.625rem 0.94rem;
-      @include media-breakpoint-up(lg) {
-        padding: 5px 20px;
-      }
+      padding: 0.3125rem 1.25rem;
       a {
         font-size: 0.875rem;
         color: $secondary;

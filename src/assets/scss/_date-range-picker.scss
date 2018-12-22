@@ -2,14 +2,12 @@
 .daterangepicker {
   .ranges {
     ul {
-      @include media-breakpoint-up(lg) {
-        padding-top: 0.625rem;
-        padding-bottom: 0.625rem;
-        width: auto;
-      }
+      padding-top: 0.625rem;
+      padding-bottom: 0.625rem;
+      width: auto;
     }
     li {
-      padding: 8px 20px;
+      padding: 0.5rem 1.25rem;
       font-size: 0.875rem;
     }
     li.active {
