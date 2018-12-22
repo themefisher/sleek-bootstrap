@@ -104,14 +104,16 @@
         padding: 0.625rem 1.9rem;
       }
       a {
-        font-size: 0.81rem;
+        font-size: 0.9375rem;
         color: $secondary;
         text-transform: capitalize;
       }
       &:hover {
-        background-color: $gray-100;
+        background-color: transparent;
+        a {
+          color: $primary;
+        }
       }
     }
   }
 }
- 

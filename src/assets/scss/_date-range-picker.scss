@@ -10,11 +10,12 @@
       }
     }
     li {
-      padding: 0.625rem 1.9rem;
-      font-size: 0.875rem;
+      padding: 0.75rem 1.9rem;
+      font-size: 0.9375rem;
     }
     li.active {
-      background-color: $primary;
+      background-color: transparent;
+      color: $primary;
     }
   }
   &:before,
@@ -27,14 +28,16 @@
   td.in-range {
     background-color: rgba($primary, .1);
   }
-  td.active,
-  td.active:hover{
-    background-color: $primary;
-  }
+
   td.available:hover,
    {
     background-color: $primary;
     color: $white;
+  }
+
+  .ranges li:hover {
+    background-color: transparent;
+    color: $primary;
   }
 
 }
@@ -57,4 +60,3 @@
     }
   }
 }
- 
