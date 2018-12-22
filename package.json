@@ -34,7 +34,9 @@
   "scripts": {
 
     "start": "npm-run-all --parallel serve css:watch",
+    "demo": "npm-run-all --parallel serve:demo css:watch",
     "serve": "bundle exec jekyll serve",
+    "serve:demo": "bundle exec jekyll serve --config _config.yaml,_config.demo.yaml",
     "build": "bundle exec jekyll build",
     "dist": "npm-run-all clean:dist build css:build site:copy",
     "clean:dist": "rm -rf dist",
