@@ -14,8 +14,8 @@ if($(window).width() > 750) {
 
 						<span class="tho-subtitle">Header</span>
 						<div class="no-col-space">
-							<a href="javascript:void(0);" class="tho-btn header-fixed-to">Fixed</a>
-							<a href="javascript:void(0);" class="tho-btn header-static-to tho-active-switcher-btn">Static</a>
+							<a href="javascript:void(0);" class="tho-btn header-fixed-to tho-active-switcher-btn">Fixed</a>
+							<a href="javascript:void(0);" class="tho-btn header-static-to">Static</a>
             </div>
 
 						<span class="tho-subtitle">Navigation</span>
@@ -54,7 +54,6 @@ $('.tho-option-switcher-btn').on('click', function () {
   $(this).toggleClass('tho-cross');
   jQuery('.tho-option-switcher').toggleClass('tho-option-visible');
 });
-
 
   //VARIABLE
 	var body = jQuery('#body');
