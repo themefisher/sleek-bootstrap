@@ -2,78 +2,61 @@ if($(window).width() > 750) {
 
 	$('#body').each(function() {
 		'use strict';
-	    var link=    $(`<div class="option">
-							<div class="option-switcher ">
-	    					<div class="option-switcher-btn icon-option"><i class="fa fa-gear"></i></div>
+    var themeOption = $(`<div class="theme-option">
+			<div class="theme-option-switcher">
+				<div class="theme-option-switcher-btn theme-icon-option">
+					<i class="theme-setting-icon"></i>
+				</div>
+					<div class="theme-option-swticher-header">
+						<div class="theme-option-switcher-heading">Theme Option</div>
+					</div>
+          <div class="theme-option-swticher-body">
 
-								<div class="option-swticher-header">
-									<div class="option-switcher-heading">Theme Option</div>
-								</div>
-								<div class="option-swticher-body">
+						<span class="theme-subtitle">Header</span>
+						<div class="no-col-space">
+							<a href="javascript:void(0);" class="theme-btn header-fixed-to theme-active-switcher-btn">Fixed</a>
+							<a href="javascript:void(0);" class="theme-btn header-static-to">Static</a>
+            </div>
 
-									<span class="subtitle">Header</span>
-									<div class="no-col-space header-opns">
-										<a href="javascript:void(0);" class="btn-u header-fixed-to active-switcher-btn">Fixed</a>
-										<a href="javascript:void(0);" class="btn-u header-static-to ">Static</a>
-									</div>
+						<span class="theme-subtitle">Navigation</span>
+						<div class="no-col-space">
+							<select class="theme-select" id="sidebar-option-select">
+                <option value="sidebar-fixed" selected>Fixed</option>
+                <option value="sidebar-fixed-offcanvas">Fixed Offcanvas</option>
+                <option value="sidebar-static">Static</option>
+                <option value="sidebar-static-offcanvas">Static Offcanvas</option>
+              </select>
+						</div>
 
-									<span class="subtitle">Navigation</span>
-									<div class="no-col-space header-opns mb-4">
-										<select class="custom-select" id="sidebar-option-select">
-											<option value="sidebar-fixed" selected>Fixed</option>
-											<option value="sidebar-fixed-offcanvas">Fixed Offcanvas</option>
-											<option value="sidebar-static">Static</option>
-											<option value="sidebar-static-offcanvas">Static Offcanvas</option>
-										</select>
-									</div>
+						<span class="theme-subtitle">Header Background</span>
+						<div class="no-col-space">
+							<a href="javascript:void(0);" class="theme-btn theme-active-switcher-btn header-light-to">Light</a>
+							<a href="javascript:void(0);" class="theme-btn header-dark-to">Dark</a>
+            </div>
 
+            <span class="theme-subtitle">Navigation Background</span>
+						<div class="no-col-space">
+							<a href="javascript:void(0);" class="theme-btn theme-active-switcher-btn sidebar-dark-to">Dark</a>
+							<a href="javascript:void(0);" class="theme-btn sidebar-light-to">Light</a>
+            </div>
 
-									<span class="subtitle">Header Background</span>
-
-									<div class="no-col-space header-opns">
-										<a href="javascript:void(0);" class="btn-u header-light-to active-switcher-btn">Light</a>
-										<a href="javascript:void(0);" class="btn-u header-dark-to ">Dark</a>
-									</div>
-
-									<span class="subtitle">Navigation Background</span>
-									<div class="no-col-space header-opns">
-										<a href="javascript:void(0);" class="btn-u sidebar-dark-to active-switcher-btn">Dark</a>
-										<a href="javascript:void(0);" class="btn-u sidebar-light-to ">Light</a>
-									</div>
-
-								</div>
-							</div>
-						</div>`);
-	  $('#body').prepend(link);
+					</div>
+			</div>
+		</div>`);
+    $('#body').prepend(themeOption);
 	});
 }
 //option Switcher
-var panel = jQuery('.option-switcher');
+var panel = jQuery('.theme-option-switcher');
 
-$('.option-switcher-btn').on('click', function() {
-	'use strict';
-	$(this).toggleClass('cross');
-	jQuery('.option-switcher').toggleClass('option-visible');
+$('.theme-option-switcher-btn').on('click', function () {
+  'use strict';
+  $(this).toggleClass('theme-cross');
+  jQuery('.theme-option-switcher').toggleClass('theme-option-visible');
 });
 
-
-jQuery('.color-options li').click(function () {
-	'use strict';
-	var color = jQuery(this).attr('data-color');
-	var data_logo = jQuery(this).attr('data-logo');
-	setColor(color, data_logo);
-	jQuery('.color-options li').removeClass('theme-active');
-	jQuery(this).addClass('theme-active');
-});
-
-var setColor = function (color) {
-	'use strict';
-	jQuery('#option_color').attr('href', 'css/' + color + '.css');
-}
-
-
-	//VARIABLE
-	var page_container = jQuery('#body');
+  //VARIABLE
+	var body = jQuery('#body');
 	var header_static = jQuery('.header-static-to');
 	var header_fixed = jQuery('.header-fixed-to');
 
@@ -82,18 +65,18 @@ var setColor = function (color) {
 	//NAVBAR OPTION
 	header_static.click(function(){
 		'use strict';
-		jQuery(this).addClass('active-switcher-btn');
-		header_fixed.removeClass('active-switcher-btn');
-    page_container.removeClass('header-fixed')
-    page_container.addClass('header-static')
+		jQuery(this).addClass('theme-active-switcher-btn');
+		header_fixed.removeClass('theme-active-switcher-btn');
+    body.removeClass('header-fixed')
+    body.addClass('header-static')
 	});
 
 	header_fixed.click(function(){
 		'use strict';
-		jQuery(this).addClass('active-switcher-btn');
-		header_static.removeClass('active-switcher-btn');
-    page_container.removeClass('header-static')
-    page_container.addClass('header-fixed')
+		jQuery(this).addClass('theme-active-switcher-btn');
+		header_static.removeClass('theme-active-switcher-btn');
+    body.removeClass('header-static')
+    body.addClass('header-fixed')
 	});
 
 
@@ -109,19 +92,19 @@ if ($(window).width() > 750) {
       var valueSelected  = optionSelected.val();
 
       if(valueSelected === "sidebar-fixed"){
-        page_container.removeClass().addClass('header-fixed header-light sidebar-dark sidebar-fixed sidebar-minified-out')
+        body.removeClass().addClass('header-fixed header-light sidebar-dark sidebar-fixed sidebar-minified-out')
       }
 
       if(valueSelected === "sidebar-fixed-offcanvas"){
-        page_container.removeClass().addClass('header-fixed header-light sidebar-dark sidebar-fixed-offcanvas sidebar-collapse')
+        body.removeClass().addClass('header-fixed header-light sidebar-dark sidebar-fixed-offcanvas sidebar-collapse')
       }
 
       if (valueSelected === "sidebar-static") {
-        page_container.removeClass().addClass('header-fixed header-light sidebar-dark header-fixed header-light sidebar-static sidebar-minified')
+        body.removeClass().addClass('header-fixed header-light sidebar-dark header-fixed header-light sidebar-static sidebar-minified')
       }
 
       if (valueSelected === "sidebar-static-offcanvas") {
-        page_container.removeClass().addClass('header-fixed header-light sidebar-dark sidebar-static-offcanvas sidebar-collapse');
+        body.removeClass().addClass('header-fixed header-light sidebar-dark sidebar-static-offcanvas sidebar-collapse');
       }
 	 });
  }
@@ -133,16 +116,16 @@ var header_dark = jQuery('.header-dark-to');
 var header_light = jQuery('.header-light-to');
 header_dark.click(function(){
 	'use strict';
-	jQuery(this).addClass('active-switcher-btn');
-	header_light.removeClass('active-switcher-btn');
-	page_container.removeClass('header-light').addClass('header-dark');
+	jQuery(this).addClass('theme-active-switcher-btn');
+	header_light.removeClass('theme-active-switcher-btn');
+	body.removeClass('header-light').addClass('header-dark');
 });
 
 header_light.click(function(){
 	'use strict';
-	jQuery(this).addClass('active-switcher-btn');
-	header_dark.removeClass('active-switcher-btn');
-	page_container.removeClass('header-dark').addClass('header-light');
+	jQuery(this).addClass('theme-active-switcher-btn');
+	header_dark.removeClass('theme-active-switcher-btn');
+	body.removeClass('header-dark').addClass('header-light');
 });
 
 // Sidebar Background
@@ -151,14 +134,14 @@ var sidebar_light = jQuery('.sidebar-light-to');
 
 sidebar_dark.click(function(){
 	'use strict';
-	jQuery(this).addClass('active-switcher-btn');
-	sidebar_light.removeClass('active-switcher-btn');
-	page_container.removeClass('sidebar-light').addClass('sidebar-dark');
+	jQuery(this).addClass('theme-active-switcher-btn');
+	sidebar_light.removeClass('theme-active-switcher-btn');
+	body.removeClass('sidebar-light').addClass('sidebar-dark');
 });
 
 sidebar_light.click(function(){
 	'use strict';
-	jQuery(this).addClass('active-switcher-btn');
-	sidebar_dark.removeClass('active-switcher-btn');
-	page_container.removeClass('sidebar-dark').addClass('sidebar-light');
+	jQuery(this).addClass('theme-active-switcher-btn');
+	sidebar_dark.removeClass('theme-active-switcher-btn');
+	body.removeClass('sidebar-dark').addClass('sidebar-light');
 });
