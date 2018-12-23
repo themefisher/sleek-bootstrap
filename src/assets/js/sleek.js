@@ -58,22 +58,16 @@ $(document).ready(function() {
   if ($(window).width() < 768) {
     $(document).on("click", ".sidebar-toggle", function(e) {
       e.preventDefault();
-      var a = "sidebar-minified",
-        mo = "sidebar-minified-out",
-        t = "#body";
-      $(t).hasClass(a)
-        ? $(t)
-            .removeClass(a)
-            .addClass(mo)
-        : ($(t)
-            .addClass(a)
-            .removeClass(mo),
-          /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-            navigator.userAgent
-          ) &&
-            ($('#sidebar [data-scrollbar="true"]').css("margin-top", "0"),
-            $('#sidebar [data-scrollbar="true"]').css("overflow-x", "scroll"))),
-        $(window).trigger("resize");
+      var min = "sidebar-minified",
+        min_out = "sidebar-minified-out",
+        body = "#body";
+      $(body).hasClass(min)
+        ? $(body)
+            .removeClass(min)
+            .addClass(min_out)
+        : $(body)
+            .addClass(min)
+            .removeClass(min_out)
     });
   }
 
