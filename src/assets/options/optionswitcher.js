@@ -92,7 +92,7 @@ if ($(window).width() > 750) {
       var valueSelected  = optionSelected.val();
 
       if(valueSelected === "sidebar-fixed"){
-        body.removeClass().addClass('header-fixed header-light sidebar-dark sidebar-fixed sidebar-minified-out')
+        body.removeClass().addClass('header-fixed header-light sidebar-dark sidebar-fixed')
       }
 
       if(valueSelected === "sidebar-fixed-offcanvas"){
