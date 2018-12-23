@@ -251,10 +251,8 @@
 .sidebar-minified .left-sidebar {
   width: 250px;
   z-index: 1050;
-  height: 100%;
   transform: translateX(0);
   transition: transform .3s ease-in-out;
-
   @include media-breakpoint-up(md) {
     width: 75px;
     transition: width .3s ease-in;
