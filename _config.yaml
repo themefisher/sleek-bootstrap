@@ -9,3 +9,5 @@ host: "localhost"
 baseurl: ""
 exclude:
   - assets/scss
+  - assets/options
+
