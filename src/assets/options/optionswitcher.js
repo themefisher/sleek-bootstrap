@@ -2,25 +2,25 @@ if($(window).width() > 750) {
 
 	$('#body').each(function() {
 		'use strict';
-    var themeOption = $(`<div class="tho-option">
-			<div class="tho-option-switcher">
-				<div class="tho-option-switcher-btn tho-icon-option">
-					<i class="tho-setting-icon"></i>
+    var themeOption = $(`<div class="theme-option">
+			<div class="theme-option-switcher">
+				<div class="theme-option-switcher-btn theme-icon-option">
+					<i class="theme-setting-icon"></i>
 				</div>
-					<div class="tho-option-swticher-header">
-						<div class="tho-option-switcher-heading">Theme Option</div>
+					<div class="theme-option-swticher-header">
+						<div class="theme-option-switcher-heading">Theme Option</div>
 					</div>
-          <div class="tho-option-swticher-body">
+          <div class="theme-option-swticher-body">
 
-						<span class="tho-subtitle">Header</span>
+						<span class="theme-subtitle">Header</span>
 						<div class="no-col-space">
-							<a href="javascript:void(0);" class="tho-btn header-fixed-to tho-active-switcher-btn">Fixed</a>
-							<a href="javascript:void(0);" class="tho-btn header-static-to">Static</a>
+							<a href="javascript:void(0);" class="theme-btn header-fixed-to theme-active-switcher-btn">Fixed</a>
+							<a href="javascript:void(0);" class="theme-btn header-static-to">Static</a>
             </div>
 
-						<span class="tho-subtitle">Navigation</span>
+						<span class="theme-subtitle">Navigation</span>
 						<div class="no-col-space">
-							<select class="tho-select" id="sidebar-option-select">
+							<select class="theme-select" id="sidebar-option-select">
                 <option value="sidebar-fixed" selected>Fixed</option>
                 <option value="sidebar-fixed-offcanvas">Fixed Offcanvas</option>
                 <option value="sidebar-static">Static</option>
@@ -28,16 +28,16 @@ if($(window).width() > 750) {
               </select>
 						</div>
 
-						<span class="tho-subtitle">Header Background</span>
+						<span class="theme-subtitle">Header Background</span>
 						<div class="no-col-space">
-							<a href="javascript:void(0);" class="tho-btn tho-active-switcher-btn ">Light</a>
-							<a href="javascript:void(0);" class="tho-btn header-dark-to">Dark</a>
+							<a href="javascript:void(0);" class="theme-btn theme-active-switcher-btn header-light-to">Light</a>
+							<a href="javascript:void(0);" class="theme-btn header-dark-to">Dark</a>
             </div>
 
-            <span class="tho-subtitle">Navigation Background</span>
+            <span class="theme-subtitle">Navigation Background</span>
 						<div class="no-col-space">
-							<a href="javascript:void(0);" class="tho-btn tho-active-switcher-btn sidebar-dark-to">Dark</a>
-							<a href="javascript:void(0);" class="tho-btn sidebar-light-to">Light</a>
+							<a href="javascript:void(0);" class="theme-btn theme-active-switcher-btn sidebar-dark-to">Dark</a>
+							<a href="javascript:void(0);" class="theme-btn sidebar-light-to">Light</a>
             </div>
 
 					</div>
@@ -47,12 +47,12 @@ if($(window).width() > 750) {
 	});
 }
 //option Switcher
-var panel = jQuery('.tho-option-switcher');
+var panel = jQuery('.theme-option-switcher');
 
-$('.tho-option-switcher-btn').on('click', function () {
+$('.theme-option-switcher-btn').on('click', function () {
   'use strict';
-  $(this).toggleClass('tho-cross');
-  jQuery('.tho-option-switcher').toggleClass('tho-option-visible');
+  $(this).toggleClass('theme-cross');
+  jQuery('.theme-option-switcher').toggleClass('theme-option-visible');
 });
 
   //VARIABLE
@@ -65,16 +65,16 @@ $('.tho-option-switcher-btn').on('click', function () {
 	//NAVBAR OPTION
 	header_static.click(function(){
 		'use strict';
-		jQuery(this).addClass('tho-active-switcher-btn');
-		header_fixed.removeClass('tho-active-switcher-btn');
+		jQuery(this).addClass('theme-active-switcher-btn');
+		header_fixed.removeClass('theme-active-switcher-btn');
     body.removeClass('header-fixed')
     body.addClass('header-static')
 	});
 
 	header_fixed.click(function(){
 		'use strict';
-		jQuery(this).addClass('tho-active-switcher-btn');
-		header_static.removeClass('tho-active-switcher-btn');
+		jQuery(this).addClass('theme-active-switcher-btn');
+		header_static.removeClass('theme-active-switcher-btn');
     body.removeClass('header-static')
     body.addClass('header-fixed')
 	});
@@ -116,15 +116,15 @@ var header_dark = jQuery('.header-dark-to');
 var header_light = jQuery('.header-light-to');
 header_dark.click(function(){
 	'use strict';
-	jQuery(this).addClass('tho-active-switcher-btn');
-	header_light.removeClass('tho-active-switcher-btn');
+	jQuery(this).addClass('theme-active-switcher-btn');
+	header_light.removeClass('theme-active-switcher-btn');
 	body.removeClass('header-light').addClass('header-dark');
 });
 
 header_light.click(function(){
 	'use strict';
-	jQuery(this).addClass('tho-active-switcher-btn');
-	header_dark.removeClass('tho-active-switcher-btn');
+	jQuery(this).addClass('theme-active-switcher-btn');
+	header_dark.removeClass('theme-active-switcher-btn');
 	body.removeClass('header-dark').addClass('header-light');
 });
 
@@ -134,14 +134,14 @@ var sidebar_light = jQuery('.sidebar-light-to');
 
 sidebar_dark.click(function(){
 	'use strict';
-	jQuery(this).addClass('tho-active-switcher-btn');
-	sidebar_light.removeClass('tho-active-switcher-btn');
+	jQuery(this).addClass('theme-active-switcher-btn');
+	sidebar_light.removeClass('theme-active-switcher-btn');
 	body.removeClass('sidebar-light').addClass('sidebar-dark');
 });
 
 sidebar_light.click(function(){
 	'use strict';
-	jQuery(this).addClass('tho-active-switcher-btn');
-	sidebar_dark.removeClass('tho-active-switcher-btn');
+	jQuery(this).addClass('theme-active-switcher-btn');
+	sidebar_dark.removeClass('theme-active-switcher-btn');
 	body.removeClass('sidebar-dark').addClass('sidebar-light');
 });

@@ -1,9 +1,9 @@
 /*General*/
-.tho-option {
+.theme-option {
 	direction: ltr;
 }
 
-.tho-option-switcher-btn {
+.theme-option-switcher-btn {
   top: 101px;
 	position: fixed;
 	background: #363636;
@@ -13,7 +13,7 @@
 	min-width: 60px;
 }
 
-.tho-icon-option i {
+.theme-icon-option i {
 	display: inline-block;
   cursor: pointer;
 	padding: 25px 30px;
@@ -23,7 +23,7 @@
 	margin-top: 5px;
 }
 
-.tho-setting-icon {
+.theme-setting-icon {
   position: relative;
   background-image: url('taf-settings.svg');
   background-repeat: no-repeat;
@@ -31,11 +31,11 @@
   background-position: center center;
 }
 
-.tho-icon-option.tho-cross .tho-setting-icon  {
+.theme-icon-option.theme-cross .theme-setting-icon  {
   background-image: url('taf-tiems.svg');
 }
 
-.tho-option-switcher {
+.theme-option-switcher {
 	right: 0;
 	top: 0px;
 	color: #fff;
@@ -52,13 +52,13 @@
 	transition: all 0.3s ease;
 }
 
-.tho-option-visible {
+.theme-option-visible {
 	-webkit-transform: translateX(0);
 	transform: translateX(0);
 }
 
 /* Slelect box */
-.tho-select {
+.theme-select {
   width: 100%;
   height: 31px;
   border-radius: 2px;
@@ -67,13 +67,13 @@
 }
 
 /*Others*/
-.tho-option-switcher .tho-option-switcher-heading {
+.theme-option-switcher .theme-option-switcher-heading {
 	color: #fff;
 	font-size: 18px;
 	font-weight: 200;
 }
 
-.tho-subtitle {
+.theme-subtitle {
 	color: #fff;
 	font-size: 16px;
 	opacity: 0.3;
@@ -82,7 +82,7 @@
 	margin-top: 10px;
 }
 
-.tho-option-switcher .tho-btn {
+.theme-option-switcher .theme-btn {
 	color: #ececec;
 	font-size: 13px;
 	text-transform: uppercase;
@@ -97,15 +97,15 @@
   line-height: 21px;
 }
 
-.tho-option-switcher .tho-btn.tho-active-switcher-btn,
-.tho-option-switcher .tho-btn.tho-active-switcher-btn {
+.theme-option-switcher .theme-btn.theme-active-switcher-btn,
+.theme-option-switcher .theme-btn.theme-active-switcher-btn {
 	background-color: #ececec;
 	color: #000000;
 	text-decoration: none;
 }
 
 /*Style Swticher Header*/
-.tho-option-swticher-header {
+.theme-option-swticher-header {
 	padding: 10px 15px;
 	border-radius: 4px 4px 0 0 !important;
 	background-color: #363636;
@@ -114,25 +114,25 @@
 	margin: 20px auto;
 }
 
-.tho-option-swticher-header .option-switcher-heading {
+.theme-option-swticher-header .option-switcher-heading {
 	margin: 0;
 	font-size: 16px;
 }
 
 /*Style Swticher Body*/
-.tho-option-swticher-body .no-col-space {
+.theme-option-swticher-body .no-col-space {
 	margin-bottom: 20px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
 
-.tho-option-swticher-body hr {
+.theme-option-swticher-body hr {
 	margin: 11px 0;
 	border-color: #454545;
 }
 
-.tho-option-swticher-body {
+.theme-option-swticher-body {
 	padding: 15px 15px;
 	margin: 0 auto;
 	width: 260px;
@@ -142,13 +142,13 @@
 }
 
 /*Theme Colors*/
-.tho-option-switcher .tho-list-unstyled {
+.theme-option-switcher .theme-list-unstyled {
 	padding-bottom: 10px;
   padding-left: 0;
   list-style: none;
 }
 
-.tho-option-switcher li {
+.theme-option-switcher li {
 	width: 36px;
 	height: 36px;
 	cursor: pointer;
@@ -158,75 +158,75 @@
 	border: solid 2px #909090;
 	margin-right: 6px;
 }
-.tho-option-switcher li:last-child {
+.theme-option-switcher li:last-child {
 	margin-right: 0;
 }
 
-.tho-option-switcher li:hover,
-.tho-option-switcher li.theme-active,
-.tho-option-switcher li.pattern-active {
+.theme-option-switcher li:hover,
+.theme-option-switcher li.theme-active,
+.theme-option-switcher li.pattern-active {
 	border: solid 2px #fff;
 }
 
-.tho-option-switcher li.theme-default {
+.theme-option-switcher li.theme-default {
 	background: #f0c24b;
 }
 
-.tho-option-switcher li.theme-color1 {
+.theme-option-switcher li.theme-color1 {
 	background: #ea7066;
 }
 
-.tho-option-switcher li.theme-color2 {
+.theme-option-switcher li.theme-color2 {
 	background: #b5d56a;
 }
 
-.tho-option-switcher li.theme-color3 {
+.theme-option-switcher li.theme-color3 {
 	background: #a597e7;
 }
 
-.tho-option-switcher li.theme-color4 {
+.theme-option-switcher li.theme-color4 {
 	background: #ea77ad;
 }
 
-.tho-option-switcher h3{
+.theme-option-switcher h3{
 	font-size: 14px;
 	color: #ffffff;
 	margin-bottom: 15px;
 	font-weight: 600;
 }
 
-.tho-option-switcher .body-background{
+.theme-option-switcher .body-background{
 	margin-top: 25px;
 }
 
-.tho-option-switcher li.pattern-default {
+.theme-option-switcher li.pattern-default {
 	background: url("pattern1.png") center repeat;
 }
 
-.tho-option-switcher li.pattern1 {
+.theme-option-switcher li.pattern1 {
 	background: url("pattern2.png") center repeat;
 }
 
-.tho-option-switcher li.pattern2 {
+.theme-option-switcher li.pattern2 {
 	background: url("pattern3.png") center repeat;
 }
 
-.tho-option-switcher li.pattern3 {
+.theme-option-switcher li.pattern3 {
 	background: url("pattern4.png") center repeat;
 }
 
-.tho-option-switcher li.pattern4 {
+.theme-option-switcher li.pattern4 {
 	background: url("pattern5.png") center repeat;
 }
 
-.tho-option-switcher li.pattern5 {
+.theme-option-switcher li.pattern5 {
 	background: url("pattern5.png") center repeat;
 }
 
-.tho-option-switcher li.pattern6 {
+.theme-option-switcher li.pattern6 {
 	background: url("pattern6.png") center repeat;
 }
 
-.tho-option-switcher li.pattern7 {
+.theme-option-switcher li.pattern7 {
 	background: url("pattern7.png") center repeat;
 }
