@@ -35,10 +35,13 @@
 
     "start": "npm-run-all --parallel serve css:watch",
     "demo": "npm-run-all --parallel serve:demo css:watch",
+    "demo:build": "npm-run-all build:demo css",
     "serve": "bundle exec jekyll serve",
     "serve:demo": "bundle exec jekyll serve --config _config.yaml,_config.demo.yaml",
     "build": "bundle exec jekyll build",
+    "build:demo": "bundle exec jekyll build --config _config.yaml,_config.demo.yaml",
     "dist": "npm-run-all clean:dist build css:build site:copy",
+    "dist:demo": "npm-run-all clean:dist build:demo css:build site:copy",
     "clean:dist": "rm -rf dist",
     "css": "node-sass src/assets/scss/sleek.scss _site/assets/css/sleek.css --source-map true && npm run rtl",
     "css:watch": "npm run css && node-sass -w src/assets/scss/sleek.scss _site/assets/css/sleek.css --source-map true",
