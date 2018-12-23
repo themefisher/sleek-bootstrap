@@ -93,18 +93,26 @@ if ($(window).width() > 750) {
 
       if(valueSelected === "sidebar-fixed"){
         body.removeClass().addClass('header-fixed header-light sidebar-dark sidebar-fixed sidebar-minified-out')
+        window.isMinified = false; // Because It is not minified (aka it is opened)
+        window.isCollapsed = false;
       }
 
       if(valueSelected === "sidebar-fixed-offcanvas"){
         body.removeClass().addClass('header-fixed header-light sidebar-dark sidebar-fixed-offcanvas sidebar-collapse')
+        window.isCollapsed = true;
+        window.isMinified = false;
       }
 
       if (valueSelected === "sidebar-static") {
         body.removeClass().addClass('header-fixed header-light sidebar-dark header-fixed header-light sidebar-static sidebar-minified')
+        window.isMinified = true;
+        window.isCollapsed = false;
       }
 
       if (valueSelected === "sidebar-static-offcanvas") {
         body.removeClass().addClass('header-fixed header-light sidebar-dark sidebar-static-offcanvas sidebar-collapse');
+        window.isCollapsed = true;
+        window.isMinified = false;
       }
 	 });
  }
