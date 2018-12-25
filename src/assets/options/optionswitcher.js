@@ -5,7 +5,7 @@ if($(window).width() > 750) {
     var themeOption = $(`<div class="theme-option">
 			<div class="theme-option-switcher">
 				<div class="theme-option-switcher-btn theme-icon-option">
-					<i class="theme-setting-icon"></i>
+					<i class="mdi mdi-settings mdi-spin"></i>
 				</div>
 					<div class="theme-option-swticher-header">
 						<div class="theme-option-switcher-heading">Theme Option</div>

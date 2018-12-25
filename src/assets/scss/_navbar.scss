@@ -203,7 +203,7 @@
           position: relative;
           border-left: 1px solid $border-color;
           border-right: 1px solid $border-color;
-          padding-left: 0.625rem;
+          padding-left: 0.875rem;
           padding-right: 0;
           font-size: 1.625rem;
           color: rgba($secondary, .7);
@@ -322,6 +322,17 @@
   }
   .main-header .navbar {
     margin: 0;
+  }
+}
+
+/* Github Icon */
+.github-link {
+  .btn {
+    display: flex;
+    align-items: center
+  }
+  .mdi {
+    font-size: 1rem;
   }
 }
 

@@ -4,35 +4,27 @@
 }
 
 .theme-option-switcher-btn {
-  top: 101px;
-	position: fixed;
-	background: #363636;
-	border-bottom-left-radius: 10px;
-	border-top-left-radius: 10px;
-	margin-left: -60px;
-	min-width: 60px;
+  top: 120px;
+  position: fixed;
+  background: #363636;
+  border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px;
+  margin-left: -40px;
+  min-width: 40px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
 }
 
 .theme-icon-option i {
-	display: inline-block;
-  cursor: pointer;
-	padding: 25px 30px;
-	position: relative;
-	transform: translateX(0px) scale(1);
-	transition: transform 0.3s ease 0s, opacity 0.15s ease 0s;
-	margin-top: 5px;
+  font-size: 20px;
 }
 
-.theme-setting-icon {
-  position: relative;
-  background-image: url('taf-settings.svg');
-  background-repeat: no-repeat;
-  background-size: 35%;
-  background-position: center center;
+.theme-option-switcher-btn.theme-icon-option.theme-cross .mdi-settings:before {
+  content: "\f5ad";
 }
-
-.theme-icon-option.theme-cross .theme-setting-icon  {
-  background-image: url('taf-tiems.svg');
+.theme-option-switcher-btn.theme-icon-option.theme-cross .mdi-spin:before {
+  animation: unset;
 }
 
 .theme-option-switcher {
