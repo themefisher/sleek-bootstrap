@@ -1,23 +1,37 @@
 /* ====== Index ======
 
-1. SCROLLBAR CONTENT
-2. TOOLTIPS AND POPOVER
-3. JVECTORMAP DASHBOARD
-4. JVECTORMAP ANALYTICS
-5. JVECTORMAP WIDGET
-6. MULTIPLE SELECT
-7. LOADING BUTTON
-  7.1. BIND NORMAL BUTTONS
-  7.2. BIND PROGRESS BUTTONS AND SIMULATE LOADING PROGRESS
-8. TOASTER
-9. PROGRESS BAR
+1. JEKYLL INSTANT SEARCH
+2. SCROLLBAR CONTENT
+3. TOOLTIPS AND POPOVER
+4. JVECTORMAP DASHBOARD
+5. JVECTORMAP ANALYTICS
+6. JVECTORMAP WIDGET
+7. MULTIPLE SELECT
+8. LOADING BUTTON
+  8.1. BIND NORMAL BUTTONS
+  8.2. BIND PROGRESS BUTTONS AND SIMULATE LOADING PROGRESS
+9. TOASTER
+10. PROGRESS BAR
 
 ====== End ======*/
 
 $(document).ready(function() {
   "use strict";
 
-  /*======== 1. SCROLLBAR CONTENT ========*/
+  /*======== 1. JEKYLL INSTANT SEARCH ========*/
+
+  SimpleJekyllSearch.init({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('search-results'),
+    dataSource: '/assets/data/search.json',
+    searchResultTemplate: '<li><div class="link"><a href="{link}">{label}</a></div><div class="location">{location}</div><\/li>',
+    noResultsText: '<li>No results found</li>',
+    limit: 10,
+    fuzzy: true,
+  });
+
+
+  /*======== 2. SCROLLBAR CONTENT ========*/
 
   function scrollWithBigMedia(media) {
     var $elDataScrollHeight = $("[data-scroll-height]");
@@ -52,7 +66,7 @@ $(document).ready(function() {
   scrollWithBigMedia(media); // Call listener function at run time
   media.addListener(scrollWithBigMedia); // Attach listener function on state changes
 
-  /*======== 2. TOOLTIPS AND POPOVER ========*/
+  /*======== 3. TOOLTIPS AND POPOVER ========*/
   $('[data-toggle="tooltip"]').tooltip({
     container: "body",
     template:
@@ -60,7 +74,7 @@ $(document).ready(function() {
   });
   $('[data-toggle="popover"]').popover();
 
-  /*======== 3. JVECTORMAP DASHBOARD ========*/
+  /*======== 4. JVECTORMAP DASHBOARD ========*/
   var mapData = {
     US: 1298,
     FR: 540,
@@ -129,7 +143,7 @@ $(document).ready(function() {
     });
   }
 
-  /*======== 4. JVECTORMAP ANALYTICS ========*/
+  /*======== 5. JVECTORMAP ANALYTICS ========*/
   var mapData2 = {
     IN: 19000,
     US: 13000,
@@ -166,7 +180,7 @@ $(document).ready(function() {
     });
   }
 
-  /*======== 5. JVECTORMAP WIDGET ========*/
+  /*======== 6. JVECTORMAP WIDGET ========*/
   if (document.getElementById("demoworld")) {
     $("#demoworld").vectorMap({
       map: "world_mill",
@@ -179,11 +193,11 @@ $(document).ready(function() {
     });
   }
 
-  /*======== 6. MULTIPLE SELECT ========*/
+  /*======== 7. MULTIPLE SELECT ========*/
   $(".js-example-basic-multiple").select2();
 
-  /*======== 7. LOADING BUTTON ========*/
-  /* 7.1. BIND NORMAL BUTTONS */
+  /*======== 8. LOADING BUTTON ========*/
+  /* 8.1. BIND NORMAL BUTTONS */
   Ladda.bind(".ladda-button", {
     timeout: 5000
   });
@@ -204,7 +218,7 @@ $(document).ready(function() {
     }
   });
 
-  /*======== 13. TOASTER ========*/
+  /*======== 9. TOASTER ========*/
   function callToaster(positionClass) {
     if (document.getElementById("toaster")) {
       toastr.options = {
@@ -234,6 +248,6 @@ $(document).ready(function() {
     callToaster("toast-top-left");
   }
 
-  /*======== 14. PROGRESS BAR ========*/
+  /*======== 10. PROGRESS BAR ========*/
   NProgress.done();
 });

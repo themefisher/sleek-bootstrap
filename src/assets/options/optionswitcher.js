@@ -40,6 +40,12 @@ if($(window).width() > 750) {
 							<a href="javascript:void(0);" class="theme-btn sidebar-light-to">Light</a>
             </div>
 
+            <span class="theme-subtitle">Direction</span>
+						<div class="no-col-space">
+							<a href="javascript:void(0);" class="theme-btn theme-active-switcher-btn ltr-to">LTR</a>
+							<a href="javascript:void(0);" class="theme-btn rtl-to">RTL</a>
+            </div>
+
 					</div>
 			</div>
 		</div>`);
@@ -78,6 +84,7 @@ $('.theme-option-switcher-btn').on('click', function () {
     body.removeClass('header-static')
     body.addClass('header-fixed')
 	});
+
 
 
 
@@ -152,4 +159,27 @@ sidebar_light.click(function(){
 	jQuery(this).addClass('theme-active-switcher-btn');
 	sidebar_dark.removeClass('theme-active-switcher-btn');
 	body.removeClass('sidebar-dark').addClass('sidebar-light');
+});
+
+
+// Direction
+var ltr = jQuery('.ltr-to');
+var rtl = jQuery('.rtl-to');
+
+ltr.click(function(){
+	'use strict';
+	jQuery(this).addClass('theme-active-switcher-btn');
+  rtl.removeClass('theme-active-switcher-btn');
+  $('html').attr('dir', 'ltr')
+  $("#sleek-css").attr("href", "assets/css/sleek.css");
+  window.dir = 'ltr'
+});
+
+rtl.click(function(){
+	'use strict';
+	jQuery(this).addClass('theme-active-switcher-btn');
+  ltr.removeClass('theme-active-switcher-btn');
+  $('html').attr('dir', 'rtl')
+  $("#sleek-css").attr("href", "assets/css/sleek.rtl.css");
+  window.dir = 'rtl'
 });

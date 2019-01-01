@@ -1,0 +1,56 @@
+---
+layout: default
+title: "Sleek - Admin Dashboard Template"
+bodyClass: "sidebar-fixed sidebar-dark header-light header-fixed"
+
+parent: "documentation"
+sub_parent: ""
+activePage: "customization"
+---
+
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="card card-default text-dark">
+                    <div class="card-header">
+                      <h2>HTML Structure</h2>
+                    </div>
+                    <div class="card-body pt-4">
+                      <p>We use <a target="_blank" href="https://jekyllrb.com/">Jekyll</a> and <a target="_blank" href="https://jekyllrb.com/docs/liquid/">Liquid</a>
+                        templating language to process templates. Here is a list of components that are found on most pages:</p>
+                      <ul class="list-group list-group-flush mt-4">
+                        <li class="list-group-item"><strong>_layouts/defaults.htm: </strong> It is used for layout structure for all
+                          main pages. It
+                          contains all base components to construct its skeleton</li>
+                        <li class="list-group-item"><strong>_includes/base/head.html: </strong> Used as HTML head that contains page
+                          titles,
+                          meta info, and CSS and JS file includes </li>
+                        <li class="list-group-item"><strong>_includes/base/header.html: </strong> Page's topbar/header component</li>
+                        <li class="list-group-item"><strong>_includes/base/left-sidebar.html: </strong> Page's left sidebar navigation
+                          component</li>
+                        <li class="list-group-item"><strong>_includes/base/right-sidebar.html: </strong> Page's right sidebar component</li>
+                        <li class="list-group-item"><strong>_includes/base/footer.html: </strong> Page's footer component</li>
+                        <li class="list-group-item"><strong>_includes/base/script.html: </strong> This component contains al JS file includes</li>
+                      </ul>
+                      <h5 class="mt-5 mb-3">Using UI Elements</h5>
+                      <p>
+                        We have many ready to use UI elements with detailed documentation. You can explore and use these by visiting <code>UI Elements</code> page in the <strong>Left Sidebar</strong>. Such as <a href="/alert.html">Alert</a>,
+                        <a href="/card.html">Card</a>, <a href="/modal.html">Modal</a> etc.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="card card-default text-dark">
+                    <div class="card-header">
+                      <h2>Customizing Style</h2>
+                    </div>
+                    <div class="card-body pt-4">
+                      <p>There are 2 basic ways to customize your theme...</p>
+                      <ul class="list-group list-group-flush mt-4">
+                        <li class="list-group-item"><strong>Compiled CSS: </strong> If you want to use Sleek Dashboard "as is", or only need limited customization, feel free to simply include the compiled <code>sleek.css</code> or <code>sleek.min.css</code> file located in the <code>dist/assets/css</code> directory.</li>
+                        <li class="list-group-item"><strong>Customizing SCSS: </strong> This is more versatile and sustainable way to customize Sleek Dashboard. The 2 major benefits of this strategy are using variable overrides (<code>_variables.scss</code>) to easily customize theme styles, plus you never have to touch Bootstrap source, meaning future updates will be much, much, simpler.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
