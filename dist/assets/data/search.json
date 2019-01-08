@@ -1,0 +1,459 @@
+  [
+  
+    
+      
+      {
+        "label": "Ecommerce",
+        "link": "index.html",
+        "tags": "ecommerce, charts, todos, maps, tabs, tables",
+        "location": "Dashboard"
+      },
+      
+    
+      
+      {
+        "label": "Analytics",
+        "link": "analytics.html",
+        "tags": "users, charts, notifications, maps",
+        "location": "Dashboard"
+      },
+      
+    
+
+  
+    
+      
+      
+      {
+        "label": "Alert",
+        "link": "alert.html",
+        "tags": "",
+        "location": "Components"
+      } ,
+      
+      {
+        "label": "Badge",
+        "link": "badge.html",
+        "tags": "",
+        "location": "Components"
+      } ,
+      
+      {
+        "label": "Breadcrumb",
+        "link": "breadcrumb.html",
+        "tags": "",
+        "location": "Components"
+      } ,
+      
+      {
+        "label": "Button Default",
+        "link": "button-default.html",
+        "tags": "",
+        "location": "Components"
+      } ,
+      
+      {
+        "label": "Button Dropdown",
+        "link": "button-dropdown.html",
+        "tags": "",
+        "location": "Components"
+      } ,
+      
+      {
+        "label": "Button Group",
+        "link": "button-group.html",
+        "tags": "",
+        "location": "Components"
+      } ,
+      
+      {
+        "label": "Button Social",
+        "link": "button-social.html",
+        "tags": "",
+        "location": "Components"
+      } ,
+      
+      {
+        "label": "Button Loading",
+        "link": "button-loading.html",
+        "tags": "",
+        "location": "Components"
+      } ,
+      
+      {
+        "label": "Card",
+        "link": "card.html",
+        "tags": "",
+        "location": "Components"
+      } ,
+      
+      {
+        "label": "Carousel",
+        "link": "carousel.html",
+        "tags": "",
+        "location": "Components"
+      } ,
+      
+      {
+        "label": "Collapse",
+        "link": "collapse.html",
+        "tags": "",
+        "location": "Components"
+      } ,
+      
+      {
+        "label": "List Group",
+        "link": "list-group.html",
+        "tags": "",
+        "location": "Components"
+      } ,
+      
+      {
+        "label": "Modal",
+        "link": "modal.html",
+        "tags": "",
+        "location": "Components"
+      } ,
+      
+      {
+        "label": "Pagination",
+        "link": "pagination.html",
+        "tags": "",
+        "location": "Components"
+      } ,
+      
+      {
+        "label": "Popover &amp; Tooltip",
+        "link": "popover-tooltip.html",
+        "tags": "",
+        "location": "Components"
+      } ,
+      
+      {
+        "label": "Progress Bar",
+        "link": "progress-bar.html",
+        "tags": "",
+        "location": "Components"
+      } ,
+      
+      {
+        "label": "Spinner",
+        "link": "spinner.html",
+        "tags": "",
+        "location": "Components"
+      } ,
+      
+      {
+        "label": "Switcher",
+        "link": "switcher.html",
+        "tags": "",
+        "location": "Components"
+      } ,
+      
+      {
+        "label": "Table",
+        "link": "table.html",
+        "tags": "",
+        "location": "Components"
+      } ,
+      
+      {
+        "label": "Tab",
+        "link": "tab.html",
+        "tags": "",
+        "location": "Components"
+      } ,
+      
+      
+    
+      
+      
+      {
+        "label": "Material Icon",
+        "link": "material-icon.html",
+        "tags": "",
+        "location": "Icons"
+      } ,
+      
+      {
+        "label": "Flag Icon",
+        "link": "flag-icon.html",
+        "tags": "",
+        "location": "Icons"
+      } ,
+      
+      
+    
+      
+      
+      {
+        "label": "Basic Input",
+        "link": "basic-input.html",
+        "tags": "",
+        "location": "Forms"
+      } ,
+      
+      {
+        "label": "Input Group",
+        "link": "input-group.html",
+        "tags": "",
+        "location": "Forms"
+      } ,
+      
+      {
+        "label": "Checkbox &amp; Radio",
+        "link": "checkbox-radio.html",
+        "tags": "",
+        "location": "Forms"
+      } ,
+      
+      {
+        "label": "Form Validation",
+        "link": "form-validation.html",
+        "tags": "",
+        "location": "Forms"
+      } ,
+      
+      {
+        "label": "Form Advance",
+        "link": "form-advance.html",
+        "tags": "",
+        "location": "Forms"
+      } ,
+      
+      
+    
+      
+      
+      {
+        "label": "Google Map",
+        "link": "google-map.html",
+        "tags": "",
+        "location": "Maps"
+      } ,
+      
+      {
+        "label": "Vector Map",
+        "link": "vector-map.html",
+        "tags": "",
+        "location": "Maps"
+      } ,
+      
+      
+    
+      
+      
+      {
+        "label": "General Widget",
+        "link": "general-widget.html",
+        "tags": "maps, todos, profiles, notifications, customers, cards",
+        "location": "Widgets"
+      } ,
+      
+      {
+        "label": "Chart Widget",
+        "link": "chart-widget.html",
+        "tags": "",
+        "location": "Widgets"
+      } ,
+      
+      
+    
+
+  
+    
+      
+      {
+        "label": "ChartJS",
+        "link": "chartjs.html",
+        "tags": "",
+        "location": "Charts"
+      },
+      
+    
+
+  
+    
+      
+      {
+        "label": "User Profile",
+        "link": "user-profile.html",
+        "tags": "",
+        "location": "Pages"
+      },
+      
+    
+      
+      
+      {
+        "label": "Sign In",
+        "link": "sign-in.html",
+        "tags": "",
+        "location": "Authentication"
+      } ,
+      
+      {
+        "label": "Sign Up",
+        "link": "sign-up.html",
+        "tags": "",
+        "location": "Authentication"
+      } ,
+      
+      
+    
+      
+      
+      {
+        "label": "invoice",
+        "link": "invoice.html",
+        "tags": "",
+        "location": "Others"
+      } ,
+      
+      {
+        "label": "Error",
+        "link": "error.html",
+        "tags": "",
+        "location": "Others"
+      } ,
+      
+      
+    
+
+  
+    
+      
+      {
+        "label": "Getting Started",
+        "link": "",
+        "tags": "",
+        "location": "Documentation"
+      },
+      
+    
+      
+      {
+        "label": "Introduction",
+        "link": "introduction.html",
+        "tags": "",
+        "location": "Documentation"
+      },
+      
+    
+      
+      {
+        "label": "Setup",
+        "link": "setup.html",
+        "tags": "",
+        "location": "Documentation"
+      },
+      
+    
+      
+      {
+        "label": "Customization",
+        "link": "customization.html",
+        "tags": "",
+        "location": "Documentation"
+      },
+      
+    
+      
+      {
+        "label": "Layouts",
+        "link": "",
+        "tags": "",
+        "location": "Documentation"
+      },
+      
+    
+      
+      
+      {
+        "label": "Header Fixed",
+        "link": "header-fixed.html",
+        "tags": "",
+        "location": "Layout Headers"
+      } ,
+      
+      {
+        "label": "Header Static",
+        "link": "header-static.html",
+        "tags": "",
+        "location": "Layout Headers"
+      } ,
+      
+      {
+        "label": "Header Light",
+        "link": "header-light.html",
+        "tags": "",
+        "location": "Layout Headers"
+      } ,
+      
+      {
+        "label": "Header Dark",
+        "link": "header-dark.html",
+        "tags": "",
+        "location": "Layout Headers"
+      } ,
+      
+      
+    
+      
+      
+      {
+        "label": "Sidebar Open",
+        "link": "sidebar-open.html",
+        "tags": "",
+        "location": "layout Sidebars"
+      } ,
+      
+      {
+        "label": "Sidebar Minimized",
+        "link": "sidebar-minimized.html",
+        "tags": "",
+        "location": "layout Sidebars"
+      } ,
+      
+      {
+        "label": "Sidebar Offcanvas",
+        "link": "sidebar-offcanvas.html",
+        "tags": "",
+        "location": "layout Sidebars"
+      } ,
+      
+      {
+        "label": "Sidebar With Footer",
+        "link": "sidebar-with-footer.html",
+        "tags": "",
+        "location": "layout Sidebars"
+      } ,
+      
+      {
+        "label": "Sidebar Without Footer",
+        "link": "sidebar-without-footer.html",
+        "tags": "",
+        "location": "layout Sidebars"
+      } ,
+      
+      {
+        "label": "Right Sidebar",
+        "link": "right-sidebar.html",
+        "tags": "",
+        "location": "layout Sidebars"
+      } ,
+      
+      
+    
+      
+      {
+        "label": "RTL Direction",
+        "link": "rtl.html",
+        "tags": "",
+        "location": "Documentation"
+      }
+      
+    
+
+  
+  ]

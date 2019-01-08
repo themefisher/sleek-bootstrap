@@ -49,6 +49,9 @@
 <loc>/collapse.html</loc>
 </url>
 <url>
+<loc>/customization.html</loc>
+</url>
+<url>
 <loc>/error.html</loc>
 </url>
 <url>
@@ -85,6 +88,9 @@
 <loc>/input-group.html</loc>
 </url>
 <url>
+<loc>/introduction.html</loc>
+</url>
+<url>
 <loc>/invoice.html</loc>
 </url>
 <url>
@@ -107,6 +113,12 @@
 </url>
 <url>
 <loc>/right-sidebar.html</loc>
+</url>
+<url>
+<loc>/rtl.html</loc>
+</url>
+<url>
+<loc>/setup.html</loc>
 </url>
 <url>
 <loc>/sidebar-minimized.html</loc>

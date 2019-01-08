@@ -58,30 +58,24 @@ $(document).ready(function() {
   if ($(window).width() < 768) {
     $(document).on("click", ".sidebar-toggle", function(e) {
       e.preventDefault();
-      var a = "sidebar-minified",
-        mo = "sidebar-minified-out",
-        t = "#body";
-      $(t).hasClass(a)
-        ? $(t)
-            .removeClass(a)
-            .addClass(mo)
-        : ($(t)
-            .addClass(a)
-            .removeClass(mo),
-          /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-            navigator.userAgent
-          ) &&
-            ($('#sidebar [data-scrollbar="true"]').css("margin-top", "0"),
-            $('#sidebar [data-scrollbar="true"]').css("overflow-x", "scroll"))),
-        $(window).trigger("resize");
+      var min = "sidebar-minified",
+        min_out = "sidebar-minified-out",
+        body = "#body";
+      $(body).hasClass(min)
+        ? $(body)
+            .removeClass(min)
+            .addClass(min_out)
+        : $(body)
+            .addClass(min)
+            .removeClass(min_out)
     });
   }
 
   /*======== 5. SIDEBAR TOGGLE FOR VARIOUS SIDEBAR LAYOUT ========*/
   var body = $("#body");
   if ($(window).width() >= 768) {
-    var flag = false;
-    var flagOffCanvas = false;
+    window.isMinified = false;
+    window.isCollapsed = false;
 
     $("#sidebar-toggler").on("click", function () {
       if (
@@ -91,17 +85,17 @@ $(document).ready(function() {
         $(this)
           .addClass("sidebar-offcanvas-toggle")
           .removeClass("sidebar-toggle");
-        if (flagOffCanvas === false) {
+        if (window.isCollapsed === false) {
           body.addClass("sidebar-collapse");
-          flagOffCanvas = true;
-          flag = false;
+          window.isCollapsed = true;
+          window.isMinified = false;
         } else {
           body.removeClass("sidebar-collapse");
           body.addClass("sidebar-collapse-out");
           setTimeout(function () {
             body.removeClass("sidebar-collapse-out");
           }, 300);
-          flagOffCanvas = false;
+          window.isCollapsed = false;
         }
       }
 
@@ -112,16 +106,16 @@ $(document).ready(function() {
         $(this)
           .addClass("sidebar-toggle")
           .removeClass("sidebar-offcanvas-toggle");
-        if (flag === false) {
+        if (window.isMinified === false) {
           body
             .removeClass("sidebar-collapse sidebar-minified-out")
             .addClass("sidebar-minified");
-          flag = true;
-          flagOffCanvas = false;
+          window.isMinified = true;
+          window.isCollapsed = false;
         } else {
           body.removeClass("sidebar-minified");
           body.addClass("sidebar-minified-out");
-          flag = false;
+          window.isMinified = false;
         }
       }
     });
@@ -135,7 +129,7 @@ $(document).ready(function() {
       body
         .removeClass("sidebar-collapse sidebar-minified-out")
         .addClass("sidebar-minified");
-      flag = true;
+      window.isMinified = true;
     }
   }
 
@@ -171,7 +165,7 @@ $(document).ready(function() {
       list.innerHTML =
         '<div class="todo-single-item d-flex flex-row justify-content-between">' +
         '<i class="mdi"></i>' +
-        '<span class="">' +
+        '<span>' +
         item.value +
         '</span>' +
         '<span class="badge badge-primary">Today</span>' +
@@ -186,38 +180,37 @@ $(document).ready(function() {
     todoCheckAll();
   }
 
-  /*======== 1. RIGHT SIDEBAR ========*/
+  /*======== 7. RIGHT SIDEBAR ========*/
   if ($(window).width() < 1025) {
     body.addClass('right-sidebar-toggoler-out');
 
     var btnRightSidebarToggler = $('.btn-right-sidebar-toggler');
-    
+
     btnRightSidebarToggler.on('click', function () {
 
       if (!body.hasClass('right-sidebar-toggoler-out')) {
         body.addClass('right-sidebar-toggoler-out').removeClass('right-sidebar-toggoler-in');
       } else {
         body.addClass('right-sidebar-toggoler-in').removeClass('right-sidebar-toggoler-out')
-      }      
-      
+      }
+
     });
 
   }
 
-  /* Right Sidebar  */
   var navRightSidebarLink = $('.nav-right-sidebar .nav-link');
 
   navRightSidebarLink.on('click', function () {
-    
+
     if(!body.hasClass('right-sidebar-in')){
       body.addClass('right-sidebar-in').removeClass('right-sidebar-out');
-      
+
     } else if ($(this).hasClass('show')){
-      body.addClass('right-sidebar-out').removeClass('right-sidebar-in');      
+      body.addClass('right-sidebar-out').removeClass('right-sidebar-in');
     }
   });
 
-  /* Remove Right Sidebar With Card */
+
   var cardClosebutton = $('.card-right-sidebar .close');
   cardClosebutton.on('click', function () {
     body.removeClass('right-sidebar-in').addClass('right-sidebar-out');

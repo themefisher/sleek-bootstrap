@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Table - Sleek Admin Dashboard Template</title>
+  <title>Sleek - Admin Dashboard Template</title>
 
   <!-- GOOGLE FONTS -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500|Poppins:400,500,600,700|Roboto:400,500" rel="stylesheet"/>
@@ -40,7 +40,7 @@
 </head>
 
 
-  <body class="header-fixed sidebar-fixed sidebar-dark header-light" id="body">
+  <body class="sidebar-fixed sidebar-dark header-light header-fixed" id="body">
     <script>
       NProgress.configure({ showSpinner: false });
       NProgress.start();
@@ -132,23 +132,23 @@
                 
 
                 
-                  <li  class="has-sub active expand" >
+                  <li  class="has-sub" >
                     <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#ui-elements"
                       aria-expanded="false" aria-controls="ui-elements">
                       <i class="mdi mdi-folder-multiple-outline"></i>
                       <span class="nav-text">UI Elements</span> <b class="caret"></b>
                     </a>
-                    <ul  class="collapse show"  id="ui-elements"
+                    <ul  class="collapse"  id="ui-elements"
                       data-parent="#sidebar-menu">
                       <div class="sub-menu">
                         
                         
-                        <li  class="has-sub active expand" >
+                        <li  class="has-sub" >
                           <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#components"
                             aria-expanded="false" aria-controls="components">
                             <span class="nav-text">Components</span> <b class="caret"></b>
                           </a>
-                          <ul  class="collapse show"  id="components">
+                          <ul  class="collapse"  id="components">
                             <div class="sub-menu">
                               
                               <li >
@@ -223,7 +223,7 @@
                                 <a href="switcher.html">Switcher</a>
                               </li>
                               
-                              <li  class="active" >
+                              <li >
                                 <a href="table.html">Table</a>
                               </li>
                               
@@ -455,13 +455,13 @@
                 
 
                 
-                  <li  class="has-sub" >
+                  <li  class="has-sub active expand" >
                     <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#documentation"
                       aria-expanded="false" aria-controls="documentation">
                       <i class="mdi mdi-book-open-page-variant"></i>
                       <span class="nav-text">Documentation</span> <b class="caret"></b>
                     </a>
-                    <ul  class="collapse"  id="documentation"
+                    <ul  class="collapse show"  id="documentation"
                       data-parent="#sidebar-menu">
                       <div class="sub-menu">
                         
@@ -500,7 +500,7 @@
                         
                         
                           
-                            <li >
+                            <li  class="active" >
                               <a class="sidenav-item-link" href="customization.html">
                                 <span class="nav-text">Customization</span>
                                 
@@ -761,536 +761,52 @@
 
 
         <div class="content-wrapper">
-          <div class="content">							<div class="breadcrumb-wrapper">
-								<h1>Table</h1>
-								
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb p-0">
-            <li class="breadcrumb-item">
-              <a href="index.html">
-                <span class="mdi mdi-home"></span>                
-              </a>
-            </li>
-            <li class="breadcrumb-item">
-              components
-            </li>
-            <li class="breadcrumb-item" aria-current="page">table</li>
-          </ol>
-        </nav>
-
-							</div>
-
-							<div class="row">
-								<div class="col-lg-6">
-									<div class="card card-default">
-										<div class="card-header card-header-border-bottom">
-											<h2>Basic Table</h2>
-										</div>
-										<div class="card-body">
-											<p class="mb-5">Documentation and examples for opt-in styling of tables (given their prevalent use in JavaScript plugins) with Bootstrap <a href="http://getbootstrap.com/docs/4.1/content/tables/"
-												 target="_blank"> more details.</a></p>
-											<table class="table">
-												<thead>
-													<tr>
-														<th scope="col">#</th>
-														<th scope="col">First</th>
-														<th scope="col">Last</th>
-														<th scope="col">Handle</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td scope="row">1</td>
-														<td>Lucia</td>
-														<td>Christ</td>
-														<td>@Lucia</td>
-													</tr>
-													<tr>
-														<td scope="row">2</td>
-														<td>Catrin</td>
-														<td>Seidl</td>
-														<td>@catrin</td>
-													</tr>
-													<tr>
-														<td scope="row">3</td>
-														<td>Lilli</td>
-														<td>Kirsh</td>
-														<td>@lilli</td>
-													</tr>
-													<tr>
-														<td scope="row">4</td>
-														<td>Else</td>
-														<td>Voigt</td>
-														<td>@voigt</td>
-													</tr>
-													<tr>
-														<td scope="row">5</td>
-														<td>Ursel</td>
-														<td>Harms</td>
-														<td>@ursel</td>
-													</tr>
-													<tr>
-														<td scope="row">6</td>
-														<td>Anke</td>
-														<td>Sauter</td>
-														<td>@Anke</td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<div class="card card-default">
-										<div class="card-header card-header-border-bottom">
-											<h2>Striped Table</h2>
-										</div>
-										<div class="card-body">
-											<p class="mb-5">Use <code>.table-striped</code> to add zebra-striping to any table row within the &lt;tbody&gt;. Read bootstrap documentation for <a href="http://getbootstrap.com/docs/4.1/content/tables/#striped-rows" target="_blank"> more details.</a></p>
-											<table class="table table-striped">
-												<thead>
-													<tr>
-														<th scope="col">#</th>
-														<th scope="col">First</th>
-														<th scope="col">Last</th>
-														<th scope="col">Handle</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td scope="row">1</td>
-														<td>Lucia</td>
-														<td>Christ</td>
-														<td>@Lucia</td>
-													</tr>
-													<tr>
-														<td scope="row">2</td>
-														<td>Catrin</td>
-														<td>Seidl</td>
-														<td>@catrin</td>
-													</tr>
-													<tr>
-														<td scope="row">3</td>
-														<td>Lilli</td>
-														<td>Kirsh</td>
-														<td>@lilli</td>
-													</tr>
-													<tr>
-														<td scope="row">4</td>
-														<td>Else</td>
-														<td>Voigt</td>
-														<td>@voigt</td>
-													</tr>
-													<tr>
-														<td scope="row">5</td>
-														<td>Ursel</td>
-														<td>Harms</td>
-														<td>@ursel</td>
-													</tr>
-													<tr>
-														<td scope="row">6</td>
-														<td>Anke</td>
-														<td>Sauter</td>
-														<td>@Anke</td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
-									</div>
-
-								</div>
-								<div class="col-lg-6">
-									<div class="card card-default">
-										<div class="card-header card-header-border-bottom">
-											<h2>Bordered Table</h2>
-										</div>
-										<div class="card-body">
-											<p class="mb-5">Add <code>.table-bordered</code> for borders on all sides of the table and cells. Read bootstrap documentation for <a href="http://getbootstrap.com/docs/4.1/content/tables/#bordered-table" target="_blank"> more details.</a></p>
-											<table class="table table-bordered">
-												<thead>
-													<tr>
-														<th scope="col">#</th>
-														<th scope="col">First</th>
-														<th scope="col">Last</th>
-														<th scope="col">Handle</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td scope="row">1</td>
-														<td>Lucia</td>
-														<td>Christ</td>
-														<td>@Lucia</td>
-													</tr>
-													<tr>
-														<td scope="row">2</td>
-														<td>Catrin</td>
-														<td>Seidl</td>
-														<td>@catrin</td>
-													</tr>
-													<tr>
-														<td scope="row">3</td>
-														<td>Lilli</td>
-														<td>Kirsh</td>
-														<td>@lilli</td>
-													</tr>
-													<tr>
-														<td scope="row">4</td>
-														<td>Else</td>
-														<td>Voigt</td>
-														<td>@voigt</td>
-													</tr>
-													<tr>
-														<td scope="row">5</td>
-														<td>Ursel</td>
-														<td>Harms</td>
-														<td>@ursel</td>
-													</tr>
-													<tr>
-														<td scope="row">6</td>
-														<td>Anke</td>
-														<td>Sauter</td>
-														<td>@Anke</td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<div class="card card-default">
-										<div class="card-header card-header-border-bottom">
-											<h2>Contextual Table</h2>
-										</div>
-										<div class="card-body">
-											<p class="mb-5">Use contextual classes to color table rows or individual cells. Read bootstrap documentation for <a href="http://getbootstrap.com/docs/4.1/content/tables/#contextual-classes" target="_blank"> more details.</a></p>
-											<table class="table">
-												<thead>
-													<tr>
-														<th scope="col">#</th>
-														<th scope="col">First</th>
-														<th scope="col">Last</th>
-														<th scope="col">Handle</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr class="table-secondary">
-														<td scope="row">1</td>
-														<td>Lucia</td>
-														<td>Christ</td>
-														<td>@Lucia</td>
-													</tr>
-													<tr class="table-primary">
-														<td scope="row">2</td>
-														<td>Catrin</td>
-														<td>Seidl</td>
-														<td>@catrin</td>
-													</tr>
-													<tr class="table-info">
-														<td scope="row">3</td>
-														<td>Lilli</td>
-														<td>Kirsh</td>
-														<td>@lilli</td>
-													</tr>
-													<tr class="table-success">
-														<td scope="row">4</td>
-														<td>Else</td>
-														<td>Voigt</td>
-														<td>@voigt</td>
-													</tr>
-													<tr class="table-danger">
-														<td scope="row">5</td>
-														<td>Ursel</td>
-														<td>Harms</td>
-														<td>@ursel</td>
-													</tr>
-													<tr class="table-warning">
-														<td scope="row">6</td>
-														<td>Anke</td>
-														<td>Sauter</td>
-														<td>@Anke</td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
-									</div>
-
-								</div>
-								<div class="col-lg-6">
-									<div class="card card-default">
-										<div class="card-header card-header-border-bottom">
-											<h2>Dark Table</h2>
-										</div>
-										<div class="card-body">
-											<p class="mb-5"> You can also invert the colors—with light text on dark backgrounds—with <code>.table-dark</code>. Read bootstrap documentation for <a href="http://getbootstrap.com/docs/4.1/content/tables/#table-head-options" target="_blank"> more details.</a></p>
-											<table class="table table-dark">
-												<thead>
-													<tr>
-														<th scope="col">#</th>
-														<th scope="col">First</th>
-														<th scope="col">Last</th>
-														<th scope="col">Handle</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td scope="row">1</td>
-														<td>Lucia</td>
-														<td>Christ</td>
-														<td>@Lucia</td>
-													</tr>
-													<tr>
-														<td scope="row">2</td>
-														<td>Catrin</td>
-														<td>Seidl</td>
-														<td>@catrin</td>
-													</tr>
-													<tr>
-														<td scope="row">3</td>
-														<td>Lilli</td>
-														<td>Kirsh</td>
-														<td>@lilli</td>
-													</tr>
-													<tr>
-														<td scope="row">4</td>
-														<td>Else</td>
-														<td>Voigt</td>
-														<td>@voigt</td>
-													</tr>
-													<tr>
-														<td scope="row">5</td>
-														<td>Ursel</td>
-														<td>Harms</td>
-														<td>@ursel</td>
-													</tr>
-													<tr>
-														<td scope="row">6</td>
-														<td>Anke</td>
-														<td>Sauter</td>
-														<td>@Anke</td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<div class="card card-default">
-										<div class="card-header card-header-border-bottom">
-											<h2>Table head options</h2>
-										</div>
-										<div class="card-body">
-											<p class="mb-5">Similar to tables and dark tables, use the modifier classes <code>.thead-light</code> or <code>.thead-dark</code> to make &lt;thead&gt;s appear light or dark gray. Read bootstrap documentation for <a href="http://getbootstrap.com/docs/4.1/content/tables/#table-head-options" target="_blank"> more details.</a></p>
-											<table class="table table-hover ">
-												<thead>
-													<tr>
-														<th scope="col">#</th>
-														<th scope="col">First</th>
-														<th scope="col">Last</th>
-														<th scope="col">Handle</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td scope="row">1</td>
-														<td>Lucia</td>
-														<td>Christ</td>
-														<td>@Lucia</td>
-													</tr>
-													<tr>
-														<td scope="row">2</td>
-														<td>Catrin</td>
-														<td>Seidl</td>
-														<td>@catrin</td>
-													</tr>
-													<tr>
-														<td scope="row">3</td>
-														<td>Lilli</td>
-														<td>Kirsh</td>
-														<td>@lilli</td>
-													</tr>
-													<tr>
-														<td scope="row">4</td>
-														<td>Else</td>
-														<td>Voigt</td>
-														<td>@voigt</td>
-													</tr>
-													<tr>
-														<td scope="row">5</td>
-														<td>Ursel</td>
-														<td>Harms</td>
-														<td>@ursel</td>
-													</tr>
-													<tr>
-														<td scope="row">6</td>
-														<td>Anke</td>
-														<td>Sauter</td>
-														<td>@Anke</td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="row">
-								<div class="col-12">
-                  <!-- Recent Order Table -->
-                  <div class="card card-table-border-none" id="recent-orders">
-                    <div class="card-header justify-content-between">
-                      <h2>Recent Orders</h2>
-                      <div class="date-range-report ">
-                        <span></span>
-                      </div>
+          <div class="content">              <div class="row">
+                <div class="col-lg-12">
+                  <div class="card card-default text-dark">
+                    <div class="card-header">
+                      <h2>HTML Structure</h2>
                     </div>
-                    <div class="card-body pt-0 pb-5">
-                      <table class="table card-table table-responsive table-responsive-large" style="width:100%">
-                        <thead>
-                          <tr>
-                            <th>Order ID</th>
-                            <th>Product Name</th>
-                            <th class="d-none d-md-table-cell">Units</th>
-                            <th class="d-none d-md-table-cell">Order Date</th>
-                            <th class="d-none d-md-table-cell">Order Cost</th>
-                            <th>Status</th>
-                            <th></th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td >24541</td>
-                            <td >
-                              <a class="text-dark" href=""> Coach Swagger</a>
-                            </td>
-                            <td class="d-none d-md-table-cell">1 Unit</td>
-                            <td class="d-none d-md-table-cell">Oct 20, 2018</td>
-                            <td class="d-none d-md-table-cell">$230</td>
-                            <td >
-                              <span class="badge badge-success">Completed</span>
-                            </td>
-                            <td class="text-right">
-                              <div class="dropdown show d-inline-block widget-dropdown">
-                                <a class="dropdown-toggle icon-burger-mini" href="" role="button" id="dropdown-recent-order1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static"></a>
-                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-recent-order1">
-                                  <li class="dropdown-item">
-                                    <a href="#">View</a>
-                                  </li>
-                                  <li class="dropdown-item">
-                                    <a href="#">Remove</a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td >24541</td>
-                            <td >
-                              <a class="text-dark" href=""> Toddler Shoes, Gucci Watch</a>
-                            </td>
-                            <td class="d-none d-md-table-cell">2 Units</td>
-                            <td class="d-none d-md-table-cell">Nov 15, 2018</td>
-                            <td class="d-none d-md-table-cell">$550</td>
-                            <td >
-                              <span class="badge badge-warning">Delayed</span>
-                            </td>
-                            <td class="text-right">
-                              <div class="dropdown show d-inline-block widget-dropdown">
-                                <a class="dropdown-toggle icon-burger-mini" href="#" role="button" id="dropdown-recent-order2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static"></a>
-                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-recent-order2">
-                                  <li class="dropdown-item">
-                                    <a href="#">View</a>
-                                  </li>
-                                  <li class="dropdown-item">
-                                    <a href="#">Remove</a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td >24541</td>
-                            <td >
-                              <a class="text-dark" href=""> Hat Black Suits</a>
-                            </td>
-                            <td class="d-none d-md-table-cell">1 Unit</td>
-                            <td class="d-none d-md-table-cell">Nov 18, 2018</td>
-                            <td class="d-none d-md-table-cell">$325</td>
-                            <td >
-                              <span class="badge badge-warning">On Hold</span>
-                            </td>
-                            <td class="text-right">
-                              <div class="dropdown show d-inline-block widget-dropdown">
-                                <a class="dropdown-toggle icon-burger-mini" href="#" role="button" id="dropdown-recent-order3" data-toggle="dropdown" aria-haspopup="true"
-                                  aria-expanded="false" data-display="static"></a>
-                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-recent-order3">
-                                  <li class="dropdown-item">
-                                    <a href="#">View</a>
-                                  </li>
-                                  <li class="dropdown-item">
-                                    <a href="#">Remove</a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td >24541</td>
-                            <td >
-                              <a class="text-dark" href=""> Backpack Gents, Swimming Cap Slin</a>
-                            </td>
-                            <td class="d-none d-md-table-cell">5 Units</td>
-                            <td class="d-none d-md-table-cell">Dec 13, 2018</td>
-                            <td class="d-none d-md-table-cell">$200</td>
-                            <td >
-                              <span class="badge badge-success">Completed</span>
-                            </td>
-                            <td class="text-right">
-                              <div class="dropdown show d-inline-block widget-dropdown">
-                                <a class="dropdown-toggle icon-burger-mini" href="#" role="button" id="dropdown-recent-order4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static"></a>
-                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-recent-order4">
-                                  <li class="dropdown-item">
-                                    <a href="#">View</a>
-                                  </li>
-                                  <li class="dropdown-item">
-                                    <a href="#">Remove</a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td >24541</td>
-                            <td >
-                              <a class="text-dark" href=""> Speed 500 Ignite</a>
-                            </td>
-                            <td class="d-none d-md-table-cell">1 Unit</td>
-                            <td class="d-none d-md-table-cell">Dec 23, 2018</td>
-                            <td class="d-none d-md-table-cell">$150</td>
-                            <td >
-                              <span class="badge badge-danger">Cancelled</span>
-                            </td>
-                            <td class="text-right">
-                              <div class="dropdown show d-inline-block widget-dropdown">
-                                <a class="dropdown-toggle icon-burger-mini" href="#" role="button" id="dropdown-recent-order5" data-toggle="dropdown" aria-haspopup="true"
-                                  aria-expanded="false" data-display="static"></a>
-                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-recent-order5">
-                                  <li class="dropdown-item">
-                                    <a href="#">View</a>
-                                  </li>
-                                  <li class="dropdown-item">
-                                    <a href="#">Remove</a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
+                    <div class="card-body pt-4">
+                      <p>We use <a target="_blank" href="https://jekyllrb.com/">Jekyll</a> and <a target="_blank" href="https://jekyllrb.com/docs/liquid/">Liquid</a>
+                        templating language to process templates. Here is a list of components that are found on most pages:</p>
+                      <ul class="list-group list-group-flush mt-4">
+                        <li class="list-group-item"><strong>_layouts/defaults.htm: </strong> It is used for layout structure for all
+                          main pages. It
+                          contains all base components to construct its skeleton</li>
+                        <li class="list-group-item"><strong>_includes/base/head.html: </strong> Used as HTML head that contains page
+                          titles,
+                          meta info, and CSS and JS file includes </li>
+                        <li class="list-group-item"><strong>_includes/base/header.html: </strong> Page's topbar/header component</li>
+                        <li class="list-group-item"><strong>_includes/base/left-sidebar.html: </strong> Page's left sidebar navigation
+                          component</li>
+                        <li class="list-group-item"><strong>_includes/base/right-sidebar.html: </strong> Page's right sidebar component</li>
+                        <li class="list-group-item"><strong>_includes/base/footer.html: </strong> Page's footer component</li>
+                        <li class="list-group-item"><strong>_includes/base/script.html: </strong> This component contains al JS file includes</li>
+                      </ul>
+                      <h5 class="mt-5 mb-3">Using UI Elements</h5>
+                      <p>
+                        We have many ready to use UI elements with detailed documentation. You can explore and use these by visiting <code>UI Elements</code> page in the <strong>Left Sidebar</strong>. Such as <a href="/alert.html">Alert</a>,
+                        <a href="/card.html">Card</a>, <a href="/modal.html">Modal</a> etc.
+                      </p>
                     </div>
                   </div>
-</div>
-							</div>						
+                </div>
+                <div class="col-lg-12">
+                  <div class="card card-default text-dark">
+                    <div class="card-header">
+                      <h2>Customizing Style</h2>
+                    </div>
+                    <div class="card-body pt-4">
+                      <p>There are 2 basic ways to customize your theme...</p>
+                      <ul class="list-group list-group-flush mt-4">
+                        <li class="list-group-item"><strong>Compiled CSS: </strong> If you want to use Sleek Dashboard "as is", or only need limited customization, feel free to simply include the compiled <code>sleek.css</code> or <code>sleek.min.css</code> file located in the <code>dist/assets/css</code> directory.</li>
+                        <li class="list-group-item"><strong>Customizing SCSS: </strong> This is more versatile and sustainable way to customize Sleek Dashboard. The 2 major benefits of this strategy are using variable overrides (<code>_variables.scss</code>) to easily customize theme styles, plus you never have to touch Bootstrap source, meaning future updates will be much, much, simpler.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
 </div>
 
           

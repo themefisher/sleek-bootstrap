@@ -54,6 +54,7 @@
   }
   /* Search Form */
   .search-form {
+    position: relative;
     margin-right: auto;
     padding-left: 1.25rem;
     background: transparent;
@@ -87,6 +88,23 @@
         min-width: 500px;
       }
     }
+
+    #search-results-container{
+      width: 100%;
+      background: #fff;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      box-shadow: 1px 2px 5px #e5e9f2;
+      li{
+        padding: 20px 30px;
+        .link{
+          font-size: 1rem;
+        }
+      }
+    }
+
   }
   /* Navbar Nav */
   .navbar-nav {
@@ -185,7 +203,7 @@
           position: relative;
           border-left: 1px solid $border-color;
           border-right: 1px solid $border-color;
-          padding-left: 0.625rem;
+          padding-left: 0.875rem;
           padding-right: 0;
           font-size: 1.625rem;
           color: rgba($secondary, .7);
@@ -307,12 +325,23 @@
   }
 }
 
+/* Github Icon */
+.github-link {
+  .btn {
+    display: flex;
+    align-items: center
+  }
+  .mdi {
+    font-size: 1rem;
+  }
+}
+
 /* Header Fix */
 
 .header-fixed {
   .page-wrapper {
     @include media-breakpoint-up(md) {
-      padding-top: 4.75rem;
+      padding-top: 4.875rem;
     }
     .main-header {
       @include media-breakpoint-up(md) {

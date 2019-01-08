@@ -3,7 +3,6 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
 
 @import 'reboot';
-@import 'utilities/display';
 @import 'utilities/spacing';
 @import 'utilities/background';
 @import 'utilities/sizing';
@@ -43,3 +42,4 @@
 @import 'widgets';
 @import 'error';
 @import 'lada-button';
+@import 'rtl';
