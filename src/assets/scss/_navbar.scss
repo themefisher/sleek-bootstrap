@@ -24,11 +24,15 @@
   border-bottom: 1px solid $border-color;
   @include transition(margin-left .3s ease-in-out);
   background-color: $white;
+
+  @include media-breakpoint-up(md) {
+    padding-right: 2rem;
+  }
   @include media-breakpoint-up(lg) {
-    padding-right: 1rem;
+    padding-right: 4rem;
   }
   @include media-breakpoint-up(xl) {
-    padding-right: 1.89rem;
+    padding-right: 3.25rem;
   }
   .sidebar-offcanvas-toggle,
   .sidebar-toggle {
@@ -325,16 +329,6 @@
   }
 }
 
-/* Github Icon */
-.github-link {
-  .btn {
-    display: flex;
-    align-items: center
-  }
-  .mdi {
-    font-size: 1rem;
-  }
-}
 
 /* Header Fix */
 

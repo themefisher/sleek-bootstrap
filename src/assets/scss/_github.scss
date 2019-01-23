@@ -1,0 +1,19 @@
+/* Github Icon */
+.github-link {
+  display: none;
+  @include media-breakpoint-up(md){
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2000;
+    i {
+      position: absolute;
+      top: 2px;
+      right: 7px;
+      color: $white;
+      font-size: 25px;
+    }
+  }
+
+}
