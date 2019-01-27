@@ -47,8 +47,10 @@ $(document).ready(function () {
 							<a href="javascript:void(0);" class="theme-btn theme-active-switcher-btn ltr-to">LTR</a>
 							<a href="javascript:void(0);" class="theme-btn rtl-to">RTL</a>
             </div>
-
-					</div>
+          </div>
+          <div style="display: flex; justify-content: center; padding-top: 30px">
+            <div id="reset-options" style="width: auto; cursor: pointer" class="theme-btn theme-active-switcher-btn">Reset Settings</div>
+          </div>
 			</div>
 		</div>`);
       $('#body').prepend(themeOption);
@@ -87,6 +89,20 @@ $(document).ready(function () {
     localStorage.setItem("optionsObject", JSON.stringify(optionsCopy));
   }
 
+  if (getOptions() != null) {
+    currentOptions = getOptions()
+  } else {
+    localStorage.setItem("optionsObject", JSON.stringify(currentOptions));
+  }
+
+  /**
+   * Clear local storage
+   */
+  function clearOptions() {
+    localStorage.removeItem("optionsObject");
+  }
+
+  // Set localstorage value to variable
   if (getOptions() != null) {
     currentOptions = getOptions()
   } else {
@@ -314,5 +330,10 @@ $(document).ready(function () {
   if (currentOptions.direction === "rtl") {
     rtl.trigger("click")
   }
+
+  $('#reset-options').click(function () {
+    clearOptions();
+    location.reload();
+  })
 
 });
