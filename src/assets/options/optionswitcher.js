@@ -23,7 +23,7 @@ $(document).ready(function () {
 						<span class="theme-subtitle">Navigation</span>
 						<div class="no-col-space">
 							<select class="theme-select" id="sidebar-option-select">
-                <option value="sidebar-fixed" selected>Fixed</option>
+                <option value="sidebar-fixed">Fixed</option>
                 <option value="sidebar-fixed-offcanvas">Fixed Offcanvas</option>
                 <option value="sidebar-static">Static</option>
                 <option value="sidebar-static-offcanvas">Static Offcanvas</option>
@@ -115,7 +115,15 @@ $(document).ready(function () {
     header_fixed.removeClass('theme-active-switcher-btn');
     body.removeClass('header-fixed')
     body.addClass('header-static')
+
+    //Store in local storage
+    setOptions("headerType", "header-static")
   });
+
+  //Click for current options
+  if (currentOptions.headerType === "header-static") {
+    header_static.trigger("click")
+  }
 
   header_fixed.click(function () {
     'use strict';
@@ -123,9 +131,14 @@ $(document).ready(function () {
     header_static.removeClass('theme-active-switcher-btn');
     body.removeClass('header-static')
     body.addClass('header-fixed')
+    //Store in local storage
+    setOptions("headerType", "header-fixed")
   });
 
-
+  //Click for current options
+  if (currentOptions.headerType === "header-fixed") {
+    header_fixed.trigger("click")
+  }
 
 
 
@@ -142,26 +155,55 @@ $(document).ready(function () {
         body.removeClass('sidebar-fixed-offcanvas sidebar-static sidebar-static-offcanvas sidebar-collapse sidebar-collapse-out sidebar-minified sidebar-minified-out').addClass('sidebar-fixed')
         window.isMinified = false; // Because It is not minified (aka it is opened)
         window.isCollapsed = false;
+
+        //Store in local storage
+        setOptions("navigationType", "sidebar-fixed")
       }
+
+
 
       if (valueSelected === "sidebar-fixed-offcanvas") {
         body.removeClass('sidebar-static sidebar-static-offcanvas sidebar-collapse-out sidebar-minified sidebar-minified-out sidebar-fixed').addClass('sidebar-fixed-offcanvas sidebar-collapse')
         window.isCollapsed = true;
         window.isMinified = false;
+
+        //Store in local storage
+        setOptions("navigationType", "sidebar-fixed-offcanvas")
       }
 
       if (valueSelected === "sidebar-static") {
         body.removeClass('sidebar-fixed-offcanvas sidebar-static-offcanvas sidebar-collapse sidebar-collapse-out sidebar-minified-out sidebar-fixed').addClass('sidebar-static sidebar-minified')
         window.isMinified = true;
         window.isCollapsed = false;
+
+        //Store in local storage
+        setOptions("navigationType", "sidebar-static")
       }
 
       if (valueSelected === "sidebar-static-offcanvas") {
         body.removeClass('sidebar-fixed-offcanvas sidebar-static sidebar-collapse-out sidebar-minified sidebar-minified-out sidebar-fixed').addClass('sidebar-static-offcanvas sidebar-collapse');
         window.isCollapsed = true;
         window.isMinified = false;
+
+        //Store in local storage
+        setOptions("navigationType", "sidebar-static-offcanvas")
       }
     });
+
+
+    // Trigger Change for current options
+    if (currentOptions.navigationType === "sidebar-fixed") {
+      $('#sidebar-option-select').val('sidebar-fixed').change();
+    }
+    if (currentOptions.navigationType === "sidebar-fixed-offcanvas") {
+      $('#sidebar-option-select').val('sidebar-fixed-offcanvas').change();
+    }
+    if (currentOptions.navigationType === "sidebar-static") {
+      $('#sidebar-option-select').val('sidebar-static').change();
+    }
+    if (currentOptions.navigationType === "sidebar-static-offcanvas") {
+      $('#sidebar-option-select').val('sidebar-static-offcanvas').change();
+    }
   }
 
 

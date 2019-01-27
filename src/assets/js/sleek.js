@@ -10,7 +10,7 @@
 
 ====== End ======*/
 
-$(document).ready(function() {
+$(document).ready(function () {
   "use strict";
 
   /*======== 1. SCROLLBAR SIDEBAR ========*/
@@ -31,12 +31,12 @@ $(document).ready(function() {
   /*======== 2. BACKDROP ========*/
   if ($(window).width() < 768) {
     var shadowClass = $(".mobile-sticky-body-overlay");
-    $(".sidebar-toggle").on("click", function() {
+    $(".sidebar-toggle").on("click", function () {
       shadowClass.addClass("active");
       $("body").css("overflow", "hidden");
     });
 
-    $(".mobile-sticky-body-overlay").on("click", function(e) {
+    $(".mobile-sticky-body-overlay").on("click", function (e) {
       $(this).removeClass("active");
       $("#body").removeClass("sidebar-minified").addClass("sidebar-minified-out");
       $("body").css("overflow", "auto");
@@ -44,38 +44,43 @@ $(document).ready(function() {
   }
 
   /*======== 3. SIDEBAR MENU ========*/
-  $(".sidebar .nav > .has-sub > a").click(function(){
+  $(".sidebar .nav > .has-sub > a").click(function () {
     $(this).parent().siblings().removeClass('expand')
     $(this).parent().toggleClass('expand')
   })
 
-  $(".sidebar .nav > .has-sub .has-sub > a").click(function(){
+  $(".sidebar .nav > .has-sub .has-sub > a").click(function () {
     $(this).parent().toggleClass('expand')
   })
 
 
   /*======== 4. SIDEBAR TOGGLE FOR MOBILE ========*/
   if ($(window).width() < 768) {
-    $(document).on("click", ".sidebar-toggle", function(e) {
+    $(document).on("click", ".sidebar-toggle", function (e) {
       e.preventDefault();
       var min = "sidebar-minified",
         min_out = "sidebar-minified-out",
         body = "#body";
       $(body).hasClass(min)
         ? $(body)
-            .removeClass(min)
-            .addClass(min_out)
+          .removeClass(min)
+          .addClass(min_out)
         : $(body)
-            .addClass(min)
-            .removeClass(min_out)
+          .addClass(min)
+          .removeClass(min_out)
     });
   }
 
   /*======== 5. SIDEBAR TOGGLE FOR VARIOUS SIDEBAR LAYOUT ========*/
   var body = $("#body");
   if ($(window).width() >= 768) {
-    window.isMinified = false;
-    window.isCollapsed = false;
+
+    if (typeof window.isMinified === "undefined") {
+      window.isMinified = false;
+    }
+    if (typeof window.isCollapsed === "undefined") {
+      window.isCollapsed = false;
+    }
 
     $("#sidebar-toggler").on("click", function () {
       if (
@@ -137,8 +142,8 @@ $(document).ready(function() {
 
   function todoCheckAll() {
     var mdis = document.querySelectorAll(".todo-single-item .mdi");
-    mdis.forEach(function(fa) {
-      fa.addEventListener("click", function(e) {
+    mdis.forEach(function (fa) {
+      fa.addEventListener("click", function (e) {
         e.stopPropagation();
         e.target.parentElement.classList.toggle("finished");
       });
@@ -151,13 +156,13 @@ $(document).ready(function() {
       todoInputForm = todoInput.querySelector("form"),
       item = todoInputForm.querySelector("input");
 
-    document.querySelector("#add-task").addEventListener("click", function(e) {
+    document.querySelector("#add-task").addEventListener("click", function (e) {
       e.preventDefault();
       todoInput.classList.toggle("d-block");
       item.focus();
     });
 
-    todoInputForm.addEventListener("submit", function(e) {
+    todoInputForm.addEventListener("submit", function (e) {
       e.preventDefault();
       if (item.value.length <= 0) {
         return;
@@ -202,10 +207,10 @@ $(document).ready(function() {
 
   navRightSidebarLink.on('click', function () {
 
-    if(!body.hasClass('right-sidebar-in')){
+    if (!body.hasClass('right-sidebar-in')) {
       body.addClass('right-sidebar-in').removeClass('right-sidebar-out');
 
-    } else if ($(this).hasClass('show')){
+    } else if ($(this).hasClass('show')) {
       body.addClass('right-sidebar-out').removeClass('right-sidebar-in');
     }
   });
