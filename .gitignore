@@ -1,6 +1,7 @@
 Thumbs.db
 .DS_Store
 .tmp
+.cache
 .sass-cache
 debug.log
 npm-debug.log
