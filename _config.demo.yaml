@@ -4,3 +4,4 @@ environment: demo
 
 exclude:
   - assets/scss
+  - assets/js

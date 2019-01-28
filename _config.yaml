@@ -5,9 +5,11 @@ source: src
 destination: _site
 keep_files:
   - assets/css
+  - assets/js
 host: "localhost"
 baseurl: ""
 exclude:
   - assets/scss
+  - assets/js
   - assets/options
 

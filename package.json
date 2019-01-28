@@ -32,7 +32,6 @@
     "jekyll"
   ],
   "scripts": {
-
     "start": "npm-run-all --parallel serve css:watch",
     "demo": "npm-run-all --parallel serve:demo css:watch",
     "demo:build": "npm-run-all build:demo css",
@@ -49,14 +48,20 @@
     "rtl": "rtlcss _site/assets/css/sleek.css",
     "rtl:prod": "rtlcss _site/assets/css/sleek.min.css",
     "css:build": "npm-run-all css css:prod",
-    "site:copy" : "cp -rf _site/ dist/ && cp -r src/assets/scss/ dist/assets/scss/"
+    "site:copy": "cp -rf _site/ dist/ && cp -r src/assets/scss/ dist/assets/scss/",
+    "js": "rollup -c --sourcemap"
   },
   "dependencies": {
-    "bootstrap": "^4.1.3"
+    "bootstrap": "^4.1.3",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.6"
   },
   "devDependencies": {
     "node-sass": "^4.11.0",
     "npm-run-all": "^4.1.5",
+    "rollup": "^1.1.2",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
     "rtlcss": "^2.4.0"
   }
 }
