@@ -32,14 +32,14 @@
     "jekyll"
   ],
   "scripts": {
-    "start": "npm-run-all --parallel serve css:watch",
-    "demo": "npm-run-all --parallel serve:demo css:watch",
+    "start": "npm-run-all --parallel serve css:watch js:watch",
+    "demo": "npm-run-all --parallel serve:demo css:watch js:watch",
     "demo:build": "npm-run-all build:demo css",
     "serve": "bundle exec jekyll serve",
     "serve:demo": "bundle exec jekyll serve --config _config.yaml,_config.demo.yaml",
     "build": "bundle exec jekyll build",
     "build:demo": "bundle exec jekyll build --config _config.yaml,_config.demo.yaml",
-    "dist": "npm-run-all clean:dist build css:build site:copy",
+    "dist": "npm-run-all clean:dist build css:build js js:min site:copy",
     "dist:demo": "npm-run-all clean:dist build:demo css:build site:copy",
     "clean:dist": "rm -rf dist",
     "css": "node-sass src/assets/scss/sleek.scss _site/assets/css/sleek.css --source-map true && npm run rtl",
@@ -50,12 +50,13 @@
     "css:build": "npm-run-all css css:prod",
     "site:copy": "cp -rf _site/ dist/ && cp -r src/assets/scss/ dist/assets/scss/",
     "js": "rollup -c --sourcemap",
+    "js:watch": "rollup -c --sourcemap -w",
     "js:min": "uglifyjs _site/assets/js/sleek.js --output _site/assets/js/sleek.min.js"
   },
   "dependencies": {
-    "bootstrap": "^4.1.3",
     "jquery": "^3.3.1",
-    "popper.js": "^1.14.6"
+    "popper.js": "^1.14.6",
+    "bootstrap": "^4.1.3"
   },
   "devDependencies": {
     "node-sass": "^4.11.0",
