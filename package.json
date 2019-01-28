@@ -49,7 +49,8 @@
     "rtl:prod": "rtlcss _site/assets/css/sleek.min.css",
     "css:build": "npm-run-all css css:prod",
     "site:copy": "cp -rf _site/ dist/ && cp -r src/assets/scss/ dist/assets/scss/",
-    "js": "rollup -c --sourcemap"
+    "js": "rollup -c --sourcemap",
+    "js:min": "uglifyjs _site/assets/js/sleek.js --output _site/assets/js/sleek.min.js"
   },
   "dependencies": {
     "bootstrap": "^4.1.3",
@@ -62,6 +63,7 @@
     "rollup": "^1.1.2",
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-node-resolve": "^4.0.0",
-    "rtlcss": "^2.4.0"
+    "rtlcss": "^2.4.0",
+    "uglify-js": "^3.4.9"
   }
 }
