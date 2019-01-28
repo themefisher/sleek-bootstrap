@@ -42,7 +42,7 @@ We are very excited to share this dashboard with you and we look forward to hear
 
 | Ecommerce  | Analytics  | Chart Widgets  | General Widgets  |
 |---|---|---|---|
-| [![Ecommerce page](src/assets/img/github/ecommerce.png)](https://sleek.tafcoder.com/)  | [![Analytics page](src/assets/img/github/analytics.png)](https://sleek.tafcoder.com/analytics.html) | [![Chart Widgets](src/assets/img/github/chart-widgets.png)](https://sleek.tafcoder.com/chart-widget.html) | [![General Widgets](src/assets/img/github/general-widgets.png)](https://sleek.tafcoder.com/general-widget.html)
+| [![Ecommerce page](src/assets/img/github/ecommerce.png)](https://sleek.tafcoder.com/)  | [![Analytics page](src/assets/img/github/analytics.png)](https://sleek.tafcoder.com/analytics.html) | [![Chart Widgets](src/assets/img/github/chart-widgets.png)](https://sleek.tafcoder.com/chart-widget.html) | [![General Widgets](src/assets/img/github/general-widgets.png)](https://sleek.tafcoder.com/general-widget.html) [![Join the chat at https://gitter.im/tafcoder/sleek-dashboard](https://badges.gitter.im/tafcoder/sleek-dashboard.svg)](https://gitter.im/tafcoder/sleek-dashboard?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 [View More](https://sleek.tafcoder.com/).
 
