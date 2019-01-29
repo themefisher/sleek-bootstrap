@@ -5,17 +5,33 @@
 <script src="assets/options/optionswitcher.js"></script>
 {% endif %}
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCn8TFXGg17HAUcNpkwtxxyT9Io9B_NcM" defer></script>
-<script src="assets/plugins/toaster/toastr.min.js"></script>
 <script src="assets/plugins/slimscrollbar/jquery.slimscroll.min.js"></script>
+<script src="assets/plugins/jekyll-search.min.js"></script>
+
+{% for plugin in page.plugins %}
+{% case plugin %}
+  {% when 'chart_js' %}
 <script src="assets/plugins/charts/Chart.min.js"></script>
-<script src="assets/plugins/ladda/spin.min.js"></script>
-<script src="assets/plugins/ladda/ladda.min.js"></script>
-<script src="assets/plugins/jquery-mask-input/jquery.mask.min.js"></script>
-<script src="assets/plugins/select2/js/select2.min.js"></script>
+  {% when 'map' %}
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCn8TFXGg17HAUcNpkwtxxyT9Io9B_NcM" defer></script>
+  {% when 'vector_map' %}
 <script src="assets/plugins/jvectormap/jquery-jvectormap-2.0.3.min.js"></script>
 <script src="assets/plugins/jvectormap/jquery-jvectormap-world-mill.js"></script>
+  {% when 'date_range_picker' %}
 <script src="assets/plugins/daterangepicker/moment.min.js"></script>
 <script src="assets/plugins/daterangepicker/daterangepicker.js"></script>
-<script src="assets/plugins/jekyll-search.min.js"></script>
+  {% when 'select2' %}
+<script src="assets/plugins/select2/js/select2.min.js"></script>
+  {% when 'ladda' %}
+<script src="assets/plugins/ladda/spin.min.js"></script>
+<script src="assets/plugins/ladda/ladda.min.js"></script>
+  {% when 'jquery_mask' %}
+<script src="assets/plugins/jquery-mask-input/jquery.mask.min.js"></script>
+  {% when 'toastr' %}
+<script src="assets/plugins/toastr/toastr.min.js"></script>
+  {% else %}
+  <!-- No Extra plugin used -->
+{% endcase %}
+{% endfor %}
+
 <script src="assets/js/sleek.js"></script>
