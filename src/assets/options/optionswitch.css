@@ -1,7 +1,4 @@
-/*General*/
-.theme-option {
-	direction: ltr;
-}
+/* General */
 
 .theme-option-switcher-btn {
   top: 120px;
@@ -222,3 +219,23 @@
 .theme-option-switcher li.pattern7 {
 	background: url("pattern7.png") center repeat;
 }
+
+/* For RTL */
+html[dir="rtl"] .theme-option-switcher {
+  right: unset;
+  left: 0;
+  -webkit-transform: translateX(-100%);
+	transform: translateX(-100%);
+}
+html[dir="rtl"] .theme-option-visible {
+  -webkit-transform: translateX(0%);
+	transform: translateX(0%);
+}
+html[dir="rtl"] .theme-option-switcher-btn {
+  right: -40px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
