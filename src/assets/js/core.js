@@ -14,61 +14,72 @@ $(document).ready(function () {
   "use strict";
 
   /*======== 1. SCROLLBAR SIDEBAR ========*/
-  $(".sidebar-scrollbar")
-    .slimScroll({
+  var sidebarScrollbar = $(".sidebar-scrollbar");
+  if (sidebarScrollbar.length != 0) {
+    sidebarScrollbar.slimScroll({
       opacity: 0,
       height: "100%",
       color: "#808080",
       size: "5px",
       wheelStep: 10
     })
-    .mouseover(function () {
-      $(this)
-        .next(".slimScrollBar")
-        .css("opacity", 0.5);
-    });
+      .mouseover(function () {
+        $(this)
+          .next(".slimScrollBar")
+          .css("opacity", 0.5);
+      });
+  }
 
   /*======== 2. BACKDROP ========*/
   if ($(window).width() < 768) {
     var shadowClass = $(".mobile-sticky-body-overlay");
-    $(".sidebar-toggle").on("click", function () {
-      shadowClass.addClass("active");
-      $("body").css("overflow", "hidden");
-    });
+    if (shadowClass.length != 0) {
+      $(".sidebar-toggle").on("click", function () {
+        shadowClass.addClass("active");
+        $("body").css("overflow", "hidden");
+      });
 
-    $(".mobile-sticky-body-overlay").on("click", function (e) {
-      $(this).removeClass("active");
-      $("#body").removeClass("sidebar-minified").addClass("sidebar-minified-out");
-      $("body").css("overflow", "auto");
-    });
+      shadowClass.on("click", function (e) {
+        $(this).removeClass("active");
+        $("#body").removeClass("sidebar-minified").addClass("sidebar-minified-out");
+        $("body").css("overflow", "auto");
+      });
+    }
   }
 
   /*======== 3. SIDEBAR MENU ========*/
-  $(".sidebar .nav > .has-sub > a").click(function () {
-    $(this).parent().siblings().removeClass('expand')
-    $(this).parent().toggleClass('expand')
-  })
+  var sidebar = $(".sidebar")
+  if (sidebar.length != 0) {
+    $(".sidebar .nav > .has-sub > a").click(function () {
+      $(this).parent().siblings().removeClass('expand')
+      $(this).parent().toggleClass('expand')
+    })
 
-  $(".sidebar .nav > .has-sub .has-sub > a").click(function () {
-    $(this).parent().toggleClass('expand')
-  })
+    $(".sidebar .nav > .has-sub .has-sub > a").click(function () {
+      $(this).parent().toggleClass('expand')
+    })
+  }
 
 
   /*======== 4. SIDEBAR TOGGLE FOR MOBILE ========*/
   if ($(window).width() < 768) {
-    $(document).on("click", ".sidebar-toggle", function (e) {
-      e.preventDefault();
-      var min = "sidebar-minified",
-        min_out = "sidebar-minified-out",
-        body = "#body";
-      $(body).hasClass(min)
-        ? $(body)
-          .removeClass(min)
-          .addClass(min_out)
-        : $(body)
-          .addClass(min)
-          .removeClass(min_out)
-    });
+
+    var sidebarToggle = $(".sidebar-toggle");
+    if(sidebarToggle.length != 0){
+      $(document).on("click", ".sidebar-toggle", function (e) {
+        e.preventDefault();
+        var min = "sidebar-minified",
+          min_out = "sidebar-minified-out",
+          body = "#body";
+        $(body).hasClass(min)
+          ? $(body)
+            .removeClass(min)
+            .addClass(min_out)
+          : $(body)
+            .addClass(min)
+            .removeClass(min_out)
+      });
+    }
   }
 
   /*======== 5. SIDEBAR TOGGLE FOR VARIOUS SIDEBAR LAYOUT ========*/
