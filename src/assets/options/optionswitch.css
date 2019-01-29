@@ -220,7 +220,7 @@
 	background: url("pattern7.png") center repeat;
 }
 
-/* For RTL */
+/* Theme Option RTL */
 html[dir="rtl"] .theme-option-switcher {
   right: unset;
   left: 0;
