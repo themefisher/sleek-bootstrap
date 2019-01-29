@@ -4,9 +4,8 @@ html[dir="rtl"] {
     content: '\f141';
   }
   .github-link {
-    transform: rotateY(180deg);
-    i {
-      right: 40px;
+    svg {
+      transform: rotateY(180deg);
     }
   }
 }
