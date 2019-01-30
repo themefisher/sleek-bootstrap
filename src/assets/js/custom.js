@@ -212,7 +212,10 @@ $(document).ready(function() {
   }
 
   /*======== 7. MULTIPLE SELECT ========*/
-  $(".js-example-basic-multiple").select2();
+  var multipleSelect = $(".js-example-basic-multiple");
+  if(multipleSelect.length != 0){
+    multipleSelect.select2();
+  }
 
   /*======== 8. LOADING BUTTON ========*/
   /* 8.1. BIND NORMAL BUTTONS */
