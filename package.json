@@ -50,7 +50,7 @@
     "site:copy": "cp -rf _site/ dist/ && cp -r src/assets/scss/ dist/assets/scss/",
     "js": "rollup -c --sourcemap",
     "js:watch": "rollup -c --sourcemap -w",
-    "js:min": "uglifyjs _site/assets/js/sleek.js --output _site/assets/js/sleek.min.js"
+    "js:min": "uglifyjs _site/assets/js/sleek.bundle.js --output _site/assets/js/sleek.bundle.min.js"
   },
   "dependencies": {
     "jquery": "^3.3.1",

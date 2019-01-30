@@ -14,10 +14,10 @@ const globals = {
 module.exports = {
   input: path.resolve(__dirname, 'src/assets/js/index.js'),
   output: {
-    file: path.resolve(__dirname, `_site/assets/js/sleek.js`),
+    file: path.resolve(__dirname, `_site/assets/js/sleek.bundle.js`),
     format: 'umd',
     globals,
-    name: 'sleek'
+    name: 'sleekBundle'
   },
   plugins: [
     resolve(),
