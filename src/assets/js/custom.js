@@ -136,11 +136,11 @@ $(document).ready(function() {
       showMethod: "fadeIn",
       hideMethod: "fadeOut"
     };
-    toastr.success("Welcome to Sleek", "Howdy!");
+    toastr.success("Welcome to Sleek Dashboard", "Howdy!");
   }
 
   if(toaster.length != 0){
-
+    
     if (document.dir != "rtl") {
       callToaster("toast-top-right");
     } else {
