@@ -72,12 +72,20 @@ $(document).ready(function() {
   }
 
   /*======== 3. TOOLTIPS AND POPOVER ========*/
-  $('[data-toggle="tooltip"]').tooltip({
-    container: "body",
-    template:
-      '<div class="tooltip" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>'
-  });
-  $('[data-toggle="popover"]').popover();
+  var tooltip = $('[data-toggle="tooltip"]')
+  if(tooltip != 0){
+    tooltip.tooltip({
+      container: "body",
+      template:
+        '<div class="tooltip" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>'
+    });
+  }
+
+  var popover = $('[data-toggle="popover"]')
+
+  if(popover != 0){
+    popover.popover();
+  }
 
   /*======== 4. JVECTORMAP DASHBOARD ========*/
   var mapData = {
