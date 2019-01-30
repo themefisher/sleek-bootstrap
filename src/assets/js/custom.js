@@ -73,7 +73,7 @@ $(document).ready(function() {
 
   /*======== 3. TOOLTIPS AND POPOVER ========*/
   var tooltip = $('[data-toggle="tooltip"]')
-  if(tooltip != 0){
+  if(tooltip.length != 0){
     tooltip.tooltip({
       container: "body",
       template:
@@ -83,7 +83,7 @@ $(document).ready(function() {
 
   var popover = $('[data-toggle="popover"]')
 
-  if(popover != 0){
+  if(popover.length != 0){
     popover.popover();
   }
 
@@ -100,8 +100,10 @@ $(document).ready(function() {
     ZA: 450
   };
 
-  if (document.getElementById("world")) {
-    $("#world").vectorMap({
+  var worldMap = $("#world")
+
+  if (worldMap.length != 0) {
+    worldMap.vectorMap({
       map: "world_mill",
       backgroundColor: "transparent",
       zoomOnScroll: false,
@@ -166,8 +168,10 @@ $(document).ready(function() {
     UK: 4000
   };
 
-  if (document.getElementById("analytic-world")) {
-    $("#analytic-world").vectorMap({
+  var analyticWorldMap = $("#analytic-world")
+
+  if (analyticWorldMap.length != 0) {
+    analyticWorldMap.vectorMap({
       map: "world_mill",
       backgroundColor: "transparent",
       zoomOnScroll: false,
@@ -194,8 +198,9 @@ $(document).ready(function() {
   }
 
   /*======== 6. JVECTORMAP WIDGET ========*/
-  if (document.getElementById("demoworld")) {
-    $("#demoworld").vectorMap({
+  var demoWorldMap = $("#demoworld")
+  if (demoWorldMap.length != 0) {
+    demoWorldMap.vectorMap({
       map: "world_mill",
       backgroundColor: "transparent",
       regionStyle: {
