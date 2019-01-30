@@ -218,55 +218,65 @@ $(document).ready(function() {
   }
 
   /*======== 8. LOADING BUTTON ========*/
-  /* 8.1. BIND NORMAL BUTTONS */
-  Ladda.bind(".ladda-button", {
-    timeout: 5000
-  });
 
-  /* 7.2. BIND PROGRESS BUTTONS AND SIMULATE LOADING PROGRESS */
-  Ladda.bind(".progress-demo button", {
-    callback: function(instance) {
-      var progress = 0;
-      var interval = setInterval(function() {
-        progress = Math.min(progress + Math.random() * 0.1, 1);
-        instance.setProgress(progress);
+  var laddaButton = $('.ladda-button');
 
-        if (progress === 1) {
-          instance.stop();
-          clearInterval(interval);
-        }
-      }, 200);
-    }
-  });
+  if(laddaButton.length != 0){
+    /* 8.1. BIND NORMAL BUTTONS */
+    Ladda.bind(".ladda-button", {
+      timeout: 5000
+    });
 
-  /*======== 9. TOASTER ========*/
-  function callToaster(positionClass) {
-    if (document.getElementById("toaster")) {
-      toastr.options = {
-        closeButton: true,
-        debug: false,
-        newestOnTop: false,
-        progressBar: true,
-        positionClass: positionClass,
-        preventDuplicates: false,
-        onclick: null,
-        showDuration: "300",
-        hideDuration: "1000",
-        timeOut: "5000",
-        extendedTimeOut: "1000",
-        showEasing: "swing",
-        hideEasing: "linear",
-        showMethod: "fadeIn",
-        hideMethod: "fadeOut"
-      };
-      toastr.success("Welcome to sleek", "Howdy!");
-    }
+    /* 7.2. BIND PROGRESS BUTTONS AND SIMULATE LOADING PROGRESS */
+    Ladda.bind(".progress-demo button", {
+      callback: function (instance) {
+        var progress = 0;
+        var interval = setInterval(function () {
+          progress = Math.min(progress + Math.random() * 0.1, 1);
+          instance.setProgress(progress);
+
+          if (progress === 1) {
+            instance.stop();
+            clearInterval(interval);
+          }
+        }, 200);
+      }
+    });
   }
 
-  if (document.dir != "rtl" ){
-    callToaster("toast-top-right");
-  }else {
-    callToaster("toast-top-left");
+  /*======== 9. TOASTER ========*/
+
+  var toaster = $('#toaster')
+
+  function callToaster(positionClass) {
+    toastr.options = {
+      closeButton: true,
+      debug: false,
+      newestOnTop: false,
+      progressBar: true,
+      positionClass: positionClass,
+      preventDuplicates: false,
+      onclick: null,
+      showDuration: "300",
+      hideDuration: "1000",
+      timeOut: "5000",
+      extendedTimeOut: "1000",
+      showEasing: "swing",
+      hideEasing: "linear",
+      showMethod: "fadeIn",
+      hideMethod: "fadeOut"
+    };
+    toastr.success("Welcome to Sleek", "Howdy!");
+  }
+
+  if(toaster.length != 0){
+
+    if (document.dir != "rtl") {
+      callToaster("toast-top-right");
+    } else {
+      callToaster("toast-top-left");
+    }
+
   }
 
   /*======== 10. PROGRESS BAR ========*/
