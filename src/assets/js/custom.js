@@ -3,15 +3,10 @@
 1. JEKYLL INSTANT SEARCH
 2. SCROLLBAR CONTENT
 3. TOOLTIPS AND POPOVER
-4. JVECTORMAP DASHBOARD
-5. JVECTORMAP ANALYTICS
-6. JVECTORMAP WIDGET
-7. MULTIPLE SELECT
-8. LOADING BUTTON
-  8.1. BIND NORMAL BUTTONS
-  8.2. BIND PROGRESS BUTTONS AND SIMULATE LOADING PROGRESS
-9. TOASTER
-10. PROGRESS BAR
+4. MULTIPLE SELECT
+4. LOADING BUTTON
+5. TOASTER
+6. PROGRESS BAR
 
 ====== End ======*/
 
@@ -87,147 +82,22 @@ $(document).ready(function() {
     popover.popover();
   }
 
-  /*======== 4. JVECTORMAP DASHBOARD ========*/
-  var mapData = {
-    US: 1298,
-    FR: 540,
-    DE: 350,
-    BW: 450,
-    NA: 250,
-    ZW: 300,
-    AU: 760,
-    GB: 120,
-    ZA: 450
-  };
 
-  var worldMap = $("#world")
-
-  if (worldMap.length != 0) {
-    worldMap.vectorMap({
-      map: "world_mill",
-      backgroundColor: "transparent",
-      zoomOnScroll: false,
-      regionStyle: {
-        initial: {
-          fill: "#e4e4e4",
-          "fill-opacity": 0.9,
-          stroke: "none",
-          "stroke-width": 0,
-          "stroke-opacity": 0
-        }
-      },
-      markerStyle: {
-        initial: {
-          stroke: "transparent"
-        },
-        hover: {
-          stroke: "rgba(112, 112, 112, 0.30)"
-        }
-      },
-
-      markers: [
-        {
-          latLng: [54.673629, -62.347026],
-          name: "America",
-          style: {
-            fill: "limegreen"
-          }
-        },
-        {
-          latLng: [62.466943, 11.797592],
-          name: "Europe",
-          style: {
-            fill: "orange"
-          }
-        },
-        {
-          latLng: [23.956725, -8.768815],
-          name: "Africa",
-          style: {
-            fill: "red"
-          }
-        },
-        {
-          latLng: [-21.943369, 123.102198],
-          name: "Australia",
-          style: {
-            fill: "royalblue"
-          }
-        }
-      ]
-    });
-  }
-
-  /*======== 5. JVECTORMAP ANALYTICS ========*/
-  var mapData2 = {
-    IN: 19000,
-    US: 13000,
-    TR: 9500,
-    DO: 7500,
-    PL: 4600,
-    UK: 4000
-  };
-
-  var analyticWorldMap = $("#analytic-world")
-
-  if (analyticWorldMap.length != 0) {
-    analyticWorldMap.vectorMap({
-      map: "world_mill",
-      backgroundColor: "transparent",
-      zoomOnScroll: false,
-      regionStyle: {
-        initial: {
-          fill: "#e4e4e4",
-          "fill-opacity": 0.9,
-          stroke: "none",
-          "stroke-width": 0,
-          "stroke-opacity": 0
-        }
-      },
-
-      series: {
-        regions: [
-          {
-            values: mapData2,
-            scale: ["#6a9ef9", "#b6d0ff"],
-            normalizeFunction: "polynomial"
-          }
-        ]
-      }
-    });
-  }
-
-  /*======== 6. JVECTORMAP WIDGET ========*/
-  var demoWorldMap = $("#demoworld")
-  if (demoWorldMap.length != 0) {
-    demoWorldMap.vectorMap({
-      map: "world_mill",
-      backgroundColor: "transparent",
-      regionStyle: {
-        initial: {
-          fill: "#9c9c9c"
-        }
-      }
-    });
-  }
-
-  /*======== 7. MULTIPLE SELECT ========*/
+  /*======== 4. MULTIPLE SELECT ========*/
   var multipleSelect = $(".js-example-basic-multiple");
   if(multipleSelect.length != 0){
     multipleSelect.select2();
   }
 
-  /*======== 8. LOADING BUTTON ========*/
+  /*======== 4. LOADING BUTTON ========*/
 
   var laddaButton = $('.ladda-button');
 
   if(laddaButton.length != 0){
-    /* 8.1. BIND NORMAL BUTTONS */
     Ladda.bind(".ladda-button", {
       timeout: 5000
     });
 
-    /* 7.2. BIND PROGRESS BUTTONS AND SIMULATE LOADING PROGRESS */
     Ladda.bind(".progress-demo button", {
       callback: function (instance) {
         var progress = 0;
@@ -244,7 +114,7 @@ $(document).ready(function() {
     });
   }
 
-  /*======== 9. TOASTER ========*/
+  /*======== 5. TOASTER ========*/
 
   var toaster = $('#toaster')
 
@@ -279,6 +149,6 @@ $(document).ready(function() {
 
   }
 
-  /*======== 10. PROGRESS BAR ========*/
+  /*======== 6. PROGRESS BAR ========*/
   NProgress.done();
 });
