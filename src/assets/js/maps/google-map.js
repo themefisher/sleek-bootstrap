@@ -9,7 +9,7 @@
 
 ====== End ======*/
 
-$(function() {
+$(function () {
   "use strict";
 
   /*======== 1. BASIC MAP ========*/
@@ -42,7 +42,7 @@ $(function() {
       map: map
     });
     infowindow.open(map, marker);
-    marker.addListener("click", function() {
+    marker.addListener("click", function () {
       infowindow.open(map, marker);
     });
   }
@@ -133,8 +133,8 @@ $(function() {
       google.maps.event.addListener(
         marker,
         "click",
-        (function(marker, i) {
-          return function() {
+        (function (marker, i) {
+          return function () {
             infowindow.setContent(locations[i][0]);
             infowindow.open(map, marker);
           };

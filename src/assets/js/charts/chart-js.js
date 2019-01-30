@@ -31,9 +31,9 @@
 
 ====== End ======*/
 
-$(document).ready(function() {
+$(document).ready(function () {
   "use strict";
-  
+
   /*======== 1. DUAL LINE CHART ========*/
   var dual = document.getElementById("dual-line");
   if (dual !== null) {
@@ -277,7 +277,7 @@ $(document).ready(function() {
                 zeroLineColor: "#eee",
               },
               ticks: {
-                callback: function(value) {
+                callback: function (value) {
                   var ranges = [
                     { divider: 1e6, suffix: "M" },
                     { divider: 1e4, suffix: "k" }
@@ -300,10 +300,10 @@ $(document).ready(function() {
         },
         tooltips: {
           callbacks: {
-            title: function(tooltipItem, data) {
+            title: function (tooltipItem, data) {
               return data["labels"][tooltipItem[0]["index"]];
             },
-            label: function(tooltipItem, data) {
+            label: function (tooltipItem, data) {
               return "$" + data["datasets"][0]["data"][tooltipItem["index"]];
             }
           },
@@ -867,10 +867,10 @@ $(document).ready(function() {
         cutoutPercentage: 75,
         tooltips: {
           callbacks: {
-            title: function(tooltipItem, data) {
+            title: function (tooltipItem, data) {
               return "Order : " + data["labels"][tooltipItem[0]["index"]];
             },
-            label: function(tooltipItem, data) {
+            label: function (tooltipItem, data) {
               return data["datasets"][0]["data"][tooltipItem["index"]];
             }
           },
@@ -887,72 +887,72 @@ $(document).ready(function() {
     });
   }
   /*======== 12. POLAR CHART ========*/
-    var polar = document.getElementById("polar");
-    if (polar !== null) {
-      var configPolar = {
-        data: {
-          datasets: [
-            {
-              data: [43, 23, 53, 33, 55],
-              backgroundColor: [
-                "rgba(41,204,151,0.5)",
-                "rgba(254,88,101,0.5)",
-                "rgba(128,97,239,0.5)",
-                "rgba(254,196,0,0.5)",
-                "rgba(76,132,255,0.5)"
-              ],
-              label: "" // for legend
-            }
-          ],
-          labels: ["Total Sales", "Rejected", "Completed", "Pending", "Reserve"]
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          legend: {
-            position: "right",
-            display: false
-          },
-          layout: {
-            padding: {
-              top: 10,
-              bottom: 10,
-              right: 10,
-              left: 10
-            }
-          },
-          title: {
-            display: false,
-            text: "Chart.js Polar Area Chart"
-          },
-          scale: {
-            ticks: {
-              beginAtZero: true,
-              fontColor: "#1b223c",
-              fontSize: 12,
-              stepSize: 10,
-              max: 60
-            },
-            reverse: false
-          },
-          animation: {
-            animateRotate: false,
-            animateScale: true
-          },
-          tooltips: {
-            titleFontColor: "#888",
-            bodyFontColor: "#555",
-            titleFontSize: 12,
-            bodyFontSize: 14,
-            backgroundColor: "rgba(256,256,256,0.95)",
-            displayColors: true,
-            borderColor: "rgba(220, 220, 220, 0.9)",
-            borderWidth: 2
+  var polar = document.getElementById("polar");
+  if (polar !== null) {
+    var configPolar = {
+      data: {
+        datasets: [
+          {
+            data: [43, 23, 53, 33, 55],
+            backgroundColor: [
+              "rgba(41,204,151,0.5)",
+              "rgba(254,88,101,0.5)",
+              "rgba(128,97,239,0.5)",
+              "rgba(254,196,0,0.5)",
+              "rgba(76,132,255,0.5)"
+            ],
+            label: "" // for legend
           }
+        ],
+        labels: ["Total Sales", "Rejected", "Completed", "Pending", "Reserve"]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        legend: {
+          position: "right",
+          display: false
+        },
+        layout: {
+          padding: {
+            top: 10,
+            bottom: 10,
+            right: 10,
+            left: 10
+          }
+        },
+        title: {
+          display: false,
+          text: "Chart.js Polar Area Chart"
+        },
+        scale: {
+          ticks: {
+            beginAtZero: true,
+            fontColor: "#1b223c",
+            fontSize: 12,
+            stepSize: 10,
+            max: 60
+          },
+          reverse: false
+        },
+        animation: {
+          animateRotate: false,
+          animateScale: true
+        },
+        tooltips: {
+          titleFontColor: "#888",
+          bodyFontColor: "#555",
+          titleFontSize: 12,
+          bodyFontSize: 14,
+          backgroundColor: "rgba(256,256,256,0.95)",
+          displayColors: true,
+          borderColor: "rgba(220, 220, 220, 0.9)",
+          borderWidth: 2
         }
-      };
-      window.myPolarArea = Chart.PolarArea(polar, configPolar);
-    }
+      }
+    };
+    window.myPolarArea = Chart.PolarArea(polar, configPolar);
+  }
 
   /*======== 13. RADAR CHART ========*/
   var radar = document.getElementById("radar");
@@ -1083,7 +1083,7 @@ $(document).ready(function() {
                 fontFamily: "Roboto, sans-serif",
                 display: false, // hide main x-axis line
                 beginAtZero: true,
-                callback: function(tick, index, array) {
+                callback: function (tick, index, array) {
                   return index % 2 ? "" : tick;
                 }
               },
@@ -1262,7 +1262,7 @@ $(document).ready(function() {
       "#user-acquisition .nav-tabs .nav-item"
     );
     items.forEach(function (item, index) {
-      item.addEventListener("click", function() {
+      item.addEventListener("click", function () {
         configAcq.data.datasets[0].data = acqData[index].first;
         configAcq.data.datasets[1].data = acqData[index].second;
         configAcq.data.datasets[2].data = acqData[index].third;
@@ -1399,8 +1399,8 @@ $(document).ready(function() {
     var myLine = new Chart(ctx, config);
 
     var items = document.querySelectorAll("#user-activity .nav-tabs .nav-item");
-    items.forEach(function(item, index){
-      item.addEventListener("click", function() {
+    items.forEach(function (item, index) {
+      item.addEventListener("click", function () {
         config.data.datasets[0].data = activityData[index].first;
         config.data.datasets[1].data = activityData[index].second;
         myLine.update();
@@ -1444,7 +1444,7 @@ $(document).ready(function() {
                 beginAtZero: true,
                 fontFamily: "Roboto, sans-serif",
                 fontColor: "#8a909d",
-                callback: function(value) {
+                callback: function (value) {
                   return value + " %";
                 }
               }
@@ -1523,7 +1523,7 @@ $(document).ready(function() {
                 fontFamily: "Roboto, sans-serif",
                 fontColor: "#8a909d",
                 max: 20,
-                callback: function(value) {
+                callback: function (value) {
                   return value + "%";
                 }
               }
@@ -1595,10 +1595,10 @@ $(document).ready(function() {
         cutoutPercentage: 75,
         tooltips: {
           callbacks: {
-            title: function(tooltipItem, data) {
+            title: function (tooltipItem, data) {
               return data["labels"][tooltipItem[0]["index"]];
             },
-            label: function(tooltipItem, data) {
+            label: function (tooltipItem, data) {
               return (
                 data["datasets"][0]["data"][tooltipItem["index"]] + " Sessions"
               );
@@ -2226,7 +2226,7 @@ if (mstat !== null) {
               display: true
             },
             ticks: {
-              callback: function(value) {
+              callback: function (value) {
                 var ranges = [
                   { divider: 1e6, suffix: "M" },
                   { divider: 1e3, suffix: "k" }

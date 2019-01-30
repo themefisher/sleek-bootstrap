@@ -1,6 +1,7 @@
 /*===== Toaster  =====*/
 #toast-container{
   margin-top: 65px;
+  right:0;
   z-index: 999;
   .toast-success {
     background-color: $primary;

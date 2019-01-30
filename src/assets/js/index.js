@@ -1,9 +1,8 @@
 import $ from 'jquery'
 import bootstrap from 'bootstrap'
 
-
-import sleek from './sleek';
-import chart from './chart';
-import dateRange from './date-range';
-import map from './map';
-import custom from './custom';
+import * as sleek from './sleek';
+import * as charts from './charts';
+import * as maps from './maps';
+import * as custom from './custom';
+import * as dateRange  from './date-range';
