@@ -36,11 +36,11 @@ $(document).ready(function() {
 
   /*======== 2. SCROLLBAR CONTENT ========*/
 
+  var dataScrollHeight = $("[data-scroll-height]");
   function scrollWithBigMedia(media) {
-    var $elDataScrollHeight = $("[data-scroll-height]");
     if (media.matches) {
       /* The viewport is greater than, or equal to media screen size */
-      $elDataScrollHeight.each(function() {
+      dataScrollHeight.each(function () {
         var scrollHeight = $(this).attr("data-scroll-height");
         $(this).css({ height: scrollHeight + "px", overflow: "hidden" });
       });
@@ -54,20 +54,22 @@ $(document).ready(function() {
           size: "5px",
           wheelStep: 10
         })
-        .mouseover(function() {
+        .mouseover(function () {
           $(this)
             .next(".slimScrollBar")
             .css("opacity", 0.4);
         });
     } else {
       /* The viewport is less than media screen size */
-      $elDataScrollHeight.css({ height: "auto", overflow: "auto" });
+      dataScrollHeight.css({ height: "auto", overflow: "auto" });
     }
   }
 
-  var media = window.matchMedia("(min-width: 992px)");
-  scrollWithBigMedia(media); // Call listener function at run time
-  media.addListener(scrollWithBigMedia); // Attach listener function on state changes
+  if (dataScrollHeight.length != 0) {
+    var media = window.matchMedia("(min-width: 992px)");
+    scrollWithBigMedia(media); // Call listener function at run time
+    media.addListener(scrollWithBigMedia); // Attach listener function on state changes
+  }
 
   /*======== 3. TOOLTIPS AND POPOVER ========*/
   $('[data-toggle="tooltip"]').tooltip({
