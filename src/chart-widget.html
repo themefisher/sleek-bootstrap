@@ -6,6 +6,7 @@ bodyClass: "header-fixed sidebar-fixed sidebar-dark header-light"
 parent: "ui-elements"
 sub_parent: "widgets"
 activePage: "chart-widget"
+plugins: ["chart_js", "date_range_picker"]
 ---
 
 
@@ -199,10 +200,10 @@ activePage: "chart-widget"
 						</div>
 						<!-- Fifth Row  -->
 						<div class="row">
-							<div class="col-xl-8 col-md-12">								
+							<div class="col-xl-8 col-md-12">
 								{%- include sales-graph.htm -%}
 							</div>
-							<div class="col-xl-4 col-md-12">								
+							<div class="col-xl-4 col-md-12">
 								{%- include revenue-donut-chart.htm -%}
 							</div>
 						</div>
@@ -256,7 +257,7 @@ activePage: "chart-widget"
 								</div>
 							</div>
 						</div>
-						
+
 						<!-- Recent Orders -->
 						<div class="row">
 							<div class="col-lg-6">
