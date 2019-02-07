@@ -26,13 +26,7 @@
   background-color: $white;
 
   @include media-breakpoint-up(md) {
-    padding-right: 2rem;
-  }
-  @include media-breakpoint-up(lg) {
-    padding-right: 4rem;
-  }
-  @include media-breakpoint-up(xl) {
-    padding-right: 3.25rem;
+    padding-right: 4.5rem;
   }
   .sidebar-offcanvas-toggle,
   .sidebar-toggle {
@@ -115,7 +109,7 @@
     flex-wrap: nowrap;
     padding-left: 1rem;
     padding-right: 1rem;
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(md) {
       align-items: center;
       padding-left: 0;
       padding-right: 0;

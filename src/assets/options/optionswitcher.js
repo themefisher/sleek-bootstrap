@@ -62,7 +62,7 @@ $(document).ready(function () {
 
   // Store object for local storage data
   var currentOptions = {
-    headerType: "header-static",
+    headerType: "header-fixed",
     headerBackground: "header-light",
     navigationType: "sidebar-fixed",
     navigationBackground: "sidebar-dark",
