@@ -1,7 +1,8 @@
 /* General */
 
 .theme-option-switcher-btn {
-  top: 120px;
+  top: 50%;
+  transform: translateY(-50%);
   position: fixed;
   background: #363636;
   border-bottom-left-radius: 6px;
