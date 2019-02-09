@@ -10,3 +10,5 @@ vendor
 package-lock.json
 demo
 _site
+sftp-config.json
+.idea/

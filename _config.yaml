@@ -6,7 +6,7 @@ destination: _site
 keep_files:
   - assets/css
   - assets/js
-host: "localhost"
+host: "0.0.0.0"
 baseurl: ""
 exclude:
   - assets/scss
