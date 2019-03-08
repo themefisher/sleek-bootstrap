@@ -329,9 +329,9 @@
             "link": "invoice.html"
           },
           {
-            "name": "error",
-            "label": "Error",
-            "link": "error.html"
+            "name": "404",
+            "label": "404 page",
+            "link": "404.html"
           }
         ]
       }
