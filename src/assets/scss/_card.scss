@@ -24,11 +24,7 @@
     flex-wrap: wrap;
     align-items: center;
     background-color: $white;
-    border-bottom: none;     
-    @include media-breakpoint-up(xxl) {
-      padding-left: 3.125rem;
-      padding-right: 3.125rem;
-    }
+    border-bottom: none;
     h2 {
       color: $dark;
       margin-bottom: 0;
@@ -46,9 +42,7 @@
   }
   .card-body {
     padding: 1.88rem 1.88rem;
-    @include media-breakpoint-up(xxl) {
-      padding: 3.125rem;
-    }
+
     p {
       line-height: 1.5;
     }
@@ -57,10 +51,6 @@
     border-top: 1px solid $border-color;
     padding-left: 1.88rem;
     padding-right: 1.88rem;
-    @include media-breakpoint-up(xxl) {
-      padding-left: 3.125rem;
-      padding-right: 3.125rem;
-    }
   }
 }
 
@@ -109,11 +99,7 @@
     flex-wrap: wrap;
     align-items: center;
     background-color: $white;
-    border-bottom: none;     
-    @include media-breakpoint-up(xxl) {
-      padding-left: 3.125rem;
-      padding-right: 3.125rem;
-    }
+    border-bottom: none;
     h2 {
       color: $dark;
       margin-bottom: 0.312rem;
@@ -134,18 +120,11 @@
 
   .card-body {
     padding: 1.9rem 1.88rem;
-    @include media-breakpoint-up(xxl) {
-      padding: 3.125rem 3.125rem;
-    }
   }
   .card-footer {
     border-top: 1px solid $border-color;
     padding-left: 1.88rem;
     padding-right: 1.88rem;
-    @include media-breakpoint-up(xxl) {
-      padding-left: 3.125rem;
-      padding-right: 3.125rem;
-    }
   }
   tbody td,
   thead th {

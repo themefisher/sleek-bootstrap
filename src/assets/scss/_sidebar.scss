@@ -25,7 +25,7 @@
   flex-direction: column;
   overflow: hidden;
   height: 100%;
-  z-index: 1050;
+  z-index: 1018;
   min-height: 100vh;
   position: relative;
   .sidebar-inner {
@@ -120,6 +120,7 @@
     }
     img {
       max-width: 80px;
+      max-height: 32px;
       vertical-align: middle;
     }
   }
@@ -153,7 +154,6 @@
   border: none;
 
   &:before {
-    content: '\f142';
     display: block;
     text-align: center;
     transition: all .2s linear;
@@ -162,8 +162,6 @@
 }
 
 .sidebar li>a .caret:before {
-  font-family: $font-family-icon !important;
-  font-weight: 400;
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
@@ -250,7 +248,7 @@
 /* Sidebar Minified */
 .sidebar-minified .left-sidebar {
   width: 250px;
-  z-index: 1050;
+  z-index: 1018;
   transform: translateX(0);
   transition: transform .3s ease-in-out;
   @include media-breakpoint-up(md) {
@@ -500,7 +498,7 @@
       left: 0;
       bottom: 0;
       right: 0;
-      z-index: 1060;
+      z-index: 1019;
     }
   }
   .page-wrapper {
@@ -626,7 +624,7 @@
   &.active {
     opacity: 1;
     visibility: visible;
-    z-index: 1045;
+    z-index: 1015;
   }
   @include media-breakpoint-up(md){
     display: none;

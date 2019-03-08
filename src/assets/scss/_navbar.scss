@@ -25,9 +25,6 @@
   @include transition(margin-left .3s ease-in-out);
   background-color: $white;
 
-  @include media-breakpoint-up(md) {
-    padding-right: 4.5rem;
-  }
   .sidebar-offcanvas-toggle,
   .sidebar-toggle {
     background-color: transparent;
@@ -40,10 +37,6 @@
     cursor: pointer;
     border-right: 1px solid $border-color;
     @include media-breakpoint-up(md) {}
-    &:before {
-      content: "\f9a7";
-      font-family: $font-family-icon;
-    }
   }
   .navbar-toggler {
     i {
