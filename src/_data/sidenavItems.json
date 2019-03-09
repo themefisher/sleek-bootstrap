@@ -262,9 +262,9 @@
             "link": "invoice.html"
           },
           {
-            "name": "error",
-            "label": "Error",
-            "link": "error.html"
+            "name": "404",
+            "label": "404 Page",
+            "link": "404.html"
           }
         ]
       }
