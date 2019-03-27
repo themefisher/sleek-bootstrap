@@ -54,7 +54,7 @@ We are very excited to share this dashboard with you and we look forward to hear
   ```
   JS
   ```
-  <script src=" https://unpkg.com/sleek-dashboard@1.0.0-beta.1/dist/assets/css/sleek.min.css"></script>
+  <script src="https://unpkg.com/sleek-dashboard@1.0.0-beta.1/dist/assets/js/sleek.bundle.js"></script>
   ```
 
 ### Option 2: From NPM
@@ -66,7 +66,7 @@ We are very excited to share this dashboard with you and we look forward to hear
 ### Option 3: Static CSS, JS, HTML
   [Download](https://github.com/tafcoder/sleek-dashboard/releases)
 
-Please visit [Documentation](https://sleek.tafcoder.com/introduction.html) for more information.
+Please visit [Documentation](https://sleek.tafcoder.com/installation.html) for more detailed information.
 
 ## Contribution
 To use our build system and run project locally follow these instructions -
