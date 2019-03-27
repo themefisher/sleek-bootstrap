@@ -30,9 +30,9 @@ We are very excited to share this dashboard with you and we look forward to hear
 ## Table of Contents
 
 - [Demo](#demo)
-- [Npm Install](#npm-install)
-- [Development](#development)
-- [File Structure](#file-structure)
+- [Installation](#installation)
+- [Contribution](#contribution)
+- [Plugins](#plugins)
 - [Browser Support](#browser-support)
 - [Reporting Issues](#reporting-issues)
 - [Technical Support or Questions](#technical-support-or-questions)
@@ -46,14 +46,29 @@ We are very excited to share this dashboard with you and we look forward to hear
 
 [View More](https://sleek.tafcoder.com/).
 
+## Installation
+### Option 1: From CDN
+  CSS
+  ```
+  <link href=" https://unpkg.com/sleek-dashboard@1.0.0-beta.1/dist/assets/css/sleek.min.css" rel="stylesheet">
+  ```
+  JS
+  ```
+  <script src=" https://unpkg.com/sleek-dashboard@1.0.0-beta.1/dist/assets/css/sleek.min.css"></script>
+  ```
 
-## Npm Install
+### Option 2: From NPM
   Install `Sleek Dashboard` from npm
   ```
   npm i sleek-dashboard --save
   ```
 
-## Development
+### Option 3: Static CSS, JS, HTML
+  [Download](https://github.com/tafcoder/sleek-dashboard/releases)
+
+Please visit [Documentation](https://sleek.tafcoder.com/introduction.html) for more information.
+
+## Contribution
 To use our build system and run project locally follow these instructions -
 
 - Install [Node.js and NPM](https://nodejs.org)
@@ -76,45 +91,22 @@ To use our build system and run project locally follow these instructions -
  **Note:** For Windows Read [this guide](https://jekyllrb.com/docs/windows/) to get Jekyll up and running without problems.
 
 
-## File Structure
+## Plugins
+* jQuery
+* Bootstrap
+* Chart.js
+* Material Design Icons
+* Google Map
+* Vector Map
+* Date Range Maker
+* Select 2
+* Ladda Button
+* jQuery Mask Input
+* Toastr
+* Flag Icon
+* NProgress
+* Slim Scrol
 
-Within the download you'll find the following directories and files:
-
-```
-sleek-dashboard/
-|
-|--- dist/ (Distrubution only)
-|   |--- assets/
-|       |--- css/ (CSS files)
-|       |--- img/ (All images)
-|       |--- js/ (All images)
-|       |--- options/ (for theme option files)
-|       |--- plugins/ (for all necessary plugins)
-|       |--- scss/ (SCSS files)
-|   |--- All html files (index.html, card.html etc.)
-|
-|--- src/
-|   |--- _data/ (for data to use with Jekyll)
-|   |--- _includes/ (for Jekyll include files)
-|   |--- _layouts/ (for layout files)
-|   |--- _plugins/ (contains some Ruby files)
-|   |--- assets/
-|       |--- css/ (CSS files)
-|       |--- img/ (All images)
-|       |--- js/ (All images)
-|       |--- options/ (for theme option files)
-|       |--- plugins/ (for all necessary plugins)
-|       |--- scss/ (SCSS files)
-|   |--- All html files (index.html, card.html etc.)
-|
-|--- _config.yaml
-|--- Gemfile
-|--- Gemfile.lock
-|--- package.json
-|--- ......
-|--- ....
-
-```
 
 ## Browser Support
 
