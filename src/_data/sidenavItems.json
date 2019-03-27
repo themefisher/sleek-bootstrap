@@ -291,9 +291,9 @@
         "link": "introduction.html"
       },
       {
-        "name": "setup",
-        "label": "Setup",
-        "link": "setup.html"
+        "name": "installation",
+        "label": "Installation",
+        "link": "installation.html"
       },
       {
         "name": "customization",

@@ -1,0 +1,126 @@
+---
+layout: default
+title: "Sleek - Admin Dashboard Template"
+
+
+parent: "documentation"
+sub_parent: ""
+activePage: "installation"
+plugins: []
+---
+
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="card card-default text-dark">
+                      <div class="card-header">
+                        <h2>Installation and Quick Start</h2>
+                      </div>
+                      <div class="card-body pt-4">
+                        <p>First download latest Sleek dashboard from <a href="https://github.com/tafcoder/sleek-dashboard/releases"> here</a>. We also provide CDN link (see code below). To start using the dashboard you will need to import some files in your current project or start from
+                          scratch using our template (scroll down in this page and see Starter Template).</p>
+                        <h5 class="card-title mt-4">CSS</h5>
+                        <p>Copy-paste the stylesheet <code>link</code> into your <code>head</code>. Please note that you have to include required plugins stylesheet file before this (bootstrap.min.css is bundled with sleek.min.css. You can see Starter Template to get idea)</p>
+                        <pre class="mt-4">
+<code>&lt;!-- CSS Files for required plugins -- &gt;</code>
+<code>&lt;!-- --- -- &gt;</code>
+<code>&lt;!-- --- -- &gt;</code>
+
+<code>&lt;link href="assets/css/sleek.min.css" rel="stylesheet"&gt;</code>
+
+<code>&lt;!-- or from CDN  --</code>
+<code>&lt;link href=" https://unpkg.com/sleek-dashboard@1.0.0-beta.1/dist/assets/css/sleek.min.css" rel="stylesheet"&gt;
+</code>
+                        </pre>
+                        <h5 class="card-title mt-4">JS</h5>
+                        <p>Place the following
+                          <code>script</code>s near the end of your pages, right before the closing <code> body</code> tag, to enable
+                          them. Please note that you have to insert another required plugins script files. jQuery must come first, then another required library, then sleek.js (popper.js, and bootstrap.js bundled
+                          with sleek.bundle.js. You can use Starter Template to get idea)</p>
+                        <pre class="mt-4">
+<code>&lt;!-- JS Files for required plugins -- &gt;</code>
+<code>&lt;!-- --- -- &gt;</code>
+<code>&lt;!-- --- -- &gt;</code>
+
+<code>&lt;script src="assets/js/sleek.bundle.js" &gt; &lt;/script &gt;</code>
+
+<code>&lt;!-- or from CDN --</code>
+<code>&lt;script src=" https://unpkg.com/sleek-dashboard@1.0.0-beta.1/dist/assets/js/sleek.bundle.js" &gt; &lt;/script &gt;
+</code>
+                                      </pre>
+                      </div>
+                      <div class="card-body pt-4">
+                        Alternatively if you want to use sleek dashboard from npm package run <code>npm i sleek-dashboard --save</code> in your terminal
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="card card-default text-dark">
+                      <div class="card-header">
+                        <h2>Starter Template</h2>
+                      </div>
+                      <div class="card-body pt-4">
+                        <p>Be sure to have your pages set up with the latest design and development standards. That means using an HTML5 doctype
+                        and including a viewport meta tag for proper responsive behaviors. Put it all together and your pages should look like
+                        this:</p>
+                        <pre class="mt-4">
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en" dir="ltr"&gt;
+
+&lt;head&gt;
+&lt;meta charset="utf-8" /&gt;
+&lt;meta http-equiv="X-UA-Compatible" content="IE=edge" /&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;
+&lt;title&gt;Sleek Starter - Admin Dashboard Template&lt;/title&gt;
+
+&lt;!-- GOOGLE FONTS --&gt;
+&lt;link href="https://fonts.googleapis.com/css?family=Montserrat:400,500|Poppins:400,500,600,700|Roboto:400,500"
+rel="stylesheet" /&gt;
+&lt;link href="https://cdn.materialdesignicons.com/3.0.39/css/materialdesignicons.min.css" rel="stylesheet" /&gt;
+
+&lt;!-- PLUGINS CSS STYLE --&gt;
+&lt;link href="assets/plugins/nprogress/nprogress.css" rel="stylesheet" /&gt;
+&lt;link href="assets/plugins/jvectormap/jquery-jvectormap-2.0.3.css" rel="stylesheet" /&gt;
+&lt;link href="assets/plugins/daterangepicker/daterangepicker.css" rel="stylesheet" /&gt;
+&lt;link href="assets/plugins/select2/css/select2.min.css" rel="stylesheet" /&gt;
+&lt;link href="assets/plugins/ladda/ladda.min.css" rel="stylesheet" /&gt;
+&lt;link href="assets/plugins/toastr/toastr.min.css" rel="stylesheet" /&gt;
+&lt;link href="assets/plugins/flag-icons/css/flag-icon.min.css" rel="stylesheet" /&gt;
+
+&lt;!-- SLEEK CSS --&gt;
+&lt;link id="sleek-css" rel="stylesheet"
+href="assets/css/sleek.css" /&gt;
+
+&lt;script src="assets/plugins/nprogress/nprogress.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+
+  &lt;body class="header-fixed sidebar-fixed sidebar-dark header-light" id="body"&gt;
+    &lt;div&gt;Hello World!&lt;/div&gt;
+
+    &lt;script src="assets/plugins/jquery/jquery.min.js"&gt;&lt;/script&gt;
+    &lt;script src="assets/plugins/slimscrollbar/jquery.slimscroll.min.js"&gt;&lt;/script&gt;
+    &lt;script src="assets/plugins/charts/Chart.min.js"&gt;&lt;/script&gt;
+    &lt;script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCn8TFXGg17HAUcNpkwtxxyT9Io9B_NcM"
+    defer&gt;&lt;/script&gt;
+    &lt;script src="assets/plugins/jvectormap/jquery-jvectormap-2.0.3.min.js"&gt;&lt;/script&gt;
+    &lt;script src="assets/plugins/jvectormap/jquery-jvectormap-world-mill.js"&gt;&lt;/script&gt;
+    &lt;script src="assets/plugins/daterangepicker/moment.min.js"&gt;&lt;/script&gt;
+    &lt;script src="assets/plugins/daterangepicker/daterangepicker.js"&gt;&lt;/script&gt;
+    &lt;script src="assets/plugins/select2/js/select2.min.js"&gt;&lt;/script&gt;
+    &lt;script src="assets/plugins/ladda/spin.min.js"&gt;&lt;/script&gt;
+    &lt;script src="assets/plugins/ladda/ladda.min.js"&gt;&lt;/script&gt;
+    &lt;script src="assets/plugins/jquery-mask-input/jquery.mask.min.js"&gt;&lt;/script&gt;
+    &lt;script src="assets/plugins/toastr/toastr.min.js"&gt;&lt;/script&gt;
+
+    &lt;script src="assets/js/sleek.bundle.js"&gt;&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+
+
+                        </pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
