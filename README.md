@@ -1,16 +1,22 @@
 <div align="center">
-
-# <a href="https://sleek.tafcoder.com/" target="_blank" rel="noopener noreferrer">Sleek Dashboard</a> [![Twitter](https://img.shields.io/twitter/url/https/github.com/tafcoder/sleek-dashboard.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Ftafcoder%2Fsleek-dashboard)
-
+  <a href="https://sleek.tafcoder.com/" target="_blank" rel="noopener noreferrer">
+    <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" width="80" height="60" viewBox="0 0 21 33">
+      <g fill="none" fill-rule="evenodd">
+        <path class="logo-fill-blue" fill="#7DBCFF" d="M0 4v25l8 4V0zM22 4v25l8 4V0z"></path>
+        <path class="logo-fill-white" fill="#FFF" d="M11 4v25l8 4V0z"></path>
+      </g>
+    </svg>
+  </a>
 </div>
 
 <div align="center">
 
-[![GitHub stars](https://img.shields.io/github/stars/tafcoder/sleek-dashboard.svg)](https://github.com/tafcoder/sleek-dashboard/stargazers)
-[![GitHub issues](https://img.shields.io/github/issues/tafcoder/sleek-dashboard.svg)](https://github.com/tafcoder/sleek-dashboard/issues) 
-[![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/tafcoder/sleek-dashboard.svg?maxAge=2592000)]() 
-[![GitHub forks](https://img.shields.io/github/forks/tafcoder/sleek-dashboard.svg)](https://github.com/tafcoder/sleek-dashboard/network)
-![license](https://img.shields.io/badge/license-MIT-blue.svg)
+[![GitHub stars](https://img.shields.io/github/stars/tafcoder/sleek-dashboard.svg?color="brightgreen"&style=flat-square)](https://github.com/tafcoder/sleek-dashboard/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/tafcoder/sleek-dashboard.svg?color="success"&style=flat-square)](https://github.com/tafcoder/sleek-dashboard/network)
+[![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/tafcoder/sleek-dashboard.svg?color="orange"&style=flat-square)]() 
+<a href="https://coveralls.io/github/chartjs/Chart.js?branch=master"><img src="https://img.shields.io/coveralls/chartjs/Chart.js.svg?&style=flat-square&maxAge=600" alt="Coverage"></a>
+<a href="https://github.com/chartjs/awesome"><img src="https://awesome.re/badge-flat2.svg?&style=flat-square" alt="Awesome"></a>
+![license](https://img.shields.io/badge/license-MIT-blue.svg?&style=flat-square)
 
 </div>
 
