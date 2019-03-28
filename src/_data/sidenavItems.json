@@ -265,11 +265,6 @@
             "name": "404",
             "label": "404 Page",
             "link": "404.html"
-          },
-          {
-            "name": "starter",
-            "label": "Starter Page",
-            "link": "starter.html"
           }
         ]
       }
