@@ -286,9 +286,9 @@
         "link": "introduction.html"
       },
       {
-        "name": "installation",
-        "label": "Installation",
-        "link": "installation.html"
+        "name": "quick-start",
+        "label": "Quick Start",
+        "link": "quick-start.html"
       },
       {
         "name": "customization",
