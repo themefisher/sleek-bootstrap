@@ -65,7 +65,7 @@ npm i sleek-dashboard --save
 ```
 
 ### Option 3: Download
-You can download ready to use ** Sleek Dashboard** admin template from our [Latest Release](https://github.com/tafcoder/sleek-dashboard/releases)
+You can download ready to use **Sleek Dashboard** admin template from our [Latest Release](https://github.com/tafcoder/sleek-dashboard/releases)
 
 Please visit [Documentation](https://sleek.tafcoder.com/installation.html) for more detailed information.
 
