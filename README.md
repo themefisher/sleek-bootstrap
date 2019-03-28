@@ -20,9 +20,9 @@
 
 </div>
 
-`Sleek Dashboard` - Free Bootstrap 4 Admin Dashboard Template and UI Kit. It is very powerful bootstrap admin dashboard, which allows you to build products like admin panels, content managements systems and CRMs.
+**Sleek Dashboard** - Free Bootstrap 4 Admin Dashboard Template and UI Kit. It is very powerful *bootstrap* admin dashboard, which allows you to build products like admin panels, content managements systems and CRMs.
 
-Bootstrap is world's most popular front-end component library for developing with HTML, CSS, and JS. It is open source, sleek, intuitive, and powerful front-end framework for faster and easier web development. [Bootstrap](https://getbootstrap.com/).
+[Bootstrap](https://getbootstrap.com/) is world's most popular front-end component library for developing with HTML, CSS, and JS. It is open source, intuitive, and powerful front-end framework for faster and easier web development.
 
 We are very excited to share this dashboard with you and we look forward to hearing your feedback!
 
@@ -30,9 +30,9 @@ We are very excited to share this dashboard with you and we look forward to hear
 ## Table of Contents
 
 - [Demo](#demo)
-- [Npm Install](#npm-install)
-- [Development](#development)
-- [File Structure](#file-structure)
+- [Quick Start](#quick-start)
+- [Contribution](#contribution)
+- [Plugins](#plugins)
 - [Browser Support](#browser-support)
 - [Reporting Issues](#reporting-issues)
 - [Technical Support or Questions](#technical-support-or-questions)
@@ -46,14 +46,30 @@ We are very excited to share this dashboard with you and we look forward to hear
 
 [View More](https://sleek.tafcoder.com/).
 
+## Quick Start
+Please visit [Documentation](https://sleek.tafcoder.com/installation.html) for more detailed information.
 
-## Npm Install
-  Install `Sleek Dashboard` from npm
-  ```
-  npm i sleek-dashboard --save
-  ```
+### Option 1: From CDN
+```
+<link href="https://unpkg.com/sleek-dashboard/dist/assets/css/sleek.min.css" rel="stylesheet"/>
+```
+```
+<script src="https://unpkg.com/sleek-dashboard/dist/assets/js/sleek.bundle.js"></script>
+```
+[View Codepen Example](https://codepen.com/)
 
-## Development
+### Option 2: From NPM
+Install **Sleek Dashboard** from npm
+```
+npm i sleek-dashboard --save
+```
+
+### Option 3: Download
+You can download ready to use **Sleek Dashboard** admin template from our [Latest Release](https://github.com/tafcoder/sleek-dashboard/releases)
+
+Please visit [Documentation](https://sleek.tafcoder.com/installation.html) for more detailed information.
+
+## Contribution
 To use our build system and run project locally follow these instructions -
 
 - Install [Node.js and NPM](https://nodejs.org)
@@ -76,45 +92,14 @@ To use our build system and run project locally follow these instructions -
  **Note:** For Windows Read [this guide](https://jekyllrb.com/docs/windows/) to get Jekyll up and running without problems.
 
 
-## File Structure
+## Plugins
+* Bootstrap - http://getbootstrap.com
+* Chart.js - 	http://www.chartjs.org/
+* Select 2 - 	https://select2.org/
+* Slim Scrol - 	http://rocha.la/jQuery-slimScroll
 
-Within the download you'll find the following directories and files:
+[See All Plugins](https://sleek.tafcoder.com/introduction.html)
 
-```
-sleek-dashboard/
-|
-|--- dist/ (Distrubution only)
-|   |--- assets/
-|       |--- css/ (CSS files)
-|       |--- img/ (All images)
-|       |--- js/ (All images)
-|       |--- options/ (for theme option files)
-|       |--- plugins/ (for all necessary plugins)
-|       |--- scss/ (SCSS files)
-|   |--- All html files (index.html, card.html etc.)
-|
-|--- src/
-|   |--- _data/ (for data to use with Jekyll)
-|   |--- _includes/ (for Jekyll include files)
-|   |--- _layouts/ (for layout files)
-|   |--- _plugins/ (contains some Ruby files)
-|   |--- assets/
-|       |--- css/ (CSS files)
-|       |--- img/ (All images)
-|       |--- js/ (All images)
-|       |--- options/ (for theme option files)
-|       |--- plugins/ (for all necessary plugins)
-|       |--- scss/ (SCSS files)
-|   |--- All html files (index.html, card.html etc.)
-|
-|--- _config.yaml
-|--- Gemfile
-|--- Gemfile.lock
-|--- package.json
-|--- ......
-|--- ....
-
-```
 
 ## Browser Support
 
@@ -124,7 +109,7 @@ At present, we officially aim to support the following browsers:
 
 ## Reporting Issues
 
-We use GitHub Issues as the official bug tracker for the Sleek Dashboard. Please Search [existing issues](https://github.com/tafcoder/sleek-dashboard/issues). It’s possible someone has already reported the same problem.
+We use GitHub Issues as the official bug tracker for the **Sleek Dashboard**. Please Search [existing issues](https://github.com/tafcoder/sleek-dashboard/issues). It’s possible someone has already reported the same problem.
 If your problem or idea is not addressed yet, [open a new issue](https://github.com/tafcoder/sleek-dashboard/issues)
 
 ## Technical Support or Questions
