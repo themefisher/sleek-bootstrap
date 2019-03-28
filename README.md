@@ -1,12 +1,7 @@
 <div align="center">
-  <a href="https://sleek.tafcoder.com/" target="_blank" rel="noopener noreferrer">
-    <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" width="80" height="60" viewBox="0 0 21 33">
-      <g fill="none" fill-rule="evenodd">
-        <path class="logo-fill-blue" fill="#7DBCFF" d="M0 4v25l8 4V0zM22 4v25l8 4V0z"></path>
-        <path class="logo-fill-white" fill="#FFF" d="M11 4v25l8 4V0z"></path>
-      </g>
-    </svg>
-  </a>
+
+# <a href="https://sleek.tafcoder.com/" target="_blank" rel="noopener noreferrer">Sleek Dashboard</a>
+
 </div>
 
 <div align="center">
