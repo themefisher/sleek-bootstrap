@@ -93,20 +93,12 @@ To use our build system and run project locally follow these instructions -
 
 
 ## Plugins
-* jQuery
-* Bootstrap
-* Chart.js
-* Material Design Icons
-* Google Map
-* Vector Map
-* Date Range Maker
-* Select 2
-* Ladda Button
-* jQuery Mask Input
-* Toastr
-* Flag Icon
-* NProgress
-* Slim Scrol
+* Bootstrap - http://getbootstrap.com
+* Chart.js - 	http://www.chartjs.org/
+* Select 2 - 	https://select2.org/
+* Slim Scrol - 	http://rocha.la/jQuery-slimScroll
+
+[See All Plugins](https://sleek.tafcoder.com/introduction.html)
 
 
 ## Browser Support
