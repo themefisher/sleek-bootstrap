@@ -330,9 +330,9 @@
         "label": "Sidebar Variations",
         "child": [
           {
-            "name": "sidebar-open",
-            "label": "Sidebar Open",
-            "link": "sidebar-open.html"
+            "name": "sidebar-fixed-default",
+            "label": "Sidebar Fixed Default",
+            "link": "sidebar-fixed-default.html"
           },
           {
             "name": "sidebar-minimized",
@@ -343,6 +343,11 @@
             "name": "sidebar-offcanvas",
             "label": "Sidebar Offcanvas",
             "link": "sidebar-offcanvas.html"
+          },
+          {
+            "name": "sidebar-static-default",
+            "label": "Sidebar Static Default",
+            "link": "sidebar-static-default.html"
           },
           {
             "name": "sidebar-with-footer",
