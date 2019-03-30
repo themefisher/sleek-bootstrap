@@ -26,7 +26,8 @@ $(document).ready(function () {
                 <option value="sidebar-fixed">Fixed Default</option>
                 <option value="sidebar-fixed-minified">Fixed Minified</option>
                 <option value="sidebar-fixed-offcanvas">Fixed Offcanvas</option>
-                <option value="sidebar-static">Static</option>
+                <option value="sidebar-static">Static Default</option>
+                <option value="sidebar-static-minified">Static Minified</option>
                 <option value="sidebar-static-offcanvas">Static Offcanvas</option>
               </select>
 						</div>
@@ -198,12 +199,21 @@ $(document).ready(function () {
       }
 
       if (valueSelected === "sidebar-static") {
+        body.removeClass('sidebar-fixed-offcanvas sidebar-static-offcanvas sidebar-collapse sidebar-collapse-out sidebar-minified-out sidebar-fixed').addClass('sidebar-static')
+        window.isMinified = false;
+        window.isCollapsed = false;
+
+        //Store in local storage
+        setOptions("navigationType", "sidebar-static")
+      }
+
+      if (valueSelected === "sidebar-static-minified") {
         body.removeClass('sidebar-fixed-offcanvas sidebar-static-offcanvas sidebar-collapse sidebar-collapse-out sidebar-minified-out sidebar-fixed').addClass('sidebar-static sidebar-minified')
         window.isMinified = true;
         window.isCollapsed = false;
 
         //Store in local storage
-        setOptions("navigationType", "sidebar-static")
+        setOptions("navigationType", "sidebar-static-minified")
       }
 
       if (valueSelected === "sidebar-static-offcanvas") {
@@ -229,6 +239,9 @@ $(document).ready(function () {
     }
     if (currentOptions.navigationType === "sidebar-static") {
       $('#sidebar-option-select').val('sidebar-static').change();
+    }
+    if (currentOptions.navigationType === "sidebar-static-minified") {
+      $('#sidebar-option-select').val('sidebar-static-minified').change();
     }
     if (currentOptions.navigationType === "sidebar-static-offcanvas") {
       $('#sidebar-option-select').val('sidebar-static-offcanvas').change();
