@@ -301,7 +301,7 @@
       },
       {
         "name": "headers",
-        "label": "Layout Headers",
+        "label": "Header Variations",
         "child": [
           {
             "name": "header-fixed",
@@ -327,7 +327,7 @@
       },
       {
         "name": "sidebar-navs",
-        "label": "layout Sidebars",
+        "label": "Sidebar Variations",
         "child": [
           {
             "name": "sidebar-open",
