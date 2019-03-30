@@ -14,16 +14,17 @@ $(document).ready(function () {
 					</div>
           <div class="theme-option-swticher-body">
 
-						<span class="theme-subtitle">Header</span>
+						<span class="theme-subtitle">Header Layout</span>
 						<div class="no-col-space">
 							<a href="javascript:void(0);" class="theme-btn header-fixed-to theme-active-switcher-btn">Fixed</a>
 							<a href="javascript:void(0);" class="theme-btn header-static-to">Static</a>
             </div>
 
-						<span class="theme-subtitle">Navigation</span>
+						<span class="theme-subtitle">Sidebar Layout</span>
 						<div class="no-col-space">
 							<select class="theme-select" id="sidebar-option-select">
-                <option value="sidebar-fixed">Fixed</option>
+                <option value="sidebar-fixed">Fixed Default</option>
+                <option value="sidebar-fixed-minified">Fixed Minified</option>
                 <option value="sidebar-fixed-offcanvas">Fixed Offcanvas</option>
                 <option value="sidebar-static">Static</option>
                 <option value="sidebar-static-offcanvas">Static Offcanvas</option>
@@ -176,6 +177,15 @@ $(document).ready(function () {
         setOptions("navigationType", "sidebar-fixed")
       }
 
+      if (valueSelected === "sidebar-fixed-minified") {
+        body.removeClass('sidebar-fixed-offcanvas sidebar-static sidebar-static-offcanvas sidebar-collapse sidebar-collapse-out sidebar-minified sidebar-minified-out').addClass('sidebar-fixed sidebar-minified')
+        window.isMinified = true; // Because It is  minified
+        window.isCollapsed = false;
+
+        //Store in local storage
+        setOptions("navigationType", "sidebar-fixed-minified")
+      }
+
 
 
       if (valueSelected === "sidebar-fixed-offcanvas") {
@@ -210,6 +220,9 @@ $(document).ready(function () {
     // Trigger Change for current options
     if (currentOptions.navigationType === "sidebar-fixed") {
       $('#sidebar-option-select').val('sidebar-fixed').change();
+    }
+    if (currentOptions.navigationType === "sidebar-fixed-minified") {
+      $('#sidebar-option-select').val('sidebar-fixed-minified').change();
     }
     if (currentOptions.navigationType === "sidebar-fixed-offcanvas") {
       $('#sidebar-option-select').val('sidebar-fixed-offcanvas').change();
