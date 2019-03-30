@@ -301,7 +301,7 @@
       },
       {
         "name": "headers",
-        "label": "Layout Headers",
+        "label": "Header Variations",
         "child": [
           {
             "name": "header-fixed",
@@ -327,22 +327,37 @@
       },
       {
         "name": "sidebar-navs",
-        "label": "layout Sidebars",
+        "label": "Sidebar Variations",
         "child": [
           {
-            "name": "sidebar-open",
-            "label": "Sidebar Open",
-            "link": "sidebar-open.html"
+            "name": "sidebar-fixed-default",
+            "label": "Sidebar Fixed Default",
+            "link": "sidebar-fixed-default.html"
           },
           {
-            "name": "sidebar-minimized",
-            "label": "Sidebar Minimized",
-            "link": "sidebar-minimized.html"
+            "name": "sidebar-fixed-minified",
+            "label": "Sidebar Fixed Minified",
+            "link": "sidebar-fixed-minified.html"
           },
           {
-            "name": "sidebar-offcanvas",
-            "label": "Sidebar Offcanvas",
-            "link": "sidebar-offcanvas.html"
+            "name": "sidebar-fixed-offcanvas",
+            "label": "Sidebar Fixed Offcanvas",
+            "link": "sidebar-fixed-offcanvas.html"
+          },
+          {
+            "name": "sidebar-static-default",
+            "label": "Sidebar Static Default",
+            "link": "sidebar-static-default.html"
+          },
+          {
+            "name": "sidebar-static-minified",
+            "label": "Sidebar Static Minified",
+            "link": "sidebar-static-minified.html"
+          },
+          {
+            "name": "sidebar-static-offcanvas",
+            "label": "Sidebar Static Offcanvas",
+            "link": "sidebar-static-offcanvas.html"
           },
           {
             "name": "sidebar-with-footer",
