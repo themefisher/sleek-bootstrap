@@ -335,9 +335,9 @@
             "link": "sidebar-fixed-default.html"
           },
           {
-            "name": "sidebar-minimized",
-            "label": "Sidebar Minimized",
-            "link": "sidebar-minimized.html"
+            "name": "sidebar-fixed-minified",
+            "label": "Sidebar Fixed Minified",
+            "link": "sidebar-fixed-minified.html"
           },
           {
             "name": "sidebar-offcanvas",
@@ -348,6 +348,11 @@
             "name": "sidebar-static-default",
             "label": "Sidebar Static Default",
             "link": "sidebar-static-default.html"
+          },
+          {
+            "name": "sidebar-static-minified",
+            "label": "Sidebar Static Minified",
+            "link": "sidebar-static-minified.html"
           },
           {
             "name": "sidebar-with-footer",
