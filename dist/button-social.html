@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+<head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Sleek Dashboard - Free Bootstrap 4 Admin Dashboard Template and UI Kit. It is very powerful bootstrap admin dashboard, which allows you to build products like admin panels, content management systems and CRMs etc.">
+
 
   <title>Button Social - Sleek Admin Dashboard Template</title>
 
   <!-- GOOGLE FONTS -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500|Poppins:400,500,600,700|Roboto:400,500" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500|Poppins:400,500,600,700|Roboto:400,500" rel="stylesheet" />
   <link href="https://cdn.materialdesignicons.com/3.0.39/css/materialdesignicons.min.css" rel="stylesheet" />
 
+
   <!-- PLUGINS CSS STYLE -->
-  <link href="assets/plugins/toaster/toastr.min.css" rel="stylesheet" />
   <link href="assets/plugins/nprogress/nprogress.css" rel="stylesheet" />
-  <link href="assets/plugins/flag-icons/css/flag-icon.min.css" rel="stylesheet"/>
-  <link href="assets/plugins/jvectormap/jquery-jvectormap-2.0.3.css" rel="stylesheet" />
-  <link href="assets/plugins/ladda/ladda.min.css" rel="stylesheet" />
-  <link href="assets/plugins/select2/css/select2.min.css" rel="stylesheet" />
-  <link href="assets/plugins/daterangepicker/daterangepicker.css" rel="stylesheet" />
+
+  
 
   <!-- SLEEK CSS -->
   <link id="sleek-css" rel="stylesheet" href="assets/css/sleek.css" />
@@ -27,6 +26,8 @@
 
   <!-- FAVICON -->
   <link href="assets/img/favicon.png" rel="shortcut icon" />
+
+  
 
   <!--
     HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
@@ -40,17 +41,33 @@
 </head>
 
 
-  <body class="header-fixed sidebar-fixed sidebar-dark header-light" id="body">
-    <script>
-      NProgress.configure({ showSpinner: false });
-      NProgress.start();
-    </script>
+<body class="header-fixed sidebar-fixed sidebar-dark header-light" id="body">
+  
+  <script>
+    NProgress.configure({ showSpinner: false });
+    NProgress.start();
+  </script>
 
-    <div class="mobile-sticky-body-overlay"></div>
+  <div class="mobile-sticky-body-overlay"></div>
 
-    <div class="wrapper">
-      
-              <!--
+  
+
+  <div class="wrapper">
+    <!-- Github Link -->
+    <a href="https://github.com/tafcoder/sleek-dashboard" class="github-link">
+      <svg width="70" height="70" viewBox="0 0 250 250" aria-hidden="true">
+        <defs>
+          <linearGradient id="grad1" x1="0%" y1="75%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#896def;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#482271;stop-opacity:1" />
+          </linearGradient>
+        </defs>
+        <path d="M 0,0 L115,115 L115,115 L142,142 L250,250 L250,0 Z" fill="url(#grad1)"></path>
+      </svg>
+      <i class="mdi mdi-github-circle"></i>
+    </a>
+    
+            <!--
           ====================================
           ——— LEFT SIDEBAR WITH FOOTER
           =====================================
@@ -438,7 +455,7 @@
                               </li>
                               
                               <li >
-                                <a href="error.html">Error</a>
+                                <a href="404.html">404 Page</a>
                               </li>
                               
                             </div>
@@ -489,8 +506,8 @@
                         
                           
                             <li >
-                              <a class="sidenav-item-link" href="setup.html">
-                                <span class="nav-text">Setup</span>
+                              <a class="sidenav-item-link" href="quick-start.html">
+                                <span class="nav-text">Quick Start</span>
                                 
                               </a>
                             </li>
@@ -523,7 +540,7 @@
                         <li  class="has-sub" >
                           <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#headers"
                             aria-expanded="false" aria-controls="headers">
-                            <span class="nav-text">Layout Headers</span> <b class="caret"></b>
+                            <span class="nav-text">Header Variations</span> <b class="caret"></b>
                           </a>
                           <ul  class="collapse"  id="headers">
                             <div class="sub-menu">
@@ -554,21 +571,33 @@
                         <li  class="has-sub" >
                           <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#sidebar-navs"
                             aria-expanded="false" aria-controls="sidebar-navs">
-                            <span class="nav-text">layout Sidebars</span> <b class="caret"></b>
+                            <span class="nav-text">Sidebar Variations</span> <b class="caret"></b>
                           </a>
                           <ul  class="collapse"  id="sidebar-navs">
                             <div class="sub-menu">
                               
                               <li >
-                                <a href="sidebar-open.html">Sidebar Open</a>
+                                <a href="sidebar-fixed-default.html">Sidebar Fixed Default</a>
                               </li>
                               
                               <li >
-                                <a href="sidebar-minimized.html">Sidebar Minimized</a>
+                                <a href="sidebar-fixed-minified.html">Sidebar Fixed Minified</a>
                               </li>
                               
                               <li >
-                                <a href="sidebar-offcanvas.html">Sidebar Offcanvas</a>
+                                <a href="sidebar-fixed-offcanvas.html">Sidebar Fixed Offcanvas</a>
+                              </li>
+                              
+                              <li >
+                                <a href="sidebar-static-default.html">Sidebar Static Default</a>
+                              </li>
+                              
+                              <li >
+                                <a href="sidebar-static-minified.html">Sidebar Static Minified</a>
+                              </li>
+                              
+                              <li >
+                                <a href="sidebar-static-offcanvas.html">Sidebar Static Offcanvas</a>
                               </li>
                               
                               <li >
@@ -640,10 +669,10 @@
           </div>
         </aside>
 
-      
+    
 
-      <div class="page-wrapper">
-                  <!-- Header -->
+    <div class="page-wrapper">
+                <!-- Header -->
           <header class="main-header " id="header">
             <nav class="navbar navbar-static-top navbar-expand-lg">
               <!-- Sidebar toggle button -->
@@ -666,14 +695,6 @@
 
               <div class="navbar-right ">
                 <ul class="nav navbar-nav">
-                  <!-- Github Link Button -->
-                  <li class="github-link mr-3">
-                    <a class="btn btn-outline-secondary btn-sm" href="https://github.com/tafcoder/sleek-dashboard" target="_blank">
-                      <span class="d-none d-md-inline-block mr-2">Source Code</span>
-                      <i class="mdi mdi-github-circle"></i>
-                    </a>
-
-                  </li>
                   <li class="dropdown notifications-menu">
                     <button class="dropdown-toggle" data-toggle="dropdown">
                       <i class="mdi mdi-bell-outline"></i>
@@ -726,17 +747,17 @@
                       <li class="dropdown-header">
                         <img src="assets/img/user/user.png" class="img-circle" alt="User Image" />
                         <div class="d-inline-block">
-                          Abdus Salam <small class="pt-1">abdus@gmail.com</small>
+                          Abdus Salam <small class="pt-1">iamabdus@gmail.com</small>
                         </div>
                       </li>
 
                       <li>
-                        <a href="profile.html">
+                        <a href="user-profile.html">
                           <i class="mdi mdi-account"></i> My Profile
                         </a>
                       </li>
                       <li>
-                        <a href="email-inbox.html">
+                        <a href="#">
                           <i class="mdi mdi-email"></i> Message
                         </a>
                       </li>
@@ -748,7 +769,7 @@
                       </li>
 
                       <li class="dropdown-footer">
-                        <a href="signin.html"> <i class="mdi mdi-logout"></i> Log Out </a>
+                        <a href="index.html"> <i class="mdi mdi-logout"></i> Log Out </a>
                       </li>
                     </ul>
                   </li>
@@ -760,8 +781,8 @@
           </header>
 
 
-        <div class="content-wrapper">
-          <div class="content">							<div class="breadcrumb-wrapper">
+      <div class="content-wrapper">
+        <div class="content">							<div class="breadcrumb-wrapper">
 								<h1>Button Social</h1>
 								
         <nav aria-label="breadcrumb">
@@ -1352,7 +1373,7 @@
 													<button type="button" class="mb-1 btn btn-vimeo btn-pill btn-lg text"> Vimeo </button>
 													<button type="button" class="mb-1 btn btn-dropbox btn-pill btn-lg text"> Dropbox </button>
 												</div>
-											</div>											
+											</div>
 										</div>
 										<div class="col-lg-6">
 											<div class="card card-default">
@@ -1371,17 +1392,17 @@
 												</div>
 											</div>
 										</div>
-									</div>									
+									</div>
 								</div>
-							</div>						
+							</div>
 </div>
 
-          
+        
 
 
-        </div>
+      </div>
 
-                  <footer class="footer mt-auto">
+                <footer class="footer mt-auto">
             <div class="copyright bg-white">
               <p>
                 &copy; <span id="copy-year">2019</span> Copyright Sleek Dashboard Bootstrap Template by
@@ -1400,33 +1421,20 @@
             </script>
           </footer>
 
-      </div>
     </div>
+  </div>
 
-    
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCn8TFXGg17HAUcNpkwtxxyT9Io9B_NcM" defer></script>
-<script src="assets/plugins/jquery/jquery.min.js"></script>
-<script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/plugins/toaster/toastr.min.js"></script>
+  <script src="assets/plugins/jquery/jquery.min.js"></script>
+
+
+
 <script src="assets/plugins/slimscrollbar/jquery.slimscroll.min.js"></script>
-<script src="assets/plugins/charts/Chart.min.js"></script>
-<script src="assets/plugins/ladda/spin.min.js"></script>
-<script src="assets/plugins/ladda/ladda.min.js"></script>
-<script src="assets/plugins/jquery-mask-input/jquery.mask.min.js"></script>
-<script src="assets/plugins/select2/js/select2.min.js"></script>
-<script src="assets/plugins/jvectormap/jquery-jvectormap-2.0.3.min.js"></script>
-<script src="assets/plugins/jvectormap/jquery-jvectormap-world-mill.js"></script>
-<script src="assets/plugins/daterangepicker/moment.min.js"></script>
-<script src="assets/plugins/daterangepicker/daterangepicker.js"></script>
 <script src="assets/plugins/jekyll-search.min.js"></script>
-<script src="assets/js/sleek.js"></script>
-<script src="assets/js/chart.js"></script>
-<script src="assets/js/date-range.js"></script>
-<script src="assets/js/map.js"></script>
-<script src="assets/js/custom.js"></script>
 
 
 
+<script src="assets/js/sleek.bundle.js"></script>
 
-  </body>
+</body>
+
 </html>

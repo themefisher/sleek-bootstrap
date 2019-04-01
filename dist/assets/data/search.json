@@ -311,8 +311,8 @@
       } ,
       
       {
-        "label": "Error",
-        "link": "error.html",
+        "label": "404 Page",
+        "link": "404.html",
         "tags": "",
         "location": "Others"
       } ,
@@ -342,8 +342,8 @@
     
       
       {
-        "label": "Setup",
-        "link": "setup.html",
+        "label": "Quick Start",
+        "link": "quick-start.html",
         "tags": "",
         "location": "Documentation"
       },
@@ -373,28 +373,28 @@
         "label": "Header Fixed",
         "link": "header-fixed.html",
         "tags": "",
-        "location": "Layout Headers"
+        "location": "Header Variations"
       } ,
       
       {
         "label": "Header Static",
         "link": "header-static.html",
         "tags": "",
-        "location": "Layout Headers"
+        "location": "Header Variations"
       } ,
       
       {
         "label": "Header Light",
         "link": "header-light.html",
         "tags": "",
-        "location": "Layout Headers"
+        "location": "Header Variations"
       } ,
       
       {
         "label": "Header Dark",
         "link": "header-dark.html",
         "tags": "",
-        "location": "Layout Headers"
+        "location": "Header Variations"
       } ,
       
       
@@ -402,45 +402,66 @@
       
       
       {
-        "label": "Sidebar Open",
-        "link": "sidebar-open.html",
+        "label": "Sidebar Fixed Default",
+        "link": "sidebar-fixed-default.html",
         "tags": "",
-        "location": "layout Sidebars"
+        "location": "Sidebar Variations"
       } ,
       
       {
-        "label": "Sidebar Minimized",
-        "link": "sidebar-minimized.html",
+        "label": "Sidebar Fixed Minified",
+        "link": "sidebar-fixed-minified.html",
         "tags": "",
-        "location": "layout Sidebars"
+        "location": "Sidebar Variations"
       } ,
       
       {
-        "label": "Sidebar Offcanvas",
-        "link": "sidebar-offcanvas.html",
+        "label": "Sidebar Fixed Offcanvas",
+        "link": "sidebar-fixed-offcanvas.html",
         "tags": "",
-        "location": "layout Sidebars"
+        "location": "Sidebar Variations"
+      } ,
+      
+      {
+        "label": "Sidebar Static Default",
+        "link": "sidebar-static-default.html",
+        "tags": "",
+        "location": "Sidebar Variations"
+      } ,
+      
+      {
+        "label": "Sidebar Static Minified",
+        "link": "sidebar-static-minified.html",
+        "tags": "",
+        "location": "Sidebar Variations"
+      } ,
+      
+      {
+        "label": "Sidebar Static Offcanvas",
+        "link": "sidebar-static-offcanvas.html",
+        "tags": "",
+        "location": "Sidebar Variations"
       } ,
       
       {
         "label": "Sidebar With Footer",
         "link": "sidebar-with-footer.html",
         "tags": "",
-        "location": "layout Sidebars"
+        "location": "Sidebar Variations"
       } ,
       
       {
         "label": "Sidebar Without Footer",
         "link": "sidebar-without-footer.html",
         "tags": "",
-        "location": "layout Sidebars"
+        "location": "Sidebar Variations"
       } ,
       
       {
         "label": "Right Sidebar",
         "link": "right-sidebar.html",
         "tags": "",
-        "location": "layout Sidebars"
+        "location": "Sidebar Variations"
       } ,
       
       

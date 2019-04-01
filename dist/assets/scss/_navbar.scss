@@ -24,11 +24,9 @@
   border-bottom: 1px solid $border-color;
   @include transition(margin-left .3s ease-in-out);
   background-color: $white;
-  @include media-breakpoint-up(lg) {
-    padding-right: 1rem;
-  }
-  @include media-breakpoint-up(xl) {
-    padding-right: 1.89rem;
+
+  @include media-breakpoint-up(md) {
+    padding-right: 4.5rem;
   }
   .sidebar-offcanvas-toggle,
   .sidebar-toggle {
@@ -111,7 +109,7 @@
     flex-wrap: nowrap;
     padding-left: 1rem;
     padding-right: 1rem;
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(md) {
       align-items: center;
       padding-left: 0;
       padding-right: 0;
@@ -325,16 +323,6 @@
   }
 }
 
-/* Github Icon */
-.github-link {
-  .btn {
-    display: flex;
-    align-items: center
-  }
-  .mdi {
-    font-size: 1rem;
-  }
-}
 
 /* Header Fix */
 

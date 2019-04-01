@@ -1,6 +1,6 @@
 {
   "name": "sleek-dashboard",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "description": "Premium & Free Bootstrap 4 admin dashboard template by TAFcoder.com",
   "author": "TAF Coder<hello@tafcoder.com> (https://tafcoder.com/)",
   "repository": {
@@ -53,9 +53,9 @@
     "js:min": "uglifyjs _site/assets/js/sleek.bundle.js --output _site/assets/js/sleek.bundle.min.js"
   },
   "dependencies": {
+    "bootstrap": "^4.3.1",
     "jquery": "^3.3.1",
-    "popper.js": "^1.14.6",
-    "bootstrap": "^4.1.3"
+    "popper.js": "^1.14.6"
   },
   "devDependencies": {
     "node-sass": "^4.11.0",

@@ -7,7 +7,7 @@
   <meta name="description" content="Sleek Dashboard - Free Bootstrap 4 Admin Dashboard Template and UI Kit. It is very powerful bootstrap admin dashboard, which allows you to build products like admin panels, content management systems and CRMs etc.">
 
 
-  <title>Sleek - Admin Dashboard Template</title>
+  <title>Sidebar Static Default - Sleek Admin Dashboard Template</title>
 
   <!-- GOOGLE FONTS -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500|Poppins:400,500,600,700|Roboto:400,500" rel="stylesheet" />
@@ -517,7 +517,7 @@
                         
                         
                           
-                            <li  class="active" >
+                            <li >
                               <a class="sidenav-item-link" href="customization.html">
                                 <span class="nav-text">Customization</span>
                                 
@@ -568,12 +568,12 @@
 
                         
                         
-                        <li  class="has-sub" >
+                        <li  class="has-sub active expand" >
                           <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#sidebar-navs"
                             aria-expanded="false" aria-controls="sidebar-navs">
                             <span class="nav-text">Sidebar Variations</span> <b class="caret"></b>
                           </a>
-                          <ul  class="collapse"  id="sidebar-navs">
+                          <ul  class="collapse show"  id="sidebar-navs">
                             <div class="sub-menu">
                               
                               <li >
@@ -588,7 +588,7 @@
                                 <a href="sidebar-fixed-offcanvas.html">Sidebar Fixed Offcanvas</a>
                               </li>
                               
-                              <li >
+                              <li  class="active" >
                                 <a href="sidebar-static-default.html">Sidebar Static Default</a>
                               </li>
                               
@@ -782,52 +782,23 @@
 
 
       <div class="content-wrapper">
-        <div class="content">              <div class="row">
-                <div class="col-lg-12">
-                  <div class="card card-default text-dark">
-                    <div class="card-header">
-                      <h1>Customization</h1>
-                    </div>
-                    <div class="card-body pt-4">
-                      <h2 class="mt-2 mb-2">File Structure</h2>
-                      <p>Within the download you'll find the following directories and files:</p>
-
-<pre class="border-0 mt-3">
-
-|dist/ (Distrubution only)
-|--- assets/
-| |--- css/ (CSS files)
-| |--- img/ (All images)
-| |--- js/ (All images)
-| |--- options/ (for theme option files)
-| |--- plugins/ (for all necessary plugins)
-| |--- scss/ (SCSS files)
-|--- All html files (index.html, card.html etc.
-
-</pre>
-                      <h2 class="mt-5 mb-2">Customizing Style</h2>
-                      <p>There are 2 basic ways to customize your theme...</p>
-
-                      <h3 class="mt-4 mb-2">i. Compiled CSS</h3>
-                      <p>If you want to use <em>Sleek Dashboard</em> "as is", or only need limited customization, feel free to simply include the compiled
-                      <code>sleek.css</code> or <code>sleek.min.css</code> file located in the <code>dist/assets/css</code> directory.</p>
-
-                      <h3 class="mt-4 mb-2">ii. Customizing SCSS</h3>
-                      <p>This is more versatile and sustainable way to customize <em>Sleek Dashboard</em>. The 2 major benefits of this strategy are using
-                      variable overrides (<code>_variables.scss</code>) to easily customize theme styles, plus you never have to touch
-                      Bootstrap source, meaning future updates will be much, much, simpler.</p>
-
-
-                      <div class="mt-5">
-                        <a class="btn btn-square btn-primary float-left" href="/quick-start.html"><i
-                            class="mdi mdi-chevron-left"></i> Quick Start</a>
-                      </div>
-
-
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <div class="content"><div class="row">
+  <div class="col-lg-12">
+    <div class="card card-default">
+      <div class="card-header  justify-content-between">
+        <h2>Sidebar Static Default</h2>
+      </div>
+      <div class="card-body">
+        <blockquote class="blockquote">
+          <p class="mb-0">Add class
+            <code>sidebar-static</code> to
+            <code>&lt;body id="body"&gt;</code> like below.</p>
+        </blockquote>
+        <pre class="mt-4"><code>&lt;body id="body" class="sidebar-static"&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 
         
