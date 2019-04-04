@@ -258,7 +258,7 @@
         "child": [
           {
             "name": "invoice",
-            "label": "invoice",
+            "label": "Invoice",
             "link": "invoice.html"
           },
           {
