@@ -47,7 +47,7 @@ $(document).ready(function() {
           height: "100%",
           color: "#999",
           size: "5px",
-          wheelStep: 10
+          touchScrollStep: 50
         })
         .mouseover(function () {
           $(this)
@@ -140,7 +140,6 @@ $(document).ready(function() {
   }
 
   if(toaster.length != 0){
-    
     if (document.dir != "rtl") {
       callToaster("toast-top-right");
     } else {

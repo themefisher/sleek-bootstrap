@@ -21,7 +21,7 @@ $(document).ready(function () {
       height: "100%",
       color: "#808080",
       size: "5px",
-      wheelStep: 10
+      touchScrollStep: 50
     })
       .mouseover(function () {
         $(this)
