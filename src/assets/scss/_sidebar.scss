@@ -340,6 +340,9 @@
       opacity: 0;
     }
   }
+  .sidebar-scrollbar {
+    overflow: unset !important;
+  }
 }
 
 
@@ -399,6 +402,9 @@
     visibility: visible;
     opacity: 1;
     @include transition(opacity .3s ease-in-out .15s);
+  }
+  .sidebar-scrollbar {
+    overflow: hidden !important;
   }
 }
 
@@ -543,6 +549,17 @@
       }
     }
   }
+  .sidebar-with-footer {
+      @include media-breakpoint-up(md){
+        padding-bottom: 209px;
+      }
+      .sidebar-footer {
+        @include media-breakpoint-up(md){
+          position: absolute;
+          bottom: 0;
+        }
+      }
+    }
 }
 
 .sidebar-fixed-offcanvas {
