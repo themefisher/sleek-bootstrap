@@ -364,7 +364,8 @@
 /* light Header */
 
 .header-light .navbar {
-  background-color: $white;
+  // background-color: $white;
+  background-color: $success;
   .sidebar-toggle {
     border-color: $border-color;
   }

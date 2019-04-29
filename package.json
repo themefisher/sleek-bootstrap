@@ -41,9 +41,9 @@
     "build:demo": "bundle exec jekyll build --config _config.yaml,_config.demo.yaml",
     "dist": "npm-run-all clean:dist build css:build js js:min site:copy",
     "clean:dist": "rm -rf dist",
-    "css": "node-sass src/assets/scss/sleek.scss _site/assets/css/sleek.css --source-map true && npm run rtl",
-    "css:watch": "npm run css && node-sass -w src/assets/scss/sleek.scss _site/assets/css/sleek.css --source-map true",
-    "css:prod": "node-sass src/assets/scss/sleek.scss _site/assets/css/sleek.min.css --output-style=compressed && npm run rtl:prod",
+    "css": "node-sass scss/sleek.scss _site/assets/css/sleek.css --source-map true && npm run rtl",
+    "css:watch": "npm run css && node-sass -w scss/sleek.scss _site/assets/css/sleek.css --source-map true",
+    "css:prod": "node-sass scss/sleek.scss _site/assets/css/sleek.min.css --output-style=compressed && npm run rtl:prod",
     "rtl": "rtlcss _site/assets/css/sleek.css",
     "rtl:prod": "rtlcss _site/assets/css/sleek.min.css",
     "css:build": "npm-run-all css css:prod",
@@ -54,11 +54,11 @@
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "jquery": "^3.3.1",
+    "jquery": "^3.4.0",
     "popper.js": "^1.14.6"
   },
   "devDependencies": {
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.12.0",
     "npm-run-all": "^4.1.5",
     "rollup": "^1.1.2",
     "rollup-plugin-commonjs": "^9.2.0",
