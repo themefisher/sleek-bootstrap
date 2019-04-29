@@ -21,7 +21,7 @@ $(document).ready(function () {
       height: "100%",
       color: "#808080",
       size: "5px",
-      wheelStep: 10
+      touchScrollStep: 50
     })
       .mouseover(function () {
         $(this)
@@ -30,21 +30,18 @@ $(document).ready(function () {
       });
   }
 
-  /*======== 2. BACKDROP ========*/
+  /*======== 2. MOBILE OVERLAY ========*/
   if ($(window).width() < 768) {
-    var shadowClass = $(".mobile-sticky-body-overlay");
-    if (shadowClass.length != 0) {
-      $(".sidebar-toggle").on("click", function () {
-        shadowClass.addClass("active");
-        $("body").css("overflow", "hidden");
-      });
+    $(".sidebar-toggle").on("click", function () {
+      $("body").css("overflow", "hidden");
+      $('body').prepend('<div class="mobile-sticky-body-overlay"></div>')
+    });
 
-      shadowClass.on("click", function (e) {
-        $(this).removeClass("active");
-        $("#body").removeClass("sidebar-minified").addClass("sidebar-minified-out");
-        $("body").css("overflow", "auto");
-      });
-    }
+    $(document).on("click", '.mobile-sticky-body-overlay', function (e) {
+      $(this).remove();
+      $("#body").removeClass("sidebar-mobile-in").addClass("sidebar-mobile-out");
+      $("body").css("overflow", "auto");
+    });
   }
 
   /*======== 3. SIDEBAR MENU ========*/
@@ -63,23 +60,19 @@ $(document).ready(function () {
 
   /*======== 4. SIDEBAR TOGGLE FOR MOBILE ========*/
   if ($(window).width() < 768) {
-
-    var sidebarToggle = $(".sidebar-toggle");
-    if(sidebarToggle.length != 0){
-      $(document).on("click", ".sidebar-toggle", function (e) {
-        e.preventDefault();
-        var min = "sidebar-minified",
-          min_out = "sidebar-minified-out",
-          body = "#body";
-        $(body).hasClass(min)
-          ? $(body)
-            .removeClass(min)
-            .addClass(min_out)
-          : $(body)
-            .addClass(min)
-            .removeClass(min_out)
-      });
-    }
+    $(document).on("click", ".sidebar-toggle", function (e) {
+      e.preventDefault();
+      var min = "sidebar-mobile-in",
+        min_out = "sidebar-mobile-out",
+        body = "#body";
+      $(body).hasClass(min)
+        ? $(body)
+          .removeClass(min)
+          .addClass(min_out)
+        : $(body)
+          .addClass(min)
+          .removeClass(min_out)
+    });
   }
 
   /*======== 5. SIDEBAR TOGGLE FOR VARIOUS SIDEBAR LAYOUT ========*/

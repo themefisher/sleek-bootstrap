@@ -7,5 +7,6 @@ debug.log
 npm-debug.log
 node_modules
 vendors
+vendor
 demo
 _site
