@@ -12,7 +12,7 @@ const globals = {
 }
 
 module.exports = {
-  input: path.resolve(__dirname, 'src/assets/js/index.js'),
+  input: path.resolve(__dirname, 'js/index.js'),
   output: {
     file: path.resolve(__dirname, `_site/assets/js/sleek.bundle.js`),
     format: 'umd',
