@@ -47,7 +47,7 @@
     "rtl": "rtlcss _site/assets/css/sleek.css",
     "rtl:prod": "rtlcss _site/assets/css/sleek.min.css",
     "css:build": "npm-run-all css css:prod",
-    "site:copy": "cp -rf _site/ dist/ && cp -r src/assets/scss/ dist/assets/scss/",
+    "site:copy": "cp -rf _site/ dist/",
     "js": "rollup -c --sourcemap",
     "js:watch": "rollup -c --sourcemap -w",
     "js:min": "uglifyjs _site/assets/js/sleek.bundle.js --output _site/assets/js/sleek.bundle.min.js"
