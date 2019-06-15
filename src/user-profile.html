@@ -69,17 +69,17 @@ plugins: [date_range_picker]
 										<div class="profile-content-right py-5">
 											<ul class="nav nav-tabs px-3 px-xl-5 nav-style-border" id="myTab" role="tablist">
 												<li class="nav-item">
-													<a class="nav-link active" id="timeline-tab" data-toggle="tab" href="#timeline" role="tab" aria-controls="timeline" aria-selected="true">Timeline</a>
+													<a class="nav-link" id="timeline-tab" data-toggle="tab" href="#timeline" role="tab" aria-controls="timeline" aria-selected="true">Timeline</a>
 												</li>
 												<li class="nav-item">
 													<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
 												</li>
 												<li class="nav-item">
-													<a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Settings</a>
+													<a class="nav-link active" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Settings</a>
 												</li>
 											</ul>
 											<div class="tab-content px-3 px-xl-5" id="myTabContent">
-												<div class="tab-pane fade show active" id="timeline" role="tabpanel" aria-labelledby="timeline-tab">
+												<div class="tab-pane fade" id="timeline" role="tabpanel" aria-labelledby="timeline-tab">
 													<div class="media mt-5 profile-timeline-media">
 														<div class="align-self-start iconbox-45 overflow-hidden mr-3">
 															<img  src="assets/img/user/u3.jpg" alt="Generic placeholder image">
@@ -350,7 +350,69 @@ plugins: [date_range_picker]
                           </div>
 
                         </div>
-												<div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">...</div>
+												<div class="tab-pane fade show active" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+                          <div class="mt-5">
+                            <div class="media mb-5">
+                              <div class="media-image mr-3 rounded-circle">
+                                <a href="profile.html"><img class="rounded-circle w-45" src="assets/img/user/u6.jpg" alt="customer image"></a>
+                              </div>
+                              <div class="media-body align-self-center">
+                                <a href="profile.html">
+                                  <h6 class="mt-0 text-dark font-weight-medium">Albrecht Straub</h6>
+                                </a>
+                                <small>@selena.oi</small>
+                              </div>
+                            </div>
+                            <form>
+                              <div class="row mb-2">
+                                <div class="col-lg-6">
+                                  <div class="form-group">
+                                    <label for="firstName">First name</label>
+                                    <input type="text" class="form-control" id="firstName" value="Albrecht">
+                                  </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                  <div class="form-group">
+                                    <label for="lastName">Last name</label>
+                                    <input type="text" class="form-control" id="lastName" value="Straub">
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="form-group mb-4">
+                                <label for="userName">User name</label>
+                                <input type="text" class="form-control" id="userName" value="Straub">
+                                <span class="d-block mt-1">Accusamus nobis at omnis consequuntur culpa tempore saepe animi.</span>
+                              </div>
+
+                              <div class="form-group mb-4">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" value="albrecht.straub@gmail.com">
+                              </div>
+
+                              <div class="form-group mb-4">
+                                <label for="oldPassword">Old password</label>
+                                <input type="password" class="form-control" id="oldPassword">
+                              </div>
+
+                              <div class="form-group mb-4">
+                                <label for="newPassword">New password</label>
+                                <input type="password" class="form-control" id="newPassword">
+                              </div>
+
+                              <div class="form-group mb-4">
+                                <label for="conPassword">Confirm password</label>
+                                <input type="password" class="form-control" id="conPassword">
+                              </div>
+
+                              <div class="d-flex justify-content-end mt-6">
+                                <button type="submit" class="btn btn-primary mb-2 btn-pill">Update Profile</button>
+                              </div>
+
+                            </form>
+                          </div>
+                        </div>
 											</div>
 										</div>
 									</div>
