@@ -352,18 +352,17 @@ plugins: [date_range_picker]
                         </div>
 												<div class="tab-pane fade show active" id="settings" role="tabpanel" aria-labelledby="settings-tab">
                           <div class="mt-5">
-                            <div class="media mb-5">
-                              <div class="media-image mr-3 rounded-circle">
-                                <a href="profile.html"><img class="rounded-circle w-45" src="assets/img/user/u6.jpg" alt="customer image"></a>
-                              </div>
-                              <div class="media-body align-self-center">
-                                <a href="profile.html">
-                                  <h6 class="mt-0 text-dark font-weight-medium">Albrecht Straub</h6>
-                                </a>
-                                <small>@selena.oi</small>
-                              </div>
-                            </div>
                             <form>
+                              <div class="form-group row mb-6">
+                                <label for="coverImage" class="col-sm-4 col-lg-2 col-form-label">User Image</label>
+                                <div class="col-sm-8 col-lg-10">
+                                  <div class="custom-file mb-1">
+                                    <input type="file" class="custom-file-input" id="coverImage" required>
+                                    <label class="custom-file-label" for="coverImage">Choose file...</label>
+                                    <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                  </div>
+                                </div>
+                              </div>
                               <div class="row mb-2">
                                 <div class="col-lg-6">
                                   <div class="form-group">
@@ -406,7 +405,7 @@ plugins: [date_range_picker]
                                 <input type="password" class="form-control" id="conPassword">
                               </div>
 
-                              <div class="d-flex justify-content-end mt-6">
+                              <div class="d-flex justify-content-end mt-5">
                                 <button type="submit" class="btn btn-primary mb-2 btn-pill">Update Profile</button>
                               </div>
 
