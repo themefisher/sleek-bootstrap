@@ -1,54 +1,57 @@
 <div class="theme-option">
-  <div class="theme-option-switcher">
-    <div class="theme-option-close-btn">
-      <i class="mdi mdi-window-close"></i>
+    <div class="theme-option-switcher">
+      <div class="slim-scroll-layout-settings">
+      <div class="theme-option-close-btn">
+        <i class="mdi mdi-window-close"></i>
+      </div>
+      <div class="theme-option-swticher-header">
+        <h2 class="theme-option-switcher-heading">Layout Settings</h2>
+        <p>User Interface settings</p>
+      </div>
+      <div class="theme-option-swticher-body">
+
+        <span class="theme-subtitle">Header Layout</span>
+        <div class="no-col-space">
+          <a href="javascript:void(0);" class="theme-btn header-fixed-to theme-active-switcher-btn">Fixed</a>
+          <a href="javascript:void(0);" class="theme-btn header-static-to">Static</a>
+        </div>
+
+        <span class="theme-subtitle">Sidebar Layout</span>
+        <div class="no-col-space">
+          <select class="theme-select" id="sidebar-option-select">
+            <option value="sidebar-fixed">Fixed Default</option>
+            <option value="sidebar-fixed-minified">Fixed Minified</option>
+            <option value="sidebar-fixed-offcanvas">Fixed Offcanvas</option>
+            <option value="sidebar-static">Static Default</option>
+            <option value="sidebar-static-minified">Static Minified</option>
+            <option value="sidebar-static-offcanvas">Static Offcanvas</option>
+          </select>
+        </div>
+
+        <span class="theme-subtitle">Header Background</span>
+        <div class="no-col-space">
+          <a href="javascript:void(0);" class="theme-btn theme-active-switcher-btn header-light-to">Light</a>
+          <a href="javascript:void(0);" class="theme-btn header-dark-to">Dark</a>
+        </div>
+
+        <span class="theme-subtitle">Navigation Background</span>
+        <div class="no-col-space">
+          <a href="javascript:void(0);" class="theme-btn theme-active-switcher-btn sidebar-dark-to">Dark</a>
+          <a href="javascript:void(0);" class="theme-btn sidebar-light-to">Light</a>
+        </div>
+
+        <span class="theme-subtitle">Direction</span>
+        <div class="no-col-space">
+          <a href="javascript:void(0);" class="theme-btn theme-active-switcher-btn ltr-to">LTR</a>
+          <a href="javascript:void(0);" class="theme-btn rtl-to">RTL</a>
+        </div>
+        <div style="display: flex; justify-content: center; padding-top: 30px">
+          <div id="reset-options" style="width: auto; cursor: pointer" class="theme-btn theme-active-switcher-btn">Reset
+            Settings</div>
+        </div>
+      </div>
+
     </div>
-    <div class="theme-option-swticher-header">
-      <h2 class="theme-option-switcher-heading">Layout Settings</h2>
-      <p>User Interface settings</p>
-    </div>
-    <div class="theme-option-swticher-body slim-scroll">
-
-      <span class="theme-subtitle">Header Layout</span>
-      <div class="no-col-space">
-        <a href="javascript:void(0);" class="theme-btn header-fixed-to theme-active-switcher-btn">Fixed</a>
-        <a href="javascript:void(0);" class="theme-btn header-static-to">Static</a>
-      </div>
-
-      <span class="theme-subtitle">Sidebar Layout</span>
-      <div class="no-col-space">
-        <select class="theme-select" id="sidebar-option-select">
-          <option value="sidebar-fixed">Fixed Default</option>
-          <option value="sidebar-fixed-minified">Fixed Minified</option>
-          <option value="sidebar-fixed-offcanvas">Fixed Offcanvas</option>
-          <option value="sidebar-static">Static Default</option>
-          <option value="sidebar-static-minified">Static Minified</option>
-          <option value="sidebar-static-offcanvas">Static Offcanvas</option>
-        </select>
-      </div>
-
-      <span class="theme-subtitle">Header Background</span>
-      <div class="no-col-space">
-        <a href="javascript:void(0);" class="theme-btn theme-active-switcher-btn header-light-to">Light</a>
-        <a href="javascript:void(0);" class="theme-btn header-dark-to">Dark</a>
-      </div>
-
-      <span class="theme-subtitle">Navigation Background</span>
-      <div class="no-col-space">
-        <a href="javascript:void(0);" class="theme-btn theme-active-switcher-btn sidebar-dark-to">Dark</a>
-        <a href="javascript:void(0);" class="theme-btn sidebar-light-to">Light</a>
-      </div>
-
-      <span class="theme-subtitle">Direction</span>
-      <div class="no-col-space">
-        <a href="javascript:void(0);" class="theme-btn theme-active-switcher-btn ltr-to">LTR</a>
-        <a href="javascript:void(0);" class="theme-btn rtl-to">RTL</a>
-      </div>
-      <div style="display: flex; justify-content: center; padding-top: 30px">
-        <div id="reset-options" style="width: auto; cursor: pointer" class="theme-btn theme-active-switcher-btn">Reset
-          Settings</div>
-      </div>
-    </div>
-
   </div>
+
 </div>

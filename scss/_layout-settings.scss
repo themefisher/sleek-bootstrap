@@ -24,7 +24,7 @@
 	right: 0;
 	top: 77px;
 	border: 1px solid $border-color;
-	width: 315px;
+	width: 315px !important;
 	display: block;
 	z-index: 555555;
 	position: fixed;
@@ -36,17 +36,13 @@
 	-webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   .theme-option-switcher-heading {
-    // color: #fff;
     font-size: 1.25rem;
     font-weight: 200;
   }
   .theme-option-swticher-header {
     padding: 20px 30px;
     border-radius: 4px 4px 0 0 !important;
-    // background-color: #363636;
-    // width: 260px;
     display: block;
-    // margin: 20px auto;
     border-bottom: 1px solid $border-color;
     color: $dark;
     text-align: center;
@@ -184,58 +180,40 @@
 	font-weight: 600;
 }
 
-.theme-option-switcher .body-background{
-	margin-top: 25px;
-}
+// .theme-option-switcher .body-background{
+// 	margin-top: 25px;
+// }
 
-.theme-option-switcher li.pattern-default {
-	background: url("pattern1.png") center repeat;
-}
+// .theme-option-switcher li.pattern-default {
+// 	background: url("pattern1.png") center repeat;
+// }
 
-.theme-option-switcher li.pattern1 {
-	background: url("pattern2.png") center repeat;
-}
+// .theme-option-switcher li.pattern1 {
+// 	background: url("pattern2.png") center repeat;
+// }
 
-.theme-option-switcher li.pattern2 {
-	background: url("pattern3.png") center repeat;
-}
+// .theme-option-switcher li.pattern2 {
+// 	background: url("pattern3.png") center repeat;
+// }
 
-.theme-option-switcher li.pattern3 {
-	background: url("pattern4.png") center repeat;
-}
+// .theme-option-switcher li.pattern3 {
+// 	background: url("pattern4.png") center repeat;
+// }
 
-.theme-option-switcher li.pattern4 {
-	background: url("pattern5.png") center repeat;
-}
+// .theme-option-switcher li.pattern4 {
+// 	background: url("pattern5.png") center repeat;
+// }
 
-.theme-option-switcher li.pattern5 {
-	background: url("pattern5.png") center repeat;
-}
+// .theme-option-switcher li.pattern5 {
+// 	background: url("pattern5.png") center repeat;
+// }
 
-.theme-option-switcher li.pattern6 {
-	background: url("pattern6.png") center repeat;
-}
+// .theme-option-switcher li.pattern6 {
+// 	background: url("pattern6.png") center repeat;
+// }
 
-.theme-option-switcher li.pattern7 {
-	background: url("pattern7.png") center repeat;
-}
+// .theme-option-switcher li.pattern7 {
+// 	background: url("pattern7.png") center repeat;
+// }
 
-/* Theme Option RTL */
-html[dir="rtl"] .theme-option-switcher {
-  right: unset;
-  left: 0;
-  -webkit-transform: translateX(-100%);
-	transform: translateX(-100%);
-}
-html[dir="rtl"] .theme-option-visible {
-  -webkit-transform: translateX(0%);
-	transform: translateX(0%);
-}
-html[dir="rtl"] .theme-option-switcher-btn {
-  right: -40px;
-  border-bottom-left-radius: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
-}
 
