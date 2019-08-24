@@ -55,11 +55,16 @@
 
 
 
-    $('.theme-option-switcher-btn').on('click', function () {
+    $('.layout-setting').on('click', function () {
       'use strict';
-      $(this).toggleClass('theme-cross');
+      // $(this).toggleClass('theme-cross');
       jQuery('.theme-option-switcher').toggleClass('theme-option-visible');
     });
+
+    //THEME OPTION CLOSE BUTTON
+    $('.theme-option-close-btn').on('click', function(){
+      jQuery('.theme-option-switcher').removeClass('theme-option-visible');
+    })
 
     //VARIABLE
     var body = jQuery('#body');
