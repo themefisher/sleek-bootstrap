@@ -1,8 +1,7 @@
 
 (function(){
+  'use strict';
   $(document).ready(function () {
-
-    //Option Switcher
 
     // Store object for local storage data
     var currentOptions = {
@@ -53,17 +52,14 @@
       localStorage.setItem("optionsObject", JSON.stringify(currentOptions));
     }
 
-
-
+    //Layout settings visible
     $('.layout-setting').on('click', function () {
-      'use strict';
-      // $(this).toggleClass('theme-cross');
-      jQuery('.theme-option-switcher').toggleClass('theme-option-visible');
+      jQuery('.layout-settings-container').addClass('layout-settings-visible');
     });
 
     //THEME OPTION CLOSE BUTTON
-    $('.theme-option-close-btn').on('click', function(){
-      jQuery('.theme-option-switcher').removeClass('theme-option-visible');
+    $('.layout-settings-close-btn').on('click', function(){
+      jQuery('.layout-settings-container').removeClass('layout-settings-visible');
     })
 
     //VARIABLE
