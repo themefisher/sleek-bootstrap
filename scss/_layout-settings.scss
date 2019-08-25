@@ -15,9 +15,9 @@
 	-webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   .layout-settings-close-btn {
-    top: 20px;
-    right: 10px;
-    transform: translateY(-50%);
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
     position: absolute;
     border-bottom-left-radius: 6px;
     border-top-left-radius: 6px;
@@ -40,7 +40,6 @@
     border-radius: 0 0 !important;
     display: block;
     color: $dark;
-    text-align: center;
     position: relative;
     background-color: $primary;
     p {
