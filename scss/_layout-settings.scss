@@ -92,7 +92,7 @@
 
   /* Theme Subtitle */
   .layout-subtitle {
-    color: $dark;
+    color: lighten($secondary, 10);
     font-size: 16px;
     display: block;
     margin-bottom: 15px;
