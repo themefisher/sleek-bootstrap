@@ -51,7 +51,7 @@
   }
 
   /* Theme Button */
-  .theme-btn {
+  .btn-layout {
     color: $secondary;
     font-size: 13px;
     text-transform: uppercase;
@@ -76,7 +76,7 @@
   }
 
   /* Theme Button Active */
-  .theme-btn.theme-active-switcher-btn {
+  .btn-layout.btn-layout-active {
     background-color: $secondary;
     color: $white;
     text-decoration: none;
@@ -92,7 +92,7 @@
   }
 
   /* Theme Subtitle */
-  .theme-subtitle {
+  .layout-subtitle {
     color: $dark;
     font-size: 16px;
     display: block;
