@@ -178,7 +178,7 @@
           }
           @include media-breakpoint-up(lg) {
             padding-right: .25rem;
-            padding-left: .25rem;
+            padding-left: 1rem;
           }
           @include media-breakpoint-up(xl) {
             padding-right: 1rem;
@@ -195,6 +195,9 @@
       }
       .notifications-menu {
         @include media-breakpoint-up(lg) {
+          min-width: 60px;
+        }
+        @include media-breakpoint-up(xl) {
           min-width: 70px;
         }
         .dropdown-toggle {
@@ -235,6 +238,20 @@
             width: 300px;
             right: 0px;
           }
+        }
+      }
+      .right-sidebar-2-menu {
+        text-align: center;
+        cursor: pointer;
+        border-right: 1px solid $border-color;
+        min-width: 60px;
+        @include media-breakpoint-up(xl) {
+          min-width: 70px;
+        }
+        i {
+          font-size: 1.5rem;
+          color: rgba($secondary, .7);
+          line-height: 75px;
         }
       }
     }
@@ -358,6 +375,9 @@
   }
   .navbar-right .navbar-nav .user-menu .dropdown-toggle>span {
     color: $secondary;
+  }
+  .navbar-right .navbar-nav .right-sidebar-2-menu {
+    border-color: rgba($white, 0.2);
   }
 }
 
