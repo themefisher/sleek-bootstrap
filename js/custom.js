@@ -152,7 +152,7 @@ $(document).ready(function() {
   NProgress.done();
 
   /*======== 6. PROGRESS BAR ========*/
-  $('.slim-scroll-layout-settings').slimScroll({
+  $('.slim-scroll-right-sidebar-2').slimScroll({
     opacity: 0,
     height: '100%',
     color: "#999",

@@ -54,12 +54,12 @@
 
     //Layout settings visible
     $('.layout-setting').on('click', function () {
-      jQuery('.layout-settings-container').addClass('layout-settings-visible');
+      jQuery('.right-sidebar-container-2').addClass('layout-settings-visible');
     });
 
     //THEME OPTION CLOSE BUTTON
-    $('.layout-settings-close-btn').on('click', function(){
-      jQuery('.layout-settings-container').removeClass('layout-settings-visible');
+    $('.btn-close-right-sidebar-2').on('click', function(){
+      jQuery('.right-sidebar-container-2').removeClass('layout-settings-visible');
     })
 
     //VARIABLE
@@ -72,8 +72,8 @@
     //NAVBAR OPTION
     header_static.click(function () {
       'use strict';
-      jQuery(this).addClass('btn-layout-active');
-      header_fixed.removeClass('btn-layout-active');
+      jQuery(this).addClass('btn-right-sidebar-2-active');
+      header_fixed.removeClass('btn-right-sidebar-2-active');
       body.removeClass('header-fixed')
       body.addClass('header-static')
 
@@ -88,8 +88,8 @@
 
     header_fixed.click(function () {
       'use strict';
-      jQuery(this).addClass('btn-layout-active');
-      header_static.removeClass('btn-layout-active');
+      jQuery(this).addClass('btn-right-sidebar-2-active');
+      header_static.removeClass('btn-right-sidebar-2-active');
       body.removeClass('header-static')
       body.addClass('header-fixed')
       //Store in local storage
@@ -199,8 +199,8 @@
 
     header_dark.click(function () {
       'use strict';
-      jQuery(this).addClass('btn-layout-active');
-      header_light.removeClass('btn-layout-active');
+      jQuery(this).addClass('btn-right-sidebar-2-active');
+      header_light.removeClass('btn-right-sidebar-2-active');
       body.removeClass('header-light').addClass('header-dark');
 
       //Store in local storage
@@ -214,8 +214,8 @@
 
     header_light.click(function () {
       'use strict';
-      jQuery(this).addClass('btn-layout-active');
-      header_dark.removeClass('btn-layout-active');
+      jQuery(this).addClass('btn-right-sidebar-2-active');
+      header_dark.removeClass('btn-right-sidebar-2-active');
       body.removeClass('header-dark').addClass('header-light');
 
       //Store in local storage
@@ -233,8 +233,8 @@
 
     sidebar_dark.click(function () {
       'use strict';
-      jQuery(this).addClass('btn-layout-active');
-      sidebar_light.removeClass('btn-layout-active');
+      jQuery(this).addClass('btn-right-sidebar-2-active');
+      sidebar_light.removeClass('btn-right-sidebar-2-active');
       body.removeClass('sidebar-light').addClass('sidebar-dark');
 
       //Store in local storage
@@ -248,8 +248,8 @@
 
     sidebar_light.click(function () {
       'use strict';
-      jQuery(this).addClass('btn-layout-active');
-      sidebar_dark.removeClass('btn-layout-active');
+      jQuery(this).addClass('btn-right-sidebar-2-active');
+      sidebar_dark.removeClass('btn-right-sidebar-2-active');
       body.removeClass('sidebar-dark').addClass('sidebar-light');
 
       //Store in local storage
@@ -268,8 +268,8 @@
 
     ltr.click(function () {
       'use strict';
-      jQuery(this).addClass('btn-layout-active');
-      rtl.removeClass('btn-layout-active');
+      jQuery(this).addClass('btn-right-sidebar-2-active');
+      rtl.removeClass('btn-right-sidebar-2-active');
       $('html').attr('dir', 'ltr')
       $("#sleek-css").attr("href", "assets/css/sleek.css");
       window.dir = 'ltr'
@@ -285,8 +285,8 @@
 
     rtl.click(function () {
       'use strict';
-      jQuery(this).addClass('btn-layout-active');
-      ltr.removeClass('btn-layout-active');
+      jQuery(this).addClass('btn-right-sidebar-2-active');
+      ltr.removeClass('btn-right-sidebar-2-active');
       $('html').attr('dir', 'rtl')
       $("#sleek-css").attr("href", "assets/css/sleek.rtl.css");
       window.dir = 'rtl'
