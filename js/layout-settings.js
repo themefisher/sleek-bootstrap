@@ -53,13 +53,13 @@
     }
 
     //Layout settings visible
-    $('.layout-setting').on('click', function () {
-      jQuery('.right-sidebar-container-2').addClass('layout-settings-visible');
+    $('.right-sidebar-in').on('click', function () {
+      jQuery('.right-sidebar-container-2').addClass('right-sidebar-2-visible');
     });
 
     //THEME OPTION CLOSE BUTTON
     $('.btn-close-right-sidebar-2').on('click', function(){
-      jQuery('.right-sidebar-container-2').removeClass('layout-settings-visible');
+      jQuery('.right-sidebar-container-2').removeClass('right-sidebar-2-visible');
     })
 
     //VARIABLE
