@@ -3,7 +3,7 @@
 ========================================= */
 
 .main-header {
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -328,9 +328,6 @@
 }
 
 @media (max-width: 767px) {
-  .main-header {
-    position: relative;
-  }
   .main-header .logo,
   .main-header .navbar {
     width: 100%;
@@ -345,12 +342,38 @@
 
 .header-fixed {
   .page-wrapper {
-    @include media-breakpoint-up(md) {
-      padding-top: 4.875rem;
-    }
+    padding-top: 4.875rem;
+  }
+  &.header-static-mobile {
     .main-header {
-      @include media-breakpoint-up(md) {
-        position: fixed; // padding-left: 15.6rem;
+      position: relative;
+      @include media-breakpoint-up(md){
+        position: fixed;
+      }      
+    }
+    .page-wrapper {
+      padding-top: 0;
+      @include media-breakpoint-up(md){
+        padding-top: 4.875rem;
+      }
+    }
+  }
+}
+
+/* Header Static */
+
+.header-static {
+  &.header-fixed-mobile {
+    .main-header {
+      position: fixed !important;
+      @include media-breakpoint-up(md){
+        position: relative !important;
+      }
+    }
+    .page-wrapper {
+      padding-top: 4.875rem;
+      @include media-breakpoint-up(md){
+        padding-top: 0;
       }
     }
   }
