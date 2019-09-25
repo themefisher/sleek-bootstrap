@@ -544,6 +544,7 @@
   }
   &.header-static {
     .main-header {
+      position: relative;
       @include media-breakpoint-up(md){
         padding-left: 0;
       }
