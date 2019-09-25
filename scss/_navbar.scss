@@ -338,7 +338,7 @@
 }
 
 
-/* Header Fix */
+/* Header Fix and Header Static For Mobile */
 
 .header-fixed {
   .page-wrapper {
@@ -360,7 +360,7 @@
   }
 }
 
-/* Header Static */
+/* Header Static and Header Fixed for Mobile */
 
 .header-static {
   &.header-fixed-mobile {
@@ -426,8 +426,4 @@
   }
 }
 
-/* Dropdown Menu */
 
-.dropdown-menu {
-  border: 1px solid $border-color;
-}
