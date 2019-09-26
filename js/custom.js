@@ -66,6 +66,15 @@ $(document).ready(function() {
     media.addListener(scrollWithBigMedia); // Attach listener function on state changes
   }
 
+  var chatLeftContent = $('#chat-left-content');
+  if(chatLeftContent.length != 0){
+    chatLeftContent.slimScroll({})
+  }
+  var chatRightContent = $('#chat-right-content');
+  if(chatRightContent.length != 0){
+    chatRightContent.slimScroll({})
+  }
+
   /*======== 3. TOOLTIPS AND POPOVER ========*/
   var tooltip = $('[data-toggle="tooltip"]')
   if(tooltip.length != 0){
