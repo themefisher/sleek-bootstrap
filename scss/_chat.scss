@@ -9,25 +9,19 @@
       padding-top: 1.5rem;
       padding-bottom: 1.5rem;
     }
-
     .slimScrollDiv {
-      height: 373px !important;
       overflow: auto;
-
-      @include media-breakpoint-up(xl) {
-        height: calc(100vh - 350px) !important;
-      }
     }
-
+    .slimScrollDiv,
     #chat-left-content {
-      position: relative;
       height: 373px !important;
-      overflow: auto;
-
+      @include media-breakpoint-up(lg){
+        height: calc(100vh - 320px) !important;
+      }
       @include media-breakpoint-up(xl) {
         height: calc(100vh - 350px) !important;
       }
-    }
+    }    
   }
 
   .chat-right-side {
@@ -37,22 +31,18 @@
       padding: 1.5rem;
     }
     .slimScrollDiv {
-      height: 373px !important;
       overflow: auto;
-
-      @include media-breakpoint-up(xl) {
-        height: calc(100vh - 350px) !important;
-      }
     }
+    .slimScrollDiv,
     #chat-right-content {
-      position: relative;
-      height: 325px !important;
-      overflow: auto;
-
-      @include media-breakpoint-up(xl) {
-        height: 100vh !important;
+      height: 373px !important;      
+      @include media-breakpoint-up(lg) {
+        height: calc(100vh - 395px) !important;
       }
-    }
+      @include media-breakpoint-up(xl) {
+        height: calc(100vh - 405px) !important;
+      }
+    }    
   }  
   
 }
