@@ -19,6 +19,18 @@
     ]
   },
   {
+    "name": "app",
+    "label": "App",
+    "iconClass": "mdi mdi-pencil-box-multiple",
+    "child": [
+      {
+        "name": "chat",
+        "label": "Chat",
+        "link": "chat.html"
+      }
+    ]
+  },
+  {
     "name": "ui-elements",
     "label": "UI Elements",
     "iconClass": "mdi mdi-folder-multiple-outline",

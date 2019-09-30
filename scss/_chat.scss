@@ -1,0 +1,48 @@
+// Chat 
+.chat {
+  border-radius: 50px;
+
+  .chat-left-side {
+    .chat-search {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+    .slimScrollDiv {
+      overflow: auto;
+    }
+    .slimScrollDiv,
+    #chat-left-content {
+      height: 373px !important;
+      @include media-breakpoint-up(lg){
+        height: calc(100vh - 320px) !important;
+      }
+      @include media-breakpoint-up(xl) {
+        height: calc(100vh - 350px) !important;
+      }
+    }    
+  }
+
+  .chat-right-side {
+    border-left: 1px solid $border-color;
+
+    .chat-right-content {
+      padding: 1.5rem;
+    }
+    .slimScrollDiv {
+      overflow: auto;
+    }
+    .slimScrollDiv,
+    #chat-right-content {
+      height: 373px !important;      
+      @include media-breakpoint-up(lg) {
+        height: calc(100vh - 395px) !important;
+      }
+      @include media-breakpoint-up(xl) {
+        height: calc(100vh - 405px) !important;
+      }
+    }    
+  }  
+  
+}
