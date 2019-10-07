@@ -62,6 +62,16 @@
       padding-right: 3.125rem;
     }
   }
+  &.contact{
+    a {
+      color: $secondary
+    }
+    .contact-details {
+      .small {
+        font-size: 0.875rem;
+      }
+    }
+  }
 }
 
 /*Card mini*/
