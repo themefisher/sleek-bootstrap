@@ -15,7 +15,8 @@ plugins: []
     {% include breadcrumb.htm %}
   </div>
   <div>
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="add-contact-modal"> Add Contact </button>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-add-contact"> Add Contact
+    </button>
   </div>
 </div>
 
@@ -39,11 +40,11 @@ plugins: []
               <i class="mdi mdi-phone mr-1"></i>
               <span>(123) 888 777 632</span>
             </li>
-          </ul>          
-          
+          </ul>
+
         </div>
       </a>
-      
+
     </div>
   </div>
   <div class="col-lg-6 col-xl-4">
@@ -66,10 +67,10 @@ plugins: []
               <span>(123) 888 777 632</span>
             </li>
           </ul>
-  
+
         </div>
       </a>
-  
+
     </div>
   </div>
   <div class="col-lg-6 col-xl-4">
@@ -92,10 +93,10 @@ plugins: []
               <span>(123) 888 777 632</span>
             </li>
           </ul>
-  
+
         </div>
       </a>
-  
+
     </div>
   </div>
   <div class="col-lg-6 col-xl-4">
@@ -118,10 +119,10 @@ plugins: []
               <span>(123) 888 777 632</span>
             </li>
           </ul>
-  
+
         </div>
       </a>
-  
+
     </div>
   </div>
   <div class="col-lg-6 col-xl-4">
@@ -144,10 +145,10 @@ plugins: []
               <span>(123) 888 777 632</span>
             </li>
           </ul>
-  
+
         </div>
       </a>
-  
+
     </div>
   </div>
   <div class="col-lg-6 col-xl-4">
@@ -170,10 +171,10 @@ plugins: []
               <span>(123) 888 777 632</span>
             </li>
           </ul>
-  
+
         </div>
       </a>
-  
+
     </div>
   </div>
   <div class="col-lg-6 col-xl-4">
@@ -196,10 +197,10 @@ plugins: []
               <span>(123) 888 777 632</span>
             </li>
           </ul>
-  
+
         </div>
       </a>
-  
+
     </div>
   </div>
   <div class="col-lg-6 col-xl-4">
@@ -222,10 +223,10 @@ plugins: []
               <span>(123) 888 777 632</span>
             </li>
           </ul>
-  
+
         </div>
       </a>
-  
+
     </div>
   </div>
   <div class="col-lg-6 col-xl-4">
@@ -248,10 +249,10 @@ plugins: []
               <span>(123) 888 777 632</span>
             </li>
           </ul>
-  
+
         </div>
       </a>
-  
+
     </div>
   </div>
   <div class="col-lg-6 col-xl-4">
@@ -274,10 +275,10 @@ plugins: []
               <span>(123) 888 777 632</span>
             </li>
           </ul>
-  
+
         </div>
       </a>
-  
+
     </div>
   </div>
   <div class="col-lg-6 col-xl-4">
@@ -300,10 +301,10 @@ plugins: []
               <span>(123) 888 777 632</span>
             </li>
           </ul>
-  
+
         </div>
       </a>
-  
+
     </div>
   </div>
   <div class="col-lg-6 col-xl-4">
@@ -326,36 +327,37 @@ plugins: []
               <span>(123) 888 777 632</span>
             </li>
           </ul>
-  
+
         </div>
       </a>
-  
+
     </div>
   </div>
-  
-  
+
+
 </div>
 
 
 <!-- Contact Modal -->
 <div class="modal fade" id="modal-contact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
   aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content">
-      <div class="modal-header justify-content-end border-bottom-0">        
+      <div class="modal-header justify-content-end border-bottom-0">
         <button type="button" class="btn-edit-icon" data-dismiss="modal" aria-label="Close">
           <i class="mdi mdi-pencil"></i>
         </button>
         <div class="dropdown">
-          <button class="btn-dots-icon" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button class="btn-dots-icon" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
             <i class="mdi mdi-dots-vertical"></i>
           </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
             <a class="dropdown-item" href="#">Action</a>
             <a class="dropdown-item" href="#">Another action</a>
             <a class="dropdown-item" href="#">Something else here</a>
           </div>
-        </div>        
+        </div>
         <button type="button" class="btn-close-icon" data-dismiss="modal" aria-label="Close">
           <i class="mdi mdi-close"></i>
         </button>
@@ -388,7 +390,7 @@ plugins: []
                   <p>Following</p>
                 </div>
               </div>
-        
+
             </div>
           </div>
           <div class="col-md-6">
@@ -400,26 +402,75 @@ plugins: []
               <p>+99 9539 2641 31</p>
               <p class="text-dark font-weight-medium pt-4 mb-2">Birthday</p>
               <p>Nov 15, 1990</p>
-              <p class="text-dark font-weight-medium pt-4 mb-2">Social Profile</p>
-              <p class="pb-3 social-button">
-                <a href="#" class="mb-1 btn btn-outline btn-twitter rounded-circle">
-                  <i class="mdi mdi-twitter"></i>
-                </a>
-                <a href="#" class="mb-1 btn btn-outline btn-linkedin rounded-circle">
-                  <i class="mdi mdi-linkedin"></i>
-                </a>
-                <a href="#" class="mb-1 btn btn-outline btn-facebook rounded-circle">
-                  <i class="mdi mdi-facebook"></i>
-                </a>
-                <a href="#" class="mb-1 btn btn-outline btn-skype rounded-circle">
-                  <i class="mdi mdi-skype"></i>
-                </a>
-              </p>
+              <p class="text-dark font-weight-medium pt-4 mb-2">Event</p>
+              <p>Lorem, ipsum dolor</p>
             </div>
           </div>
         </div>
       </div>
-      
+
+    </div>
+  </div>
+</div>
+
+<!-- Add Contact Button  -->
+<div class="modal fade" id="modal-add-contact" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <form >
+        <div class="modal-header px-4">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Create New Contact</h5>
+        </div>
+        <div class="modal-body px-4">
+
+          <div class="form-group row mb-6">
+            <label for="coverImage" class="col-sm-4 col-lg-2 col-form-label">User Image</label>
+            <div class="col-sm-8 col-lg-10">
+              <div class="custom-file mb-1">
+                <input type="file" class="custom-file-input" id="coverImage" required>
+                <label class="custom-file-label" for="coverImage">Choose file...</label>
+                <div class="invalid-feedback">Example invalid custom file feedback</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mb-2">
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label for="firstName">First name</label>
+                <input type="text" class="form-control" id="firstName" value="Albrecht">
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label for="lastName">Last name</label>
+                <input type="text" class="form-control" id="lastName" value="Straub">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group mb-4">
+            <label for="userName">User name</label>
+            <input type="text" class="form-control" id="userName" value="Doe">
+          </div>
+
+          <div class="form-group mb-4">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" value="albrecht.straub@gmail.com">
+          </div>
+          <div class="form-group mb-4">
+            <label for="event">Event</label>
+            <input type="text" class="form-control" id="event" value="Some value for event">
+          </div>
+
+        </div>
+        <div class="modal-footer px-4">
+          <button type="button" class="btn btn-secondary btn-pill" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary btn-pill">Save</button>
+        </div>
+      </form>
     </div>
   </div>
 </div>
