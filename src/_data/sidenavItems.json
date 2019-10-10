@@ -29,9 +29,9 @@
         "link": "chat.html"
       },
       {
-        "name": "contact",
-        "label": "Contact",
-        "link": "contact.html"
+        "name": "contacts",
+        "label": "Contacts",
+        "link": "contacts.html"
       }
     ]
   },
