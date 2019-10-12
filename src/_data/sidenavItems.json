@@ -27,6 +27,11 @@
         "name": "chat",
         "label": "Chat",
         "link": "chat.html"
+      },
+      {
+        "name": "contacts",
+        "label": "Contacts",
+        "link": "contacts.html"
       }
     ]
   },

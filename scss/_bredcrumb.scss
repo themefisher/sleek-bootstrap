@@ -6,6 +6,12 @@
     font-size: 1.63rem;
     font-weight: 500;
   }
+  &.breadcrumb-contacts {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 .breadcrumb {  
   .breadcrumb-item {
