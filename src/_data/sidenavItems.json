@@ -36,196 +36,205 @@
     ]
   },
   {
-    "name": "ui-elements",
-    "label": "UI Elements",
+    "name": "components",
+    "label": "Components",
     "iconClass": "mdi mdi-folder-multiple-outline",
     "child": [
       {
-        "name": "components",
-        "label": "Components",
-
-        "child": [
-          {
-            "name": "alert",
-            "label": "Alert",
-            "link": "alert.html"
-          },
-          {
-            "name": "badge",
-            "label": "Badge",
-            "link": "badge.html"
-          },
-          {
-            "name": "breadcrumb",
-            "label": "Breadcrumb",
-            "link": "breadcrumb.html"
-          },
-          {
-            "name": "buttons-default",
-            "label": "Button Default",
-            "link": "button-default.html"
-          },
-          {
-            "name": "button-dropdown",
-            "label": "Button Dropdown",
-            "link": "button-dropdown.html"
-          },
-          {
-            "name": "button-group",
-            "label": "Button Group",
-            "link": "button-group.html"
-          },
-          {
-            "name": "button-social",
-            "label": "Button Social",
-            "link": "button-social.html"
-          },
-          {
-            "name": "button-loading",
-            "label": "Button Loading",
-            "link": "button-loading.html"
-          },
-          {
-            "name": "card",
-            "label": "Card",
-            "link": "card.html"
-          },
-          {
-            "name": "carousel",
-            "label": "Carousel",
-            "link": "carousel.html"
-          },
-          {
-            "name": "collapse",
-            "label": "Collapse",
-            "link": "collapse.html"
-          },
-          {
-            "name": "list-group",
-            "label": "List Group",
-            "link": "list-group.html"
-          },
-          {
-            "name": "modal",
-            "label": "Modal",
-            "link": "modal.html"
-          },
-          {
-            "name": "pagination",
-            "label": "Pagination",
-            "link": "pagination.html"
-          },
-          {
-            "name": "popover-tooltip",
-            "label": "Popover & Tooltip",
-            "link": "popover-tooltip.html"
-          },
-          {
-            "name": "progress-bar",
-            "label": "Progress Bar",
-            "link": "progress-bar.html"
-          },
-          {
-            "name": "spinner",
-            "label": "Spinner",
-            "link": "spinner.html"
-          },
-          {
-            "name": "switcher",
-            "label": "Switcher",
-            "link": "switcher.html"
-          },
-          {
-            "name": "table",
-            "label": "Table",
-            "link": "table.html"
-          },
-          {
-            "name": "tab",
-            "label": "Tab",
-            "link": "tab.html"
-          }
-        ]
+        "name": "alert",
+        "label": "Alert",
+        "link": "alert.html"
       },
       {
-        "name": "icons",
-        "label": "Icons",
-        "child": [
-          {
-            "name": "material-icons",
-            "label": "Material Icon",
-            "link": "material-icon.html"
-          },
-          {
-            "name": "flag-icons",
-            "label": "Flag Icon",
-            "link": "flag-icon.html"
-          }
-        ]
+        "name": "badge",
+        "label": "Badge",
+        "link": "badge.html"
       },
       {
-        "name": "forms",
-        "label": "Forms",
-        "child": [
-          {
-            "name": "basic-input",
-            "label": "Basic Input",
-            "link": "basic-input.html"
-          },
-          {
-            "name": "input-group",
-            "label": "Input Group",
-            "link": "input-group.html"
-          },
-          {
-            "name": "checkbox-radio",
-            "label": "Checkbox & Radio",
-            "link": "checkbox-radio.html"
-          },
-          {
-            "name": "form-validation",
-            "label": "Form Validation",
-            "link": "form-validation.html"
-          },
-          {
-            "name": "form-advance",
-            "label": "Form Advance",
-            "link": "form-advance.html"
-          }
-        ]
+        "name": "breadcrumb",
+        "label": "Breadcrumb",
+        "link": "breadcrumb.html"
       },
       {
-        "name": "maps",
-        "label": "Maps",
-        "child": [
-          {
-            "name": "google-map",
-            "label": "Google Map",
-            "link": "google-map.html"
-          },
-          {
-            "name": "vector-map",
-            "label": "Vector Map",
-            "link": "vector-map.html"
-          }
-        ]
+        "name": "buttons-default",
+        "label": "Button Default",
+        "link": "button-default.html"
       },
       {
-        "name": "widgets",
-        "label": "Widgets",
-        "child": [
-          {
-            "name": "general-widget",
-            "label": "General Widget",
-            "link": "general-widget.html",
-            "tags": "maps, todos, profiles, notifications, customers, cards"
-          },
-          {
-            "name": "chart-widget",
-            "label": "Chart Widget",
-            "link": "chart-widget.html"
-          }
-        ]
+        "name": "button-dropdown",
+        "label": "Button Dropdown",
+        "link": "button-dropdown.html"
+      },
+      {
+        "name": "button-group",
+        "label": "Button Group",
+        "link": "button-group.html"
+      },
+      {
+        "name": "button-social",
+        "label": "Button Social",
+        "link": "button-social.html"
+      },
+      {
+        "name": "button-loading",
+        "label": "Button Loading",
+        "link": "button-loading.html"
+      },
+      {
+        "name": "card",
+        "label": "Card",
+        "link": "card.html"
+      },
+      {
+        "name": "carousel",
+        "label": "Carousel",
+        "link": "carousel.html"
+      },
+      {
+        "name": "collapse",
+        "label": "Collapse",
+        "link": "collapse.html"
+      },
+      {
+        "name": "list-group",
+        "label": "List Group",
+        "link": "list-group.html"
+      },
+      {
+        "name": "modal",
+        "label": "Modal",
+        "link": "modal.html"
+      },
+      {
+        "name": "pagination",
+        "label": "Pagination",
+        "link": "pagination.html"
+      },
+      {
+        "name": "popover-tooltip",
+        "label": "Popover & Tooltip",
+        "link": "popover-tooltip.html"
+      },
+      {
+        "name": "progress-bar",
+        "label": "Progress Bar",
+        "link": "progress-bar.html"
+      },
+      {
+        "name": "spinner",
+        "label": "Spinner",
+        "link": "spinner.html"
+      },
+      {
+        "name": "switcher",
+        "label": "Switcher",
+        "link": "switcher.html"
+      },
+      {
+        "name": "tab",
+        "label": "Tab",
+        "link": "tab.html"
+      }
+    ]
+  },
+  {
+    "name": "icons",
+    "label": "Icons",
+    "iconClass": "mdi mdi-diamond-stone",
+    "child": [
+      {
+        "name": "material-icons",
+        "label": "Material Icon",
+        "link": "material-icon.html"
+      },
+      {
+        "name": "flag-icons",
+        "label": "Flag Icon",
+        "link": "flag-icon.html"
+      }
+    ]
+  },
+  {
+    "name": "forms",
+    "label": "Forms",
+    "iconClass": "mdi mdi-email-mark-as-unread",
+    "child": [
+      {
+        "name": "basic-input",
+        "label": "Basic Input",
+        "link": "basic-input.html"
+      },
+      {
+        "name": "input-group",
+        "label": "Input Group",
+        "link": "input-group.html"
+      },
+      {
+        "name": "checkbox-radio",
+        "label": "Checkbox & Radio",
+        "link": "checkbox-radio.html"
+      },
+      {
+        "name": "form-validation",
+        "label": "Form Validation",
+        "link": "form-validation.html"
+      },
+      {
+        "name": "form-advance",
+        "label": "Form Advance",
+        "link": "form-advance.html"
+      }
+    ]
+  },
+  {
+    "name": "tables",
+    "label": "Tables",
+    "iconClass": "mdi mdi-table",
+    "child": [
+      {
+        "name": "basic-tables",
+        "label": "Basic Tables",
+        "link": "basic-tables.html"
+      },
+      {
+        "name": "data-tables",
+        "label": "Data Tables",
+        "link": "data-tables.html"
+      }
+    ]
+  },
+  {
+    "name": "maps",
+    "label": "Maps",
+    "iconClass": "mdi mdi-google-maps",
+    "child": [
+      {
+        "name": "google-map",
+        "label": "Google Map",
+        "link": "google-map.html"
+      },
+      {
+        "name": "vector-map",
+        "label": "Vector Map",
+        "link": "vector-map.html"
+      }
+    ]
+  },
+  {
+    "name": "widgets",
+    "label": "Widgets",
+    "iconClass": "mdi mdi-widgets",
+    "child": [
+      {
+        "name": "general-widget",
+        "label": "General Widget",
+        "link": "general-widget.html",
+        "tags": "maps, todos, profiles, notifications, customers, cards"
+      },
+      {
+        "name": "chart-widget",
+        "label": "Chart Widget",
+        "link": "chart-widget.html"
       }
     ]
   },
