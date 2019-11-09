@@ -221,3 +221,69 @@ tbody tr td:first-child {
     }
   }
 }
+
+/* Responsive Data Tables */
+.responsive-data-tables {
+  .table {
+    border-top: 0;
+    margin: 25px 0 !important;
+  }
+  .table-bordered thead th,
+  .table-bordered thead td {
+    border-bottom-width: 1px;
+  }
+
+  .dataTables_filter {
+    label {
+      margin-bottom: 0;
+      .form-control-sm {
+        height: 40px;
+      }
+    }
+  }
+
+  .dataTables_length {
+    margin-bottom: 30px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0;
+      padding-top: 5px;
+    }
+    label {
+      margin-bottom: 0;
+      .custom-select-sm {
+        height: 30px;
+        cursor: pointer;
+      }
+    }
+  }
+  
+  .dataTables_info {
+    margin-bottom: 30px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0;
+    }
+  }
+
+  .pagination {
+    margin: 0 !important;
+    .page-link {
+      padding: 8px;
+      @include media-breakpoint-up(md) {
+        padding: 18px;
+      }
+      @include media-breakpoint-up(xl) {
+        padding: 1rem 1.25rem;
+      }
+    }
+    .page-item:first-child .page-link,
+    .page-item:last-child .page-link {
+      height: 35px;
+      @include media-breakpoint-up(md) {
+        height: 55px;
+      }
+      @include media-breakpoint-up(xl) {
+        height: 51px;
+      }
+    }
+  }
+}
