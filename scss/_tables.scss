@@ -261,6 +261,14 @@ tbody tr td:first-child {
     margin-bottom: 30px;
     @include media-breakpoint-up(md) {
       margin-bottom: 0;
+      opacity: 0;
+    }
+    @include media-breakpoint-up(lg) {
+      padding-top: 1.2em !important;
+      opacity: 1;
+    }
+    @include media-breakpoint-up(xl) {
+      padding-top: 1em !important;
     }
   }
 
