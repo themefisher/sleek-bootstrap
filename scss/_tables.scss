@@ -233,6 +233,10 @@ tbody tr td:first-child {
     border-bottom-width: 1px;
   }
 
+  .table thead th {
+    border-bottom: 1px solid #e5e9f2;
+  }
+
   .dataTables_filter {
     label {
       margin-bottom: 0;
@@ -293,5 +297,27 @@ tbody tr td:first-child {
         height: 51px;
       }
     }
+
+    .disabled {
+      .page-link {
+        background-color: transparent !important;
+      }
+    }
+
+    #example_previous,
+    #example_next {
+      .page-link {
+        background-color: #e9ecef;
+      }
+    }
+  }
+
+  table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td:first-child:before,
+  table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th:first-child:before {
+    background-color: $success;
+  }
+
+  table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, table.dataTable.dtr-inline.collapsed>tbody>tr.parent>th:first-child:before {
+    background-color: $warning;
   }
 }
