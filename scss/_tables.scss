@@ -315,6 +315,7 @@ tbody tr td:first-child {
   table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td:first-child:before,
   table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th:first-child:before {
     background-color: $success;
+    top: 13px;
   }
 
   table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, table.dataTable.dtr-inline.collapsed>tbody>tr.parent>th:first-child:before {
