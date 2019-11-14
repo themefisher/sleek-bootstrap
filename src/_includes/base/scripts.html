@@ -29,6 +29,15 @@
 <script src="assets/plugins/data-tables/datatables.responsive.min.js"></script>
 
 <script>
+   $(document).ready(function() {
+    $('#responsive-data-tables').dataTable( {
+    "aLengthMenu": [[20, 30, 50, 75, -1], [20, 30, 50, 75, "All"]],
+    "pageLength": 20
+    } );
+} );
+  </script>
+
+<script>
   $(document).ready(function() {
     $('#responsive-data-tables').DataTable();
 } );

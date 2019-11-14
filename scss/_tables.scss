@@ -259,6 +259,9 @@ tbody tr td:first-child {
         cursor: pointer;
       }
     }
+    .custom-select {
+      background: transparent;
+    }
   }
   
   .dataTables_info {
@@ -315,7 +318,13 @@ tbody tr td:first-child {
   table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td:first-child:before,
   table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th:first-child:before {
     background-color: $success;
-    top: 13px;
+    top: 14px;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    border: 0;
+    font-weight: bold;
+    box-shadow: none;
   }
 
   table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, table.dataTable.dtr-inline.collapsed>tbody>tr.parent>th:first-child:before {
