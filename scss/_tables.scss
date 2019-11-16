@@ -237,6 +237,11 @@ tbody tr td:first-child {
     border-bottom: 1px solid #e5e9f2;
   }
 
+  .top-information,
+  .bottom-information {
+    padding: 0 15px;
+  }
+
   .dataTables_filter {
     display: inline-block !important;
     label {
@@ -263,7 +268,7 @@ tbody tr td:first-child {
   }
   
   .dataTables_info {
-    margin-bottom: 30px;
+    padding-top: 7px !important;
     @include media-breakpoint-up(md) {
       margin-bottom: 0;
       opacity: 0;
