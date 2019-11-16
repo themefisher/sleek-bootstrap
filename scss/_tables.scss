@@ -221,3 +221,116 @@ tbody tr td:first-child {
     }
   }
 }
+
+/* Responsive Data Table */
+.responsive-data-table {
+  .table {
+    border-top: 0;
+    margin: 25px 0 !important;
+  }
+  .table-bordered thead th,
+  .table-bordered thead td {
+    border-bottom-width: 1px;
+  }
+
+  .table thead th {
+    border-bottom: 1px solid #e5e9f2;
+  }
+
+  .top-information,
+  .bottom-information {
+    padding: 0 15px;
+  }
+
+  .dataTables_filter {
+    display: inline-block !important;
+    label {
+      margin-bottom: 0;
+      .form-control-sm {
+        height: 40px;
+      }
+    }
+  }
+
+  .dataTables_length {
+    display: inline-block !important;
+    padding-top: 5px;
+    label {
+      margin-bottom: 0;
+      .custom-select-sm {
+        height: 30px;
+        cursor: pointer;
+      }
+    }
+    .custom-select {
+      background: transparent;
+    }
+  }
+  
+  .dataTables_info {
+    padding-top: 7px !important;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0;
+      opacity: 0;
+    }
+    @include media-breakpoint-up(lg) {
+      padding-top: 1.2em !important;
+      opacity: 1;
+    }
+    @include media-breakpoint-up(xl) {
+      padding-top: 1em !important;
+    }
+  }
+
+  .pagination {
+    margin: 0 !important;
+    .page-link {
+      padding: 8px;
+      @include media-breakpoint-up(md) {
+        padding: 18px;
+      }
+      @include media-breakpoint-up(xl) {
+        padding: 1rem 1.25rem;
+      }
+    }
+    .page-item:first-child .page-link,
+    .page-item:last-child .page-link {
+      height: 35px;
+      @include media-breakpoint-up(md) {
+        height: 55px;
+      }
+      @include media-breakpoint-up(xl) {
+        height: 51px;
+      }
+    }
+
+    .disabled {
+      .page-link {
+        background-color: transparent !important;
+      }
+    }
+
+    #responsive-data-tables_previous,
+    #responsive-data-tables_next {
+      .page-link {
+        background-color: #e9ecef;
+      }
+    }
+  }
+
+  table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td:first-child:before,
+  table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th:first-child:before {
+    background-color: $success;
+    top: 14px;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    border: 0;
+    font-weight: bold;
+    box-shadow: none;
+  }
+
+  table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, table.dataTable.dtr-inline.collapsed>tbody>tr.parent>th:first-child:before {
+    background-color: $warning;
+  }
+}

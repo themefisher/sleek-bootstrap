@@ -6,9 +6,17 @@
     &:last-child .page-link {
       height: 51px;
     }
+    &.active {
+      .page-link {
+        z-index: 3;
+      }
+    }
   }
   .page-link {
     color: $secondary;
+    &:focus {
+      box-shadow: none;
+    }
   }
 }
 

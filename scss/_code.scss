@@ -12,7 +12,7 @@ pre {
 
 }
 
-
+.pre-code,
 code{
     font-family: Menlo,Monaco,"Courier New",Courier,monospace;
     font-size: 1rem;
@@ -20,4 +20,8 @@ code{
     padding: 0.19rem 0.625rem;
     margin: 0 0.125rem;
     color: $dark;
+}
+
+.pre-code {
+  padding: 1.25rem 0.94rem !important;
 }

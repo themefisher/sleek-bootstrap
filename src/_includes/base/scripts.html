@@ -23,6 +23,19 @@
 <script src="assets/plugins/jquery-mask-input/jquery.mask.min.js"></script>
   {% when 'toastr' %}
 <script src="assets/plugins/toastr/toastr.min.js"></script>
+  {% when 'responsive_data_tables' %}
+<script src="assets/plugins/data-tables/jquery.datatables.min.js"></script>
+<script src="assets/plugins/data-tables/datatables.bootstrap4.min.js"></script>
+<script src="assets/plugins/data-tables/datatables.responsive.min.js"></script>
+<script>
+  jQuery(document).ready(function() {
+    jQuery('#responsive-data-table').DataTable({
+      "aLengthMenu": [[20, 30, 50, 75, -1], [20, 30, 50, 75, "All"]],
+      "pageLength": 20,
+      "dom": '<"row justify-content-between top-information"lf>rt<"row justify-content-between bottom-information"ip><"clear">'
+    });
+  });
+</script>
   {% else %}
   <!-- No Extra plugin used -->
 {% endcase %}
