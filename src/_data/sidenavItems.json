@@ -201,23 +201,23 @@
         "label": "Data Tables",
         "child": [
           {
-            "name": "basic-data-tables",
-            "label": "Basic Data Tables",
+            "name": "basic-data-table",
+            "label": "Basic Data Table",
             "link": "javascript:void(0)"
           },
           {
-            "name": "responsive-data-tables",
-            "label": "Responsive Data Tables",
-            "link": "responsive-data-tables.html"
+            "name": "responsive-data-table",
+            "label": "Responsive Data Table",
+            "link": "responsive-data-table.html"
           },
           {
-            "name": "expendable-data-tables",
-            "label": "Expendable Data Tables",
+            "name": "expendable-data-table",
+            "label": "Expendable Data Table",
             "link": "javascript:void(0)"
           },
           {
-            "name": "hoverable-data-tables",
-            "label": "Hoverable Data Tables",
+            "name": "hoverable-data-table",
+            "label": "Hoverable Data Table",
             "link": "javascript:void(0)"
           }
         ]
