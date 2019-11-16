@@ -238,6 +238,7 @@ tbody tr td:first-child {
   }
 
   .dataTables_filter {
+    display: inline-block !important;
     label {
       margin-bottom: 0;
       .form-control-sm {
@@ -247,11 +248,8 @@ tbody tr td:first-child {
   }
 
   .dataTables_length {
-    margin-bottom: 30px;
-    @include media-breakpoint-up(md) {
-      margin-bottom: 0;
-      padding-top: 5px;
-    }
+    display: inline-block !important;
+    padding-top: 5px;
     label {
       margin-bottom: 0;
       .custom-select-sm {
