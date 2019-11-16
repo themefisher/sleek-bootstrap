@@ -25,8 +25,8 @@ plugins: ["date_range_picker", "responsive_data_tables"]
 										</div>
 
 										<div class="card-body">
-											<div class="responsive-data-tables">
-												<table id="responsive-data-tables" class="table dt-responsive nowrap" style="width:100%">
+											<div class="responsive-data-table">
+												<table id="responsive-data-table" class="table dt-responsive nowrap" style="width:100%">
 													<thead>
 														<tr>
 															<th>First name</th>
@@ -757,15 +757,14 @@ plugins: ["date_range_picker", "responsive_data_tables"]
 											<div class="tab-content" id="myTabContent1">
 												<div class="tab-pane pt-3 fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 
-<pre class="mt-4">
-<code>$(document).ready(function() {</code>
-  <code>var table = $('#example').DataTable( {</code>
-    <code>rowReorder: {</code>
-      <code>selector: 'td:nth-child(2)'</code>
-    <code>},</code>
-   <code>responsive: true</code>
-  <code>});</code>
-<code>});</code>
+<pre class="mt-4 pre-code">
+  jQuery(document).ready(function() {
+   jQuery('#responsive-data-table').DataTable({
+    "aLengthMenu": [[20, 30, 50, 75, -1], [20, 30, 50, 75, "All"]],
+    "pageLength": 20,
+    "dom": '&lt;"row justify-content-between top-information"lf&gt;rt&lt;"row justify-content-between bottom-information"ip>&lt;"clear"&gt;'
+   });
+  });
 </pre>
 
 <pre class="mt-4">
@@ -794,7 +793,7 @@ plugins: ["date_range_picker", "responsive_data_tables"]
 
  &lt;body id="body"&gt;
 
- &lt;table id="example" class="table dt-responsive nowrap" style="width:100%"&gt;
+ &lt;table id="responsive-data-table" class="table dt-responsive nowrap" style="width:100%"&gt;
   &lt;thead&gt;
    &lt;tr&gt;
     &lt;th&gt;First name&lt;/th&gt;
