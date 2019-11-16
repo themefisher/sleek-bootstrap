@@ -27,20 +27,13 @@
 <script src="assets/plugins/data-tables/jquery.datatables.min.js"></script>
 <script src="assets/plugins/data-tables/datatables.bootstrap4.min.js"></script>
 <script src="assets/plugins/data-tables/datatables.responsive.min.js"></script>
-
 <script>
-   $(document).ready(function() {
-    $('#responsive-data-tables').dataTable( {
-    "aLengthMenu": [[20, 30, 50, 75, -1], [20, 30, 50, 75, "All"]],
-    "pageLength": 20
-    } );
-} );
-  </script>
-
-<script>
-  $(document).ready(function() {
-    $('#responsive-data-tables').DataTable();
-} );
+  jQuery(document).ready(function() {
+    jQuery('#responsive-data-tables').DataTable({
+      "aLengthMenu": [[20, 30, 50, 75, -1], [20, 30, 50, 75, "All"]],
+      "pageLength": 20
+    });
+  });
 </script>
   {% else %}
   <!-- No Extra plugin used -->
