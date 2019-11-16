@@ -13,6 +13,9 @@
 <loc>/basic-input.html</loc>
 </url>
 <url>
+<loc>/basic-tables.html</loc>
+</url>
+<url>
 <loc>/breadcrumb.html</loc>
 </url>
 <url>
@@ -43,10 +46,16 @@
 <loc>/chartjs.html</loc>
 </url>
 <url>
+<loc>/chat.html</loc>
+</url>
+<url>
 <loc>/checkbox-radio.html</loc>
 </url>
 <url>
 <loc>/collapse.html</loc>
+</url>
+<url>
+<loc>/contacts.html</loc>
 </url>
 <url>
 <loc>/customization.html</loc>
@@ -112,6 +121,9 @@
 <loc>/quick-start.html</loc>
 </url>
 <url>
+<loc>/responsive-data-table.html</loc>
+</url>
+<url>
 <loc>/right-sidebar.html</loc>
 </url>
 <url>
@@ -155,9 +167,6 @@
 </url>
 <url>
 <loc>/tab.html</loc>
-</url>
-<url>
-<loc>/table.html</loc>
 </url>
 <url>
 <loc>/user-profile.html</loc>

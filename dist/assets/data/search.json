@@ -23,240 +23,350 @@
   
     
       
+      {
+        "label": "Chat",
+        "link": "chat.html",
+        "tags": "",
+        "location": "App"
+      },
+      
+    
+      
+      {
+        "label": "Contacts",
+        "link": "contacts.html",
+        "tags": "",
+        "location": "App"
+      },
+      
+    
+
+  
+    
       
       {
         "label": "Alert",
         "link": "alert.html",
         "tags": "",
         "location": "Components"
-      } ,
+      },
+      
+    
       
       {
         "label": "Badge",
         "link": "badge.html",
         "tags": "",
         "location": "Components"
-      } ,
+      },
+      
+    
       
       {
         "label": "Breadcrumb",
         "link": "breadcrumb.html",
         "tags": "",
         "location": "Components"
-      } ,
+      },
+      
+    
       
       {
         "label": "Button Default",
         "link": "button-default.html",
         "tags": "",
         "location": "Components"
-      } ,
+      },
+      
+    
       
       {
         "label": "Button Dropdown",
         "link": "button-dropdown.html",
         "tags": "",
         "location": "Components"
-      } ,
+      },
+      
+    
       
       {
         "label": "Button Group",
         "link": "button-group.html",
         "tags": "",
         "location": "Components"
-      } ,
+      },
+      
+    
       
       {
         "label": "Button Social",
         "link": "button-social.html",
         "tags": "",
         "location": "Components"
-      } ,
+      },
+      
+    
       
       {
         "label": "Button Loading",
         "link": "button-loading.html",
         "tags": "",
         "location": "Components"
-      } ,
+      },
+      
+    
       
       {
         "label": "Card",
         "link": "card.html",
         "tags": "",
         "location": "Components"
-      } ,
+      },
+      
+    
       
       {
         "label": "Carousel",
         "link": "carousel.html",
         "tags": "",
         "location": "Components"
-      } ,
+      },
+      
+    
       
       {
         "label": "Collapse",
         "link": "collapse.html",
         "tags": "",
         "location": "Components"
-      } ,
+      },
+      
+    
       
       {
         "label": "List Group",
         "link": "list-group.html",
         "tags": "",
         "location": "Components"
-      } ,
+      },
+      
+    
       
       {
         "label": "Modal",
         "link": "modal.html",
         "tags": "",
         "location": "Components"
-      } ,
+      },
+      
+    
       
       {
         "label": "Pagination",
         "link": "pagination.html",
         "tags": "",
         "location": "Components"
-      } ,
+      },
+      
+    
       
       {
         "label": "Popover &amp; Tooltip",
         "link": "popover-tooltip.html",
         "tags": "",
         "location": "Components"
-      } ,
+      },
+      
+    
       
       {
         "label": "Progress Bar",
         "link": "progress-bar.html",
         "tags": "",
         "location": "Components"
-      } ,
+      },
+      
+    
       
       {
         "label": "Spinner",
         "link": "spinner.html",
         "tags": "",
         "location": "Components"
-      } ,
+      },
+      
+    
       
       {
         "label": "Switcher",
         "link": "switcher.html",
         "tags": "",
         "location": "Components"
-      } ,
+      },
       
-      {
-        "label": "Table",
-        "link": "table.html",
-        "tags": "",
-        "location": "Components"
-      } ,
+    
       
       {
         "label": "Tab",
         "link": "tab.html",
         "tags": "",
         "location": "Components"
-      } ,
-      
+      },
       
     
-      
+
+  
+    
       
       {
         "label": "Material Icon",
         "link": "material-icon.html",
         "tags": "",
         "location": "Icons"
-      } ,
+      },
+      
+    
       
       {
         "label": "Flag Icon",
         "link": "flag-icon.html",
         "tags": "",
         "location": "Icons"
-      } ,
-      
+      },
       
     
-      
+
+  
+    
       
       {
         "label": "Basic Input",
         "link": "basic-input.html",
         "tags": "",
         "location": "Forms"
-      } ,
+      },
+      
+    
       
       {
         "label": "Input Group",
         "link": "input-group.html",
         "tags": "",
         "location": "Forms"
-      } ,
+      },
+      
+    
       
       {
         "label": "Checkbox &amp; Radio",
         "link": "checkbox-radio.html",
         "tags": "",
         "location": "Forms"
-      } ,
+      },
+      
+    
       
       {
         "label": "Form Validation",
         "link": "form-validation.html",
         "tags": "",
         "location": "Forms"
-      } ,
+      },
+      
+    
       
       {
         "label": "Form Advance",
         "link": "form-advance.html",
         "tags": "",
         "location": "Forms"
+      },
+      
+    
+
+  
+    
+      
+      {
+        "label": "Basic Tables",
+        "link": "basic-tables.html",
+        "tags": "",
+        "location": "Tables"
+      },
+      
+    
+      
+      
+      {
+        "label": "Basic Data Table",
+        "link": "javascript:void(0)",
+        "tags": "",
+        "location": "Data Tables"
+      } ,
+      
+      {
+        "label": "Responsive Data Table",
+        "link": "responsive-data-table.html",
+        "tags": "",
+        "location": "Data Tables"
+      } ,
+      
+      {
+        "label": "Expendable Data Table",
+        "link": "javascript:void(0)",
+        "tags": "",
+        "location": "Data Tables"
+      } ,
+      
+      {
+        "label": "Hoverable Data Table",
+        "link": "javascript:void(0)",
+        "tags": "",
+        "location": "Data Tables"
       } ,
       
       
     
-      
+
+  
+    
       
       {
         "label": "Google Map",
         "link": "google-map.html",
         "tags": "",
         "location": "Maps"
-      } ,
+      },
+      
+    
       
       {
         "label": "Vector Map",
         "link": "vector-map.html",
         "tags": "",
         "location": "Maps"
-      } ,
-      
+      },
       
     
-      
+
+  
+    
       
       {
         "label": "General Widget",
         "link": "general-widget.html",
         "tags": "maps, todos, profiles, notifications, customers, cards",
         "location": "Widgets"
-      } ,
+      },
+      
+    
       
       {
         "label": "Chart Widget",
         "link": "chart-widget.html",
         "tags": "",
         "location": "Widgets"
-      } ,
-      
+      },
       
     
 
@@ -304,7 +414,7 @@
       
       
       {
-        "label": "invoice",
+        "label": "Invoice",
         "link": "invoice.html",
         "tags": "",
         "location": "Others"
