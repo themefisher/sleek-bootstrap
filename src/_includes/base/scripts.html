@@ -38,15 +38,15 @@
   });
 </script>
   {% when 'basic_data_table' %}
-  <script>
-    jQuery(document).ready(function() {
-      jQuery('#basic-data-table').DataTable({
-        "aLengthMenu": [[20, 30, 50, 75, -1], [20, 30, 50, 75, "All"]],
-        "pageLength": 20,
-        "dom": '<"row justify-content-between top-information"lf>rt<"row justify-content-between bottom-information"ip><"clear">'
-      });
+<script>
+  jQuery(document).ready(function() {
+    jQuery('#basic-data-table').DataTable({
+      "aLengthMenu": [[20, 30, 50, 75, -1], [20, 30, 50, 75, "All"]],
+      "pageLength": 20,
+      "dom": '<"row justify-content-between top-information"lf>rt<"row justify-content-between bottom-information"ip><"clear">'
     });
-  </script>
+  });
+</script>
   {% else %}
   <!-- No Extra plugin used -->
 {% endcase %}
