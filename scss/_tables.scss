@@ -222,7 +222,16 @@ tbody tr td:first-child {
   }
 }
 
+/* Basic Data Table */
+.basic-data-table {
+  overflow-x: scroll;
+  @include media-breakpoint-up(xxl) {
+    overflow-x: hidden;
+  }
+}
+
 /* Responsive Data Table */
+.basic-data-table,
 .responsive-data-table {
   .table {
     border-top: 0;

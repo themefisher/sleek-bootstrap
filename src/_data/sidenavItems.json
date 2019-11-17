@@ -203,7 +203,7 @@
           {
             "name": "basic-data-table",
             "label": "Basic Data Table",
-            "link": "javascript:void(0)"
+            "link": "basic-data-table.html"
           },
           {
             "name": "responsive-data-table",
@@ -211,13 +211,13 @@
             "link": "responsive-data-table.html"
           },
           {
-            "name": "expendable-data-table",
-            "label": "Expendable Data Table",
+            "name": "hoverable-data-table",
+            "label": "Hoverable Data Table",
             "link": "javascript:void(0)"
           },
           {
-            "name": "hoverable-data-table",
-            "label": "Hoverable Data Table",
+            "name": "expendable-data-table",
+            "label": "Expendable Data Table",
             "link": "javascript:void(0)"
           }
         ]
