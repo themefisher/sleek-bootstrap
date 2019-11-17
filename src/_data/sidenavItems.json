@@ -203,7 +203,7 @@
           {
             "name": "basic-data-table",
             "label": "Basic Data Table",
-            "link": "javascript:void(0)"
+            "link": "basic-data-table.html"
           },
           {
             "name": "responsive-data-table",
