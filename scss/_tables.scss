@@ -222,16 +222,17 @@ tbody tr td:first-child {
   }
 }
 
-/* Basic Data Table */
-.basic-data-table {
+.basic-data-table,
+.hoverable-data-table {
   overflow-x: scroll;
   @include media-breakpoint-up(xxl) {
     overflow-x: hidden;
   }
 }
 
-/* Responsive Data Table */
+/* Data Tables */
 .basic-data-table,
+.hoverable-data-table,
 .responsive-data-table {
   .table {
     border-top: 0;
@@ -341,5 +342,10 @@ tbody tr td:first-child {
 
   table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, table.dataTable.dtr-inline.collapsed>tbody>tr.parent>th:first-child:before {
     background-color: $warning;
+  }
+
+  table.dataTable.hover tbody tr:hover,
+  table.dataTable.display tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.05);
   }
 }

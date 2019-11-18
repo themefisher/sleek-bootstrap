@@ -213,7 +213,7 @@
           {
             "name": "hoverable-data-table",
             "label": "Hoverable Data Table",
-            "link": "javascript:void(0)"
+            "link": "hoverable-data-table.html"
           },
           {
             "name": "expendable-data-table",
