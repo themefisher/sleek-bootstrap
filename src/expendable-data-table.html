@@ -42,16 +42,6 @@ plugins: ["date_range_picker", "data_table", "expendable_data_table"]
 									</div>
 								</div>
 
-								<style>
-										td.details-control {
-											background: url('assets/img/details_open.png') no-repeat center center;
-											cursor: pointer;
-										}
-										tr.shown td.details-control {
-												background: url('assets/img/details_close.png') no-repeat center center;
-										}
-									</style>
-
 								<div class="col-lg-12">
 									<div class="card card-default">
 										<div class="card-header card-header-border-bottom d-flex justify-content-between">
@@ -82,12 +72,56 @@ plugins: ["date_range_picker", "data_table", "expendable_data_table"]
 
 <pre class="mt-4 pre-code">
  function format (d) {
-   return '&lt;table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">'+
+  return '&lt;table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">'+
          '&lt;tr>'+
            '&lt;td>Full name:&lt;/td>'+
            '&lt;td>'+d.name+'&lt;/td>'+
+          '&lt;tr>'+
          '&lt;tr>'+
-       '&lt;/table>';
+           '&lt;td>Extension number:&lt;/td>'+
+           '&lt;td>'+d.extn+'&lt;/td>'+
+          '&lt;tr>'+
+          '&lt;tr>'+
+           '&lt;td>Extra info:&lt;/td>'+
+           '&lt;td>And any further details here (images etc)...&lt;/td>'+
+          '&lt;tr>'+
+        '&lt;/table>';
+     }
+		 
+     $(document).ready(function() {
+       var table = $('#expendable-data-table').DataTable( {
+        "ajax": "/assets/data/objects.txt",
+          "columns": [
+           {
+            "className":      'details-control',
+            "orderable":      false,
+            "data":           null,
+            "defaultContent": ''
+           },
+          { "data": "name" },
+          { "data": "position" },
+          { "data": "office" },
+          { "data": "salary" }
+        ],
+      "order": [[1, 'asc']],
+      "aLengthMenu": [[20, 30, 50, 75, -1], [20, 30, 50, 75, "All"]],
+      "pageLength": 20,
+      "dom": '&lt;"row align-items-center justify-content-between top-information"lf>rt&lt;"row align-items-center justify-content-between bottom-information"ip>&lt;"clear">'
+  });
+
+  $('#expendable-data-table tbody').on('click', 'td.details-control', function () {
+    var tr = $(this).closest('tr');
+    var row = table.row( tr );
+    if ( row.child.isShown() ) {
+      row.child.hide();
+      tr.removeClass('shown');
+    }
+    else {
+      row.child( format(row.data()) ).show();
+      tr.addClass('shown');
+    }
+   });
+ });
 </pre>
 
 <pre class="mt-4">
@@ -113,6 +147,16 @@ plugins: ["date_range_picker", "data_table", "expendable_data_table"]
 												</div>
 
 												<div class="tab-pane pt-3 fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+<pre class="mt-4 pre-code">
+ td.details-control {
+  background: url('/assets/img/details_open.png') no-repeat center center;
+  cursor: pointer;
+ }
+ tr.shown td.details-control {
+  background: url('/assets/img/details_close.png') no-repeat center center;
+ }
+</pre>
+
 <pre class="mt-4">
 <code>&lt;script src="assets/plugins/data-tables/jquery.datatables.min.css"&gt;&lt;/script&gt;</code>
 <code>&lt;link href="assets/plugins/data-tables/datatables.bootstrap4.min.css" rel="stylesheet"&gt;</code>
