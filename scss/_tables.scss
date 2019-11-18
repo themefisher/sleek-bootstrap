@@ -222,6 +222,7 @@ tbody tr td:first-child {
   }
 }
 
+.expendable-data-table,
 .basic-data-table,
 .hoverable-data-table {
   overflow-x: scroll;
@@ -231,6 +232,7 @@ tbody tr td:first-child {
 }
 
 /* Data Tables */
+.expendable-data-table,
 .basic-data-table,
 .hoverable-data-table,
 .responsive-data-table {
@@ -347,5 +349,76 @@ tbody tr td:first-child {
   table.dataTable.hover tbody tr:hover,
   table.dataTable.display tbody tr:hover {
     background-color: rgba(0, 0, 0, 0.05);
+  }
+}
+
+/* Expendable Data Tables */
+.expendable-data-table {
+  .dataTable {
+    margin: 25px 0 !important;
+  }
+ 
+  table.dataTable.display tbody tr.odd>.sorting_1,
+  table.dataTable.display tbody tr.even>.sorting_1,
+  table.dataTable.order-column.stripe tbody tr.odd>.sorting_1,
+  table.dataTable.order-column.stripe tbody tr.even>.sorting_1,
+  table.dataTable thead .sorting_asc,
+  table.dataTable thead .sorting {
+    background-color: transparent;
+    font-weight: 500;
+    color: #1b223c;
+  }
+
+  table.dataTable.display tbody tr.odd,
+  table.dataTable.display tbody tr:hover {
+    background-color: transparent;
+  }
+ 
+  table.dataTable.display tbody td {
+    border-top: 1px solid $border-color;
+  }
+
+  table.dataTable.display tbody tr[role] td{
+    border-top: 1px solid $border-color;
+    padding: 12px 10px;
+  }
+
+  table.dataTable thead th {
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+    padding: 12px 18px;
+  }
+ 
+  table.dataTable.no-footer {
+    border-bottom: 1px solid transparent;
+  }
+
+  .dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 0;
+    margin-left: -2px;
+    background: linear-gradient(to bottom, transparent 0%, transparent 100%);
+  }
+
+  .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    border: 1px solid #fff;
+  }
+
+  .dataTables_wrapper .dataTables_paginate .paginate_button:active {
+    box-shadow: none;
+  }
+
+  .dataTables_wrapper .dataTables_paginate {
+    padding-top: 0;
+  }
+
+  table.dataTable thead .sorting_asc,
+  table.dataTable thead .sorting {
+    background: transparent;
+  }
+
+  .dataTables_filter,
+  .dataTables_length,
+  .dataTables_wrapper .dataTables_info {
+    color: $secondary;
   }
 }
