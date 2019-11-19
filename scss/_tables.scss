@@ -394,7 +394,7 @@ tbody tr td:first-child {
   }
 
   table.dataTable tbody td {
-    padding: 8px 10px;
+    border-top: 1px solid $border-color;
   }
 
   table.dataTable thead th {
@@ -432,11 +432,13 @@ tbody tr td:first-child {
   }
 
   table.dataTable thead .sorting:before,
+  table.dataTable thead .sorting_desc:before,
   table.dataTable thead .sorting_asc:before {
     right: 2em;
   }
 
   table.dataTable thead .sorting:after,
+  table.dataTable thead .sorting_desc:after,
   table.dataTable thead .sorting_asc:after {
     right: 1.5em;
   }
@@ -461,6 +463,11 @@ tbody tr td:first-child {
 
   th.details-control.sorting_disabled {
     width: 1px !important;
+  }
+
+  table.dataTable thead>tr>th.sorting_desc {
+    padding-left: 0;
+    font-weight: 500;
   }
 
   tr.shown td.details-control,

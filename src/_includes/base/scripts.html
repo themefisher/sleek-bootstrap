@@ -58,16 +58,16 @@
   {% when 'expendable_data_table' %}
 <script>
   /* Formatting function for row details - modify as you need */
-  function format ( d ) {
+  function format () {
     // `d` is the original data object for the row
     return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">'+
         '<tr>'+
             '<td>Full name:</td>'+
-            '<td>'+d.name+'</td>'+
+            '<td>Name...</td>'+
         '</tr>'+
         '<tr>'+
             '<td>Extension number:</td>'+
-            '<td>'+d.extn+'</td>'+
+            '<td>123</td>'+
         '</tr>'+
         '<tr>'+
             '<td>Extra info:</td>'+
@@ -78,20 +78,8 @@
  
   $(document).ready(function() {
     var table = $('#expendable-data-table').DataTable( {
-      "ajax": "/assets/data/objects.txt",
-      "columns": [
-          {
-            "className":      'details-control',
-            "orderable":      false,
-            "data":           null,
-            "defaultContent": ''
-          },
-          { "data": "name" },
-          { "data": "position" },
-          { "data": "office" },
-          { "data": "salary" }
-      ],
-      "order": [[1, 'asc']],
+      "className":      'details-control',
+      "order": [[0, 'asc']],
       "aLengthMenu": [[20, 30, 50, 75, -1], [20, 30, 50, 75, "All"]],
       "pageLength": 20,
       "dom": '<"row align-items-center justify-content-between top-information"lf>rt<"row align-items-center justify-content-between bottom-information"ip><"clear">'
