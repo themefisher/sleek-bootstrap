@@ -5,8 +5,8 @@ title: "Table - Sleek Admin Dashboard Template"
 
 parent: "tables"
 sub_parent: "data-tables"
-activePage: "basic-data-table"
-plugins: ["date_range_picker", "data_table", "basic_data_table"]
+activePage: "hoverable-data-table"
+plugins: ["date_range_picker", "data_table", "hoverable_data_table"]
 ---
 							<div class="breadcrumb-wrapper">
 								<h1>Tables</h1>
@@ -17,16 +17,16 @@ plugins: ["date_range_picker", "data_table", "basic_data_table"]
 								<div class="col-12">
 									<div class="card card-default">
 										<div class="card-header card-header-border-bottom d-flex justify-content-between">
-											<h2>Basic Data Table</h2>
+											<h2>Hoverable Data Table</h2>
 
-											<a href="https://datatables.net/examples/styling/display.html" target="_blank" class="btn btn-outline-primary btn-sm text-uppercase">
+											<a href="https://datatables.net/examples/styling/hover.html" target="_blank" class="btn btn-outline-primary btn-sm text-uppercase">
 												<i class=" mdi mdi-link mr-1"></i> Docs
 											</a>
 										</div>
 
 										<div class="card-body">
-											<div class="basic-data-table">
-												<table id="basic-data-table" class="table nowrap" style="width:100%">
+											<div class="hoverable-data-table">
+												<table id="hoverable-data-table" class="table hover nowrap" style="width:100%">
 													<thead>
 														<tr>
 															<th>First name</th>
@@ -737,7 +737,7 @@ plugins: ["date_range_picker", "data_table", "basic_data_table"]
 										<div class="card-header card-header-border-bottom d-flex justify-content-between">
 											<h2>How to use</h2>
 
-											<a href="https://codepen.io/iamabdus/pen/dyyarez" target="_blank" class="btn btn-outline-primary btn-sm text-uppercase">
+											<a href="https://codepen.io/iamabdus/pen/jOOdRWP" target="_blank" class="btn btn-outline-primary btn-sm text-uppercase">
 												<i class="mdi mdi-codepen mr-1"></i> Open with codepen
 											</a>
 										</div>
@@ -759,7 +759,9 @@ plugins: ["date_range_picker", "data_table", "basic_data_table"]
 
 <pre class="mt-4 pre-code">
   jQuery(document).ready(function() {
-   jQuery('#basic-data-table').DataTable({
+   jQuery('#hoverable-data-table').DataTable({
+    "aLengthMenu": [[20, 30, 50, 75, -1], [20, 30, 50, 75, "All"]],
+    "pageLength": 20,
     "dom": '&lt;"row justify-content-between top-information"lf&gt;rt&lt;"row justify-content-between bottom-information"ip>&lt;"clear"&gt;'
    });
   });
@@ -773,7 +775,7 @@ plugins: ["date_range_picker", "data_table", "basic_data_table"]
 
 												<div class="tab-pane pt-3 fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
 <pre class="mt-4">
- &lt;table id="basic-data-table" class="table nowrap" style="width:100%"&gt;
+ &lt;table id="hoverable-data-table" class="table hover nowrap" style="width:100%"&gt;
   &lt;thead&gt;
    &lt;tr&gt;
     &lt;th&gt;First name&lt;/th&gt;
