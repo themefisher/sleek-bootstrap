@@ -431,6 +431,13 @@ tbody tr td:first-child {
     padding-left: 0px;
   }
 
+  table.dataTable thead th:first-child {
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+
   table.dataTable thead .sorting:before,
   table.dataTable thead .sorting_desc:before,
   table.dataTable thead .sorting_asc:before {
