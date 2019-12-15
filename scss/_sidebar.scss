@@ -206,7 +206,6 @@
     text-decoration: none;
     position: relative;
     font-size: 0.88rem;
-    // white-space: nowrap;
   }
 
   > li .sub-menu {
@@ -216,8 +215,6 @@
       position: relative;
       font-size: .81rem;
       padding-left: 0;
-      // overflow: hidden;
-      // max-width: 120px;
       text-overflow: ellipsis;
 
       &:after {
