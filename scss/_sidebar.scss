@@ -206,7 +206,7 @@
     text-decoration: none;
     position: relative;
     font-size: 0.88rem;
-    white-space: nowrap;
+    // white-space: nowrap;
   }
 
   > li .sub-menu {
@@ -216,6 +216,9 @@
       position: relative;
       font-size: .81rem;
       padding-left: 0;
+      // overflow: hidden;
+      // max-width: 120px;
+      text-overflow: ellipsis;
 
       &:after {
         position: absolute;
@@ -242,9 +245,21 @@
     align-items: center;
     .nav-text {
       margin-right: auto;
+      overflow: hidden;
+      max-width: 130px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
     .badge {
       padding: .4em .6em;
+    }
+  }
+  .sub-menu {
+    > li > a .nav-text {
+      white-space: pre-line;
+    }
+    .has-sub .nav-text {
+      white-space: nowrap;
     }
   }
 }
@@ -680,6 +695,14 @@
       background: #1d2531;
       > li > a {
         color: #b7c0cd;
+      }
+      > li > a .nav-text {
+        white-space: pre-line;
+      }
+      .has-sub {
+        .nav-text {
+          white-space: nowrap;
+        }
       }
     }
     .sub-menu>li.active>a,
