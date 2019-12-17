@@ -6,7 +6,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 2000;
+    z-index: 999;
     i {
       position: absolute;
       top: 2px;
@@ -15,5 +15,13 @@
       font-size: 25px;
     }
   }
+}
 
+.header-fixed {
+  .github-link {
+    position: fixed;
+    i {
+      position: fixed;
+    }
+  }
 }

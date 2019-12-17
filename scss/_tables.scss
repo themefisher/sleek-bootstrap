@@ -38,37 +38,21 @@ tbody tr td:first-child {
 /* Table borderless */
 .table-borderless th,
 .table-borderless td {
-  border: 0px solid #dee2e6;
+  border: 1px solid transparent;
 }
 
 .table-borderless thead th {
-  border-bottom: 1px solid $border-color;
+  border-bottom: 1px solid transparent;
   font-size: 0.81rem;
   color: $secondary;
   font-weight: 400;
-  padding-top: 40px;
 }
-.table-borderless tbody tr:first-child td {
-  padding-top: 2.5rem;
-}
+
 .table-borderless tbody tr a.link {
   color: $dark;
   &:hover {
     color: $primary;
   }
-}
-
-.table-borderless tbody tr:last-child td {
-  padding-bottom: 1.90rem;
-}
-.table-borderless tbody td:first-child {
-  width: 55%;
-  padding-left: 0;
-}
-
-.table-borderless thead th:first-child,
-.table-borderless tbody td:first-child {
-  padding-left: 0;
 }
 
 /* Card Table */
@@ -239,6 +223,9 @@ tbody tr td:first-child {
   .table {
     border-top: 0;
     margin: 25px 0 !important;
+    &.table-borderless thead th {
+      border-bottom: 1px solid transparent;
+    }
   }
   .table-bordered thead th,
   .table-bordered thead td {
@@ -247,6 +234,12 @@ tbody tr td:first-child {
 
   .table thead th {
     border-bottom: 1px solid $border-color;
+  }
+
+  thead th, tbody tr td:first-child {
+    color: #1b223c;
+    font-weight: 500;
+    font-size: 14px;
   }
 
   table.dataTable>tbody>tr.child span.dtr-title {
@@ -345,7 +338,7 @@ tbody tr td:first-child {
 
   table.dataTable.hover tbody tr:hover,
   table.dataTable.display tbody tr:hover {
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: rgba($black, 0.05);
   }
 }
 
@@ -359,6 +352,17 @@ tbody tr td:first-child {
 #expendable-data-table_next {
   .page-link {
     background-color: #e9ecef;
+  }
+}
+
+/* Responsive Data Tables */
+.responsive-data-table {
+  table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td:first-child, table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th:first-child {
+    padding-left: 40px;
+  }
+  table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td:first-child:before,
+  table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th:first-child:before {
+    left: 10px;
   }
 }
 
@@ -388,9 +392,27 @@ tbody tr td:first-child {
     border-top: 1px solid $border-color;
   }
 
+  .table-bordered.table.dataTable.display tbody tr[role] td {
+    padding: 12px 12px;
+  }
+
   table.dataTable.display tbody tr[role] td{
     border-top: 1px solid $border-color;
     padding: 12px 0px;
+  }
+
+  .table-borderless.table.dataTable thead th,
+  .table-borderless.table.dataTable tbody td,
+  .table-borderless.table.dataTable.display tbody tr[role] td {
+    border-top: 1px solid transparent;
+  }
+
+  .table-striped tbody tr[role]:nth-of-type(odd) {
+    background-color: rgba($black, 0.05) !important;
+  }
+
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: transparent;
   }
 
   table.dataTable tbody td {
@@ -423,6 +445,15 @@ tbody tr td:first-child {
 
   .dataTables_wrapper .dataTables_paginate {
     padding-top: 0;
+  }
+
+  .table-bordered.table.dataTable thead .sorting_asc,
+  .table-bordered.table.dataTable thead .sorting {
+    padding-left: 12px;
+  }
+
+  .table-bordered.table.dataTable.no-footer {
+    border-bottom: 1px solid $border-color;
   }
 
   table.dataTable thead .sorting_asc,
@@ -504,5 +535,14 @@ tbody tr td:first-child {
       content: '-';
       background-color: $warning;
     }
+  }
+
+  .table-hover tbody tr:hover {
+    color: $dark;
+  }
+
+  .table-hover.table.dataTable.hover tbody tr[role]:hover,
+  .table-hover.table.dataTable.display tbody tr[role]:hover {
+    background-color: rgba($black, 0.05);
   }
 }

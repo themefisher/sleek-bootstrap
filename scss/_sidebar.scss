@@ -129,6 +129,7 @@
     color: $white;
     font-size: 1.12rem;
     margin-left: 0.94rem;
+    max-width: 170px;
   }
 }
 
@@ -205,7 +206,6 @@
     text-decoration: none;
     position: relative;
     font-size: 0.88rem;
-    white-space: nowrap;
   }
 
   > li .sub-menu {
@@ -215,6 +215,7 @@
       position: relative;
       font-size: .81rem;
       padding-left: 0;
+      text-overflow: ellipsis;
 
       &:after {
         position: absolute;
@@ -241,9 +242,21 @@
     align-items: center;
     .nav-text {
       margin-right: auto;
+      overflow: hidden;
+      max-width: 130px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
     .badge {
       padding: .4em .6em;
+    }
+  }
+  .sub-menu {
+    > li > a .nav-text {
+      white-space: pre-line;
+    }
+    .has-sub .nav-text {
+      white-space: nowrap;
     }
   }
 }
@@ -529,7 +542,7 @@
       left: 0;
       bottom: 0;
       right: 0;
-      z-index: 1060;
+      z-index: 999;
     }
   }
   .page-wrapper {
@@ -679,6 +692,14 @@
       background: #1d2531;
       > li > a {
         color: #b7c0cd;
+      }
+      > li > a .nav-text {
+        white-space: pre-line;
+      }
+      .has-sub {
+        .nav-text {
+          white-space: nowrap;
+        }
       }
     }
     .sub-menu>li.active>a,
