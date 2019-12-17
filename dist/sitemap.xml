@@ -10,6 +10,9 @@
 <loc>/badge.html</loc>
 </url>
 <url>
+<loc>/basic-data-table.html</loc>
+</url>
+<url>
 <loc>/basic-input.html</loc>
 </url>
 <url>
@@ -61,6 +64,9 @@
 <loc>/customization.html</loc>
 </url>
 <url>
+<loc>/expendable-data-table.html</loc>
+</url>
+<url>
 <loc>/flag-icon.html</loc>
 </url>
 <url>
@@ -86,6 +92,9 @@
 </url>
 <url>
 <loc>/header-static.html</loc>
+</url>
+<url>
+<loc>/hoverable-data-table.html</loc>
 </url>
 <url>
 <loc>/</loc>

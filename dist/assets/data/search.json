@@ -299,7 +299,7 @@
       
       {
         "label": "Basic Data Table",
-        "link": "javascript:void(0)",
+        "link": "basic-data-table.html",
         "tags": "",
         "location": "Data Tables"
       } ,
@@ -312,15 +312,15 @@
       } ,
       
       {
-        "label": "Expendable Data Table",
-        "link": "javascript:void(0)",
+        "label": "Hoverable Data Table",
+        "link": "hoverable-data-table.html",
         "tags": "",
         "location": "Data Tables"
       } ,
       
       {
-        "label": "Hoverable Data Table",
-        "link": "javascript:void(0)",
+        "label": "Expendable Data Table",
+        "link": "expendable-data-table.html",
         "tags": "",
         "location": "Data Tables"
       } ,
