@@ -32,6 +32,11 @@
         "name": "contacts",
         "label": "Contacts",
         "link": "contacts.html"
+      },
+      {
+        "name": "progress",
+        "label": "Team",
+        "link": "team.html"
       }
     ]
   },

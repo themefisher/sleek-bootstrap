@@ -168,6 +168,38 @@
   }
 }
 
+/*===== CARD TEAM =====*/
+.card-team {
+  .card-body {
+    padding: 1.5rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgba(233, 236, 239, 0.5);
+    .image {
+      margin-top: -80px;
+    }
+
+    .circle-sm {
+      .circle {
+        position: relative;
+        text-align: center;
+        .circle-content {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 100%;
+          transform: translate(-50%, -50%);
+
+          h6, strong {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
 /*===== ACCORDION CARD =====*/
 
 .accordion {
