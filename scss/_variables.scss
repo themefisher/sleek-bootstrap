@@ -56,6 +56,14 @@ $h4-font-size:                  $font-size-base * 1.43 !default;
 $h5-font-size:                  $font-size-base * 1.285 !default;
 $h6-font-size:                  $font-size-base * 1.07 !default;
 
+// Space
+$spacer: 1rem;
+$spacers: ();
+$spacers:(
+  6: ($spacer * 3.5),
+  9: ($spacer * 5)
+);
+
 // Alerts
 
 $alert-padding-y:               1.25rem !default;

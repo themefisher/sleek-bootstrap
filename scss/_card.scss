@@ -168,38 +168,6 @@
   }
 }
 
-/*===== CARD TEAM =====*/
-.card-team {
-  margin-top: 3.5rem ;
-  .card-body {
-    padding: 1.5rem;
-    padding-left: 15px;
-    padding-right: 15px;
-    .image {
-      margin-top: -80px;
-    }
-
-    .circle-sm {
-      .circle {
-        position: relative;
-        text-align: center;
-        .circle-content {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          width: 100%;
-          transform: translate(-50%, -50%);
-
-          h6, strong {
-            font-size: 12px;
-          }
-        }
-      }
-    }
-  }
-}
-
-
 /*===== ACCORDION CARD =====*/
 
 .accordion {

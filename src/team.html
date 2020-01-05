@@ -4,13 +4,343 @@ title: "Team - Sleek Admin Dashboard Template"
 
 
 parent: "app"
-sub_parent: "our team"
-activePage: "progress"
+sub_parent: "app"
+activePage: "team"
 plugins: ["circle_progress"]
 ---
-							<div class="breadcrumb-wrapper">
-								<h1>Team</h1>
-								{% include breadcrumb.htm %}
+
+							<div class="breadcrumb-wrapper d-flex align-items-center justify-content-between">
+								<div>
+									<h1>Team</h1>
+									{% include breadcrumb.htm %}
+								</div>
+								<div>
+									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-add-contact"> Add Contact
+									</button>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-lg-6 col-xl-4 col-xxl-3">
+									<div class="card mt-6 mb-4">
+										<div class="card-body text-center p-4">
+											<a href="javascript:0" data-toggle="modal" data-target="#modal-contact" class="text-secondary d-inline-block mb-3">
+												<div class="image mb-3 mt-n9">
+													<img src="assets/img/user/u-xl-3.jpg" class="img-fluid rounded-circle" alt="Avatar Image">
+												</div>
+
+												<h5 class="card-title text-dark">Emma Smith</h5>
+
+												<ul class="list-unstyled">
+													<li class="d-flex mb-1">
+														<i class="mdi mdi-map mr-1"></i>
+														<span>Nulla vel metus 15/178</span>
+													</li>
+													<li class="d-flex">
+														<i class="mdi mdi-email mr-1"></i>
+														<span>exmaple@email.com</span>
+													</li>
+												</ul>
+											</a>
+
+											<p class="card-text text-center mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor </p>
+											
+											<div class="row justify-content-center">
+												<div class="col-4 px-1">
+													<div class=" circle"
+													data-size="60"
+													data-value="0.95"
+													data-thickness="4"
+													data-fill="{
+														&quot;color&quot;: &quot;#35D00E&quot;
+													}"
+													>
+														<div class="circle-content">
+															<h6 class="text-uppercase">html</h6>
+															<h6>95%</h6>
+															<strong></strong>
+														</div>
+													</div>
+												</div>
+
+												<div class="col-4 px-1">
+													<div class=" circle"
+													data-size="60"
+													data-value="0.65"
+													data-thickness="4"
+													data-fill="{
+														&quot;color&quot;: &quot;#fec400&quot;
+													}"
+													>
+														<div class="circle-content">
+															<h6 class="text-uppercase">css</h6>
+															<h6>65%</h6>
+															<strong></strong>
+														</div>
+													</div>
+												</div>
+
+												<div class="col-4 px-1">
+													<div class=" circle"
+													data-size="60"
+													data-value="0.35"
+													data-thickness="4"
+													data-fill="{
+														&quot;color&quot;: &quot;#fe5461&quot;
+													}"
+													>
+														<div class="circle-content">
+															<h6 class="text-uppercase">js</h6>
+															<h6>25%</h6>
+															<strong></strong>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-lg-6 col-xl-4 col-xxl-3">
+									<div class="card mt-6 mb-4">
+										<div class="card-body text-center p-4">
+											<a href="javascript:0" data-toggle="modal" data-target="#modal-contact" class="text-secondary d-inline-block mb-3">
+												<div class="image mb-3 mt-n9">
+													<img src="assets/img/user/u-xl-1.jpg" class="img-fluid rounded-circle" alt="Avatar Image">
+												</div>
+
+												<h5 class="card-title text-dark">Sophia Amanda</h5>
+
+												<ul class="list-unstyled">
+													<li class="d-flex mb-1">
+														<i class="mdi mdi-map mr-1"></i>
+														<span>Nulla vel metus 15/178</span>
+													</li>
+													<li class="d-flex">
+														<i class="mdi mdi-email mr-1"></i>
+														<span>exmaple@email.com</span>
+													</li>
+												</ul>
+											</a>
+
+											<p class="card-text text-center mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor </p>
+
+											<div class="row justify-content-center">
+												<div class="col-4 px-1">
+													<div class="circle"
+													data-size="60"
+													data-value="0.9"
+													data-thickness="4"
+													data-fill="{
+														&quot;color&quot;: &quot;#35D00E&quot;
+													}"
+													>
+														<div class="circle-content">
+															<h6 class="text-uppercase">html</h6>
+															<h6>90%</h6>
+															<strong></strong>
+														</div>
+													</div>
+												</div>
+
+												<div class="col-4 px-1">
+													<div class="circle"
+													data-size="60"
+													data-value="0.7"
+													data-thickness="4"
+													data-fill="{
+														&quot;color&quot;: &quot;#fec400&quot;
+													}"
+													>
+														<div class="circle-content">
+															<h6 class="text-uppercase">css</h6>
+															<h6>70%</h6>
+															<strong></strong>
+														</div>
+													</div>
+												</div>
+
+												<div class="col-4 px-1">
+													<div class="circle"
+													data-size="60"
+													data-value="0.3"
+													data-thickness="4"
+													data-fill="{
+														&quot;color&quot;: &quot;#fe5461&quot;
+													}"
+													>
+														<div class="circle-content">
+															<h6 class="text-uppercase">js</h6>
+															<h6>30%</h6>
+															<strong></strong>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-lg-6 col-xl-4 col-xxl-3">
+									<div class="card mt-6 mb-4">
+										<div class="card-body text-center p-4">
+											<a href="javascript:0" data-toggle="modal" data-target="#modal-contact" class="text-secondary d-inline-block mb-3">
+												<div class="image mb-3 mt-n9">
+													<img src="assets/img/user/u-xl-4.jpg" class="img-fluid rounded-circle" alt="Avatar Image">
+												</div>
+
+												<h5 class="card-title text-dark">Emily Disuja</h5>
+
+												<ul class="list-unstyled">
+													<li class="d-flex mb-1">
+														<i class="mdi mdi-map mr-1"></i>
+														<span>Nulla vel metus 15/178</span>
+													</li>
+													<li class="d-flex">
+														<i class="mdi mdi-email mr-1"></i>
+														<span>exmaple@email.com</span>
+													</li>
+												</ul>
+											</a>
+
+											<p class="card-text text-center mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor </p>
+
+											<div class="row justify-content-center">
+												<div class="col-4 px-1">
+													<div class=" circle"
+													data-size="60"
+													data-value="1"
+													data-thickness="4"
+													data-fill="{
+														&quot;color&quot;: &quot;#35D00E&quot;
+													}"
+													>
+														<div class="circle-content">
+															<h6 class="text-uppercase">html</h6>
+															<h6>100%</h6>
+															<strong></strong>
+														</div>
+													</div>
+												</div>
+
+												<div class="col-4 px-1">
+													<div class="circle"
+													data-size="60"
+													data-value="0.55"
+													data-thickness="4"
+													data-fill="{
+														&quot;color&quot;: &quot;#fec400&quot;
+													}"
+													>
+														<div class="circle-content">
+															<h6 class="text-uppercase">css</h6>
+															<h6>55%</h6>
+															<strong></strong>
+														</div>
+													</div>
+												</div>
+
+												<div class="col-4 px-1">
+													<div class="circle"
+													data-size="60"
+													data-value="0.2"
+													data-thickness="4"
+													data-fill="{
+														&quot;color&quot;: &quot;#fe5461&quot;
+													}"
+													>
+														<div class="circle-content">
+															<h6 class="text-uppercase">js</h6>
+															<h6>20%</h6>
+															<strong></strong>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-lg-6 col-xl-4 col-xxl-3">
+									<div class="card mt-6 mb-4">
+										<div class="card-body text-center p-4">
+											<a href="javascript:0" data-toggle="modal" data-target="#modal-contact" class="text-secondary d-inline-block mb-3">
+												<div class="image mb-3 mt-n9">
+													<img src="assets/img/user/u-xl-12.jpg" class="img-fluid rounded-circle" alt="Avatar Image">
+												</div>
+
+												<h5 class="card-title text-dark">William Camble</h5>
+
+												<ul class="list-unstyled">
+													<li class="d-flex mb-1">
+														<i class="mdi mdi-map mr-1"></i>
+														<span>Nulla vel metus 15/178</span>
+													</li>
+													<li class="d-flex">
+														<i class="mdi mdi-email mr-1"></i>
+														<span>exmaple@email.com</span>
+													</li>
+												</ul>
+											</a>
+
+											<p class="card-text text-center mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor </p>
+
+											<div class="row justify-content-center">
+												<div class="col-4 px-1">
+													<div class="circle"
+													data-size="60"
+													data-value="0.8"
+													data-thickness="4"
+													data-fill="{
+														&quot;color&quot;: &quot;#35D00E&quot;
+													}"
+													>
+														<div class="circle-content">
+															<h6 class="text-uppercase">html</h6>
+															<h6>80%</h6>
+															<strong></strong>
+														</div>
+													</div>
+												</div>
+
+												<div class="col-4 px-1">
+													<div class="circle"
+													data-size="60"
+													data-value="0.4"
+													data-thickness="4"
+													data-fill="{
+														&quot;color&quot;: &quot;#fec400&quot;
+													}"
+													>
+														<div class="circle-content">
+															<h6 class="text-uppercase">css</h6>
+															<h6>40%</h6>
+															<strong></strong>
+														</div>
+													</div>
+												</div>
+
+												<div class="col-4 px-1">
+													<div class=" circle"
+													data-size="60"
+													data-value="0.15"
+													data-thickness="4"
+													data-fill="{
+														&quot;color&quot;: &quot;#fe5461&quot;
+													}"
+													>
+														<div class="circle-content">
+															<h6 class="text-uppercase">js</h6>
+															<h6>15%</h6>
+															<strong></strong>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
 							</div>
 
 							<div class="card card-default">
@@ -25,11 +355,11 @@ plugins: ["circle_progress"]
 										</div>
 
                     <div class="col-lg-6 col-xl-4 col-xxl-3">
-											<div class="card card-team mb-4">
-												<div class="card-body text-center">
+											<div class="card mt-6 mb-4">
+												<div class="card-body text-center p-4">
 													<a href="javascript:0" data-toggle="modal" data-target="#modal-contact" class="text-secondary d-inline-block mb-3">
-														<div class="image mb-3">
-															<img src="assets/img/user/u-xl-3.jpg" class="img-fluid rounded-circle" alt="Avatar Image">
+														<div class="image mb-3 mt-n9">
+															<img src="assets/img/user/u-xl-6.jpg" class="img-fluid rounded-circle" alt="Avatar Image">
 														</div>
 
 														<h5 class="card-title text-dark">Emma Smith</h5>
@@ -47,57 +377,55 @@ plugins: ["circle_progress"]
 													</a>
 
 													<p class="card-text text-center mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor </p>
-
-													<div class="circle-progress circle-sm">
-														<div class="row justify-content-center">
-															<div class="col-4 px-1">
-																<div class=" circle"
-																data-size="60"
-																data-value="0.9"
-																data-thickness="4"
-																data-fill="{
-																	&quot;color&quot;: &quot;#35D00E&quot;
-																}"
-																>
-																	<div class="circle-content">
-																		<h6 class="text-uppercase">html</h6>
-																		<h6>90%</h6>
-																		<strong></strong>
-																	</div>
+													
+													<div class="row justify-content-center">
+														<div class="col-4 px-1">
+															<div class=" circle"
+															data-size="60"
+															data-value="0.75"
+															data-thickness="4"
+															data-fill="{
+																&quot;color&quot;: &quot;#fec400&quot;
+															}"
+															>
+																<div class="circle-content">
+																	<h6 class="text-uppercase">html</h6>
+																	<h6>75%</h6>
+																	<strong></strong>
 																</div>
 															</div>
+														</div>
 
-															<div class="col-4 px-1">
-																<div class=" circle"
-																data-size="60"
-																data-value="0.7"
-																data-thickness="4"
-																data-fill="{
-																	&quot;color&quot;: &quot;#fec400&quot;
-																}"
-																>
-																	<div class="circle-content">
-																		<h6 class="text-uppercase">css</h6>
-																		<h6>70%</h6>
-																		<strong></strong>
-																	</div>
+														<div class="col-4 px-1">
+															<div class=" circle"
+															data-size="60"
+															data-value="0.9"
+															data-thickness="4"
+															data-fill="{
+																&quot;color&quot;: &quot;#35D00E&quot;
+															}"
+															>
+																<div class="circle-content">
+																	<h6 class="text-uppercase">css</h6>
+																	<h6>90%</h6>
+																	<strong></strong>
 																</div>
 															</div>
+														</div>
 
-															<div class="col-4 px-1">
-																<div class=" circle"
-																data-size="60"
-																data-value="0.5"
-																data-thickness="4"
-																data-fill="{
-																	&quot;color&quot;: &quot;#fe5461&quot;
-																}"
-																>
-																	<div class="circle-content">
-																		<h6 class="text-uppercase">js</h6>
-																		<h6>50%</h6>
-																		<strong></strong>
-																	</div>
+														<div class="col-4 px-1">
+															<div class=" circle"
+															data-size="60"
+															data-value="0.2"
+															data-thickness="4"
+															data-fill="{
+																&quot;color&quot;: &quot;#fe5461&quot;
+															}"
+															>
+																<div class="circle-content">
+																	<h6 class="text-uppercase">js</h6>
+																	<h6>20%</h6>
+																	<strong></strong>
 																</div>
 															</div>
 														</div>
@@ -107,11 +435,11 @@ plugins: ["circle_progress"]
 										</div>
   
 										<div class="col-lg-6 col-xl-4 col-xxl-3">
-											<div class="card card-team mb-4">
-												<div class="card-body text-center">
+											<div class="card mt-6 mb-4">
+												<div class="card-body text-center p-4">
 													<a href="javascript:0" data-toggle="modal" data-target="#modal-contact" class="text-secondary d-inline-block mb-3">
-														<div class="image mb-3">
-															<img src="assets/img/user/u-xl-1.jpg" class="img-fluid rounded-circle" alt="Avatar Image">
+														<div class="image mb-3 mt-n9">
+															<img src="assets/img/user/u-xl-7.jpg" class="img-fluid rounded-circle" alt="Avatar Image">
 														</div>
 
 														<h5 class="card-title text-dark">Sophia Amanda</h5>
@@ -130,56 +458,54 @@ plugins: ["circle_progress"]
 
 													<p class="card-text text-center mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor </p>
 
-													<div class="circle-progress circle-sm">
-														<div class="row justify-content-center">
-															<div class="col-4 px-1">
-																<div class="circle"
-																data-size="60"
-																data-value="0.9"
-																data-thickness="4"
-																data-fill="{
-																	&quot;color&quot;: &quot;#35D00E&quot;
-																}"
-																>
-																	<div class="circle-content">
-																		<h6 class="text-uppercase">html</h6>
-																		<h6>90%</h6>
-																		<strong></strong>
-																	</div>
+													<div class="row justify-content-center">
+														<div class="col-4 px-1">
+															<div class="circle"
+															data-size="60"
+															data-value="0.5"
+															data-thickness="4"
+															data-fill="{
+																&quot;color&quot;: &quot;#fec400&quot;
+															}"
+															>
+																<div class="circle-content">
+																	<h6 class="text-uppercase">html</h6>
+																	<h6>50%</h6>
+																	<strong></strong>
 																</div>
 															</div>
+														</div>
 
-															<div class="col-4 px-1">
-																<div class="circle"
-																data-size="60"
-																data-value="0.7"
-																data-thickness="4"
-																data-fill="{
-																	&quot;color&quot;: &quot;#fec400&quot;
-																}"
-																>
-																	<div class="circle-content">
-																		<h6 class="text-uppercase">css</h6>
-																		<h6>70%</h6>
-																		<strong></strong>
-																	</div>
+														<div class="col-4 px-1">
+															<div class="circle"
+															data-size="60"
+															data-value="0.9"
+															data-thickness="4"
+															data-fill="{
+																&quot;color&quot;: &quot;#35D00E&quot;
+															}"
+															>
+																<div class="circle-content">
+																	<h6 class="text-uppercase">css</h6>
+																	<h6>90%</h6>
+																	<strong></strong>
 																</div>
 															</div>
+														</div>
 
-															<div class="col-4 px-1">
-																<div class="circle"
-																data-size="60"
-																data-value="0.5"
-																data-thickness="4"
-																data-fill="{
-																	&quot;color&quot;: &quot;#fe5461&quot;
-																}"
-																>
-																	<div class="circle-content">
-																		<h6 class="text-uppercase">js</h6>
-																		<h6>50%</h6>
-																		<strong></strong>
-																	</div>
+														<div class="col-4 px-1">
+															<div class="circle"
+															data-size="60"
+															data-value="0.2"
+															data-thickness="4"
+															data-fill="{
+																&quot;color&quot;: &quot;#fe5461&quot;
+															}"
+															>
+																<div class="circle-content">
+																	<h6 class="text-uppercase">js</h6>
+																	<h6>20%</h6>
+																	<strong></strong>
 																</div>
 															</div>
 														</div>
@@ -189,11 +515,11 @@ plugins: ["circle_progress"]
 										</div>
 
 										<div class="col-lg-6 col-xl-4 col-xxl-3">
-											<div class="card card-team mb-4">
-												<div class="card-body text-center">
+											<div class="card mt-6 mb-4">
+												<div class="card-body text-center p-4">
 													<a href="javascript:0" data-toggle="modal" data-target="#modal-contact" class="text-secondary d-inline-block mb-3">
-														<div class="image mb-3">
-															<img src="assets/img/user/u-xl-4.jpg" class="img-fluid rounded-circle" alt="Avatar Image">
+														<div class="image mb-3 mt-n9">
+															<img src="assets/img/user/u-xl-10.jpg" class="img-fluid rounded-circle" alt="Avatar Image">
 														</div>
 
 														<h5 class="card-title text-dark">Emily Disuja</h5>
@@ -212,56 +538,54 @@ plugins: ["circle_progress"]
 
 													<p class="card-text text-center mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor </p>
 
-													<div class="circle-progress circle-sm">
-														<div class="row justify-content-center">
-															<div class="col-4 px-1">
-																<div class=" circle"
-																data-size="60"
-																data-value="0.9"
-																data-thickness="4"
-																data-fill="{
-																	&quot;color&quot;: &quot;#35D00E&quot;
-																}"
-																>
-																	<div class="circle-content">
-																		<h6 class="text-uppercase">html</h6>
-																		<h6>90%</h6>
-																		<strong></strong>
-																	</div>
+													<div class="row justify-content-center">
+														<div class="col-4 px-1">
+															<div class=" circle"
+															data-size="60"
+															data-value="0.96"
+															data-thickness="4"
+															data-fill="{
+																&quot;color&quot;: &quot;#35D00E&quot;
+															}"
+															>
+																<div class="circle-content">
+																	<h6 class="text-uppercase">html</h6>
+																	<h6>95%</h6>
+																	<strong></strong>
 																</div>
 															</div>
+														</div>
 
-															<div class="col-4 px-1">
-																<div class="circle"
-																data-size="60"
-																data-value="0.7"
-																data-thickness="4"
-																data-fill="{
-																	&quot;color&quot;: &quot;#fec400&quot;
-																}"
-																>
-																	<div class="circle-content">
-																		<h6 class="text-uppercase">css</h6>
-																		<h6>70%</h6>
-																		<strong></strong>
-																	</div>
+														<div class="col-4 px-1">
+															<div class="circle"
+															data-size="60"
+															data-value="0.25"
+															data-thickness="4"
+															data-fill="{
+																&quot;color&quot;: &quot;#fe5461&quot;
+															}"
+															>
+																<div class="circle-content">
+																	<h6 class="text-uppercase">css</h6>
+																	<h6>10%</h6>
+																	<strong></strong>
 																</div>
 															</div>
+														</div>
 
-															<div class="col-4 px-1">
-																<div class="circle"
-																data-size="60"
-																data-value="0.5"
-																data-thickness="4"
-																data-fill="{
-																	&quot;color&quot;: &quot;#fe5461&quot;
-																}"
-																>
-																	<div class="circle-content">
-																		<h6 class="text-uppercase">js</h6>
-																		<h6>50%</h6>
-																		<strong></strong>
-																	</div>
+														<div class="col-4 px-1">
+															<div class="circle"
+															data-size="60"
+															data-value="0.69"
+															data-thickness="4"
+															data-fill="{
+																&quot;color&quot;: &quot;#fec400&quot;
+															}"
+															>
+																<div class="circle-content">
+																	<h6 class="text-uppercase">js</h6>
+																	<h6>55%</h6>
+																	<strong></strong>
 																</div>
 															</div>
 														</div>
@@ -271,11 +595,11 @@ plugins: ["circle_progress"]
 										</div>
 
 										<div class="col-lg-6 col-xl-4 col-xxl-3">
-											<div class="card card-team mb-4">
-												<div class="card-body text-center">
+											<div class="card mt-6 mb-4">
+												<div class="card-body text-center p-4">
 													<a href="javascript:0" data-toggle="modal" data-target="#modal-contact" class="text-secondary d-inline-block mb-3">
-														<div class="image mb-3">
-															<img src="assets/img/user/u-xl-12.jpg" class="img-fluid rounded-circle" alt="Avatar Image">
+														<div class="image mb-3 mt-n9">
+															<img src="assets/img/user/u-xl-11.jpg" class="img-fluid rounded-circle" alt="Avatar Image">
 														</div>
 
 														<h5 class="card-title text-dark">William Camble</h5>
@@ -294,56 +618,374 @@ plugins: ["circle_progress"]
 
 													<p class="card-text text-center mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor </p>
 
-													<div class="circle-progress circle-sm">
-														<div class="row justify-content-center">
-															<div class="col-4 px-1">
-																<div class="circle"
-																data-size="60"
-																data-value="0.9"
-																data-thickness="4"
-																data-fill="{
-																	&quot;color&quot;: &quot;#35D00E&quot;
-																}"
-																>
-																	<div class="circle-content">
-																		<h6 class="text-uppercase">html</h6>
-																		<h6>90%</h6>
-																		<strong></strong>
-																	</div>
+													<div class="row justify-content-center">
+														<div class="col-4 px-1">
+															<div class="circle"
+															data-size="60"
+															data-value="1"
+															data-thickness="4"
+															data-fill="{
+																&quot;color&quot;: &quot;#35D00E&quot;
+															}"
+															>
+																<div class="circle-content">
+																	<h6 class="text-uppercase">html</h6>
+																	<h6>100%</h6>
+																	<strong></strong>
 																</div>
 															</div>
+														</div>
 
-															<div class="col-4 px-1">
-																<div class="circle"
-																data-size="60"
-																data-value="0.7"
-																data-thickness="4"
-																data-fill="{
-																	&quot;color&quot;: &quot;#fec400&quot;
-																}"
-																>
-																	<div class="circle-content">
-																		<h6 class="text-uppercase">css</h6>
-																		<h6>70%</h6>
-																		<strong></strong>
-																	</div>
+														<div class="col-4 px-1">
+															<div class="circle"
+															data-size="60"
+															data-value=".5"
+															data-thickness="4"
+															data-fill="{
+																&quot;color&quot;: &quot;#fec400&quot;
+															}"
+															>
+																<div class="circle-content">
+																	<h6 class="text-uppercase">css</h6>
+																	<h6>50%</h6>
+																	<strong></strong>
 																</div>
 															</div>
+														</div>
 
-															<div class="col-4 px-1">
-																<div class=" circle"
-																data-size="60"
-																data-value="0.5"
-																data-thickness="4"
-																data-fill="{
-																	&quot;color&quot;: &quot;#fe5461&quot;
-																}"
-																>
-																	<div class="circle-content">
-																		<h6 class="text-uppercase">js</h6>
-																		<h6>50%</h6>
-																		<strong></strong>
-																	</div>
+														<div class="col-4 px-1">
+															<div class=" circle"
+															data-size="60"
+															data-value="0.2"
+															data-thickness="4"
+															data-fill="{
+																&quot;color&quot;: &quot;#fe5461&quot;
+															}"
+															>
+																<div class="circle-content">
+																	<h6 class="text-uppercase">js</h6>
+																	<h6>20%</h6>
+																	<strong></strong>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-lg-6 col-xl-4 col-xxl-3">
+											<div class="card mt-6 mb-4">
+												<div class="card-body text-center p-4">
+													<a href="javascript:0" data-toggle="modal" data-target="#modal-contact" class="text-secondary d-inline-block mb-3">
+														<div class="image mb-3 mt-n9">
+															<img src="assets/img/user/u-xl-5.jpg" class="img-fluid rounded-circle" alt="Avatar Image">
+														</div>
+
+														<h5 class="card-title text-dark">Emily Disuja</h5>
+
+														<ul class="list-unstyled">
+															<li class="d-flex mb-1">
+																<i class="mdi mdi-map mr-1"></i>
+																<span>Nulla vel metus 15/178</span>
+															</li>
+															<li class="d-flex">
+																<i class="mdi mdi-email mr-1"></i>
+																<span>exmaple@email.com</span>
+															</li>
+														</ul>
+													</a>
+
+													<p class="card-text text-center mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor </p>
+
+													<div class="row justify-content-center">
+														<div class="col-4 px-1">
+															<div class=" circle"
+															data-size="60"
+															data-value="0.96"
+															data-thickness="4"
+															data-fill="{
+																&quot;color&quot;: &quot;#35D00E&quot;
+															}"
+															>
+																<div class="circle-content">
+																	<h6 class="text-uppercase">html</h6>
+																	<h6>95%</h6>
+																	<strong></strong>
+																</div>
+															</div>
+														</div>
+
+														<div class="col-4 px-1">
+															<div class="circle"
+															data-size="60"
+															data-value="0.25"
+															data-thickness="4"
+															data-fill="{
+																&quot;color&quot;: &quot;#fe5461&quot;
+															}"
+															>
+																<div class="circle-content">
+																	<h6 class="text-uppercase">css</h6>
+																	<h6>10%</h6>
+																	<strong></strong>
+																</div>
+															</div>
+														</div>
+
+														<div class="col-4 px-1">
+															<div class="circle"
+															data-size="60"
+															data-value="0.69"
+															data-thickness="4"
+															data-fill="{
+																&quot;color&quot;: &quot;#fec400&quot;
+															}"
+															>
+																<div class="circle-content">
+																	<h6 class="text-uppercase">js</h6>
+																	<h6>55%</h6>
+																	<strong></strong>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-lg-6 col-xl-4 col-xxl-3">
+											<div class="card mt-6 mb-4">
+												<div class="card-body text-center p-4">
+													<a href="javascript:0" data-toggle="modal" data-target="#modal-contact" class="text-secondary d-inline-block mb-3">
+														<div class="image mb-3 mt-n9">
+															<img src="assets/img/user/u-xl-9.jpg" class="img-fluid rounded-circle" alt="Avatar Image">
+														</div>
+
+														<h5 class="card-title text-dark">Emma Smith</h5>
+
+														<ul class="list-unstyled">
+															<li class="d-flex mb-1">
+																<i class="mdi mdi-map mr-1"></i>
+																<span>Nulla vel metus 15/178</span>
+															</li>
+															<li class="d-flex">
+																<i class="mdi mdi-email mr-1"></i>
+																<span>exmaple@email.com</span>
+															</li>
+														</ul>
+													</a>
+
+													<p class="card-text text-center mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor </p>
+													
+													<div class="row justify-content-center">
+														<div class="col-4 px-1">
+															<div class=" circle"
+															data-size="60"
+															data-value="0.75"
+															data-thickness="4"
+															data-fill="{
+																&quot;color&quot;: &quot;#fec400&quot;
+															}"
+															>
+																<div class="circle-content">
+																	<h6 class="text-uppercase">html</h6>
+																	<h6>75%</h6>
+																	<strong></strong>
+																</div>
+															</div>
+														</div>
+
+														<div class="col-4 px-1">
+															<div class=" circle"
+															data-size="60"
+															data-value="0.9"
+															data-thickness="4"
+															data-fill="{
+																&quot;color&quot;: &quot;#35D00E&quot;
+															}"
+															>
+																<div class="circle-content">
+																	<h6 class="text-uppercase">css</h6>
+																	<h6>90%</h6>
+																	<strong></strong>
+																</div>
+															</div>
+														</div>
+
+														<div class="col-4 px-1">
+															<div class=" circle"
+															data-size="60"
+															data-value="0.2"
+															data-thickness="4"
+															data-fill="{
+																&quot;color&quot;: &quot;#fe5461&quot;
+															}"
+															>
+																<div class="circle-content">
+																	<h6 class="text-uppercase">js</h6>
+																	<h6>20%</h6>
+																	<strong></strong>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-lg-6 col-xl-4 col-xxl-3">
+											<div class="card mt-6 mb-4">
+												<div class="card-body text-center p-4">
+													<a href="javascript:0" data-toggle="modal" data-target="#modal-contact" class="text-secondary d-inline-block mb-3">
+														<div class="image mb-3 mt-n9">
+															<img src="assets/img/user/u-xl-12.jpg" class="img-fluid rounded-circle" alt="Avatar Image">
+														</div>
+		
+														<h5 class="card-title text-dark">William Camble</h5>
+		
+														<ul class="list-unstyled">
+															<li class="d-flex mb-1">
+																<i class="mdi mdi-map mr-1"></i>
+																<span>Nulla vel metus 15/178</span>
+															</li>
+															<li class="d-flex">
+																<i class="mdi mdi-email mr-1"></i>
+																<span>exmaple@email.com</span>
+															</li>
+														</ul>
+													</a>
+		
+													<p class="card-text text-center mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor </p>
+		
+													<div class="row justify-content-center">
+														<div class="col-4 px-1">
+															<div class="circle"
+															data-size="60"
+															data-value="0.8"
+															data-thickness="4"
+															data-fill="{
+																&quot;color&quot;: &quot;#35D00E&quot;
+															}"
+															>
+																<div class="circle-content">
+																	<h6 class="text-uppercase">html</h6>
+																	<h6>80%</h6>
+																	<strong></strong>
+																</div>
+															</div>
+														</div>
+		
+														<div class="col-4 px-1">
+															<div class="circle"
+															data-size="60"
+															data-value="0.4"
+															data-thickness="4"
+															data-fill="{
+																&quot;color&quot;: &quot;#fec400&quot;
+															}"
+															>
+																<div class="circle-content">
+																	<h6 class="text-uppercase">css</h6>
+																	<h6>40%</h6>
+																	<strong></strong>
+																</div>
+															</div>
+														</div>
+		
+														<div class="col-4 px-1">
+															<div class=" circle"
+															data-size="60"
+															data-value="0.15"
+															data-thickness="4"
+															data-fill="{
+																&quot;color&quot;: &quot;#fe5461&quot;
+															}"
+															>
+																<div class="circle-content">
+																	<h6 class="text-uppercase">js</h6>
+																	<h6>15%</h6>
+																	<strong></strong>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-lg-6 col-xl-4 col-xxl-3">
+											<div class="card mt-6 mb-4">
+												<div class="card-body text-center p-4">
+													<a href="javascript:0" data-toggle="modal" data-target="#modal-contact" class="text-secondary d-inline-block mb-3">
+														<div class="image mb-3 mt-n9">
+															<img src="assets/img/user/u6.jpg" class="img-fluid rounded-circle" alt="Avatar Image">
+														</div>
+		
+														<h5 class="card-title text-dark">Albrecht Straub</h5>
+		
+														<ul class="list-unstyled">
+															<li class="d-flex mb-1">
+																<i class="mdi mdi-map mr-1"></i>
+																<span>Nulla vel metus 15/178</span>
+															</li>
+															<li class="d-flex">
+																<i class="mdi mdi-email mr-1"></i>
+																<span>exmaple@email.com</span>
+															</li>
+														</ul>
+													</a>
+		
+													<p class="card-text text-center mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor </p>
+		
+													<div class="row justify-content-center">
+														<div class="col-4 px-1">
+															<div class="circle"
+															data-size="60"
+															data-value="0.9"
+															data-thickness="4"
+															data-fill="{
+																&quot;color&quot;: &quot;#35D00E&quot;
+															}"
+															>
+																<div class="circle-content">
+																	<h6 class="text-uppercase">html</h6>
+																	<h6>90%</h6>
+																	<strong></strong>
+																</div>
+															</div>
+														</div>
+		
+														<div class="col-4 px-1">
+															<div class="circle"
+															data-size="60"
+															data-value="0.7"
+															data-thickness="4"
+															data-fill="{
+																&quot;color&quot;: &quot;#fec400&quot;
+															}"
+															>
+																<div class="circle-content">
+																	<h6 class="text-uppercase">css</h6>
+																	<h6>70%</h6>
+																	<strong></strong>
+																</div>
+															</div>
+														</div>
+		
+														<div class="col-4 px-1">
+															<div class="circle"
+															data-size="60"
+															data-value="0.3"
+															data-thickness="4"
+															data-fill="{
+																&quot;color&quot;: &quot;#fe5461&quot;
+															}"
+															>
+																<div class="circle-content">
+																	<h6 class="text-uppercase">js</h6>
+																	<h6>30%</h6>
+																	<strong></strong>
 																</div>
 															</div>
 														</div>
@@ -433,6 +1075,81 @@ plugins: ["circle_progress"]
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</div>
+
+<!-- Add Contact Button  -->
+<div class="modal fade" id="modal-add-contact" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <form >
+        <div class="modal-header px-4">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Create New Contact</h5>
+        </div>
+        <div class="modal-body px-4">
+
+          <div class="form-group row mb-6">
+            <label for="coverImage" class="col-sm-4 col-lg-2 col-form-label">User Image</label>
+            <div class="col-sm-8 col-lg-10">
+              <div class="custom-file mb-1">
+                <input type="file" class="custom-file-input" id="coverImage" required>
+                <label class="custom-file-label" for="coverImage">Choose file...</label>
+                <div class="invalid-feedback">Example invalid custom file feedback</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mb-2">
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label for="firstName">First name</label>
+                <input type="text" class="form-control" id="firstName" value="Albrecht">
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label for="lastName">Last name</label>
+                <input type="text" class="form-control" id="lastName" value="Straub">
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="form-group mb-4">
+                <label for="userName">User name</label>
+                <input type="text" class="form-control" id="userName" value="Doe">
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="form-group mb-4">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" value="albrecht.straub@gmail.com">
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="form-group mb-4">
+                <label for="Birthday">Birthday</label>
+                <input type="text" class="form-control" id="Birthday" value="01-10-1993">
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="form-group mb-4">
+                <label for="event">Event</label>
+                <input type="text" class="form-control" id="event" value="Some value for event">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer px-4">
+          <button type="button" class="btn btn-secondary btn-pill" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary btn-pill">Save Contact</button>
+        </div>
+      </form>
     </div>
   </div>
 </div>
