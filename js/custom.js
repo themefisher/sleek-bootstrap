@@ -7,6 +7,7 @@
 4. LOADING BUTTON
 5. TOASTER
 6. PROGRESS BAR
+7. CIRCLE PROGRESS
 
 ====== End ======*/
 
@@ -174,4 +175,11 @@ $(document).ready(function() {
         .css("opacity", 0.4);
     });
 
+    /*======== 7. CIRCLE PROGRESS ========*/
+    var gray = '#f5f6fa';
+    $('.circle').circleProgress({
+      lineCap: "round",
+      startAngle: 4.8,
+      emptyFill: [gray]
+    })
 });
