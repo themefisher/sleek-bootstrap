@@ -15,7 +15,7 @@ plugins: ["circle_progress"]
 									{% include breadcrumb.htm %}
 								</div>
 								<div>
-									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-add-contact"> Add Member
+									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-add-member"> Add Member
 									</button>
 								</div>
 							</div>
@@ -24,21 +24,20 @@ plugins: ["circle_progress"]
 								<div class="col-xl-4">
 									<div class="card card-default mb-4 mb-lg-5">
 										<div class="card-header card-header-border-bottom">
-											<h2>Your Subscription</h2>
+											<h2>Progress</h2>
 										</div>
 
-											<div class="card-body p-4 p-xl-6">
+											<div class="card-body p-4 py-xl-6 px-xl-2">
 												<div class="circle circle-lg"
 													data-size="200"
-													data-value="0.8"
+													data-value="0.83"
 													data-thickness="20"
 													data-fill="{
 														&quot;color&quot;: &quot;#35D00E&quot;
 													}"
 													>
 												<div class="circle-content">
-													<h6 class="text-uppercase text-dark font-weight-bold">8/10</h6>
-													<p>Our team <br> members</p>
+													<h6 class="text-uppercase text-dark font-weight-bold"> <span>83%</span>/<span>10</span></h6>
 
 													<strong></strong>
 												</div>
@@ -249,15 +248,15 @@ plugins: ["circle_progress"]
 												<div class="col-4 px-1">
 													<div class="circle"
 													data-size="60"
-													data-value="0.9"
+													data-value="0.7"
 													data-thickness="4"
 													data-fill="{
-														&quot;color&quot;: &quot;#35D00E&quot;
+														&quot;color&quot;: &quot;#fec400&quot;
 													}"
 													>
 														<div class="circle-content">
 															<h6 class="text-uppercase">html</h6>
-															<h6>90%</h6>
+															<h6>70%</h6>
 															<strong></strong>
 														</div>
 													</div>
@@ -266,15 +265,15 @@ plugins: ["circle_progress"]
 												<div class="col-4 px-1">
 													<div class="circle"
 													data-size="60"
-													data-value="0.7"
+													data-value="0.9"
 													data-thickness="4"
 													data-fill="{
-														&quot;color&quot;: &quot;#fec400&quot;
+														&quot;color&quot;: &quot;#35D00E&quot;
 													}"
 													>
 														<div class="circle-content">
 															<h6 class="text-uppercase">css</h6>
-															<h6>70%</h6>
+															<h6>90%</h6>
 															<strong></strong>
 														</div>
 													</div>
@@ -407,6 +406,23 @@ plugins: ["circle_progress"]
 
 											<div class="row justify-content-center">
 												<div class="col-4 px-1">
+													<div class=" circle"
+													data-size="60"
+													data-value="0.15"
+													data-thickness="4"
+													data-fill="{
+														&quot;color&quot;: &quot;#fe5461&quot;
+													}"
+													>
+														<div class="circle-content">
+															<h6 class="text-uppercase">html</h6>
+															<h6>15%</h6>
+															<strong></strong>
+														</div>
+													</div>
+												</div>
+
+												<div class="col-4 px-1">
 													<div class="circle"
 													data-size="60"
 													data-value="0.8"
@@ -416,7 +432,7 @@ plugins: ["circle_progress"]
 													}"
 													>
 														<div class="circle-content">
-															<h6 class="text-uppercase">html</h6>
+															<h6 class="text-uppercase">css</h6>
 															<h6>80%</h6>
 															<strong></strong>
 														</div>
@@ -433,25 +449,8 @@ plugins: ["circle_progress"]
 													}"
 													>
 														<div class="circle-content">
-															<h6 class="text-uppercase">css</h6>
-															<h6>40%</h6>
-															<strong></strong>
-														</div>
-													</div>
-												</div>
-
-												<div class="col-4 px-1">
-													<div class=" circle"
-													data-size="60"
-													data-value="0.15"
-													data-thickness="4"
-													data-fill="{
-														&quot;color&quot;: &quot;#fe5461&quot;
-													}"
-													>
-														<div class="circle-content">
 															<h6 class="text-uppercase">js</h6>
-															<h6>15%</h6>
+															<h6>40%</h6>
 															<strong></strong>
 														</div>
 													</div>
@@ -867,74 +866,379 @@ plugins: ["circle_progress"]
 </div>
 
 <!-- Add Contact Button  -->
-<div class="modal fade" id="modal-add-contact" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+<div class="modal fade" id="modal-add-member" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
   aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content">
-      <form >
-        <div class="modal-header px-4">
-          <h5 class="modal-title" id="exampleModalCenterTitle">Create New Contact</h5>
-        </div>
-        <div class="modal-body px-4">
+      <div class="chat">
+				<form class="modal-header chat-search border-bottom-0">
+					<input type="text" class="form-control" placeholder="Search...">
+				</form>
+				
+        <div class="modal-body p-0">
+					<!-- Chat Left Side -->
+					<div class="chat-left-side">
+						<ul class="list-unstyled border-top mb-0" id="chat-left-content">
+							<li>
+								<a href="#" class="media media-message">
+									<div class="position-relative mr-3">
+										<img class="rounded-circle" src="assets/img/user/u1.jpg" alt="Image">
+										<span class="status away"></span>
+									</div>
+									<div class="media-body d-flex justify-content-between">
+										<div class="message-contents">
+											<h4 class="title">Aaren</h4>
+											<p class="last-msg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam itaque doloremque
+												odio,
+												eligendi delectus vitae.</p>
+										</div>
 
-          <div class="form-group row mb-6">
-            <label for="coverImage" class="col-sm-4 col-lg-2 col-form-label">User Image</label>
-            <div class="col-sm-8 col-lg-10">
-              <div class="custom-file mb-1">
-                <input type="file" class="custom-file-input" id="coverImage" required>
-                <label class="custom-file-label" for="coverImage">Choose file...</label>
-                <div class="invalid-feedback">Example invalid custom file feedback</div>
-              </div>
-            </div>
-          </div>
+										<label class="control outlined control-checkbox checkbox-success">
+											<input type="checkbox" checked="checked">
+											<div class="control-indicator"></div>
+										</label>
+	
+									</div>
+								</a>
+							</li>
 
-          <div class="row mb-2">
-            <div class="col-lg-6">
-              <div class="form-group">
-                <label for="firstName">First name</label>
-                <input type="text" class="form-control" id="firstName" value="Albrecht">
-              </div>
-            </div>
+							<li>
+								<a href="#" class="media media-message ">
+									<div class="position-relative mr-3">
+										<img class="rounded-circle" src="assets/img/user/u2.jpg" alt="Image">
+										<span class="status active"></span>
+									</div>
+									<div class="media-body d-flex justify-content-between">
+										<div class="message-contents">
+											<h4 class="title">Leon Battista</h4>
+											<p class="last-msg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam itaque doloremque
+												odio,
+												eligendi delectus vitae.</p>
+										</div>
+	
+										<label class="control outlined control-checkbox checkbox-success">
+											<input type="checkbox" checked="checked">
+											<div class="control-indicator"></div>
+										</label>
+	
+									</div>
+								</a>
+							</li>
 
-            <div class="col-lg-6">
-              <div class="form-group">
-                <label for="lastName">Last name</label>
-                <input type="text" class="form-control" id="lastName" value="Straub">
-              </div>
-            </div>
+							<li>
+								<a href="#" class="media media-message">
+									<div class="position-relative mr-3">
+										<img class="rounded-circle" src="assets/img/user/u3.jpg" alt="Image">
+										<span class="status away"></span>
+									</div>
+									<div class="media-body d-flex justify-content-between">
+										<div class="message-contents">
+											<h4 class="title">Abriel</h4>
+											<p class="last-msg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam itaque doloremque
+												odio,
+												eligendi delectus vitae.</p>
+										</div>
+	
+										<label class="control outlined control-checkbox checkbox-success">
+											<input type="checkbox">
+											<div class="control-indicator"></div>
+										</label>
+	
+									</div>
+								</a>
+							</li>
 
-            <div class="col-lg-6">
-              <div class="form-group mb-4">
-                <label for="userName">User name</label>
-                <input type="text" class="form-control" id="userName" value="Doe">
-              </div>
-            </div>
+							<li>
+								<a href="#" class="media media-message">
+									<div class="position-relative mr-3">
+										<img class="rounded-circle" src="assets/img/user/u4.jpg" alt="Image">
+										<span class="status active"></span>
+									</div>
+	
+									<div class="media-body d-flex justify-content-between">
+										<div class="message-contents">
+											<h4 class="title">Emma</h4>
+											<p class="last-msg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam itaque doloremque
+												odio,
+												eligendi delectus vitae.</p>
+										</div>
+	
+										<label class="control outlined control-checkbox checkbox-success">
+											<input type="checkbox">
+											<div class="control-indicator"></div>
+										</label>
+	
+									</div>
+								</a>
+							</li>
 
-            <div class="col-lg-6">
-              <div class="form-group mb-4">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" value="albrecht.straub@gmail.com">
-              </div>
-            </div>
+							<li>
+								<a href="#" class="media media-message">
+									<div class="position-relative mr-3">
+										<img class="rounded-circle" src="assets/img/user/u5.jpg" alt="Image">
+										<span class="status away"></span>
+									</div>
+	
+									<div class="media-body d-flex justify-content-between">
+										<div class="message-contents">
+											<h4 class="title">Emily</h4>
+											<p class="last-msg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam itaque doloremque
+												odio,
+												eligendi delectus vitae.</p>
+										</div>
+	
+										<label class="control outlined control-checkbox checkbox-success">
+											<input type="checkbox">
+											<div class="control-indicator"></div>
+										</label>
+	
+									</div>
+								</a>
+							</li>
 
-            <div class="col-lg-6">
-              <div class="form-group mb-4">
-                <label for="Birthday">Birthday</label>
-                <input type="text" class="form-control" id="Birthday" value="01-10-1993">
-              </div>
-            </div>
+							<li>
+								<a href="#" class="media media-message">
+									<div class="position-relative mr-3">
+										<img class="rounded-circle" src="assets/img/user/u6.jpg" alt="Image">
+										<span class="status"></span>
+									</div>
+	
+									<div class="media-body d-flex justify-content-between">
+										<div class="message-contents">
+											<h4 class="title">William</h4>
+											<p class="last-msg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam itaque doloremque
+												odio,
+												eligendi delectus vitae.</p>
+										</div>
+	
+										<label class="control outlined control-checkbox checkbox-success">
+											<input type="checkbox">
+											<div class="control-indicator"></div>
+										</label>
+	
+									</div>
+								</a>
+							</li>
 
-            <div class="col-lg-6">
-              <div class="form-group mb-4">
-                <label for="event">Event</label>
-                <input type="text" class="form-control" id="event" value="Some value for event">
-              </div>
-            </div>
-          </div>
-        </div>
+							<li>
+								<a href="#" class="media media-message">
+									<div class="position-relative mr-3">
+										<img class="rounded-circle" src="assets/img/user/u7.jpg" alt="Image">
+										<span class="status away"></span>
+									</div>
+	
+									<div class="media-body d-flex justify-content-between">
+										<div class="message-contents">
+											<h4 class="title">Sophia</h4>
+											<p class="last-msg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam itaque doloremque
+												odio,
+												eligendi delectus vitae.</p>
+										</div>
+	
+										<label class="control outlined control-checkbox checkbox-success">
+											<input type="checkbox">
+											<div class="control-indicator"></div>
+										</label>
+	
+									</div>
+								</a>
+							</li>
+
+							<li>
+								<a href="#" class="media media-message">
+									<div class="position-relative mr-3">
+										<img class="rounded-circle" src="assets/img/user/u8.jpg" alt="Image">
+										<span class="status"></span>
+									</div>
+	
+									<div class="media-body d-flex justify-content-between">
+										<div class="message-contents">
+											<h4 class="title">Sophia</h4>
+											<p class="last-msg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam itaque doloremque
+												odio,
+												eligendi delectus vitae.</p>
+										</div>
+	
+										<label class="control outlined control-checkbox checkbox-success">
+											<input type="checkbox">
+											<div class="control-indicator"></div>
+										</label>
+	
+									</div>
+								</a>
+							</li>
+	
+							<li>
+								<a href="#" class="media media-message">
+									<div class="position-relative mr-3">
+										<img class="rounded-circle" src="assets/img/user/u1.jpg" alt="Image">
+										<span class="status away"></span>
+									</div>
+									<div class="media-body d-flex justify-content-between">
+										<div class="message-contents">
+											<h4 class="title">Aaren</h4>
+											<p class="last-msg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam itaque doloremque
+												odio,
+												eligendi delectus vitae.</p>
+										</div>
+	
+										<label class="control outlined control-checkbox checkbox-success">
+											<input type="checkbox">
+											<div class="control-indicator"></div>
+										</label>
+	
+									</div>
+								</a>
+							</li>
+
+							<li>
+								<a href="#" class="media media-message">
+									<div class="position-relative mr-3">
+										<img class="rounded-circle" src="assets/img/user/u2.jpg" alt="Image">
+										<span class="status"></span>
+									</div>
+									<div class="media-body d-flex justify-content-between">
+										<div class="message-contents">
+											<h4 class="title">Abby</h4>
+											<p class="last-msg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam itaque doloremque
+												odio,
+												eligendi delectus vitae.</p>
+										</div>
+	
+										<label class="control outlined control-checkbox checkbox-success">
+											<input type="checkbox">
+											<div class="control-indicator"></div>
+										</label>
+	
+									</div>
+								</a>
+							</li>
+
+							<li>
+								<a href="#" class="media media-message">
+									<div class="position-relative mr-3">
+										<img class="rounded-circle" src="assets/img/user/u3.jpg" alt="Image">
+										<span class="status away"></span>
+									</div>
+									<div class="media-body d-flex justify-content-between">
+										<div class="message-contents">
+											<h4 class="title">Abriel</h4>
+											<p class="last-msg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam itaque doloremque
+												odio,
+												eligendi delectus vitae.</p>
+										</div>
+	
+										<label class="control outlined control-checkbox checkbox-success">
+											<input type="checkbox">
+											<div class="control-indicator"></div>
+										</label>
+	
+									</div>
+								</a>
+							</li>
+
+							<li>
+								<a href="#" class="media media-message">
+									<div class="position-relative mr-3">
+										<img class="rounded-circle" src="assets/img/user/u4.jpg" alt="Image">
+										<span class="status active"></span>
+									</div>
+	
+									<div class="media-body d-flex justify-content-between">
+										<div class="message-contents">
+											<h4 class="title">Emma</h4>
+											<p class="last-msg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam itaque doloremque
+												odio,
+												eligendi delectus vitae.</p>
+										</div>
+	
+										<label class="control outlined control-checkbox checkbox-success">
+											<input type="checkbox">
+											<div class="control-indicator"></div>
+										</label>
+	
+									</div>
+								</a>
+							</li>
+
+							<li>
+								<a href="#" class="media media-message">
+									<div class="position-relative mr-3">
+										<img class="rounded-circle" src="assets/img/user/u5.jpg" alt="Image">
+										<span class="status"></span>
+									</div>
+	
+									<div class="media-body d-flex justify-content-between">
+										<div class="message-contents">
+											<h4 class="title">Emily</h4>
+											<p class="last-msg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam itaque doloremque
+												odio,
+												eligendi delectus vitae.</p>
+										</div>
+	
+										<label class="control outlined control-checkbox checkbox-success">
+											<input type="checkbox">
+											<div class="control-indicator"></div>
+										</label>
+	
+									</div>
+								</a>
+							</li>
+
+							<li>
+								<a href="#" class="media media-message">
+									<div class="position-relative mr-3">
+										<img class="rounded-circle" src="assets/img/user/u6.jpg" alt="Image">
+										<span class="status away"></span>
+									</div>
+	
+									<div class="media-body d-flex justify-content-between">
+										<div class="message-contents">
+											<h4 class="title">William</h4>
+											<p class="last-msg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam itaque doloremque
+												odio,
+												eligendi delectus vitae.</p>
+										</div>
+	
+										<label class="control outlined control-checkbox checkbox-success">
+											<input type="checkbox">
+											<div class="control-indicator"></div>
+										</label>
+	
+									</div>
+								</a>
+							</li>
+
+							<li>
+								<a href="#" class="media media-message">
+									<div class="position-relative mr-3">
+										<img class="rounded-circle" src="assets/img/user/u7.jpg" alt="Image">
+										<span class="status"></span>
+									</div>
+	
+									<div class="media-body d-flex justify-content-between">
+										<div class="message-contents">
+											<h4 class="title">Sophia</h4>
+											<p class="last-msg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam itaque doloremque
+												odio,
+												eligendi delectus vitae.</p>
+										</div>
+	
+										<label class="control outlined control-checkbox checkbox-success">
+											<input type="checkbox">
+											<div class="control-indicator"></div>
+										</label>
+	
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
         <div class="modal-footer px-4">
           <button type="button" class="btn btn-secondary btn-pill" data-dismiss="modal">Cancel</button>
-          <button type="button" class="btn btn-primary btn-pill">Save Contact</button>
+          <button type="button" class="btn btn-primary btn-pill">Add new member</button>
         </div>
       </form>
     </div>
