@@ -37,6 +37,11 @@
         "name": "team",
         "label": "Team",
         "link": "team.html"
+      },
+      {
+        "name": "calendar",
+        "label": "Calendar",
+        "link": "calendar.html"
       }
     ]
   },

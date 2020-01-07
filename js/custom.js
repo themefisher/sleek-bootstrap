@@ -176,10 +176,15 @@ $(document).ready(function() {
     });
 
     /*======== 7. CIRCLE PROGRESS ========*/
+    var circle = $('.circle')
     var gray = '#f5f6fa';
-    $('.circle').circleProgress({
-      lineCap: "round",
-      startAngle: 4.8,
-      emptyFill: [gray]
-    })
+
+    if(circle.length != 0){
+      circle.circleProgress({
+        lineCap: "round",
+        startAngle: 4.8,
+        emptyFill: [gray]
+      })
+    };
+
 });

@@ -1,0 +1,282 @@
+/*
+i wish this required CSS was better documented :(
+https://github.com/FezVrasta/popper.js/issues/674
+derived from this CSS on this page: https://popper.js.org/tooltip-examples.html
+*/
+
+
+.full-calendar {
+  
+  .fc-toolbar {
+    margin-bottom: 30px;
+    line-height: 0;
+    padding: 10px 50px;
+  }
+
+  .fc-left {
+    h2 {
+      color: $dark;
+      font-size: 22px;
+      text-transform: capitalize;
+      margin-left: 0;
+    }
+  }
+
+  .fc-view-container {
+    background-color: $white;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 6px 18px;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  thead tr {
+    background-color: transparent;
+    box-shadow: none;
+  }
+  
+  .fc-day-header {
+    padding: 10px 0;
+    span {
+      color: $black;
+      // font-weight: bold;
+      font-size: 1rem;
+    }
+  }
+
+  .fc-left {
+    margin-bottom: 0;
+  }
+
+  .fc-time,
+  .fc-title {
+    color: $white;
+  }
+
+  .fc-day-number {
+    color: $black;
+    // font-weight: 600;
+  }
+
+ .fc-time {
+   font-weight: normal;
+ }
+
+  thead tr th:first-child {
+    border-top-left-radius: 10px;
+  }
+
+  .fc-event {
+    border: 1px solid transparent;
+  }
+
+  .fc-event, .fc-event-dot {
+    background-color: $primary;
+  }
+
+  .fc-button-primary {
+    background-color: $navy;
+    border-color: $navy;
+    &:focus {
+      box-shadow: none !important;
+    }
+    &:hover {
+      background-color: #2d2d4a;
+      border-color: #2d2d4a;
+    }
+  }
+
+  .fc-icon {
+    margin-top: -3px;
+  }
+
+  .fc-today-button {
+    background-color: $primary;
+    border-color: $primary;
+    text-transform: uppercase;
+    // font-weight: bold;
+    &:focus {
+      box-shadow: none !important;
+    }
+    &:hover {
+      background-color: $primary;
+      border-color: $primary;
+    }
+  }
+
+  .fc-button:disabled {
+    opacity: 1;
+  }
+
+  .fc-button-primary:not(:disabled).fc-button-active,
+  .fc-button-primary:not(:disabled):active {
+    background-color: $navy;
+    border-color: $navy;
+  }
+
+  .fc td, .fc th {
+    border: 1px solid transparent;
+  }
+  .fc td {
+    border-right: 1px solid #ddd;
+    &:last-child {
+      border-right-color: transparent;
+    }
+  }
+
+  .fc-row .fc-bg {
+    border-top: 1px solid #ddd !important;
+  }
+
+  tbody tr  {
+    border-bottom: 1px solid #ddd !important;
+  }
+
+  .fc th {
+    border: 1px solid #ddd;
+  }
+
+  .fc-past-event {
+    background-color: #bfbfc3
+  }
+
+  .fc-current-event {
+    .fc-time,
+    .fc-title {
+      // font-weight: bold;
+      font-size: 13px;
+    }
+  }
+
+  .fc-today {
+    .fc-day-number {
+      background-color: $primary;
+      color: $white;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      text-align: center;
+    }
+  }
+
+}
+
+.fc-datepicker-header {
+  cursor: pointer;
+}
+
+.fc-unthemed td.fc-today {
+  background-color: rgba($primary, 0.3);
+}
+
+// .tooltip-inner {
+//   background-color: #F5F6F8!important;
+//   border: 1px solid transparent;
+//   padding: 0.56rem 1.125rem;
+//   color: #1b223c;
+//   color: #1b223c;
+//   font-size: 0.98rem;
+//   font-weight: 500;
+// }
+
+// .popper,
+// .tooltip {
+//   position: absolute;
+//   z-index: 9999;
+//   background: #F5F6F8;
+//   color: black;
+//   width: 150px;
+//   border-radius: 3px;
+//   box-shadow: 0 0 2px rgba($black, 0.3);
+//   padding: 2px;
+//   text-align: center;
+// }
+// .style5 .tooltip {
+//   background: #1E252B;
+//   color: #FFFFFF;
+//   max-width: 200px;
+//   width: auto;
+//   font-size: .8rem;
+//   padding: .5em 1em;
+//   opacity: 1;
+// }
+// .popper .popper__arrow,
+// .tooltip .tooltip-arrow {
+//   width: 0;
+//   height: 0;
+//   border-style: solid;
+//   position: absolute;
+//   margin: 5px;
+// }
+
+// .tooltip .tooltip-arrow,
+// .popper .popper__arrow {
+//   border-color: #cccccc;
+// }
+// .style5 .tooltip .tooltip-arrow {
+//   border-color: #1E252B;
+// }
+// .popper[x-placement^="top"],
+// .tooltip[x-placement^="top"] {
+//   margin-bottom: 5px;
+// }
+// .popper[x-placement^="top"] .popper__arrow,
+// .tooltip[x-placement^="top"] .tooltip-arrow {
+//   border-width: 5px 5px 0 5px;
+//   border-left-color: transparent;
+//   border-right-color: transparent;
+//   border-bottom-color: transparent;
+//   bottom: -5px;
+//   left: calc(50% - 5px);
+//   margin-top: 0;
+//   margin-bottom: 0;
+// }
+// .popper[x-placement^="bottom"],
+// .tooltip[x-placement^="bottom"] {
+//   margin-top: 5px;
+// }
+// .tooltip[x-placement^="bottom"] .tooltip-arrow,
+// .popper[x-placement^="bottom"] .popper__arrow {
+//   border-width: 0 5px 5px 5px;
+//   border-left-color: transparent;
+//   border-right-color: transparent;
+//   border-top-color: transparent;
+//   top: -5px;
+//   left: calc(50% - 5px);
+//   margin-top: 0;
+//   margin-bottom: 0;
+// }
+// .tooltip[x-placement^="right"],
+// .popper[x-placement^="right"] {
+//   margin-left: 5px;
+// }
+// .popper[x-placement^="right"] .popper__arrow,
+// .tooltip[x-placement^="right"] .tooltip-arrow {
+//   border-width: 5px 5px 5px 0;
+//   border-left-color: transparent;
+//   border-top-color: transparent;
+//   border-bottom-color: transparent;
+//   left: -5px;
+//   top: calc(50% - 5px);
+//   margin-left: 0;
+//   margin-right: 0;
+// }
+// .popper[x-placement^="left"],
+// .tooltip[x-placement^="left"] {
+//   margin-right: 5px;
+// }
+// .popper[x-placement^="left"] .popper__arrow,
+// .tooltip[x-placement^="left"] .tooltip-arrow {
+//   border-width: 5px 0 5px 5px;
+//   border-top-color: transparent;
+//   border-right-color: transparent;
+//   border-bottom-color: transparent;
+//   right: -5px;
+//   top: calc(50% - 5px);
+//   margin-left: 0;
+//   margin-right: 0;
+// }
+
+.ui-icon {
+	top: -4px;
+  left: -7px;
+}

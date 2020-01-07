@@ -1,0 +1,29 @@
+---
+layout: default
+title: "calendar - Sleek Admin Dashboard Template"
+
+
+parent: "app"
+sub_parent: "app"
+activePage: "calendar"
+plugins: ["full_calendar", "date_range_picker"]
+---
+
+<div class="breadcrumb-wrapper">
+  <div>
+    <h1>calendar</h1>
+    {% include breadcrumb.htm %}
+  </div>
+</div>
+
+<div class="card card-default mb-4 mb-lg-5">
+  <div class="card-header card-header-border-bottom">
+    <h2>Calendar</h2>
+  </div>
+
+    <div class="card-body p-0">
+      <div class="full-calendar">
+        <div id='calendar'></div>
+      </div>
+  </div>
+</div>
