@@ -29,8 +29,6 @@
   {% when 'full_calendar' %}
 <script src='assets/plugins/fullcalendar/core-4.3.1/main.min.js'></script>
 <script src='assets/plugins/fullcalendar/daygrid-4.3.0/main.min.js'></script>
-<!-- <script src='assets/plugins/fullcalendar/popper/popper.min.js'></script>
-<script src='assets/plugins/fullcalendar/tooltip/tooltip.min.js'></script> -->
 <script src='assets/plugins/fullcalendar/month-picker/monthpicker.min.js'></script>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
@@ -39,15 +37,8 @@
     var calendar = new FullCalendar.Calendar(calendarEl, {
       plugins: [ 'dayGrid' ],
       defaultView: 'dayGridMonth',
-      // defaultDate: '2020-01-12',
 
       eventRender: function(info) {
-        // var tooltip = new Tooltip(info.el, {
-        //   title: info.event.extendedProps.description,
-        //   placement: 'top',
-        //   trigger: 'hover',
-        //   container: 'body'
-        // });
         var ntoday = moment().format('YYYYMMDD');
         var eventStart = moment( info.event.start ).format('YYYYMMDD');
         info.el.setAttribute("title", info.event.extendedProps.description);
@@ -186,15 +177,11 @@
 
     calendar.render();
 
-
-
     jQuery(document).ready(function(){
       jQuery(".fc-header-toolbar .fc-left h2").attr('id', 'fc-datepicker-header').before('<input size="1" style="height: 0px; width:0px; border: 0px;" id="fc-datepicker" value="" />');
         
       jQuery("#fc-datepicker").MonthPicker({
         Button: false,
-        //MinMonth: "+10y",
-        //MaxMonth: "+10y",
         OnAfterMenuClose: function() {
           var d = jQuery("#fc-datepicker").MonthPicker('Validate')
           if (d !== null){
@@ -202,14 +189,12 @@
           }
         }
       });
-      //$("td.month-picker-previous a").removeClass('ui-state-disabled')
+
       jQuery("#fc-datepicker-header").click(function() {
         jQuery('#fc-datepicker').MonthPicker('Open')
       });
     });
   });
-
-
 </script>
   {% when 'data_table' %}
 <script src="assets/plugins/data-tables/jquery.datatables.min.js"></script>
