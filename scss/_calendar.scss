@@ -7,18 +7,23 @@ derived from this CSS on this page: https://popper.js.org/tooltip-examples.html
 
 .full-calendar {
   
-  .fc-toolbar {
-    margin-bottom: 30px;
+  .fc-header-toolbar {
+    margin-bottom: 0px;
     line-height: 0;
-    padding: 10px 50px;
+    border-bottom: 1px solid #e5e9f2;
+    padding: 17px;
+    @include media-breakpoint-up(md) {
+      padding: 17px 50px;
+    }
   }
 
   .fc-left {
     h2 {
       color: $dark;
-      font-size: 22px;
+      font-size: 1.25125rem;
       text-transform: capitalize;
       margin-left: 0;
+      cursor: pointer;
     }
   }
 
