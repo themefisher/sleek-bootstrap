@@ -6,14 +6,31 @@ derived from this CSS on this page: https://popper.js.org/tooltip-examples.html
 
 
 .full-calendar {
+  position: relative;
+  .btn {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    @include media-breakpoint-up(xxl) {
+      left: 50px;
+    }
+  }
   
   .fc-header-toolbar {
-    margin-bottom: 0px;
+    margin: 30px;
     line-height: 0;
-    border-bottom: 1px solid #e5e9f2;
-    padding: 17px;
+    padding-top: 70px;
+    @include media-breakpoint-up(xxl) {
+      margin: 30px 50px;
+    }
+  }
+
+  .fc-toolbar {
+    flex-direction: column;
+    flex-flow: column-reverse;
+    align-items: flex-start;
     @include media-breakpoint-up(md) {
-      padding: 17px 50px;
+      flex-flow: wrap;
     }
   }
 
@@ -27,10 +44,21 @@ derived from this CSS on this page: https://popper.js.org/tooltip-examples.html
     }
   }
 
+  .fc-right {
+    margin-bottom: 20px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0;
+    }
+  }
+
   .fc-view-container {
     background-color: $white;
-    box-shadow: rgba(0, 0, 0, 0.06) 0px 6px 18px;
-    border-radius: 10px 10px 0 0;
+    border-radius: 0.25rem;
+    border: 1px solid #ddd;
+    margin: 30px;
+    @include media-breakpoint-up(xxl) {
+      margin: 30px 50px 50px;
+    }
   }
   
   thead tr {
