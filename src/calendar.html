@@ -62,57 +62,202 @@ plugins: ["full_calendar", "date_range_picker"]
           <div class="tab-pane pt-3 fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 
 <pre class="mt-4 pre-code">
-jQuery(document).ready(function() {
-jQuery('#basic-data-table').DataTable({
-"dom": '&lt;"row justify-content-between top-information"lf&gt;rt&lt;"row justify-content-between bottom-information"ip>&lt;"clear"&gt;'
+document.addEventListener('DOMContentLoaded', function() {
+  var calendarEl = document.getElementById('calendar');
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+    plugins: [ 'dayGrid' ],
+    defaultView: 'dayGridMonth',
+    eventRender: function(info) {
+      var ntoday = moment().format('YYYYMMDD');
+      var eventStart = moment( info.event.start ).format('YYYYMMDD');
+      info.el.setAttribute("title", info.event.extendedProps.description);
+      info.el.setAttribute("data-toggle", "tooltip");
+      if (eventStart &lt; ntoday){
+        info.el.classList.add("fc-past-event");
+      } else if (eventStart == ntoday){
+        info.el.classList.add("fc-current-event");
+      } else {
+        info.el.classList.add("fc-future-event");
+      }
+    },
+
+    events: [
+      {
+        title: 'All Day Event',
+        description: 'description for All Day Event',
+        start: '2020-01-01'
+      },
+      {
+        title: 'All Day Event',
+        description: 'description for All Day Event',
+        start: '2020-01-03'
+      },
+      {
+        title: 'All Day Event',
+        description: 'description for All Day Event',
+        start: '2020-01-05'
+      },
+      {
+        title: 'Long Event',
+        description: 'description for Long Event',
+        start: '2020-01-07',
+        end: '2020-01-10'
+      },
+      {
+        groupId: '999',
+        title: 'Repeating Event',
+        description: 'description for Repeating Event',
+        start: '2020-01-09T16:00:00'
+      },
+      {
+        groupId: '999',
+        title: 'Repeating Event',
+        description: 'description for Repeating Event',
+        start: '2020-01-16T16:00:00',
+        end: '2020-01-16T16:00:00'
+      },
+      {
+        title: 'Conference',
+        description: 'description for Conference',
+        start: '2020-01-11',
+        end: '2020-01-13'
+      },
+      {
+        title: 'Meeting',
+        description: 'description for Meeting',
+        start: '2020-01-12T10:30:00',
+        end: '2020-01-12T12:30:00'
+      },
+      {
+        title: 'Lunch',
+        description: 'description for Lunch',
+        start: '2020-01-12T12:00:00',
+        end: '2020-01-12T12:00:00'
+      },
+      {
+        title: 'Meeting',
+        description: 'description for Meeting',
+        start: '2020-01-12T14:30:00',
+        end: '2020-01-12T14:30:00'
+      },
+      {
+        title: 'Birthday Party',
+        description: 'description for Birthday Party',
+        start: '2020-01-13T24:00:00',
+        end: '2020-01-13T24:00:00'
+      },
+      {
+        title: 'Long Event',
+        description: 'description for Long Event',
+        start: '2020-01-20',
+        end: '2020-01-23'
+      },
+      {
+        groupId: '999',
+        title: 'Repeating Event',
+        description: 'description for Repeating Event',
+        start: '2020-01-22T16:00:00'
+      },
+      {
+        title: 'Conference',
+        description: 'description for Conference',
+        start: '2020-01-24',
+        end: '2020-01-27'
+      },
+      {
+        title: 'Meeting',
+        description: 'description for Meeting',
+        start: '2020-01-26T10:30:00',
+        end: '2020-01-26T12:30:00'
+      },
+      {
+        title: 'Lunch',
+        description: 'description for Lunch',
+        start: '2020-01-26T12:00:00',
+        end: '2020-01-26T12:00:00'
+      },
+      {
+        title: 'Meeting',
+        description: 'description for Meeting',
+        start: '2020-01-26T14:30:00',
+        end: '2020-01-26T14:30:00'
+      },
+      {
+        title: 'Click for Google',
+        description: 'description for Click for Google',
+        url: 'http://google.com/',
+        start: '2020-01-28',
+        end: '2020-01-28'
+      },
+      {
+        title: 'Lunch',
+        description: 'description for Lunch',
+        start: '2020-01-30T12:00:00',
+        end: '2020-01-31T12:00:00'
+      },
+      {
+        title: 'Meeting',
+        description: 'description for Meeting',
+        start: '2020-01-31T14:30:00',
+        end: '2020-01-31T14:30:00'
+      }
+    ]
+  });
+  
+  calendar.render();
+  $(document).ready(function(){
+    $(".fc-header-toolbar .fc-left h2").attr('id', 'fc-datepicker-header').before('&ltinput size="1" style="height: 0px; width:0px; border: 0px;" id="fc-datepicker" value="" /&gt');
+    $("#fc-datepicker").MonthPicker({
+      Button: false,
+      OnAfterMenuClose: function() {
+        var d = $("#fc-datepicker").MonthPicker('Validate')
+        if (d !== null){
+          calendar.gotoDate( d );
+        }
+      }
+    });
+    $("#fc-datepicker-header").click(function() {
+      $('#fc-datepicker').MonthPicker('Open')
+    });
+  });
 });
-});
+
+function myFunction() {
+  var person = prompt("Please add your new event", "New event");
+  if (person != null) {
+    document.getElementById("demo").innerHTML =
+    "This " + person + "! New event today";
+  }
+};
 </pre>
 
 <pre class="mt-4">
-<code>&lt;script src="assets/plugins/data-tables/jquery.datatables.min.js"&gt;&lt;/script&gt;</code>
-<code>&lt;script src="assets/plugins/data-tables/datatables.bootstrap4.min.js"&gt;&lt;/script&gt;</code>
+<code>&lt;script src="assets/plugins/jquery/jquery-ui-1.12.1.min.js"&gt;&lt;/script&gt;</code>
+<code>&lt;script src="assets/plugins/fullcalendar/core-4.3.1/main.min.js"&gt;&lt;/script&gt;</code>
+<code>&lt;script src="assets/plugins/fullcalendar/daygrid-4.3.0/main.min.js"&gt;&lt;/script&gt;</code>
+<code>&lt;script src="assets/plugins/fullcalendar/month-picker/monthpicker.min.js"&gt;&lt;/script&gt;</code>
+<code>&lt;script src="assets/app/app.calendar.js"&gt;&lt;/script&gt;</code>
 </pre>
           </div>
 
           <div class="tab-pane pt-3 fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
 <pre class="mt-4">
-&lt;table id="basic-data-table" class="table nowrap" style="width:100%"&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;First name&lt;/th&gt;
-&lt;th&gt;Last name&lt;/th&gt;
-&lt;th&gt;Position&lt;/th&gt;
-&lt;th&gt;Office&lt;/th&gt;
-&lt;th&gt;Age&lt;/th&gt;
-&lt;th&gt;Start date&lt;/th&gt;
-&lt;th&gt;Salary&lt;/th&gt;
-&lt;th&gt;Extn.&lt;/th&gt;
-&lt;th&gt;E-mail&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Tiger&lt;/td&gt;
-&lt;td&gt;Nixon&lt;/td&gt;
-&lt;td&gt;System Architect&lt;/td&gt;
-&lt;td&gt;Edinburgh&lt;/td&gt;
-&lt;td&gt;61&lt;/th&gt;
-&lt;td&gt;2011/04/25&lt;/td&gt;
-&lt;td&gt;$320,800&lt;/td&gt;
-&lt;th&gt;5421&lt;/td&gt;
-&lt;td&gt;t.nixon@datatables.net&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+&lt;div class="full-calendar"&gt;
+ &lt;div id="calendar"&gt;
+  &lt;button onclick="myFunction()" type="button" class="btn btn-primary"&gt;
+   &lt;span class="fc-icon fc-icon-plus-squar&gt;&lt;/span&gt; Add New Event
+  &lt;/button&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
 </pre>
           </div>
 
           <div class="tab-pane pt-3 fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
 <pre class="mt-4">
-<code>&lt;link href="assets/plugins/data-tables/datatables.bootstrap4.min.css" rel="stylesheet"&gt;</code>
-<code>&lt;link href=""https://unpkg.com/sleek-dashboard/dist/assets/css/sleek.min.css"&gt;</code>
+<code>&lt;link href="assets/plugins/fullcalendar/core-4.3.1/main.min.css" rel="stylesheet"&gt;</code>
+<code>&lt;link href="assets/plugins/fullcalendar/daygrid-4.3.0/main.min.css" rel="stylesheet"&gt;</code>
+<code>&lt;link href="assets/plugins/fullcalendar/month-picker/monthpicker.min.css" rel="stylesheet"&gt;</code>
+<code>&lt;link href="assets/plugins/jquery/jquery-ui-1.12.1.css" rel="stylesheet"&gt;</code>
 </pre>
           </div>
         </div>
@@ -120,14 +265,3 @@ jQuery('#basic-data-table').DataTable({
     </div>
   </div>
 </div>
-
-
-<script>
-  function myFunction() {
-    var person = prompt("Please add your new event", "New event");
-    if (person != null) {
-      document.getElementById("demo").innerHTML =
-      "Hello " + person + "! How are you today?";
-    }
-  }
-  </script>

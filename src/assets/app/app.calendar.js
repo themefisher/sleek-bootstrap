@@ -168,3 +168,12 @@
       });
     });
   });
+
+
+  function myFunction() {
+    var person = prompt("Please add your new event", "New event");
+    if (person != null) {
+      document.getElementById("demo").innerHTML =
+      "This " + person + "! New event";
+    }
+  };
