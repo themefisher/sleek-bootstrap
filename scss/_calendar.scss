@@ -8,18 +8,27 @@ derived from this CSS on this page: https://popper.js.org/tooltip-examples.html
 .full-calendar {
   position: relative;
   .btn {
+    padding: 5.5px 16px;
+    font-weight: normal;
+    text-transform: uppercase;
     position: absolute;
-    top: 0;
+    top: 40px;
     left: 30px;
+    @include media-breakpoint-up(lg) {
+      top: 0;
+      right: 0;
+      left: auto;
+      transform: translateX(-200px);
+    }
+
     @include media-breakpoint-up(xxl) {
-      left: 50px;
+      transform: translateX(-220px);
     }
   }
   
   .fc-header-toolbar {
     margin: 30px;
     line-height: 0;
-    padding-top: 70px;
     @include media-breakpoint-up(xxl) {
       margin: 30px 50px;
     }
@@ -27,20 +36,23 @@ derived from this CSS on this page: https://popper.js.org/tooltip-examples.html
 
   .fc-toolbar {
     flex-direction: column;
-    flex-flow: column-reverse;
     align-items: flex-start;
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       flex-flow: wrap;
+      align-items: center;
     }
   }
 
   .fc-left {
+    margin-bottom: 70px;
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 0;
+    }
     h2 {
       color: $dark;
       font-size: 1.25125rem;
       text-transform: capitalize;
       margin-left: 0;
-      cursor: pointer;
     }
   }
 
@@ -74,10 +86,6 @@ derived from this CSS on this page: https://popper.js.org/tooltip-examples.html
     }
   }
 
-  .fc-left {
-    margin-bottom: 0;
-  }
-
   .fc-time,
   .fc-title {
     color: $white;
@@ -106,14 +114,14 @@ derived from this CSS on this page: https://popper.js.org/tooltip-examples.html
   }
 
   .fc-button-primary {
-    background-color: $navy;
-    border-color: $navy;
+    background-color: $white;
+    border-color: #ddd;
     &:focus {
       box-shadow: none !important;
     }
     &:hover {
-      background-color: #2d2d4a;
-      border-color: #2d2d4a;
+      background-color: transparent;
+      border-color: #ddd;
     }
   }
 
@@ -121,14 +129,21 @@ derived from this CSS on this page: https://popper.js.org/tooltip-examples.html
     margin-top: -3px;
   }
 
+  .fc-icon-chevron-left,
+  .fc-icon-chevron-right {
+    color: #8a909d;
+  }
+
   .fc-today-button {
-    background-color: $primary;
+    color: $primary;
+    background-color: $white;
     border-color: $primary;
     text-transform: uppercase;
     &:focus {
       box-shadow: none !important;
     }
     &:hover {
+      color: $white;
       background-color: $primary;
       border-color: $primary;
     }
@@ -138,10 +153,12 @@ derived from this CSS on this page: https://popper.js.org/tooltip-examples.html
     opacity: 1;
   }
 
+  // .full-calendar .fc-button-primary:not(:disabled).fc-button-active, .full-calendar .fc-button-primary:not(:disabled):active
+
   .fc-button-primary:not(:disabled).fc-button-active,
   .fc-button-primary:not(:disabled):active {
-    background-color: $navy;
-    border-color: $navy;
+    background-color: transparent;
+    border-color: #ddd;
   }
 
   .fc td, .fc th {

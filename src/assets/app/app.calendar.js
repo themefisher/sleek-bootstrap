@@ -150,23 +150,6 @@
 
     calendar.render();
 
-    $(document).ready(function(){
-      $(".fc-header-toolbar .fc-left h2").attr('id', 'fc-datepicker-header').before('<input size="1" style="height: 0px; width:0px; border: 0px;" id="fc-datepicker" value="" />');
-        
-      $("#fc-datepicker").MonthPicker({
-        Button: false,
-        OnAfterMenuClose: function() {
-          var d = $("#fc-datepicker").MonthPicker('Validate')
-          if (d !== null){
-            calendar.gotoDate( d );
-          }
-        }
-      });
-
-      $("#fc-datepicker-header").click(function() {
-        $('#fc-datepicker').MonthPicker('Open')
-      });
-    });
   });
 
 
