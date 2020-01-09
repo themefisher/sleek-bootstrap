@@ -195,23 +195,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     ]
   });
-  
   calendar.render();
-  $(document).ready(function(){
-    $(".fc-header-toolbar .fc-left h2").attr('id', 'fc-datepicker-header').before('&ltinput size="1" style="height: 0px; width:0px; border: 0px;" id="fc-datepicker" value="" /&gt');
-    $("#fc-datepicker").MonthPicker({
-      Button: false,
-      OnAfterMenuClose: function() {
-        var d = $("#fc-datepicker").MonthPicker('Validate')
-        if (d !== null){
-          calendar.gotoDate( d );
-        }
-      }
-    });
-    $("#fc-datepicker-header").click(function() {
-      $('#fc-datepicker').MonthPicker('Open')
-    });
-  });
 });
 
 function myFunction() {
