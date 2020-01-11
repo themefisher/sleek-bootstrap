@@ -14,6 +14,23 @@
   {% when 'date_range_picker' %}
 <script src="assets/plugins/daterangepicker/moment.min.js"></script>
 <script src="assets/plugins/daterangepicker/daterangepicker.js"></script>
+<script>
+  jQuery(document).ready(function() {
+    jQuery('input[name="dateRange"]').daterangepicker({
+    autoUpdateInput: false,
+    singleDatePicker: true,
+    locale: {
+      cancelLabel: 'Clear'
+    }
+  });
+    jQuery('input[name="dateRange"]').on('apply.daterangepicker', function (ev, picker) {
+      jQuery(this).val(picker.startDate.format('MM/DD/YYYY'));
+    });
+    jQuery('input[name="dateRange"]').on('cancel.daterangepicker', function (ev, picker) {
+      jQuery(this).val('');
+    });
+  });
+</script>
   {% when 'select2' %}
 <script src="assets/plugins/select2/js/select2.min.js"></script>
   {% when 'ladda' %}
@@ -25,6 +42,10 @@
 <script src="assets/plugins/toastr/toastr.min.js"></script>
 {% when 'circle_progress' %}
 <script src="assets/plugins/circle-progress/circle-progress.js"></script>
+  {% when 'full_calendar' %}
+<script src='assets/plugins/fullcalendar/core-4.3.1/main.min.js'></script>
+<script src='assets/plugins/fullcalendar/daygrid-4.3.0/main.min.js'></script>
+<script src='assets/app/app.calendar.js'></script>
   {% when 'data_table' %}
 <script src="assets/plugins/data-tables/jquery.datatables.min.js"></script>
 <script src="assets/plugins/data-tables/datatables.bootstrap4.min.js"></script>
