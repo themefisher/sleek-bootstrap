@@ -27,7 +27,7 @@
     background-color: rgba($primary, .1);
   }
 
-  td.available:hover,
+  td.available:hover
    {
     background-color: $primary;
     color: $white;
@@ -57,4 +57,8 @@
       vertical-align: middle;
     }
   }
+}
+
+.date-range::placeholder {
+  color: #495057;
 }

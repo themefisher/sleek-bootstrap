@@ -1,31 +1,7 @@
-/*
-i wish this required CSS was better documented :(
-https://github.com/FezVrasta/popper.js/issues/674
-derived from this CSS on this page: https://popper.js.org/tooltip-examples.html
-*/
-
-
+// Calendar
 .full-calendar {
   position: relative;
-  .btn {
-    padding: 5.5px 16px;
-    font-weight: normal;
-    text-transform: uppercase;
-    position: absolute;
-    top: 40px;
-    left: 30px;
-    @include media-breakpoint-up(lg) {
-      top: 0;
-      right: 0;
-      left: auto;
-      transform: translateX(-200px);
-    }
 
-    @include media-breakpoint-up(xxl) {
-      transform: translateX(-220px);
-    }
-  }
-  
   .fc-header-toolbar {
     margin: 30px;
     line-height: 0;
@@ -37,15 +13,15 @@ derived from this CSS on this page: https://popper.js.org/tooltip-examples.html
   .fc-toolbar {
     flex-direction: column;
     align-items: flex-start;
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(md) {
       flex-flow: wrap;
       align-items: center;
     }
   }
 
   .fc-left {
-    margin-bottom: 70px;
-    @include media-breakpoint-up(lg) {
+    margin-bottom: 25px;
+    @include media-breakpoint-up(md) {
       margin-bottom: 0;
     }
     h2 {
@@ -53,13 +29,6 @@ derived from this CSS on this page: https://popper.js.org/tooltip-examples.html
       font-size: 1.25125rem;
       text-transform: capitalize;
       margin-left: 0;
-    }
-  }
-
-  .fc-right {
-    margin-bottom: 20px;
-    @include media-breakpoint-up(md) {
-      margin-bottom: 0;
     }
   }
 
@@ -131,28 +100,27 @@ derived from this CSS on this page: https://popper.js.org/tooltip-examples.html
 
   .fc-icon-chevron-left,
   .fc-icon-chevron-right {
-    color: #8a909d;
+    color: $secondary;
   }
 
   .fc-today-button {
-    color: $primary;
+    color: $secondary;
     background-color: $white;
-    border-color: $primary;
+    border-color: #ddd;
     text-transform: uppercase;
     &:focus {
       box-shadow: none !important;
     }
     &:hover {
-      color: $white;
-      background-color: $primary;
-      border-color: $primary;
+      color: $secondary;
+      background-color: $white;
+      border-color: #ddd;
     }
   }
 
   .fc-button:disabled {
     opacity: 1;
   }
-
 
   .fc-button-primary:not(:disabled).fc-button-active,
   .fc-button-primary:not(:disabled):active {

@@ -8,6 +8,7 @@
 5. TOASTER
 6. PROGRESS BAR
 7. CIRCLE PROGRESS
+8. DATE PICKER
 
 ====== End ======*/
 
@@ -186,5 +187,23 @@ $(document).ready(function() {
         emptyFill: [gray]
       })
     };
+
+
+  /*======== 8. DATE PICKER ========*/
+  // $('input[name="dateRange"]').daterangepicker({
+  //   autoUpdateInput: false,
+  //   singleDatePicker: true,
+  //   locale: {
+  //     cancelLabel: 'Clear'
+  //   }
+  // });
+
+  // $('input[name="dateRange"]').on('apply.daterangepicker', function (ev, picker) {
+  //   $(this).val(picker.startDate.format('MM/DD/YYYY'));
+  // });
+
+  // $('input[name="dateRange"]').on('cancel.daterangepicker', function (ev, picker) {
+  //   $(this).val('');
+  // });
 
 });
