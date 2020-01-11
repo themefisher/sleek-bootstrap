@@ -6,6 +6,12 @@
 
   document.addEventListener('DOMContentLoaded', function() {
     var calendarEl = document.getElementById('calendar');
+    var year = new Date().getFullYear()
+    var month = new Date().getMonth() + 1
+    function n(n){
+      return n > 9 ? "" + n: "0" + n;
+    }
+    var month = n(month)
 
     var calendar = new FullCalendar.Calendar(calendarEl, {
       plugins: [ 'dayGrid' ],
@@ -29,121 +35,121 @@
         {
           title: 'All Day Event',
           description: 'description for All Day Event',
-          start: '2020-01-01'
+          start: year+'-'+month+'-01'
         },
         {
           title: 'All Day Event',
           description: 'description for All Day Event',
-          start: '2020-01-03'
+          start: year+'-'+month+'-03'
         },
         {
           title: 'All Day Event',
           description: 'description for All Day Event',
-          start: '2020-01-05'
+          start: year+'-'+month+'-05'
         },
         {
           title: 'Long Event',
           description: 'description for Long Event',
-          start: '2020-01-07',
-          end: '2020-01-10'
+          start: year+'-'+month+'-07',
+          end: year+'-'+month+'-10'
         },
         {
           groupId: '999',
           title: 'Repeating Event',
           description: 'description for Repeating Event',
-          start: '2020-01-09T16:00:00'
+          start: year+'-'+month+'-09T16:00:00'
         },
         {
           groupId: '999',
           title: 'Repeating Event',
           description: 'description for Repeating Event',
-          start: '2020-01-16T16:00:00',
-          end: '2020-01-16T16:00:00'
+          start: year+'-'+month+'-16T16:00:00',
+          end: year+'-'+month+'-16T16:00:00'
         },
         {
           title: 'Conference',
           description: 'description for Conference',
-          start: '2020-01-11',
-          end: '2020-01-13'
+          start: year+'-'+month+'-11',
+          end: year+'-'+month+'-13'
         },
         {
           title: 'Meeting',
           description: 'description for Meeting',
-          start: '2020-01-12T10:30:00',
-          end: '2020-01-12T12:30:00'
+          start: year+'-'+month+'-12T10:30:00',
+          end: year+'-'+month+'-12T12:30:00'
         },
         {
           title: 'Lunch',
           description: 'description for Lunch',
-          start: '2020-01-12T12:00:00',
-          end: '2020-01-12T12:00:00'
+          start: year+'-'+month+'-12T12:00:00',
+          end: year+'-'+month+'-12T12:00:00'
         },
         {
           title: 'Meeting',
           description: 'description for Meeting',
-          start: '2020-01-12T14:30:00',
-          end: '2020-01-12T14:30:00'
+          start: year+'-'+month+'-12T14:30:00',
+          end: year+'-'+month+'-12T14:30:00'
         },
         {
           title: 'Birthday Party',
           description: 'description for Birthday Party',
-          start: '2020-01-13T24:00:00',
-          end: '2020-01-13T24:00:00'
+          start: year+'-'+month+'-13T24:00:00',
+          end: year+'-'+month+'-13T24:00:00'
         },
         {
           title: 'Long Event',
           description: 'description for Long Event',
-          start: '2020-01-20',
-          end: '2020-01-23'
+          start: year+'-'+month+'-20',
+          end: year+'-'+month+'-23'
         },
         {
           groupId: '999',
           title: 'Repeating Event',
           description: 'description for Repeating Event',
-          start: '2020-01-22T16:00:00'
+          start: year+'-'+month+'-22T16:00:00'
         },
         {
           title: 'Conference',
           description: 'description for Conference',
-          start: '2020-01-24',
-          end: '2020-01-27'
+          start: year+'-'+month+'-24',
+          end: year+'-'+month+'-27'
         },
         {
           title: 'Meeting',
           description: 'description for Meeting',
-          start: '2020-01-26T10:30:00',
-          end: '2020-01-26T12:30:00'
+          start: year+'-'+month+'-26T10:30:00',
+          end: year+'-'+month+'-26T12:30:00'
         },
         {
           title: 'Lunch',
           description: 'description for Lunch',
-          start: '2020-01-26T12:00:00',
-          end: '2020-01-26T12:00:00'
+          start: year+'-'+month+'-26T12:00:00',
+          end: year+'-'+month+'-26T12:00:00'
         },
         {
           title: 'Meeting',
           description: 'description for Meeting',
-          start: '2020-01-26T14:30:00',
-          end: '2020-01-26T14:30:00'
+          start: year+'-'+month+'-26T14:30:00',
+          end: year+'-'+month+'-26T14:30:00'
         },
         {
           title: 'Click for Google',
           description: 'description for Click for Google',
           url: 'http://google.com/',
-          start: '2020-01-28',
-          end: '2020-01-28'
+          start: year+'-'+month+'-28',
+          end: year+'-'+month+'-28'
         },
         {
           title: 'Lunch',
           description: 'description for Lunch',
-          start: '2020-01-30T12:00:00',
-          end: '2020-01-31T12:00:00'
+          start: year+'-'+month+'-30T12:00:00',
+          end: year+'-'+month+'-31T12:00:00'
         },
         {
           title: 'Meeting',
           description: 'description for Meeting',
-          start: '2020-01-31T14:30:00',
-          end: '2020-01-31T14:30:00'
+          start: year+'-'+month+'-31T14:30:00',
+          end: year+'-'+month+'-31T14:30:00'
         }
       ]
     });
