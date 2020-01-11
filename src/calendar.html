@@ -20,8 +20,9 @@ plugins: ["full_calendar", "date_range_picker"]
   <div class="card-body p-0">
     <div class="full-calendar">
       <div id='calendar'>
-        <button onclick="myFunction()" type="button" class="btn btn-primary">
-          <span class="fc-icon fc-icon-plus-square"></span> Add New Event</button>
+        <a href="#" data-toggle="modal" data-target="#modal-add-event" class="btn btn-primary">
+          <span class="fc-icon fc-icon-plus-square"></span> Add New Event
+        </a>
       </div>
     </div>
   </div>
@@ -33,12 +34,18 @@ plugins: ["full_calendar", "date_range_picker"]
       <div class="card-header card-header-border-bottom d-flex justify-content-between">
         <h2>How to use</h2>
 
-        <a href="javascript:void(0)" class="btn btn-outline-primary btn-sm text-uppercase">
+        <a href="https://codepen.io/iamabdus/pen/OJPZxMg" target="_blank" class="btn btn-outline-primary btn-sm text-uppercase">
           <i class="mdi mdi-codepen mr-1"></i> Open with codepen
         </a>
       </div>
 
       <div class="card-body">
+        <div class="mb-5">
+          <h5 class="text-dark mb-3">About FullCalendar (v4.3)</h5>
+
+          <p>FullCalendar is a fully responsive event display callendar that can display events directly from your google calendar. This is the 4.3 version of FullCalendar. FullCalendar is great for displaying events and tootip. You can change an event's name or other associated data. It is up to you to add this functionality through FullCalendar's event hooks. <a href="http://fullcalendar.io/" target="_blank">FullCalendar documentation.</a></p>
+        </div>
+
         <ul class="nav nav-tabs" id="myTab" role="tablist">
           <li class="nav-item">
             <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Javascript</a>
@@ -51,9 +58,9 @@ plugins: ["full_calendar", "date_range_picker"]
           </li>
         </ul>
         <div class="tab-content" id="myTabContent1">
-          <div class="tab-pane pt-3 fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 
-<pre class="mt-4 pre-code">
+<pre class="mt-4 m-0 pre-code">
 document.addEventListener('DOMContentLoaded', function() {
   var calendarEl = document.getElementById('calendar');
   var calendar = new FullCalendar.Calendar(calendarEl, {
@@ -197,37 +204,29 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   calendar.render();
 });
-
-function myFunction() {
-  var person = prompt("Please add your new event", "New event");
-  if (person != null) {
-    document.getElementById("demo").innerHTML =
-    "This " + person + "! New event today";
-  }
-};
 </pre>
 
-<pre class="mt-4">
+<pre class="mt-4 m-0">
 <code>&lt;script src="assets/plugins/fullcalendar/core-4.3.1/main.min.js"&gt;&lt;/script&gt;</code>
 <code>&lt;script src="assets/plugins/fullcalendar/daygrid-4.3.0/main.min.js"&gt;&lt;/script&gt;</code>
 <code>&lt;script src="assets/app/app.calendar.js"&gt;&lt;/script&gt;</code>
 </pre>
           </div>
 
-          <div class="tab-pane pt-3 fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-<pre class="mt-4">
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+<pre class="mt-4 m-0">
 &lt;div class="full-calendar"&gt;
  &lt;div id="calendar"&gt;
-  &lt;button onclick="myFunction()" type="button" class="btn btn-primary"&gt;
+  &lt;a href="#" data-toggle="modal" data-target="#modal-add-event" class="btn btn-primary"&gt;
    &lt;span class="fc-icon fc-icon-plus-squar&gt;&lt;/span&gt; Add New Event
-  &lt;/button&gt;
+  &lt;/a&gt;
  &lt;/div&gt;
 &lt;/div&gt;
 </pre>
           </div>
 
-          <div class="tab-pane pt-3 fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-<pre class="mt-4">
+          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+<pre class="mt-4 m-0">
 <code>&lt;link href="assets/plugins/fullcalendar/core-4.3.1/main.min.css" rel="stylesheet"&gt;</code>
 <code>&lt;link href="assets/plugins/fullcalendar/daygrid-4.3.0/main.min.css" rel="stylesheet"&gt;</code>
 </pre>
@@ -236,4 +235,28 @@ function myFunction() {
       </div>
     </div>
   </div>
+</div>
+
+
+<!-- Add Event Button  -->
+<div class="modal fade" id="modal-add-event" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+    <div class="modal-content">
+			<div class="modal-header ">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Please Add Your New Event</h5>
+			</div>
+			
+			<div class="modal-body">
+				<form class="">
+          <input type="text" class="form-control" placeholder="" value="Add New Event">
+        </form>
+			</div>
+			
+			<div class="modal-footer px-4">
+				<button type="button" class="btn btn-secondary btn-pill" data-dismiss="modal">Cancel</button>
+				<button type="button" class="btn btn-primary btn-pill">New Event</button>
+			</div>
+  	</div>
+	</div>
 </div>
