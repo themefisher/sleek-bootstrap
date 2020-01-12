@@ -57,7 +57,7 @@ Please visit [Documentation](https://sleek.tafcoder.com/installation.html) for m
 ```
 <script src="https://unpkg.com/sleek-dashboard/dist/assets/js/sleek.bundle.js"></script>
 ```
-[View Codepen Example](https://codepen.io/iamabdus/pen/rNavojp/" target="_blank)
+[View Codepen Example](https://codepen.io/iamabdus/pen/rNavojp/){target="_blank"}
 
 ### Option 2: From NPM
 Install **Sleek Dashboard** from npm
