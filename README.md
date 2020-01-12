@@ -59,8 +59,6 @@ Please visit [Documentation](https://sleek.tafcoder.com/installation.html) for m
 ```
 [View Codepen Example](https://codepen.io/iamabdus/pen/rNavojp/)
 
-<a href="https://codepen.io/iamabdus/pen/rNavojp/" target="_blank">View Codepen</a>
-
 ### Option 2: From NPM
 Install **Sleek Dashboard** from npm
 ```
