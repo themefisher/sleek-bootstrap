@@ -41,11 +41,11 @@ We are very excited to share this dashboard with you and we look forward to hear
 
 ## Demo
 
-| Ecommerce  | Analytics  | Chart Widgets  | General Widgets  |
+| Ecommerce  | Analytics  | Chat  | Contacts  | Team  | Calendar  |
 |---|---|---|---|
-| [![Ecommerce page](src/assets/img/github/ecommerce.png)](https://sleek.tafcoder.com/)  | [![Analytics page](src/assets/img/github/analytics.png)](https://sleek.tafcoder.com/analytics.html) | [![Chart Widgets](src/assets/img/github/chart-widgets.png)](https://sleek.tafcoder.com/chart-widget.html) | [![General Widgets](src/assets/img/github/general-widgets.png)](https://sleek.tafcoder.com/general-widget.html)
+| [![Ecommerce page](src/assets/img/github/ecommerce.png)](https://sleek.tafcoder.com/)  | [![Analytics page](src/assets/img/github/analytics.png)](https://sleek.tafcoder.com/analytics.html) | [![Chat](src/assets/img/github/chat.png)](https://sleek.tafcoder.com/chat.html) | [![Contacts](src/assets/img/github/contacts.png)](https://sleek.tafcoder.com/contacts.html) | [![Team](src/assets/img/github/team.png)](https://sleek.tafcoder.com/team.html) | [![Calendar](src/assets/img/github/calendar.png)](https://sleek.tafcoder.com/calendar.html)
 
-[View More](https://sleek.tafcoder.com/).
+[View More](https://sleek.tafcoder.com/)
 
 ## Quick Start
 Please visit [Documentation](https://sleek.tafcoder.com/installation.html) for more detailed information.
