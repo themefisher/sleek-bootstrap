@@ -41,9 +41,9 @@ We are very excited to share this dashboard with you and we look forward to hear
 
 ## Demo
 
-| Ecommerce  | Analytics  | Chat  | Contacts  | Team  | Calendar  |
+| Ecommerce  | Analytics  | Chat  | Contacts  |
 |---|---|---|---|
-| [![Ecommerce page](src/assets/img/github/ecommerce.png)](https://sleek.tafcoder.com/)  | [![Analytics page](src/assets/img/github/analytics.png)](https://sleek.tafcoder.com/analytics.html) | [![Chat](src/assets/img/github/chat.png)](https://sleek.tafcoder.com/chat.html) | [![Contacts](src/assets/img/github/contacts.png)](https://sleek.tafcoder.com/contacts.html) | [![Team](src/assets/img/github/team.png)](https://sleek.tafcoder.com/team.html) | [![Calendar](src/assets/img/github/calendar.png)](https://sleek.tafcoder.com/calendar.html)
+| [![Ecommerce page](src/assets/img/github/ecommerce.png)](https://sleek.tafcoder.com/)  | [![Analytics page](src/assets/img/github/analytics.png)](https://sleek.tafcoder.com/analytics.html) | [![Chat](src/assets/img/github/chat.png)](https://sleek.tafcoder.com/chat.html) | [![Contacts](src/assets/img/github/contacts.png)](https://sleek.tafcoder.com/contacts.html)
 
 [View More](https://sleek.tafcoder.com/)
 
