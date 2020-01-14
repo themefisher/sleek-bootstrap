@@ -41,11 +41,15 @@ We are very excited to share this dashboard with you and we look forward to hear
 
 ## Demo
 
-| Ecommerce  | Analytics  | Chart Widgets  | General Widgets  |
-|---|---|---|---|
-| [![Ecommerce page](src/assets/img/github/ecommerce.png)](https://sleek.tafcoder.com/)  | [![Analytics page](src/assets/img/github/analytics.png)](https://sleek.tafcoder.com/analytics.html) | [![Chart Widgets](src/assets/img/github/chart-widgets.png)](https://sleek.tafcoder.com/chart-widget.html) | [![General Widgets](src/assets/img/github/general-widgets.png)](https://sleek.tafcoder.com/general-widget.html)
+| Ecommerce Page  | Analytics Page  | Chat App  |
+|---|---|---|
+| [![Ecommerce page](src/assets/img/github/ecommerce.png)](https://sleek.tafcoder.com/)  | [![Analytics page](src/assets/img/github/analytics.png)](https://sleek.tafcoder.com/analytics.html) | [![Chat page](src/assets/img/github/chat.png)](https://sleek.tafcoder.com/chat.html)
 
-[View More](https://sleek.tafcoder.com/).
+| Contacts App  | Team App  | Calendar App  |
+|---|---|---|
+| [![Contacts page](src/assets/img/github/contacts.png)](https://sleek.tafcoder.com/contacts.html)  | [![Team page](src/assets/img/github/team.png)](https://sleek.tafcoder.com/team.html) | [![Calendar page](src/assets/img/github/calendar.png)](https://sleek.tafcoder.com/calendar.html)
+
+[View More](https://sleek.tafcoder.com/)
 
 ## Quick Start
 Please visit [Documentation](https://sleek.tafcoder.com/installation.html) for more detailed information.
@@ -57,7 +61,7 @@ Please visit [Documentation](https://sleek.tafcoder.com/installation.html) for m
 ```
 <script src="https://unpkg.com/sleek-dashboard/dist/assets/js/sleek.bundle.js"></script>
 ```
-[View Codepen Example](https://codepen.com/)
+[View Codepen Example](https://codepen.io/iamabdus/pen/rNavojp/)
 
 ### Option 2: From NPM
 Install **Sleek Dashboard** from npm
