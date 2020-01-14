@@ -40,6 +40,24 @@
       },
       
     
+      
+      {
+        "label": "Team",
+        "link": "team.html",
+        "tags": "",
+        "location": "App"
+      },
+      
+    
+      
+      {
+        "label": "Calendar",
+        "link": "calendar.html",
+        "tags": "",
+        "location": "App"
+      },
+      
+    
 
   
     

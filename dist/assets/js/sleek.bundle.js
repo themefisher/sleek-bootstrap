@@ -9971,6 +9971,8 @@
 	4. LOADING BUTTON
 	5. TOASTER
 	6. PROGRESS BAR
+	7. CIRCLE PROGRESS
+	8. DATE PICKER
 
 	====== End ======*/
 
@@ -10136,6 +10138,35 @@
 	        .next(".slimScrollBar")
 	        .css("opacity", 0.4);
 	    });
+
+	    /*======== 7. CIRCLE PROGRESS ========*/
+	    var circle = $('.circle');
+	    var gray = '#f5f6fa';
+
+	    if(circle.length != 0){
+	      circle.circleProgress({
+	        lineCap: "round",
+	        startAngle: 4.8,
+	        emptyFill: [gray]
+	      });
+	    }
+
+	  /*======== 8. DATE PICKER ========*/
+	  // $('input[name="dateRange"]').daterangepicker({
+	  //   autoUpdateInput: false,
+	  //   singleDatePicker: true,
+	  //   locale: {
+	  //     cancelLabel: 'Clear'
+	  //   }
+	  // });
+
+	  // $('input[name="dateRange"]').on('apply.daterangepicker', function (ev, picker) {
+	  //   $(this).val(picker.startDate.format('MM/DD/YYYY'));
+	  // });
+
+	  // $('input[name="dateRange"]').on('cancel.daterangepicker', function (ev, picker) {
+	  //   $(this).val('');
+	  // });
 
 	});
 

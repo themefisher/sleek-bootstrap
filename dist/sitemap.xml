@@ -37,6 +37,9 @@
 <loc>/button-social.html</loc>
 </url>
 <url>
+<loc>/calendar.html</loc>
+</url>
+<url>
 <loc>/card.html</loc>
 </url>
 <url>
@@ -176,6 +179,9 @@
 </url>
 <url>
 <loc>/tab.html</loc>
+</url>
+<url>
+<loc>/team.html</loc>
 </url>
 <url>
 <loc>/user-profile.html</loc>
