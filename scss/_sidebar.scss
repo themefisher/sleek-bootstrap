@@ -564,16 +564,15 @@
     }
   }
   .sidebar-with-footer {
-      @include media-breakpoint-up(md){
-        padding-bottom: 209px;
-      }
-      .sidebar-footer {
-        @include media-breakpoint-up(md){
-          position: absolute;
-          bottom: 0;
-        }
-      }
+    padding-bottom: 260px;
+    @include media-breakpoint-up(md){
+      padding-bottom: 284px;
     }
+    .sidebar-footer {
+      position: absolute;
+      bottom: 0;
+    }
+  }
 }
 
 .sidebar-fixed-offcanvas {
@@ -1127,5 +1126,15 @@
   hr {
     margin: 11px 0;
 	  border-color: #454545;
+  }
+}
+
+/* Simplebar */
+.simplebar-scrollbar {
+  &::before {
+    background-color: rgba(153, 153, 153, .8);
+    width: 5px;
+    left: 6px;
+    right: 6px;
   }
 }

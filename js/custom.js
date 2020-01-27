@@ -33,49 +33,49 @@ $(document).ready(function() {
 
   /*======== 2. SCROLLBAR CONTENT ========*/
 
-  var dataScrollHeight = $("[data-scroll-height]");
-  function scrollWithBigMedia(media) {
-    if (media.matches) {
-      /* The viewport is greater than, or equal to media screen size */
-      dataScrollHeight.each(function () {
-        var scrollHeight = $(this).attr("data-scroll-height");
-        $(this).css({ height: scrollHeight + "px", overflow: "hidden" });
-      });
+  // var dataScrollHeight = $("[data-scroll-height]");
+  // function scrollWithBigMedia(media) {
+  //   if (media.matches) {
+  //     /* The viewport is greater than, or equal to media screen size */
+  //     dataScrollHeight.each(function () {
+  //       var scrollHeight = $(this).attr("data-scroll-height");
+  //       $(this).css({ height: scrollHeight + "px", overflow: "hidden" });
+  //     });
 
-      //For content that needs scroll
-      $(".slim-scroll")
-        .slimScroll({
-          opacity: 0,
-          height: "100%",
-          color: "#999",
-          size: "5px",
-          touchScrollStep: 50
-        })
-        .mouseover(function () {
-          $(this)
-            .next(".slimScrollBar")
-            .css("opacity", 0.4);
-        });
-    } else {
-      /* The viewport is less than media screen size */
-      dataScrollHeight.css({ height: "auto", overflow: "auto" });
-    }
-  }
+  //     //For content that needs scroll
+  //     $(".slim-scroll")
+  //       .slimScroll({
+  //         opacity: 0,
+  //         height: "100%",
+  //         color: "#999",
+  //         size: "5px",
+  //         touchScrollStep: 50
+  //       })
+  //       .mouseover(function () {
+  //         $(this)
+  //           .next(".slimScrollBar")
+  //           .css("opacity", 0.4);
+  //       });
+  //   } else {
+  //     /* The viewport is less than media screen size */
+  //     dataScrollHeight.css({ height: "auto", overflow: "auto" });
+  //   }
+  // }
 
-  if (dataScrollHeight.length != 0) {
-    var media = window.matchMedia("(min-width: 992px)");
-    scrollWithBigMedia(media); // Call listener function at run time
-    media.addListener(scrollWithBigMedia); // Attach listener function on state changes
-  }
+  // if (dataScrollHeight.length != 0) {
+  //   var media = window.matchMedia("(min-width: 992px)");
+  //   scrollWithBigMedia(media); // Call listener function at run time
+  //   media.addListener(scrollWithBigMedia); // Attach listener function on state changes
+  // }
 
-  var chatLeftContent = $('#chat-left-content');
-  if(chatLeftContent.length != 0){
-    chatLeftContent.slimScroll({})
-  }
-  var chatRightContent = $('#chat-right-content');
-  if(chatRightContent.length != 0){
-    chatRightContent.slimScroll({})
-  }
+  // var chatLeftContent = $('#chat-left-content');
+  // if(chatLeftContent.length != 0){
+  //   chatLeftContent.slimScroll({})
+  // }
+  // var chatRightContent = $('#chat-right-content');
+  // if(chatRightContent.length != 0){
+  //   chatRightContent.slimScroll({})
+  // }
 
   /*======== 3. TOOLTIPS AND POPOVER ========*/
   var tooltip = $('[data-toggle="tooltip"]')
@@ -163,18 +163,18 @@ $(document).ready(function() {
   NProgress.done();
 
   /*======== 6. PROGRESS BAR ========*/
-  $('.slim-scroll-right-sidebar-2').slimScroll({
-    opacity: 0,
-    height: '100%',
-    color: "#999",
-    size: "5px",
-    touchScrollStep: 50
-  })
-    .mouseover(function () {
-      $(this)
-        .next(".slimScrollBar")
-        .css("opacity", 0.4);
-    });
+  // $('.slim-scroll-right-sidebar-2').slimScroll({
+  //   opacity: 0,
+  //   height: '100%',
+  //   color: "#999",
+  //   size: "5px",
+  //   touchScrollStep: 50
+  // })
+  //   .mouseover(function () {
+  //     $(this)
+  //       .next(".slimScrollBar")
+  //       .css("opacity", 0.4);
+  //   });
 
     /*======== 7. CIRCLE PROGRESS ========*/
     var circle = $('.circle')
