@@ -1,34 +1,18 @@
 /* ====== Index ======
 
-1. SCROLLBAR SIDEBAR
-2. BACKDROP
-3. SIDEBAR MENU
-4. SIDEBAR TOGGLE FOR MOBILE
-5. SIDEBAR TOGGLE FOR VARIOUS SIDEBAR LAYOUT
-6. TODO LIST
-7. RIGHT SIDEBAR
+1. BACKDROP
+2. SIDEBAR MENU
+3. SIDEBAR TOGGLE FOR MOBILE
+4. SIDEBAR TOGGLE FOR VARIOUS SIDEBAR LAYOUT
+5. TODO LIST
+6. RIGHT SIDEBAR
 
 ====== End ======*/
 
 $(document).ready(function() {
   "use strict";
 
-  /*======== 1. SCROLLBAR SIDEBAR ========*/
-  $(".sidebar-scrollbar")
-    .slimScroll({
-      opacity: 0,
-      height: "100%",
-      color: "#808080",
-      size: "5px",
-      wheelStep: 10
-    })
-    .mouseover(function () {
-      $(this)
-        .next(".slimScrollBar")
-        .css("opacity", 0.5);
-    });
-
-  /*======== 2. BACKDROP ========*/
+  /*======== 1. BACKDROP ========*/
   if ($(window).width() < 768) {
     var shadowClass = $(".mobile-sticky-body-overlay");
     $(".sidebar-toggle").on("click", function() {
@@ -43,7 +27,7 @@ $(document).ready(function() {
     });
   }
 
-  /*======== 3. SIDEBAR MENU ========*/
+  /*======== 2. SIDEBAR MENU ========*/
   $(".sidebar .nav > .has-sub > a").click(function(){
     $(this).parent().siblings().removeClass('expand')
     $(this).parent().toggleClass('expand')
@@ -54,7 +38,7 @@ $(document).ready(function() {
   })
 
 
-  /*======== 4. SIDEBAR TOGGLE FOR MOBILE ========*/
+  /*======== 3. SIDEBAR TOGGLE FOR MOBILE ========*/
   if ($(window).width() < 768) {
     $(document).on("click", ".sidebar-toggle", function(e) {
       e.preventDefault();
@@ -71,7 +55,7 @@ $(document).ready(function() {
     });
   }
 
-  /*======== 5. SIDEBAR TOGGLE FOR VARIOUS SIDEBAR LAYOUT ========*/
+  /*======== 4. SIDEBAR TOGGLE FOR VARIOUS SIDEBAR LAYOUT ========*/
   var body = $("#body");
   if ($(window).width() >= 768) {
     window.isMinified = false;
@@ -133,8 +117,7 @@ $(document).ready(function() {
     }
   }
 
-  /*======== 6. TODO LIST ========*/
-
+  /*======== 5. TODO LIST ========*/
   function todoCheckAll() {
     var mdis = document.querySelectorAll(".todo-single-item .mdi");
     mdis.forEach(function(fa) {
@@ -180,7 +163,7 @@ $(document).ready(function() {
     todoCheckAll();
   }
 
-  /*======== 7. RIGHT SIDEBAR ========*/
+  /*======== 6. RIGHT SIDEBAR ========*/
   if ($(window).width() < 1025) {
     body.addClass('right-sidebar-toggoler-out');
 

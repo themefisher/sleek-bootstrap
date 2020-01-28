@@ -270,112 +270,16 @@ plugins: ["vector_map"]
 							<!-- Seventh Row  -->
 							<div class="row">
 								<div class="col-xl-6">
-									<div class="card card-default todo-table" id="todo" data-scroll-height="540">
-										<div class="card-header justify-content-between align-items-center">
-											<h2 class="d-inline-block">To Do List</h2>
-											<a class="btn btn-primary btn-pill" id="add-task" href="#" role="button"> Add task </a>
-										</div>
-										<div class="card-body slim-scroll">
-											<div class="todo-single-item d-none" id="todo-input">
-												<form >
-													<div class="form-group">
-														<input type="text" class="form-control" placeholder="Enter Todo" autofocus>
-													</div>
-												</form>
-											</div>
-											<div class="todo-list" id="todo-list">
-												<div class="todo-single-item d-flex flex-row justify-content-between finished">
-													<i class="mdi"></i>
-													<span >Finish Dashboard UI Kit update</span>
-													<span class="badge badge-primary">Finished</span>
-												</div>
-												<div class="todo-single-item d-flex flex-row justify-content-between current">
-													<i class="mdi"></i>
-													<span >Create new prototype for the landing page</span>
-													<span class="badge badge-primary">Today</span>
-												</div>
-												<div class="todo-single-item d-flex flex-row justify-content-between ">
-													<i class="mdi"></i>
-													<span > Add new Google Analytics code to all main files </span>
-													<span class="badge badge-danger">Yesterday</span>
-												</div>
-
-												<div class="todo-single-item d-flex flex-row justify-content-between ">
-													<i class="mdi"></i>
-													<span >Update parallax scroll on team page</span>
-													<span class="badge badge-success">Dec 15, 2018</span>
-												</div>
-
-												<div class="todo-single-item d-flex flex-row justify-content-between ">
-													<i class="mdi"></i>
-													<span >Update parallax scroll on team page</span>
-													<span class="badge badge-success">Dec 15, 2018</span>
-												</div>
-												<div class="todo-single-item d-flex flex-row justify-content-between ">
-													<i class="mdi"></i>
-													<span >Create online customer list book</span>
-													<span class="badge badge-success">Dec 15, 2018</span>
-												</div>
-												<div class="todo-single-item d-flex flex-row justify-content-between ">
-													<i class="mdi"></i>
-													<span >Lorem ipsum dolor sit amet, consectetur.</span>
-													<span class="badge badge-success">Dec 15, 2018</span>
-												</div>
-
-												<div class="todo-single-item d-flex flex-row justify-content-between mb-1">
-													<i class="mdi"></i>
-													<span >Update parallax scroll on team page</span>
-													<span class="badge badge-success">Dec 15, 2018</span>
-												</div>
-											</div>
-										</div>
-										<div class="mt-3"></div>
-									</div>
+									{% include to-do-list.htm %}
 								</div>
 								<div class="col-sm-12 col-xl-6">
-									<div class="card card-default">
-										<div class="card-header d-block d-md-flex justify-content-between">
-											<h2>World Wide Customer </h2>
-											<div class="dropdown show d-inline-block widget-dropdown ml-auto">
-												<a class="dropdown-toggle" href="#" role="button" id="world-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
-													World Wide
-												</a>
-												<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="world-dropdown">
-													<li class="dropdown-item"><a href="#">Continetal chart</a></li>
-													<li class="dropdown-item"><a href="#">Sub-continental</a></li>
-												</ul>
-											</div>
-										</div>
-										<div class="card-body vector-map-world">
-											<div id="world" style="height: 100%; width: 100%;"></div>
-										</div>
-										<div class="card-footer d-flex flex-wrap bg-white p-0">
-											<div class="col-6">
-												<div class="p-4">
-													<ul class="d-flex flex-column justify-content-between">
-														<li class="mb-2"><i class="mdi mdi-checkbox-blank-circle-outline mr-2" style="color: #29cc97"></i>America <span
-															 class="float-right">5k</span></li>
-														<li><i class="mdi mdi-checkbox-blank-circle-outline mr-2" style="color: #4c84ff "></i>Australia <span class="float-right">3k</span></li>
-													</ul>
-												</div>
-											</div>
-											<div class="col-6">
-												<div class="p-4 border-left">
-													<ul class="d-flex flex-column justify-content-between">
-														<li class="mb-2"><i class="mdi mdi-checkbox-blank-circle-outline mr-2" style="color: #ffa128"></i>Europe <span
-															 class="float-right">4k</span></li>
-														<li><i class="mdi mdi-checkbox-blank-circle-outline mr-2" style="color: #fe5461"></i>Africa <span class="float-right">2k</span></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
+									{% include area-chart.htm %}
 								</div>
 							</div>
 							<!-- Eighth Row  -->
 							<div class="row">
 								<div class="col-sm-12 col-lg-6 col-xl-4">
-									<div class="card card-table-border-none" data-scroll-height="580">
+									<div class="card card-table-border-none">
 										<div class="card-header justify-content-between">
 											<h2 class="d-inline-block">New Customers</h2>
 											<div>
@@ -393,7 +297,7 @@ plugins: ["vector_map"]
 												</div>
 											</div>
 										</div>
-										<div class="card-body pt-0">
+										<div class="card-body pt-0" data-simplebar style="height: 437px;">
 											<table class="table ">
 												<tbody>
 													<tr>
@@ -488,7 +392,7 @@ plugins: ["vector_map"]
 
 								</div>
 								<div class="col-sm-12 col-lg-6 col-xl-4">
-									<div class="card card-default" data-scroll-height="575">
+									<div class="card card-default">
 										<div class="card-header justify-content-between align-items-center">
 											<h2>Latest Notifications</h2>
 											<div>
@@ -504,7 +408,7 @@ plugins: ["vector_map"]
 											</div>
 
 										</div>
-										<div class="card-body slim-scroll">
+										<div class="card-body" data-simplebar style="height: 421px;">
 											<div class="media py-3 align-items-center justify-content-between">
 												<div class="d-flex rounded-circle align-items-center justify-content-center mr-3 media-icon iconbox-45 bg-primary text-white">
 													<i class="mdi mdi-cart-outline font-size-20"></i>
@@ -589,7 +493,7 @@ plugins: ["vector_map"]
 
 								</div>
 								<div class="col-lg-6 col-sm-12 col-xl-4">
-									<div class="card card-default" data-scroll-height="575">
+									<div class="card card-default">
 										<div class="card-header">
 											<h2>Profile</h2>
 										</div>
