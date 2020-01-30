@@ -21,11 +21,50 @@
 
               <div class="navbar-right ">
                 <ul class="nav navbar-nav">
-                  <li class="dropdown notifications-menu">
-                    <button class="dropdown-toggle" data-toggle="dropdown">
+                  <li class="dropdown notifications-menu custom-dropdown">
+                    <button class="dropdown-toggle notify-toggler custom-dropdown-toggler">
                       <i class="mdi mdi-bell-outline"></i>
                     </button>
-                    <ul class="dropdown-menu dropdown-menu-right">
+
+                    <div class="card card-default dropdown-notify dropdown-menu-right mb-0">
+                      <div class="card-header card-header-border-bottom px-3">
+                        <h2>Notifications</h2>
+                      </div>
+                      <div class="card-body p-3">
+                        <ul class="nav nav-tabs nav-style-border p-0 justify-content-between" id="myTab" role="tablist">
+                          <li class="nav-item mx-3 my-0 py-0">
+                            <a class="nav-link active pb-3" id="home2-tab" data-toggle="tab" href="#home2" role="tab" aria-controls="home2" aria-selected="true">All (7)</a>
+                          </li>
+                          <li class="nav-item mx-3 my-0 py-0">
+                            <a class="nav-link pb-3" id="profile2-tab" data-toggle="tab" href="#profile2" role="tab" aria-controls="profile2" aria-selected="false">Msgs (6)</a>
+                          </li>
+                          <li class="nav-item mx-3 my-0 py-0">
+                            <a class="nav-link pb-3" id="contact2-tab" data-toggle="tab" href="#contact2" role="tab" aria-controls="contact2" aria-selected="false">Others (5)</a>
+                          </li>
+                        </ul>
+
+                        <div class="tab-content" id="myTabContent3">
+                          <div class="tab-pane pt-3 fade show active" id="home2" role="tabpanel" aria-labelledby="home2-tab">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                          </div>
+                          <div class="tab-pane pt-3 fade" id="profile2" role="tabpanel" aria-labelledby="profile2-tab">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                          </div>
+                          <div class="tab-pane pt-3 fade" id="contact2" role="tabpanel" aria-labelledby="contact2-tab">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <ul class="dropdown-menu dropdown-menu-right d-none">
                       <li class="dropdown-header">You have 5 notifications</li>
                       <li>
                         <a href="#">

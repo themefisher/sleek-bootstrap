@@ -224,4 +224,27 @@ $(document).ready(function () {
     });
   }
 
+
+  /*======== 9. DROPDOWN NOTIFY ========*/
+  var dropdownToggle = $('.notify-toggler');
+  var dropdownNotify = $('.dropdown-notify');
+
+  if (dropdownToggle.length !== 0){
+    dropdownToggle.on('click', function () {
+      if (!dropdownNotify.is(':visible')){
+        dropdownNotify.fadeIn(5);
+      }else {
+        dropdownNotify.fadeOut(5);
+      }
+    });
+
+    $(document).mouseup(function (e) {
+      if (!dropdownNotify.is(e.target) && dropdownNotify.has(e.target).length === 0){
+        dropdownNotify.fadeOut(5);
+      }
+    });
+
+   
+  }
+
 });

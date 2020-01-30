@@ -169,7 +169,7 @@
           font-size: 0.98rem;
           padding: 0 1rem;
           display: inline-block;
-          line-height: 75px;
+          line-height: 76px;
           >span {
             color: $dark;
             padding: 0 .5rem;
@@ -427,3 +427,41 @@
 }
 
 
+/* Cusmtom Dropdown */
+.custom-dropdown {
+  .custom-dropdown-toggler {
+    .icon {
+      font-size: 1.75rem;
+      color: $gray-900;
+    }
+    .badge-xs {
+      position: absolute;
+      top: 4px;
+      right: 8px;
+      background-color: $secondary;
+      min-width: 18px;
+      min-height: 18px;
+      color: $white;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 3px 5px;
+    }
+  }
+}
+
+/* Notification */
+.dropdown-notify {
+  display: none;
+  width: 320px;
+  position: absolute;
+  top: 100%;
+  border-radius: 5px;
+  background-color: $white;
+  left:50%;
+  transform: translateX(-50%);
+
+  @include media-breakpoint-up(lg){
+    left: auto;
+    transform: translateX(0);
+  }
+}
