@@ -25,6 +25,12 @@ $purple:        #896def !default;
 $white:         #ffffff !default;
 $logo-fill-blue:#7DBCFF !default;
 
+$theme-colors: (
+  (
+    "purple":                $purple,
+  )
+);
+
 // Body colors
 
 $body-color:    $secondary !default;

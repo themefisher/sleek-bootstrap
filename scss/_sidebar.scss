@@ -368,7 +368,7 @@
 
   .nav li.has-sub.expand .collapse>.sub-menu {
     @include transition(opacity 0.3s ease-in-out);
-    height: min-content;
+    height: auto;
 
     li {
       opacity: 1;
@@ -408,7 +408,7 @@
   }
   .sidebar-footer {
     @include media-breakpoint-up(md){
-      height: min-content;
+      height: auto;
     }
   }
   .sidebar-footer-content {
@@ -504,7 +504,7 @@
     }
   }
   .nav li.has-sub.expand .collapse>.sub-menu {
-    height: min-content;
+    height: auto;
 
     li {
       opacity: 1;
