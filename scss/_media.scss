@@ -15,17 +15,20 @@
     right: 0px;
     width: 12px;
     height: 12px;
-
+    border: 2px solid transparent;
     border-radius: 50%;
+
+    &.active,
+    &.away {
+      border-color: $white;
+    }
 
     &.active {
       background-color: $success;
-      border-color: $success;
     }
 
     &.away {
       background-color: $warning;
-      border: 2px solid $white;
     }
   }
 
@@ -76,6 +79,16 @@
       color: $white;
     }
 
+  }
+
+  &.event-active {
+    background-color: rgba($gray-200, .5);
+  }
+}
+
+.media-notification {
+  .last-msg {
+    width: 200px;
   }
 }
 
