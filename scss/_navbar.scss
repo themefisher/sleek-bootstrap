@@ -18,7 +18,7 @@
 .navbar {
   margin-bottom: 0;
   border: none;
-  min-height: 75px;
+  min-height: 74px;
   border-radius: 0;
   padding: 0;
   border-bottom: 1px solid $border-color;
@@ -36,7 +36,7 @@
     font-size: 2rem;
     padding: 0 1.44rem;
     border: 0px;
-    height: 75px;
+    height: 74px;
     cursor: pointer;
     border-right: 1px solid $border-color;
     @include media-breakpoint-up(md) {}
@@ -169,7 +169,7 @@
           font-size: 0.98rem;
           padding: 0 1rem;
           display: inline-block;
-          line-height: 76px;
+          line-height: 75px;
           >span {
             color: $dark;
             padding: 0 .5rem;
@@ -209,7 +209,7 @@
           font-size: 1.625rem;
           color: rgba($secondary, .7);
           display: inline-block;
-          line-height: 75px;
+          line-height: 74px;
           @include media-breakpoint-up(xl) {
             padding-right: 0.625rem;
           }
@@ -251,7 +251,7 @@
         i {
           font-size: 1.5rem;
           color: rgba($secondary, .7);
-          line-height: 75px;
+          line-height: 74px;
         }
       }
     }

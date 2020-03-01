@@ -261,6 +261,39 @@
       sidebar_light.trigger("click")
     }
 
+    // Spacing Layout
+    var default_spacing = jQuery('.default-spacing-to');
+    var compact_spacing = jQuery('.compact-spacing-to');
+
+    default_spacing.click(function () {
+      'use strict';
+      jQuery(this).addClass('btn-right-sidebar-2-active');
+      compact_spacing.removeClass('btn-right-sidebar-2-active');
+      body.removeClass('compact-spacing').addClass('default-spacing');
+
+      //Store in local storage
+      setOptions("navigationSpacing", "default-spacing")
+    });
+
+    //Click for current options
+    if (currentOptions.navigationSpacing === "default-spacing") {
+      default_spacing.trigger("click")
+    }
+
+    compact_spacing.click(function () {
+      'use strict';
+      jQuery(this).addClass('btn-right-sidebar-2-active');
+      default_spacing.removeClass('btn-right-sidebar-2-active');
+      body.removeClass('default-spacing').addClass('compact-spacing');
+
+      //Store in local storage
+      setOptions("navigationSpacing", "compact-spacing")
+    });
+
+    //Click for current options
+    if (currentOptions.navigationSpacing === "compact-spacing") {
+      compact_spacing.trigger("click")
+    }
 
     // Direction
     var ltr = jQuery('.ltr-to');
