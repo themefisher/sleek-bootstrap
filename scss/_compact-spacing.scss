@@ -39,7 +39,6 @@
       top: 0px;
       right: 5px;
     }
-
     svg {
       width: 69px;
       height: 69px;
@@ -48,14 +47,108 @@
 
   /* App Brand */
   .app-brand {
-   
     a {
       height: 61px;
       line-height: 61px;
-      transition: all .429s !important;
+      transition: all .4s;
     }
   }
 
+  /* App Brand */
+  #toast-container {
+    margin-top: 50px;
+  }
 
-  
+  /* Right Sidebar 2 */
+  .right-sidebar-container-2 {
+    .right-sidebar-2-header {
+      padding: 11.5px 30px;
+      transition: all .4s;
+    }
+  }
+
+  /* Header Fix */
+  &.header-fixed {
+    .page-wrapper {
+      padding-top: 3.875rem;
+    }
+  }
+
+  /* Content */
+  .content {
+    @include media-breakpoint-up(xl) {
+      padding: 1.9rem 2.5rem;
+    }
+  }
+
+  /* Sidebar */
+  .sidebar {
+    .sidebar-inner {
+      @include media-breakpoint-up(xl){
+        margin-top: 2rem;
+      }
+      >li {
+        >a {
+          padding: 1rem 1.56rem;
+        }
+      }
+    }
+  }
+
+  /* Compact Units */
+  .compact-units {
+    height: 365px !important;
+  }
+
+  /* Compact Notifications */
+  .compact-notifications {
+    height: 415px !important;
+  }
+
+  /* Compact To Do List */
+  .compact-to-do-list {
+    height: 440px !important;
+  }
+
+  /* Vector Map World */
+  .vector-map-world {
+    height: 378px;
+  }
+
+  /* Card */
+  .card-table-border-none,
+  .card-default {
+    .card-header {
+      padding-top: 2rem;
+      &.card-header-border-bottom {
+        padding-top: 28px;
+      }
+    }
+    .card-body {
+      padding: 1.88rem 1.88rem;
+    }
+  }
+
+  /* Custom Tab Style - Fill */
+  // .nav-style-fill.nav-pills {
+  //   margin: 2.25rem 0 !important;
+  // }
+
+  /* Table */
+  .recent-orders {
+    .card-body {
+      padding-bottom: 0 !important;
+    }
+  }
+
+  .card-table {
+    margin-top: 1rem;
+  }
+
+  /* Copyright */
+  .copyright {
+    padding-top: 1.35rem;
+    padding-bottom: 1.35rem;
+  }
+
 }// compact-spacing
