@@ -269,14 +269,14 @@
       'use strict';
       jQuery(this).addClass('btn-right-sidebar-2-active');
       compact_spacing.removeClass('btn-right-sidebar-2-active');
-      body.removeClass('compact-spacing').addClass('default-spacing');
+      body.removeClass('compact-spacing');
 
       //Store in local storage
-      setOptions("navigationSpacing", "default-spacing")
+      setOptions("navigationSpacing", default_spacing)
     });
 
     //Click for current options
-    if (currentOptions.navigationSpacing === "default-spacing") {
+    if (currentOptions.navigationSpacing === default_spacing) {
       default_spacing.trigger("click")
     }
 
@@ -284,7 +284,7 @@
       'use strict';
       jQuery(this).addClass('btn-right-sidebar-2-active');
       default_spacing.removeClass('btn-right-sidebar-2-active');
-      body.removeClass('default-spacing').addClass('compact-spacing');
+      body.addClass('compact-spacing');
 
       //Store in local storage
       setOptions("navigationSpacing", "compact-spacing")
