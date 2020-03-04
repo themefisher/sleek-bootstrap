@@ -115,11 +115,19 @@
     height: 378px;
   }
 
+  /* Media */
+  .media-border-bottom {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+
   /* Card */
   .card-table-border-none,
   .card-default {
     .card-header {
       padding-top: 2rem;
+      padding-left: 1.88rem;
+      padding-right: 1.88rem;
       &.card-header-border-bottom {
         padding-top: 28px;
       }
@@ -127,6 +135,50 @@
     .card-body {
       padding: 1.88rem 1.88rem;
     }
+  }
+
+  #user-activity {
+    .card-header {
+      padding-top: 2rem !important;
+      padding-bottom: 2rem !important;
+      >h4 {
+        margin-bottom: 0.55rem !important;
+      }
+      .current-users-content {
+        margin-bottom: 0 !important;
+        p {
+          margin-top: 0 !important;
+          margin-bottom: 9px !important;
+        }
+        h4 {
+          margin-bottom: 0;
+        }
+      }
+    }
+    #currentUser {
+      min-height: 281px;
+      height: 281px !important;
+    }
+  }
+
+  /* Analytics Data Height */
+  [analytics-data-height] {
+    height: 573px;
+  }
+
+  /* Profile Data Height */
+  [Profile-data-height] {
+    height: 520px;
+  }
+
+  /* Radar Data Height */
+  // [radar-data-height] {
+  //   height: 534px;
+  // }
+
+  /* Polar Data Height */
+  [polar-data-height] {
+    height: 475px !important;
   }
 
   /* Custom Tab Style - Fill */
