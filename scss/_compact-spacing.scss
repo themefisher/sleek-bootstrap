@@ -166,9 +166,14 @@
     height: 573px;
   }
 
+  /* Polar Data Content */
+  [polar-data-content] {
+    margin-bottom: 20px;
+  }
+
   /* Profile Data Height */
   [Profile-data-height] {
-    height: 520px;
+    min-height: 520px;
   }
 
   /* Radar Data Height */
@@ -176,15 +181,43 @@
   //   height: 534px;
   // }
 
-  /* Polar Data Height */
-  [polar-data-height] {
-    height: 475px !important;
+  /* Activity Data Spacing */
+  [activity-data-spacing] {
+    margin-bottom: 39px;
   }
 
-  /* Custom Tab Style - Fill */
-  // .nav-style-fill.nav-pills {
-  //   margin: 2.25rem 0 !important;
-  // }
+  /* User Profile */
+  .profile-left-spacing {
+    padding: 1.88rem !important;
+  }
+
+  .profile-right-spacing {
+    padding: 1.88rem 0 !important;
+    .nav-style-border {
+      padding-left: 1.88rem !important;
+      padding-right: 1.88rem !important;
+    }
+    .tab-content {
+      padding-left: 1.88rem !important;
+      padding-right: 1.88rem !important;
+      .tab-pane-content {
+        margin-top: 1.88rem !important;
+        .form-group {
+          margin-bottom: 1.5rem !important;
+        }
+      }
+    }
+  }
+
+  .tab-widget,
+  .timeline-media-spacing {
+    margin-top: 1.88rem !important;
+  }
+
+  /* Invoice Wrapper */
+  .invoice-wrapper {
+    padding: 1.88rem !important;
+  }
 
   /* Table */
   .recent-orders {
