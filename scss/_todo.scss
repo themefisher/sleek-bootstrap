@@ -9,7 +9,7 @@
     }
   }
   > span {
-    margin-left: 1.56rem;
+    margin-left: 2rem;
     line-height: 1.2;
     position: relative;
     display: inline-block;
@@ -27,21 +27,21 @@
   }
 }
 .todo-single-item i.mdi {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   border: 1px solid #d4d5db;
   border-radius: 50%;
   margin-right: 0.38rem;
   position: relative;
   overflow: hidden;
   text-align: center;
-  line-height: 1rem;
+  line-height: 1.3rem;
   position: absolute;
   left: 0;
   @include transition(all 0.3s ease-in);
   &:hover {
-    border-color: rgba($primary, 0.5);
-    background-color: rgba($primary, 0.2);
+    border-color: rgba($success, .7);
+    background-color: rgba($success, .7);
     cursor: pointer;
   }
 }
@@ -69,13 +69,14 @@
     color: #8a909d;
   }
   i.mdi {
-    background-color: #d4d5db;
+    background-color: transparent;
     border-color: #d4d5db;
     &:after {
       content: "\f12c";
       font-size: .75rem;
-      color: $secondary;
+      color: $success;
       font-family: $font-family-icon;
+      font-weight: bold;
     }
   }
 
@@ -94,5 +95,24 @@
   cursor: pointer;
   &:hover {
     fill: rgba($danger, .7);
+  }
+}
+
+.todo-form {
+  i.mdi {
+    border-color: transparent;
+    font-size: 20px;
+    width: auto;
+    height: auto;
+    margin-right: 0;
+    position: absolute;
+    right: 0;
+    @include media-breakpoint-up(lg) {
+      font-size: 25px;
+    }
+    &:hover {
+      border-color: transparent;
+      background-color: transparent;
+    }
   }
 }
