@@ -160,11 +160,11 @@ $(document).ready(function () {
       todoInputForm = todoInput.querySelector("form"),
       item = todoInputForm.querySelector("input");
 
-    document.querySelector("#add-task").addEventListener("click", function (e) {
-      e.preventDefault();
-      todoInput.classList.toggle("d-block");
-      item.focus();
-    });
+    // document.querySelector("#add-task").addEventListener("click", function (e) {
+    //   e.preventDefault();
+    //   todoInput.classList.toggle("d-block");
+    //   item.focus();
+    // });
 
     todoInputForm.addEventListener("submit", function (e) {
       e.preventDefault();
@@ -186,7 +186,7 @@ $(document).ready(function () {
       list.innerHTML;
       item.value = "";
       //Close input field
-      todoInput.classList.toggle("d-block");
+      // todoInput.classList.toggle("d-block");
       todoCheckAll();
     });
 

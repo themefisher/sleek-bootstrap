@@ -4,13 +4,13 @@
   position: relative;
   .task-content {
     white-space: nowrap;
+    line-height: normal;
     span {
       margin-left: 1rem;
     }
   }
   > span {
     margin-left: 2rem;
-    line-height: 1.2;
     position: relative;
     display: inline-block;
     color: $black;
@@ -40,8 +40,8 @@
   left: 0;
   @include transition(all 0.3s ease-in);
   &:hover {
-    border-color: rgba($success, .7);
-    background-color: rgba($success, .7);
+    border-color: rgba($success, .5);
+    background-color: rgba($success, .2);
     cursor: pointer;
   }
 }
