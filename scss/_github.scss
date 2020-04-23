@@ -9,11 +9,15 @@
     z-index: 999;
     i {
       position: absolute;
-      top: 2px;
+      top: 7px;
       right: 7px;
       color: $white;
       font-size: 25px;
     }
+  }
+  svg {
+    width: 75px;
+    height: 75px;
   }
 }
 

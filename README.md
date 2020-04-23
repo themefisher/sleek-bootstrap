@@ -52,7 +52,7 @@ We are very excited to share this dashboard with you and we look forward to hear
 [View More](https://sleek.tafcoder.com/)
 
 ## Quick Start
-Please visit [Documentation](https://sleek.tafcoder.com/installation.html) for more detailed information.
+Please visit [Documentation](https://sleek.tafcoder.com/quick-start.html) for more detailed information.
 
 ### Option 1: From CDN
 ```
@@ -72,7 +72,7 @@ npm i sleek-dashboard --save
 ### Option 3: Download
 You can download ready to use **Sleek Dashboard** admin template from our [Latest Release](https://github.com/tafcoder/sleek-dashboard/releases)
 
-Please visit [Documentation](https://sleek.tafcoder.com/installation.html) for more detailed information.
+Please visit [Documentation](https://sleek.tafcoder.com/quick-start.html) for more detailed information.
 
 ## Contribution
 To use our build system and run project locally follow these instructions -
@@ -101,7 +101,7 @@ To use our build system and run project locally follow these instructions -
 * Bootstrap - http://getbootstrap.com
 * Chart.js - 	http://www.chartjs.org/
 * Select 2 - 	https://select2.org/
-* Slim Scrol - 	http://rocha.la/jQuery-slimScroll
+* Simple Bar - 	https://grsmto.github.io/simplebar/
 
 [See All Plugins](https://sleek.tafcoder.com/introduction.html)
 

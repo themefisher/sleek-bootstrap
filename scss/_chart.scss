@@ -35,6 +35,14 @@
   }
 }
 
+[polar-data-height] {
+  height: 455px;
+}
+
+[radar-data-height] {
+  height: 408px;
+}
+
 #currentUser {
   @include media-breakpoint-up(xl) {
     min-height: 283px;
