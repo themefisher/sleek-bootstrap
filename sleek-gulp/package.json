@@ -1,0 +1,42 @@
+{
+  "private": true,
+  "name": "sleek-dashboard",
+  "version": "1.0.0-beta.5",
+  "description": "Premium & Free Bootstrap 4 admin dashboard template by TAFcoder.com",
+  "author": "TAF Coder<hello@tafcoder.com> (https://tafcoder.com/)",
+  "license": "MIT",
+  "scripts": {
+    "start": "gulp",
+    "theme-option": "gulp --to",
+    "demo": "gulp build --demo",
+    "publish": "gulp build --pub"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-csso": "^4.0.1",
+    "gulp-file-include": "^2.3.0",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-inject-string": "^1.1.2",
+    "gulp-javascript-obfuscator": "^1.1.6",
+    "gulp-jshint": "^2.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-rtlcss": "^1.4.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "gulp-util": "^3.0.8",
+    "imagemin-webp": "^6.0.0",
+    "jshint": "^2.12.0",
+    "jshint-stylish": "^2.2.1",
+    "minimist": "^1.2.5"
+  },
+  "dependencies": {
+    "bootstrap": "^4.6.0"
+  }
+}

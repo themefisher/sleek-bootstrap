@@ -1,0 +1,82 @@
+
+                          <!-- User activity statistics -->
+                          <div class="card card-default" id="user-activity">
+                            <div class="row no-gutters">
+                              <div class="col-xl-8">
+                                <div class="border-right">
+                                  <div class="card-header justify-content-between py-5">
+                                    <h2>User Activity</h2>
+                                    <div class="date-range-report ">
+                                      <span></span>
+                                    </div>
+                                  </div>
+                                  <ul class="nav nav-tabs nav-style-border justify-content-between justify-content-xl-start border-bottom" role="tablist">
+                                    <li class="nav-item">
+                                      <a class="nav-link active pb-md-0" data-toggle="tab" href="#user" role="tab" aria-controls="" aria-selected="true">
+                                        <span class="type-name">User</span>
+                                        <h4 class="d-inline-block mr-2 mb-3">5248</h4>
+                                        <span class="text-success ">5%
+                                          <i class="mdi mdi-arrow-up-bold"></i>
+                                        </span>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link pb-md-0" data-toggle="tab" href="#session" role="tab" aria-controls="" aria-selected="false">
+                                        <span class="type-name">Sessions</span>
+                                        <h4 class="d-inline-block mr-2 mb-3">638</h4>
+                                        <span class="text-success ">20%
+                                          <i class="mdi mdi-arrow-up-bold"></i>
+                                        </span>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link pb-md-0" data-toggle="tab" href="#bounce" role="tab" aria-controls="" aria-selected="false">
+                                        <span class="type-name">Bounce Rate</span>
+                                        <h4 class="d-inline-block mr-2 mb-3">36.9%</h4>
+                                        <span class="text-danger ">7%
+                                          <i class="mdi mdi-arrow-down-bold"></i>
+                                        </span>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link pb-md-0" data-toggle="tab" href="#session-duration" role="tab" aria-controls="" aria-selected="false">
+                                        <span class="type-name">Session Duration</span>
+                                        <h4 class="d-inline-block mr-2 mb-3">4m 49s</h4>
+                                        <span class="text-success ">15%
+                                          <i class="mdi mdi-arrow-up-bold"></i>
+                                        </span>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                  <div class="card-body">
+                                    <div class="tab-content" id="myTabContent">
+                                      <div class="tab-pane fade show active" id="user" role="tabpanel" aria-labelledby="home-tab">
+                                          <canvas id="activity" class="chartjs"></canvas>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="card-footer d-flex flex-wrap bg-white border-top">
+                                    <a href="#" class="text-uppercase py-3">Audience Overview</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xl-4">
+                                <div>
+                                  <div class="card-header pt-5 flex-column align-items-start">
+                                    <h4 class="text-dark mb-4">Current Users</h4>
+                                    <div class="mb-3 current-users-content">
+                                      <p class="my-2">Ave Page views per minute</p>
+                                      <h4>09</h4>
+                                    </div>
+                                  </div>
+                                  <div class="border-bottom"></div>
+                                  <div class="card-body">
+                                    <canvas id="currentUser" class="chartjs"></canvas>
+                                  </div>
+                                  <div class="card-footer d-flex flex-wrap bg-white border-top">
+                                    <a href="#" class="text-uppercase py-3">Audience Overview</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>

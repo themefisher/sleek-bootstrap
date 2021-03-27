@@ -1,0 +1,23 @@
+{
+    "dir": "ltr",
+    "lang": "en",
+    "name": "Lukee - Admin Dashboard Template",
+    "short_name": "Lukee - Admin D",
+    "scope": "/",
+    "display": "browser",
+    "start_url": "https://lukee-html.netlify.app/",
+    "background_color": "#000000",
+    "theme_color": "transparent",
+    "description": "",
+    "orientation": "any",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "https://lukee-html.netlify.app/assets/img/favicon.webp",
+            "type": "image/webp",
+            "sizes": "39x49"
+        }
+    ],
+    "url": "https://lukee-html.netlify.app/"
+}

@@ -1,0 +1,13 @@
+/*===== REBOOT =====*/
+html[dir="rtl"] {
+  .sidebar li > a .caret:before {
+    content: '\f141';
+  }
+  .github-link {
+    svg {
+      transform: rotateY(180deg);
+    }
+  }
+}
+
+
