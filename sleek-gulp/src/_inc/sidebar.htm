@@ -56,6 +56,42 @@
                   </ul>
                 </li>
 
+                <li class="has-sub @@if (parent === 'app'){active expand}">
+                  <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#app"
+                    aria-expanded="false" aria-controls="app">
+                    <i class="mdi mdi-pencil-box-multiple"></i>
+                    <span class="nav-text">App</span> <b class="caret"></b>
+                  </a>
+
+                  <ul class="collapse @@if (parent === 'app'){show}" id="app" data-parent="#sidebar-menu">
+                    <div class="sub-menu">
+                      <li class="@@if (active === 'chat'){active}">
+                        <a class="sidenav-item-link" href="chat.html">
+                          <span class="nav-text">Chat</span>
+                        </a>
+                      </li>
+
+                      <li class="@@if (active === 'contacts'){active}">
+                        <a class="sidenav-item-link" href="contacts.html">
+                          <span class="nav-text">Contacts</span>
+                        </a>
+                      </li>
+
+                      <li class="@@if (active === 'team'){active}">
+                        <a class="sidenav-item-link" href="team.html">
+                          <span class="nav-text">Team</span>
+                        </a>
+                      </li>
+
+                      <li class="@@if (active === 'calendar'){active}">
+                        <a class="sidenav-item-link" href="calendar.html">
+                          <span class="nav-text">Calendar</span>
+                        </a>
+                      </li>
+                    </div>
+                  </ul>
+                </li>
+
 
                 <!-- <li class="section-title">
                   UI Elements
