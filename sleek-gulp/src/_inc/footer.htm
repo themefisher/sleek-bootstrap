@@ -1,4 +1,8 @@
 
+      </div> <!-- End Content -->
+    </div> <!-- End Content Wrapper -->
+    
+    
     <!-- Footer -->
     <footer class="footer mt-auto">
       <div class="copyright bg-white">
@@ -29,45 +33,41 @@
     <script src="assets/plugins/jquery/jquery.min.js"></script>
     <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/plugins/simplebar/simplebar.min.js"></script>
-    <!-- <script src="assets/plugins/jekyll-search.min.js"></script> -->
+ 
+    @@chart_js
+    @@chartjs
 
-    <script src="assets/plugins/charts/Chart.min.js"></script>
+    @@google_map
 
-    <script src="assets/plugins/jvectormap/jquery-jvectormap-2.0.3.min.js"></script>
-    <script src="assets/plugins/jvectormap/jquery-jvectormap-world-mill.js"></script>
+    @@vector_map
+    @@vector_map_world_mill
+    @@mapjs
 
-    <script src="assets/plugins/daterangepicker/moment.min.js"></script>
-    <script src="assets/plugins/daterangepicker/daterangepicker.js"></script>
-    <script>
-      jQuery(document).ready(function() {
-        jQuery('input[name="dateRange"]').daterangepicker({
-        autoUpdateInput: false,
-        singleDatePicker: true,
-        locale: {
-          cancelLabel: 'Clear'
-        }
-      });
-        jQuery('input[name="dateRange"]').on('apply.daterangepicker', function (ev, picker) {
-          jQuery(this).val(picker.startDate.format('MM/DD/YYYY'));
-        });
-        jQuery('input[name="dateRange"]').on('cancel.daterangepicker', function (ev, picker) {
-          jQuery(this).val('');
-        });
-      });
-    </script>
+    @@date_range_picker_moment
+    @@date_range_picker
+    @@date_range_js
 
+    @@select2
 
-    <script src="assets/plugins/toastr/toastr.min.js"></script>
+    @@ladda_spin
+    @@ladda
+    
+    @@jquery_mask
 
-    <script src="assets/js/date-range.js"></script>
-    <script src="assets/js/chart.js"></script>
-    <script src="assets/js/map.js"></script>
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCn8TFXGg17HAUcNpkwtxxyT9Io9B_NcM" defer></script> -->
+    @@toastr
+
+    @@circle_progress
+
+    @@full_calendar_core
+    @@full_calendar_daygrid
+    @@full_calendar_js
+
+    @@data_table
+    @@data_table_bootstrap4
+
+    @@responsive_data_table
+
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/sleek.js"></script>
-
-    <!-- <script src="assets/js/sleek.bundle.js"></script> -->
-
-
   </body>
 </html>
