@@ -97,14 +97,14 @@
                   UI Elements
                 </li> -->
 
-                <li class="has-sub @@if (parent === 'ui-components'){active expand}">
-                  <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#ui-components"
-                    aria-expanded="false" aria-controls="ui-components">
+                <li class="has-sub @@if (parent === 'components'){active expand}">
+                  <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#components"
+                    aria-expanded="false" aria-controls="components">
                     <i class="mdi mdi-folder-multiple-outline"></i>
                     <span class="nav-text">Components</span> <b class="caret"></b>
                   </a>
 
-                  <ul class="collapse @@if (parent === 'ui-components'){show}" id="ui-components" data-parent="#sidebar-menu">
+                  <ul class="collapse @@if (parent === 'components'){show}" id="components" data-parent="#sidebar-menu">
                     <div class="sub-menu">
                       <li class="@@if (active === 'alert'){active}">
                         <a class="sidenav-item-link" href="alert.html">
