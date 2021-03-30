@@ -296,6 +296,12 @@ $(document).ready(function () {
   /*======== PROGRESS BAR ========*/
   NProgress.done();
 
+  /*======== MULTIPLE SELECT ========*/
+  var jsExampleBasicMultiple = $(".js-example-basic-multiple");
+  if (jsExampleBasicMultiple.length !== 0){
+    jsExampleBasicMultiple.select2({});
+  }
+
   /*======== CIRCLE PROGRESS ========*/
   var gray = '#f5f6fa';
   var circle = $('.circle');
