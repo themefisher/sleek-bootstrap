@@ -291,6 +291,51 @@
                   </ul>
                 </li>
 
+                <li class="has-sub @@if (parent === 'tables'){active expand}">
+                  <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#tables"
+                    aria-expanded="false" aria-controls="tables">
+                    <i class="mdi mdi-table"></i>
+                    <span class="nav-text">Tables</span> <b class="caret"></b>
+                  </a>
+
+                  <ul class="collapse @@if (parent === 'tables'){show}" id="tables" data-parent="#sidebar-menu">
+                    <div class="sub-menu">
+                      <li class="@@if (active === 'apex-chart'){active}">
+                        <a class="sidenav-item-link" href="basic-tables.html">
+                          <span class="nav-text">Basic Tables</span>
+                        </a>
+                      </li>
+
+                      <li class="has-sub @@if (sub_parent === 'data-tables'){active expand}">
+                        <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#data-tables"
+                          aria-expanded="false" aria-controls="data-tables">
+                          <span class="nav-text">Data Tables</span> <b class="caret"></b>
+                        </a>
+
+                        <ul class="collapse @@if (sub_parent === 'data-tables'){show}" id="data-tables">
+                          <div class="sub-menu">
+                            <li class="@@if (active === 'basic-data-table'){active}">
+                              <a href="basic-data-table.html">Basic Data Table</a>
+                            </li>
+
+                           <li class="@@if (active === 'responsive-data-table'){active}">
+                              <a href="responsive-data-table.html">Responsive Data Table</a>
+                            </li>
+
+                           <li class="@@if (active === 'hoverable-data-table'){active}">
+                              <a href="hoverable-data-table.html">Hoverable Data Table</a>
+                            </li>
+
+                           <li class="@@if (active === 'expendable-data-table'){active}">
+                              <a href="expendable-data-table.html">Expendable Data Table</a>
+                            </li>
+                          </div>
+                        </ul>
+                      </li>
+                    </div>
+                  </ul>
+                </li>
+
                 <li class="has-sub @@if (parent === 'charts'){active expand}">
                   <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#charts"
                     aria-expanded="false" aria-controls="charts">
