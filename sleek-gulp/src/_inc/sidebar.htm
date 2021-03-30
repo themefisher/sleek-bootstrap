@@ -225,12 +225,37 @@
                   </ul>
                 </li>
 
+                <li class="has-sub @@if (parent === 'icons'){active expand}">
+                  <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#icons"
+                    aria-expanded="false" aria-controls="icons">
+                    <i class="mdi mdi-diamond-stone"></i>
+                    <span class="nav-text">Icons</span> <b class="caret"></b>
+                  </a>
+
+                  <ul class="collapse @@if (parent === 'icons'){show}" id="icons" data-parent="#sidebar-menu">
+                    <div class="sub-menu">
+                      <li class="@@if (active === 'material-icon'){active}">
+                        <a class="sidenav-item-link" href="material-icon.html">
+                          <span class="nav-text">Material Icon</span>
+                        </a>
+                      </li>
+
+                      <li class="@@if (active === 'flag-icon'){active}">
+                        <a class="sidenav-item-link" href="flag-icon.html">
+                          <span class="nav-text">Flag Icon</span>
+                        </a>
+                      </li>
+                    </div>
+                  </ul>
+                </li>
+
                 <li class="has-sub @@if (parent === 'charts'){active expand}">
                   <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#charts"
                     aria-expanded="false" aria-controls="charts">
                     <i class="mdi mdi-chart-pie"></i>
                     <span class="nav-text">Charts</span> <b class="caret"></b>
                   </a>
+
                   <ul class="collapse @@if (parent === 'charts'){show}" id="charts" data-parent="#sidebar-menu">
                     <div class="sub-menu">
                       <li class="@@if (active === 'apex-chart'){active}">
