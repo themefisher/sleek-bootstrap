@@ -1,0 +1,472 @@
+@@include('header.htm', {
+  "title": "Tab - Sleek Admin Dashboard Template",
+
+	"vector_map": "",
+
+	"date_range_picker": "",
+
+	"select2": "",
+
+	"ladda": "",
+
+	"toastr": "",
+
+	"flag_icon": "",
+
+	"full_calendar_core": "",
+	"full_calendar_daygrid": "",
+
+	"data_table": "",
+
+	"responsive_data_table": "",
+
+	"expendable_data_table": ""
+})
+
+@@include('sidebar.htm', {
+	"parent": "components",
+	"sub_parent": "components",
+	"active": "tabs"
+})
+
+@@include('top-bar.htm')
+
+
+
+
+<div class="breadcrumb-wrapper">
+	<h1>Tab</h1>
+	
+	@@include('breadcrumb.htm', {
+		"parent": "components",
+		"sub_parent": "components",
+		"active": "tab"
+	})
+</div>
+
+<!-- First Row  -->
+<div class="row">
+	<div class="col-lg-6">
+		<div class="card card-default">
+			<div class="card-header card-header-border-bottom">
+				<h2>Default Tabs </h2>
+			</div>
+
+			<div class="card-body">
+				<p class="mb-5">Takes the basic nav and adds the <code>.nav-tabs</code> class to generate a tabbed interface. Use them to create tabbable regions with our tab <a href="https://getbootstrap.com/docs/4.6/components/navs/#javascript-behavior"
+						target="_blank">JavaScript plugin.</a></p>
+
+				<ul class="nav nav-tabs" id="myTab" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link disabled" href="javascript:void(0)">Disabled</a>
+					</li>
+				</ul>
+
+				<div class="tab-content" id="myTabContent1">
+					<div class="tab-pane pt-3 fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+						irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+					</div>
+
+					<div class="tab-pane pt-3 fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+						irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+					</div>
+
+					<div class="tab-pane pt-3 fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+						irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-lg-6">
+		<div class="card card-default">
+			<div class="card-header card-header-border-bottom">
+				<h2>Pill Tabs </h2>
+			</div>
+
+			<div class="card-body">
+				<p class="mb-5">Take that same HTML, but use <code>.nav-pills</code> instead: Read Bootstrap Documention <a href="https://getbootstrap.com/docs/4.6/components/navs/#pills"
+						target="_blank">more details.</a></p>
+
+				<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home"
+							aria-selected="true">Home</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile"
+							aria-selected="false">Profile</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact"
+							aria-selected="false">Contact</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link disabled" href="javascript:void(0)">Disabled</a>
+					</li>
+				</ul>
+
+				<div class="tab-content" id="pills-tabContent">
+					<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+						irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+					</div>
+
+					<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+						irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+					</div>
+
+					<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+						irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-lg-6">
+		<div class="card card-default">
+			<div class="card-header card-header-border-bottom">
+				<h2>Tabs with Icon</h2>
+			</div>
+
+			<div class="card-body">
+				<ul class="nav nav-tabs" id="myTab" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link active" id="icon-home-tab" data-toggle="tab" href="#icon-home" role="tab" aria-controls="icon-home" aria-selected="true">
+							<i class="mdi mdi-star mr-1"></i> Home</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" id="icon-profile-tab" data-toggle="tab" href="#icon-profile" role="tab" aria-controls="icon-profile"
+							aria-selected="false">
+							<i class="mdi mdi-account mr-1"></i> Profile</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" id="icon-contact-tab" data-toggle="tab" href="#icon-contact" role="tab" aria-controls="icon-contact"
+							aria-selected="false">
+							<i class="mdi mdi-phone mr-1"></i> Contact</a>
+					</li>
+				</ul>
+
+				<div class="tab-content" id="myTabContent2">
+					<div class="tab-pane pt-3 fade show active" id="icon-home" role="tabpanel" aria-labelledby="icon-home-tab">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+						irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+					</div>
+
+					<div class="tab-pane pt-3 fade" id="icon-profile" role="tabpanel" aria-labelledby="icon-profile-tab">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+						irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+					</div>
+
+					<div class="tab-pane pt-3 fade" id="icon-contact" role="tabpanel" aria-labelledby="icon-contact-tab">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+						irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-lg-6">
+		<div class="card card-default">
+			<div class="card-header card-header-border-bottom">
+				<h2>Pill Tabs with Icon </h2>
+			</div>
+
+			<div class="card-body">
+				<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link active" id="ipills-home-tab" data-toggle="pill" href="#ipills-home" role="tab" aria-controls="ipills-home"
+							aria-selected="true">
+							<i class="mdi mdi-star mr-1"></i> Home</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" id="ipills-profile-tab" data-toggle="pill" href="#ipills-profile" role="tab" aria-controls="ipills-profile"
+							aria-selected="false">
+							<i class="mdi mdi-account mr-1"></i> Profile</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" id="ipills-contact-tab" data-toggle="pill" href="#ipills-contact" role="tab" aria-controls="ipills-contact"
+							aria-selected="false">
+							<i class="mdi mdi-phone mr-1"></i> Contact</a>
+					</li>
+				</ul>
+
+				<div class="tab-content" id="pills-tabContent">
+					<div class="tab-pane fade show active" id="ipills-home" role="tabpanel" aria-labelledby="ipills-home-tab">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+						irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+					</div>
+
+					<div class="tab-pane fade" id="ipills-profile" role="tabpanel" aria-labelledby="ipills-profile-tab">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+						irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+					</div>
+
+					<div class="tab-pane fade" id="ipills-contact" role="tabpanel" aria-labelledby="ipills-contact-tab">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+						irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-lg-6">
+		<div class="card card-default">
+			<div class="card-header card-header-border-bottom">
+				<h2>Custom List Tabs</h2>
+			</div>
+
+			<div class="card-body">
+				<ul class="nav nav-tabs nav-style-border pl-0 justify-content-between justify-content-xl-start" id="myTab" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link active" id="home20-tab" data-toggle="tab" href="#home20" role="tab" aria-controls="home20" aria-selected="true">Home</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" id="profile20-tab" data-toggle="tab" href="#profile20" role="tab" aria-controls="profile20" aria-selected="false">Profile</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" id="contact20-tab" data-toggle="tab" href="#contact20" role="tab" aria-controls="contact20" aria-selected="false">contact</a>
+					</li>
+				</ul>
+
+				<div class="tab-content" id="myTabContent3">
+					<div class="tab-pane pt-3 fade show active" id="home20" role="tabpanel" aria-labelledby="home20-tab">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+						irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+					</div>
+
+					<div class="tab-pane pt-3 fade" id="profile20" role="tabpanel" aria-labelledby="profile20-tab">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+						irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+					</div>
+
+					<div class="tab-pane pt-3 fade" id="contact20" role="tabpanel" aria-labelledby="contact20-tab">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+						irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-lg-6">
+		<div class="card card-default">
+			<div class="card-header card-header-border-bottom">
+				<h2>Custom List Tabs</h2>
+			</div>
+
+			<div class="card-body">
+				<ul class="nav nav-pills nav-justified nav-style-fill" id="myTab" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link active" id="home3-tab" data-toggle="tab" href="#home3" role="tab" aria-controls="home3" aria-selected="true">Home</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" id="profile3-tab" data-toggle="tab" href="#profile3" role="tab" aria-controls="profile3" aria-selected="false">Profile</a>
+					</li>
+				</ul>
+
+				<div class="tab-content" id="myTabContent4">
+					<div class="tab-pane pt-3 fade show active" id="home3" role="tabpanel" aria-labelledby="home3-tab">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+						irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+					</div>
+
+					<div class="tab-pane pt-3 fade" id="profile3" role="tabpanel" aria-labelledby="profile3-tab">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+						irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-lg-6">
+		<div class="card card-default">
+			<div class="card-header card-header-border-bottom">
+				<h2>Vertical Tabs</h2>
+			</div>
+
+			<div class="card-body">
+				<div class="row ">
+					<div class="col-sm-4">
+						<ul class="nav nav-tabs nav-stacked flex-column">
+							<li class="nav-item">
+								<a href="#vtab1" class="nav-link active" data-toggle="tab" aria-expanded="true">
+									<i class="mdi mdi-home"></i> Home</a>
+							</li>
+
+							<li class="nav-item">
+								<a href="#vtab2" class="nav-link" data-toggle="tab" aria-expanded="false">
+									<i class="mdi mdi-account"></i> Profile</a>
+							</li>
+
+							<li class="nav-item">
+								<a href="#vtab3" class="nav-link" data-toggle="tab">
+									<i class="mdi mdi-phone"></i> Contact</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="tab-content col-sm-8 ">
+						<div class="tab-pane fade active show" id="vtab1" aria-expanded="true">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+							aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+						</div>
+
+						<div class="tab-pane fade" id="vtab2" aria-expanded="false">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+							aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+						</div>
+
+						<div class="tab-pane fade" id="vtab3" aria-expanded="false">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+							aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-lg-6">
+		<div class="card card-default">
+			<div class="card-header card-header-border-bottom">
+				<h2>Vertical Fill Tabs</h2>
+			</div>
+
+			<div class="card-body">
+				<div class="row ">
+					<div class="col-sm-4">
+						<ul class="nav nav-pills nav-stacked flex-column">
+							<li class="nav-item">
+								<a href="#vtab4" class="nav-link active" data-toggle="tab" aria-expanded="true">
+									<i class="mr-1 fa fa-home"></i> Home</a>
+							</li>
+
+							<li class="nav-item">
+								<a href="#vtab5" class="nav-link" data-toggle="tab" aria-expanded="false">
+									<i class="mr-1 fa fa-user"></i> Profile</a>
+							</li>
+
+							<li class="nav-item">
+								<a href="#vtab6" class="nav-link" data-toggle="tab">
+									<i class="mr-1 fa fa-phone"></i> Contact</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="tab-content col-sm-8 ">
+						<div class="tab-pane fade active show" id="vtab4" aria-expanded="true">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+							aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+						</div>
+
+						<div class="tab-pane fade" id="vtab5" aria-expanded="false">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+							aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+						</div>
+
+						<div class="tab-pane fade" id="vtab6" aria-expanded="false">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+							aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+@@include('footer.htm', {
+
+	"chart_js": "",
+	"chartjs": "",
+
+	"google_map": "",
+	"mapjs": "",
+
+	"vector_map": "",
+	"vector_map_world_mill": "",
+	"vector_map_js": "",
+	
+	"date_range_picker_moment": "",
+	"date_range_picker": "",
+	"date_range_js": "",
+
+	"select2": "",
+
+	"ladda_spin": "",
+	"ladda": "",
+
+	"jquery_mask": "",
+
+	"toastr": "",
+
+	"circle_progress": "",
+
+	"full_calendar_core": "",
+	"full_calendar_daygrid": "",
+	"full_calendar_js": "",
+
+	"data_table": "",
+	"data_table_bootstrap4": "",
+
+	"responsive_data_table": ""
+})

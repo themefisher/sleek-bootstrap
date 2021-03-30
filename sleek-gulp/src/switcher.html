@@ -1,0 +1,970 @@
+@@include('header.htm', {
+  "title": "Switcher - Sleek Admin Dashboard Template",
+
+	"vector_map": "",
+
+	"date_range_picker": "",
+
+	"select2": "",
+
+	"ladda": "",
+
+	"toastr": "",
+
+	"flag_icon": "",
+
+	"full_calendar_core": "",
+	"full_calendar_daygrid": "",
+
+	"data_table": "",
+
+	"responsive_data_table": "",
+
+	"expendable_data_table": ""
+})
+
+@@include('sidebar.htm', {
+	"parent": "components",
+	"sub_parent": "components",
+	"active": "switcher"
+})
+
+@@include('top-bar.htm')
+
+
+
+
+<div class="breadcrumb-wrapper">
+	<h1>Switcher</h1>
+	
+	@@include('breadcrumb.htm', {
+		"parent": "components",
+		"sub_parent": "components",
+		"active": "switcher"
+	})
+</div>
+
+<div class="row">
+	<div class="col-12">
+		<div class="card card-default">
+			<div class="card-body">
+				<p class="mb-3">To use switcher copy the following code snippet.</p>
+<pre>
+ <code>
+  &lt;label class="switch switch-primary form-control-label"&gt;
+   &lt;input type="checkbox" class="switch-input form-check-input" value="on" checked&gt;
+    &lt;span class="switch-label"&gt;&lt;/span&gt;
+   &lt;span class="switch-handle"&gt;&lt;/span&gt;
+  &lt;/label&gt;
+ </code>
+</pre>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-lg-6">
+		<div class="card card-default">
+			<div class="card-header card-header-border-bottom">
+				<h2>Switch Default</h2>
+			</div>
+
+			<div class="card-body">
+				<p class="mb-5">For switch Add class <code> .switch-* </code> to <code> &lt;label class="switch"&gt; </code></p>
+
+				<label class="switch switch-primary form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-secondary  form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-success  form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-info  form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-warning  form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-danger  form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-lg-6">
+		<div class="card card-default">
+			<div class="card-header card-header-border-bottom">
+				<h2>Switch Default Pills</h2>
+			</div>
+
+			<div class="card-body">
+				<p class="mb-5">For switch pills Add class <code> .switch-pill switch-* </code> to <code> &lt;label class="switch"&gt; </code></p>
+
+				<label class="switch switch-primary switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-secondary switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-success switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-info switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-warning switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-danger switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-lg-6">
+		<div class="card card-default">
+			<div class="card-header card-header-border-bottom">
+				<h2>Switch Outline</h2>
+			</div>
+
+			<div class="card-body">
+				<p class="mb-5">For switch outline Add class <code> .switch-outline-* </code> to <code> &lt;label class="switch"&gt; </code></p>
+				
+				<label class="switch switch-outline-primary form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-outline-secondary form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-outline-success form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-outline-info form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-outline-warning form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-outline-danger form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-lg-6">
+		<div class="card card-default">
+			<div class="card-header card-header-border-bottom">
+				<h2>Switch Outline Pills</h2>
+			</div>
+
+			<div class="card-body">
+				<p class="mb-5">For switch outline pill Add class <code> .switch-pill .switch-outline-* </code> to <code> &lt;label class="switch"&gt; </code></p>
+
+				<label class="switch switch-outline-primary switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-outline-secondary switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-outline-success switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-outline-info switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-outline-warning switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-outline-danger switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-lg-6">
+		<div class="card card-default">
+			<div class="card-header card-header-border-bottom">
+				<h2>Switch Outline Alternative</h2>
+			</div>
+
+			<div class="card-body">
+				<p class="mb-5">For switch outline Alternative Add class <code> .switch-outline-alt-* </code> to <code> &lt;label class="switch"&gt; </code></p>
+
+				<label class="switch switch-outline-alt-primary form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-outline-alt-secondary form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-outline-alt-success form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-outline-alt-info form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-outline-alt-warning form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-outline-alt-danger form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-lg-6">
+		<div class="card card-default">
+			<div class="card-header card-header-border-bottom">
+				<h2>Switch Outline Alternative Pills</h2>
+			</div>
+
+			<div class="card-body">
+				<p class="mb-5">For switch outline Alternative pill Add class <code> .switch-pill .switch-outline-alt-* </code> to <code> &lt;label class="switch"&gt; </code></p>
+
+				<label class="switch switch-outline-alt-primary switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-outline-alt-secondary switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-outline-alt-success switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-outline-alt-info switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-outline-alt-warning switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-outline-alt-danger switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<!-- Switcher text with variation -->
+	<div class="col-lg-6">
+		<div class="card card-default">
+			<div class="card-header card-header-border-bottom">
+				<h2>Switch with Text</h2>
+			</div>
+
+			<div class="card-body">
+				<p class="mb-5">For switch with text Add class <code> .switch-text </code> to <code> &lt;label class="switch"&gt; </code></p>
+
+				<label class="switch switch-text switch-primary  form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label" data-on="On" data-off="Off"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-text switch-secondary  form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label" data-on="On" data-off="Off"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-text switch-success  form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label" data-on="On" data-off="Off"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-text switch-info  form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label" data-on="On" data-off="Off"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-text switch-warning  form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label" data-on="On" data-off="Off"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-text switch-danger  form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label" data-on="On" data-off="Off"></span>
+					<span class="switch-handle"></span>
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-lg-6">
+		<div class="card card-default">
+			<div class="card-header card-header-border-bottom">
+				<h2>Switch with Text Pills</h2>
+			</div>
+
+			<div class="card-body">
+				<p class="mb-5">For switch with text pill Add class <code> .switch-pill .switch-text .switch-*  </code> to <code> &lt;label class="switch"&gt; </code></p>
+
+				<label class="switch switch-text switch-primary switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label" data-on="On" data-off="Off"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-text switch-secondary switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label" data-on="On" data-off="Off"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-text switch-success switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label" data-on="On" data-off="Off"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-text switch-info switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label" data-on="On" data-off="Off"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-text switch-warning switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label" data-on="On" data-off="Off"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-text switch-danger switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label" data-on="On" data-off="Off"></span>
+					<span class="switch-handle"></span>
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-lg-6">
+		<div class="card card-default">
+			<div class="card-header card-header-border-bottom">
+				<h2>Switch with Text Outline</h2>
+			</div>
+
+			<div class="card-body">
+				<p class="mb-5">For switch with text outline Add class <code> .switch-text .switch-outline-* </code> to <code> &lt;label class="switch"&gt; </code></p>
+
+				<label class="switch switch-text switch-outline-primary form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label" data-on="On" data-off="Off"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-text switch-outline-secondary form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label" data-on="On" data-off="Off"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-text switch-outline-success form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label" data-on="On" data-off="Off"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-text switch-outline-info form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label" data-on="On" data-off="Off"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-text switch-outline-warning form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label" data-on="On" data-off="Off"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-text switch-outline-danger form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label" data-on="On" data-off="Off"></span>
+					<span class="switch-handle"></span>
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-lg-6">
+		<div class="card card-default">
+			<div class="card-header card-header-border-bottom">
+				<h2>Switch with Text Outline Pills</h2>
+			</div>
+
+			<div class="card-body">
+				<p class="mb-5">For switch with text outline pill Add class <code> .switch-pill .switch-text .switch-outline-* </code> to <code> &lt;label class="switch"&gt; </code></p>
+
+				<label class="switch switch-text switch-outline-primary switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label" data-on="On" data-off="Off"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-text switch-outline-secondary switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label" data-on="On" data-off="Off"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-text switch-outline-success switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label" data-on="On" data-off="Off"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-text switch-outline-info switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label" data-on="On" data-off="Off"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-text switch-outline-warning switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label" data-on="On" data-off="Off"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-text switch-outline-danger switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label" data-on="On" data-off="Off"></span>
+					<span class="switch-handle"></span>
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-lg-6">
+		<div class="card card-default">
+			<div class="card-header card-header-border-bottom">
+				<h2>Switch with Text Alternative Outline</h2>
+			</div>
+
+			<div class="card-body">
+				<p class="mb-5">For switch with text alternative outline Add class <code> .switch-text .switch-outline-alt-* </code> to <code> &lt;label class="switch"&gt; </code></p>
+
+				<label class="switch switch-text switch-outline-alt-primary form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label" data-on="On" data-off="Off"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-text switch-outline-alt-secondary form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label" data-on="On" data-off="Off"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-text switch-outline-alt-success form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label" data-on="On" data-off="Off"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-text switch-outline-alt-info form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label" data-on="On" data-off="Off"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-text switch-outline-alt-warning form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label" data-on="On" data-off="Off"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-text switch-outline-alt-danger form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label" data-on="On" data-off="Off"></span>
+					<span class="switch-handle"></span>
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-lg-6">
+		<div class="card card-default">
+			<div class="card-header card-header-border-bottom">
+				<h2>Switch with Text Outline Alternative Pills </h2>
+			</div>
+
+			<div class="card-body">
+				<p class="mb-5">For switch with text outline alternative pill Add class <code> .switch-pill .switch-text .switch-outline-alt-* </code> to <code> &lt;label class="switch"&gt; </code></p>
+
+				<label class="switch switch-text switch-outline-alt-primary switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label" data-on="On" data-off="Off"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-text switch-outline-alt-secondary switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label" data-on="On" data-off="Off"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-text switch-outline-alt-success switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label" data-on="On" data-off="Off"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-text switch-outline-alt-info switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label" data-on="On" data-off="Off"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-text switch-outline-alt-warning switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label" data-on="On" data-off="Off"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-text switch-outline-alt-danger switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label" data-on="On" data-off="Off"></span>
+					<span class="switch-handle"></span>
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<!-- Switcher Icon with variation -->
+	<div class="col-lg-6">
+		<div class="card card-default">
+			<div class="card-header card-header-border-bottom">
+				<h2>Switch with Icon</h2>
+			</div>
+
+			<div class="card-body">
+				<p class="mb-5">For switch with icon Add class <code> .switch-icon .switch-* </code> to <code> &lt;label class="switch"&gt; </code></p>
+
+				<label class="switch switch-icon switch-primary  form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-icon switch-secondary  form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-icon switch-success  form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-icon switch-info  form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-icon switch-warning  form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-icon switch-danger  form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-lg-6">
+		<div class="card card-default">
+			<div class="card-header card-header-border-bottom">
+				<h2> Switch with Icon Pills </h2>
+			</div>
+
+			<div class="card-body">
+				<p class="mb-5">For switch with icon pill Add class <code> .switch-pill .switch-icon .switch-* </code> to <code> &lt;label class="switch"&gt; </code></p>
+
+				<label class="switch switch-icon switch-primary switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-icon switch-secondary switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-icon switch-success switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-icon switch-info switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-icon switch-warning switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-icon switch-danger switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-lg-6">
+		<div class="card card-default">
+			<div class="card-header card-header-border-bottom">
+				<h2>Switch with Icon Outline</h2>
+			</div>
+
+			<div class="card-body">
+				<p class="mb-5">For switch with icon outline Add class <code> .switch-icon .switch-outline-* </code> to <code> &lt;label class="switch"&gt; </code></p>
+
+				<label class="switch switch-icon switch-outline-primary form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-icon switch-outline-secondary form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-icon switch-outline-success form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-icon switch-outline-info form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-icon switch-outline-warning form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-icon switch-outline-danger form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-lg-6">
+		<div class="card card-default">
+			<div class="card-header card-header-border-bottom">
+				<h2>Switch with Icon Outline Pills</h2>
+			</div>
+
+			<div class="card-body">
+				<p class="mb-5">For switch with icon outline pill Add class <code> .switch-pill .switch-icon .switch-outline-* </code> to <code> &lt;label class="switch"&gt; </code></p>
+
+				<label class="switch switch-icon switch-outline-primary switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-icon switch-outline-secondary switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-icon switch-outline-success switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-icon switch-outline-info switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-icon switch-outline-warning switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-icon switch-outline-danger switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-lg-6">
+		<div class="card card-default">
+			<div class="card-header card-header-border-bottom">
+				<h2>Switch with Icon Outline Alternative</h2>
+			</div>
+
+			<div class="card-body">
+				<p class="mb-5">For switch with icon outline alternative Add class <code> .switch-icon .switch-outline-alt-* </code> to <code> &lt;label class="switch"&gt; </code></p>
+
+				<label class="switch switch-icon switch-outline-alt-primary form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-icon switch-outline-alt-secondary form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-icon switch-outline-alt-success form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-icon switch-outline-alt-info form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-icon switch-outline-alt-warning form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-icon switch-outline-alt-danger form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-lg-6">
+		<div class="card card-default">
+			<div class="card-header card-header-border-bottom">
+				<h2>Switch with Icon Outline Alternative Pills </h2>
+			</div>
+
+			<div class="card-body">
+				<p class="mb-5">For switch with icon outline alternative pill Add class <code> .switch-icon .switch-pill .switch-outline-alt-* </code> to <code> &lt;label class="switch"&gt; </code></p>
+
+				<label class="switch switch-icon switch-outline-alt-primary switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-icon switch-outline-alt-secondary switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-icon switch-outline-alt-success switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-icon switch-outline-alt-info switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-icon switch-outline-alt-warning switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+
+				<label class="switch switch-icon switch-outline-alt-danger switch-pill form-control-label">
+					<input type="checkbox" class="switch-input form-check-input" value="on" checked>
+					<span class="switch-label"></span>
+					<span class="switch-handle"></span>
+				</label>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+@@include('footer.htm', {
+
+	"chart_js": "",
+	"chartjs": "",
+
+	"google_map": "",
+	"mapjs": "",
+
+	"vector_map": "",
+	"vector_map_world_mill": "",
+	"vector_map_js": "",
+	
+	"date_range_picker_moment": "",
+	"date_range_picker": "",
+	"date_range_js": "",
+
+	"select2": "",
+
+	"ladda_spin": "",
+	"ladda": "",
+
+	"jquery_mask": "",
+
+	"toastr": "",
+
+	"circle_progress": "",
+
+	"full_calendar_core": "",
+	"full_calendar_daygrid": "",
+	"full_calendar_js": "",
+
+	"data_table": "",
+	"data_table_bootstrap4": "",
+
+	"responsive_data_table": ""
+})
