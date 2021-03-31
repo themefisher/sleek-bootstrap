@@ -302,6 +302,34 @@ $(document).ready(function () {
     jsExampleBasicMultiple.select2({});
   }
 
+  /*======== BASIC DATA TABLE ========*/
+  var basicDataTable = $("#basic-data-table");
+  if (basicDataTable.length !== 0){
+    basicDataTable.DataTable({
+      "dom": '<"row justify-content-between top-information"lf>rt<"row justify-content-between bottom-information"ip><"clear">'
+    });
+  }
+
+  /*======== RESPONSIVE DATA TABLE ========*/
+  var responsiveDataTable = $("#responsive-data-table");
+  if (responsiveDataTable.length !== 0){
+    responsiveDataTable.DataTable({
+      "aLengthMenu": [[20, 30, 50, 75, -1], [20, 30, 50, 75, "All"]],
+      "pageLength": 20,
+      "dom": '<"row justify-content-between top-information"lf>rt<"row justify-content-between bottom-information"ip><"clear">'
+    });
+  }
+
+  /*======== HOVERABLE DATA TABLE ========*/
+  var hoverableDataTable = $("#hoverable-data-table");
+  if (hoverableDataTable.length !== 0){
+    hoverableDataTable.DataTable({
+      "aLengthMenu": [[20, 30, 50, 75, -1], [20, 30, 50, 75, "All"]],
+      "pageLength": 20,
+      "dom": '<"row justify-content-between top-information"lf>rt<"row justify-content-between bottom-information"ip><"clear">'
+    });
+  }
+
   /*======== CIRCLE PROGRESS ========*/
   var gray = '#f5f6fa';
   var circle = $('.circle');
