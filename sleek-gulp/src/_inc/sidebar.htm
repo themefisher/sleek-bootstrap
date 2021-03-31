@@ -336,6 +336,30 @@
                   </ul>
                 </li>
 
+                <li class="has-sub @@if (parent === 'maps'){active expand}">
+                  <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#maps"
+                    aria-expanded="false" aria-controls="maps">
+                    <i class="mdi mdi-google-maps"></i>
+                    <span class="nav-text">Maps</span> <b class="caret"></b>
+                  </a>
+
+                  <ul class="collapse @@if (parent === 'maps'){show}" id="maps" data-parent="#sidebar-menu">
+                    <div class="sub-menu">
+                      <li class="@@if (active === 'google-map'){active}">
+                        <a class="sidenav-item-link" href="google-map.html">
+                          <span class="nav-text">Google Map</span>
+                        </a>
+                      </li>
+
+                      <li class="@@if (active === 'vector-map'){active}">
+                        <a class="sidenav-item-link" href="vector-map.html">
+                          <span class="nav-text">Vector Map</span>
+                        </a>
+                      </li>
+                    </div>
+                  </ul>
+                </li>
+
                 <li class="has-sub @@if (parent === 'charts'){active expand}">
                   <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#charts"
                     aria-expanded="false" aria-controls="charts">
