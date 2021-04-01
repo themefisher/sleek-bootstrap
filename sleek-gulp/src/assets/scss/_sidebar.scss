@@ -840,6 +840,7 @@
   position: fixed;
   right: -60px;
   top: 0;
+  z-index: 1;
   transition: right .3s ease-in-out;
   @include media-breakpoint-up(xl) {
     right: 0;
