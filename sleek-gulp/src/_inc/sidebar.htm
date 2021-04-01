@@ -401,14 +401,14 @@
                   Pages
                 </li> -->
 
-                <li class="has-sub @@if (parent === 'users'){active expand}">
-                  <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#users"
-                    aria-expanded="false" aria-controls="users">
+                <li class="has-sub @@if (parent === 'pages'){active expand}">
+                  <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#pages"
+                    aria-expanded="false" aria-controls="pages">
                     <i class="mdi mdi-image-filter-none"></i>
                     <span class="nav-text">Pages</span> <b class="caret"></b>
                   </a>
 
-                  <ul class="collapse @@if (parent === 'users'){show}" id="users" data-parent="#sidebar-menu">
+                  <ul class="collapse @@if (parent === 'pages'){show}" id="pages" data-parent="#sidebar-menu">
                     <div class="sub-menu ">
                       <li class="@@if (active === 'user-profile'){active}">
                         <a class="sidenav-item-link" href="user-profile.html">
@@ -416,75 +416,163 @@
                         </a>
                       </li>
 
-                      <li class="@@if (active === 'user-activities'){active}">
-                        <a class="sidenav-item-link" href="user-activities.html">
-                          <span class="nav-text">User Activities</span>
+                      <li class="has-sub @@if (sub_parent === 'authentication'){active expand}">
+                        <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#authentication"
+                          aria-expanded="false" aria-controls="authentication">
+                          <span class="nav-text">Authentication</span> <b class="caret"></b>
                         </a>
+
+                        <ul class="collapse @@if (sub_parent === 'authentication'){show}" id="authentication">
+                          <div class="sub-menu">
+                            <li class="@@if (active === 'sign-in'){active}">
+                              <a href="sign-in.html">Sign In</a>
+                            </li>
+
+                           <li class="@@if (active === 'sign-up'){active}">
+                              <a href="sign-up.html">Sign Up</a>
+                            </li>
+                          </div>
+                        </ul>
                       </li>
 
-                      <li class="@@if (active === 'user-profile-settings'){active}">
-                        <a class="sidenav-item-link" href="user-profile-settings.html">
-                          <span class="nav-text">User Profile Settings</span>
+                      <li class="has-sub @@if (sub_parent === 'others'){active expand}">
+                        <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#others"
+                          aria-expanded="false" aria-controls="others">
+                          <span class="nav-text">Others</span> <b class="caret"></b>
                         </a>
-                      </li>
 
-                      <li class="@@if (active === 'user-account-settings'){active}">
-                        <a class="sidenav-item-link" href="user-account-settings.html">
-                          <span class="nav-text">User Account Settings</span>
-                        </a>
-                      </li>
+                        <ul class="collapse @@if (sub_parent === 'others'){show}" id="others">
+                          <div class="sub-menu">
+                            <li class="@@if (active === 'invoice'){active}">
+                              <a href="invoice.html">Invoice</a>
+                            </li>
 
-                      <li class="@@if (active === 'user-planing-settings'){active}">
-                        <a class="sidenav-item-link" href="user-planing-settings.html">
-                          <span class="nav-text">User Planing Settings</span>
-                        </a>
-                      </li>
-
-                      <li class="@@if (active === 'user-billing'){active}">
-                        <a class="sidenav-item-link" href="user-billing.html">
-                          <span class="nav-text">User billing</span>
-                        </a>
-                      </li>
-
-                      <li class="@@if (active === 'user-notify-settings'){active}">
-                        <a class="sidenav-item-link" href="user-notify-settings.html">
-                          <span class="nav-text">User Notify Settings</span>
-                        </a>
+                           <li class="@@if (active === 'page-404'){active}">
+                              <a href="404.html">404 Page</a>
+                            </li>
+                          </div>
+                        </ul>
                       </li>
                     </div>
                   </ul>
                 </li>
 
-                <li class="has-sub">
-                  <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#authentication"
-                    aria-expanded="false" aria-controls="authentication">
+                <li class="has-sub @@if (parent === 'documentation'){active expand}">
+                  <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#documentation"
+                    aria-expanded="false" aria-controls="documentation">
                     <i class="mdi mdi-book-open-page-variant"></i>
                     <span class="nav-text">Documentation</span> <b class="caret"></b>
                   </a>
 
-                  <ul class="collapse" id="authentication" data-parent="#sidebar-menu">
+                  <ul class="collapse @@if (parent === 'documentation'){show}" id="documentation" data-parent="#sidebar-menu">
                     <div class="sub-menu">
-                      <li>
-                        <a class="sidenav-item-link" href="sign-in.html">
-                          <span class="nav-text">Sign In</span>
+                      <li class="section-title">
+                        Getting Started
+                      </li>
+
+                      <li class="@@if (active === 'introduction'){active}">
+                        <a class="sidenav-item-link" href="introduction.html">
+                          <span class="nav-text">Introduction</span>
                         </a>
                       </li>
 
-                      <li>
-                        <a class="sidenav-item-link" href="sign-up.html">
-                          <span class="nav-text">Sign Up</span>
+                      <li class="@@if (active === 'quick-start'){active}">
+                        <a class="sidenav-item-link" href="quick-start.html">
+                          <span class="nav-text">Quick Start</span>
                         </a>
                       </li>
-                      
-                      <li>
-                        <a class="sidenav-item-link" href="reset-password.html">
-                          <span class="nav-text">Reset Password</span>
+
+                      <li class="@@if (active === 'customization'){active}">
+                        <a class="sidenav-item-link" href="customization.html">
+                          <span class="nav-text">Customizationt</span>
+                        </a>
+                      </li>
+
+                      <li class="section-title">
+                        Layouts
+                      </li>
+
+                      <li class="has-sub @@if (sub_parent === 'header-variations'){active expand}">
+                        <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#header-variations" aria-expanded="false" aria-controls="header-variations">
+                          <span class="nav-text">Header Variations</span> <b class="caret"></b>
+                        </a>
+
+                        <ul class="collapse @@if (sub_parent === 'header-variations'){show}" id="header-variations">
+                          <div class="sub-menu">
+                            <li class="@@if (active === 'header-fixed'){active}">
+                              <a href="header-fixed.html">Header Fixed</a>
+                            </li>
+
+                            <li class="@@if (active === 'header-static'){active}">
+                              <a href="header-static.html">Header Static</a>
+                            </li>
+
+                            <li class="@@if (active === 'header-light'){active}">
+                              <a href="header-light.html">Header Light</a>
+                            </li>
+
+                            <li class="@@if (active === 'header-dark'){active}">
+                              <a href="header-dark.html">Header Dark</a>
+                            </li>
+                          </div>
+                        </ul>
+                      </li>
+
+                      <li class="has-sub @@if (sub_parent === 'sidebar-variations'){active expand}">
+                        <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#sidebar-variations" aria-expanded="false" aria-controls="sidebar-variations">
+                          <span class="nav-text">Sidebar Variations</span> <b class="caret"></b>
+                        </a>
+
+                        <ul class="collapse @@if (sub_parent === 'sidebar-variations'){show}" id="sidebar-variations">
+                          <div class="sub-menu">
+                            <li class="@@if (active === 'sidebar-fixed-default'){active}">
+                              <a href="sidebar-fixed-default.html">Sidebar Fixed Default</a>
+                            </li>
+
+                            <li class="@@if (active === 'Sidebar-fixed-minified'){active}">
+                              <a href="Sidebar-fixed-minified.html">Sidebar Fixed Minified</a>
+                            </li>
+
+                            <li class="@@if (active === 'sidebar-fixed-offcanvas'){active}">
+                              <a href="sidebar-fixed-offcanvas.html">Sidebar Fixed Offcanvas</a>
+                            </li>
+
+                            <li class="@@if (active === 'sidebar-static-default'){active}">
+                              <a href="sidebar-static-default.html">Sidebar Static Default</a>
+                            </li>
+
+                            <li class="@@if (active === 'sidebar-static-minified'){active}">
+                              <a href="sidebar-static-minified.html">Sidebar Static Minified</a>
+                            </li>
+
+                            <li class="@@if (active === 'sidebar-static-offcanvas'){active}">
+                              <a href="sidebar-static-offcanvas.html">Sidebar Static Offcanvas</a>
+                            </li>
+
+                            <li class="@@if (active === 'sidebar-with-footer'){active}">
+                              <a href="sidebar-with-footer.html">Sidebar With Footer</a>
+                            </li>
+
+                            <li class="@@if (active === 'sidebar-without-footer'){active}">
+                              <a href="sidebar-without-footer.html">Sidebar Without Footer</a>
+                            </li>
+
+                            <li class="@@if (active === 'right-sidebar'){active}">
+                              <a href="right-sidebar.html">Right Sidebar</a>
+                            </li>
+                          </div>
+                        </ul>
+                      </li>
+
+                      <li class="@@if (active === 'rtl'){active}">
+                        <a class="sidenav-item-link" href="rtl.html">
+                          <span class="nav-text">RTL Direction</span>
                         </a>
                       </li>
                     </div>
                   </ul>
                 </li>
-                
+
                 <!-- <li class="section-title">
                   Documentation
                 </li> -->
