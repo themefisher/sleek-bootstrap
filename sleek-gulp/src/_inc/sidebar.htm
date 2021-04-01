@@ -12,23 +12,19 @@
                   preserveAspectRatio="xMidYMid"
                   width="30"
                   height="33"
-                  viewBox="0 0 30 33"
-                >
+                  viewBox="0 0 30 33">
                   <g fill="none" fill-rule="evenodd">
-                    <path
-                      class="logo-fill-blue"
-                      fill="#7DBCFF"
-                      d="M0 4v25l8 4V0zM22 4v25l8 4V0z"
-                    />
+                    <path class="logo-fill-blue" fill="#7DBCFF" d="M0 4v25l8 4V0zM22 4v25l8 4V0z" />
                     <path class="logo-fill-white" fill="#FFF" d="M11 4v25l8 4V0z" />
                   </g>
                 </svg>
+
                 <span class="brand-name text-truncate">Sleek Dashboard</span>
               </a>
             </div>
+
             <!-- begin sidebar scrollbar -->
             <div class="" data-simplebar style="height: 100%;">
-
               <!-- sidebar menu -->
               <ul class="nav sidebar-inner" id="sidebar-menu">
                 <li class="has-sub @@if (parent === 'dashboard'){active expand}">
@@ -91,7 +87,6 @@
                     </div>
                   </ul>
                 </li>
-
 
                 <!-- <li class="section-title">
                   UI Elements
@@ -360,6 +355,30 @@
                   </ul>
                 </li>
 
+                <li class="has-sub @@if (parent === 'widgets'){active expand}">
+                  <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#widgets"
+                    aria-expanded="false" aria-controls="widgets">
+                    <i class="mdi mdi-widgets"></i>
+                    <span class="nav-text">Widgets</span> <b class="caret"></b>
+                  </a>
+
+                  <ul class="collapse @@if (parent === 'widgets'){show}" id="widgets" data-parent="#sidebar-menu">
+                    <div class="sub-menu">
+                      <li class="@@if (active === 'general-widget'){active}">
+                        <a class="sidenav-item-link" href="general-widget.html">
+                          <span class="nav-text">General Widget</span>
+                        </a>
+                      </li>
+
+                      <li class="@@if (active === 'chart-widget'){active}">
+                        <a class="sidenav-item-link" href="chart-widget.html">
+                          <span class="nav-text">Chart Widget</span>
+                        </a>
+                      </li>
+                    </div>
+                  </ul>
+                </li>
+
                 <li class="has-sub @@if (parent === 'charts'){active expand}">
                   <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#charts"
                     aria-expanded="false" aria-controls="charts">
@@ -369,23 +388,26 @@
 
                   <ul class="collapse @@if (parent === 'charts'){show}" id="charts" data-parent="#sidebar-menu">
                     <div class="sub-menu">
-                      <li class="@@if (active === 'apex-chart'){active}">
-                        <a class="sidenav-item-link" href="apex-chart-js.html">
-                          <span class="nav-text">Apex ChartJS</span>
+                      <li class="@@if (active === 'chartjs'){active}">
+                        <a class="sidenav-item-link" href="chartjs.html">
+                          <span class="nav-text">ChartJS</span>
                         </a>
                       </li>
                     </div>
                   </ul>
                 </li>
+
                 <!-- <li class="section-title">
                   Pages
                 </li> -->
+
                 <li class="has-sub @@if (parent === 'users'){active expand}">
                   <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#users"
                     aria-expanded="false" aria-controls="users">
                     <i class="mdi mdi-image-filter-none"></i>
-                    <span class="nav-text">User</span> <b class="caret"></b>
+                    <span class="nav-text">Pages</span> <b class="caret"></b>
                   </a>
+
                   <ul class="collapse @@if (parent === 'users'){show}" id="users" data-parent="#sidebar-menu">
                     <div class="sub-menu ">
                       <li class="@@if (active === 'user-profile'){active}">
@@ -393,31 +415,37 @@
                           <span class="nav-text">User Profile</span>
                         </a>
                       </li>
+
                       <li class="@@if (active === 'user-activities'){active}">
                         <a class="sidenav-item-link" href="user-activities.html">
                           <span class="nav-text">User Activities</span>
                         </a>
                       </li>
+
                       <li class="@@if (active === 'user-profile-settings'){active}">
                         <a class="sidenav-item-link" href="user-profile-settings.html">
                           <span class="nav-text">User Profile Settings</span>
                         </a>
                       </li>
+
                       <li class="@@if (active === 'user-account-settings'){active}">
                         <a class="sidenav-item-link" href="user-account-settings.html">
                           <span class="nav-text">User Account Settings</span>
                         </a>
                       </li>
+
                       <li class="@@if (active === 'user-planing-settings'){active}">
                         <a class="sidenav-item-link" href="user-planing-settings.html">
                           <span class="nav-text">User Planing Settings</span>
                         </a>
                       </li>
+
                       <li class="@@if (active === 'user-billing'){active}">
                         <a class="sidenav-item-link" href="user-billing.html">
                           <span class="nav-text">User billing</span>
                         </a>
                       </li>
+
                       <li class="@@if (active === 'user-notify-settings'){active}">
                         <a class="sidenav-item-link" href="user-notify-settings.html">
                           <span class="nav-text">User Notify Settings</span>
@@ -426,12 +454,14 @@
                     </div>
                   </ul>
                 </li>
+
                 <li class="has-sub">
                   <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#authentication"
                     aria-expanded="false" aria-controls="authentication">
-                    <i class="mdi mdi-account"></i>
-                    <span class="nav-text">Authentication</span> <b class="caret"></b>
+                    <i class="mdi mdi-book-open-page-variant"></i>
+                    <span class="nav-text">Documentation</span> <b class="caret"></b>
                   </a>
+
                   <ul class="collapse" id="authentication" data-parent="#sidebar-menu">
                     <div class="sub-menu">
                       <li>
@@ -439,11 +469,13 @@
                           <span class="nav-text">Sign In</span>
                         </a>
                       </li>
+
                       <li>
                         <a class="sidenav-item-link" href="sign-up.html">
                           <span class="nav-text">Sign Up</span>
                         </a>
                       </li>
+                      
                       <li>
                         <a class="sidenav-item-link" href="reset-password.html">
                           <span class="nav-text">Reset Password</span>
@@ -452,99 +484,10 @@
                     </div>
                   </ul>
                 </li>
-                <li class="has-sub @@if (parent === 'email'){active expand}">
-                  <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#email"
-                    aria-expanded="false" aria-controls="email">
-                    <i class="mdi mdi-email"></i>
-                    <span class="nav-text">email</span> <b class="caret"></b>
-                  </a>
-                  <ul class="collapse @@if (parent === 'email'){show}" id="email" data-parent="#sidebar-menu">
-                    <div class="sub-menu">
-                      <li class="@@if (active === 'email-inbox'){active}">
-                        <a class="sidenav-item-link" href="email-inbox.html">
-                          <span class="nav-text">Email Inbox</span>
-                        </a>
-                      </li>
-                      <li class="@@if (active === 'email-details'){active}">
-                        <a class="sidenav-item-link" href="email-details.html">
-                          <span class="nav-text">Email Details</span>
-                        </a>
-                      </li>
-                      <li class="@@if (active === 'email-compose'){active}">
-                        <a class="sidenav-item-link" href="email-compose.html">
-                          <span class="nav-text">Email Compose</span>
-                        </a>
-                      </li>
-                    </div>
-                  </ul>
-                </li>
-                <li class="has-sub @@if (parent === 'other-page'){active expand}">
-                  <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#other-page"
-                    aria-expanded="false" aria-controls="other-page">
-                    <i class="mdi mdi-file-multiple"></i>
-                    <span class="nav-text">Other pages</span> <b class="caret"></b>
-                  </a>
-                  <ul class="collapse @@if (parent === 'other-page'){show}" id="other-page" data-parent="#sidebar-menu">
-                    <div class="sub-menu">
-                      <li>
-                        <a class="sidenav-item-link" href="404.html">
-                          <span class="nav-text">404 page</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="sidenav-item-link" href="page-comingsoon.html">
-                          <span class="nav-text">Coming Soon</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="sidenav-item-link" href="page-maintenance.html">
-                          <span class="nav-text">Maintenance</span>
-                        </a>
-                      </li>
-                      <li class="@@if (active === 'invoice'){active}">
-                        <a class="sidenav-item-link" href="invoice.html">
-                          <span class="nav-text">invoice</span>
-                        </a>
-                      </li>
-                    </div>
-                  </ul>
-                </li>
+                
                 <!-- <li class="section-title">
                   Documentation
                 </li> -->
-                <li class="@@if (parent === 'getting-started'){active}">
-                  <a class="sidenav-item-link" href="getting-started.html">
-                    <i class="mdi mdi-airplane"></i>
-                    <span class="nav-text">Getting Started</span>
-                  </a>
-                </li>
-                <li class="has-sub @@if (parent === 'customization'){active expand}">
-                  <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#customization"
-                    aria-expanded="false" aria-controls="customization">
-                    <i class="mdi mdi-square-edit-outline"></i>
-                    <span class="nav-text">Customization</span> <b class="caret"></b>
-                  </a>
-                  <ul class="collapse @@if (parent === 'customization'){show}" id="customization" data-parent="#sidebar-menu">
-                    <div class="sub-menu">
-                      <li class="@@if (active === 'navbar'){active}">
-                        <a class="sidenav-item-link" href="navbar-customization.html">
-                          <span class="nav-text">Navbar</span>
-                        </a>
-                      </li>
-                      <li class="@@if (active === 'sidebar'){active}">
-                        <a class="sidenav-item-link" href="sidebar-customization.html">
-                          <span class="nav-text">Sidebar</span>
-                        </a>
-                      </li>
-                      <li class="@@if (active === 'styling'){active}">
-                        <a class="sidenav-item-link" href="styling.html">
-                          <span class="nav-text">Styling</span>
-                        </a>
-                      </li>
-                    </div>
-                  </ul>
-                </li>
-
               </ul>
             </div>
 
@@ -554,25 +497,19 @@
                 <h6 class="text-uppercase">
                   Cpu Uses <span class="float-right">40%</span>
                 </h6>
+
                 <div class="progress progress-xs">
-                  <div
-                    class="progress-bar active"
-                    style="width: 40%;"
-                    role="progressbar"
-                  ></div>
+                  <div class="progress-bar active" style="width: 40%;" role="progressbar"></div>
                 </div>
+
                 <h6 class="text-uppercase">
                   Memory Uses <span class="float-right">65%</span>
                 </h6>
+
                 <div class="progress progress-xs">
-                  <div
-                    class="progress-bar progress-bar-warning"
-                    style="width: 65%;"
-                    role="progressbar"
-                  ></div>
+                  <div class="progress-bar progress-bar-warning" style="width: 65%;" role="progressbar"></div>
                 </div>
               </div>
             </div>
-
           </div>
         </aside>
