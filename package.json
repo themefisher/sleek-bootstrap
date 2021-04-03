@@ -1,4 +1,5 @@
 {
+  "private": true,
   "name": "sleek-dashboard",
   "version": "1.0.0-beta.5",
   "description": "Premium & Free Bootstrap 4 admin dashboard template by TAFcoder.com",
@@ -28,42 +29,40 @@
     "bootstrap-theme",
     "bootstrap-template",
     "admin",
-    "bootstrap-admin-dashboard",
-    "jekyll"
+    "bootstrap-admin-dashboard"
   ],
   "scripts": {
-    "start": "npm-run-all --parallel serve css:watch js:watch",
-    "demo": "npm-run-all --parallel serve:demo css:watch js:watch",
-    "demo:build": "npm-run-all clean:dist build:demo css:build js js:min site:copy",
-    "serve": "bundle exec jekyll serve",
-    "serve:demo": "bundle exec jekyll serve --config _config.yaml,_config.demo.yaml",
-    "build": "bundle exec jekyll build",
-    "build:demo": "bundle exec jekyll build --config _config.yaml,_config.demo.yaml",
-    "dist": "npm-run-all clean:dist build css:build js js:min site:copy",
-    "clean:dist": "rm -rf dist",
-    "css": "node-sass scss/sleek.scss _site/assets/css/sleek.css --source-map true && npm run rtl",
-    "css:watch": "npm run css && node-sass -w scss/sleek.scss _site/assets/css/sleek.css --source-map true",
-    "css:prod": "node-sass scss/sleek.scss _site/assets/css/sleek.min.css --output-style=compressed && npm run rtl:prod",
-    "rtl": "rtlcss _site/assets/css/sleek.css",
-    "rtl:prod": "rtlcss _site/assets/css/sleek.min.css",
-    "css:build": "npm-run-all css css:prod",
-    "site:copy": "cp -rf _site/ dist/",
-    "js": "rollup -c --sourcemap",
-    "js:watch": "rollup -c --sourcemap -w",
-    "js:min": "uglifyjs _site/assets/js/sleek.bundle.js --output _site/assets/js/sleek.bundle.min.js"
-  },
-  "dependencies": {
-    "bootstrap": "^4.5.2",
-    "jquery": "^3.5.1",
-    "popper.js": "^1.16.0"
+    "start": "gulp",
+    "theme-option": "gulp --to",
+    "demo": "gulp build --demo",
+    "publish": "gulp build --pub"
   },
   "devDependencies": {
-    "node-sass": "^4.14.1",
-    "npm-run-all": "^4.1.5",
-    "rollup": "^1.29.0",
-    "rollup-plugin-commonjs": "^9.3.4",
-    "rollup-plugin-node-resolve": "^4.2.4",
-    "rtlcss": "^2.6.0",
-    "uglify-js": "^3.10.4"
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-csso": "^4.0.1",
+    "gulp-file-include": "^2.3.0",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-inject-string": "^1.1.2",
+    "gulp-javascript-obfuscator": "^1.1.6",
+    "gulp-jshint": "^2.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-rtlcss": "^1.4.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "gulp-util": "^3.0.8",
+    "imagemin-webp": "^6.0.0",
+    "jshint": "^2.12.0",
+    "jshint-stylish": "^2.2.1",
+    "minimist": "^1.2.5"
+  },
+  "dependencies": {
+    "bootstrap": "^4.6.0"
   }
 }

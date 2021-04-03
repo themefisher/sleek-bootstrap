@@ -13,7 +13,7 @@
 $(document).ready(function () {
   "use strict";
 
-  /*======== 1. SCROLLBAR SIDEBAR ========*/
+  /*======== SCROLLBAR SIDEBAR ========*/
   var sidebarScrollbar = $(".sidebar-scrollbar");
   if (sidebarScrollbar.length != 0) {
     sidebarScrollbar.slimScroll({
@@ -30,7 +30,7 @@ $(document).ready(function () {
       });
   }
 
-  /*======== 2. MOBILE OVERLAY ========*/
+  /*======== MOBILE OVERLAY ========*/
   if ($(window).width() < 768) {
     $(".sidebar-toggle").on("click", function () {
       $("body").css("overflow", "hidden");
@@ -44,7 +44,7 @@ $(document).ready(function () {
     });
   }
 
-  /*======== 3. SIDEBAR MENU ========*/
+  /*======== SIDEBAR MENU ========*/
   var sidebar = $(".sidebar")
   if (sidebar.length != 0) {
     $(".sidebar .nav > .has-sub > a").click(function () {
@@ -58,7 +58,7 @@ $(document).ready(function () {
   }
 
 
-  /*======== 4. SIDEBAR TOGGLE FOR MOBILE ========*/
+  /*======== SIDEBAR TOGGLE FOR MOBILE ========*/
   if ($(window).width() < 768) {
     $(document).on("click", ".sidebar-toggle", function (e) {
       e.preventDefault();
@@ -75,7 +75,7 @@ $(document).ready(function () {
     });
   }
 
-  /*======== 5. SIDEBAR TOGGLE FOR VARIOUS SIDEBAR LAYOUT ========*/
+  /*======== SIDEBAR TOGGLE FOR VARIOUS SIDEBAR LAYOUT ========*/
   var body = $("#body");
   if ($(window).width() >= 768) {
 
@@ -142,8 +142,7 @@ $(document).ready(function () {
     }
   }
 
-  /*======== 6. TODO LIST ========*/
-
+  /*======== TODO LIST ========*/
   function todoCheckAll() {
     var mdis = document.querySelectorAll(".todo-single-item .mdi");
     mdis.forEach(function (fa) {
@@ -193,8 +192,7 @@ $(document).ready(function () {
     todoCheckAll();
   }
 
-  /*======== 7. RIGHT SIDEBAR ========*/
-
+  /*======== RIGHT SIDEBAR ========*/
   var rightSidebarIn = 'right-sidebar-in';
   var rightSidebarOut = 'right-sidebar-out';
 
@@ -229,7 +227,7 @@ $(document).ready(function () {
   }
 
 
-  /*======== 9. DROPDOWN NOTIFY ========*/
+  /*======== DROPDOWN NOTIFY ========*/
   var dropdownToggle = $('.notify-toggler');
   var dropdownNotify = $('.dropdown-notify');
 
@@ -247,8 +245,100 @@ $(document).ready(function () {
         dropdownNotify.fadeOut(5);
       }
     });
-
-   
   }
+
+    /*======== TOOLTIPS AND POPOVER ========*/
+    var tooltip = $('[data-toggle="tooltip"]')
+    if(tooltip.length != 0){
+      tooltip.tooltip({
+        container: "body",
+        template:
+          '<div class="tooltip" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>'
+      });
+    }
+  
+    var popover = $('[data-toggle="popover"]')
+  
+    if(popover.length != 0){
+      popover.popover();
+    }
+
+  /*======== TOASTER ========*/
+  function callToaster(positionClass) {
+    if (document.getElementById("toaster")) {
+      toastr.options = {
+        closeButton: true,
+        debug: false,
+        newestOnTop: false,
+        progressBar: true,
+        positionClass: positionClass,
+        preventDuplicates: false,
+        onclick: null,
+        showDuration: "300",
+        hideDuration: "1000",
+        timeOut: "5000",
+        extendedTimeOut: "1000",
+        showEasing: "swing",
+        hideEasing: "linear",
+        showMethod: "fadeIn",
+        hideMethod: "fadeOut"
+      };
+      toastr.success("Welcome to sleek", "Howdy!");
+    }
+  }
+
+  if (document.dir != "rtl" ){
+    callToaster("toast-top-right");
+  }else {
+    callToaster("toast-top-left");
+  }
+
+  /*======== PROGRESS BAR ========*/
+  NProgress.done();
+
+  /*======== MULTIPLE SELECT ========*/
+  var jsExampleBasicMultiple = $(".js-example-basic-multiple");
+  if (jsExampleBasicMultiple.length !== 0){
+    jsExampleBasicMultiple.select2({});
+  }
+
+  /*======== BASIC DATA TABLE ========*/
+  var basicDataTable = $("#basic-data-table");
+  if (basicDataTable.length !== 0){
+    basicDataTable.DataTable({
+      "dom": '<"row justify-content-between top-information"lf>rt<"row justify-content-between bottom-information"ip><"clear">'
+    });
+  }
+
+  /*======== RESPONSIVE DATA TABLE ========*/
+  var responsiveDataTable = $("#responsive-data-table");
+  if (responsiveDataTable.length !== 0){
+    responsiveDataTable.DataTable({
+      "aLengthMenu": [[20, 30, 50, 75, -1], [20, 30, 50, 75, "All"]],
+      "pageLength": 20,
+      "dom": '<"row justify-content-between top-information"lf>rt<"row justify-content-between bottom-information"ip><"clear">'
+    });
+  }
+
+  /*======== HOVERABLE DATA TABLE ========*/
+  var hoverableDataTable = $("#hoverable-data-table");
+  if (hoverableDataTable.length !== 0){
+    hoverableDataTable.DataTable({
+      "aLengthMenu": [[20, 30, 50, 75, -1], [20, 30, 50, 75, "All"]],
+      "pageLength": 20,
+      "dom": '<"row justify-content-between top-information"lf>rt<"row justify-content-between bottom-information"ip><"clear">'
+    });
+  }
+
+  /*======== CIRCLE PROGRESS ========*/
+  var gray = '#f5f6fa';
+  var circle = $('.circle');
+  if(circle.length !== 0) {
+    circle.circleProgress ({
+      lineCap: "round",
+      startAngle: 4.8,
+      emptyFill: [gray]
+    })
+  };
 
 });

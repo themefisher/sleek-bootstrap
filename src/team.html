@@ -1,19 +1,52 @@
----
-layout: default
-title: "Team - Sleek Admin Dashboard Template"
+@@include('header.htm', {
+  "title": "Team - Sleek Admin Dashboard Template",
+
+	"vector_map": "",
+
+	"date_range_picker": "",
+
+	"select2": "",
+
+	"ladda": "",
+
+	"toastr": "",
+
+	"flag_icon": "",
+
+	"full_calendar_core": "",
+	"full_calendar_daygrid": "",
+
+	"data_table": "",
+
+	"responsive_data_table": "",
+
+	"expendable_data_table": ""
+})
+
+@@include('sidebar.htm', {
+	"parent": "app",
+	"sub_parent": "app",
+	"active": "team"
+})
+
+@@include('top-bar.htm', {
+  "active": "team"
+})
 
 
-parent: "app"
-sub_parent: "app"
-activePage: "team"
-plugins: ["circle_progress"]
----
+
 
 							<div class="breadcrumb-wrapper d-flex align-items-center justify-content-between">
 								<div>
 									<h1>Team</h1>
-									{% include breadcrumb.htm %}
+
+									@@include('breadcrumb.htm', {
+										"parent": "app",
+										"sub_parent": "app",
+										"active": "team"
+									})
 								</div>
+
 								<div>
 									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-add-member"> Add Member
 									</button>
@@ -1237,3 +1270,43 @@ plugins: ["circle_progress"]
   	</div>
 	</div>
 </div>
+
+
+
+
+@@include('footer.htm', {
+
+	"chart_js": "",
+	"chartjs": "",
+
+	"google_map": "",
+	"mapjs": "",
+
+	"vector_map": "",
+	"vector_map_world_mill": "",
+	"vector_map_js": "",
+	
+	"date_range_picker_moment": "",
+	"date_range_picker": "",
+	"date_range_js": "",
+
+	"select2": "",
+
+	"ladda_spin": "",
+	"ladda": "",
+
+	"jquery_mask": "",
+
+	"toastr": "",
+
+	"circle_progress": "<script src='assets/plugins/circle-progress/circle-progress.js'></script>",
+
+	"full_calendar_core": "",
+	"full_calendar_daygrid": "",
+	"full_calendar_js": "",
+
+	"data_table": "",
+	"data_table_bootstrap4": "",
+
+	"responsive_data_table": ""
+})
