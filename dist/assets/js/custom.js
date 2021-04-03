@@ -20,51 +20,17 @@ $(document).ready(function() {
 
   /*======== 1. JEKYLL INSTANT SEARCH ========*/
 
-  SimpleJekyllSearch.init({
-    searchInput: document.getElementById('search-input'),
-    resultsContainer: document.getElementById('search-results'),
-    dataSource: '/assets/data/search.json',
-    searchResultTemplate: '<li><div class="link"><a href="{link}">{label}</a></div><div class="location">{location}</div><\/li>',
-    noResultsText: '<li>No results found</li>',
-    limit: 10,
-    fuzzy: true,
-  });
+  // SimpleJekyllSearch.init({
+  //   searchInput: document.getElementById('search-input'),
+  //   resultsContainer: document.getElementById('search-results'),
+  //   dataSource: '/assets/data/search.json',
+  //   searchResultTemplate: '<li><div class="link"><a href="{link}">{label}</a></div><div class="location">{location}</div><\/li>',
+  //   noResultsText: '<li>No results found</li>',
+  //   limit: 10,
+  //   fuzzy: true,
+  // });
 
 
-  /*======== 2. SCROLLBAR CONTENT ========*/
-
-  function scrollWithBigMedia(media) {
-    var $elDataScrollHeight = $("[data-scroll-height]");
-    if (media.matches) {
-      /* The viewport is greater than, or equal to media screen size */
-      $elDataScrollHeight.each(function() {
-        var scrollHeight = $(this).attr("data-scroll-height");
-        $(this).css({ height: scrollHeight + "px", overflow: "hidden" });
-      });
-
-      //For content that needs scroll
-      $(".slim-scroll")
-        .slimScroll({
-          opacity: 0,
-          height: "100%",
-          color: "#999",
-          size: "5px",
-          wheelStep: 10
-        })
-        .mouseover(function() {
-          $(this)
-            .next(".slimScrollBar")
-            .css("opacity", 0.4);
-        });
-    } else {
-      /* The viewport is less than media screen size */
-      $elDataScrollHeight.css({ height: "auto", overflow: "auto" });
-    }
-  }
-
-  var media = window.matchMedia("(min-width: 992px)");
-  scrollWithBigMedia(media); // Call listener function at run time
-  media.addListener(scrollWithBigMedia); // Attach listener function on state changes
 
   /*======== 3. TOOLTIPS AND POPOVER ========*/
   $('[data-toggle="tooltip"]').tooltip({
@@ -194,29 +160,29 @@ $(document).ready(function() {
   }
 
   /*======== 7. MULTIPLE SELECT ========*/
-  $(".js-example-basic-multiple").select2();
+  // $(".js-example-basic-multiple").select2();
 
   /*======== 8. LOADING BUTTON ========*/
   /* 8.1. BIND NORMAL BUTTONS */
-  Ladda.bind(".ladda-button", {
-    timeout: 5000
-  });
+  // Ladda.bind(".ladda-button", {
+  //   timeout: 5000
+  // });
 
   /* 7.2. BIND PROGRESS BUTTONS AND SIMULATE LOADING PROGRESS */
-  Ladda.bind(".progress-demo button", {
-    callback: function(instance) {
-      var progress = 0;
-      var interval = setInterval(function() {
-        progress = Math.min(progress + Math.random() * 0.1, 1);
-        instance.setProgress(progress);
+  // Ladda.bind(".progress-demo button", {
+  //   callback: function(instance) {
+  //     var progress = 0;
+  //     var interval = setInterval(function() {
+  //       progress = Math.min(progress + Math.random() * 0.1, 1);
+  //       instance.setProgress(progress);
 
-        if (progress === 1) {
-          instance.stop();
-          clearInterval(interval);
-        }
-      }, 200);
-    }
-  });
+  //       if (progress === 1) {
+  //         instance.stop();
+  //         clearInterval(interval);
+  //       }
+  //     }, 200);
+  //   }
+  // });
 
   /*======== 9. TOASTER ========*/
   function callToaster(positionClass) {
@@ -248,6 +214,6 @@ $(document).ready(function() {
     callToaster("toast-top-left");
   }
 
-  /*======== 10. PROGRESS BAR ========*/
-  NProgress.done();
+  // /*======== 10. PROGRESS BAR ========*/
+  // NProgress.done();
 });

@@ -53,6 +53,7 @@
 }
 
 .btn-facebook:hover {
+  color: $white;
   background: #344e86;
   &.btn-outline {
     color: $white;
@@ -74,6 +75,7 @@
 }
 
 .btn-twitter:hover {
+  color: $white;
   background: #0099d4;
   &.btn-outline {
     color: $white;
@@ -91,6 +93,7 @@
 }
 
 .btn-skype:hover {
+  color: $white;
   background: #00aff0;
   &.btn-outline {
     color: $white;
@@ -112,6 +115,7 @@
 }
 
 .btn-linkedin:hover {
+  color: $white;
   background: #4169a2;
   &.btn-outline {
     color: $white;
@@ -134,11 +138,12 @@
 
 
 .btn-pinterest:hover {
+  color: $white;
+  background: #b51d23;
   &.btn-outline {
     color: $white;
     border-color: rgba(#cb2027, 1);
   }
-  background: #b51d23;
 }
 
 .btn-pinterest:hover::before {
@@ -155,6 +160,7 @@
 }
 
 .btn-tumblr:hover {
+  color: $white;
   background: #2a435c;
   &.btn-outline {
     color: $white;
@@ -176,6 +182,7 @@
 }
 
 .btn-google-plus:hover {
+  color: $white;
   background: #c43d2b;
   &.btn-outline {
     color: $white;
@@ -197,6 +204,7 @@
 }
 
 .btn-dropbox:hover {
+  color: $white;
   background: #0070cc;
   &.btn-outline {
     color: $white;
@@ -218,6 +226,7 @@
 }
 
 .btn-vimeo:hover {
+  color: $white;
   background: #a0cf3c;
   &.btn-outline {
     color: $white;

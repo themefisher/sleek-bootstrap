@@ -145,12 +145,12 @@
       padding: 0.75rem .94rem;
       margin-right: 0px;
       border-right: 0px;
-      border-color: $border-color;
+      // border: 0px;
+      margin-right: -1px;
+      border-color: transparent;
       i {
         padding-right: 0.625rem;
       }
-      border: 0px;
-      margin-right: -1px;
       &.active {
         border: 1px solid $border-color;
         @include media-breakpoint-up(md) {
