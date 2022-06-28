@@ -9,9 +9,9 @@
 ====== End ======*/
 $(function() {
   "use strict";
-
+  
   /*======== 1. RECNT ORDERS ========*/
-  if ($("#recent-orders").length != 0) {
+  if ($("#recent-orders")) {
     var start = moment().subtract(29, "days");
     var end = moment();
     var cb = function(start, end) {
@@ -50,7 +50,7 @@ $(function() {
   }
 
   /*======== 2. USER ACTIVITY ========*/
-  if ($("#user-activity").length != 0) {
+  if ($("#user-activity")) {
     var start = moment().subtract(1, "days");
     var end = moment().subtract(1, "days");
     var cb = function(start, end) {
@@ -89,7 +89,7 @@ $(function() {
   }
 
   /*======== 3. ANALYTICS COUNTRY ========*/
-  if ($("#analytics-country").length != 0) {
+  if ($("#analytics-country")) {
     var start = moment();
     var end = moment();
     var cb = function(start, end) {
@@ -128,7 +128,7 @@ $(function() {
   }
 
   /*======== 4. PAGE VIEWS ========*/
-  if ($("#page-views").length != 0) {
+  if ($("#page-views")) {
     var start = moment();
     var end = moment();
     var cb = function(start, end) {
@@ -166,7 +166,7 @@ $(function() {
     cb(start, end);
   }
   /*======== 5. ACTIVITY USER ========*/
-  if ($("#activity-user").length != 0) {
+  if ($("#activity-user")) {
     var start = moment();
     var end = moment();
     var cb = function(start, end) {

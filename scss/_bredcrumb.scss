@@ -14,7 +14,7 @@
   }
 }
 .breadcrumb {
-  margin-bottom: 0;
+  // margin-bottom: 0;
   .breadcrumb-item {
     font-size: 0.98rem;
     text-transform: capitalize;
@@ -96,9 +96,10 @@
 }
 .breadcrumb-item+.breadcrumb-item::before {
   content: '\f763';
-  font-family: $font-family-icon;
-  transform: rotate(45deg);
+  top: 10px;
   font-size: 7px;
   color: $secondary;
-
+  position: relative;
+  transform: rotate(45deg);
+  font-family: $font-family-icon;
 }

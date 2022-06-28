@@ -1,13 +1,10 @@
 Thumbs.db
 .DS_Store
+.dist
 .tmp
-.cache
 .sass-cache
-debug.log
 npm-debug.log
 node_modules
-vendors
-vendor
-demo
-_site
-.jekyll-cache
+builds
+build
+dist

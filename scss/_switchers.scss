@@ -19,6 +19,8 @@ input[type=radio] {
     top: 0;
     left: 0;
     opacity: 0;
+    display: none;
+    visibility: hidden;
   }
   .switch-label {
     position: relative;

@@ -1,18 +1,48 @@
----
-layout: default
-title: "calendar - Sleek Admin Dashboard Template"
+@@include('header.htm', {
+  "title": "Calendar - Sleek Admin Dashboard Template",
+
+	"vector_map": "",
+
+	"date_range_picker": "<link href='assets/plugins/daterangepicker/daterangepicker.css' rel='stylesheet'>",
+
+	"select2": "",
+
+	"ladda": "",
+
+	"toastr": "",
+
+	"flag_icon": "",
+
+	"full_calendar_core": "<link href='assets/plugins/fullcalendar/core-4.3.1/main.min.css' rel='stylesheet'>",
+	"full_calendar_daygrid": "<link href='assets/plugins/fullcalendar/daygrid-4.3.0/main.min.css' rel='stylesheet'>",
+
+	"data_table": "",
+
+	"responsive_data_table": "",
+
+	"expendable_data_table": ""
+})
+
+@@include('sidebar.htm', {
+	"parent": "app",
+	"sub_parent": "app",
+	"active": "calendar"
+})
+
+@@include('top-bar.htm')
 
 
-parent: "app"
-sub_parent: "app"
-activePage: "calendar"
-plugins: ["full_calendar", "date_range_picker"]
----
+
 
 <div class="breadcrumb-wrapper d-flex justify-content-between align-items-center">
   <div>
     <h1>Calendar</h1>
-    {% include breadcrumb.htm %}
+
+    @@include('breadcrumb.htm', {
+      "parent": "app",
+      "sub_parent": "app",
+      "active": "calendar"
+    })
   </div>
 
   <div>
@@ -52,13 +82,16 @@ plugins: ["full_calendar", "date_range_picker"]
           <li class="nav-item">
             <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Javascript</a>
           </li>
+
           <li class="nav-item">
             <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">HTML</a>
           </li>
+
           <li class="nav-item">
             <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">CSS</a>
           </li>
         </ul>
+
         <div class="tab-content" id="myTabContent1">
           <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 
@@ -98,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <pre class="mt-4 m-0">
 <code>&lt;script src="assets/plugins/fullcalendar/core-4.3.1/main.min.js"&gt;&lt;/script&gt;</code>
 <code>&lt;script src="assets/plugins/fullcalendar/daygrid-4.3.0/main.min.js"&gt;&lt;/script&gt;</code>
-<code>&lt;script src="assets/app/app.calendar.js"&gt;&lt;/script&gt;</code>
+<code>&lt;script src="assets/js/app.calendar.js"&gt;&lt;/script&gt;</code>
 </pre>
           </div>
 
@@ -158,6 +191,7 @@ document.addEventListener('DOMContentLoaded', function() {
                       <i class="mdi mdi-calendar-range"></i>
                     </span>
                   </div>
+
                   <input type="text" class="form-control date-range" name="dateRange" value="" placeholder="Date"/>
                 </div>
               </div>
@@ -190,3 +224,61 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
   </div>
 </div>
+
+
+
+
+@@include('footer.htm', {
+
+	"chart_js": "",
+	"chartjs": "",
+
+	"google_map": "",
+	"mapjs": "",
+
+	"vector_map": "",
+	"vector_map_world_mill": "",
+	"vector_map_js": "",
+	
+	"date_range_picker_moment": "<script src='assets/plugins/daterangepicker/moment.min.js'></script>",
+	"date_range_picker": "<script src='assets/plugins/daterangepicker/daterangepicker.js'></script>",
+	"date_range_js": "<script src='assets/js/date-range.js'></script>",
+
+	"select2": "",
+
+	"ladda_spin": "",
+	"ladda": "",
+
+	"jquery_mask": "",
+
+	"toastr": "",
+
+	"circle_progress": "",
+
+	"full_calendar_core": "<script src='assets/plugins/fullcalendar/core-4.3.1/main.min.js'></script>",
+	"full_calendar_daygrid": "<script src='assets/plugins/fullcalendar/daygrid-4.3.0/main.min.js'></script>",
+	"full_calendar_js": "<script src='assets/js/app.calendar.js'></script>",
+
+	"data_table": "",
+	"data_table_bootstrap4": "",
+
+	"responsive_data_table": ""
+})
+
+<script>
+  jQuery(document).ready(function() {
+    jQuery('input[name="dateRange"]').daterangepicker({
+    autoUpdateInput: false,
+    singleDatePicker: true,
+    locale: {
+      cancelLabel: 'Clear'
+    }
+  });
+    jQuery('input[name="dateRange"]').on('apply.daterangepicker', function (ev, picker) {
+      jQuery(this).val(picker.startDate.format('MM/DD/YYYY'));
+    });
+    jQuery('input[name="dateRange"]').on('cancel.daterangepicker', function (ev, picker) {
+      jQuery(this).val('');
+    });
+  });
+</script>

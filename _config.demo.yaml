@@ -1,7 +1,0 @@
-# https://jekyllrb.com/docs/configuration/options/
-
-environment: demo
-
-exclude:
-  - assets/scss
-  - assets/js
