@@ -23,17 +23,17 @@ const argv = require("minimist")(process.argv.slice(2));
 const browserSync = require("browser-sync").create();
 
 const path = {
-  html: "src/*.html",
-  htminc: "src/_inc/**/*.htm",
-  incdir: "src/_inc/",
-  plugins: "src/assets/plugins/**/*.*",
-  js: "js/*.*",
-  data: "src/assets/data/*.*",
-  scss: "scss/**/*.scss",
-  img: "src/assets/img/**/*.+(png|jpg|gif)",
-  options: "src/assets/options/**/*.*",
-  manifest: "src/manifest.json",
-  sw: "src/pwabuilder-sw.js",
+  html: "source/*.html",
+  htminc: "source/_inc/**/*.htm",
+  incdir: "source/_inc/",
+  plugins: "source/assets/plugins/**/*.*",
+  js: "source/js/*.*",
+  data: "source/assets/data/*.*",
+  scss: "source/scss/**/*.scss",
+  img: "source/assets/img/**/*.+(png|jpg|gif)",
+  options: "source/assets/options/**/*.*",
+  manifest: "source/manifest.json",
+  sw: "source/pwabuilder-sw.js",
 };
 
 const destination = argv.demo
