@@ -16,8 +16,8 @@ var path = {
   src: {
     // source paths
     html: "source/*.html",
-    htminc: "source/partials/**/*",
-    incdir: "source/partials/",
+    htminc: "source/_inc/**/*",
+    incdir: "source/_inc/",
     plugins: "source/plugins/**/*",
     js: "source/js/*.js",
     scss: "source/scss/**/*.scss",
