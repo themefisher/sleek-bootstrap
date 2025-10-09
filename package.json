@@ -9,32 +9,27 @@
     "start": "gulp",
     "theme-option": "gulp --to",
     "demo": "gulp build --demo",
-    "publish": "gulp build --pub"
+    "publish": "gulp build --pub",
+    "dev": "gulp",
+    "build": "gulp build",
+    "download": "gulp download",
+    "deploy": "gulp deploy"
   },
   "devDependencies": {
     "browser-sync": "^2.27.10",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
-    "gulp-clean": "^0.4.0",
-    "gulp-csso": "^4.0.1",
     "gulp-file-include": "^2.3.0",
-    "gulp-if": "^3.0.0",
-    "gulp-imagemin": "^8.0.0",
-    "gulp-inject-string": "^1.1.2",
-    "gulp-javascript-obfuscator": "^1.1.6",
+    "gulp-gm": "0.0.9",
+    "gulp-header-comment": "^0.10.0",
     "gulp-jshint": "^2.1.0",
-    "gulp-notify": "^4.0.0",
-    "gulp-plumber": "^1.2.1",
-    "gulp-rename": "^2.0.0",
-    "gulp-rtlcss": "^2.0.0",
+    "gulp-rimraf": "^1.0.0",
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
-    "gulp-uglify": "^3.0.2",
     "gulp-util": "^3.0.8",
-    "imagemin-webp": "^7.0.0",
-    "jshint": "^2.13.4",
+    "jshint": "^2.13.6",
     "jshint-stylish": "^2.2.1",
-    "minimist": "^1.2.6"
+    "sass": "^1.54.0"
   },
   "dependencies": {
     "bootstrap": "^5.1.3"
